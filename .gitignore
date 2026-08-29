@@ -1,0 +1,22 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+.astro/
+.output/
+
+# env
+.env
+.env.*
+!.env.example
+
+# editor / OS
+.DS_Store
+*.log
+
+# Claude Code local overrides (keep .claude/settings.json, agents, hooks tracked)
+.claude/settings.local.json
+
+# Playwright MCP session artefacts
+.playwright-mcp/

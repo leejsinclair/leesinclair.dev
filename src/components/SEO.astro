@@ -1,0 +1,80 @@
+---
+/**
+ * All `<head>` metadata (metadata-contract.md): primary meta, Open Graph, Twitter card,
+ * JSON-LD Person, and the conditional analytics tag. Rendered into `Base.astro`'s `head`
+ * slot from `src/pages/index.astro`.
+ *
+ * Title and description are fixed strings from the contract (FR-021). The canonical origin
+ * is `astro.config.mjs` `site` (read here as `Astro.site`) — one authoritative source;
+ * everything else comes from `profile.ts` (FR-022).
+ */
+import profile from "../data/profile";
+
+const TITLE = "Lee Sinclair | Technology Leader & Systems Thinker";
+const DESCRIPTION =
+  "Technology leader combining engineering, product, delivery and people leadership to build capable teams and better technology systems.";
+
+if (!Astro.site)
+  throw new Error(
+    "[SEO] astro.config.mjs `site` must be set for canonical/OG URLs.",
+  );
+const site = Astro.site.href.replace(/\/$/, "");
+const ogImage = new URL(profile.ogImage, site + "/").href;
+
+// JSON-LD Person. No `email` (FR-012a). No worksFor / dates / awards (Constitution IV).
+// `sameAs` is included only when the LinkedIn URL is set — never an empty array.
+const personLd: Record<string, unknown> = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: profile.name,
+  url: site + "/",
+  jobTitle: "Technology Leader",
+};
+if (profile.linkedInUrl) personLd.sameAs = [profile.linkedInUrl];
+
+// Analytics (research.md R6): one deferred, cookieless Plausible tag, production only,
+// and only when a domain is configured. Its absence changes nothing (FR-025a).
+const analyticsDomain = import.meta.env.PROD
+  ? import.meta.env.PUBLIC_ANALYTICS_DOMAIN
+  : undefined;
+---
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="color-scheme" content="dark" />
+<title>{TITLE}</title>
+<meta name="description" content={DESCRIPTION} />
+<link rel="canonical" href={site + "/"} />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+<meta property="og:type" content="profile" />
+<meta property="og:title" content={TITLE} />
+<meta property="og:description" content={DESCRIPTION} />
+<meta property="og:url" content={site + "/"} />
+<meta property="og:image" content={ogImage} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content={TITLE} />
+<meta property="profile:first_name" content="Lee" />
+<meta property="profile:last_name" content="Sinclair" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={TITLE} />
+<meta name="twitter:description" content={DESCRIPTION} />
+<meta name="twitter:image" content={ogImage} />
+
+<script
+  is:inline
+  type="application/ld+json"
+  set:html={JSON.stringify(personLd)}
+/>
+
+{
+  analyticsDomain && (
+    <script
+      is:inline
+      defer
+      src="https://plausible.io/js/script.js"
+      data-domain={analyticsDomain}
+    />
+  )
+}

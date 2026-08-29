@@ -1,0 +1,54 @@
+---
+/**
+ * The personal dimension (FR-011) — a brief prose aside attached to "How I Think", never a
+ * hobby list. Renders nothing unless `personal.ts` yields at least one confirmed thread.
+ * On narrow viewports it collapses inline below the principles (handled by the parent grid).
+ */
+import personal from "../data/personal";
+
+const confirmed =
+  personal?.threads.filter((t) => t.confirmed).map((t) => t.interest) ?? [];
+const render = personal !== null && confirmed.length > 0;
+
+const list = new Intl.ListFormat("en-GB", { type: "conjunction" }).format(
+  confirmed,
+);
+---
+
+{
+  render && (
+    <aside class="aside" aria-label="A personal note">
+      <p class="aside__lead">{personal!.lead}</p>
+      <p class="aside__body">
+        That connects with my background in {list}. In leadership, I pay
+        attention, ask why and keep practising.
+      </p>
+    </aside>
+  )
+}
+
+<style>
+  .aside {
+    max-width: 42rem;
+    border-left: 2px solid var(--border-strong);
+    padding-left: var(--space-m);
+    color: var(--text-muted);
+    font-size: var(--step--1);
+  }
+
+  /* On the wide two-column layout the aside tracks the principles as a true margin note. */
+  @media (min-width: 60rem) {
+    .aside {
+      position: sticky;
+      top: var(--space-xl);
+    }
+  }
+
+  .aside__lead {
+    color: var(--text);
+  }
+
+  .aside__body {
+    margin-top: var(--space-xs);
+  }
+</style>

@@ -1,0 +1,252 @@
+/*
+ * Global base styles. Layer order is declared up front so component `<style>` blocks
+ * (unlayered, thus highest priority) can always override without specificity fights.
+ */
+@layer reset, base, layout;
+
+/*
+ * One self-hosted variable font for display/headings (research.md R7). SIL OFL — see
+ * public/fonts/Fraunces-OFL.txt. `swap` so headings paint in the fallback serif first
+ * and never block text (SC-006).
+ */
+@font-face {
+  font-family: "Fraunces";
+  src: url("/fonts/fraunces-latin-var.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  img,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  :where(a) {
+    color: inherit;
+  }
+
+  :where(ul, ol) {
+    padding: 0;
+    list-style: none;
+  }
+
+  button {
+    font: inherit;
+    color: inherit;
+  }
+}
+
+@layer base {
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: var(--step-0);
+    line-height: var(--leading-body);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    line-height: var(--leading-tight);
+    text-wrap: balance;
+    letter-spacing: -0.01em;
+  }
+
+  h1 {
+    font-size: var(--step-4);
+  }
+  h2 {
+    font-size: var(--step-2);
+  }
+  h3 {
+    font-size: var(--step-1);
+    line-height: var(--leading-snug);
+  }
+
+  p {
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+  }
+
+  a {
+    color: var(--accent);
+    text-underline-offset: 0.18em;
+    text-decoration-thickness: from-font;
+    transition: color var(--dur-fast) var(--ease);
+  }
+
+  a:hover {
+    color: var(--accent-strong);
+  }
+
+  /* One focus style for every interactive element (FR-014, SC-004). */
+  :focus-visible {
+    outline: 2px solid var(--accent-strong);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background: var(--accent);
+    color: var(--on-accent);
+  }
+
+  strong {
+    font-weight: 600;
+    color: var(--text);
+  }
+}
+
+@layer layout {
+  /* Horizontal container — caps the readable measure, gutters on every side. */
+  .shell {
+    width: 100%;
+    max-width: var(--measure-wide);
+    margin-inline: auto;
+    padding-inline: clamp(1.25rem, 5vw, 3rem);
+  }
+
+  /* One narrative section's vertical rhythm. */
+  .section {
+    padding-block: var(--space-xl);
+    border-top: 1px solid var(--border);
+  }
+
+  /* Hero and any other section that should not carry a top divider. */
+  .section--flush {
+    border-top: 0;
+  }
+
+  /* Constrain running prose to a comfortable line length. */
+  .measure {
+    max-width: var(--measure);
+  }
+
+  /* A small label — discipline names, captions — set in mono. */
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: var(--step--1);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+}
+
+@layer base {
+  /*
+   * The single "Let's talk" CTA (FR-012). Used inline by Hero and Closing; styled here
+   * because the class is shared, not the markup. ≥44px target, visible focus (SC-004).
+   */
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0.7rem 1.4rem;
+    border: 1px solid var(--accent);
+    border-radius: var(--radius);
+    background: var(--accent);
+    color: var(--on-accent);
+    font-family: var(--font-body);
+    font-size: var(--step-0);
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    transition:
+      background var(--dur-mid) var(--ease),
+      color var(--dur-mid) var(--ease),
+      border-color var(--dur-mid) var(--ease);
+  }
+
+  .cta:hover,
+  .cta:focus-visible {
+    background: transparent;
+    color: var(--accent-strong);
+  }
+
+  /* Unset-URL state (FR-013): clearly non-interactive, not a broken link. */
+  .cta--placeholder {
+    background: transparent;
+    border-style: dashed;
+    border-color: var(--border-strong);
+    color: var(--text-muted);
+    font-weight: 500;
+    cursor: not-allowed;
+  }
+
+  .cta--placeholder:hover,
+  .cta--placeholder:focus-visible {
+    background: transparent;
+    color: var(--text-muted);
+  }
+}
+
+/* Global reduced-motion guard — components layer their own specifics on top. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Print / PDF: light ground, ink-frugal, link targets visible (page-contract). */
+@media print {
+  :root {
+    --bg: #fff;
+    --text: #111;
+    --text-muted: #333;
+    --accent: #7a4e00;
+    --border: #bbb;
+    --border-strong: #999;
+  }
+
+  body {
+    -webkit-font-smoothing: auto;
+  }
+
+  .section {
+    padding-block: 1.5rem;
+    break-inside: avoid;
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+    color: #555;
+    word-break: break-all;
+  }
+
+  /* The CTA is a filled button on screen; on paper make it plain readable text. */
+  .cta,
+  .cta--placeholder {
+    display: inline;
+    min-height: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--accent);
+    font-weight: 600;
+  }
+}

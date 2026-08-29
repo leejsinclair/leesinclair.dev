@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.astro/
+package-lock.json
+
+# Spec Kit artefacts are hand-maintained prose — leave their formatting alone.
+specs/
+.specify/
+CLAUDE.md

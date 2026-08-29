@@ -1,0 +1,98 @@
+---
+/**
+ * Section 1 — Hero. Name (`<h1>`), role line, positioning line, exactly one supporting
+ * statement, and the single "Let's talk" CTA (FR-002). All content from `profile.ts`.
+ *
+ * The CTA is a plain inline `<a>` (or a marked placeholder when `linkedInUrl` is unset) —
+ * deliberately not a shared component: there are only two call sites, Hero and Closing
+ * (research.md R5, Constitution II). The `.cta` styles are shared via `global.css` (T034).
+ *
+ * Draft wording (FR-004): while `positioning`/`roleLine` are `status: "draft"` the source
+ * carries an HTML comment and — in `astro dev` only — a small visible marker. Neither
+ * appears in the production render for visitors.
+ */
+import profile from "../data/profile";
+
+const draft =
+  profile.positioning.status === "draft" || profile.roleLine.status === "draft";
+const linkedIn = profile.linkedInUrl;
+---
+
+<div class="shell section section--flush hero measure">
+  {
+    draft && (
+      <Fragment set:html="<!-- DRAFT: hero positioning/role wording is pending Lee's sign-off (FR-004) -->" />
+    )
+  }
+
+  <h1 id="hero-heading">{profile.name}</h1>
+  <p class="role">{profile.roleLine.text}</p>
+  <p class="positioning">{profile.positioning.text}</p>
+  <p class="supporting">{profile.supportingStatement}</p>
+
+  {
+    draft && import.meta.env.DEV && (
+      <p class="draft-note" role="note">
+        Draft wording pending Lee’s sign-off (FR-004). Not shown in
+        production.
+      </p>
+    )
+  }
+
+  {
+    linkedIn ? (
+      <a class="cta" href={linkedIn} target="_blank" rel="noopener">
+        Let’s talk
+      </a>
+    ) : (
+      <span class="cta cta--placeholder">LinkedIn coming soon</span>
+    )
+  }
+</div>
+
+<style>
+  .hero {
+    padding-block: var(--space-2xl) var(--space-xl);
+  }
+
+  h1 {
+    margin-bottom: var(--space-xs);
+  }
+
+  .role {
+    max-width: 34ch;
+    font-size: var(--step-1);
+    line-height: var(--leading-snug);
+    color: var(--text);
+    text-wrap: balance;
+  }
+
+  .positioning {
+    margin-top: var(--space-l);
+    font-family: var(--font-display);
+    font-size: var(--step-2);
+    line-height: var(--leading-snug);
+    color: var(--text);
+    max-width: 30ch;
+  }
+
+  .supporting {
+    margin-top: var(--space-s);
+    color: var(--text-muted);
+    max-width: 46ch;
+  }
+
+  .draft-note {
+    margin-top: var(--space-m);
+    padding: var(--space-xs) var(--space-s);
+    border: 1px dashed var(--border-strong);
+    border-radius: var(--radius);
+    font-family: var(--font-mono);
+    font-size: var(--step--1);
+    color: var(--text-muted);
+  }
+
+  .cta {
+    margin-top: var(--space-l);
+  }
+</style>

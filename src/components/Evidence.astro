@@ -1,0 +1,76 @@
+---
+/**
+ * Section 4 — Evidence (FR-007). One to four examples, each a title and a short body.
+ * Deliberately a single editorial column so the section stays balanced and intentional
+ * at any count from one to four (SC-013) — never padded, never empty.
+ */
+import evidence from "../data/evidence";
+
+const themeLabel: Record<string, string> = {
+  leadership: "Leadership",
+  "engineering-practice": "Engineering practice",
+  capability: "Capability",
+  "ai-operating-model": "AI & the operating model",
+  "product-delivery": "Product & delivery",
+};
+---
+
+<div class="shell section">
+  <div class="measure">
+    <h2 id="evidence-heading">Evidence</h2>
+    <ol class="evidence" role="list">
+      {
+        evidence.map((e) => (
+          <li>
+            {e.theme && <p class="eyebrow">{themeLabel[e.theme] ?? e.theme}</p>}
+            <h3>{e.title}</h3>
+            <p>{e.body}</p>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</div>
+
+<style>
+  h2 {
+    margin-bottom: var(--space-l);
+  }
+
+  .evidence {
+    display: grid;
+    gap: var(--space-l);
+    counter-reset: ev;
+  }
+
+  .evidence li {
+    counter-increment: ev;
+    padding-top: var(--space-l);
+    border-top: 1px solid var(--border);
+  }
+
+  .evidence li:first-child {
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  .evidence .eyebrow {
+    margin-bottom: var(--space-2xs);
+  }
+
+  .evidence h3 {
+    margin-bottom: var(--space-xs);
+  }
+
+  .evidence h3::before {
+    content: counter(ev, decimal-leading-zero) "  ";
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-size: 0.7em;
+    vertical-align: 0.15em;
+  }
+
+  .evidence p:not(.eyebrow) {
+    color: var(--text-muted);
+  }
+</style>

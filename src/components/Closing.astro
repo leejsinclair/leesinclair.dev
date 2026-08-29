@@ -1,0 +1,39 @@
+---
+/**
+ * Section 6 — Closing (FR-010). A concise invitation and the "Let's talk" CTA repeated.
+ * The CTA is inline (not a shared component) and mirrors Hero's set/unset handling
+ * exactly, both resolving from the one `profile.linkedInUrl` value (research.md R5).
+ */
+import profile from "../data/profile";
+
+const linkedIn = profile.linkedInUrl;
+---
+
+<div class="shell section closing measure">
+  <h2 id="closing-heading">Let’s talk</h2>
+  <p>
+    Technology matters, but it is rarely the hardest part. If you are working
+    through a leadership problem that involves engineering, people and delivery,
+    I would like to hear about it.
+  </p>
+
+  {
+    linkedIn ? (
+      <a class="cta" href={linkedIn} target="_blank" rel="noopener">
+        Let’s talk
+      </a>
+    ) : (
+      <span class="cta cta--placeholder">LinkedIn coming soon</span>
+    )
+  }
+</div>
+
+<style>
+  h2 {
+    margin-bottom: var(--space-m);
+  }
+
+  .closing .cta {
+    margin-top: var(--space-l);
+  }
+</style>

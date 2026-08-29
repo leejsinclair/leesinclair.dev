@@ -1,0 +1,68 @@
+---
+/**
+ * Section 3 — How I Think (FR-006). Three or four principles, each a title and a short
+ * body, plus the personal aside. No generic competency language.
+ */
+import principles from "../data/principles";
+import PersonalAside from "./PersonalAside.astro";
+---
+
+<div class="shell section">
+  <div class="grid">
+    <div class="col">
+      <h2 id="how-i-think-heading">How I think</h2>
+      <ul class="principles" role="list">
+        {
+          principles.map((p) => (
+            <li>
+              <h3>{p.title}</h3>
+              <p>{p.body}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+
+    <PersonalAside />
+  </div>
+</div>
+
+<style>
+  .grid {
+    display: grid;
+    gap: var(--space-l);
+  }
+
+  .col {
+    max-width: var(--measure);
+  }
+
+  @media (min-width: 60rem) {
+    .grid {
+      grid-template-columns: minmax(0, var(--measure)) minmax(12rem, 15rem);
+      align-items: start;
+      gap: var(--space-l);
+    }
+
+    .col {
+      max-width: none;
+    }
+  }
+
+  h2 {
+    margin-bottom: var(--space-l);
+  }
+
+  .principles {
+    display: grid;
+    gap: var(--space-l);
+  }
+
+  .principles h3 {
+    margin-bottom: var(--space-2xs);
+  }
+
+  .principles p {
+    color: var(--text-muted);
+  }
+</style>

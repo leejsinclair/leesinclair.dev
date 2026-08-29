@@ -1,0 +1,29 @@
+---
+/**
+ * The single layout. Owns `<html>`, `<head>` and the one `<main>` landmark.
+ * All `<head>` metadata is projected through the named `head` slot — `SEO.astro`
+ * fills it from `src/pages/index.astro`.
+ */
+import "../styles/tokens.css";
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="preload"
+      href="/fonts/fraunces-latin-var.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <slot name="head" />
+  </head>
+  <body>
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>

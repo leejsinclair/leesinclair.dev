@@ -1,0 +1,31 @@
+---
+/**
+ * Section 2 — The Intersection (FR-005). A short framing paragraph that names all five
+ * disciplines as one system, then the understated `SystemDiagram`. Not a logo wall,
+ * not a card grid.
+ */
+import disciplines from "../data/disciplines";
+import SystemDiagram from "./SystemDiagram.astro";
+
+const conjunction = new Intl.ListFormat("en-GB", { type: "conjunction" });
+const list = conjunction.format(disciplines.map((d) => d.label));
+---
+
+<div class="shell section">
+  <div class="measure">
+    <h2 id="intersection-heading">The intersection</h2>
+    <p>
+      {list} affect one another every day. Treating them as separate concerns usually
+      hides the real problem. I work across all five and look at what a decision in one
+      area will do to the others.
+    </p>
+  </div>
+
+  <SystemDiagram />
+</div>
+
+<style>
+  h2 {
+    margin-bottom: var(--space-m);
+  }
+</style>

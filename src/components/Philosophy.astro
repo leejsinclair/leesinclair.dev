@@ -1,0 +1,60 @@
+---
+/**
+ * Section 5 — Leadership Philosophy (FR-009). Autonomy, Mastery, Purpose, each with a
+ * body, plus one connective line tying them to building capable teams.
+ */
+import philosophy, { connectiveLine } from "../data/philosophy";
+---
+
+<div class="shell section">
+  <h2 id="philosophy-heading">Leadership philosophy</h2>
+
+  <dl class="pillars">
+    {
+      philosophy.map((p) => (
+        <div class="pillar">
+          <dt>{p.label}</dt>
+          <dd>{p.body}</dd>
+        </div>
+      ))
+    }
+  </dl>
+
+  <p class="connective measure">{connectiveLine}</p>
+</div>
+
+<style>
+  h2 {
+    margin-bottom: var(--space-l);
+  }
+
+  .pillars {
+    display: grid;
+    gap: var(--space-l);
+  }
+
+  @media (min-width: 34rem) {
+    .pillars {
+      grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+      gap: var(--space-m) var(--space-l);
+    }
+  }
+
+  .pillar dt {
+    font-family: var(--font-display);
+    font-size: var(--step-1);
+    margin-bottom: var(--space-2xs);
+  }
+
+  .pillar dd {
+    margin: 0;
+    color: var(--text-muted);
+  }
+
+  .connective {
+    margin-top: var(--space-l);
+    padding-top: var(--space-m);
+    border-top: 1px solid var(--border);
+    color: var(--text);
+  }
+</style>
