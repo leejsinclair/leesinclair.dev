@@ -19,6 +19,8 @@
   --border: #262b33;
   --border-strong: #3a414c;
   --surface: #14181f;
+  --header-bg-solid: #0d0f12;
+  --header-bg: rgb(13 15 18 / 0.86);
 
   /* --- Typography ------------------------------------------------------- */
   --font-display: "Fraunces", ui-serif, Georgia, "Times New Roman", serif;
@@ -55,6 +57,7 @@
   --measure: 42rem; /* readable body measure (~66ch) */
   --measure-wide: 72rem; /* section max width for multi-column content */
   --radius: 4px;
+  --header-offset: 6rem;
 
   /* --- Motion ----------------------------------------------------------- */
   --dur-fast: 120ms;

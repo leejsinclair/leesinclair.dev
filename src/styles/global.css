@@ -249,6 +249,12 @@
   }
 }
 
+@media (max-width: 42rem) {
+  :root {
+    --header-offset: 0rem;
+  }
+}
+
 /* Print / PDF: light ground, ink-frugal, link targets visible (page-contract). */
 @media print {
   :root {
@@ -259,6 +265,8 @@
     --border: #bbb;
     --border-strong: #999;
     --surface: #fff;
+    --header-bg-solid: #fff;
+    --header-bg: #fff;
   }
 
   body {

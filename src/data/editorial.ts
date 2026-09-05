@@ -6,6 +6,19 @@ import type {
   ReadingPath,
 } from "./types";
 
+export const editorialStructure = {
+  navigationItems: 5,
+  contentPillars: 3,
+  startHerePaths: 3,
+  mythsCards: 3,
+  historyCards: 3,
+  researchAreas: 3,
+  leadershipCards: 3,
+  archiveShelves: 3,
+  aboutCards: 2,
+  aboutEvidencePreview: 3,
+} as const;
+
 export const navigation = [
   { label: "Essays", href: "#essays" },
   { label: "Research", href: "#research" },
@@ -67,6 +80,13 @@ export const contentPillars = [
   },
 ] satisfies EditorialCard[];
 
+export const pillarsOverview = {
+  eyebrow: "Three pillars",
+  title: "Clear lanes for myth, history, and leadership.",
+  intro:
+    "The homepage now works like an editorial front page: bold first impression, then immediate routes into the three strands the site is built to hold.",
+} as const;
+
 export const featuredWriting = [
   {
     id: "featured-myth",
@@ -110,6 +130,13 @@ export const featuredWriting = [
   },
 ] satisfies EditorialCard[];
 
+export const essaysOverview = {
+  eyebrow: "Essays",
+  title: "Latest writing, with obvious room to grow.",
+  intro:
+    "These cards are deliberate scaffolds for featured essays, case studies, notebook entries, and reflections. They are easy to replace as new writing is published.",
+} as const;
+
 export const startHerePaths = [
   {
     id: "start-myths",
@@ -148,6 +175,14 @@ export const startHerePaths = [
     ],
   },
 ] satisfies ReadingPath[];
+
+export const startHereOverview = {
+  eyebrow: "Start here",
+  title: "Three guided ways into the site.",
+  intro:
+    "New readers can come in through myth, history, or leadership. Each path deliberately leads outward into the others so the site feels coherent rather than fragmented.",
+  linkLabel: "Follow this route",
+} as const;
 
 export const mythsSection = {
   eyebrow: "Myths",
@@ -352,3 +387,15 @@ export const aboutSection = {
     },
   ],
 } satisfies EditorialSection;
+
+export const leadershipDetailLabels = {
+  principlesEyebrow: "How I think",
+  principlesTitle: "Principles that guide the work",
+  philosophyEyebrow: "Leadership philosophy",
+  philosophyTitle: "Autonomy, mastery, and purpose",
+} as const;
+
+export const contactLabels = {
+  linkedIn: "LinkedIn",
+  linkedInPlaceholder: "LinkedIn coming soon",
+} as const;
