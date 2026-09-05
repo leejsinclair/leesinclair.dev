@@ -6,6 +6,8 @@
  */
 import "../styles/tokens.css";
 import "../styles/global.css";
+import SiteNav from "../components/SiteNav.astro";
+import "../data/guards";
 ---
 
 <!doctype html>
@@ -22,7 +24,9 @@ import "../styles/global.css";
     <slot name="head" />
   </head>
   <body>
-    <main>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <SiteNav />
+    <main id="content">
       <slot />
     </main>
   </body>

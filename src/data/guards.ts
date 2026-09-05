@@ -1,11 +1,19 @@
 /**
- * Build-time content guards (no library). Imported once from `src/pages/index.astro` so
+ * Build-time content guards (no library). Imported once from the shared layout so
  * `astro build` fails loudly if the content data drifts out of the ranges the layout and
  * the spec assume. The `linkedInUrl` format/absence check lives in `profile.ts` itself.
  */
 import principles from "./principles";
 import evidence from "./evidence";
 import philosophy from "./philosophy";
+import {
+  archiveSection,
+  contentPillars,
+  featuredWriting,
+  navigation,
+  researchSection,
+  startHerePaths,
+} from "./editorial";
 
 function assert(condition: boolean, message: string): void {
   if (!condition) throw new Error(`[content guard] ${message}`);
@@ -41,6 +49,44 @@ assert(
     philosophy.some((p) => p.id === id),
   ),
   "philosophy must contain autonomy, mastery and purpose",
+);
+
+assert(
+  navigation.length === 5,
+  `navigation must have 5 items, got ${navigation.length}`,
+);
+assert(
+  new Set(navigation.map((item) => item.label)).size === navigation.length,
+  "navigation labels must be unique",
+);
+assert(
+  contentPillars.length === 3,
+  `content pillars must be 3, got ${contentPillars.length}`,
+);
+assert(
+  new Set(contentPillars.map((card) => card.id)).size === contentPillars.length,
+  "content pillar ids must be unique",
+);
+assert(
+  featuredWriting.length >= 3,
+  `featured writing must have at least 3 cards, got ${featuredWriting.length}`,
+);
+assert(
+  new Set(featuredWriting.map((card) => card.id)).size ===
+    featuredWriting.length,
+  "featured writing ids must be unique",
+);
+assert(
+  startHerePaths.length === 3,
+  `start here paths must be 3, got ${startHerePaths.length}`,
+);
+assert(
+  researchSection.cards.length === 3,
+  `research cards must be 3, got ${researchSection.cards.length}`,
+);
+assert(
+  archiveSection.cards.length === 3,
+  `archive cards must be 3, got ${archiveSection.cards.length}`,
 );
 
 export {};

@@ -13,6 +13,51 @@ export interface DraftLine {
   status: DraftStatus;
 }
 
+export interface LinkDefinition {
+  href: string;
+  label: string;
+}
+
+export interface HeroHighlight {
+  title: string;
+  description: string;
+}
+
+export interface HeroContent {
+  eyebrow: string;
+  title: string;
+  intro: string;
+  primaryCta: LinkDefinition;
+  secondaryCta: LinkDefinition;
+  highlights: HeroHighlight[];
+}
+
+export interface EditorialCard {
+  id: string;
+  title: string;
+  description: string;
+  href: string;
+  linkLabel: string;
+  label?: string;
+  meta?: string;
+  items?: string[];
+}
+
+export interface EditorialSection {
+  eyebrow: string;
+  title: string;
+  intro: string;
+  cards: EditorialCard[];
+}
+
+export interface ReadingPath {
+  id: string;
+  title: string;
+  description: string;
+  href: string;
+  steps: string[];
+}
+
 /** Single source of identity and contact facts (`src/data/profile.ts`). One record. */
 export interface Profile {
   /** "Lee Sinclair". Rendered in the `<h1>` and JSON-LD `Person.name`. */

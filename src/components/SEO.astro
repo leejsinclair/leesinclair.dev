@@ -10,9 +10,9 @@
  */
 import profile from "../data/profile";
 
-const TITLE = "Lee Sinclair | Technology Leader & Systems Thinker";
+const TITLE = "Lee Sinclair | Myth, History, and Leadership";
 const DESCRIPTION =
-  "Technology leader combining engineering, product, delivery and people leadership to build capable teams and better technology systems.";
+  "Essays, research notes, and leadership reflections on myth, history, and the work of shaping capable institutions.";
 
 if (!Astro.site)
   throw new Error(
@@ -46,7 +46,7 @@ const analyticsDomain = import.meta.env.PROD
 <link rel="canonical" href={site + "/"} />
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
-<meta property="og:type" content="profile" />
+<meta property="og:type" content="website" />
 <meta property="og:title" content={TITLE} />
 <meta property="og:description" content={DESCRIPTION} />
 <meta property="og:url" content={site + "/"} />
@@ -54,6 +54,7 @@ const analyticsDomain = import.meta.env.PROD
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:image:alt" content={TITLE} />
+<meta property="og:site_name" content="Lee Sinclair" />
 <meta property="profile:first_name" content="Lee" />
 <meta property="profile:last_name" content="Sinclair" />
 
