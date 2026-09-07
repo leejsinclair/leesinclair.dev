@@ -39,8 +39,16 @@ those, not the components:
 | `disciplines.ts` | the legacy intersection nodes + diagram text alternative                                    |
 | `personal.ts`    | the personal aside (only `confirmed: true` interests render)                                |
 
+Long-form essays are Markdown, not typed data — each pillar's essays live at
+[`src/content/essays/<pillar>/<slug>.md`](src/content/essays/) (`myths`, `history`, or
+`leadership`), with a frontmatter schema (`title`, `dek`, optional `references`) enforced by
+`src/content.config.ts`. One shared route, `src/pages/[pillar]/[slug].astro`, renders every
+essay in every pillar — publishing a new one needs no template changes. See
+`specs/003-essay-publishing/`.
+
 Build-time guards in `src/data/guards.ts` fail the build if the principle/evidence/philosophy
-counts drift out of range or the LinkedIn URL is malformed.
+counts drift out of range, the LinkedIn URL is malformed, or a homepage card links to an essay
+that doesn't exist.
 
 ## Analytics
 

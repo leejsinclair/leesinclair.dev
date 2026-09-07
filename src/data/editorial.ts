@@ -20,11 +20,11 @@ export const editorialStructure = {
 } as const;
 
 export const navigation = [
-  { label: "Essays", href: "#essays" },
-  { label: "Research", href: "#research" },
-  { label: "Leadership", href: "#leadership" },
-  { label: "About", href: "#about" },
-  { label: "Archive", href: "#archive" },
+  { label: "Essays", href: "/#essays" },
+  { label: "Research", href: "/#research" },
+  { label: "Leadership", href: "/#leadership" },
+  { label: "About", href: "/#about" },
+  { label: "Archive", href: "/#archive" },
 ] satisfies LinkDefinition[];
 
 export const homeHero = {
@@ -192,11 +192,11 @@ export const mythsSection = {
   cards: [
     {
       id: "myths-archetypes",
-      title: "Archetypes in public life",
+      title: "Athena: goddess of disciplined intelligence",
       description:
-        "Scaffold space for essays on heroism, sacrifice, exile, renewal, and the shapes people keep reaching for.",
-      href: "#archive",
-      linkLabel: "See the archive scaffold",
+        "From a Bronze Age cult title to the Classical patron of the polis: how Athena's warfare, craft, and wisdom trace one idea — skilled intelligence applied to human order.",
+      href: "/myths/athena",
+      linkLabel: "Read the essay",
     },
     {
       id: "myths-institutions",

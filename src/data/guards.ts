@@ -3,6 +3,7 @@
  * `astro build` fails loudly if the content data drifts out of the ranges the layout and
  * the spec assume. The `linkedInUrl` format/absence check lives in `profile.ts` itself.
  */
+import { getCollection } from "astro:content";
 import principles from "./principles";
 import evidence from "./evidence";
 import philosophy from "./philosophy";
@@ -109,5 +110,23 @@ assert(
   aboutSection.cards.length === editorialStructure.aboutCards,
   `about cards must be ${editorialStructure.aboutCards}, got ${aboutSection.cards.length}`,
 );
+
+// specs/003-essay-publishing FR-022 — a pillar card's href is a second, hand-typed source of
+// truth for an essay's URL alongside its content-collection path; catch drift loudly rather
+// than shipping a silently broken link.
+const essayIds = new Set(
+  (await getCollection("essays")).map((entry) => entry.id),
+);
+for (const section of [mythsSection, historySection, leadershipSection]) {
+  for (const card of section.cards) {
+    const match = /^\/(myths|history|leadership)\/(.+)$/.exec(card.href);
+    if (!match) continue;
+    const essayId = `${match[1]}/${match[2]}`;
+    assert(
+      essayIds.has(essayId),
+      `card "${card.id}" links to "${card.href}" but no essay exists at src/content/essays/${essayId}.md`,
+    );
+  }
+}
 
 export {};

@@ -1,0 +1,155 @@
+---
+/**
+ * Shared essay page for every pillar (specs/003-essay-publishing). One template renders
+ * any entry from the `essays` content collection — Myths, History, and Leadership essays
+ * all use this file; adding a pillar's next essay requires no changes here (FR-006).
+ *
+ * `pillar`/`slug` come from the entry's own path (`src/content/essays/<pillar>/<slug>.md`,
+ * see `src/content.config.ts`) rather than duplicated frontmatter fields — two essays
+ * colliding on a URL is filesystem-impossible, not something checked here.
+ */
+import { getCollection, render } from "astro:content";
+import type { GetStaticPaths } from "astro";
+import Base from "../../layouts/Base.astro";
+import SEO from "../../components/SEO.astro";
+
+export const getStaticPaths = (async () => {
+  const pillars = ["myths", "history", "leadership"];
+  const entries = await getCollection("essays");
+
+  return entries.map((entry) => {
+    const [pillar, slug] = entry.id.split("/");
+    if (!slug || !pillars.includes(pillar)) {
+      throw new Error(
+        `[essays] "${entry.id}" must live at src/content/essays/<pillar>/<slug>.md, where <pillar> is one of ${pillars.join(", ")}.`,
+      );
+    }
+    return { params: { pillar, slug }, props: { entry } };
+  });
+}) satisfies GetStaticPaths;
+
+const { entry } = Astro.props;
+const { title, dek, references } = entry.data;
+const { Content } = await render(entry);
+---
+
+<Base>
+  <SEO
+    slot="head"
+    title={`${title} | Lee Sinclair`}
+    description={dek}
+    canonicalPath={`/${entry.id}`}
+    ogType="article"
+  />
+
+  <article class="essay">
+    <div class="shell">
+      <a class="essay-home-link" href="/">← Back to homepage</a>
+
+      <header class="essay-header">
+        <h1>{title}</h1>
+        <p class="essay-dek measure">{dek}</p>
+      </header>
+
+      <div class="essay-body measure">
+        <Content />
+      </div>
+
+      {
+        references && references.length > 0 && (
+          <footer class="essay-references measure">
+            <h2>References</h2>
+            <ul role="list">
+              {references.map((reference) => (
+                <li>{reference}</li>
+              ))}
+            </ul>
+          </footer>
+        )
+      }
+    </div>
+  </article>
+</Base>
+
+<style>
+  .essay {
+    padding-block: var(--space-xl);
+  }
+
+  .essay-home-link {
+    display: inline-block;
+    margin-bottom: var(--space-l);
+    color: var(--text-muted);
+    font-size: var(--step--1);
+    text-decoration: none;
+  }
+
+  .essay-home-link:hover,
+  .essay-home-link:focus-visible {
+    color: var(--accent-strong);
+  }
+
+  .essay-header {
+    margin-bottom: var(--space-l);
+  }
+
+  .essay-dek {
+    margin-top: var(--space-s);
+    color: var(--text-muted);
+    font-size: var(--step-1);
+  }
+
+  .essay-body :global(h2) {
+    margin-top: var(--space-l);
+    margin-bottom: var(--space-s);
+  }
+
+  .essay-body :global(h3) {
+    margin-top: var(--space-m);
+    margin-bottom: var(--space-xs);
+  }
+
+  .essay-body :global(p) {
+    margin-top: var(--space-s);
+  }
+
+  .essay-body :global(ul),
+  .essay-body :global(ol) {
+    margin-top: var(--space-s);
+    padding-inline-start: 1.25em;
+    list-style: revert;
+  }
+
+  .essay-body :global(li + li) {
+    margin-top: 0.4em;
+  }
+
+  .essay-body :global(em) {
+    font-style: italic;
+  }
+
+  .essay-body :global(strong) {
+    font-weight: 600;
+  }
+
+  .essay-references {
+    margin-top: var(--space-xl);
+    padding-top: var(--space-l);
+    border-top: 1px solid var(--border);
+  }
+
+  .essay-references ul {
+    margin-top: var(--space-s);
+    padding-inline-start: 1.25em;
+    list-style: revert;
+  }
+
+  .essay-references li {
+    color: var(--text-muted);
+    font-size: var(--step--1);
+  }
+
+  .essay-references li + li {
+    margin-top: 0.5em;
+  }
+</style>
