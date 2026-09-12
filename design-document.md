@@ -54,7 +54,8 @@ Schema and routing changes below should be captured in a dedicated spec before i
 
 1. Add lightweight frontmatter for:
    - `topics` (array)
-   - `era` or `theme` (optional short tags)
+   - `theme` (single optional label for the essay’s main framing)
+   - `era` (optional list for historical periods when relevant)
 2. Ranking logic:
    - Same pillar + shared topics first
    - Cross-pillar shared topics second

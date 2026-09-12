@@ -47,7 +47,7 @@
 | 9 | History | Venetian governance and long-horizon institutional design | Support long-memory positioning |
 | 10 | Leadership | How to run postmortems that change behavior | Offer actionable leadership practice |
 | 11 | Myths | The Furies and why unresolved injustice destabilizes systems | Expand justice/order narrative |
-| 12 | History | Industrial safety reforms and the governance of risk | Close quarter with durable lessons |
+| 12 | History | Industrial safety reforms and the governance of risk | Close the quarter with durable lessons |
 
 ## Internal linking plan per published essay
 - Link to 2 same-pillar essays and 1 cross-pillar essay.
