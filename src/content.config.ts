@@ -16,6 +16,10 @@ const essays = defineCollection({
   schema: z.object({
     title: z.string().min(1),
     dek: z.string().min(1),
+    tldr: z.object({
+      summary: z.string().min(1),
+      points: z.array(z.string().min(1)).min(2).max(4),
+    }),
     references: z.array(z.string().min(1)).optional(),
   }),
 });

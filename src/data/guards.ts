@@ -8,17 +8,13 @@ import principles from "./principles";
 import evidence from "./evidence";
 import philosophy from "./philosophy";
 import {
-  archiveSection,
   aboutSection,
   contentPillars,
   editorialStructure,
-  featuredWriting,
   historySection,
   leadershipSection,
   mythsSection,
   navigation,
-  researchSection,
-  startHerePaths,
 } from "./editorial";
 
 function assert(condition: boolean, message: string): void {
@@ -74,19 +70,6 @@ assert(
   "content pillar ids must be unique",
 );
 assert(
-  featuredWriting.length >= 3,
-  `featured writing must have at least 3 cards, got ${featuredWriting.length}`,
-);
-assert(
-  new Set(featuredWriting.map((card) => card.id)).size ===
-    featuredWriting.length,
-  "featured writing ids must be unique",
-);
-assert(
-  startHerePaths.length === editorialStructure.startHerePaths,
-  `start here paths must be ${editorialStructure.startHerePaths}, got ${startHerePaths.length}`,
-);
-assert(
   mythsSection.cards.length === editorialStructure.mythsCards,
   `myths cards must be ${editorialStructure.mythsCards}, got ${mythsSection.cards.length}`,
 );
@@ -95,16 +78,8 @@ assert(
   `history cards must be ${editorialStructure.historyCards}, got ${historySection.cards.length}`,
 );
 assert(
-  researchSection.cards.length === editorialStructure.researchAreas,
-  `research cards must be ${editorialStructure.researchAreas}, got ${researchSection.cards.length}`,
-);
-assert(
   leadershipSection.cards.length === editorialStructure.leadershipCards,
   `leadership cards must be ${editorialStructure.leadershipCards}, got ${leadershipSection.cards.length}`,
-);
-assert(
-  archiveSection.cards.length === editorialStructure.archiveShelves,
-  `archive cards must be ${editorialStructure.archiveShelves}, got ${archiveSection.cards.length}`,
 );
 assert(
   aboutSection.cards.length === editorialStructure.aboutCards,

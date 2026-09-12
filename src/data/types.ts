@@ -18,18 +18,11 @@ export interface LinkDefinition {
   label: string;
 }
 
-export interface HeroHighlight {
-  title: string;
-  description: string;
-}
-
 export interface HeroContent {
   eyebrow: string;
   title: string;
   intro: string;
   primaryCta: LinkDefinition;
-  secondaryCta: LinkDefinition;
-  highlights: HeroHighlight[];
 }
 
 export interface EditorialCard {
@@ -40,7 +33,6 @@ export interface EditorialCard {
   linkLabel: string;
   label?: string;
   meta?: string;
-  items?: string[];
 }
 
 export interface EditorialSection {
@@ -48,14 +40,6 @@ export interface EditorialSection {
   title: string;
   intro: string;
   cards: EditorialCard[];
-}
-
-export interface ReadingPath {
-  id: string;
-  title: string;
-  description: string;
-  href: string;
-  steps: string[];
 }
 
 /** Single source of identity and contact facts (`src/data/profile.ts`). One record. */

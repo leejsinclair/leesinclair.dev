@@ -41,9 +41,10 @@ those, not the components:
 
 Long-form essays are Markdown, not typed data — each pillar's essays live at
 [`src/content/essays/<pillar>/<slug>.md`](src/content/essays/) (`myths`, `history`, or
-`leadership`), with a frontmatter schema (`title`, `dek`, optional `references`) enforced by
-`src/content.config.ts`. One shared route, `src/pages/[pillar]/[slug].astro`, renders every
-essay in every pillar — publishing a new one needs no template changes. See
+`leadership`), with a frontmatter schema (`title`, `dek`, `tldr` — a one-sentence `summary`
+plus 2–4 `points` — and optional `references`) enforced by `src/content.config.ts`. One shared
+route, `src/pages/[pillar]/[slug].astro`, renders every essay in every pillar, including the
+`tldr` as a sidebar summary box — publishing a new one needs no template changes. See
 `specs/003-essay-publishing/`.
 
 Build-time guards in `src/data/guards.ts` fail the build if the principle/evidence/philosophy

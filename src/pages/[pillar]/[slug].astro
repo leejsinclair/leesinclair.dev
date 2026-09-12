@@ -29,7 +29,7 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths;
 
 const { entry } = Astro.props;
-const { title, dek, references } = entry.data;
+const { title, dek, tldr, references } = entry.data;
 const { Content } = await render(entry);
 ---
 
@@ -51,8 +51,18 @@ const { Content } = await render(entry);
         <p class="essay-dek measure">{dek}</p>
       </header>
 
-      <div class="essay-body measure">
-        <Content />
+      <div class="essay-layout">
+        <aside class="essay-tldr" aria-label="Summary">
+          <p class="eyebrow">TL;DR</p>
+          <p class="essay-tldr-summary">{tldr.summary}</p>
+          <ul role="list">
+            {tldr.points.map((point) => <li>{point}</li>)}
+          </ul>
+        </aside>
+
+        <div class="essay-body measure">
+          <Content />
+        </div>
       </div>
 
       {
@@ -99,6 +109,55 @@ const { Content } = await render(entry);
     font-size: var(--step-1);
   }
 
+  .essay-layout {
+    display: grid;
+    gap: var(--space-l);
+  }
+
+  .essay-tldr {
+    padding: var(--space-s) var(--space-m);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: var(--step--1);
+  }
+
+  .essay-tldr-summary {
+    margin-top: var(--space-2xs);
+    color: var(--text);
+  }
+
+  .essay-tldr ul {
+    margin-top: var(--space-xs);
+    padding-inline-start: 1.1em;
+    list-style: revert;
+  }
+
+  .essay-tldr li + li {
+    margin-top: var(--space-2xs);
+  }
+
+  @media (min-width: 60rem) {
+    .essay-layout {
+      grid-template-columns: minmax(0, var(--measure)) minmax(14rem, 18rem);
+      align-items: start;
+    }
+
+    .essay-tldr {
+      grid-column: 2;
+      grid-row: 1;
+      position: sticky;
+      top: var(--space-xl);
+      max-height: calc(100vh - var(--space-xl) * 2);
+      overflow-y: auto;
+    }
+
+    .essay-body {
+      grid-column: 1;
+      grid-row: 1;
+    }
+  }
+
   .essay-body :global(h2) {
     margin-top: var(--space-l);
     margin-bottom: var(--space-s);
@@ -130,6 +189,59 @@ const { Content } = await render(entry);
 
   .essay-body :global(strong) {
     font-weight: 600;
+  }
+
+  .essay-body :global(hr) {
+    margin-block: var(--space-l);
+    border: none;
+    border-top: 1px solid var(--border);
+  }
+
+  .essay-body :global(blockquote) {
+    margin-block: var(--space-m);
+    padding-inline-start: var(--space-s);
+    border-inline-start: 2px solid var(--accent);
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
+  .essay-body :global(blockquote p) {
+    margin-top: 0;
+  }
+
+  .essay-body :global(table) {
+    display: block;
+    overflow-x: auto;
+    margin-top: var(--space-s);
+    border-collapse: collapse;
+    font-size: var(--step--1);
+  }
+
+  .essay-body :global(th),
+  .essay-body :global(td) {
+    padding: var(--space-2xs) var(--space-xs);
+    border: 1px solid var(--border);
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .essay-body :global(th) {
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  .essay-body :global(pre) {
+    margin-top: var(--space-s);
+    padding: var(--space-s);
+    overflow-x: auto;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+
+  .essay-body :global(code) {
+    font-family: var(--font-mono);
+    font-size: var(--step--1);
   }
 
   .essay-references {

@@ -3,54 +3,31 @@ import type {
   EditorialSection,
   HeroContent,
   LinkDefinition,
-  ReadingPath,
 } from "./types";
 
 export const editorialStructure = {
-  navigationItems: 5,
+  navigationItems: 4,
   contentPillars: 3,
-  startHerePaths: 3,
   mythsCards: 3,
   historyCards: 3,
-  researchAreas: 3,
-  leadershipCards: 3,
-  archiveShelves: 3,
+  leadershipCards: 1,
   aboutCards: 2,
   aboutEvidencePreview: 3,
 } as const;
 
 export const navigation = [
-  { label: "Essays", href: "/#essays" },
-  { label: "Research", href: "/#research" },
+  { label: "Myths", href: "/#myths" },
+  { label: "History", href: "/#history" },
   { label: "Leadership", href: "/#leadership" },
   { label: "About", href: "/#about" },
-  { label: "Archive", href: "/#archive" },
 ] satisfies LinkDefinition[];
 
 export const homeHero = {
   eyebrow: "Lee Sinclair",
   title: "Myth, history, and leadership for people shaping institutions.",
   intro:
-    "A bold front page for essays, research notes, and field-tested reflections: part editorial publication, part notebook, part practical guide to power, memory, and capable teams.",
-  primaryCta: { label: "Read Essays", href: "#essays" },
-  secondaryCta: { label: "Start Here", href: "#start-here" },
-  highlights: [
-    {
-      title: "Myths",
-      description:
-        "The stories people inherit, repeat, and mistake for common sense.",
-    },
-    {
-      title: "History",
-      description:
-        "Case studies, turning points, and the long memory behind present decisions.",
-    },
-    {
-      title: "Leadership",
-      description:
-        "Principles, frameworks, and reflections for building capable teams.",
-    },
-  ],
+    "Essays that take old stories seriously, history read for judgement rather than nostalgia, and practical writing on leading technology teams — on power, memory, and what makes a team capable.",
+  primaryCta: { label: "Read Essays", href: "#pillars" },
 } satisfies HeroContent;
 
 export const contentPillars = [
@@ -84,111 +61,14 @@ export const pillarsOverview = {
   eyebrow: "Three pillars",
   title: "Clear lanes for myth, history, and leadership.",
   intro:
-    "The homepage now works like an editorial front page: bold first impression, then immediate routes into the three strands the site is built to hold.",
-} as const;
-
-export const featuredWriting = [
-  {
-    id: "featured-myth",
-    label: "Flagship essay scaffold",
-    title: "The stories institutions live by",
-    description:
-      "Reserved for a lead essay on myth as a living force in organisations, politics, and public language.",
-    href: "#myths",
-    linkLabel: "Open the myths section",
-    meta: "Lead slot",
-  },
-  {
-    id: "featured-history",
-    label: "Historical case study scaffold",
-    title: "What a turning point looks like from inside it",
-    description:
-      "A place for essays that use history to make present choices less shallow and less fashionable.",
-    href: "#history",
-    linkLabel: "Open the history section",
-    meta: "Case study slot",
-  },
-  {
-    id: "featured-research",
-    label: "Research note scaffold",
-    title: "Annotated sources behind the argument",
-    description:
-      "A research-led card for source notes, timelines, and the working bibliography behind future essays.",
-    href: "#research",
-    linkLabel: "Open the research notebook",
-    meta: "Notebook slot",
-  },
-  {
-    id: "featured-leadership",
-    label: "Leadership reflection scaffold",
-    title: "What still matters when the pressure rises",
-    description:
-      "A space for practical reflections on standards, judgement, and responsibility in leadership.",
-    href: "#leadership",
-    linkLabel: "Open the leadership section",
-    meta: "Reflection slot",
-  },
-] satisfies EditorialCard[];
-
-export const essaysOverview = {
-  eyebrow: "Essays",
-  title: "Latest writing, with obvious room to grow.",
-  intro:
-    "These cards are deliberate scaffolds for featured essays, case studies, notebook entries, and reflections. They are easy to replace as new writing is published.",
-} as const;
-
-export const startHerePaths = [
-  {
-    id: "start-myths",
-    title: "Begin with myths",
-    description:
-      "Start with the stories people use to explain order, duty, and destiny, then follow their consequences into the present.",
-    href: "#myths",
-    steps: [
-      "Start with the framing question behind the myths section.",
-      "Move to the historical case studies that test the story against events.",
-      "End with the leadership question the story leaves behind.",
-    ],
-  },
-  {
-    id: "start-history",
-    title: "Begin with history",
-    description:
-      "Use history as the grounding discipline: begin with a turning point, then read outward into myth and leadership.",
-    href: "#history",
-    steps: [
-      "Start with a historical turning point or recurring pattern.",
-      "Follow the inherited story that helped people interpret it.",
-      "Finish with the practical leadership judgement it suggests now.",
-    ],
-  },
-  {
-    id: "start-leadership",
-    title: "Begin with leadership",
-    description:
-      "Come in through practice first, then work backwards into the myths and histories that shape leadership choices.",
-    href: "#leadership",
-    steps: [
-      "Start with a leadership principle or framework.",
-      "Trace it back to the historical pattern it responds to.",
-      "Return to the myths that still influence how authority is understood.",
-    ],
-  },
-] satisfies ReadingPath[];
-
-export const startHereOverview = {
-  eyebrow: "Start here",
-  title: "Three guided ways into the site.",
-  intro:
-    "New readers can come in through myth, history, or leadership. Each path deliberately leads outward into the others so the site feels coherent rather than fragmented.",
-  linkLabel: "Follow this route",
+    "Myths explain why institutions behave as they do, history supplies the evidence, and leadership turns both into practice. Start wherever your problem sits.",
 } as const;
 
 export const mythsSection = {
   eyebrow: "Myths",
-  title: "A place for recurring stories and modern consequences.",
+  title: "Recurring stories, modern consequences.",
   intro:
-    "The myths section is for essays that read old stories seriously without treating them as museum pieces. It connects symbol, ritual, and archetype to the language institutions still use to describe themselves.",
+    "Old stories read seriously, not as museum pieces: essays that connect symbol, ritual, and archetype to the language institutions still use to describe themselves.",
   cards: [
     {
       id: "myths-archetypes",
@@ -199,20 +79,20 @@ export const mythsSection = {
       linkLabel: "Read the essay",
     },
     {
-      id: "myths-institutions",
-      title: "Institutional stories",
+      id: "myths-klumpe-dumpe",
+      title: "Klumpe-Dumpe and the Tragedy of Grantræet",
       description:
-        "A lane for writing on how organisations narrate legitimacy, crisis, and responsibility to themselves.",
-      href: "#research",
-      linkLabel: "See supporting research",
+        "Andersen borrowed a happy ending from the untitled fragment that would become his Klods-Hans tale eleven years later — and The Fir Tree dies of mistaking that borrowed plot for how the world actually works.",
+      href: "/myths/klumpe-dumpe",
+      linkLabel: "Read the essay",
     },
     {
-      id: "myths-modernity",
-      title: "Modern relevance",
+      id: "myths-gilgamesh",
+      title: "From God to Man: Gilgamesh's Descent into Humanity",
       description:
-        "Notes and essays that connect inherited stories to present decisions rather than leaving them as abstraction.",
-      href: "#start-here",
-      linkLabel: "Use the guided path",
+        "The Epic of Gilgamesh traces a semi-divine king's slow acceptance of mortality — from tyrannical excess through Enkidu's death to a truer, human idea of what endures.",
+      href: "/myths/gilgamesh",
+      linkLabel: "Read the essay",
     },
   ],
 } satisfies EditorialSection;
@@ -221,144 +101,49 @@ export const historySection = {
   eyebrow: "History",
   title: "Case studies, long memory, and the cost of shallow timelines.",
   intro:
-    "The history section is for reading events in sequence, not as isolated anecdotes. It creates room for turning points, comparisons across eras, and essays that make the present less narrow.",
+    "Events read in sequence, not as isolated anecdotes: turning points, comparisons across eras, and essays that make the present less narrow.",
   cards: [
     {
-      id: "history-turning-points",
-      title: "Turning points",
+      id: "history-rod-of-asclepius",
+      title: "The Rod of Asclepius: from divine attribute to medical emblem",
       description:
-        "A scaffold for essays on moments when institutions, cultures, or leaders suddenly reveal what they really are.",
-      href: "#essays",
-      linkLabel: "Browse writing slots",
+        "The single-serpent staff is the most historically authentic emblem of medicine — not because of one founding myth, but because institutional transmission, Roman and then modern, carried it forward while a nineteenth-century publishing habit gave clinical medicine a second, unrelated symbol.",
+      href: "/history/rod-of-asclepius",
+      linkLabel: "Read the essay",
     },
     {
-      id: "history-patterns",
-      title: "Recurring patterns",
+      id: "history-beowulf-and-gilgamesh",
+      title:
+        "Heroic Greatness and the Corruption of the Soul: Beowulf and Gilgamesh",
       description:
-        "A place for comparisons across periods, with attention to continuity, drift, and repeated mistakes.",
-      href: "#archive",
-      linkLabel: "Open the archive scaffold",
+        "Beowulf begins as an admirable warrior and Gilgamesh as an oppressive king, yet both epics arrive at the same question — what happens when a society's highest virtues become insufficient for the world that society must preserve.",
+      href: "/history/beowulf-and-gilgamesh",
+      linkLabel: "Read the essay",
     },
     {
       id: "history-context",
       title: "Context before certainty",
       description:
-        "Research-led notes for timelines and context blocks that support slower, better arguments.",
-      href: "#research",
-      linkLabel: "Open the research notebook",
-    },
-  ],
-} satisfies EditorialSection;
-
-export const researchSection = {
-  eyebrow: "Research Notebook",
-  title: "Sources, timelines, and idea maps behind the essays.",
-  intro:
-    "This is the working layer beneath the polished writing: annotated sources, timelines, idea maps, marginalia, and connective notes that make long-form arguments sharper.",
-  cards: [
-    {
-      id: "research-sources",
-      title: "Annotated sources",
-      description:
-        "Short notes on primary texts, commentaries, and references worth keeping in view.",
-      href: "#research",
-      linkLabel: "Keep building the notebook",
-      items: [
-        "Primary source notes",
-        "Commentary worth revisiting",
-        "Questions left open",
-      ],
-    },
-    {
-      id: "research-timelines",
-      title: "Timelines",
-      description:
-        "Chronologies that keep cause, sequence, and consequence visible while an argument is still forming.",
-      href: "#research",
-      linkLabel: "Add timeline entries",
-      items: [
-        "Turning-point sequence",
-        "Parallel developments",
-        "Aftermath and echoes",
-      ],
-    },
-    {
-      id: "research-idea-maps",
-      title: "Idea maps and notes",
-      description:
-        "Working maps that connect themes across myth, history, and leadership before they become finished essays.",
-      href: "#research",
-      linkLabel: "Capture notes",
-      items: ["Concept clusters", "Open comparisons", "Future essay prompts"],
+        "Timelines and context that support slower, better arguments than the instant take.",
+      href: "#pillars",
+      linkLabel: "See the three pillars",
     },
   ],
 } satisfies EditorialSection;
 
 export const leadershipSection = {
   eyebrow: "Leadership",
-  title: "Principles, frameworks, and reflections that stay practical.",
+  title: "Principles that hold, and the writing that tests them.",
   intro:
-    "The leadership section is where abstract thinking is forced back into practice. It is for standards, decisions, team design, and reflections on what holds up when responsibility becomes real.",
+    "How I think about leading teams — standing principles and a philosophy of autonomy, mastery, and purpose — and writing that puts those ideas to work.",
   cards: [
     {
-      id: "leadership-principles",
-      title: "Principles",
+      id: "leadership-ai-assisted-engineering",
+      title: "AI-assisted software engineering",
       description:
-        "Short, durable rules for shaping teams, ownership, quality, and judgement.",
-      href: "#leadership-principles",
-      linkLabel: "Read the principles",
-    },
-    {
-      id: "leadership-frameworks",
-      title: "Frameworks",
-      description:
-        "Scaffold space for playbooks, decision frames, and repeatable ways of thinking under pressure.",
-      href: "#leadership-philosophy",
-      linkLabel: "Read the philosophy",
-    },
-    {
-      id: "leadership-reflections",
-      title: "Reflections",
-      description:
-        "Notes on leadership in lived practice: what worked, what failed, and what is worth keeping.",
-      href: "#about",
-      linkLabel: "See current context",
-    },
-  ],
-} satisfies EditorialSection;
-
-export const archiveSection = {
-  eyebrow: "Archive",
-  title: "A clean structure ready for a growing body of work.",
-  intro:
-    "The archive makes room for depth before the catalogue is full. It groups future essays and notebook entries by theme so new writing has an obvious home from the moment it is published.",
-  cards: [
-    {
-      id: "archive-myths",
-      title: "Myths shelf",
-      description:
-        "A future shelf for essays, notes, and source trails on symbol, ritual, order, and recurring narrative patterns.",
-      href: "#myths",
-      linkLabel: "Jump to myths",
-      items: ["Essays", "Notebook entries", "Source clusters"],
-    },
-    {
-      id: "archive-history",
-      title: "History shelf",
-      description:
-        "A future shelf for timelines, case studies, and comparative essays anchored in sequence and context.",
-      href: "#history",
-      linkLabel: "Jump to history",
-      items: ["Turning points", "Comparisons", "Chronologies"],
-    },
-    {
-      id: "archive-leadership",
-      title: "Leadership shelf",
-      description:
-        "A future shelf for principles, frameworks, and reflections tied back to real responsibility.",
-      href: "#leadership",
-      linkLabel: "Jump to leadership",
-      items: ["Principles", "Frameworks", "Field notes"],
+        "Why the productivity story is far less settled than most organisations assume, and what leaders risk losing in developer capability, wellbeing, and identity if they reinvest time they never actually saved.",
+      href: "/leadership/ai-assisted-software-engineering",
+      linkLabel: "Read the essay",
     },
   ],
 } satisfies EditorialSection;
@@ -373,9 +158,9 @@ export const aboutSection = {
       id: "about-site",
       title: "What belongs here",
       description:
-        "Essays that argue, research notes that show the working, and leadership writing that stays accountable to lived practice.",
-      href: "#start-here",
-      linkLabel: "Use the guided path",
+        "Essays that argue, history that sharpens judgement, and leadership writing that stays accountable to lived practice.",
+      href: "#pillars",
+      linkLabel: "See the three pillars",
     },
     {
       id: "about-context",

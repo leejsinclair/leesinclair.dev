@@ -187,18 +187,6 @@
     color: var(--accent-strong);
   }
 
-  .cta--secondary {
-    background: transparent;
-    border-color: var(--border-strong);
-    color: var(--text);
-  }
-
-  .cta--secondary:hover,
-  .cta--secondary:focus-visible {
-    border-color: var(--accent);
-    color: var(--accent-strong);
-  }
-
   /* Unset-URL state (FR-013): clearly non-interactive, not a broken link. */
   .cta--placeholder {
     background: transparent;
@@ -278,7 +266,6 @@
     break-inside: avoid;
   }
 
-  .panel,
   .card {
     background: none !important;
   }
