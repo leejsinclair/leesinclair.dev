@@ -1,7 +1,6 @@
 import type {
   EditorialCard,
   EditorialSection,
-  HeroContent,
   LinkDefinition,
 } from "./types";
 
@@ -21,14 +20,6 @@ export const navigation = [
   { label: "Leadership", href: "/#leadership" },
   { label: "About", href: "/#about" },
 ] satisfies LinkDefinition[];
-
-export const homeHero = {
-  eyebrow: "Lee Sinclair",
-  title: "Myth, history, and leadership for people shaping institutions.",
-  intro:
-    "Essays that take old stories seriously, history read for judgement rather than nostalgia, and practical writing on leading technology teams — on power, memory, and what makes a team capable.",
-  primaryCta: { label: "Read Essays", href: "#pillars" },
-} satisfies HeroContent;
 
 export const homeTrustSection = {
   ariaLabel: "Why this writing is trustworthy",

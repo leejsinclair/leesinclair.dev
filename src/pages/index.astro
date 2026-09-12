@@ -17,7 +17,6 @@ import {
   contactLabels,
   editorialStructure,
   historySection,
-  homeHero,
   homeTrustSection,
   homeTrustHighlights,
   leadershipDetailLabels,
@@ -27,6 +26,8 @@ import {
 } from "../data/editorial";
 
 const linkedIn = profile.linkedInUrl;
+const roleLineIsDraft = profile.roleLine.status === "draft";
+const positioningIsDraft = profile.positioning.status === "draft";
 ---
 
 <Base>
@@ -40,30 +41,62 @@ const linkedIn = profile.linkedInUrl;
     >
       <div class="shell">
         <div class="hero-copy">
-          <p class="eyebrow">{homeHero.eyebrow}</p>
-          <h1 id="hero-heading">{homeHero.title}</h1>
-          <p class="hero-lede measure">{homeHero.intro}</p>
+          <p class="eyebrow">
+            {profile.roleLine.text}
+            {
+              roleLineIsDraft && (
+                <span class="draft-flag"> (draft — pending Lee’s sign-off)</span>
+              )
+            }
+          </p>
+          <h1 id="hero-heading">
+            {profile.positioning.text}
+            {
+              positioningIsDraft && (
+                <span class="draft-flag"> (draft — pending Lee’s sign-off)</span>
+              )
+            }
+          </h1>
+          <p class="hero-lede measure">{profile.supportingStatement}</p>
 
           <div class="hero-actions">
-            <a class="cta" href={homeHero.primaryCta.href}
-              >{homeHero.primaryCta.label}</a
-            >
+            {
+              linkedIn ? (
+                <a
+                  class="cta"
+                  href={linkedIn}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`${contactLabels.linkedIn} (opens in a new tab)`}
+                >
+                  Let’s talk
+                </a>
+              ) : (
+                <span class="cta cta--placeholder">
+                  {contactLabels.linkedInPlaceholder}
+                </span>
+              )
+            }
           </div>
         </div>
+      </div>
+    </section>
 
-        <aside class="hero-trust card" aria-label={homeTrustSection.ariaLabel}>
+    <section class="section section--trust" aria-label={homeTrustSection.ariaLabel}>
+      <div class="shell">
+        <div class="section-header">
           <h2>{homeTrustSection.title}</h2>
-          <ul class="trust-list" role="list">
-            {
-              homeTrustHighlights.map((item) => (
-                <li>
-                  <h3>{item.title}</h3>
-                  <p>{item.body}</p>
-                </li>
-              ))
-            }
-          </ul>
-        </aside>
+        </div>
+        <div class="card-grid card-grid--three">
+          {
+            homeTrustHighlights.map((item) => (
+              <article class="card trust-card">
+                <h3>{item.title}</h3>
+                <p>{item.body}</p>
+              </article>
+            ))
+          }
+        </div>
       </div>
     </section>
 
@@ -225,8 +258,22 @@ const linkedIn = profile.linkedInUrl;
         </div>
 
         <aside class="card card--stack about-aside">
-          <p class="eyebrow">{profile.roleLine.text}</p>
-          <h3>{profile.positioning.text}</h3>
+          <p class="eyebrow">
+            {profile.roleLine.text}
+            {
+              roleLineIsDraft && (
+                <span class="draft-flag"> (draft — pending Lee’s sign-off)</span>
+              )
+            }
+          </p>
+          <h3>
+            {profile.positioning.text}
+            {
+              positioningIsDraft && (
+                <span class="draft-flag"> (draft — pending Lee’s sign-off)</span>
+              )
+            }
+          </h3>
           <p>{profile.supportingStatement}</p>
 
           <ul class="stack-list" role="list">
@@ -249,6 +296,7 @@ const linkedIn = profile.linkedInUrl;
                 href={linkedIn}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`${contactLabels.linkedIn} (opens in a new tab)`}
               >
                 {contactLabels.linkedIn}
               </a>
@@ -269,11 +317,6 @@ const linkedIn = profile.linkedInUrl;
     padding-block: var(--space-2xl) var(--space-xl);
   }
 
-  .hero-section .shell {
-    display: grid;
-    gap: var(--space-l);
-  }
-
   :where(section, article)[id] {
     scroll-margin-top: var(--header-offset);
   }
@@ -289,7 +332,7 @@ const linkedIn = profile.linkedInUrl;
   }
 
   .hero-copy h1 {
-    max-width: 11ch;
+    max-width: 18ch;
     font-size: var(--step-5);
     text-wrap: pretty;
   }
@@ -300,31 +343,23 @@ const linkedIn = profile.linkedInUrl;
     color: var(--text-muted);
   }
 
-  .hero-trust {
-    align-self: start;
+  .draft-flag {
+    font-family: var(--font-mono);
+    font-size: var(--step--1);
+    color: var(--text-muted);
+    letter-spacing: 0.02em;
+    font-weight: 500;
   }
 
-  .hero-trust h2 {
-    font-size: var(--step-1);
-    margin-bottom: var(--space-s);
+  .section--trust {
+    padding-block: var(--space-l);
   }
 
-  .trust-list {
-    display: grid;
-    gap: var(--space-s);
-  }
-
-  .trust-list li + li {
-    padding-top: var(--space-s);
-    border-top: 1px solid var(--border);
-  }
-
-  .trust-list h3 {
+  .trust-card h3 {
     font-size: var(--step-0);
-    margin-bottom: var(--space-2xs);
   }
 
-  .trust-list p {
+  .trust-card p {
     color: var(--text-muted);
   }
 
@@ -436,12 +471,6 @@ const linkedIn = profile.linkedInUrl;
   }
 
   @media (min-width: 64rem) {
-    .hero-section .shell {
-      grid-template-columns: minmax(0, 1fr) minmax(19rem, 24rem);
-      align-items: start;
-      gap: var(--space-xl);
-    }
-
     .leadership-layout,
     .about-layout {
       grid-template-columns: repeat(2, minmax(0, 1fr));

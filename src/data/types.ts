@@ -18,13 +18,6 @@ export interface LinkDefinition {
   label: string;
 }
 
-export interface HeroContent {
-  eyebrow: string;
-  title: string;
-  intro: string;
-  primaryCta: LinkDefinition;
-}
-
 export interface EditorialCard {
   id: string;
   title: string;
