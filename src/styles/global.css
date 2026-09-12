@@ -27,6 +27,7 @@
 
   html {
     -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
   }
 
   img,
@@ -59,6 +60,10 @@
     line-height: var(--leading-body);
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+  }
+
+  main {
+    display: block;
   }
 
   h1,
@@ -201,6 +206,10 @@
 
 /* Global reduced-motion guard — components layer their own specifics on top. */
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
   *,
   *::before,
   *::after {
@@ -208,6 +217,29 @@
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+@layer base {
+  .skip-link {
+    position: absolute;
+    left: 1rem;
+    top: -5rem;
+    z-index: 20;
+    padding: 0.75rem 1rem;
+    background: var(--accent);
+    color: var(--on-accent);
+    text-decoration: none;
+  }
+
+  .skip-link:focus {
+    top: 1rem;
+  }
+}
+
+@media (max-width: 42rem) {
+  :root {
+    --header-offset: 0rem;
   }
 }
 
@@ -220,6 +252,9 @@
     --accent: #7a4e00;
     --border: #bbb;
     --border-strong: #999;
+    --surface: #fff;
+    --header-bg-solid: #fff;
+    --header-bg: #fff;
   }
 
   body {
@@ -229,6 +264,10 @@
   .section {
     padding-block: 1.5rem;
     break-inside: avoid;
+  }
+
+  .card {
+    background: none !important;
   }
 
   a[href^="http"]::after {

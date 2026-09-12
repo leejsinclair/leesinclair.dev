@@ -1,8 +1,8 @@
-# Lee Sinclair — personal leadership website
+# Lee Sinclair — editorial personal website
 
-A single static page that makes the case for hiring Lee: an experienced technology leader
-with deep technical experience, systems thinking, and genuine people leadership. Built with
-Astro + TypeScript, hand-written CSS, near-zero JavaScript, portable static output.
+A static editorial homepage for essays, research notes, and leadership reflections on myth,
+history, and leadership practice. Built with Astro + TypeScript, hand-written CSS, near-zero
+JavaScript, and portable static output.
 
 Spec and design live in [`specs/001-leadership-hiring-site/`](specs/001-leadership-hiring-site/).
 
@@ -32,14 +32,24 @@ those, not the components:
 | File             | Holds                                                                                       |
 | ---------------- | ------------------------------------------------------------------------------------------- |
 | `profile.ts`     | name, positioning/role lines (draft), supporting statement, **LinkedIn URL**, OG image path |
-| `disciplines.ts` | the five intersection nodes + the diagram's text alternative                                |
+| `editorial.ts`   | homepage hero, navigation, content pillars, writing cards, Start Here paths, section copy   |
 | `principles.ts`  | 3–4 "How I think" principles                                                                |
 | `evidence.ts`    | 1–4 evidence examples (target 3–4)                                                          |
 | `philosophy.ts`  | Autonomy / Mastery / Purpose + the connective line                                          |
+| `disciplines.ts` | the legacy intersection nodes + diagram text alternative                                    |
 | `personal.ts`    | the personal aside (only `confirmed: true` interests render)                                |
 
+Long-form essays are Markdown, not typed data — each pillar's essays live at
+[`src/content/essays/<pillar>/<slug>.md`](src/content/essays/) (`myths`, `history`, or
+`leadership`), with a frontmatter schema (`title`, `dek`, `tldr` — a one-sentence `summary`
+plus 2–4 `points` — and optional `references`) enforced by `src/content.config.ts`. One shared
+route, `src/pages/[pillar]/[slug].astro`, renders every essay in every pillar, including the
+`tldr` as a sidebar summary box — publishing a new one needs no template changes. See
+`specs/003-essay-publishing/`.
+
 Build-time guards in `src/data/guards.ts` fail the build if the principle/evidence/philosophy
-counts drift out of range or the LinkedIn URL is malformed.
+counts drift out of range, the LinkedIn URL is malformed, or a homepage card links to an essay
+that doesn't exist.
 
 ## Analytics
 

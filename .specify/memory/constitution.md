@@ -1,39 +1,51 @@
 <!--
 Sync Impact Report
-- Version change: (unratified template) → 1.0.0
-- Bump rationale: Initial ratification. All placeholder tokens replaced with concrete,
-  project-specific governance derived from CLAUDE.md project intent and
-  specs/001-leadership-hiring-site/spec.md.
-- Principles defined (6):
+- Version change: 1.0.0 → 1.1.0
+- Bump rationale: MINOR — scope expanded to formally recognise the site's evolution (already
+  underway via specs/002-editorial-redesign) from a single-page leadership pitch into an
+  editorial site that publishes long-form essays under three pillars (Myths, History,
+  Leadership). No principle was removed or redefined incompatibly; the "single page, no
+  blog" scope constraint is replaced, and Principle III is clarified to apply per-page across
+  a small, pillar-namespaced set of pages rather than only a single document.
+- Principles defined (6, unchanged in count/order):
   1. Modern, Minimal Stack
   2. Least Code That Does the Job
-  3. Accessible and Resilient by Default
+  3. Accessible and Resilient by Default (clarified: applies to each essay page individually)
   4. Factual Integrity — Invent Nothing (NON-NEGOTIABLE)
   5. Restraint in Design and Copy
   6. Spec-Driven Change
-- Added sections:
-  - Technology and Delivery Constraints
-  - Development Workflow and Quality Gates
-  - Governance
-- Removed sections: none (template slots SECTION_2 / SECTION_3 realised as the two
-  sections above).
+- Modified sections:
+  - Opening framing paragraph — "a single page" reframed as "a homepage plus a small set of
+    long-form essay pages," core audience/purpose unchanged.
+  - Principle III (Accessible and Resilient by Default) — added a sentence clarifying "every
+    page" covers each essay page, not only the homepage.
+  - Technology and Delivery Constraints → **Scope** — replaced the single-page/no-blog/no-nav
+    line with scope language permitting a homepage plus pillar-namespaced essay pages
+    (`myths/<slug>`, `history/<slug>`, `leadership/<slug>`), while still explicitly excluding
+    comments, tags, full-text search, and cross-essay pagination. The other exclusions (no
+    CV/résumé page, no portfolio gallery, no internationalisation, no light theme) are
+    unchanged.
+- Added sections: none.
+- Removed sections: none.
 - Templates and tooling requiring awareness:
   - .specify/templates/plan-template.md — "Constitution Check" gate should reference
     Principles 1–6 by name; verified present as a generic gate, no edit forced.
   - .specify/templates/spec-template.md — no change required.
   - .specify/templates/tasks-template.md — no change required.
   - .claude/agents/{ux-design-reviewer,simplicity-reviewer,content-integrity-reviewer}.md —
-    already aligned with Principles 2, 3, 4, 5.
-- Deferred TODOs: none. RATIFICATION_DATE set to project constitution adoption date
-  (2026-08-29), consistent with the greenfield status of the repository.
+    already aligned with Principles 2, 3, 4, 5; per-page accessibility clarification in
+    Principle III applies directly to ux-design-reviewer's remit for any new essay page.
+- Deferred TODOs: none. This amendment unblocks specs/003-essay-publishing/spec.md, whose
+  Constitution Check gate would otherwise fail against the prior "No blog" scope line.
 -->
 
 # Personal Website Constitution
 
-The project is Lee Sinclair's personal leadership website: a single page whose job is to
-persuade a senior technology hiring decision-maker to start a conversation. This constitution
-governs how the site is built and changed. It supersedes convenience, habit, and tooling
-defaults wherever they conflict.
+The project is Lee Sinclair's personal website: a homepage plus a small set of long-form
+essay pages, whose job is to persuade a senior technology hiring decision-maker to start a
+conversation through both the site's design and its writing. This constitution governs how
+the site is built and changed. It supersedes convenience, habit, and tooling defaults
+wherever they conflict.
 
 ## Core Principles
 
@@ -67,7 +79,10 @@ never written, and restraint in implementation mirrors the argument the page is 
 ### III. Accessible and Resilient by Default
 
 Every page MUST use semantic HTML with exactly one top-level heading and a correct heading
-hierarchy. All content and both calls to action MUST function with JavaScript disabled.
+hierarchy. This applies to each page individually — the homepage and every essay page each
+carry their own single top-level heading, correct hierarchy, and full accessibility
+compliance under this principle; an essay page is never exempted as a "sub-page" of the
+homepage. All content and both calls to action MUST function with JavaScript disabled.
 Every interactive element MUST be keyboard-operable in a logical order with a visible focus
 indicator. Colour contrast MUST meet WCAG 2.1 AA against the dark palette. The layout MUST
 be free of horizontal scrolling from 320px to 2560px and MUST preserve a readable line
@@ -138,9 +153,12 @@ forget. The cycle keeps intent, design, and implementation in agreement.
 - **Metadata**: the page MUST ship the specified title and description, Open Graph metadata,
   and structured data identifying Lee as a person. The Open Graph image reference MUST be
   addable without other changes if the final asset is not yet ready.
-- **Scope**: single page, English, no navigation beyond optional in-page anchors. No blog,
-  no CV/résumé page, no portfolio gallery, no internationalisation, no light theme in the
-  initial version.
+- **Scope**: English only, no internationalisation, no light theme in the initial version.
+  The site is a homepage plus pillar-namespaced essay pages (`myths/<slug>`,
+  `history/<slug>`, `leadership/<slug>`); homepage navigation beyond in-page anchors is
+  limited to linking into published essay pages. Essays MUST NOT grow comments, tags,
+  full-text search, or cross-essay pagination in this scope — those remain out of bounds
+  until a future amendment. No CV/résumé page, no portfolio gallery.
 
 ## Development Workflow and Quality Gates
 
@@ -185,4 +203,4 @@ unjustified deviation as a blocking finding. Unavoidable deviations MUST be docu
 and contributors and MUST stay consistent with this constitution; on conflict, this
 document governs.
 
-**Version**: 1.0.0 | **Ratified**: 2026-08-29 | **Last Amended**: 2026-08-29
+**Version**: 1.1.0 | **Ratified**: 2026-08-29 | **Last Amended**: 2026-09-07

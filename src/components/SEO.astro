@@ -2,23 +2,41 @@
 /**
  * All `<head>` metadata (metadata-contract.md): primary meta, Open Graph, Twitter card,
  * JSON-LD Person, and the conditional analytics tag. Rendered into `Base.astro`'s `head`
- * slot from `src/pages/index.astro`.
+ * slot from every page (`index.astro` and each essay page,
+ * `src/pages/[pillar]/[slug].astro`) — one authoritative metadata source (FR-022,
+ * specs/003-essay-publishing).
  *
- * Title and description are fixed strings from the contract (FR-021). The canonical origin
- * is `astro.config.mjs` `site` (read here as `Astro.site`) — one authoritative source;
- * everything else comes from `profile.ts` (FR-022).
+ * The homepage uses its fixed tagline title/description (FR-021); an essay page passes its
+ * own `title`/`description`/`canonicalPath` so shared links carry a real preview (spec 003,
+ * User Story 3). Essay titles are deliberately "{essay title} | Lee Sinclair" — the reverse
+ * of the homepage's site-identity-first tagline — because a content page's unique title
+ * belongs first for readability and search, while the homepage title is a positioning
+ * statement, not page content. The canonical origin is `astro.config.mjs` `site` (read here
+ * as `Astro.site`) — one authoritative source; everything else comes from `profile.ts`.
  */
 import profile from "../data/profile";
 
-const TITLE = "Lee Sinclair | Technology Leader & Systems Thinker";
-const DESCRIPTION =
-  "Technology leader combining engineering, product, delivery and people leadership to build capable teams and better technology systems.";
+interface Props {
+  title?: string;
+  description?: string;
+  /** Site-relative path, e.g. "/myths/athena". Defaults to the homepage. */
+  canonicalPath?: string;
+  ogType?: "website" | "article";
+}
+
+const {
+  title = "Lee Sinclair | Myth, History, and Leadership",
+  description = "Essays and leadership reflections on myth, history, and the work of shaping capable institutions.",
+  canonicalPath = "/",
+  ogType = "website",
+} = Astro.props;
 
 if (!Astro.site)
   throw new Error(
     "[SEO] astro.config.mjs `site` must be set for canonical/OG URLs.",
   );
 const site = Astro.site.href.replace(/\/$/, "");
+const canonicalUrl = new URL(canonicalPath, site + "/").href;
 const ogImage = new URL(profile.ogImage, site + "/").href;
 
 // JSON-LD Person. No `email` (FR-012a). No worksFor / dates / awards (Constitution IV).
@@ -41,25 +59,24 @@ const analyticsDomain = import.meta.env.PROD
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="color-scheme" content="dark" />
-<title>{TITLE}</title>
-<meta name="description" content={DESCRIPTION} />
-<link rel="canonical" href={site + "/"} />
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonicalUrl} />
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
-<meta property="og:type" content="profile" />
-<meta property="og:title" content={TITLE} />
-<meta property="og:description" content={DESCRIPTION} />
-<meta property="og:url" content={site + "/"} />
+<meta property="og:type" content={ogType} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonicalUrl} />
 <meta property="og:image" content={ogImage} />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content={TITLE} />
-<meta property="profile:first_name" content="Lee" />
-<meta property="profile:last_name" content="Sinclair" />
+<meta property="og:image:alt" content={title} />
+<meta property="og:site_name" content="Lee Sinclair" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content={TITLE} />
-<meta name="twitter:description" content={DESCRIPTION} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={ogImage} />
 
 <script
