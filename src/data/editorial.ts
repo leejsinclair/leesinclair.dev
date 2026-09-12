@@ -23,7 +23,7 @@ export const navigation = [
 
 export const homeTrustSection = {
   ariaLabel: "Why this writing is trustworthy",
-  title: "Why readers trust this work",
+  title: "Why this work is credible",
 } as const;
 
 export const homeTrustHighlights = [
@@ -32,8 +32,8 @@ export const homeTrustHighlights = [
     body: "Leadership writing anchored in real technology delivery, not abstract commentary.",
   },
   {
-    title: "Disciplined editorial lens",
-    body: "Myth, history, and leadership are treated as connected tools for judgement.",
+    title: "Clear method",
+    body: "Each piece links myth, history, and leadership in one coherent argument.",
   },
   {
     title: "Transparent argumentation",

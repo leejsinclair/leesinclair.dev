@@ -41,10 +41,12 @@ const positioningIsDraft = profile.positioning.status === "draft";
     >
       <div class="shell">
         <div class="hero-copy">
+          <p class="hero-name">{profile.name}</p>
           <p class="eyebrow">
             {profile.roleLine.text}
             {
-              roleLineIsDraft && (
+              roleLineIsDraft &&
+                import.meta.env.DEV && (
                 <span class="draft-flag"> (draft — pending Lee’s sign-off)</span>
               )
             }
@@ -52,7 +54,8 @@ const positioningIsDraft = profile.positioning.status === "draft";
           <h1 id="hero-heading">
             {profile.positioning.text}
             {
-              positioningIsDraft && (
+              positioningIsDraft &&
+                import.meta.env.DEV && (
                 <span class="draft-flag"> (draft — pending Lee’s sign-off)</span>
               )
             }
@@ -261,7 +264,8 @@ const positioningIsDraft = profile.positioning.status === "draft";
           <p class="eyebrow">
             {profile.roleLine.text}
             {
-              roleLineIsDraft && (
+              roleLineIsDraft &&
+                import.meta.env.DEV && (
                 <span class="draft-flag"> (draft — pending Lee’s sign-off)</span>
               )
             }
@@ -269,7 +273,8 @@ const positioningIsDraft = profile.positioning.status === "draft";
           <h3>
             {profile.positioning.text}
             {
-              positioningIsDraft && (
+              positioningIsDraft &&
+                import.meta.env.DEV && (
                 <span class="draft-flag"> (draft — pending Lee’s sign-off)</span>
               )
             }
@@ -298,7 +303,7 @@ const positioningIsDraft = profile.positioning.status === "draft";
                 rel="noopener noreferrer"
                 aria-label={`${contactLabels.linkedIn} (opens in a new tab)`}
               >
-                {contactLabels.linkedIn}
+                Let’s talk
               </a>
             ) : (
               <span class="cta cta--placeholder">
@@ -335,6 +340,13 @@ const positioningIsDraft = profile.positioning.status === "draft";
     max-width: 18ch;
     font-size: var(--step-5);
     text-wrap: pretty;
+  }
+
+  .hero-name {
+    font-family: var(--font-display);
+    font-size: var(--step-2);
+    line-height: var(--leading-snug);
+    margin-bottom: var(--space-xs);
   }
 
   .hero-lede {
