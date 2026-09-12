@@ -3,6 +3,11 @@
 ## Goal
 Strengthen first-impression trust, signal real leadership credibility, and make essay discovery scale beyond fixed homepage card limits.
 
+## Delivery guardrails
+- Treat this document as direction, not direct production copy.
+- Implement non-trivial changes through a spec artifact under `specs/` before coding.
+- Keep visitor-facing homepage copy in typed `src/data/*` modules when changes are applied.
+
 ## Current-state findings
 - The homepage structure and copy are centrally managed in `src/data/editorial.ts`, which is good for controlled edits.
 - Homepage sections currently show a fixed number of cards (notably 3 for Myths/History), with guard checks in `src/data/guards.ts`.
@@ -40,11 +45,13 @@ Strengthen first-impression trust, signal real leadership credibility, and make 
 1. **Keep homepage curated, not exhaustive**
    - Use homepage cards as “featured essays,” not full inventory.
 2. **Add dedicated pillar index pages**
-   - Create `/myths`, `/history`, `/leadership` listing all essays in each pillar.
+   - Create `/myths`, `/history`, `/leadership` listing all essays in each pillar (via a new spec and implementation pass).
 3. **Use lightweight curation rules**
    - Feature latest or editor-picked essays on homepage; route depth to pillar indexes.
 
 ## Related-articles approach
+Schema and routing changes below should be captured in a dedicated spec before implementation.
+
 1. Add lightweight frontmatter for:
    - `topics` (array)
    - `era` or `theme` (optional short tags)
