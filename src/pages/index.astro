@@ -18,6 +18,8 @@ import {
   editorialStructure,
   historySection,
   homeHero,
+  homeTrustSection,
+  homeTrustHighlights,
   leadershipDetailLabels,
   leadershipSection,
   mythsSection,
@@ -48,6 +50,20 @@ const linkedIn = profile.linkedInUrl;
             >
           </div>
         </div>
+
+        <aside class="hero-trust card" aria-label={homeTrustSection.ariaLabel}>
+          <h2>{homeTrustSection.title}</h2>
+          <ul class="trust-list" role="list">
+            {
+              homeTrustHighlights.map((item) => (
+                <li>
+                  <h3>{item.title}</h3>
+                  <p>{item.body}</p>
+                </li>
+              ))
+            }
+          </ul>
+        </aside>
       </div>
     </section>
 
@@ -253,6 +269,11 @@ const linkedIn = profile.linkedInUrl;
     padding-block: var(--space-2xl) var(--space-xl);
   }
 
+  .hero-section .shell {
+    display: grid;
+    gap: var(--space-l);
+  }
+
   :where(section, article)[id] {
     scroll-margin-top: var(--header-offset);
   }
@@ -270,11 +291,40 @@ const linkedIn = profile.linkedInUrl;
   .hero-copy h1 {
     max-width: 11ch;
     font-size: var(--step-5);
+    text-wrap: pretty;
   }
 
   .hero-lede {
     margin-top: var(--space-m);
     font-size: var(--step-1);
+    color: var(--text-muted);
+  }
+
+  .hero-trust {
+    align-self: start;
+  }
+
+  .hero-trust h2 {
+    font-size: var(--step-1);
+    margin-bottom: var(--space-s);
+  }
+
+  .trust-list {
+    display: grid;
+    gap: var(--space-s);
+  }
+
+  .trust-list li + li {
+    padding-top: var(--space-s);
+    border-top: 1px solid var(--border);
+  }
+
+  .trust-list h3 {
+    font-size: var(--step-0);
+    margin-bottom: var(--space-2xs);
+  }
+
+  .trust-list p {
     color: var(--text-muted);
   }
 
@@ -297,15 +347,12 @@ const linkedIn = profile.linkedInUrl;
 
   .card {
     padding: clamp(1.25rem, 1rem + 1vw, 2rem);
-    border: 1px solid var(--border);
-    border-radius: 1.25rem;
-    background:
-      linear-gradient(
-        180deg,
-        rgb(255 255 255 / 0.04),
-        rgb(255 255 255 / 0.015)
-      ),
-      var(--surface);
+    border: 1px solid var(--border-strong);
+    border-radius: 0.9rem;
+    background: var(--surface);
+    box-shadow:
+      0 1px 0 rgb(255 255 255 / 0.03) inset,
+      0 10px 30px rgb(0 0 0 / 0.22);
   }
 
   .card p,
@@ -389,6 +436,12 @@ const linkedIn = profile.linkedInUrl;
   }
 
   @media (min-width: 64rem) {
+    .hero-section .shell {
+      grid-template-columns: minmax(0, 1fr) minmax(19rem, 24rem);
+      align-items: start;
+      gap: var(--space-xl);
+    }
+
     .leadership-layout,
     .about-layout {
       grid-template-columns: repeat(2, minmax(0, 1fr));

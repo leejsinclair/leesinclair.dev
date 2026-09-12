@@ -30,6 +30,26 @@ export const homeHero = {
   primaryCta: { label: "Read Essays", href: "#pillars" },
 } satisfies HeroContent;
 
+export const homeTrustSection = {
+  ariaLabel: "Why this writing is trustworthy",
+  title: "Why readers trust this work",
+} as const;
+
+export const homeTrustHighlights = [
+  {
+    title: "Grounded in practice",
+    body: "Leadership writing anchored in real technology delivery, not abstract commentary.",
+  },
+  {
+    title: "Disciplined editorial lens",
+    body: "Myth, history, and leadership are treated as connected tools for judgement.",
+  },
+  {
+    title: "Transparent argumentation",
+    body: "Long-form essays use clear structure, concise summaries, and direct argument.",
+  },
+] satisfies { title: string; body: string }[];
+
 export const contentPillars = [
   {
     id: "myths",
