@@ -21,7 +21,7 @@ Strengthen first-impression trust, signal real leadership credibility, and make 
 2. **Strengthen social proof in About**
    - Add 2–3 compact, concrete outcomes (institution/team/system results) with measurable language.
 3. **Increase source transparency in essays**
-   - Encourage references on more essays and surface “last updated” to reinforce editorial discipline.
+   - Encourage references on more essays and surface “last updated” to reinforce editorial discipline, with any visitor-facing label text sourced from typed `src/data/*` content modules.
 4. **Clarify contact intent**
    - Keep LinkedIn-only CTA, but label it as the preferred professional contact route.
 

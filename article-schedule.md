@@ -34,20 +34,20 @@
 
 ## 12-week publishing schedule
 
-| Week | Pillar | Working title | Purpose |
-|---|---|---|---|
-| 1 | Leadership | Leading through ambiguity without manufacturing certainty | Establish practical leadership voice |
-| 2 | Myths | Cassandra and ignored warnings in executive decision-making | Connect myth to modern governance failures |
-| 3 | History | Bletchley Park and coordinated problem-solving under pressure | Add concrete historical case depth |
-| 4 | Leadership | Managing AI tool adoption without deskilling engineering teams | Extend existing AI leadership narrative |
-| 5 | Myths | Antigone and the limits of procedural authority | Develop ethics + authority thread |
-| 6 | History | The Marshall Plan as strategic reconstruction | Demonstrate institution-building analysis |
-| 7 | Leadership | Decision rights: where autonomy actually breaks down | Reinforce operating-principles utility |
-| 8 | Myths | Prometheus and the ethics of technological acceleration | Bridge innovation ambition and restraint |
-| 9 | History | Venetian governance and long-horizon institutional design | Support long-memory positioning |
-| 10 | Leadership | How to run postmortems that change behavior | Offer actionable leadership practice |
-| 11 | Myths | The Furies and why unresolved injustice destabilizes systems | Expand justice/order narrative |
-| 12 | History | Industrial safety reforms and the governance of risk | Close the quarter with durable lessons |
+Week | Pillar | Working title | Purpose
+--- | --- | --- | ---
+1 | Leadership | Leading through ambiguity without manufacturing certainty | Establish practical leadership voice
+2 | Myths | Cassandra and ignored warnings in executive decision-making | Connect myth to modern governance failures
+3 | History | Bletchley Park and coordinated problem-solving under pressure | Add concrete historical case depth
+4 | Leadership | Managing AI tool adoption without deskilling engineering teams | Extend existing AI leadership narrative
+5 | Myths | Antigone and the limits of procedural authority | Develop ethics + authority thread
+6 | History | The Marshall Plan as strategic reconstruction | Demonstrate institution-building analysis
+7 | Leadership | Decision rights: where autonomy actually breaks down | Reinforce operating-principles utility
+8 | Myths | Prometheus and the ethics of technological acceleration | Bridge innovation ambition and restraint
+9 | History | Venetian governance and long-horizon institutional design | Support long-memory positioning
+10 | Leadership | How to run postmortems that change behavior | Offer actionable leadership practice
+11 | Myths | The Furies and why unresolved injustice destabilizes systems | Expand justice/order narrative
+12 | History | Industrial safety reforms and the governance of risk | Close the quarter with durable lessons
 
 ## Internal linking plan per published essay
 - Link to 2 same-pillar essays and 1 cross-pillar essay.
