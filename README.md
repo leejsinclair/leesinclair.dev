@@ -73,3 +73,10 @@ is deliberately undecided. Before deploying:
   canonical and Open Graph URLs.
 - Sign off the draft hero wording in `profile.ts` (flip `status` to `"signed-off"`).
 - Swap `public/og-image.png` for the final 1200×630 share image (no markup change needed).
+
+## CI artifact
+
+GitHub Actions runs the same `npm ci`, `npm run check`, and `npm run build` flow on pull
+requests, pushes to `main`, and manual dispatches. Each successful run uploads the generated
+`dist/` directory as a `static-site` artifact, which GitHub makes available to download as a
+zip file from the workflow run.
