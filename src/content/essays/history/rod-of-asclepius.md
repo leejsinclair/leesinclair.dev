@@ -1,5 +1,6 @@
 ---
 title: "The Rod of Asclepius: From Divine Attribute to Medical Emblem"
+date: 2026-09-12
 dek: "The single-serpent staff is the most historically authentic emblem of medicine, but not because of any one founding myth. Its survival rests on Roman institutional transmission, and the two-snake caduceus so often confused with it entered medicine only through nineteenth-century publishing and a 1902 US Army decision."
 tldr:
   summary: "The single-serpent Rod of Asclepius is the historically authentic medical emblem, not because of one founding myth, but because Roman institutional transmission carried it forward, while the two-snake caduceus entered medicine only through nineteenth-century publishing and a 1902 US Army decision."

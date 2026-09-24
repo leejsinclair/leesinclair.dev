@@ -1,5 +1,6 @@
 ---
 title: "Heroic Greatness and the Corruption of the Soul: Beowulf and Gilgamesh"
+date: 2026-09-12
 dek: "Beowulf begins as an admirable warrior and Gilgamesh as an oppressive king, yet both epics arrive at the same question: what happens when a society's highest virtues become insufficient for the world that society must preserve."
 tldr:
   summary: "Beowulf's heroic virtue tips into the pride (oferhygd) that leaves his kingdom exposed, while Gilgamesh's tyranny softens into humane, civic greatness: two opposite routes to the same question about a society's highest virtues."

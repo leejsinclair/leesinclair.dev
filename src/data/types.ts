@@ -32,7 +32,6 @@ export interface EditorialSection {
   eyebrow: string;
   title: string;
   intro: string;
-  cards: EditorialCard[];
   /** Optional link to a dedicated pillar index page listing every essay in this pillar. */
   archive?: LinkDefinition;
 }

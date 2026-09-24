@@ -19,6 +19,8 @@ const essays = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/essays" }),
   schema: z.object({
     title: z.string().min(1),
+    /** Publication date. The homepage shows the most recent essays per pillar by this. */
+    date: z.coerce.date(),
     dek: z.string().min(1),
     tldr: z.object({
       summary: z.string().min(1),

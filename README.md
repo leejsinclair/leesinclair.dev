@@ -32,7 +32,7 @@ those, not the components:
 | File             | Holds                                                                                       |
 | ---------------- | ------------------------------------------------------------------------------------------- |
 | `profile.ts`     | name, positioning/role lines (draft), supporting statement, **LinkedIn URL**, OG image path |
-| `editorial.ts`   | homepage hero, navigation, content pillars, writing cards, Start Here paths, section copy   |
+| `editorial.ts`   | homepage hero, navigation, content pillars, Start Here paths, section copy                  |
 | `principles.ts`  | 3–4 "How I think" principles                                                                |
 | `evidence.ts`    | 1–4 evidence examples (target 3–4)                                                          |
 | `philosophy.ts`  | Autonomy / Mastery / Purpose + the connective line                                          |
@@ -41,15 +41,16 @@ those, not the components:
 
 Long-form essays are Markdown, not typed data — each pillar's essays live at
 [`src/content/essays/<pillar>/<slug>.md`](src/content/essays/) (`myths`, `history`, or
-`leadership`), with a frontmatter schema (`title`, `dek`, `tldr` — a one-sentence `summary`
+`leadership`), with a frontmatter schema (`title`, `date`, `dek`, `tldr` — a one-sentence `summary`
 plus 2–4 `points` — and optional `references`) enforced by `src/content.config.ts`. One shared
 route, `src/pages/[pillar]/[slug].astro`, renders every essay in every pillar, including the
-`tldr` as a sidebar summary box — publishing a new one needs no template changes. See
+`tldr` as a sidebar summary box — publishing a new one needs no template changes. The
+homepage lists each pillar's two newest essays by `date` (title and `dek` as the card), so
+there are no hand-written homepage cards to update. See
 `specs/003-essay-publishing/`.
 
 Build-time guards in `src/data/guards.ts` fail the build if the principle/evidence/philosophy
-counts drift out of range, the LinkedIn URL is malformed, or a homepage card links to an essay
-that doesn't exist.
+counts drift out of range, the LinkedIn URL is malformed, or a pillar has no essays.
 
 ## Analytics
 
