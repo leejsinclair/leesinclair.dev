@@ -12,9 +12,10 @@ import { getCollection, render } from "astro:content";
 import type { GetStaticPaths } from "astro";
 import Base from "../../layouts/Base.astro";
 import SEO from "../../components/SEO.astro";
+import { contentPillars } from "../../data/editorial";
 
 export const getStaticPaths = (async () => {
-  const pillars = ["myths", "history", "leadership"];
+  const pillars = contentPillars.map((item) => item.id);
   const entries = await getCollection("essays");
 
   return entries.map((entry) => {

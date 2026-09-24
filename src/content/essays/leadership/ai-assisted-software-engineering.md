@@ -1,12 +1,12 @@
 ---
 title: "AI-Assisted Software Engineering: The Changing Nature of Developer Work, Wellbeing, Identity and Long-Term Capability"
-dek: "AI coding assistants are shifting engineering work from creation to supervision — and the productivity story is far less settled than most organisations assume, with real stakes for capability, wellbeing, and identity."
+dek: "AI coding assistants are shifting engineering work from creation to supervision, and the productivity story is far less settled than most organisations assume, with real stakes for capability, wellbeing, and identity."
 tldr:
-  summary: "AI coding assistants are shifting engineering work from creation to supervision — and the productivity story is far less settled than vendor claims suggest, with real, measurable costs to learning, wellbeing, and long-term capability."
+  summary: "AI coding assistants are shifting engineering work from creation to supervision, and the productivity story is far less settled than vendor claims suggest, with real, measurable costs to learning, wellbeing, and long-term capability."
   points:
-    - "A 2025 randomised trial found developers using AI tools took 19% longer on real tasks, despite believing afterward they'd been 20% faster."
-    - "A longitudinal study found time shifting from creation toward verification, plus negative developer experience nearly doubling (14% to 27%) even as perceived productivity stayed high."
-    - "Passive AI use measurably degrades skill formation and comprehension; active, question-driven use does not — a coachable distinction, not an inherent cost."
+    - "A 2025 randomised trial found developers using AI tools took 19% longer on real tasks, despite believing afterwards they'd been 20% faster."
+    - "A longitudinal study found time shifting from creation towards verification, plus negative developer experience nearly doubling (14% to 27%) even as perceived productivity stayed high."
+    - "Passive AI use measurably degrades skill formation and comprehension; active, question-driven use does not. That's a coachable distinction, not an inherent cost."
     - "Leaders should measure local time savings before reinvesting them, and track capability and wellbeing alongside delivery speed, not instead of it."
 references:
   - "Ahmad, M. O. (2026). Comprehension debt in GenAI-assisted software engineering projects. 30th International Conference on Evaluation and Assessment in Software Engineering (EASE 2026), Glasgow. arXiv:2604.13277."
@@ -25,15 +25,15 @@ references:
 
 ## Introduction
 
-The rapid adoption of AI coding assistants is changing software engineering at a level deeper than tooling. The immediate attraction is obvious: developers can generate, transform, test and explain code much faster. Yet software engineering is not simply the production of source code. It is a socio-technical system involving judgement, learning, collaboration, feedback, ownership, reliability and the development of people.
+AI coding assistants are changing software engineering at a level deeper than tooling. The attraction is obvious: developers can generate, transform, test and explain code much faster. But software engineering was never just the production of source code. It is a socio-technical system that depends on judgement, learning, collaboration, ownership and the development of people.
 
-This creates an important leadership question:
+That raises a leadership question:
 
 > If AI changes the amount of code developers personally write, what happens to the capabilities, motivation, identity and wellbeing that have historically been developed through writing and working with code?
 
-The emerging evidence suggests the answer is neither "AI is bad for developers" nor "AI simply makes developers more productive." A more useful — and more current — conclusion is that AI changes the _distribution_ of work, and that its effect on measured productivity is far less settled than most organisational narratives assume. Creation is increasingly supplemented by generation; implementation is increasingly accompanied by orchestration; and coding is increasingly balanced by evaluation and verification — but the net effect on output, and the toll it takes, varies by task, codebase, and how the tools are used.
+The evidence so far supports neither "AI is bad for developers" nor "AI simply makes developers more productive." What it does show is that AI changes the _distribution_ of work, and that its effect on measured productivity is far less settled than most organisations assume. Developers write less and review, direct and correct more. The net effect on output, and the toll it takes, depends on the task, the codebase and how the tools are used.
 
-This document distinguishes between:
+Where it matters, claims are flagged as one of three kinds:
 
 - **Direct evidence**: findings from named, checkable empirical studies.
 - **Interpretation / synthesis**: conclusions drawn by connecting findings across sources.
@@ -41,50 +41,52 @@ This document distinguishes between:
 
 The central leadership principle:
 
-> AI should increase human leverage without reducing human capability — and leaders should not assume leverage exists until they've measured it.
+> AI should increase human leverage without reducing human capability, and leaders should not assume leverage exists until they've measured it.
 
 ## 1. Productivity Is Not the Same Thing as a Healthy Engineering System
 
-One of the easiest mistakes in the AI era is to equate increased output with increased productivity — or to assume AI produces a time saving at all.
+One of the easiest mistakes in the AI era is to equate increased output with increased productivity, or to assume AI produces a time saving at all.
 
 _Accelerate_ (Forsgren, Humble & Kim, 2018) frames technology performance through system-level delivery measures rather than individual output: deployment frequency, lead time for changes, change failure rate, and time to restore service. The underlying argument is that software delivery performance emerges from the characteristics of the whole system, not from maximising an individual's local activity.
 
 Will Larson's _An Elegant Puzzle_ (2019) treats developer velocity the same way. Increasing the rate at which pull requests or commits are produced doesn't necessarily increase the rate at which useful software reaches customers; bottlenecks simply move elsewhere. Larson also emphasises **organisational slack**: teams running near 100% utilisation lose the capacity to absorb constraints, react to incidents, or improve architecture. Slack is an investment in resilience, not waste.
 
-**A necessary caveat.** Both books predate the current generation of coding assistants, and it would be a mistake to assume their "increase the rate of X" scenario is even happening by default. METR's 2025 randomised controlled trial — 16 experienced open-source developers completing 246 real tasks in their own mature repositories — found that when developers were allowed to use AI tools, they took **19% longer**, not shorter, despite forecasting a 24% speedup beforehand and still believing, after the fact, that they'd been 20% faster (Becker et al., 2025). The gap between perceived and measured effect was large and persisted across the study's robustness checks. This doesn't mean AI never helps — later work and other settings show real gains — but it means the premise "AI produces a 30% improvement" needs local measurement, not assumption.
+**A necessary caveat.** Both books predate the current generation of coding assistants, and we can't assume the rate of useful output is going up at all. METR's 2025 randomised controlled trial followed 16 experienced open-source developers through 246 real tasks in their own mature repositories. When they were allowed to use AI tools, tasks took **19% longer**. Beforehand, the developers forecast a 24% speedup. Afterwards, they still believed they had been 20% faster (Becker et al., 2025). The slowdown held up across the study's robustness checks.
+
+AI does help in some settings, and some later studies show real gains (see section 6). But a claim like "AI gives us a 30% improvement" needs to be measured locally, not assumed.
 
 **Leadership implication.** The right sequence of questions is now:
 
-1. Are we actually measuring whether AI is saving time on our tasks, in our codebase — or assuming it from vendor claims and individual perception?
+1. Are we actually measuring whether AI is saving time on our tasks, in our codebase, or assuming it from vendor claims and individual perception?
 2. If it is, where is the bottleneck now, and how should we invest the recovered capacity?
 
 ## 2. The Nature of Developer Work Is Changing
 
 ### Direct Evidence: The Creation-to-Verification Shift
 
-Annie Vella and Kelly Blincoe's longitudinal study (University of Auckland, 2026) tracked professional software engineers across two questionnaires six months apart — 158 eligible participants at the first time point, 101 at the second, 95 matched across both, spanning 28 countries.
+Annie Vella and Kelly Blincoe's longitudinal study (University of Auckland, 2026) tracked professional software engineers across two questionnaires six months apart (158 eligible participants at the first time point, 101 at the second, 95 matched across both, spanning 28 countries).
 
 Key findings:
 
 - 82% of participants reported spending less time writing code by the second time point.
 - Five of six measured development activities (designing, writing, refactoring, testing, debugging) showed reduced time; **reviewing was the only activity that increased**, and only slightly.
-- The balance between creation-oriented and verification-oriented work shifted measurably toward verification (p = 0.006, moderate effect).
+- The balance between creation-oriented and verification-oriented work shifted measurably towards verification (p = 0.006, moderate effect).
 
 Vella names this new category **supervisory engineering work**, comprising three activities:
 
-- **Directing** — specifying intent, crafting prompts, managing context, and codifying standards into reusable agent instructions.
-- **Evaluating** — reading AI-generated output and deciding what to accept, modify, or reject.
-- **Correcting** — fixing errors, integrating output into existing code, and maintaining consistency.
+- **Directing**: specifying intent, crafting prompts, managing context, and codifying standards into reusable agent instructions.
+- **Evaluating**: reading AI-generated output and deciding what to accept, modify, or reject.
+- **Correcting**: fixing errors, integrating output into existing code, and maintaining consistency.
 
-_(Retaining accountability for what ships is a real and important leadership concern, but it is a synthesis point added for this document — not part of Vella's published taxonomy.)_
+Accountability for what ships sits alongside these, though it is not part of Vella's taxonomy.
 
 ### Interpretation
 
-The underlying complexity of software development doesn't vanish; its locus shifts from generation to critical appraisal. Crucially, Vella's data also shows the "obvious" reallocation — freed-up coding time flowing into design and architecture — did not occur. Time compressed across nearly everything, including design, rather than shifting to it.
+The complexity of software development doesn't vanish. It moves from writing code to judging it. Vella's data also shows the "obvious" reallocation (freed-up coding time flowing into design and architecture) did not occur. Time compressed across nearly everything, including design, rather than shifting to it.
 
 ## 3. The Productivity–Experience Paradox
 
-Vella's study also found a genuine tension: productivity _perceptions_ held stable and positive — 84% of participants reported improvement at both time points — while, among the matched cohort, the proportion reporting **negative developer experience nearly doubled, from 14% to 27%**, over the same six months.
+Vella's study also found a genuine tension: productivity _perceptions_ held stable and positive (84% of participants reported improvement at both time points), while, among the matched cohort, the proportion reporting **negative developer experience nearly doubled, from 14% to 27%**, over the same six months.
 
 This is the productivity–experience paradox: conventional engineering metrics can look healthy while a developer's subjective experience of flow, agency, and satisfaction with the work erodes.
 
@@ -92,7 +94,7 @@ This is the productivity–experience paradox: conventional engineering metrics 
 
 ## 4. Developer Experience Is More Than Removing Friction
 
-DevEx is often oversimplified as the elimination of operational friction. AI excels at removing mechanical friction — but not all friction in engineering is wasteful.
+DevEx is often oversimplified as the elimination of operational friction. AI excels at removing mechanical friction, but not all friction in engineering is wasteful.
 
 | Friction Category | Example                                                    | Recommended Action |
 | ----------------- | ---------------------------------------------------------- | ------------------ |
@@ -109,37 +111,37 @@ The underlying research basis for "preserve the struggle" rows is Robert Bjork's
 
 ## 5. Learning and the Capability Paradox
 
-AI dramatically shortens the traditional trial-failure-debug-resolve loop through which engineers build intuition. That's valuable for speed, but it risks bypassing the cognitive struggle through which real comprehension forms.
+Engineers have always built intuition by trying something, watching it fail, debugging it and fixing it. AI shortens that loop dramatically. Good for speed, but it can skip the struggle where real understanding forms.
 
 ### Direct Evidence: Skill Formation Under AI Assistance
 
-Anthropic's 2026 randomised controlled trial on AI and skill formation had 52 software engineers learn a new library, split between AI-assisted and unassisted conditions. Both groups completed the task in similar time, but the AI-assisted group scored **17% lower on a follow-up comprehension quiz** (50% vs. 67%), with the largest gaps in debugging and smaller but still significant drops in conceptual understanding. Critically, the study found the effect was conditional on _how_ AI was used: participants who asked conceptual questions and used AI to check their own reasoning scored as well as, or better than, the unassisted group; those who passively delegated ("just make it work") scored worst. Academic work on this same phenomenon has begun calling it **comprehension debt** (Ahmad, 2026).
+Anthropic's 2026 randomised controlled trial on AI and skill formation had 52 software engineers learn a new library, split between AI-assisted and unassisted conditions. Both groups completed the task in similar time, but the AI-assisted group scored **17 percentage points lower on a follow-up comprehension quiz** (50% vs. 67%), with the largest gaps in debugging and smaller but still significant drops in conceptual understanding. The effect depended on _how_ AI was used: participants who asked conceptual questions and used AI to check their own reasoning scored close to the unassisted group; those who passively delegated ("just make it work") scored worst. Academic work on this same phenomenon has begun calling it **comprehension debt** (Ahmad, 2026).
 
-This is a more precise and better-sourced replacement for the "IEEE TSE" claim in the original draft, and it changes the leadership takeaway: the risk isn't AI use itself, it's _passive_ AI use.
+That changes the leadership takeaway. The risk is _passive_ AI use, not AI use in general.
 
 ### Contextual Counter-Evidence
 
-A separate, controlled experiment by Borg et al. ("Echoes of AI," 2026) — 151 participants, mostly professional developers, extending a Java web application with and without AI assistance, followed by a second phase where new developers evolved the resulting code — found no evidence that AI-assisted code was inherently worse in readability or complexity, using the CodeHealth metric.
+A separate controlled experiment points the other way. In "Echoes of AI" (Borg et al., 2026), 151 participants, mostly professional developers, extended a Java web application with and without AI assistance. In a second phase, new developers evolved the resulting code. Measured by the CodeHealth metric, the AI-assisted code was no harder to read and no more complex.
 
-This appears to sit in tension with large-scale industry telemetry: GitClear and GitKraken's 2026 analysis of over 600 million real-world code changes found rising code duplication (+81%) and increased short-lived code churn as AI adoption grew (LeadDev, 2026). The likely reconciliation is methodological — a bounded, single-application controlled experiment measures something different from longitudinal telemetry across thousands of repositories and teams with varying review discipline. The honest summary is that the maintainability question is **not yet settled**, and any claim that AI-generated code is safe (or unsafe) for long-term maintenance "by default" is overstating the current evidence in either direction.
+That sits in tension with large-scale industry telemetry: GitClear and GitKraken's 2026 analysis of over 600 million real-world code changes found rising code duplication (+81%) and increased short-lived code churn as AI adoption grew (LeadDev, 2026). The likely reconciliation is methodological: a bounded, single-application controlled experiment measures something different from longitudinal telemetry across thousands of repositories and teams with varying review discipline. The honest summary is that the maintainability question is **not yet settled**, and any claim that AI-generated code is safe (or unsafe) for long-term maintenance "by default" is overstating the current evidence in either direction.
 
-## 6. Verification Is Work — and It Has a Cognitive Cost
+## 6. Verification Is Work, and It Has a Cognitive Cost
 
-A 2026 CHI study, "When Help Hurts: Verification Load and Fatigue with AI Coding Assistants" (N = 60, three Python tasks), gives the clearest available measurement of this. AI assistance, pooled across interaction styles, **reduced self-reported workload by 18.2 points** on the NASA-TLX scale and cut task time by 22% versus no-AI, while also improving correctness. The same study introduced a behavioural "verification-load" index (compile/test failures, churn, pauses, context switches) and found it **partially explained rising stress and fatigue over repeated use** — meaning the net benefit on any single task can be real and measurable, while the cumulative cost of sustained verification work still builds over time.
+A 2026 CHI study, "When Help Hurts: Verification Load and Fatigue with AI Coding Assistants" (N = 60, three Python tasks), gives the clearest available measurement of this. AI assistance, pooled across interaction styles, **reduced self-reported workload by 18.2 points** on the NASA-TLX scale and cut task time by 22% versus no-AI, while also improving correctness. The same study built a behavioural "verification-load" index from compile and test failures, churn, pauses and context switches. That index **partially explained rising stress and fatigue over repeated use**.
 
-That's a more accurate statement than "AI reduces creation effort while increasing verification effort in a straight offset" — the picture is a short-term net gain with a longer-run fatigue tax, not a wash on every task.
+So AI does not simply trade creation effort for an equal amount of verification effort. On a single task it can be a clear win. Over weeks of sustained use, the verification load adds up to a fatigue tax.
 
 ## 7. Autonomy, Competence, and Relatedness (SDT Perspective)
 
 Self-Determination Theory (Deci & Ryan) holds that motivation and wellbeing depend on three basic psychological needs:
 
-1. **Autonomy** — _Positive_: developers can prototype independently and unblock themselves on syntax. _Risk_: if management converts tool efficiency into tighter deadlines, autonomy collapses into an imposed production quota.
-2. **Competence** — _Positive_: AI can act as a tutor, explaining unfamiliar APIs. _Risk_: over-reliance prevents developers from mastering underlying principles — consistent with the comprehension-debt evidence above.
-3. **Relatedness** — _Positive_: teams use AI to aggregate domain knowledge and onboard faster. _Risk_: if developers consult AI instead of pairing with peers, knowledge transfer and team cohesion degrade.
+1. **Autonomy**: _Positive_: developers can prototype independently and unblock themselves on syntax. _Risk_: if management converts tool efficiency into tighter deadlines, autonomy collapses into an imposed production quota.
+2. **Competence**: _Positive_: AI can act as a tutor, explaining unfamiliar APIs. _Risk_: over-reliance prevents developers from mastering underlying principles, consistent with the comprehension-debt evidence above.
+3. **Relatedness**: _Positive_: teams use AI to aggregate domain knowledge and onboard faster. _Risk_: if developers consult AI instead of pairing with peers, knowledge transfer and team cohesion degrade.
 
 ## 8. Identity and the Evolution of Craftsmanship
 
-Engineering identity has historically been tied to craftsmanship — the tactile act of constructing systems, refactoring algorithms, and solving problems manually. As AI assumes more generation tasks, engineering identity evolves toward direction, evaluation, and judgement rather than manual construction. This is not inherently negative — professions routinely advance up levels of abstraction — but leadership must ensure the new role still offers real mastery, agency, and pride in execution, not just supervision of output the engineer doesn't fully understand.
+Engineering identity has historically been tied to craftsmanship: the tactile act of constructing systems, refactoring algorithms, and solving problems manually. As AI takes on more of the generation, that identity moves towards direction, evaluation and judgement. That isn't a bad thing in itself. Professions move up levels of abstraction all the time. The leadership job is to make sure the new role still offers real mastery and pride in the work, and doesn't shrink to supervising output the engineer doesn't fully understand.
 
 ## 9. The Inner, Middle, and Outer Loops
 
@@ -155,7 +157,7 @@ Vella's "three-loop model" (2026) gives leadership a concrete way to talk about 
                                 v
 +-----------------------------------------------------------------+
 |                         MIDDLE LOOP                             |
-|    (Direct AI -> Evaluate Output -> Correct Errors)              |
+|    (Direct AI -> Evaluate Output -> Correct Errors)             |
 |              * The Critical Human Judgement Zone *              |
 +-----------------------------------------------------------------+
                                 |
@@ -167,9 +169,9 @@ Vella's "three-loop model" (2026) gives leadership a concrete way to talk about 
 +-----------------------------------------------------------------+
 ```
 
-The middle loop is, by Vella's own account, still largely unoptimised — engineers are assembling it from chat windows, terminal agents, and IDEs that weren't designed for supervisory work. It was independently identified as a standout concept at ThoughtWorks' 2026 "Future of Software Development" retreat, described there as a "first-mover concept" that "nobody in the industry has named yet" — a useful, checkable signal that this framing has traction beyond one paper.
+The middle loop is, by Vella's own account, still largely unoptimised: engineers are assembling it from chat windows, terminal agents, and IDEs that weren't designed for supervisory work. ThoughtWorks' 2026 "Future of Software Development" retreat picked it out independently as a "first-mover concept" that "nobody in the industry has named yet," so the idea has traction beyond one paper.
 
-This is where engineering leadership should focus: it's where human domain knowledge, architectural vision, and verification rigor prevent AI-generated technical debt from reaching production.
+This is where engineering leadership should focus. The middle loop is where domain knowledge, architectural judgement and careful verification stop AI-generated technical debt from reaching production.
 
 ## 10. Strategic Task Allocation: What to Automate
 
@@ -181,7 +183,7 @@ To maintain team capability while leveraging AI speed:
 
 ## 11. Avoiding "Capability Debt"
 
-Analogous to technical debt, **capability debt** occurs when an organisation successfully delivers software in the short term but fails to maintain the internal human understanding required to evolve, debug, and operate those systems long-term. The academic literature is beginning to converge on similar language — "comprehension debt" (Ahmad, 2026) describes essentially the same phenomenon at the individual level.
+Like technical debt, **capability debt** builds up quietly. An organisation keeps shipping software, but loses the human understanding it needs to evolve, debug and operate those systems later. Researchers are arriving at similar language: "comprehension debt" (Ahmad, 2026) describes the same problem at the individual level.
 
 Indicators of capability debt:
 
@@ -192,7 +194,7 @@ Indicators of capability debt:
 
 ## 12. A Balanced Engineering Scorecard
 
-Evaluating AI adoption purely by commit volume or velocity induces local optimisation at the expense of system health. A balanced framework tracks system outcomes, quality, and human capability together:
+Judge AI adoption by commit volume or velocity alone and teams will optimise locally at the expense of system health. A balanced scorecard tracks outcomes, quality and human capability together:
 
 | Dimension            | Primary Focus         | Recommended Metrics                                                |
 | -------------------- | --------------------- | ------------------------------------------------------------------ |
@@ -203,15 +205,15 @@ Evaluating AI adoption purely by commit volume or velocity induces local optimis
 | Capability & Growth  | Learning & Mentorship | Knowledge-sharing cadence, architecture comprehension checks       |
 | Business Outcomes    | Value Delivered       | Customer value metrics, system resilience, feature impact          |
 
-On System Stability specifically: Google's DORA research has reported that increased AI usage correlates with _reduced_ stability in some cohorts (roughly 7% more instability per 25% increase in AI usage, per DORA's 2024–2025 reporting cycles, as summarised in LeadDev, 2026) — a reminder that "stability" deserves its own line on the scorecard rather than being assumed to move in step with delivery speed.
+Stability earns its own row. DORA's 2024 report estimated that every 25% rise in AI adoption went with a drop of about 7% in delivery stability, and the 2025 report still found a stability cost (as summarised in LeadDev, 2026). Don't assume stability moves in step with delivery speed.
 
 ## 13. Summary Leadership Principles
 
-- **Measure before you reinvest.** Don't assume AI has created spare capacity — METR's data shows perceived and measured speed can point in opposite directions. Check locally before reallocating time.
+- **Measure before you reinvest.** Don't assume AI has created spare capacity. METR's data shows perceived and measured speed can point in opposite directions. Check locally before reallocating time.
 - **Leverage over replacement.** Use AI to remove mechanical burden without eliminating developmental learning opportunities.
-- **Focus on system constraints.** Treat any real velocity gains as capacity to reinvest into architecture, testing, slack, and capability — not as mandatory output-volume increases.
+- **Focus on system constraints.** Treat any real velocity gains as capacity to reinvest into architecture, testing, slack, and capability, not as mandatory output-volume increases.
 - **Elevate the middle loop.** Explicitly teach and evaluate prompt intent, context boundary definition, and output verification as core engineering competencies.
 - **Protect engineering mastery.** Ensure senior engineers mentor juniors through complex problem-solving rather than delegating foundational understanding entirely to automated tools.
 - **Design for active, not passive, AI use.** The skill-formation evidence is consistent: comprehension holds up when engineers interrogate AI output and degrades when they accept it passively. That distinction is coachable, and worth making explicit in onboarding and review norms.
 
-> AI should make the organisation more capable — not merely more output-dense — and leadership shouldn't take the "more output" part on faith either.
+> AI should make the organisation more capable, not merely more output-dense, and leadership shouldn't take the "more output" part on faith either.

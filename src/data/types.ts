@@ -18,13 +18,6 @@ export interface LinkDefinition {
   label: string;
 }
 
-export interface HeroContent {
-  eyebrow: string;
-  title: string;
-  intro: string;
-  primaryCta: LinkDefinition;
-}
-
 export interface EditorialCard {
   id: string;
   title: string;
@@ -40,6 +33,8 @@ export interface EditorialSection {
   title: string;
   intro: string;
   cards: EditorialCard[];
+  /** Optional link to a dedicated pillar index page listing every essay in this pillar. */
+  archive?: LinkDefinition;
 }
 
 /** Single source of identity and contact facts (`src/data/profile.ts`). One record. */

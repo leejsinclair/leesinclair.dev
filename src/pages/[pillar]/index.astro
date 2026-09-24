@@ -1,0 +1,123 @@
+---
+/**
+ * Pillar index page — lists every essay under one pillar (Myths, History, Leadership).
+ * One shared template, mirroring [slug].astro's getStaticPaths-from-collection pattern,
+ * so a new essay file appears here automatically with no template change. This is the
+ * archive path referenced by each homepage section's "View all … essays" link.
+ */
+import { getCollection } from "astro:content";
+import type { GetStaticPaths } from "astro";
+import Base from "../../layouts/Base.astro";
+import SEO from "../../components/SEO.astro";
+import { contentPillars } from "../../data/editorial";
+
+export const getStaticPaths = (async () => {
+  const pillars = ["myths", "history", "leadership"] as const;
+  const entries = await getCollection("essays");
+
+  return pillars.map((pillar) => ({
+    params: { pillar },
+    props: {
+      essays: entries
+        .filter((entry) => entry.id.startsWith(`${pillar}/`))
+        .sort((a, b) => a.data.title.localeCompare(b.data.title)),
+    },
+  }));
+}) satisfies GetStaticPaths;
+
+const { pillar } = Astro.params;
+const { essays } = Astro.props;
+const pillarMeta = contentPillars.find((item) => item.id === pillar)!;
+---
+
+<Base>
+  <SEO
+    slot="head"
+    title={`${pillarMeta.title} | Lee Sinclair`}
+    description={pillarMeta.description}
+    canonicalPath={`/${pillar}`}
+  />
+
+  <article class="pillar-index">
+    <div class="shell">
+      <a class="pillar-home-link" href="/">← Back to homepage</a>
+
+      <header class="pillar-index-header">
+        <p class="eyebrow">Pillar</p>
+        <h1>{pillarMeta.title}</h1>
+        <p class="measure">{pillarMeta.description}</p>
+      </header>
+
+      <ul class="pillar-index-list" role="list">
+        {
+          essays.map((entry) => (
+            <li>
+              <h2>{entry.data.title}</h2>
+              <p class="measure">{entry.data.dek}</p>
+              <a class="pillar-index-link" href={`/${entry.id}`}>
+                Read the essay
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </article>
+</Base>
+
+<style>
+  .pillar-index {
+    padding-block: var(--space-xl);
+  }
+
+  .pillar-home-link {
+    display: inline-block;
+    margin-bottom: var(--space-l);
+    color: var(--text-muted);
+    font-size: var(--step--1);
+    text-decoration: none;
+  }
+
+  .pillar-home-link:hover,
+  .pillar-home-link:focus-visible {
+    color: var(--accent-strong);
+  }
+
+  .pillar-index-header {
+    margin-bottom: var(--space-xl);
+  }
+
+  .pillar-index-header p:not(.eyebrow) {
+    margin-top: var(--space-xs);
+    color: var(--text-muted);
+    font-size: var(--step-1);
+  }
+
+  .pillar-index-list {
+    display: grid;
+    gap: var(--space-l);
+  }
+
+  .pillar-index-list li + li {
+    padding-top: var(--space-l);
+    border-top: 1px solid var(--border);
+  }
+
+  .pillar-index-list p {
+    margin-top: var(--space-xs);
+    color: var(--text-muted);
+  }
+
+  .pillar-index-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-top: var(--space-m);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .pillar-index-link::after {
+    content: "→";
+  }
+</style>

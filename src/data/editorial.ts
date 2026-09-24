@@ -1,17 +1,11 @@
-import type {
-  EditorialCard,
-  EditorialSection,
-  HeroContent,
-  LinkDefinition,
-} from "./types";
+import type { EditorialCard, EditorialSection, LinkDefinition } from "./types";
 
 export const editorialStructure = {
-  navigationItems: 4,
+  navigationItems: 5,
   contentPillars: 3,
   mythsCards: 3,
-  historyCards: 3,
-  leadershipCards: 1,
-  aboutCards: 2,
+  historyCards: 2,
+  leadershipCards: 2,
   aboutEvidencePreview: 3,
 } as const;
 
@@ -19,16 +13,12 @@ export const navigation = [
   { label: "Myths", href: "/#myths" },
   { label: "History", href: "/#history" },
   { label: "Leadership", href: "/#leadership" },
+  { label: "Thoughts", href: "/thoughts" },
   { label: "About", href: "/#about" },
 ] satisfies LinkDefinition[];
 
-export const homeHero = {
-  eyebrow: "Lee Sinclair",
-  title: "Myth, history, and leadership for people shaping institutions.",
-  intro:
-    "Essays that take old stories seriously, history read for judgement rather than nostalgia, and practical writing on leading technology teams — on power, memory, and what makes a team capable.",
-  primaryCta: { label: "Read Essays", href: "#pillars" },
-} satisfies HeroContent;
+export const homeCredibilityLine =
+  "Every essay here links myth, history, and leadership is part of my journey, I'm and engaged learner and problem solver. This page is an small insight into the things I consider";
 
 export const contentPillars = [
   {
@@ -59,9 +49,6 @@ export const contentPillars = [
 
 export const pillarsOverview = {
   eyebrow: "Three pillars",
-  title: "Clear lanes for myth, history, and leadership.",
-  intro:
-    "Myths explain why institutions behave as they do, history supplies the evidence, and leadership turns both into practice. Start wherever your problem sits.",
 } as const;
 
 export const mythsSection = {
@@ -74,7 +61,7 @@ export const mythsSection = {
       id: "myths-archetypes",
       title: "Athena: goddess of disciplined intelligence",
       description:
-        "From a Bronze Age cult title to the Classical patron of the polis: how Athena's warfare, craft, and wisdom trace one idea — skilled intelligence applied to human order.",
+        "From a Bronze Age cult title to the Classical patron of the polis, Athena's warfare, craft, and wisdom trace one idea: skilled intelligence applied to human order.",
       href: "/myths/athena",
       linkLabel: "Read the essay",
     },
@@ -82,7 +69,7 @@ export const mythsSection = {
       id: "myths-klumpe-dumpe",
       title: "Klumpe-Dumpe and the Tragedy of Grantræet",
       description:
-        "Andersen borrowed a happy ending from the untitled fragment that would become his Klods-Hans tale eleven years later — and The Fir Tree dies of mistaking that borrowed plot for how the world actually works.",
+        "Andersen borrowed a happy ending from the untitled fragment that would become his Klods-Hans tale eleven years later, and The Fir Tree dies of mistaking that borrowed plot for how the world actually works.",
       href: "/myths/klumpe-dumpe",
       linkLabel: "Read the essay",
     },
@@ -90,11 +77,12 @@ export const mythsSection = {
       id: "myths-gilgamesh",
       title: "From God to Man: Gilgamesh's Descent into Humanity",
       description:
-        "The Epic of Gilgamesh traces a semi-divine king's slow acceptance of mortality — from tyrannical excess through Enkidu's death to a truer, human idea of what endures.",
+        "The Epic of Gilgamesh traces a semi-divine king's slow acceptance of mortality: from tyrannical excess through Enkidu's death to a truer, human idea of what endures.",
       href: "/myths/gilgamesh",
       linkLabel: "Read the essay",
     },
   ],
+  archive: { href: "/myths", label: "View all myths essays" },
 } satisfies EditorialSection;
 
 export const historySection = {
@@ -107,7 +95,7 @@ export const historySection = {
       id: "history-rod-of-asclepius",
       title: "The Rod of Asclepius: from divine attribute to medical emblem",
       description:
-        "The single-serpent staff is the most historically authentic emblem of medicine — not because of one founding myth, but because institutional transmission, Roman and then modern, carried it forward while a nineteenth-century publishing habit gave clinical medicine a second, unrelated symbol.",
+        "The single-serpent staff is the most historically authentic emblem of medicine, not because of one founding myth, but because institutional transmission, Roman and then modern, carried it forward while a nineteenth-century publishing habit gave clinical medicine a second, unrelated symbol.",
       href: "/history/rod-of-asclepius",
       linkLabel: "Read the essay",
     },
@@ -116,26 +104,19 @@ export const historySection = {
       title:
         "Heroic Greatness and the Corruption of the Soul: Beowulf and Gilgamesh",
       description:
-        "Beowulf begins as an admirable warrior and Gilgamesh as an oppressive king, yet both epics arrive at the same question — what happens when a society's highest virtues become insufficient for the world that society must preserve.",
+        "Beowulf begins as an admirable warrior and Gilgamesh as an oppressive king, yet both epics arrive at the same question: what happens when a society's highest virtues become insufficient for the world that society must preserve.",
       href: "/history/beowulf-and-gilgamesh",
       linkLabel: "Read the essay",
     },
-    {
-      id: "history-context",
-      title: "Context before certainty",
-      description:
-        "Timelines and context that support slower, better arguments than the instant take.",
-      href: "#pillars",
-      linkLabel: "See the three pillars",
-    },
   ],
+  archive: { href: "/history", label: "View all history essays" },
 } satisfies EditorialSection;
 
 export const leadershipSection = {
   eyebrow: "Leadership",
   title: "Principles that hold, and the writing that tests them.",
   intro:
-    "How I think about leading teams — standing principles and a philosophy of autonomy, mastery, and purpose — and writing that puts those ideas to work.",
+    "How I think about leading teams: standing principles, a philosophy of autonomy, mastery, and purpose, and writing that puts those ideas to work.",
   cards: [
     {
       id: "leadership-ai-assisted-engineering",
@@ -145,7 +126,17 @@ export const leadershipSection = {
       href: "/leadership/ai-assisted-software-engineering",
       linkLabel: "Read the essay",
     },
+    {
+      id: "leadership-contextual-anchor",
+      title:
+        "The Contextual Anchor: Reimagining Leadership Purpose in the Era of AI Coding Agents",
+      description:
+        "As AI agents take on more of the mechanics of coding, purpose becomes the anchor that helps engineers judge whether an AI-assisted solution is actually good, but it only works alongside autonomy, mastery, and psychological safety, not in place of them.",
+      href: "/leadership/contextual-anchor-ai-coding-agents",
+      linkLabel: "Read the essay",
+    },
   ],
+  archive: { href: "/leadership", label: "View all leadership essays" },
 } satisfies EditorialSection;
 
 export const aboutSection = {
@@ -153,25 +144,13 @@ export const aboutSection = {
   title: "Why this site exists, and where it meets practice.",
   intro:
     "This site is designed to hold long-form thinking without drifting away from real responsibility. It connects ideas about myth and history with the daily work of leading technology, teams, and institutions.",
-  cards: [
-    {
-      id: "about-site",
-      title: "What belongs here",
-      description:
-        "Essays that argue, history that sharpens judgement, and leadership writing that stays accountable to lived practice.",
-      href: "#pillars",
-      linkLabel: "See the three pillars",
-    },
-    {
-      id: "about-context",
-      title: "What anchors it",
-      description:
-        "The site stays grounded in current leadership practice rather than drifting into detached commentary.",
-      href: "#leadership",
-      linkLabel: "See the leadership section",
-    },
-  ],
-} satisfies EditorialSection;
+  thoughts: {
+    title: "Random thoughts",
+    summary:
+      "Short, unfiled notes, posted as they come to mind rather than worked into a full essay.",
+    archive: { href: "/thoughts", label: "See all random thoughts" },
+  },
+};
 
 export const leadershipDetailLabels = {
   principlesEyebrow: "How I think",
