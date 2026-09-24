@@ -1,6 +1,6 @@
 ---
 title: "The Myth of the Heroic Developer"
-date: 2026-09-24
+date: 2026-09-24T23:59:00Z
 dek: "Saving the day is sometimes necessary. Building an organisation that needs saving every month is a leadership failure, and the hero is usually the last person to blame for it."
 tldr:
   summary: "Heroic effort is fine as an exception and dangerous as an operating model. When one person keeps rescuing the system, they also hide the fact that the system keeps needing rescue."
