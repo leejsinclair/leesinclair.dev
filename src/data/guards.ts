@@ -8,7 +8,6 @@ import principles from "./principles";
 import evidence from "./evidence";
 import philosophy from "./philosophy";
 import {
-  aboutSection,
   contentPillars,
   editorialStructure,
   historySection,
@@ -80,10 +79,6 @@ assert(
 assert(
   leadershipSection.cards.length === editorialStructure.leadershipCards,
   `leadership cards must be ${editorialStructure.leadershipCards}, got ${leadershipSection.cards.length}`,
-);
-assert(
-  aboutSection.cards.length === editorialStructure.aboutCards,
-  `about cards must be ${editorialStructure.aboutCards}, got ${aboutSection.cards.length}`,
 );
 
 // specs/003-essay-publishing FR-022 — a pillar card's href is a second, hand-typed source of

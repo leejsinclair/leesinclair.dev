@@ -64,13 +64,16 @@ import { navigation } from "../data/editorial";
   }
 
   .site-nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
     color: var(--text-muted);
     font-size: var(--step--1);
     font-weight: 600;
     letter-spacing: 0.07em;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 0.2rem 0.1rem;
+    padding: 0.2rem 0.35rem;
   }
 
   .site-nav a:hover,
@@ -89,8 +92,6 @@ import { navigation } from "../data/editorial";
     }
 
     .site-nav {
-      display: grid;
-      gap: 0.5rem;
       justify-content: flex-start;
     }
   }

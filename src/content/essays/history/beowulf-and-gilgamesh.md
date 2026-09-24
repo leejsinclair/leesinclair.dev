@@ -1,8 +1,8 @@
 ---
 title: "Heroic Greatness and the Corruption of the Soul: Beowulf and Gilgamesh"
-dek: "Beowulf begins as an admirable warrior and Gilgamesh as an oppressive king, yet both epics arrive at the same question — what happens when a society's highest virtues become insufficient for the world that society must preserve."
+dek: "Beowulf begins as an admirable warrior and Gilgamesh as an oppressive king, yet both epics arrive at the same question: what happens when a society's highest virtues become insufficient for the world that society must preserve."
 tldr:
-  summary: "Beowulf's heroic virtue tips into the pride (oferhygd) that leaves his kingdom exposed, while Gilgamesh's tyranny softens into humane, civic greatness — two opposite routes to the same question about a society's highest virtues."
+  summary: "Beowulf's heroic virtue tips into the pride (oferhygd) that leaves his kingdom exposed, while Gilgamesh's tyranny softens into humane, civic greatness: two opposite routes to the same question about a society's highest virtues."
   points:
     - "Hrothgar's sermon warns the young Beowulf against pride decades before the aging king's fatal confrontation with the dragon repeats exactly that pattern."
     - "The dragon's hoard, and Beowulf's retainers fleeing the final battle, expose how fragile a community built around one exceptional warrior really is."
@@ -23,21 +23,21 @@ references:
   - 'Tolkien, J. R. R. "Beowulf: The Monsters and the Critics." Proceedings of the British Academy 22 (1936): 245–295.'
 ---
 
-The comparison between _Beowulf_ and _The Epic of Gilgamesh_ offers a powerful way to explore how stories develop and what they reveal about the societies that preserve them. Both works centre on extraordinary figures whose strength, courage, and authority distinguish them from ordinary people. Yet neither epic is satisfied with celebrating heroic power. Each examines the limitations of greatness, the consequences of mortality, and the difficult relationship between personal virtue and public responsibility.
+_Beowulf_ and _The Epic of Gilgamesh_ both centre on men whose strength, courage and authority set them apart. Neither poem is content to celebrate that power. Both ask what greatness is worth in the face of death, and how personal virtue squares with public responsibility.
 
-A particularly productive distinction emerges when we consider the journeys of their protagonists. Gilgamesh begins as a ruler whose power has become oppressive, and his experiences gradually lead him toward a more human understanding of himself. Beowulf begins as an admirable warrior, but his later life raises a different question: can the virtues that make a hero great become destructive when they are bound too closely to reputation, honour, and the demands of heroic identity?
+Their heroes travel in opposite directions. Gilgamesh starts as a ruler whose power has turned oppressive, and his experiences slowly make him more human. Beowulf starts as an admirable warrior, but his later life raises a harder question: can the virtues that make a hero great turn destructive when they are bound too tightly to reputation and honour?
 
-This essay develops that comparison through the surviving texts, supported by scholarship on the two epics and on heroic society. It also considers how the evolution of storytelling may help explain why these narratives remain compelling: they preserve cultural ideals while exposing the tensions and failures within those ideals.
+This essay works through that comparison using the surviving texts and the scholarship on both epics. It also asks why stories like these last. The answer offered here is that they preserve a culture's ideals while exposing the cracks in them.
 
 ## A Necessary Distinction: Corruption, Tragedy, and the Heroic Ideal
 
-Before developing the argument, it is worth distinguishing between what the poem explicitly depicts and what a modern interpretation can infer.
+First, it helps to separate what the poem actually shows from what a modern reader can infer.
 
 _Beowulf_ does not straightforwardly portray its protagonist as a morally corrupt man. He is repeatedly presented as courageous, generous, and committed to his people. The poem's tragedy is more subtle: it places admirable heroic virtues within a social system that can produce destructive outcomes.
 
 The strongest version of the argument, therefore, is not that Beowulf becomes evil. It is that the heroic ideal may contain a dangerous vulnerability: a man can become so committed to honour and the preservation of his reputation that he cannot adequately distinguish personal courage from the responsibilities of leadership.
 
-This reading deliberately charts a course between two long-standing positions in _Beowulf_ criticism. Margaret Goldsmith's _The Mode and Meaning of Beowulf_ argued far more forcefully that the poem condemns its hero, reading Beowulf's final battle through an Augustinian lens in which worldly attachment to treasure amounts to a kind of avarice, and his death a consequence of it. Edward Irving's _A Reading of Beowulf_ pushed back against exactly this sort of imported doctrinal framework, insisting that the poem be read on its own heroic terms rather than judged against a theology it never states outright. The interpretation offered here sits between these positions: it does not adopt Goldsmith's language of avarice and damnation, but it shares her sense that something in Beowulf's final choice is inadequate to his situation, without following Irving in setting that question aside.
+This reading sits between two long-standing positions in _Beowulf_ criticism. Margaret Goldsmith's _The Mode and Meaning of Beowulf_ argued much more forcefully that the poem condemns its hero. She read the final battle through an Augustinian lens, where attachment to worldly treasure is a kind of avarice and Beowulf's death its consequence. Edward Irving's _A Reading of Beowulf_ pushed back against importing doctrine like this, insisting the poem be read on its own heroic terms rather than judged against a theology it never states. The reading here stops short of Goldsmith's avarice and damnation. It shares her sense that something in Beowulf's final choice falls short of his situation, a question Irving's approach sets aside.
 
 This interpretation is supported by the poem's treatment of the dragon, the contrast between Beowulf and Hrothgar, and the final scenes involving Wiglaf and the Geats.
 
@@ -74,19 +74,19 @@ The older Beowulf remains a generous ruler. His problem is not that he has aband
 
 The dragon presents a threat to the kingdom, but Beowulf chooses to face it largely through the same mode of action that defined his youth. He will confront the monster personally, despite his age and despite the fact that the kingdom's future depends upon him.
 
-This creates an important interpretive possibility: Beowulf's courage has not disappeared, but it may have become insufficiently adapted to his changed role.
+His courage hasn't gone anywhere. The question is whether it still fits the role he now holds.
 
 ## The Dragon and the Corruption of Heroic Values
 
-The dragon is the most revealing figure in the poem because it reflects several of the values that define the heroic world.
+The dragon reveals more than any other figure in the poem, because it mirrors values at the heart of the heroic world.
 
-It guards a hoard of treasure accumulated over generations. The treasure is associated with the past, the memory of dead peoples, and the material remains of a vanished society. It has value, but it also represents the destructive potential of wealth when separated from living social relationships.
+It guards a hoard built up over generations: treasure tied to the past, to dead peoples and the remains of a vanished society. The hoard has value, but it also shows what wealth becomes when it is cut off from living relationships.
 
-The dragon's attack begins when a cup is stolen from the hoard. Its response is disproportionate and devastating. The creature burns the land, destroying homes and threatening the Geats' entire social order.
+The dragon's attack begins when someone steals a cup from the hoard. Its revenge is out of all proportion. It burns the land, destroys homes and threatens the whole social order of the Geats.
 
-Beowulf's response is to confront it directly. His motivation is partly duty: he must defend his people. But the poem also places his final battle within the framework Hrothgar warned against decades earlier: the _oferhygd_ the sermon identified as the hidden danger lying in wait for worldly success. Scholars have sometimes drawn a comparison here with _ofermod_, the related term the poet of _The Battle of Maldon_ uses of Byrhtnoth's fatal decision to let the Vikings cross the causeway unopposed — a different poem, but a similar diagnosis of heroic excess overriding practical judgement. He reflects on his past achievements and expresses his desire to gain glory through the final contest.
+Beowulf decides to face it himself. Partly this is duty: he must defend his people. But before the fight he dwells on his past victories and says he wants to win glory in this last contest. That places the battle inside the danger Hrothgar warned him about decades earlier, the _oferhygd_ that lies in wait for worldly success. Some scholars compare it with _ofermod_, the related word the _Battle of Maldon_ poet uses for Byrhtnoth's fatal decision to let the Vikings cross the causeway unopposed. It is a different poem, but the diagnosis is similar: heroic excess overriding practical judgement.
 
-This is where the idea of corruption becomes particularly useful. The poem does not require us to believe that Beowulf has become greedy or malicious. Instead, it asks whether the pursuit of glory has become so deeply embedded in his identity that it shapes his response to danger.
+This is where the idea of corruption earns its place. The poem does not require us to believe that Beowulf has become greedy or malicious. Instead, it asks whether the pursuit of glory has become so deeply embedded in his identity that it shapes his response to danger.
 
 The dragon is therefore not simply an external enemy. It can be read as a symbolic counterpart to the heroic culture itself: a force associated with treasure, the past, destructive power, and the inability of worldly achievement to preserve what matters.
 
@@ -94,9 +94,9 @@ Tolkien's influential reading of _Beowulf_ emphasised the poem's literary power 
 
 ## The Failure of the Heroic Community
 
-The most devastating consequence of Beowulf's final decision is not simply his death. It is the exposure of the weakness of the society he has spent his life protecting.
+Beowulf's death is not the worst outcome of his final decision. The worst outcome is what it reveals about the society he spent his life protecting.
 
-During the battle with the dragon, Beowulf's retainers flee. Only Wiglaf remains to help him. The scene is a profound reversal of the reciprocal obligations of the _comitatus_ code that sustain the heroic world.
+During the fight with the dragon, his retainers flee. Only Wiglaf stays to help. The _comitatus_ bond that holds the heroic world together, loyalty in return for protection, breaks at the moment it matters most.
 
 A good king should inspire loyalty, and a good warrior should stand beside his lord. Yet the final battle reveals that the community's loyalty is fragile. Beowulf has been a great protector, but his people may not be capable of sustaining the world he has created.
 
@@ -108,38 +108,40 @@ This is one of the reasons the poem can be interpreted as a critique of heroic c
 
 The argument should not be overstated: the poem does not present Beowulf as solely responsible for the collapse of his people. The Geats face external political threats, and the retainers' failure is their own moral failure. Nevertheless, the final battle exposes the limits of a social order built around the exceptional warrior.
 
-## Gilgamesh: A Different Journey Toward Humanity
+## Gilgamesh: A Different Journey Towards Humanity
 
-The contrast with _The Epic of Gilgamesh_ makes the argument more compelling.
+_The Epic of Gilgamesh_ sharpens the argument by running it in reverse.
 
 Gilgamesh begins with power but lacks the qualities required for good kingship. The people of Uruk suffer under his rule, and the gods create Enkidu as a counterpart to him. Their friendship becomes the central force of Gilgamesh's transformation.
 
 The early adventures of Gilgamesh and Enkidu are driven by the pursuit of fame. They defeat Humbaba and the Bull of Heaven, but these victories also provoke divine punishment. Enkidu's death becomes the turning point in Gilgamesh's life.
 
-The epic then changes its emphasis. The warrior who once sought glory becomes a man terrified of death. His journey toward Utnapishtim is an attempt to escape the human condition itself.
+The epic then changes its emphasis. The warrior who once sought glory becomes a man terrified of death. His journey towards Utnapishtim is an attempt to escape the human condition itself.
 
-The important point is that Gilgamesh's transformation is not simply a movement from bad to good. It is a movement from an incomplete understanding of greatness toward a recognition of human limitation.
+The important point is that Gilgamesh's transformation is not simply a movement from bad to good. It is a movement from an incomplete understanding of greatness towards a recognition of human limitation.
 
 Scholarship on the development and meaning of the epic has emphasised the role of Enkidu's death in this transformation. The experience of suffering forces Gilgamesh to confront mortality and eventually accept his place within the human community.
 
 The contrast with _Beowulf_ is revealing:
 
-- **Gilgamesh's journey** begins with a failure of kingship and moves toward a more human understanding of responsibility.
+- **Gilgamesh's journey** begins with a failure of kingship and moves towards a more human understanding of responsibility.
 - **Beowulf's journey** begins with heroic excellence and ends by exposing the limits of heroic excellence as a foundation for collective survival.
 
 Both stories explore the relationship between personal greatness and the human condition, but they do so through different narrative trajectories.
 
 ## Stories as Evolving Reflections of Cultural Values
 
-This comparison also supports the theory of how stories develop through their audiences and compilers.
+Both epics were reshaped over time by the people who told, copied and compiled them. That history helps explain what they emphasise.
 
-_Beowulf_ survives in a manuscript copied around the year 1000, but its narrative belongs to an older Germanic heroic tradition. The poem's Christian framing and its depiction of a pagan heroic society create a complex literary environment. It preserves admiration for courage, loyalty, generosity, and reputation while also reflecting on pride, mortality, and the instability of worldly power.
+_Beowulf_ survives in a single manuscript copied around the year 1000, but its story belongs to an older Germanic heroic tradition. A Christian poet is describing a pagan heroic society, and the result pulls two ways. It admires courage, loyalty, generosity and reputation, and it broods on pride, mortality and how little worldly power lasts.
 
-The poem's preoccupation with treasure and hoarding is not simply a literary device. The furnished ship burial excavated at Sutton Hoo in Suffolk, broadly contemporary with the world the poem imagines even if not with the manuscript itself, shows an East Anglian elite depositing exactly the kind of wrought gold, weaponry, and imported luxury goods the poem describes being distributed, mourned, and buried. The Staffordshire Hoard, a seventh-century deposit of dismantled sword fittings and other war-gear discovered in 2009, offers a further and more unsettling parallel: a mass of martial wealth removed from circulation for reasons still debated by its excavators. Neither find tells us what the poem means, but both confirm that its anxiety about treasure separated from living social use reflects real practices, not only poetic imagination.
+The poem's interest in treasure and hoarding is more than a literary device. The ship burial at Sutton Hoo in Suffolk belongs roughly to the world the poem imagines, if not to the date of the manuscript. It shows an East Anglian elite burying exactly the kind of wrought gold, weapons and imported luxuries the poem describes being handed out, mourned and buried. The Staffordshire Hoard, a seventh-century deposit of dismantled sword fittings and other war-gear discovered in 2009, offers a further and more unsettling parallel: a mass of martial wealth removed from circulation for reasons still debated by its excavators. Neither find tells us what the poem means, but both confirm that its anxiety about treasure separated from living social use reflects real practices, not only poetic imagination.
 
-_Gilgamesh_, meanwhile, developed through a long history of Sumerian and Akkadian storytelling. Its surviving versions reflect different periods and literary traditions. Crucially, in the Standard Babylonian edition attributed to the scholar-priest Sîn-lēqi-unninni, the epic shifts focus away from raw heroic exploits toward civic legacy. Gilgamesh's immortality is realised not through eternal life or individual martial glory, but through the enduring structures of Uruk — its great city walls and temples — which serve his people long after he is gone. That reading of the ending is not uncontested, however: the frame narrative's return to the walls can also be read as consolation rather than triumph, a smaller and sadder permanence than the deathlessness Gilgamesh originally sought, and Andrew George's own introduction to his translation treats the poem's closing mood as considerably more ambivalent than a straightforward affirmation of civic achievement.
+_Gilgamesh_, meanwhile, developed through a long history of Sumerian and Akkadian storytelling. Its surviving versions come from different periods and literary traditions. In the Standard Babylonian edition attributed to the scholar-priest Sîn-lēqi-unninni, the focus moves from heroic exploits to civic legacy. Gilgamesh doesn't win immortality through eternal life or glory in battle. He wins it through Uruk's walls and temples, which serve his people long after he is gone.
 
-The physical evidence for that long development is unusually direct, and more concrete than the literary-historical case for _Beowulf_ can be. Gilgamesh material survives not only from Babylonia itself but from Hattusa in Anatolia, from Emar and Ugarit in Syria, and from Megiddo in the southern Levant, alongside a cluster of earlier Sumerian poems about the same hero — _Bilgames and Akka_, _Bilgames and Huwawa_, _Bilgames and the Bull of Heaven_ — that circulated independently before being drawn into the Akkadian epic. The geographic and chronological spread of these finds charts the story's movement across languages, scribal schools, and centuries in a way that the single surviving _Beowulf_ manuscript cannot.
+That reading of the ending is contested. The return to the walls can also be read as consolation rather than triumph: a smaller, sadder kind of permanence than the deathlessness Gilgamesh set out to find. Andrew George's introduction to his translation treats the closing mood as far more ambivalent than a simple celebration of civic achievement.
+
+The physical evidence for that long development is unusually direct, and more concrete than the literary-historical case for _Beowulf_ can be. Gilgamesh material survives not only from Babylonia itself but from Hattusa in Anatolia, from Emar and Ugarit in Syria, and from Megiddo in the southern Levant, alongside a cluster of earlier Sumerian poems about the same hero (_Bilgames and Akka_, _Bilgames and Huwawa_, _Bilgames and the Bull of Heaven_) that circulated independently before being drawn into the Akkadian epic. The geographic and chronological spread of these finds charts the story's movement across languages, scribal schools, and centuries in a way that the single surviving _Beowulf_ manuscript cannot.
 
 We should not assume that every feature of either epic was deliberately inserted to teach a particular moral. Nor can we simply equate a surviving poem with the beliefs of an entire society. But the stories' continued transmission, and in Gilgamesh's case their physical dispersal across the ancient Near East, suggests that their conflicts remained meaningful well beyond their place of origin.
 
@@ -153,10 +155,10 @@ The journeys of Gilgamesh and Beowulf reveal two different ways in which heroic 
 
 Gilgamesh begins as a powerful ruler whose failure to understand his humanity produces suffering. Through Enkidu's friendship and death, he learns that greatness cannot overcome mortality and that a meaningful life requires more than power. His ultimate victory is civic and institutional: accepting his limits and building a lasting world for his people, though the poem leaves open how completely that acceptance consoles him.
 
-Beowulf begins as an admirable warrior whose courage and strength genuinely benefit others. Yet his final battle exposes the limitations of a heroic culture that depends upon individual greatness. His death is not proof that he has become evil, but it reveals how the pursuit of honour, reputation, and personal confrontation — the _oferhygd_ Hrothgar warned against — can become destructive when separated from the wider responsibilities of kingship (_cyning-dōm_).
+Beowulf begins as an admirable warrior whose courage and strength genuinely benefit others. Yet his final battle exposes the limitations of a heroic culture that depends upon individual greatness. His death is not proof that he has become evil, but it reveals how the pursuit of honour, reputation, and personal confrontation (the _oferhygd_ Hrothgar warned against) can become destructive when separated from the wider responsibilities of kingship (_cyning-dōm_).
 
-The deepest question raised by the comparison is therefore not simply what makes a good hero. It is what happens when a society's highest virtues become insufficient for the world that society must preserve.
+So the deeper question is what happens when a society's highest virtues are no longer enough for the world that society has to preserve.
 
-A hero may be brave, generous, and loyal, yet still fail to create a community capable of surviving without him. Another may begin as an oppressive ruler and gradually discover that his humanity is inseparable from his relationships, his civic legacy, and his acceptance of mortality.
+A hero can be brave, generous and loyal and still fail to leave behind a community that can survive without him. Another can begin as an oppressive ruler and slowly learn that his humanity depends on his friendships, his city and his acceptance that he will die.
 
-These stories endure because they allow successive generations to reconsider their own ideals. They celebrate greatness while questioning its costs. They preserve heroic values while exposing their weaknesses. And in doing so, they turn mythology into a continuing conversation about what it means to be human.
+Each generation that retold these stories got to test its own ideals against them. The poems admire greatness and count its costs in the same breath, and they have never settled which matters more.

@@ -6,6 +6,10 @@
  * filesystem makes that structurally impossible rather than something checked at build time.
  * Schema failures fail `astro build` with the offending file named, the same guarantee
  * `src/data/guards.ts` gives typed data.
+ *
+ * `thoughts` holds short, unfiled notes — deliberately not part of the pillar/essay system:
+ * no dek, no tldr, no per-entry URL. `src/pages/thoughts/index.astro` lists every entry on
+ * one feed page.
  */
 import { defineCollection } from "astro:content";
 import { glob } from "astro/loaders";
@@ -24,4 +28,12 @@ const essays = defineCollection({
   }),
 });
 
-export const collections = { essays };
+const thoughts = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/thoughts" }),
+  schema: z.object({
+    title: z.string().min(1),
+    date: z.coerce.date(),
+  }),
+});
+
+export const collections = { essays, thoughts };

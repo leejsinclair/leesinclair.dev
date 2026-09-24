@@ -4,6 +4,7 @@
  * Myths, History, Leadership, and About, while keeping the project within its current
  * single-page static-site scope.
  */
+import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
 import SEO from "../components/SEO.astro";
 import "../data/guards";
@@ -17,8 +18,7 @@ import {
   contactLabels,
   editorialStructure,
   historySection,
-  homeTrustSection,
-  homeTrustHighlights,
+  homeCredibilityLine,
   leadershipDetailLabels,
   leadershipSection,
   mythsSection,
@@ -26,8 +26,10 @@ import {
 } from "../data/editorial";
 
 const linkedIn = profile.linkedInUrl;
-const roleLineIsDraft = profile.roleLine.status === "draft";
-const positioningIsDraft = profile.positioning.status === "draft";
+
+const recentThoughts = (await getCollection("thoughts"))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 2);
 ---
 
 <Base>
@@ -39,28 +41,16 @@ const positioningIsDraft = profile.positioning.status === "draft";
       class="section section--flush hero-section"
       aria-labelledby="hero-heading"
     >
-      <div class="shell">
+      <div class="shell hero-layout">
         <div class="hero-copy">
-          <p class="hero-name">{profile.name}</p>
           <p class="eyebrow">
             {profile.roleLine.text}
-            {
-              roleLineIsDraft &&
-                import.meta.env.DEV && (
-                <span class="draft-flag"> (draft — pending Lee’s sign-off)</span>
-              )
-            }
           </p>
           <h1 id="hero-heading">
             {profile.positioning.text}
-            {
-              positioningIsDraft &&
-                import.meta.env.DEV && (
-                <span class="draft-flag"> (draft — pending Lee’s sign-off)</span>
-              )
-            }
           </h1>
           <p class="hero-lede measure">{profile.supportingStatement}</p>
+          <p class="hero-credibility measure">{homeCredibilityLine}</p>
 
           <div class="hero-actions">
             {
@@ -82,47 +72,23 @@ const positioningIsDraft = profile.positioning.status === "draft";
             }
           </div>
         </div>
-      </div>
-    </section>
 
-    <section class="section section--trust" aria-label={homeTrustSection.ariaLabel}>
-      <div class="shell">
-        <div class="section-header">
-          <h2>{homeTrustSection.title}</h2>
-        </div>
-        <div class="card-grid card-grid--three">
-          {
-            homeTrustHighlights.map((item) => (
-              <article class="card trust-card">
-                <h3>{item.title}</h3>
-                <p>{item.body}</p>
-              </article>
-            ))
-          }
-        </div>
-      </div>
-    </section>
-
-    <section id="pillars" class="section" aria-labelledby="pillars-heading">
-      <div class="shell">
-        <div class="section-header">
+        <div id="pillars" class="card card--stack hero-pillars">
           <p class="eyebrow">{pillarsOverview.eyebrow}</p>
-          <h2 id="pillars-heading">{pillarsOverview.title}</h2>
-          <p class="measure">{pillarsOverview.intro}</p>
-        </div>
 
-        <div class="card-grid card-grid--three">
-          {
-            contentPillars.map((pillar) => (
-              <article class="card card--pillar">
-                <h3>{pillar.title}</h3>
-                <p>{pillar.description}</p>
-                <a class="text-link" href={pillar.href}>
-                  {pillar.linkLabel}
-                </a>
-              </article>
-            ))
-          }
+          <ul class="stack-list" role="list">
+            {
+              contentPillars.map((pillar) => (
+                <li>
+                  <h3>{pillar.title}</h3>
+                  <p>{pillar.description}</p>
+                  <a class="text-link" href={pillar.href}>
+                    {pillar.linkLabel}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
         </div>
       </div>
     </section>
@@ -148,6 +114,14 @@ const positioningIsDraft = profile.positioning.status === "draft";
             ))
           }
         </div>
+
+        {
+          mythsSection.archive && (
+            <a class="text-link archive-link" href={mythsSection.archive.href}>
+              {mythsSection.archive.label}
+            </a>
+          )
+        }
       </div>
     </section>
 
@@ -159,7 +133,7 @@ const positioningIsDraft = profile.positioning.status === "draft";
           <p class="measure">{historySection.intro}</p>
         </div>
 
-        <div class="card-grid card-grid--three">
+        <div class="card-grid card-grid--two">
           {
             historySection.cards.map((card) => (
               <article class="card">
@@ -172,6 +146,17 @@ const positioningIsDraft = profile.positioning.status === "draft";
             ))
           }
         </div>
+
+        {
+          historySection.archive && (
+            <a
+              class="text-link archive-link"
+              href={historySection.archive.href}
+            >
+              {historySection.archive.label}
+            </a>
+          )
+        }
       </div>
     </section>
 
@@ -200,6 +185,17 @@ const positioningIsDraft = profile.positioning.status === "draft";
             ))
           }
         </div>
+
+        {
+          leadershipSection.archive && (
+            <a
+              class="text-link archive-link"
+              href={leadershipSection.archive.href}
+            >
+              {leadershipSection.archive.label}
+            </a>
+          )
+        }
 
         <div class="leadership-layout">
           <article id="leadership-principles" class="card card--stack">
@@ -246,40 +242,36 @@ const positioningIsDraft = profile.positioning.status === "draft";
           </div>
 
           <div class="card-grid">
-            {
-              aboutSection.cards.map((card) => (
-                <article class="card">
-                  <h3>{card.title}</h3>
-                  <p>{card.description}</p>
-                  <a class="text-link" href={card.href}>
-                    {card.linkLabel}
-                  </a>
-                </article>
-              ))
-            }
+            <article class="card">
+              <h3>{aboutSection.thoughts.title}</h3>
+              <p>{aboutSection.thoughts.summary}</p>
+
+              <ul class="stack-list" role="list">
+                {
+                  recentThoughts.map((thought) => (
+                    <li>
+                      <h4>
+                        <a href={`/thoughts#${thought.id}`}>
+                          {thought.data.title}
+                        </a>
+                      </h4>
+                    </li>
+                  ))
+                }
+              </ul>
+
+              <a class="text-link" href={aboutSection.thoughts.archive.href}>
+                {aboutSection.thoughts.archive.label}
+              </a>
+            </article>
           </div>
         </div>
 
         <aside class="card card--stack about-aside">
           <p class="eyebrow">
             {profile.roleLine.text}
-            {
-              roleLineIsDraft &&
-                import.meta.env.DEV && (
-                <span class="draft-flag"> (draft — pending Lee’s sign-off)</span>
-              )
-            }
           </p>
-          <h3>
-            {profile.positioning.text}
-            {
-              positioningIsDraft &&
-                import.meta.env.DEV && (
-                <span class="draft-flag"> (draft — pending Lee’s sign-off)</span>
-              )
-            }
-          </h3>
-          <p>{profile.supportingStatement}</p>
+          <h3>Selected evidence</h3>
 
           <ul class="stack-list" role="list">
             {
@@ -322,18 +314,37 @@ const positioningIsDraft = profile.positioning.status === "draft";
     padding-block: var(--space-2xl) var(--space-xl);
   }
 
-  :where(section, article)[id] {
+  :where(section, article)[id],
+  #pillars {
     scroll-margin-top: var(--header-offset);
   }
 
+  .hero-layout,
   .about-layout,
   .leadership-layout {
     display: grid;
     gap: var(--space-l);
   }
 
+  .hero-pillars .eyebrow {
+    margin-bottom: var(--space-xs);
+  }
+
+  .hero-pillars > p:not(.eyebrow) {
+    color: var(--text-muted);
+  }
+
+  .hero-pillars .stack-list h3 {
+    font-size: var(--step-0);
+    margin-bottom: var(--space-2xs);
+  }
+
   .leadership-layout {
     margin-top: var(--space-xl);
+  }
+
+  .hero-copy {
+    max-width: 44rem;
   }
 
   .hero-copy h1 {
@@ -342,36 +353,14 @@ const positioningIsDraft = profile.positioning.status === "draft";
     text-wrap: pretty;
   }
 
-  .hero-name {
-    font-family: var(--font-display);
-    font-size: var(--step-2);
-    line-height: var(--leading-snug);
-    margin-bottom: var(--space-xs);
-  }
-
   .hero-lede {
     margin-top: var(--space-m);
     font-size: var(--step-1);
     color: var(--text-muted);
   }
 
-  .draft-flag {
-    font-family: var(--font-mono);
-    font-size: var(--step--1);
-    color: var(--text-muted);
-    letter-spacing: 0.02em;
-    font-weight: 500;
-  }
-
-  .section--trust {
-    padding-block: var(--space-l);
-  }
-
-  .trust-card h3 {
-    font-size: var(--step-0);
-  }
-
-  .trust-card p {
+  .hero-credibility {
+    margin-top: var(--space-s);
     color: var(--text-muted);
   }
 
@@ -393,6 +382,8 @@ const positioningIsDraft = profile.positioning.status === "draft";
   }
 
   .card {
+    display: flex;
+    flex-direction: column;
     padding: clamp(1.25rem, 1rem + 1vw, 2rem);
     border: 1px solid var(--border-strong);
     border-radius: 0.9rem;
@@ -400,6 +391,10 @@ const positioningIsDraft = profile.positioning.status === "draft";
     box-shadow:
       0 1px 0 rgb(255 255 255 / 0.03) inset,
       0 10px 30px rgb(0 0 0 / 0.22);
+  }
+
+  .archive-link {
+    margin-top: var(--space-l);
   }
 
   .card p,
@@ -433,6 +428,12 @@ const positioningIsDraft = profile.positioning.status === "draft";
 
   .text-link::after {
     content: "→";
+  }
+
+  /* Push the link to a common baseline when card titles/descriptions wrap unevenly
+     within an equal-height grid row. */
+  .card > .text-link {
+    margin-top: auto;
   }
 
   .stack-list {
@@ -480,9 +481,19 @@ const positioningIsDraft = profile.positioning.status === "draft";
     .card-grid--three {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
+
+    .card-grid--two {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
   }
 
   @media (min-width: 64rem) {
+    .hero-layout {
+      grid-template-columns: minmax(0, 1fr) 22rem;
+      gap: var(--space-xl);
+      align-items: start;
+    }
+
     .leadership-layout,
     .about-layout {
       grid-template-columns: repeat(2, minmax(0, 1fr));

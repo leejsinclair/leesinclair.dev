@@ -1,0 +1,126 @@
+---
+/**
+ * Random thoughts feed — a single static page listing every entry in the `thoughts`
+ * content collection, newest first. Deliberately outside the pillar/essay system: no
+ * per-thought URL, no dek/tldr. See src/content.config.ts.
+ */
+import { getCollection, render } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import SEO from "../../components/SEO.astro";
+
+const entries = (await getCollection("thoughts")).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+);
+
+const thoughts = await Promise.all(
+  entries.map(async (entry) => ({
+    id: entry.id,
+    title: entry.data.title,
+    date: entry.data.date,
+    Content: (await render(entry)).Content,
+  })),
+);
+
+const dateFormatter = new Intl.DateTimeFormat("en-GB", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+});
+---
+
+<Base>
+  <SEO
+    slot="head"
+    title="Random thoughts | Lee Sinclair"
+    description="Short, unfiled notes on software, leadership, and craft."
+    canonicalPath="/thoughts"
+  />
+
+  <article class="thoughts-index">
+    <div class="shell">
+      <a class="thoughts-home-link" href="/">← Back to homepage</a>
+
+      <header class="thoughts-index-header">
+        <p class="eyebrow">Random thoughts</p>
+        <h1>Short, unfiled notes</h1>
+        <p class="measure">
+          Things worth writing down that don't need a full essay.
+        </p>
+      </header>
+
+      <ul class="thoughts-list" role="list">
+        {
+          thoughts.map((thought) => (
+            <li id={thought.id}>
+              <h2>{thought.title}</h2>
+              <time class="thought-date" datetime={thought.date.toISOString()}>
+                {dateFormatter.format(thought.date)}
+              </time>
+              <div class="thought-body measure">
+                <thought.Content />
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </article>
+</Base>
+
+<style>
+  .thoughts-index {
+    padding-block: var(--space-xl);
+  }
+
+  .thoughts-home-link {
+    display: inline-block;
+    margin-bottom: var(--space-l);
+    color: var(--text-muted);
+    font-size: var(--step--1);
+    text-decoration: none;
+  }
+
+  .thoughts-home-link:hover,
+  .thoughts-home-link:focus-visible {
+    color: var(--accent-strong);
+  }
+
+  .thoughts-index-header {
+    margin-bottom: var(--space-xl);
+  }
+
+  .thoughts-index-header p:not(.eyebrow) {
+    margin-top: var(--space-xs);
+    color: var(--text-muted);
+    font-size: var(--step-1);
+  }
+
+  .thoughts-list {
+    display: grid;
+    gap: var(--space-xl);
+  }
+
+  .thoughts-list li + li {
+    padding-top: var(--space-xl);
+    border-top: 1px solid var(--border);
+  }
+
+  .thought-date {
+    display: block;
+    margin-top: var(--space-2xs);
+    color: var(--text-muted);
+    font-size: var(--step--1);
+  }
+
+  .thought-body {
+    margin-top: var(--space-s);
+  }
+
+  .thought-body :global(p) {
+    margin-top: var(--space-s);
+  }
+
+  .thought-body :global(p:first-child) {
+    margin-top: 0;
+  }
+</style>
