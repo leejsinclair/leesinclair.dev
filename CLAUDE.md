@@ -43,7 +43,9 @@ npm run format    # prettier --write .
 
 All visitor-facing copy lives in typed modules under `src/data/` (see `README.md`) — edit
 those, never hard-code strings in components. `src/data/guards.ts` enforces the content
-count rules at build time. Contact is LinkedIn-only: no email address anywhere, enforced by
+count rules at build time. Essays are the exception to the `src/data/` rule: they are Markdown in
+`src/content/essays/<pillar>/`, each needs a `date` in its frontmatter, and the homepage
+shows each pillar's two newest essays automatically. Never hand-write homepage essay cards. Contact is LinkedIn-only: no email address anywhere, enforced by
 the post-build `assert-no-email.mjs` check.
 
 The feature spec, plan, contracts and task list are in

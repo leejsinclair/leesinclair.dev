@@ -1,5 +1,6 @@
 ---
 title: "Human-Directed Work in an AI-Accelerated Workplace"
+date: 2026-09-24
 dek: "The question for leaders is no longer whether people work alongside AI, but who sets the direction for what it accelerates. Machines can supply the leverage, provided people keep authority over what is worth doing."
 tldr:
   summary: "AI can now draft, summarise and propose work faster than many teams can review it. The sustainable response is human-directed acceleration: machines gather and structure context continuously, while people form their own intent first and keep final authority over priorities and consequential actions."

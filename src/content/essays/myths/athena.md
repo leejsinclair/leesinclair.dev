@@ -1,5 +1,6 @@
 ---
 title: "Athena: From Ancient Goddess to Divine Intelligence of the Polis"
+date: 2026-09-07
 dek: "Athena's eclectic domains (war, wisdom, craft, and the city) trace a single thread: the disciplined, skilled application of human intelligence, evolving alongside Greek society itself."
 tldr:
   summary: "Athena's war, craft, wisdom, and civic patronage all trace one idea: the disciplined, skilled use of intelligence (mētis), which took on new meaning as Greek society moved from Bronze Age palace culture to the Classical polis."

@@ -1,5 +1,6 @@
 ---
 title: "Klumpe-Dumpe and the Tragedy of Grantræet"
+date: 2026-09-12
 dek: "Andersen gave Denmark's own Humpty Dumpty a happy ending borrowed from the untitled fragment that would become his Klods-Hans tale eleven years later, and The Fir Tree dies of mistaking that borrowed plot for how the world actually works."
 tldr:
   summary: "Andersen's Fir Tree dies of a category error: it mistakes the borrowed fairy-tale plot of Klumpe-Dumpe, a fall that ends in a throne, for how nature itself actually works."

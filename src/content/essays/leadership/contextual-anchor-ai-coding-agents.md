@@ -1,5 +1,6 @@
 ---
 title: "The Contextual Anchor: Reimagining Leadership Purpose in the Era of AI Coding Agents"
+date: 2026-09-24
 dek: "As AI agents take on more of the mechanics of coding, purpose becomes the anchor that helps engineers judge whether an AI-assisted solution is actually good, but it only works alongside autonomy, mastery, and psychological safety, not in place of them."
 tldr:
   summary: "AI coding agents are changing the mechanics of software production, but the leadership response isn't to replace lost technical identity with purpose alone: it's to make the link between technical work, business outcomes, and human development explicit, while still investing in verification, competence, and safety."

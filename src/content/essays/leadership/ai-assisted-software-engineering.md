@@ -1,5 +1,6 @@
 ---
 title: "AI-Assisted Software Engineering: The Changing Nature of Developer Work, Wellbeing, Identity and Long-Term Capability"
+date: 2026-09-12
 dek: "AI coding assistants are shifting engineering work from creation to supervision, and the productivity story is far less settled than most organisations assume, with real stakes for capability, wellbeing, and identity."
 tldr:
   summary: "AI coding assistants are shifting engineering work from creation to supervision, and the productivity story is far less settled than vendor claims suggest, with real, measurable costs to learning, wellbeing, and long-term capability."

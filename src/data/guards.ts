@@ -7,14 +7,7 @@ import { getCollection } from "astro:content";
 import principles from "./principles";
 import evidence from "./evidence";
 import philosophy from "./philosophy";
-import {
-  contentPillars,
-  editorialStructure,
-  historySection,
-  leadershipSection,
-  mythsSection,
-  navigation,
-} from "./editorial";
+import { contentPillars, editorialStructure, navigation } from "./editorial";
 
 function assert(condition: boolean, message: string): void {
   if (!condition) throw new Error(`[content guard] ${message}`);
@@ -68,35 +61,14 @@ assert(
   new Set(contentPillars.map((card) => card.id)).size === contentPillars.length,
   "content pillar ids must be unique",
 );
-assert(
-  mythsSection.cards.length === editorialStructure.mythsCards,
-  `myths cards must be ${editorialStructure.mythsCards}, got ${mythsSection.cards.length}`,
-);
-assert(
-  historySection.cards.length === editorialStructure.historyCards,
-  `history cards must be ${editorialStructure.historyCards}, got ${historySection.cards.length}`,
-);
-assert(
-  leadershipSection.cards.length === editorialStructure.leadershipCards,
-  `leadership cards must be ${editorialStructure.leadershipCards}, got ${leadershipSection.cards.length}`,
-);
-
-// specs/003-essay-publishing FR-022 — a pillar card's href is a second, hand-typed source of
-// truth for an essay's URL alongside its content-collection path; catch drift loudly rather
-// than shipping a silently broken link.
-const essayIds = new Set(
-  (await getCollection("essays")).map((entry) => entry.id),
-);
-for (const section of [mythsSection, historySection, leadershipSection]) {
-  for (const card of section.cards) {
-    const match = /^\/(myths|history|leadership)\/(.+)$/.exec(card.href);
-    if (!match) continue;
-    const essayId = `${match[1]}/${match[2]}`;
-    assert(
-      essayIds.has(essayId),
-      `card "${card.id}" links to "${card.href}" but no essay exists at src/content/essays/${essayId}.md`,
-    );
-  }
+// Homepage pillar sections list each pillar's newest essays straight from the collection,
+// so there are no hand-typed cards to drift. Guard only against an empty section.
+const essays = await getCollection("essays");
+for (const pillar of contentPillars) {
+  assert(
+    essays.some((entry) => entry.id.startsWith(`${pillar.id}/`)),
+    `pillar "${pillar.id}" has no essays under src/content/essays/${pillar.id}/`,
+  );
 }
 
 export {};

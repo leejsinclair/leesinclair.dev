@@ -1,5 +1,6 @@
 ---
 title: "From God to Man: Gilgamesh's Descent into Humanity"
+date: 2026-09-12
 dek: "The Epic of Gilgamesh traces a semi-divine king's slow acceptance of mortality: from tyrannical excess through Enkidu's death to a truer, human idea of what endures."
 tldr:
   summary: "The Epic of Gilgamesh follows a two-thirds-divine tyrant's slow, humbling acceptance of mortality, ending with him redefining greatness as what a city leaves behind rather than what a king escapes."
