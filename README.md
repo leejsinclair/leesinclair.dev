@@ -75,6 +75,20 @@ is deliberately undecided. Before deploying:
 - Sign off the draft hero wording in `profile.ts` (flip `status` to `"signed-off"`).
 - Swap `public/og-image.png` for the final 1200×630 share image (no markup change needed).
 
+### Deploy branch for hosts that need repo folder input
+
+If your host expects a specific branch/folder in Git (for example GetForge), this repo now
+publishes the built site to a dedicated `forge-dist` branch:
+
+- Workflow: `.github/workflows/publish-dist-branch.yml`
+- Trigger: pushes to `main` (and manual dispatch)
+- Output branch content: the built `dist/` files at branch root
+
+Point the integration at:
+
+- Branch: `forge-dist`
+- Folder/path: `/` (repository root of that branch)
+
 ## CI artifact
 
 GitHub Actions runs the same `npm ci`, `npm run check`, and `npm run build` flow on pull
