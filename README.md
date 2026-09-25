@@ -82,7 +82,7 @@ publishes the built site to a dedicated `forge-dist` branch:
 
 - Workflow: `.github/workflows/publish-dist-branch.yml`
 - Trigger: pushes to `main` (and manual dispatch)
-- Output branch content: the built `dist/` files at branch root
+- Output branch content: the built `dist/` files at branch root (each run replaces the branch)
 
 Point the integration at:
 
