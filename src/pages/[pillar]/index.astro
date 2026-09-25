@@ -20,7 +20,11 @@ export const getStaticPaths = (async () => {
     props: {
       essays: entries
         .filter((entry) => entry.id.startsWith(`${pillar}/`))
-        .sort((a, b) => a.data.title.localeCompare(b.data.title)),
+        .sort(
+          (a, b) =>
+            b.data.date.getTime() - a.data.date.getTime() ||
+            a.data.title.localeCompare(b.data.title),
+        ),
     },
   }));
 }) satisfies GetStaticPaths;
