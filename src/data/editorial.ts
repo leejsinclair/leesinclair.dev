@@ -9,9 +9,9 @@ export const editorialStructure = {
 } as const;
 
 export const navigation = [
-  { label: "Myths", href: "/#myths" },
-  { label: "History", href: "/#history" },
   { label: "Leadership", href: "/#leadership" },
+  { label: "History", href: "/#history" },
+  { label: "Myths", href: "/#myths" },
   { label: "Thoughts", href: "/thoughts" },
   { label: "About", href: "/#about" },
 ] satisfies LinkDefinition[];
@@ -21,12 +21,12 @@ export const homeCredibilityLine =
 
 export const contentPillars = [
   {
-    id: "myths",
-    title: "Myths",
+    id: "leadership",
+    title: "Leadership",
     description:
-      "Interpretations of archetype, ritual, order, and the stories institutions tell about themselves.",
-    href: "#myths",
-    linkLabel: "Explore myths",
+      "Working principles, decision frameworks, and reflections from leading teams and technology systems.",
+    href: "#leadership",
+    linkLabel: "Explore leadership",
   },
   {
     id: "history",
@@ -37,12 +37,12 @@ export const contentPillars = [
     linkLabel: "Explore history",
   },
   {
-    id: "leadership",
-    title: "Leadership",
+    id: "myths",
+    title: "Myths",
     description:
-      "Working principles, decision frameworks, and reflections from leading teams and technology systems.",
-    href: "#leadership",
-    linkLabel: "Explore leadership",
+      "Interpretations of archetype, ritual, order, and the stories institutions tell about themselves.",
+    href: "#myths",
+    linkLabel: "Explore myths",
   },
 ] satisfies EditorialCard[];
 
