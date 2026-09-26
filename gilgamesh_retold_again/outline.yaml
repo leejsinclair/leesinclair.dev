@@ -1,0 +1,120 @@
+topic: "Gilgamesh, retold again (myths)"
+angle: >
+  How translation choices change the reading of Gilgamesh's arc, set against the odd fit
+  of machine learning reassembling the oldest epic (eBL Fragmentarium and related work).
+research_date: 2026-09-26
+time_range: "Since 2020 for new material; unlimited for translation history"
+
+items:
+  # A. Translations and retellings
+  - id: armitage-2026
+    name: "Simon Armitage, Gilgamesh: A New Verse Translation (2026)"
+    group: translation
+    note: "Liveright US April 2026; Faber UK 8 Oct 2026. Worked from Jacob L. Dahl's crib; bridges gaps with justified prose. Tablet XII handling unconfirmed."
+  - id: sandars-1960
+    name: "N. K. Sandars, The Epic of Gilgamesh (Penguin, 1960)"
+    group: translation
+    note: "Prose; merges versions into one smooth story."
+  - id: mason-1970
+    name: "Herbert Mason, Gilgamesh: A Verse Narrative (1970)"
+    group: translation
+    note: "Verse retelling built around grief for Enkidu."
+  - id: kovacs-1989
+    name: "Maureen Gallery Kovacs, The Epic of Gilgamesh (Stanford, 1989)"
+    group: translation
+    note: "Plain scholarly prose, widely taught."
+  - id: dalley-1989
+    name: "Stephanie Dalley, Myths from Mesopotamia (OUP, 1989)"
+    group: translation
+    note: "Places Gilgamesh alongside related myths."
+  - id: ferry-1992
+    name: "David Ferry, Gilgamesh: A New Rendering in English Verse (1992)"
+    group: translation
+    note: "Poet's version in blank-verse couplets."
+  - id: george-1999-2003
+    name: "Andrew George, Penguin translation (1999) and critical edition (2003)"
+    group: translation
+    note: "Scholarly benchmark; keeps gaps visible. Score transliterations now open access (UCF STARS)."
+  - id: foster-2001
+    name: "Benjamin Foster, The Epic of Gilgamesh (Norton Critical, 2001)"
+    group: translation
+    note: "Translation with critical apparatus."
+  - id: mitchell-2004
+    name: "Stephen Mitchell, Gilgamesh: A New English Version (2004)"
+    group: translation
+    note: "Free version with a strong growth reading; much criticised; compared with Armitage in 2026 reviews."
+  - id: helle-2021
+    name: "Sophus Helle, Gilgamesh: A New Translation of the Ancient Epic (Yale, 2021)"
+    group: translation
+    note: "Reconstructions set in ordinary type (no brackets); includes Tablet XII; five essays."
+  - id: lewis-2018
+    name: "Jenny Lewis, Gilgamesh Retold (Carcanet, 2018)"
+    group: translation
+    note: "British poet's retelling foregrounding women's voices; comparison point for Armitage."
+  - id: schmidt-2019
+    name: "Michael Schmidt, Gilgamesh: The Life of a Poem (Princeton, 2019)"
+    group: translation
+    note: "Reception history comparing translators on the same passages. Key secondary source."
+  - id: macfarlane-graphic-novel
+    name: "Macfarlane, Flynn and McKean, Gilgamesh graphic novel (Hamish Hamilton, due 2027)"
+    group: translation
+    note: "Interweaves the epic with George Smith's story; forward-looking coda."
+  - id: irkalla-2025
+    name: "Irkalla: Gilgamesh's Dream (Mohamed Al-Daradji, 2025)"
+    group: translation
+    note: "Iraqi film set in Baghdad 2019; retelling from the region of origin."
+  - id: where-is-gilgamesh-2024
+    name: "Where Is Gilgamesh? (Karzan Kardozi, 2024)"
+    group: translation
+    note: "Kurdish heist noir based on the epic."
+
+  # B. Recovery and reassembly
+  - id: smith-1872
+    name: "George Smith and the Flood tablet (1872)"
+    group: recovery
+    note: "First modern rediscovery."
+  - id: sin-leqi-unninni
+    name: "Sîn-lēqi-unninni and the Standard Babylonian version"
+    group: recovery
+    note: "First named editor of the epic."
+  - id: versions-sumerian-ob-sb
+    name: "Sumerian poems, Old Babylonian and Standard Babylonian versions"
+    group: recovery
+    note: "The epic has always been a reassembly. Include the Bilgames/Gilgameš name question (Rubio 2012)."
+  - id: tablet-xii
+    name: "Tablet XII"
+    group: recovery
+    note: "Appended translation of a Sumerian poem; translators include, append or drop it."
+  - id: sulaymaniyah-tablet-v
+    name: "Sulaymaniyah Tablet V (acquired 2011, published 2014)"
+    group: recovery
+    note: "New Cedar Forest passage; changed the reading of Humbaba."
+  - id: dream-tablet
+    name: "Gilgamesh Dream Tablet (repatriated to Iraq 2021)"
+    group: recovery
+    note: "Looted provenance and return."
+  - id: ebl-fragmentarium
+    name: "eBL Fragmentarium (LMU Munich, Enrique Jiménez)"
+    group: recovery
+    note: "22,000+ fragments digitised; ~1,500 matches since 2018; 20 new Gilgamesh fragments across 100+ lines; latest datable manuscript c. 130 BC (NYT, Aug 2024)."
+  - id: ebl-corpus-gilgamesh
+    name: "eBL Corpus online edition of Gilgamesh"
+    group: recovery
+    note: "Living score edition collated from all manuscripts; contrast with a fixed printed edition."
+  - id: hymn-to-babylon-2025
+    name: "Hymn to Babylon (Jiménez and Fadhil, Iraq, 2025)"
+    group: recovery
+    note: "~30 manuscripts joined into a ~250-line lost hymn; clearest proof of the method."
+  - id: gutherz-nmt-2023
+    name: "Gutherz et al., Akkadian-to-English neural machine translation (PNAS Nexus, 2023)"
+    group: recovery
+    note: "Machine translation of cuneiform; contrast with Armitage's human crib-to-verse method."
+  - id: protosnap-2025
+    name: "ProtoSnap (Cornell and Tel Aviv University, ICLR 2025)"
+    group: recovery
+    note: "Diffusion model aligning prototype signs to tablet images; machines at the reading step."
+
+execution:
+  batch_size: 4
+  items_per_agent: 1
+  output_dir: ./gilgamesh_retold_again/results

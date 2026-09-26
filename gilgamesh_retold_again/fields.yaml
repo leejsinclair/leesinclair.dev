@@ -1,0 +1,129 @@
+# detail_level: brief -> moderate -> detailed
+# applies_to: all | translation | recovery (matches `group` in outline.yaml)
+
+topic: Gilgamesh, retold again (myths)
+instructions: Every field must appear in every item's JSON. Each field's applies_to says which outline
+  group (translation or recovery) it is meant for. If a field does not apply to the item's group, set
+  its value to "N/A" rather than omitting it or marking it uncertain.
+fields:
+  basic_info:
+  - name: name
+    description: Title of the work, project or object
+    detail_level: brief
+    applies_to: all
+  - name: date
+    description: Publication, release, discovery or project date(s)
+    detail_level: brief
+    applies_to: all
+  - name: creator
+    description: Translator, author, director, institution or research team
+    detail_level: brief
+    applies_to: all
+  - name: form
+    description: Verse, prose, critical edition, film, graphic novel, dataset, model, physical tablet
+    detail_level: brief
+    applies_to: all
+  source_handling:
+  - name: translator_access
+    description: Whether the translator reads Akkadian/Sumerian or works from a scholar's crib, and whose
+    detail_level: moderate
+    applies_to: translation
+  - name: scholarly_adviser
+    description: Named expert behind a poet's version (e.g. Jacob Dahl for Armitage)
+    detail_level: brief
+    applies_to: translation
+  - name: versions_used
+    description: Which sources are drawn on (Standard Babylonian, Old Babylonian, Sumerian poems, Sulaymaniyah
+      tablet)
+    detail_level: moderate
+    applies_to: translation
+  - name: non_standard_material
+    description: How material from outside the Standard Babylonian version is marked (brackets, italics,
+      prose, silent merge)
+    detail_level: moderate
+    applies_to: translation
+  - name: gap_policy
+    description: Whether lacunae are shown, bridged or smoothed over
+    detail_level: moderate
+    applies_to: translation
+  - name: typography_of_absence
+    description: What gaps look like on the page (ellipses, brackets, blank space, justified prose, nothing)
+    detail_level: moderate
+    applies_to: translation
+  - name: tablet_xii
+    description: Included, appended, discussed or dropped, and the effect on the ending
+    detail_level: brief
+    applies_to: translation
+  reading_of_the_arc:
+  - name: turning_point
+    description: Where the version places the hinge of the story (Enkidu's death, Siduri, Utnapishtim,
+      the snake, the walls of Uruk)
+    detail_level: detailed
+    applies_to: translation
+  - name: arc_interpretation
+    description: Whether the arc reads as maturity, grief, failure, kingship or something else, with evidence
+    detail_level: detailed
+    applies_to: translation
+  - name: key_passages
+    description: How the version renders fixed passages for comparison (Shamhat and Enkidu, Siduri's advice,
+      death in the bedchamber in Tablet XI, closing walls of Uruk)
+    detail_level: detailed
+    applies_to: translation
+  - name: effect_on_arc
+    description: For recovery items, how the find changed the story or a character (e.g. Humbaba, Enkidu)
+    detail_level: moderate
+    applies_to: recovery
+  voice_and_register:
+  - name: diction_and_metre
+    description: Metre, line form, archaism vs modern idiom
+    detail_level: moderate
+    applies_to: translation
+  - name: sample_line
+    description: One short representative quotation with source
+    detail_level: brief
+    applies_to: translation
+  reception:
+  - name: critical_response
+    description: Main reviews and scholarly judgements, with sources
+    detail_level: moderate
+    applies_to: all
+  - name: controversies
+    description: Disputes over accuracy, liberty, provenance or authorship
+    detail_level: moderate
+    applies_to: all
+  - name: regional_reception
+    description: Non-English or Iraqi/Kurdish reception; whether the work returns to the region of origin
+    detail_level: brief
+    applies_to: all
+  recovery_method:
+  - name: method
+    description: Physical join, cuneiform scholarship, string alignment, sign recognition, machine translation
+    detail_level: moderate
+    applies_to: recovery
+  - name: ai_pipeline_stage
+    description: Which step a machine performs (imaging, sign recognition, fragment matching, translation),
+      or none
+    detail_level: brief
+    applies_to: recovery
+  - name: scale_metrics
+    description: Fragments digitised, joins made, lines recovered, manuscript dates
+    detail_level: moderate
+    applies_to: recovery
+  - name: what_was_found
+    description: The concrete text or object recovered and its place in the epic
+    detail_level: moderate
+    applies_to: recovery
+  - name: provenance_and_ethics
+    description: Looted or legitimate origin, repatriation, who holds the object and the digital copy
+    detail_level: moderate
+    applies_to: recovery
+  essay_angle:
+  - name: ai_craft_tension
+    description: What machines contribute versus what still needs a human reader or poet
+    detail_level: detailed
+    applies_to: all
+  - name: essay_hooks
+    description: Quotable detail, number or contrast Lee could use, with source
+    detail_level: moderate
+    applies_to: all
+uncertain: []
