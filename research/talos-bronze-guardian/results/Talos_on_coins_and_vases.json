@@ -1,0 +1,28 @@
+{
+  "text_and_author": "Silver staters of Phaistos, Crete (Talos type, roughly late 4th to 3rd century BC) and the Attic red-figure volute krater from Ruvo di Puglia attributed to the Medea Painter (c. 400 BC), Museo Nazionale Jatta, Ruvo. [uncertain: coin date range]",
+  "passage_reference": "Not a text. Krater: Jatta collection, Ruvo di Puglia (often cited as J 1501 [uncertain: inventory number]). Coins: Phaistos Talos types catalogued in Svoronos, Numismatique de la Crète ancienne (1890) and later BMC Crete.",
+  "greek_term_and_translation": "Vase inscriptions name figures in Greek capitals (Talos, Medea, Kastor and Polydeukes/Polydeuces). The word for 'bronze man' comes from literary sources (chalkeos), not the images. 'Robot' is a modern gloss; the images show a muscular man, not a machine. Coin legend is the city name (Phaistion). [uncertain: exact inscriptions]",
+  "maker_or_origin": "Images do not state a maker. Literary sources split: Hephaestus's gift to Minos (Apollodorus 1.9.26), last of the bronze race of ash-born men (Apollonius 4.1641-44), or son of Kres/Crete (Apollodorus, some accounts).",
+  "what_it_does": "On coins he is shown throwing or holding a stone, guarding the island, winged and nude in some types, sometimes with a bull. On the krater he is the victim, collapsing.",
+  "what_it_lacks": "The images give him a full human body, wings on some coins and no visible machinery. The vase shows no mechanism, only a figure losing strength and being held up by the Dioscuri. No image tells us about his mind.",
+  "failure_mode": "The krater shows the moment of failure as bodily collapse under Medea's influence, with her holding a herb jar and the Argonauts catching him. This is the point the essay wants: he goes down to an outside act that works on him, not a fault inside him. Some scholars read the ankle as the weak point (the bronze nail). [uncertain: whether the vase shows the ankle wound]",
+  "tradition_variance": "Coins show a winged Talos with a stone; the krater shows a wingless, powerful figure in a swoon. The images therefore do not agree with each other, and neither shows the 'single vein' of Apollonius directly.",
+  "who_is_the_judge": "Not stated by the images. Minos is the authority Talos serves; Medea is the agent of his end. The scene is enforcement being undone, with no judge visible.",
+  "origin_of_intelligence": "Absent from the image. The krater draws attention to feeling and collapse, which a viewer can read as a person, but that is our reading. [uncertain]",
+  "how_it_is_used": "Adrienne Mayor (Gods and Robots, 2018) uses the Ruvo krater as evidence that Talos was pictured and thought of as an artificial being. Her reading puts the ancient images at the centre of a 'ancient robotics' argument.",
+  "reception_accuracy": "partial. The images are real and can be checked. Calling the figure a robot is a modern gloss, and the vase does not show an artificial being any more than a bronze man of myth.",
+  "angle_fit": "complicates. Images show Talos as guardian and victim with no visible judgement, which fits 'making without metis', but they say nothing directly about Athena or metis.",
+  "counter_argument_strength": "The images make Talos look human and pitiable, which cuts against 'tireless machine'. A sceptic can say the Greeks pictured a tragic person, not a device, so the essay's machine framing is imposed. The essay should answer by using images only for what they show (Talos guarding, Talos falling), and take the 'lacks judgement' claim from the texts, not the pictures.",
+  "claim_status": "Images and coins are ancient fact. Reading the krater as a 'machine dying' is scholarly interpretation, and 'robot' is a modern gloss.",
+  "quotable_line": "No ancient line here. Best short paraphrase: 'Medea sits at the edge of the vase while the Argonauts hold him up.' [uncertain]",
+  "essay_paragraph_fact": "The Talos krater at Ruvo (c. 400 BC) shows the bronze guardian sinking as Medea works her herbs while the Dioscuri support him. The Greeks drew his death as something done to him from outside, in front of witnesses, not as a breakdown from within.",
+  "honest_caveat": "Coin and vase iconography is not consistent, and the 'robot' reading is modern. Details such as wings, the ankle and the inscriptions should be checked against the museum record before quoting. Dates are approximate.",
+  "uncertain": [
+    "source.text_and_author (coin dates)",
+    "source.passage_reference",
+    "source.greek_term_and_translation",
+    "the_figure.failure_mode",
+    "judgement.origin_of_intelligence",
+    "usable_material.quotable_line"
+  ]
+}

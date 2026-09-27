@@ -1,0 +1,24 @@
+{
+  "text_and_author": "Cluster of popular web pieces: Greek Reporter (13 Sept 2025, 'Talos: The Ancient Greek Giant Robot That Guarded Bronze Age Crete' and 'Ancient Greeks Predicted Robots, Claims Stanford Historian'); Mental Floss ('Ancient Greece Had a Giant Bronze Robot'); Ancient Origins ('Talos of Crete: A 2,000-Year-Old Tale of the First Robot God'); Brewminate (not retrieved) [uncertain]. Authors and dates other than Greek Reporter not verified [uncertain].",
+  "passage_reference": "Web articles, no fixed references. Mostly derive from Apollonius, Argonautica 4 and from Mayor's Gods and Robots.",
+  "greek_term_and_translation": "Repeat 'first robot' (modern gloss), 'ichor as power source or electricity' (modern gloss on ἰχώρ, the fluid of the gods), and 'nail as bolt' (modern gloss on the pin sealing the vein). Some pieces give a date of 'around 700 BC' for the story, which is not securely supported [uncertain].",
+  "maker_or_origin": "Greek Reporter says he was made by Zeus, Daedalus or Hephaestus on Zeus's order. Others give Hephaestus alone.",
+  "what_it_does": "Guards Crete, patrols the coast, throws boulders.",
+  "what_it_lacks": "Rarely addressed; most pieces stress that he is a machine or robot. Greek Reporter mentions a 70 metre film version (Jason and the Argonauts, 1963), a film invention, not an ancient fact.",
+  "failure_mode": "Ankle vein sealed by a nail. Medea removes it. Frames as design flaw or single point of failure.",
+  "tradition_variance": "Greek Reporter admits three possible makers. Most pieces give only the nail-removal ending, not the Poeas arrow or rock-scrape versions.",
+  "who_is_the_judge": "Usually not discussed. Where discussed, Zeus or Minos commands and Medea decides the outcome.",
+  "origin_of_intelligence": "Usually skipped, or assumed to be programmed. Not evidenced in the ancient text.",
+  "how_it_is_used": "Clickable 'ancient robot' and 'the ancient Greeks predicted AI' stories, often quoting Mayor for authority.",
+  "reception_accuracy": "partial to no. They read Apollonius correctly on the nail and Medea, but over-claim on 'first robot', on ichor as electricity, and on dates. Repeated copying between pieces amplifies the glosses.",
+  "angle_fit": "supports weakly. They show that Talos is the popular AI myth of 2025-26, which strengthens the case that the essay is answering a live conversation, but they add no argument about judgement.",
+  "counter_argument_strength": "Best case: Talos is now the dominant 'ancient AI' story, so the essay is following a trend, not offering a sharper myth. The essay should answer by pointing out what the popular versions drop: the authority that sends Talos out and the person who defeats him, and by not repeating the electricity and bolt glosses.",
+  "claim_status": "modern gloss",
+  "quotable_line": "'The legend of Talos ... birthed the first humanoid robot in history' (Greek Reporter, Sept 2025), useful only as an example of the over-claim.",
+  "essay_paragraph_fact": "Nearly every 2025-26 popular piece repeats the same three modern additions to Talos: first robot, ichor as electricity, nail as bolt. None are in Apollonius.",
+  "honest_caveat": "Popular sources copy each other and Mayor; do not cite them for ancient facts. Verify against Apollonius, Apollodorus and Plato's Minos. Brewminate was not read [uncertain].",
+  "uncertain": [
+    "text_and_author",
+    "greek_term_and_translation"
+  ]
+}

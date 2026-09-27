@@ -1,0 +1,59 @@
+topic: "Talos, the bronze guardian of Crete, as a sharper myth for AI than Pandora: the Greeks imagined tireless machines and still kept judgement with a goddess"
+
+angle: >
+  Talos had the forge but not the mind. Hephaestus made him, but making and metis are
+  different gifts (ties to the existing Athena essay). Talos keeps turning up in 2026 AI
+  commentary as the "first robot", usually via Adrienne Mayor's Gods and Robots.
+
+caveats_to_test:
+  - "Iliad 18: Hephaestus's golden handmaidens have noos, so his makings are not all mindless."
+  - "Pseudo-Plato Minos: Talos carries law round Crete, an enforcer with no judgement of his own."
+  - "Athena is also a craft goddess, and helped equip Pandora, so making and metis overlap."
+  - "Minsoo Kang reads Talos as a living creature, not a machine."
+
+items:
+  # Ancient sources for Talos
+  - name: "Apollonius Rhodius, Argonautica 4"
+    note: "Last of the bronze race, one vein sealed by a nail, killed by Medea's spells."
+  - name: "Apollodorus, Bibliotheca"
+    note: "Made by Hephaestus (or a gift from Zeus to Europa/Minos); Poeas' arrow to the ankle."
+  - name: "Pseudo-Plato, Minos"
+    note: "Talos as bronze law-carrier and patrol of Crete; judgement stays with Minos."
+  - name: "Simonides and the early burning tradition"
+    note: "Talos heats himself red-hot and embraces victims. Verify source chain via scholia. Do not rely on the Sophocles Daidalos attribution without a check."
+  - name: "Cinaethon (via Pausanias)"
+    note: "Talos as son of Cres and father of Hephaestus, reversing the maker relation. Verify the Pausanias reference."
+  - name: "Talos on coins and vases"
+    note: "Phaistos coins, the Talos krater from Ruvo, how he was pictured."
+  # Judgement, craft and mind in the wider myth
+  - name: "Homer, Iliad 18.417-421"
+    note: "Golden handmaidens with noos and the self-moving tripods. Main counterpoint to the angle."
+  - name: "Athena: metis and techne"
+    note: "Goddess of judgement and of craft; how far the two overlap."
+  - name: "Zeus swallows Metis (Hesiod, Theogony 886-900)"
+    note: "Judgement internalised by the ruler, then embodied in Athena. Also Pandora (Works and Days 60-82) as a contrast case only: Hephaestus makes, Athena dresses."
+  - name: "Medea's spell as death by perception"
+    note: "Talos falls to a spell, dream or evil eye, not a hardware fault. Closest match to a modern AI failure mode. Verify the Greek and translations."
+  # Modern reception
+  - name: "Adrienne Mayor, Gods and Robots (2018)"
+    note: "Source of the 'first robot' framing; check how she treats Talos, Pandora and metis."
+  - name: "Minsoo Kang, Sublime Dreams of Living Machines (2011)"
+    note: "Argues Talos was read as a living creature. A check on the 'robot' reading."
+  - name: "Smithsonian: Talos as an early example of AI"
+    note: "https://www.smithsonianmag.com/history/was-talos-the-bronze-automaton-who-guarded-the-island-of-crete-in-greek-myth-an-early-example-of-artificial-intelligence-180986467/"
+  - name: "Popular pieces 2025-26"
+    note: "Greek Reporter (Sept 2025), Brewminate, Mental Floss, Ancient Origins. Repeat 'first robot', 'ichor as power source', 'nail as bolt'."
+  - name: "Near Future, Aug 2026 (Italian)"
+    note: "https://en.futuroprossimo.it/2026/08/lintelligenza-artificiale-ha-3-000-anni-si-chiamava-talos/ ; also digi-con.org and Revista Atalante as the Pandora-for-AI incumbent view."
+
+execution:
+  batch_size: 3
+  items_per_agent: 5
+  output_dir: ./results
+
+search_notes:
+  time_range: "since 2025 (for 2026 AI commentary); ancient sources and scholarship unrestricted"
+  verification: >
+    The supplementary web search did not open pages. Every item marked "verify" needs a
+    primary-source check (Theoi, Perseus, translations) before it goes in an essay.
+  dropped: "Other automata (Golem, Galatea, Hero), Detienne and Vernant, Daedalus, The Talos Principle games."

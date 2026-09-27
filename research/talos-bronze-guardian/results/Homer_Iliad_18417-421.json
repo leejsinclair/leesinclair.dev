@@ -1,0 +1,24 @@
+{
+  "text_and_author": "Homer, Iliad, Book 18 (Hephaestus's workshop scene), c. 8th century BC.",
+  "passage_reference": "Il. 18.417-421 (golden attendants); self-moving tripods at 18.373-379, especially 18.376 automatoi; also the gates of Olympus 5.749-750.",
+  "greek_term_and_translation": "noos (mind) in ll. 419-ish: 'en men noos esti meta phresin, en de kai audē kai sthenos', and 'from the immortal gods they know works'. Handmaidens are amphipoloi chruseiai, 'golden attendants', likened to living young women. Tripods move automatai. Translators: Lattimore ('intelligence in their hearts'), Fagles, Murray/Wyatt. 'Robot' and 'AI' are modern glosses. [uncertain: exact line numbering within 417-421 and exact wording of translators]",
+  "maker_or_origin": "Hephaestus makes them. No dispute in Homer. Later writers do not contradict this.",
+  "what_it_does": "They support and serve the lame god, walking and working beside him. The tripods roll into the assembly of the gods and back on their own.",
+  "what_it_lacks": "Nothing is stated as lacking. They are given noos, voice, strength and skill learned from the gods. That is the strongest ancient counter to 'machines had no mind'.",
+  "failure_mode": "No failure in the passage. It is a picture of machinery working well. Failure modes belong to Talos and Pandora, not here.",
+  "tradition_variance": "Not a Talos passage. Later writers (Apollonius, Apollodorus) do not carry the handmaidens over, so the Iliad shows one strand of the tradition, not the norm.",
+  "who_is_the_judge": "Hephaestus is the master and Thetis is the visitor. The handmaidens do not deliberate at all in the scene shown, though they are given noos.",
+  "origin_of_intelligence": "Given. The poet states directly that mind (noos) is in them, and that the gods taught them skills. So made things can have a mind, and it comes from the gods.",
+  "how_it_is_used": "Mayor (Gods and Robots) treats the passage as Homer imagining artificial intelligence and 'made minds'. Popular AI pieces cite it as the first robot passage.",
+  "reception_accuracy": "partial. The text does say noos, so the claim of a mind is supported. Calling it a robot or AI goes beyond the poem, which gives no mechanism and says the mind comes from the gods.",
+  "angle_fit": "complicates, and in one reading contradicts. If the handmaidens have noos, then making and mind were not separate gifts in Homer.",
+  "counter_argument_strength": "The best case against the angle: Hephaestus's own products think. The essay should answer by distinguishing noos (perception and understanding) from metis (cunning, judgement under uncertainty), and note that the handmaidens serve and do not decide. Also note that Homer's handmaidens are a separate strand, and Talos has no stated noos. Say this openly instead of hiding the counterexample.",
+  "claim_status": "Ancient fact for the text. The contrast noos versus metis is scholarly interpretation. 'AI' or 'robot' is modern gloss.",
+  "quotable_line": "'In them is intelligence in their hearts, and there is voice in them and strength.' (Lattimore, Il. 18.419-20, quoted from memory, check before use) [uncertain]",
+  "essay_paragraph_fact": "In Iliad 18 Homer gives Hephaestus golden attendants with noos, voice, strength and skills taught by the gods, and self-moving tripods that roll into the assembly by themselves. The Greeks could imagine made things that thought, and this passage is the honest counterweight to the Talos angle.",
+  "honest_caveat": "Noos here is not the same as metis, and Homer does not say what the attendants can decide. Do not present the passage as the Greek word for AI. Quotes must be checked against a named translation.",
+  "uncertain": [
+    "source.greek_term_and_translation",
+    "usable_material.quotable_line"
+  ]
+}

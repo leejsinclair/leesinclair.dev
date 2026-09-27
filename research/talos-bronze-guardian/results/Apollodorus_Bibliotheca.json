@@ -1,0 +1,28 @@
+{
+  "text_and_author": "Apollodorus (pseudo-Apollodorus), Bibliotheca, mythographic handbook, probably 1st-2nd century CE.",
+  "passage_reference": "Bibl. 1.9.26 (Argonautica section, Crete); Talos also appears elsewhere in the genealogies. [uncertain] on secondary mentions.",
+  "greek_term_and_translation": "Talos is a 'bronze man' (chalkous aner); some said a bull. Translators: J. G. Frazer (Loeb 1921), Robin Hard (Oxford 1997). Ichor is the fluid in a single vein. 'Robot' is a modern gloss. [uncertain] on the exact Greek wording.",
+  "maker_or_origin": "Apollodorus reports the dispute: some call Talos a man of the bronze race, others say Hephaestus gave him to Minos, and one variant makes him the son of Cres. He is the Cretan guard either way. The note's 'gift from Zeus to Europa' is Apollonius, not Apollodorus. [uncertain]",
+  "what_it_does": "Guards Crete for Minos, circling the island three times a year, and keeps ships off.",
+  "what_it_lacks": "No mind or judgement is stated. He is a guard who acts on his routine and can be tricked. Lack of judgement is inferred. [uncertain]",
+  "failure_mode": "A single vein closed by a nail, and Medea beats him by deception: she promises immortality and pulls the nail, or drives him mad with drugs. The Poeas variant has an arrow to the ankle. Maps to social-engineering and single-point-of-failure risks only by modern analogy.",
+  "tradition_variance": "Apollodorus himself lists competing versions: Medea by madness, Medea by promising immortality and removing the nail, and Poeas shooting the ankle. Also bronze man versus bull, and maker versus gift.",
+  "who_is_the_judge": "Minos rules Crete and Talos guards it. The killing decision is Medea's (or Poeas's in the other version).",
+  "origin_of_intelligence": "Not stated. If Hephaestus made him, the story does not credit the smith with giving him a mind. [uncertain]",
+  "how_it_is_used": "Adrienne Mayor, Gods and Robots (2018), presents Talos as an ancient 'robot' or automaton and a forerunner of AI, in the argument that the Greeks imagined artificial life and its dangers. Minsoo Kang (Sublime Dreams of Living Machines, 2011) is a counterweight: he treats such figures as part of a longer history of the automaton idea and cautions against reading ancient marvels as machines. [uncertain] on exact page-level claims; not checked against the books here.",
+  "reception_accuracy": "Partial. Modern retellings usually flatten Apollodorus's variants into one made-by-Hephaestus robot with one death; the source itself gives several.",
+  "angle_fit": "Supports, moderately: Hephaestus gets the making and no story credits him with the mind. But Apollodorus offers this only as one variant beside others.",
+  "counter_argument_strength": "Best case against: the maker link is one variant among several, and a bull or bronze-race Talos would drop the making versus judgement contrast. The essay should say 'in one tradition' and not treat it as canonical.",
+  "claim_status": "Ancient fact (a late handbook reporting variants); reading it as a claim about mind is scholarly or modern interpretation.",
+  "quotable_line": "Frazer's and Hard's Loeb/Oxford renderings of the note that Talos was 'a man of bronze' (or a bull) given to Minos; check exact wording before quoting. [uncertain]",
+  "essay_paragraph_fact": "Apollodorus records at least three ways Talos died, and one of them is an arrow in the ankle from Poeas. There was never one canonical Talos.",
+  "honest_caveat": "It is a late compilation. Do not treat its variants as an early or authoritative tradition, and do not attribute Zeus and Europa to it.",
+  "uncertain": [
+    "passage_reference",
+    "greek_term_and_translation",
+    "maker_or_origin",
+    "what_it_lacks",
+    "origin_of_intelligence",
+    "quotable_line"
+  ]
+}

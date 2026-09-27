@@ -1,0 +1,26 @@
+{
+  "text_and_author": "Gianluca Riccio, 'L'intelligenza artificiale ha 3.000 anni. Si chiamava Talos' (Italian original title as in URL), Near Future / Futuro Prossimo, 2 August 2026. Also: digi-con.org, 'An AI Wake-Up Call from Ancient Greece' (a republication of Adrienne Mayor's Project Syndicate piece, Oct 2018), and Revista L'Atalante 33 (2022), Goksu Akkan, on Ex Machina and the myths of Pandora and Galatea.",
+  "passage_reference": "Web articles. Riccio cites Apollonius, Argonautica (3rd c. BC), Mayor's Gods and Robots (2018), a Mental Floss article and an Attic red-figure krater (about 400 BC). Atalante: vol. 33, pp. 189-204.",
+  "greek_term_and_translation": "Riccio: ichor as 'the divine liquid that flowed through the veins of the Olympian gods'; Medea as 'the first prompt injector' is his modern gloss. No translator named. Atalante and digi-con are about Pandora, not Greek wording of Talos.",
+  "maker_or_origin": "Riccio: forged by Hephaestus, patrols Crete three times a day (Plato and Apollonius say three times a year or day depending on source: 'three times daily' may be Riccio's or the tradition's variant) [uncertain].",
+  "what_it_does": "Perimeter guard of Crete.",
+  "what_it_lacks": "Riccio argues Talos has developed human emotions, especially fear of death, so the piece says he lacks nothing important. Judgement or deliberation is not discussed.",
+  "failure_mode": "Nail sealing a single ichor vein; Medea talks to him and persuades him. Riccio maps this to AI social-engineering vulnerability (a real class of failure, though the analogy is his).",
+  "tradition_variance": "Only the Medea-persuasion version. No mention of variants.",
+  "who_is_the_judge": "Not addressed by Riccio. In Pandora-for-AI pieces (Mayor's op-ed), the judgement is humanity's own: listen to the 'Prometheans' over the 'Epimetheans'. Atalante: Pandora is read through the 'monstrous feminine' in Ex Machina.",
+  "origin_of_intelligence": "Riccio treats it as emergent emotions. For Pandora, the gods (Hephaestus, Athena, Hermes) give her skills, voice and a 'shameless mind' in Hesiod; that giving is discussed in the Pandora tradition but not in these pieces [uncertain].",
+  "how_it_is_used": "Riccio uses Talos as a 3,000-year-old case study in AI security and emotional manipulation. digi-con/Mayor and Atalante represent the incumbent Pandora-for-AI view: technology's uncertain effects, and female artificial beings as fear-objects.",
+  "reception_accuracy": "partial. Riccio follows the Argonautica outline but the 3,000-year age (the story is not securely dated that early) and 'prompt injector' are modern framing. Atalante is a film-studies reading, not a claim about the ancient text.",
+  "angle_fit": "supports. Riccio does not mention Pandora at all, which shows that Talos is being used as a fresh AI myth, while the Pandora incumbent view (Mayor, digi-con, Atalante) is about the release of unforeseen harm. The 'making versus metis' contrast is in neither.",
+  "counter_argument_strength": "Best case: Riccio's own reading (Medea as prompt injector, Talos with emotions) makes Talos a story about machines that can be persuaded, which is not the same as a story about judgement being held elsewhere. The essay should answer by noting that the persuasion works because Talos has no counter-judgement, and that Medea, the one who decides, is not a goddess but she is the mind. The goddess-judgement claim (Athena, metis) then rests on the Pandora and Hephaestus material, not on Talos alone [uncertain].",
+  "claim_status": "modern gloss",
+  "quotable_line": "'She talks to him, she persuades him. She manipulates him.' (Riccio, English edition; translator not credited) [uncertain]",
+  "essay_paragraph_fact": "By August 2026 Talos was being sold as AI's first security case, with Medea as 'the first prompt injector', and Pandora was not mentioned once.",
+  "honest_caveat": "Digi-con is a republication of Mayor's Pandora op-ed, and the Atalante article is about film, so neither is independent evidence about Talos. Riccio's figures for age and daily patrols were not checked against Apollonius.",
+  "uncertain": [
+    "maker_or_origin",
+    "origin_of_intelligence",
+    "counter_argument_strength",
+    "quotable_line"
+  ]
+}

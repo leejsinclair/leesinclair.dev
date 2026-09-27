@@ -1,0 +1,26 @@
+{
+  "text_and_author": "Apollonius of Rhodes, Argonautica, Book 4, Hellenistic epic, 3rd century BCE.",
+  "passage_reference": "Arg. 4.1638-1688 (Talos episode, on the Argonauts' approach to Crete).",
+  "greek_term_and_translation": "Talos is called of the 'bronze' race (chalkeios) and the last of the demigods left from the ash-tree (meliai) men; the fluid in his vein is ichor (ichor). Translators: R. C. Seaton (Loeb 1912), William H. Race (Loeb 2008), Peter Green (2007). Modern gloss warning: 'robot' is not in the Greek, and 'ichor as power' is a modern reading; in the text ichor is just what flows from his wound, compared to molten lead. [uncertain] on exact Greek lines and phrasing, quoted from memory.",
+  "maker_or_origin": "Apollonius does not say Hephaestus made him. Talos belongs to the bronze race sprung from ash trees, a survivor of the demigods, and Zeus gave him to Europa as a guard for Crete. Other sources (Apollodorus, Simonides via scholia) have Hephaestus as maker or give other parentage.",
+  "what_it_does": "Guards Crete, hurling rocks to keep ships from landing and circling the island. He drives the Argonauts off the coast.",
+  "what_it_lacks": "The text gives him no stated reasoning, only menace and a body with a single weak point. It does not say he lacks mind, though. He is deceived by Medea, which suggests he is open to suggestion. Absence of judgement here is inferred, not stated. [uncertain]",
+  "failure_mode": "A single point of failure: one vein under the skin, sealed by a bronze nail at the ankle. Medea works on him at a distance with spells and the evil eye, invoking the Keres. He grazes his ankle on a rock and the ichor runs out. This maps loosely to AI failures such as adversarial manipulation and hidden single points of failure, but that is a modern comparison.",
+  "tradition_variance": "Killing method varies: here Medea's enchantment makes him hurt himself on a rock, elsewhere she pulls the nail with a promise of immortality or drives him mad with drugs (Apollodorus), and Poeas shoots his ankle in another version. Maker varies too.",
+  "who_is_the_judge": "Nobody deliberates in the scene. Zeus's gift sets the guard; Medea decides to kill him, and Jason and the Argonauts need landing. Enforcement is Talos, and the decision to remove him comes from a sorceress.",
+  "origin_of_intelligence": "None stated for Talos. He is a bronze man with life-fluid, but the poem gives no source of mind, in contrast to the handmaidens with noos in the Iliad.",
+  "how_it_is_used": "Adrienne Mayor, Gods and Robots (2018), presents Talos as an ancient 'robot' or automaton and a forerunner of AI, in the argument that the Greeks imagined artificial life and its dangers. Minsoo Kang (Sublime Dreams of Living Machines, 2011) is a counterweight: he treats such figures as part of a longer history of the automaton idea and cautions against reading ancient marvels as machines. [uncertain] on exact page-level claims; not checked against the books here.",
+  "reception_accuracy": "Partial. The text supports a bronze guardian with a vulnerable vein, but not a built 'robot' in the Apollonius version, since it gives him a natural, mythic origin. Over-claims: calling him made by Hephaestus and calling him an AI. [uncertain]",
+  "angle_fit": "Complicates. Talos with no stated maker in this text weakens 'Hephaestus had the forge but not the mind'. It supports only the looser point that a tireless bronze guard has no visible judgement and is undone by cunning, from a woman known for craft of a different kind (Medea's drugs).",
+  "counter_argument_strength": "Best case against: Apollonius never says Talos lacks a mind, and he is not made by Hephaestus here, so he cannot illustrate the difference between making and metis. He may even be cunning enough to be worth deceiving. The essay should answer by using Apollodorus and the Minos for the maker link and law-carrying role, and by admitting that Apollonius gives the failure, not the missing judgement.",
+  "claim_status": "Ancient fact for the plot details; scholarly or modern interpretation for anything about mind or AI.",
+  "quotable_line": "Talos as 'the last of the bronze race' left from the ash-tree men, a line worth paraphrasing rather than quoting; wording varies by translator (Race, Green, Seaton). [uncertain]",
+  "essay_paragraph_fact": "One vein, sealed by a nail, was the whole of his defence. The most feared guard in the Aegean fell when a sorceress talked to him and he scraped his ankle.",
+  "honest_caveat": "Apollonius does not call Talos made or mindless. Do not say he was built by Hephaestus on Apollonius's authority, and do not present 'robot' as the poet's word.",
+  "uncertain": [
+    "greek_term_and_translation",
+    "what_it_lacks",
+    "reception_accuracy",
+    "quotable_line"
+  ]
+}

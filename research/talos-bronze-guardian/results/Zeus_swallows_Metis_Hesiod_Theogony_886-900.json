@@ -1,0 +1,24 @@
+{
+  "text_and_author": "Hesiod, Theogony (c. 700 BC), and Works and Days (c. 700 BC).",
+  "passage_reference": "Theog. 886-900 (Zeus swallows Metis), 924-926 (Athena born from Zeus's head); Works and Days 60-82 (Pandora made). Compare Theog. 570-589.",
+  "greek_term_and_translation": "metis (886, 'wisest of gods and mortal men'), dolos (deception, 889 [uncertain: line]), boule (counsel), 'good and evil' (900, to agathon te kakon te), noos and epiklopon ethos in WD 67, 77-78 ('a dog's mind and thievish nature'). Translators: Most (Loeb), West, Evelyn-White, Lattimore. 'Judgement internalised' is a modern gloss.",
+  "maker_or_origin": "Athena comes from Zeus's head after he swallows Metis. Pandora is made by Hephaestus from earth and water, dressed by Athena, given gifts by Aphrodite and Hermes. Sources vary on Athena's birth (Homeric Hymn 28, Pindar).",
+  "what_it_does": "Zeus takes in Metis so that judgement is his and no rival can rule. Athena then acts as his counsel and strength. Pandora is a 'beautiful evil' sent to humans.",
+  "what_it_lacks": "Pandora lacks nothing structural: Hermes gives her a bitch's mind and a deceitful nature. Athena gives skill and dress, not judgement.",
+  "failure_mode": "Pandora's jar is opened, releasing evils. It is a human act and a divine trap, not a machine fault, and it fits less well than Talos to modern AI failure modes.",
+  "tradition_variance": "Athena's birth: Hesiod puts Metis inside Zeus first, with Athena born after. Homer and the Hymns do not tell this. Pandora in Theogony is unnamed, named in Works and Days.",
+  "who_is_the_judge": "Zeus, having swallowed Metis, so that 'the goddess might devise for him good and evil'. Athena carries out that judgement. In Pandora Zeus commands, Hephaestus makes, Athena dresses, Hermes gives the mind.",
+  "origin_of_intelligence": "Judgement is taken in by the ruler and then embodied in his daughter. For Pandora the mind is given by Hermes, not by Hephaestus or Athena.",
+  "how_it_is_used": "Popular AI essays use Pandora as a warning that a powerful gift opens harm. Some use Prometheus. Few use Metis.",
+  "reception_accuracy": "partial. Pandora as a made being is accurate. Reading her as an early AI is a modern stretch.",
+  "angle_fit": "supports. Judgement is kept by the sovereign and embodied in Athena, not passed to the maker. The Pandora contrast shows Hephaestus making and Athena dressing, with the mind supplied elsewhere.",
+  "counter_argument_strength": "Pandora does get a mind from Hermes, so the maker did not have to supply judgement. That sits close to 'made things get minds too'. The essay should say Pandora is a contrast case and not a metis-carrier: her 'dog's mind' is cunning without good judgement, which is the point.",
+  "claim_status": "Ancient fact for the text. Reading Metis swallowing as 'judgement internalised by the ruler' is scholarly interpretation. Anything about AI is modern gloss.",
+  "quotable_line": "'That the goddess might devise for him good and evil.' (Theog. 900, paraphrase in the style of Evelyn-White) [uncertain: exact wording]",
+  "essay_paragraph_fact": "Hesiod says Zeus swallowed his first wife Metis, the wisest of all, so that she would counsel him from inside. Athena was then born from his head. The Greeks let the ruler keep judgement rather than hand it to a maker.",
+  "honest_caveat": "Hesiod's motive is succession (avoiding a son who would overthrow Zeus), not a theory of judgement. The judgement reading is an interpretation. Pandora is a contrast case only.",
+  "uncertain": [
+    "source.greek_term_and_translation",
+    "usable_material.quotable_line"
+  ]
+}

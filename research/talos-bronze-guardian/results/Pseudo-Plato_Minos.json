@@ -1,0 +1,28 @@
+{
+  "text_and_author": "Pseudo-Plato, Minos, short dialogue on law, attributed to Plato but generally regarded as spurious; probably 4th century BCE.",
+  "passage_reference": "Minos 320c-321b (Talos passage). [uncertain] on exact Stephanus lines.",
+  "greek_term_and_translation": "Talos is described as 'chalkous' (bronze) and as carrying the laws on bronze tablets around the villages, three times a year. Translators: W. R. M. Lamb (Loeb), Jowett (older). 'Robot' is a modern gloss. [uncertain] on Greek wording.",
+  "maker_or_origin": "Not addressed in the dialogue as I recall it. The passage treats Talos as a functionary of Minos, not as an artefact. [uncertain]",
+  "what_it_does": "Patrols Crete and carries Minos's laws to the villages, in a rationalised version of the myth.",
+  "what_it_lacks": "He carries the law but does not make or judge it. The dialogue keeps decision with Minos, the lawgiver who studies with Zeus. Lack of judgement is a reading of the passage.",
+  "failure_mode": "The passage is not about failure. There is no vulnerability story here.",
+  "tradition_variance": "This is a rationalising version, where Talos is a law-carrier rather than a bronze automaton. It differs from the poets' killing story.",
+  "who_is_the_judge": "Minos, who is presented as a good judge and lawgiver taught by Zeus. Talos only delivers.",
+  "origin_of_intelligence": "Not stated. Wisdom sits with Minos and Zeus.",
+  "how_it_is_used": "Not a commonly cited source in the AI commentary I know of. Mayor mentions Talos in Gods and Robots but I cannot confirm she uses this passage. [uncertain]",
+  "reception_accuracy": "Cannot judge without a specific piece. [uncertain]",
+  "angle_fit": "Supports strongly, but as a rationalised tradition: the enforcer carries law and the judge is someone else. Best evidence for enforcement versus deliberation.",
+  "counter_argument_strength": "Best case against: the dialogue is pseudo-Plato, is rationalising, and may not treat Talos as a machine at all. The essay should present it as a Greek reading of the figure as enforcer and not as evidence for a mechanical Talos.",
+  "claim_status": "Ancient fact for what the text says; authorship and dating are scholarly.",
+  "quotable_line": "Talos carried the laws around Crete on bronze tablets, three times a year. Paraphrase; check Lamb's wording. [uncertain]",
+  "essay_paragraph_fact": "In one Greek account, Talos is a law-carrier who circles Crete, and the man who wrote the law is Minos.",
+  "honest_caveat": "The Minos is probably not by Plato, and the passage is a rationalising reading. Do not cite it as Plato.",
+  "uncertain": [
+    "passage_reference",
+    "greek_term_and_translation",
+    "maker_or_origin",
+    "how_it_is_used",
+    "reception_accuracy",
+    "quotable_line"
+  ]
+}

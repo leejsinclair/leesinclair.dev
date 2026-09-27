@@ -1,0 +1,29 @@
+{
+  "text_and_author": "Pausanias, Description of Greece (2nd century CE), reporting Cinaethon of Lacedaemon, an early epic genealogist (c. 8th-6th century BCE?). [uncertain] on Cinaethon's date.",
+  "passage_reference": "Pausanias 8.53.5 (Tegea, on Rhadamanthys), where Cinaethon's genealogy is given: Rhadamanthys son of Hephaestus, Hephaestus son of Talos, Talos son of Cres. Reference recalled from memory, not opened. [uncertain]",
+  "greek_term_and_translation": "Names only (Talos, Hephaestus, Cres, Rhadamanthys). Translators: W. H. S. Jones (Loeb), Peter Levi (Penguin), Frazer. No 'bronze' or 'robot' vocabulary. [uncertain] whether this Talos is the bronze guard.",
+  "maker_or_origin": "In this genealogy Talos is a Cretan ancestor: son of Cres (the eponym of Crete) and father of Hephaestus, reversing the maker relation of other sources. [uncertain] because the Talos here may be a different figure with the same name.",
+  "what_it_does": "Nothing in the story. He is a genealogical link.",
+  "what_it_lacks": "Not applicable; no traits are given.",
+  "failure_mode": "Not applicable.",
+  "tradition_variance": "Shows that Talos's parentage and relation to Hephaestus varied widely: he is son of Cres here, maker-gifted by Hephaestus elsewhere, and a bronze-race survivor in Apollonius.",
+  "who_is_the_judge": "Not applicable.",
+  "origin_of_intelligence": "Not applicable.",
+  "how_it_is_used": "Rarely used in AI commentary. I know of no Mayor or Kang use of it. [uncertain]",
+  "reception_accuracy": "Not applicable. Danger is conflating this Talos with the bronze guard.",
+  "angle_fit": "Complicates. If Talos is Hephaestus's father, the neat 'Hephaestus made Talos' story does not hold in every tradition. It says nothing about metis.",
+  "counter_argument_strength": "Best case against: it undercuts any single canonical Talos, and the essay's 'Hephaestus made him' line would look overconfident. Answer it by saying 'in most accounts' and keeping the variance visible. Also, it may be a different Talos, so it should be a footnote rather than an argument.",
+  "claim_status": "Ancient fact (as reported by Pausanias) for the genealogy; identity with the bronze Talos is scholarly interpretation.",
+  "quotable_line": "None short enough to quote reliably; paraphrase only. [uncertain]",
+  "essay_paragraph_fact": "In one genealogy Talos is the father of Hephaestus, not his product.",
+  "honest_caveat": "The Pausanias reference is from memory and unverified, and this Talos may not be the bronze man. Check 8.53.5 before using.",
+  "uncertain": [
+    "passage_reference",
+    "text_and_author",
+    "greek_term_and_translation",
+    "maker_or_origin",
+    "how_it_is_used",
+    "quotable_line",
+    "honest_caveat"
+  ]
+}

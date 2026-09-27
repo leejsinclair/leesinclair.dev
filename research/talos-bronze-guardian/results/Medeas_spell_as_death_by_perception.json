@@ -1,0 +1,26 @@
+{
+  "text_and_author": "Apollonius of Rhodes, Argonautica, Book 4 (3rd century BC); Pseudo-Apollodorus, Bibliotheca (1st-2nd century AD); Ruvo krater (c. 400 BC).",
+  "passage_reference": "Ap. Rhod. Arg. 4.1638-1688 (Talos episode, spell 4.1665-1672 [uncertain: exact lines], ankle wound 1679-1680, fall 1685-1688); Apollodorus, Bibl. 1.9.26; Plato, Minos 320c (Talos and the laws).",
+  "greek_term_and_translation": "Apollonius: Keres (death-spirits), Hades' hounds, Medea's 'evil eye' and 'phantoms/visions' sent on his mind; ichor 'like molten lead'. Translators: Race (Loeb), Green, Seaton, Hunter. Exact Greek words for the evil-eye and phantom images not verified here. [uncertain] 'Robot', 'ichor as power' and 'perception attack' are modern glosses.",
+  "maker_or_origin": "Apollonius: last of the bronze race, born from ash trees. Apollodorus: Hephaestus's gift to Minos, or son of Kres. Sources disagree.",
+  "what_it_does": "Guards Crete, circles the island (three times a year in Plato's Minos, carrying the laws) and throws rocks at ships.",
+  "what_it_lacks": "No mind or choice is stated. He is unable to see through the trick, which is the point: he is fooled through his senses.",
+  "failure_mode": "Deception and vulnerability, not a hardware fault. Medea bewitches his sight or mind and he wounds his ankle on a rock, so the ichor drains. In Apollodorus one version has Medea drive him mad with drugs; another has her promise immortality and pull the nail. This matches AI failures where the system is fooled by crafted input and has a single point of failure.",
+  "tradition_variance": "Apollonius: spell and evil eye, then the ankle scrape. Apollodorus: Medea's drugs and madness; or Poeas shoots him in the ankle; or the nail is pulled. Plato does not describe his death. So there is no one canonical death.",
+  "who_is_the_judge": "Medea decides and acts. Minos owns the guardian but does not intervene. Talos judges nothing. The Argonauts, not the guardian, are the ones deliberating.",
+  "origin_of_intelligence": "None stated for Talos. He is not shown thinking. Medea's spell works on his perception, which implies that he sees, but the text does not say he understands.",
+  "how_it_is_used": "Mayor reads Talos as an ancient artificial being and the ankle nail as a design flaw. Some 2025-26 AI commentators use the spell as an early case of adversarial input. [uncertain: specific commentators]",
+  "reception_accuracy": "partial. Apollonius does have a spell on the senses, but he also gives the ankle wound and ichor, which readers merge into one 'hack'. 'Adversarial attack' is a modern gloss.",
+  "angle_fit": "supports. The guardian enforces but has no judgement, and it is beaten by a mind (Medea) that fools it. That is a failure of perception with no stated deliberation.",
+  "counter_argument_strength": "A sceptic can say a spell is magic, not a cognitive failure, and that Talos's death is variously a nail, an arrow or drugs, so 'death by perception' is only one strand. The essay should name Apollonius specifically and say other authors differ.",
+  "claim_status": "Apollonius's text is ancient fact. 'Death by perception' as a category is scholarly-adjacent interpretation. Mapping it to AI failure is modern gloss.",
+  "quotable_line": "Apollonius 4.1679-80: ichor flowed 'like molten lead' from the ankle (Race/Green wording, check before quoting). [uncertain]",
+  "essay_paragraph_fact": "In Apollonius, Talos does not fail mechanically. Medea, from the Argo, casts her eye and sends visions on him, and he grazes his single vulnerable ankle on a rock, so his ichor runs out. A guardian with no judgement is beaten by a mind that can fool it.",
+  "honest_caveat": "Sources disagree on how Talos dies (spell, drugs, arrow, nail). Greek terms for the evil eye and visions need checking against the Greek text and a named translation before quoting.",
+  "uncertain": [
+    "source.passage_reference",
+    "source.greek_term_and_translation",
+    "reception.how_it_is_used",
+    "usable_material.quotable_line"
+  ]
+}

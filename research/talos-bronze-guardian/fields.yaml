@@ -1,0 +1,68 @@
+fields:
+  source:
+    - name: text_and_author
+      description: "Ancient text or modern work, author, date."
+      detail_level: brief
+    - name: passage_reference
+      description: "Book/line or page reference, so the passage can be checked."
+      detail_level: brief
+    - name: greek_term_and_translation
+      description: "Exact Greek word and translator (e.g. Race, Green, Seaton). Flag where 'robot' or 'ichor as power' is a modern gloss."
+      detail_level: moderate
+
+  the_figure:
+    - name: maker_or_origin
+      description: "Who made or begot the figure, and where sources disagree."
+      detail_level: moderate
+    - name: what_it_does
+      description: "Its function in the story (guard, patrol, enforcer, servant)."
+      detail_level: brief
+    - name: what_it_lacks
+      description: "What the story shows or states it does not have: mind, judgement, choice."
+      detail_level: moderate
+    - name: failure_mode
+      description: "How it breaks (deception, vulnerability, single point of failure) and whether that maps to a real AI failure."
+      detail_level: moderate
+    - name: tradition_variance
+      description: "Which authors disagree (killing method, parentage), so the essay does not state one canonical Talos."
+      detail_level: moderate
+
+  judgement:
+    - name: who_is_the_judge
+      description: "Who decides in the story (Minos, Zeus, Athena, Medea, Poeas). Separates enforcement from deliberation."
+      detail_level: moderate
+    - name: origin_of_intelligence
+      description: "Whether the figure's mind is given, absent or contested (noos in the handmaidens, none stated for Talos)."
+      detail_level: moderate
+
+  reception:
+    - name: how_it_is_used
+      description: "How Mayor, Kang or a 2025-26 commentator uses Talos and to what argument."
+      detail_level: moderate
+    - name: reception_accuracy
+      description: "yes / partial / no: does the piece read the source correctly? Note the specific over-claims."
+      detail_level: moderate
+
+  angle_fit:
+    - name: angle_fit
+      description: "supports / complicates / contradicts 'making and metis are different gifts', with the reason."
+      detail_level: moderate
+    - name: counter_argument_strength
+      description: "The best case against the angle this item offers, and how the essay should answer it."
+      detail_level: detailed
+    - name: claim_status
+      description: "ancient fact / scholarly interpretation / modern gloss, so the essay can separate them honestly."
+      detail_level: brief
+
+  usable_material:
+    - name: quotable_line
+      description: "A short line worth quoting, with translator."
+      detail_level: brief
+    - name: essay_paragraph_fact
+      description: "One fact strong enough to carry an essay paragraph."
+      detail_level: moderate
+    - name: honest_caveat
+      description: "A caveat the essay must state to stay accurate."
+      detail_level: moderate
+
+uncertain: []

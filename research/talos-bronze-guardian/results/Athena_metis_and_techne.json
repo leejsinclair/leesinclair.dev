@@ -1,0 +1,24 @@
+{
+  "text_and_author": "Detienne and Vernant, Cunning Intelligence in Greek Culture and Society (1974, English 1978); Hesiod, Theogony (c. 700 BC); Homeric Hymns to Athena and Hephaestus; Plato, Protagoras 321d.",
+  "passage_reference": "Hes. Theog. 886-900, 924-926; Hom. Hymn 20 (to Hephaestus); Plato Prot. 321d (Prometheus stole technical wisdom from Athena and Hephaestus); Il. 15.410-413 (carpenter guided by Athena); Od. 13.291-299 (Athena on metis). [uncertain: some line numbers]",
+  "greek_term_and_translation": "metis (cunning intelligence, practical judgement), techne (craft, skill), sophia (skill, wisdom), Ergane (Athena as worker). Translators: Detienne and Vernant (Lloyd), Race, Evelyn-White, Lattimore. 'Judgement' is a modern gloss for metis; 'AI' is not in the Greek.",
+  "maker_or_origin": "Athena is daughter of Zeus and Metis, born from Zeus's head. Sources place the origin differently (Hesiod Theogony, Homeric Hymn 28, Pindar Olympian 7).",
+  "what_it_does": "Goddess of war strategy, crafts and counsel. She teaches skills such as weaving and helps craftsmen, helps heroes (Odysseus, Heracles) and helps build the Argo.",
+  "what_it_lacks": "Not applicable as a figure without a mind. She is the counter-case: a goddess who has both judgement and craft. She does not make the great metal works herself. Those are Hephaestus's.",
+  "failure_mode": "The overlap itself is the problem for the angle. Metis includes skilful making, so a clean division of gifts is hard to defend. Divine craft is not failure-prone in the sources.",
+  "tradition_variance": "Athena's role varies. Hesiod stresses counsel and strength. The Homeric Hymns stress craft. Later writers (Plato) join Athena and Hephaestus as joint patrons of technical skill.",
+  "who_is_the_judge": "Athena, and behind her Zeus. In the Pandora story Athena dresses the made woman but does not give her mind. Hermes does.",
+  "origin_of_intelligence": "For Athena it is inherited from Metis, through Zeus. For made things it is contested: Homer gives some noos, Talos none stated.",
+  "how_it_is_used": "Detienne and Vernant argue that metis is a wide type of intelligence covering craft and cunning, which includes techne. Popular AI essays rarely use metis at all.",
+  "reception_accuracy": "partial. Detienne and Vernant read the sources carefully, but their thesis (techne as a form of metis) is one scholarly reading, not universally held.",
+  "angle_fit": "complicates. 'Making and metis are different gifts' holds for Hephaestus versus Athena at the level of patronage, but the sources let Athena share craft, and Detienne and Vernant fold techne into metis.",
+  "counter_argument_strength": "Strongest counter: Athena is herself a craft goddess, so the Greeks did not separate judgement and craft cleanly. The essay should answer by saying the gifts are distinct but overlapping, and by pointing at what is separated in the myths: Hephaestus makes bodies, Athena brings the judgement to them, as in Pandora and the Argo.",
+  "claim_status": "Athena's dual role is ancient fact. Treating techne as a kind of metis is scholarly interpretation. 'Judgement' for metis is modern gloss.",
+  "quotable_line": "Metis as 'cunning intelligence' (Detienne and Vernant, trans. Lloyd). [uncertain: exact page]",
+  "essay_paragraph_fact": "Athena is the child of Metis, and she is also the patron of weaving, carpentry and shipbuilding. In Plato's Protagoras, technical skill is what Prometheus steals from Athena and Hephaestus together, so the Greeks tied craft and cunning closely, while giving different tasks to each god.",
+  "honest_caveat": "The overlap is real. Do not claim the Greeks kept craft and judgement fully apart. Say the myths give them different patrons and different stories.",
+  "uncertain": [
+    "source.passage_reference",
+    "usable_material.quotable_line"
+  ]
+}

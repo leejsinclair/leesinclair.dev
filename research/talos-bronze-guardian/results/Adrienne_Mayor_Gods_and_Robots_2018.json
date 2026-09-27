@@ -1,0 +1,27 @@
+{
+  "text_and_author": "Adrienne Mayor, Gods and Robots: Myths, Machines, and Ancient Dreams of Technology (Princeton University Press, 2018).",
+  "passage_reference": "Chapter 'The Robot and the Witch: Talos and Medea' (Talos breakdown around pp. 27-28 per the BMCR review); Hephaestus chapters; chapter 'Pandora: Beautiful, Artificial, Evil' (ch. 8). Exact page numbers for the Pandora and metis passages not checked [uncertain]",
+  "greek_term_and_translation": "Mayor's key coinage is 'biotechne' (life through craft), her own modern label for the ancient idea. 'Robot' is a modern gloss (the word dates from Capek's 1920 play). Ichor as 'power source' is a modern gloss on Apollonius' ichor (ἰχώρ), the fluid in a god's veins. Apollonius translators: Seaton (Loeb 1912), Green (1997), Race (Loeb 2008). Which translator Mayor quotes for Talos was not checked [uncertain]",
+  "maker_or_origin": "Mayor follows the tradition that Hephaestus made Talos, one of three wondrous gifts (with the hound Laelaps and a javelin) given to Minos or Europa. Other sources: last of the bronze race (Apollonius), Daedalus (Simonides tradition, as reported in later sources), son of Cres (Apollodorus).",
+  "what_it_does": "Guards Crete, circling the island three times a year (Plato, Minos), hurling rocks at ships and, in some accounts, heating himself red-hot to embrace intruders.",
+  "what_it_lacks": "Mayor stresses the opposite: Talos shows emotion and fear of death, and she says the makers did not expect him to develop desires and make decisions. So the book does not present Talos as lacking mind, which cuts against the essay's angle. Whether Mayor uses metis explicitly was not verified [uncertain]",
+  "failure_mode": "Single vein of ichor sealed by a bronze nail or pin at the ankle. Medea exploits it by persuasion or spells. Maps loosely to social engineering or prompt injection, but that mapping is a modern analogy, not Mayor's claim.",
+  "tradition_variance": "Mayor notes the breakdown story appears in several versions: Medea's evil eye and drugs, promise of immortality, Poeas shooting the ankle, or Talos scraping his ankle on a rock. Parentage also varies. Her book acknowledges the variants; the essay should too.",
+  "who_is_the_judge": "Minos (through Talos as law-enforcer carrying tablets, Plato Minos), Zeus who gives the gift, and Medea who defeats him. Mayor does not frame it as a goddess keeping judgement; Athena/metis framing is the essay's own [uncertain]",
+  "origin_of_intelligence": "Contested in Mayor: she treats Talos as a hybrid of living and nonliving parts who acquires unplanned will. Iliad 18 handmaidens are discussed as artificial beings with noos, a contrast to Talos where no mind is stated by the ancient text.",
+  "how_it_is_used": "Mayor uses Talos as the 'first robot' and evidence that Greeks imagined artificial life, and Pandora as an AI-ethics warning (see her 2018 essay 'An AI Wake-Up Call from Ancient Greece'). Her argument is that myths were ancient thought experiments about technology.",
+  "reception_accuracy": "partial. Source reading is careful and lists variants. Over-claims: 'robot' and 'AI' labels are modern; BMCR reviewer disputes that ancient audiences read these beings as mechanical rather than magical.",
+  "angle_fit": "complicates. Mayor puts Pandora on the AI side (artificial, deceptive) and gives Talos inner desire, so 'Talos = tireless machine, goddess keeps judgement' is not her framing. It does support the point that Greeks imagined made beings and treated craft as its own domain.",
+  "counter_argument_strength": "Strongest case against the angle: the leading popular source says Talos DID develop desires and a fear of death, so 'lacks judgement' is contestable, and Pandora is equally a made being whom Mayor uses for AI. The essay should answer by staying with the text: Apollonius gives Talos no deliberation, only fear when Medea works on him, and the deciding is done by Minos, Zeus and Medea. It should also admit Mayor reads him as more than a machine and treat metis as the essay's own lens, not a Greek claim about Talos.",
+  "claim_status": "scholarly interpretation (with 'first robot' and 'biotechne as ancient concept' being modern gloss)",
+  "quotable_line": "Mayor on Talos: a 'hybrid of living and nonliving parts' (as quoted by Smithsonian, April 2025; not checked against the book) [uncertain]",
+  "essay_paragraph_fact": "The Greek stories of made beings are older than any word for robot; Talos is defeated not by force but by someone talking to him, and the one person who knows how is a sorceress, not the smith who built him.",
+  "honest_caveat": "Mayor herself calls Talos a robot as a modern translation of ancient ideas, and she reads him as gaining will. The essay must not attribute the making-versus-metis distinction to her.",
+  "uncertain": [
+    "passage_reference",
+    "greek_term_and_translation",
+    "what_it_lacks",
+    "who_is_the_judge",
+    "quotable_line"
+  ]
+}
