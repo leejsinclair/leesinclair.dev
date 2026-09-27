@@ -125,7 +125,7 @@ const recentThoughts = (await getCollection("thoughts"))
               <article class="card">
                 <h3>{entry.data.title}</h3>
                 <p>{entry.data.dek}</p>
-                <a class="text-link" href={`/${entry.id}`}>
+                <a class="text-link" href={entry.id}>
                   {essayLinkLabel}
                 </a>
               </article>
@@ -193,7 +193,7 @@ const recentThoughts = (await getCollection("thoughts"))
               <article class="card">
                 <h3>{entry.data.title}</h3>
                 <p>{entry.data.dek}</p>
-                <a class="text-link" href={`/${entry.id}`}>
+                <a class="text-link" href={entry.id}>
                   {essayLinkLabel}
                 </a>
               </article>
@@ -228,7 +228,7 @@ const recentThoughts = (await getCollection("thoughts"))
               <article class="card">
                 <h3>{entry.data.title}</h3>
                 <p>{entry.data.dek}</p>
-                <a class="text-link" href={`/${entry.id}`}>
+                <a class="text-link" href={entry.id}>
                   {essayLinkLabel}
                 </a>
               </article>
@@ -265,7 +265,7 @@ const recentThoughts = (await getCollection("thoughts"))
                   recentThoughts.map((thought) => (
                     <li>
                       <h4>
-                        <a href={`/thoughts#${thought.id}`}>
+                        <a href={`thoughts#${thought.id}`}>
                           {thought.data.title}
                         </a>
                       </h4>
