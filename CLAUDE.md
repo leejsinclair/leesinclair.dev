@@ -52,6 +52,15 @@ The feature spec, plan, contracts and task list are in
 `specs/001-leadership-hiring-site/`; `.specify/memory/constitution.md` is ratified (v1.0.0)
 and governs.
 
+### Research folders
+
+The `/research` skill (and `/research-deep`, `/research-report`) writes its working files
+(`outline.yaml`, `fields.yaml`, `results/*.json`, `report.md`, `generate_report.py`) into a
+topic-named folder in the repo root while an essay or thought is being drafted, e.g.
+`talos-bronze-guardian/`. Once the essay or thought it supports has been written, move that
+folder into `research/` (e.g. `research/talos-bronze-guardian/`) so the repo root stays clean.
+These folders are tracked, not gitignored.
+
 ## Spec-driven development workflow
 
 This project is initialized with **Spec Kit** (`.specify/`). Non-trivial features go through the SDD cycle rather than ad-hoc edits. Slash commands (backed by skills in `.claude/skills/speckit-*`):
