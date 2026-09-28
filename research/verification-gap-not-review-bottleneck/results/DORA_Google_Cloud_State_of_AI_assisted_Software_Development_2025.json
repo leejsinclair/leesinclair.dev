@@ -1,0 +1,25 @@
+{
+  "source_name": "State of AI-assisted Software Development 2025 (DORA Report)",
+  "publisher": "DORA (DevOps Research and Assessment) team, Google Cloud",
+  "publication_date": "2025 (annual DORA report; released alongside Google Cloud coverage in the second half of 2025)",
+  "methodology_type": "Primarily self-report survey/attitude data: nearly 5,000 technology professionals surveyed on AI adoption, trust, and perceived productivity/quality effects, supplemented by roughly 100 hours of qualitative interviews. Not instrumented telemetry; throughput/stability/performance figures are respondents' reported outcomes and cluster-analysis-derived team archetypes, not measured system metrics.",
+  "sample_size": "Nearly 5,000 technology professionals worldwide (developers, product managers, and other software delivery roles), plus over 100 hours of supplementary qualitative interview data. Exact recruitment method not published in the summary materials reviewed.",
+  "pct_distrust_ai_code": "30% report 'little or no trust' in AI-generated code, described as a slight improvement over the prior year's report. [uncertain]",
+  "pct_always_verify": "Not reported as a discrete 'always verify before committing' statistic in the materials reviewed; the report instead frames safeguarding practices (automated testing, version control, fast feedback loops) as team-level capabilities correlated with better AI outcomes, not an individual checking-behavior percentage. [uncertain]",
+  "stated_behavioral_gap": "Not directly computable from published summary: 30% distrust vs. 80%+ reporting AI has increased their productivity is the closest paired figures, but no explicit 'always verify' metric exists to set against the distrust figure the way the essay's anchor Qodo stat does. [uncertain]",
+  "verification_behavior_detail": "The report does not detail individual verification acts (e.g. line-by-line read vs. running tests). Instead it identifies team-level 'safety net' practices, chiefly strong automated testing, mature version control, fast feedback loops, and loosely coupled architecture, as the structural equivalent of verification: teams with these practices convert AI adoption into throughput and quality gains, while teams without them see AI expose and amplify existing weaknesses, particularly on delivery stability.",
+  "seniority_breakdown": "Not published in the summary/announcement materials reviewed; the report's demographic cuts are organized around the seven team archetypes (e.g. 'Foundational Challenges', 'Harmonious High Achievers') rather than individual seniority or experience level. [uncertain]",
+  "culture_incentive_angle": "Central thesis is explicitly non-individual: 'AI doesn't fix a team; it amplifies what's already there. Strong teams use AI to become even better and more efficient. Struggling teams will find that AI only highlights and intensifies their existing problems.' The implicit incentive critique is organizational rather than personal: teams that already under-invest in stability practices get punished harder once AI accelerates code volume, because nothing catches the resulting defects.",
+  "measured_proxy_angle": "The report flags a split outcome that functions as a Goodhart's-law example even though it doesn't name a specific optimized metric: AI adoption shows a positive relationship with software delivery throughput and (new in 2025) product performance, but a continued negative relationship with software delivery stability. That is, teams and organizations reporting on throughput alone would see AI as an unambiguous win while stability keeps degrading underneath it. [uncertain]",
+  "human_factors_parallel": "Not present in the report; DORA frames the finding purely in software-delivery-system terms (archetypes, capabilities, platform engineering) rather than drawing an analogy to non-software automation-bias research.",
+  "leadership_implication": "Report offers an explicit six-step roadmap for leaders: (1) clarify and socialize AI policies, (2) connect AI to internal/organizational context, (3) prioritize foundational engineering practices before scaling AI use, (4) fortify safety nets (automated testing, version control, feedback loops), (5) invest in internal developer platforms (linked to unlocking AI value, ~90% of surveyed orgs have adopted platform engineering), and (6) keep a user-centric focus, since teams lacking this see AI adoption correlate with worse, not better, outcomes. Overall framing: treat AI adoption as organizational transformation, not tool rollout.",
+  "methodological_caveat": "None disclosed in the announcement/summary materials reviewed; no sample-bias admission or walk-back has been reported for this DORA edition, unlike the METR study. Full PDF report was not fully accessible during this research pass, so a caveat located deeper in the full report cannot be ruled out. [uncertain]",
+  "uncertain": [
+    "pct_distrust_ai_code",
+    "pct_always_verify",
+    "stated_behavioral_gap",
+    "seniority_breakdown",
+    "measured_proxy_angle",
+    "methodological_caveat"
+  ]
+}

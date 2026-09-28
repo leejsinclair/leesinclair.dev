@@ -1,0 +1,50 @@
+topic: "The verification gap, not the review bottleneck (leadership)"
+
+description: >
+  The gap between developers' stated distrust of AI-generated code and their
+  actual verification behaviour before committing it. Distinct from the
+  review-bottleneck angle (PR size, wait time, capacity) already logged
+  elsewhere: this is a culture and incentive question about why stated
+  caution doesn't translate into checking behaviour.
+
+items:
+  - name: "Qodo 2026 State of AI Code Quality Report"
+    note: "Anchor stat: 96% distrust, 48% always check before committing"
+
+  - name: "Sonar State of Code Developer Survey (2026)"
+    note: "Companion survey, same month; coined the 'trust tax' framing (same time, more cognitive effort). Check whether it independently converges with Qodo's numbers or is the same source cited twice."
+
+  - name: "Stack Overflow Developer Survey 2025/2026 (AI trust section)"
+    note: "Trust in AI accuracy fell to 29% (from 40%); 46% actively distrust (up from 31%); senior/experienced developers show the most distrust (2.6% highly trust)."
+
+  - name: "GitHub Octoverse 2025 (developer identity framing)"
+    note: "Frames the AI-forward developer's role shift from 'code producer' to 'creative director of code'; TypeScript overtaking Python/JS read as a delegation/verification-safety choice."
+
+  - name: "JetBrains State of Developer Ecosystem 2025"
+    note: "Recurring major survey with AI adoption/trust questions; use for cross-checking Stack Overflow's trend."
+
+  - name: "GitClear AI Copilot Code Quality 2025 research"
+    note: "Code churn/quality analysis showing what happens in the codebase when verification is skipped."
+
+  - name: "DORA / Google Cloud State of AI-assisted Software Development 2025"
+    note: "Organizational/process-level research on AI's effect on delivery and quality practices."
+
+  - name: "METR study on AI coding speed (with Feb 2026 methodology caveat)"
+    note: "Flagship perceived-vs-measured gap: 19% slower despite developers estimating 20% faster. Feb 2026: METR acknowledged sample bias (developers who benefited most were more likely to refuse the no-AI condition). Cite the caveat, not just the original finding -- it's a live example of the essay's own theme."
+
+  - name: "GitLab AI Accountability/Governance Survey 2026"
+    note: "The 'AI paradox': quality and productivity both reported up, yet 85% say review/validation is now the biggest constraint; 43% can't reliably tell AI-generated code from human-written in their own codebase. Leadership-specific: 90% of leaders confident reporting AI's impact to executives, only 45% have traceability evidence."
+
+  - name: "Faros AI 'Acceleration Whiplash' Engineering Report (2026)"
+    note: "Telemetry across 22,000 developers, not self-report: PR size up 51.3%, bugs per PR up 54%, review time up 441%, 31% more PRs merged with zero review. Coins 'the senior engineer tax' -- review burden concentrating on seniors."
+
+  - name: "Automation-bias / human-factors literature (non-software parallel)"
+    note: "RSNA mammography BI-RADS study (radiologists accept incorrect AI suggestions, read faster/less carefully); cerebral aneurysm TOF-MRA automation-bias study (false positives drive over-suspicion, reading time drops regardless of accuracy). Same shape as the coding stat: expressed caution coexists with measurably reduced scrutiny once the tool is present."
+
+  - name: "'Trust, but verify' as borrowed idiom (not engineering pedigree)"
+    note: "No clean software-QA origin story exists. Main documented origins are the Reagan-era arms-control usage and an unrelated programming-language type-checking use. Treat as a borrowed political/managerial idiom in the essay, don't invent an engineering lineage."
+
+execution:
+  batch_size: 4
+  items_per_agent: 3
+  output_dir: "./results"

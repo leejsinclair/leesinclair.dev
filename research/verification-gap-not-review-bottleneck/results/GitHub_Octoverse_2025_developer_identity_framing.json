@@ -1,0 +1,24 @@
+{
+  "source_name": "Octoverse 2025: A new developer joins GitHub every second as AI leads TypeScript to #1",
+  "publisher": "GitHub (Microsoft)",
+  "publication_date": "2025-11 (Octoverse 2025 annual report, published around GitHub Universe, November 2025)",
+  "methodology_type": "Action/telemetry: platform-wide usage and repository data drawn from GitHub's own activity logs (sign-ups, commits, pull requests, language usage, Copilot adoption timing), not a self-report attitude survey. This makes it a behavioral counterpart to the self-reported trust/verification surveys in the other two sources, but it does not itself measure verification behavior.",
+  "sample_size": "Platform-wide telemetry across GitHub's full user base: 180 million total developers, 36 million+ new developers added in the past year, 630 million+ repositories, drawn from GitHub's own logs rather than a recruited sample.",
+  "pct_distrust_ai_code": "Not reported. Octoverse 2025 does not survey trust/distrust in AI-generated code; it reports adoption and usage telemetry only. [uncertain]",
+  "pct_always_verify": "Not reported. No verification/checking metric is present in this report. The closest adjacent figure is that 72.6% of developers who use Copilot for code review said it improved their effectiveness, but this measures perceived usefulness of review tooling, not whether developers actually verify before committing. [uncertain]",
+  "stated_behavioral_gap": "Cannot be computed: neither a distrust figure nor a verification figure is reported in this source. [uncertain]",
+  "verification_behavior_detail": "Not addressed. The report tracks adoption speed (nearly 80% of new developers use Copilot within their first week) and output volume (43.2 million PRs merged/month, +23% YoY; ~1 billion commits in 2025, +25.1% YoY) but contains no data on testing, manual review, or tooling checks applied to AI-generated code before it is committed.",
+  "seniority_breakdown": "Not reported in this source. Octoverse segments by language, region, and repo type, not by developer seniority or experience level. [uncertain]",
+  "culture_incentive_angle": "Not addressed directly; the report is descriptive telemetry rather than an analysis of incentive structures. Its framing is notable for the essay's angle, though: it casts the shift as developers becoming 'creative directors of code' as AI handles boilerplate, and frames TypeScript's rise to the #1 language as evidence that developers now choose stronger typing because AI removes the old cost of that choice (verbosity), i.e. leaning on type systems as a structural, low-effort verification aid rather than manual review.",
+  "measured_proxy_angle": "The report itself repeatedly foregrounds volume/throughput metrics as headline success indicators: PRs merged per month (+23% YoY), commits pushed (+25.1% YoY), new repos created per minute, and speed of Copilot adoption. It does not name these as targets management optimizes for, but the report's own choice of headline metrics is itself an example of the velocity-over-verification framing the essay critiques: none of the headline stats measure defect rates, revert rates, or review thoroughness.",
+  "human_factors_parallel": "Not present in this source. [uncertain]",
+  "leadership_implication": "No explicit recommendation for managers or leaders. The report's framing implies an identity-shift narrative for individual developers (from code producer to 'creative director'/orchestrator of AI-written code) that leadership content could extend into a management recommendation, but the source itself stops at descriptive framing.",
+  "methodological_caveat": "The report includes a general caveat about its productivity-related correlations: GitHub describes such findings as 'observational signals rather than causal claims' and states 'more work is needed to understand the full impact AI is having.' This caveat is stated for productivity correlations generally and is not specific to verification or trust claims, which the report does not make.",
+  "uncertain": [
+    "pct_distrust_ai_code",
+    "pct_always_verify",
+    "stated_behavioral_gap",
+    "seniority_breakdown",
+    "human_factors_parallel"
+  ]
+}

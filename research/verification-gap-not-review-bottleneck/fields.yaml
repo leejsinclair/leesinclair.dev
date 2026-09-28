@@ -1,0 +1,57 @@
+fields:
+  "Basic info":
+    - name: source_name
+      description: "Name of the report, survey, or study."
+      detail_level: brief
+    - name: publisher
+      description: "Organization that produced it."
+      detail_level: brief
+    - name: publication_date
+      description: "Publication date, as specific as available (month/year)."
+      detail_level: brief
+    - name: methodology_type
+      description: "Self-report survey/attitude data vs. instrumented or behavioral telemetry. This is the field the essay's whole argument rests on: a self-reported 'I always check' claim is exactly the kind of stated behaviour the piece is skeptical of, so every item gets tagged attitude vs. action."
+      detail_level: moderate
+    - name: sample_size
+      description: "Number of respondents/developers/records, and how they were recruited, where stated."
+      detail_level: brief
+
+  "Trust and verification metrics":
+    - name: pct_distrust_ai_code
+      description: "Reported percentage who don't fully trust AI-generated code, or the closest equivalent metric."
+      detail_level: detailed
+    - name: pct_always_verify
+      description: "Reported percentage who always check/verify before committing, or the closest equivalent metric."
+      detail_level: detailed
+    - name: stated_behavioral_gap
+      description: "Computed or stated delta between the distrust figure and the verification figure, so items can be ranked by gap size rather than eyeballed across differently-framed sources."
+      detail_level: moderate
+    - name: verification_behavior_detail
+      description: "What 'checking' actually means in the source: running tests, manual line-by-line read, tooling/static analysis, or something else. Includes any reported time or cognitive cost of doing it."
+      detail_level: detailed
+
+  "Who carries the gap":
+    - name: seniority_breakdown
+      description: "How the trust/verification pattern differs by career stage or experience level, where the source reports it. Several sources show seniors distrust more but also absorb more of the review burden -- worth surfacing as its own field for a leadership audience."
+      detail_level: detailed
+
+  "Why the gap persists":
+    - name: culture_incentive_angle
+      description: "How the source explains the gap: career risk, blame allocation, deadline pressure, or similar."
+      detail_level: detailed
+    - name: measured_proxy_angle
+      description: "Whether the source names a specific metric leadership optimizes for (velocity, PR throughput, lines shipped, feature count) that structurally discourages spending time on verification -- the Goodhart's-law lever for the 'this is a choice, not a capacity problem' thesis."
+      detail_level: detailed
+
+  "Comparative and framing material":
+    - name: human_factors_parallel
+      description: "Where relevant, the equivalent stated-caution-without-verification pattern in a non-software domain, and the proposed mechanism (e.g. automation bias in radiology or aviation)."
+      detail_level: moderate
+    - name: leadership_implication
+      description: "Any explicit recommendation in the source for what managers or leaders should change."
+      detail_level: detailed
+    - name: methodological_caveat
+      description: "Flag for any documented correction, walk-back, or contested methodology in the source (e.g. a later sample-bias admission), so a stat already subject to a caveat isn't cited as clean evidence."
+      detail_level: moderate
+
+uncertain: []
