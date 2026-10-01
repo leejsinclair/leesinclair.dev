@@ -1,0 +1,27 @@
+{
+  "name": "How AI Coding Agents Modify Code (arXiv:2601.17581)",
+  "category": "telemetry / empirical study",
+  "publisher": "Daniel Ogenrwot and John Businge; submitted to arXiv, accepted at the 23rd IEEE/ACM International Conference on Mining Software Repositories (MSR 2026), Mining Challenge Track.",
+  "date_published": "Submitted 2026-01-24; revised 2026-04-06 (per arXiv abstract page).",
+  "sample_size_method": "Static analysis of the AIDev dataset (GitHub PRs), retrieved 2025-11-01: 24,014 merged agentic PRs (440,295 commits) across agent tools (GitHub Copilot, OpenAI Codex, Claude Code, Cursor, Devin) compared against 5,081 merged human PRs (23,242 commits), spanning 116,211 repositories.",
+  "stat_value": "Agentic PRs differ substantially from human PRs in commit count (Cliff's delta = 0.5429); moderate effect-size differences in files touched and deleted lines; agentic PR descriptions show description-to-diff (lexical/semantic) similarity comparable to, and in some metrics slightly higher than, human PRs. Claude Code and OpenAI Codex show greater variability in additions per PR; Devin, Cursor, and especially Copilot produce more consistently small, localized changes.",
+  "stat_definition": "Measures structural characteristics of merged PRs (commit count, files touched, lines added/deleted, description-to-diff consistency) comparing AI-agent-authored PRs to human-authored PRs. It does not measure rewrite/correction volume after initial generation, who performs any correction, rejection/abandonment rates, or review latency [uncertain — full paper may contain more than the abstract/HTML summary surfaced].",
+  "measurement_locus": "post-merge characterization of already-merged PRs (the dataset is restricted to merged PRs), describing the shape of the final merged change rather than the pre-commit drafting or pre-merge review process.",
+  "method": "telemetry (large-scale static analysis of GitHub PR/commit metadata), not self-report or RCT.",
+  "self_report_vs_behaviour_gap": "Not applicable / not addressed — this is a purely behavioral/telemetry study with no self-report comparison surfaced in the abstract or fetched HTML content.",
+  "measures": "correction_volume-adjacent only in a structural sense (commit counts, files touched, lines deleted as proxies for how much a PR was iterated on before merge); does not directly measure belief, checking_action, problem_persistence, or review_attention_latency.",
+  "correction_performer": "unspecified in retrieved content [uncertain] — the paper characterizes commit/file/line-level differences between agentic and human PRs but the fetched abstract and HTML summary explicitly state it does not address who performs post-generation corrections (human reviewer vs. the agent itself via follow-up commits).",
+  "has_breakdown": "yes",
+  "breakdown_summary": "Breaks out by specific AI agent/tool: Claude Code and OpenAI Codex show more variable (larger, less predictable) additions per PR; Devin, Cursor, and Copilot produce more consistently small, localized changes. No breakdown by human contributor seniority/experience was found.",
+  "confidence": "secondary_unverified",
+  "notes": "Findings here are drawn from the arXiv abstract page and an HTML-rendering fetch of the paper, not a full read of the PDF; the fetch explicitly reported that granular data on correction performer, revision/rewrite frequency, rejection/abandonment rates, and review latency was not found in the sections retrieved, so the paper may contain more detail in sections not surfaced by this pass [uncertain]. Recommend a follow-up pass directly against the PDF (arxiv.org/pdf/2601.17581) if those specific correction-pattern stats are needed for the essay.",
+  "already_cited": "no [uncertain]",
+  "new_angle": "Not applicable (not yet confirmed as already cited). If used, this paper's distinct angle is structural: it quantifies how agentic PRs differ in shape (commit count, churn, description fidelity) from human PRs at time of merge, by specific tool, rather than measuring whether anyone checked or corrected the output.",
+  "uncertain": [
+    "stat_definition",
+    "correction_performer",
+    "confidence",
+    "already_cited",
+    "new_angle"
+  ]
+}

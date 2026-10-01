@@ -1,0 +1,131 @@
+topic: "Developers rewrite a third of what the agent hands them — AI code rewrite/correction-rate data as a sharper lens on the verification gap"
+
+items:
+  - name: "JetBrains Developer Ecosystem Survey 2026"
+    category: "self-report survey"
+    description: >
+      Source of the original 34% average rewrite-rate stat and its distribution
+      (5% rewrite none, 35% up to a fifth, 24% a fifth-two-fifths). UNVERIFIED:
+      the public blog post this was sourced from describes a different metric
+      (code-generation share: 47% fully agent-written / 38% AI-assisted / 27%
+      manual), not a rewrite rate. Must pull the exact figure from JetBrains'
+      own PDF/report page before this essay can rely on it.
+
+  - name: "Sonar State of Code Developer Survey 2026"
+    category: "self-report survey"
+    description: >
+      96% of developers don't fully trust AI code; only 48% always verify
+      before committing. Already cited in verification-gap-ai-code.md; needed
+      here as the comparison point this new essay sharpens.
+
+  - name: "Qodo State of AI Code Quality Report 2026"
+    category: "self-report survey"
+    description: >
+      Full Sept 23, 2026 findings (500 devs + 300 leaders, fielded Aug 7-14):
+      89% org incident rate, only 3.7% of leaders say process is sufficient,
+      26% rank review/validation as top bottleneck, 36% describe a "trust tax",
+      90% of leaders confident reporting AI impact upward but only 45% have
+      traceability evidence. Best available anchor for belief-vs-action gap.
+
+  - name: "GitClear Maintainability Gap 2026 report"
+    category: "telemetry"
+    description: >
+      623 million changes, 2023-2026. Copy-pasted code up from 9.4% (2022) to
+      15.7% (H1 2026); moved/refactored code down from 21% to 3.8%; cross-file
+      function calls down 35%. Caution: the "861% churn increase" figure
+      circulating on aggregator blogs is unconfirmed against GitClear's own
+      report page.
+
+  - name: "Faros AI Acceleration Whiplash report 2026"
+    category: "telemetry"
+    description: >
+      22,000 developers, 4,000+ teams, two years of data. PR size up 51.3%,
+      zero-review merges up 31.3%, alongside real throughput gains (epics per
+      developer +66%, task throughput +33.7%). Clearest volume-up/
+      verification-down pairing.
+
+  - name: "GitHub Octoverse 2025"
+    category: "telemetry"
+    description: >
+      Adoption/volume stats with no defect pairing. New angle: commit comments
+      down 27% YoY even as commit volume rose toward 1 billion in 2025 — a
+      second, independent confirmation of declining review attention.
+
+  - name: "DORA / Google Cloud ROI of AI-assisted Software Development (2026.01)"
+    category: "research framework"
+    description: >
+      Amplification framing (AI amplifies existing team strength/weakness) plus
+      a "J-curve" ROI model: ROI dips negative early in adoption, turns positive
+      only with organisational adaptation. Useful if the essay wants a
+      maturity-curve angle for when the rewrite tax is heaviest.
+
+  - name: "METR 2025 RCT + 2026 disclosure"
+    category: "RCT"
+    description: >
+      Measured vs. self-reported productivity gap (developers 19% slower but
+      believed they were faster); 2026 disclosure that developers most
+      convinced AI helped avoided having that belief tested. Already cited;
+      relevant methodological parallel for this essay's self-report caution.
+
+  - name: "Stack Overflow Developer Survey 2025"
+    category: "self-report survey"
+    description: >
+      Trust-by-seniority breakdown: developers with 10+ years report highest
+      distrust of any group. Already cited.
+
+  - name: "GitLab AI Accountability Survey 2026"
+    category: "self-report survey"
+    description: >
+      The "AI paradox" (79% report productivity improved, 85% agree review is
+      now the actual constraint); 43% can't reliably distinguish AI-generated
+      code from human-written code in their own codebase. Already cited.
+
+  - name: "Debt Behind the AI Boom (arXiv:2603.28592)"
+    category: "telemetry / empirical study"
+    description: >
+      304,362 verified AI-authored commits across 6,275 GitHub repos, five
+      assistants (Copilot, Claude, Cursor, Gemini, Devin). Static analysis
+      before/after each commit. >15% of commits from every assistant introduce
+      at least one issue; 24.2% of AI-introduced issues survive to the latest
+      revision (never fixed); net +7,342 vulnerabilities (introduced 1.5x more
+      than fixed). Directly measures what fraction of AI code defects get
+      corrected vs. silently persist.
+
+  - name: "To What Extent Does Agent-generated Code Require Maintenance? (arXiv:2605.06464)"
+    category: "telemetry / empirical study"
+    description: >
+      508 AI-generated vs. 508 human-generated files, 100 repos, 6-month
+      window, 3,238 commits tracked. 83.21% of maintenance commits on
+      AI-generated files are human-authored (vs. 92.98% on human files); AI
+      files show 5.03% fewer bug-fix commits than human files, suggesting
+      problems get smoothed over in later feature/refactor work rather than
+      caught as bugs. Direct post-merge correction-volume measurement.
+
+  - name: "LinearB 2026 Software Engineering Benchmarks Report"
+    category: "telemetry"
+    description: >
+      8.1 million PRs, 4,800 teams, 163,820 contributors, 42 countries.
+      AI-generated PRs wait 4.6x longer for first reviewer pickup (>16 hours
+      vs. ~200 minutes) though reviewed ~2x faster once picked up; AI PRs merge
+      within 30 days only 32.7% of the time vs. 84.4% for unassisted PRs.
+      Measures the queue/attention side of the gap, distinct from "didn't
+      check."
+
+  - name: "How AI Coding Agents Modify Code (arXiv:2601.17581)"
+    category: "telemetry / empirical study"
+    description: >
+      Large-scale study of GitHub pull requests examining how AI coding agents
+      modify code once generated. Candidate source for correction-pattern
+      detail; needs deep-research pass to extract specific stats.
+
+  - name: "Programming by Chat (arXiv:2604.00436)"
+    category: "behavioral study"
+    description: >
+      Large-scale behavioral analysis of 11,579 real-world AI-assisted IDE
+      sessions. Candidate source for session-level correction/rewrite behavior
+      distinct from PR- or commit-level telemetry.
+
+execution:
+  batch_size: 3
+  items_per_agent: 2
+  output_dir: "./results"

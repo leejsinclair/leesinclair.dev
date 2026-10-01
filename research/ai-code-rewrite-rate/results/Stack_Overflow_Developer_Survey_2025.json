@@ -1,0 +1,21 @@
+{
+  "name": "Stack Overflow Developer Survey 2025",
+  "category": "self-report survey",
+  "publisher": "Stack Overflow",
+  "date_published": "Published December 29, 2025 (annual survey, fielded mid-2025)",
+  "sample_size_method": "49,000+ developers surveyed globally, self-selected respondents to Stack Overflow's annual online survey",
+  "stat_value": "Among developers with 10+ years of experience: 2.5% report 'highly trust' AI output accuracy (lowest of any experience group), 20.7% report 'highly distrust' (highest of any experience group). Overall, only 29% of all developers trust AI output accuracy (down from 40% prior year); 46% distrust it; 66% say AI answers are 'almost right, but not quite'; 45% lose significant time debugging AI-generated code.",
+  "stat_definition": "Self-reported belief/trust in the accuracy of AI tool output, not a behavioral or code-level measurement. Captures stated trust level (on a trust/distrust scale) rather than rewrite, rejection, or revert rates.",
+  "measurement_locus": "Pre-commit / upstream of any commit: this is a belief measured at the point of using or evaluating AI output, not a measurement of what happens to code after it enters a review queue or codebase.",
+  "method": "self-report survey",
+  "self_report_vs_behaviour_gap": "[uncertain] No direct behavioral counterpart (e.g. telemetry on actual AI-code edit/rejection rates) was identified in this source to compare against; the survey itself notes a gap between high AI adoption (80%) and low trust (29%), which is a self-reported attitude-behavior gap, not a self-report-vs-telemetry gap.",
+  "measures": "belief",
+  "correction_performer": "Not applicable / not specified: this stat measures stated trust, not who performs any correction.",
+  "has_breakdown": "yes",
+  "breakdown_summary": "Trust in AI accuracy decreases monotonically with experience; developers with 10+ years show the lowest 'highly trust' rate (2.5%) and the highest 'highly distrust' rate (20.7%) of any seniority group in the survey.",
+  "confidence": "secondary_unverified",
+  "notes": "Core finding corroborated across multiple secondary writeups (particula.tech, byteiota.com, shiftmag.dev, intelligenttools.co) citing the same 2.5% / 20.7% figures, but direct confirmation from Stack Overflow's own published survey results/report page (survey.stackoverflow.co/2025) was not fetched in this pass, so figures should be treated as secondary until checked against the primary report.",
+  "already_cited": "yes",
+  "new_angle": "The specific magnitude of the seniority split (2.5% highly-trust vs 20.7% highly-distrust among 10+ year developers, the most distrustful cohort in the entire survey) is a sharper, more citable figure than a general 'trust is low' statement, and supports framing senior engineers as the most reliable AI-output reviewers rather than mere skeptics.",
+  "uncertain": ["date_published", "self_report_vs_behaviour_gap", "confidence"]
+}

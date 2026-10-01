@@ -1,0 +1,21 @@
+{
+  "name": "Qodo State of AI Code Quality Report 2026",
+  "category": "self-report survey",
+  "publisher": "Qodo",
+  "date_published": "Published September 23, 2026; fielded August 7-14, 2026 (Censuswide survey)",
+  "sample_size_method": "500 US software developers + 300 US engineering leaders, surveyed separately (each group blind to the other's answers) at organizations where AI already does meaningful work in the SDLC",
+  "stat_value": "89% of organizations report at least one AI-related production incident; only 3.7% of engineering leaders say existing process is sufficient as agents take on more work; 26% of both developers and leaders rank reviewing/validating AI-generated code as their top delivery bottleneck; 36% of developers describe a 'trust tax' (review takes the same time but demands more cognitive effort); 90% of leaders are confident reporting AI's impact to executives/the board, but only 45% have traceability evidence linking AI activity to the resulting code changes",
+  "stat_definition": "A set of self-reported beliefs and experiences: whether the org has ever had an AI-related incident (historical recall, not a rate), whether current process is believed adequate, which stage of the pipeline is perceived as the bottleneck, whether review feels more effortful, and whether leaders can produce actual evidence for what they report upward versus merely feeling confident reporting it",
+  "measurement_locus": "Mixed and mostly not lifecycle-specific: the incident rate is a post-merge/production outcome; the bottleneck ranking and trust-tax figure describe the pre-merge review queue; the leader confidence/traceability gap is an organizational-reporting measure sitting above any single commit's lifecycle",
+  "method": "self-report survey",
+  "self_report_vs_behaviour_gap": "The report's own central finding is itself a belief-vs-evidence gap rather than a comparison to an external behavioral source: 90% of leaders feel confident reporting AI's impact upward, but only 45% can actually produce traceability evidence for that reporting. This is a self-report-against-itself gap (stated confidence vs. stated possession of evidence), not yet validated against independent telemetry.",
+  "measures": "belief (incident recall, process-sufficiency belief, confidence reporting upward) with one checking_action data point (26% ranking review/validation as the top bottleneck, which is a perception of where checking effort concentrates rather than a measured action)",
+  "correction_performer": "unspecified -- the report does not attribute who performs corrections when an AI-related incident or issue is caught (human developer vs. AI agent)",
+  "has_breakdown": "no",
+  "breakdown_summary": "The published findings split the sample by role (developer vs. engineering leader), not by experience/seniority level within either group.",
+  "confidence": "primary_verified",
+  "notes": "Figures (89% incident rate, 3.7% process sufficiency, 26% bottleneck ranking for both groups, 36% trust tax, 90% leader confidence vs. 45% traceability evidence) were confirmed directly against Qodo's own blog post (qodo.ai/blog/state-of-ai-code-quality-report-2026) and match the press-release restatements (vmblog, financialcontent, Futurum). No discrepancy found between primary and secondary sources on these specific numbers.",
+  "already_cited": "yes",
+  "new_angle": "verification-gap-ai-code.md already cites the 89% incident rate and 3.7% process-sufficiency figure. This deep-research pass adds three stats not currently in the essay: the 26% review/validation bottleneck ranking (shared by both developers and leaders), the 36% 'trust tax' framing (same review time, more cognitive effort), and -- most useful for a belief-vs-action essay -- the 90% leader confidence vs. 45% traceability-evidence gap, which is a cleaner within-report illustration of leaders' stated confidence outrunning their actual evidence than anything currently cited.",
+  "uncertain": []
+}

@@ -1,0 +1,28 @@
+{
+  "name": "LinearB 2026 Software Engineering Benchmarks Report",
+  "category": "telemetry",
+  "publisher": "LinearB",
+  "date_published": "2026 (exact month/day not stated on the resource page)",
+  "sample_size_method": "Telemetry analysis of 8.1+ million pull requests from 4,800+ organizations / teams, 163,820 contributors, across 42 countries; supplemented with a companion '2026 AI in Engineering Leadership' survey for qualitative/leader commentary.",
+  "stat_value": "AI-generated PRs wait 4.6x longer for first reviewer pickup than unassisted PRs (>16 hours vs. ~200 minutes, i.e. ~3.3 hours); widens to 5.3x at the 75th percentile for agentic PRs. Once picked up, AI PRs are reviewed roughly 2x faster than unassisted PRs. AI PRs merge within 30 days only 32.7% of the time vs. 84.4% for unassisted PRs. At the 75th percentile, AI-assisted PRs were 2.6x larger than unassisted PRs (408 vs. 157 lines of code).",
+  "stat_definition": "Measures review-queue attention latency (time-to-first-reviewer-pickup) and review duration once started, plus a separate 30-day merge/acceptance rate. This is not measuring whether code was rewritten, rejected in review, or reverted post-merge; it is measuring how long AI-authored PRs sit unattended in the review queue and how often they ultimately land within a 30-day window.",
+  "measurement_locus": "pre-merge (review queue): time-to-pickup and review duration are measured between PR open and reviewer action; the 30-day merge-rate stat is also pre/at-merge, tracking whether the PR lands at all within that window.",
+  "method": "telemetry (behavioral, pulled from engineering-analytics platform data across customer orgs), not self-report; cross-referenced with a parallel self-report leadership survey for narrative framing.",
+  "self_report_vs_behaviour_gap": "The report pairs its behavioral PR telemetry with a self-report leader survey; LinearB's own framing is that leader sentiment about AI productivity gains runs ahead of what the telemetry shows in the review pipeline (engineers perceive/report speedups, but the queue-attention data shows AI PRs sitting unreviewed far longer and merging far less often within 30 days) [uncertain] — the precise size of this self-report/behavior gap is not quantified in the retrieved content.",
+  "measures": "review_attention_latency (primary); also correction_volume-adjacent via PR size (2.6x larger at p75) and problem_persistence-adjacent via the 30-day merge rate (32.7% vs 84.4%, implying most AI PRs stall or are abandoned rather than merged quickly).",
+  "correction_performer": "unspecified in retrieved content — the report measures reviewer pickup/review speed and merge outcome, not who (human vs AI agent) performs any resulting code corrections.",
+  "has_breakdown": "yes",
+  "breakdown_summary": "Breaks out by PR authorship type (AI-assisted/agentic vs. unassisted/human) and by specific AI tool (e.g. Devin's acceptance rate rising since April 2026, Copilot's slipping since May 2026); agentic (more autonomous) PRs show an even wider pickup-time gap (5.3x) than AI-assisted PRs generally (4.6x). No developer-seniority breakdown found in retrieved content.",
+  "confidence": "secondary_unverified",
+  "notes": "Figures drawn from LinearB's own resource page and multiple secondary summaries (prlens.dev, byteiota.com, exceeds.ai, baeseokjae.github.io), which are broadly consistent with each other on the headline 4.6x/16hrs/~200min and 32.7%/84.4% figures. The original full PDF/report was not directly fetched (only the resource landing page and secondary write-ups), so exact wording, date, and any seniority breakdown could not be verified against primary text [uncertain].",
+  "already_cited": "no [uncertain]",
+  "new_angle": "If not already cited, this adds the queue/attention-latency angle specifically: AI PRs are not reviewed less thoroughly once a human looks at them (they're actually reviewed faster once picked up), the gap is almost entirely in how long they sit waiting for a reviewer to start, plus the low 30-day merge completion rate as a distinct 'stalls out' phenomenon separate from 'reviewer didn't check.'",
+  "uncertain": [
+    "date_published",
+    "self_report_vs_behaviour_gap",
+    "correction_performer",
+    "breakdown_summary",
+    "confidence",
+    "already_cited"
+  ]
+}

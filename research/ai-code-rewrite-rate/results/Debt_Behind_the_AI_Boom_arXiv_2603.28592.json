@@ -1,0 +1,28 @@
+{
+  "name": "Debt Behind the AI Boom: A Large-Scale Empirical Study of AI-Generated Code in the Wild (arXiv:2603.28592)",
+  "category": "telemetry / empirical study",
+  "publisher": "Yue Liu, Ratnadira Widyasari, Yanjie Zhao, Ivana Clairine Irsan, Junkai Chen, David Lo (academic preprint, cs.SE)",
+  "date_published": "Submitted 2026-03-30; revised 2026-04-26 (v2)",
+  "sample_size_method": "304,362 verified AI-authored commits (task brief figure; arXiv abstract/HTML state ~302.6k) across 6,275 GitHub repositories (abstract states 6,299); five AI coding assistants covered: GitHub Copilot, Claude, Cursor, Gemini, Devin. Static analysis tooling run on the codebase state immediately before and after each AI-authored commit to detect introduced/fixed issues; 484,366 distinct issues identified overall.",
+  "stat_value": ">15% of commits from every one of the five assistants introduce at least one issue (per-assistant range reported from ~17.4% for Copilot up to ~29.1% for Gemini); 24.2% of AI-introduced issues survive to the latest revision, i.e. are never fixed (task brief figure; arXiv text reports 22.7%-22.8%); net +7,342 vulnerabilities, i.e. AI assistants introduce roughly 1.5x more security vulnerabilities than they fix (task brief figure; arXiv text confirms the 1.5x ratio and ~22,687 total security issues but does not state the net +7,342 count verbatim in the sections retrieved).",
+  "stat_definition": "Counts issues flagged by static analysis that are newly present in a repository's code immediately after an AI-authored commit versus immediately before it (an 'introduced' issue). Persistence/survival is whether that same issue is still detectable in the repository's HEAD (latest revision) at the time of the study, i.e. whether it was ever fixed by anyone after introduction, not whether it was caught pre-commit or in review. Code smells make up 89.1-89.3% of all issues found; correctness and security issues are a smaller but higher-severity share.",
+  "measurement_locus": "Post-merge / maintenance persistence. The study diffs static-analysis results before vs. after each commit (so introduction is captured at commit time), then separately checks, as of the latest repository revision, whether each introduced issue still exists. There is no pre-merge/review-queue stage in this design; all commits studied were already merged to the repositories analyzed.",
+  "method": "Telemetry (behavioral + static-analysis). Large-scale mining of real GitHub repository history: commits are attributed to specific AI coding assistants, then a static-analysis pipeline is run on the pre- and post-commit snapshots to detect introduced and fixed issues. No self-report survey component.",
+  "self_report_vs_behaviour_gap": "[uncertain] Not applicable/not addressed in the paper as retrieved; this is a pure behavioral/telemetry study with no paired self-report instrument on the same population, so no gap can be computed from this source.",
+  "measures": "problem_persistence (primary); also correction_volume in the sense of net introduced-vs-fixed counts per issue category (code smells, correctness, security).",
+  "correction_performer": "[uncertain] Not clearly specified in the sections retrieved. The paper reports that issues get fixed anywhere from hours to 42+ days after introduction and attributes this to 'human maintainers' fixing issues, but does not give a full human-vs-AI-agent split for who performs each correction across the full issue set.",
+  "has_breakdown": "yes",
+  "breakdown_summary": "Breaks down by AI assistant (Copilot, Claude, Cursor, Gemini, Devin) and by issue category (code smells 89.1-89.3%, correctness ~6.0%, security ~4.7%). Net introduced-vs-fixed differs by category: code smells show a net reduction (AI fixes more than it introduces), while security and correctness issues show a net increase (AI introduces more than it fixes, ~1.5x for security).",
+  "confidence": "conflicting_figures_found",
+  "notes": "Minor numeric discrepancies between the task brief and the arXiv abstract/HTML text retrieved directly: commits (304,362 vs. ~302,600), repos (6,275 vs. 6,299), survival rate (24.2% vs. 22.7-22.8%), and total distinct issues (not independently verified against the brief). These look like rounding/version differences (the paper has a v1 from 2026-03-30 and a revised v2 from 2026-04-26) rather than a different underlying study; direction and magnitude of all headline claims match. The specific 'net +7,342 vulnerabilities' figure from the task brief was not independently located verbatim in the arXiv sections fetched, though the underlying 1.5x introduced-vs-fixed ratio for security issues was confirmed.",
+  "already_cited": "[uncertain] no",
+  "new_angle": "Not previously cited in this site's content as far as checked in this session; if used, its new angle vs. other AI-code-quality sources is the direct before/after static-analysis measurement of what fraction of AI-introduced defects are ever corrected (24.2% never fixed) rather than relying on developer self-report or review-stage proxies, plus the net vulnerability math (AI introduces more security issues than it removes) across five named commercial assistants at GitHub scale.",
+  "uncertain": [
+    "self_report_vs_behaviour_gap",
+    "correction_performer",
+    "already_cited",
+    "sample_size_method",
+    "stat_value",
+    "notes"
+  ]
+}

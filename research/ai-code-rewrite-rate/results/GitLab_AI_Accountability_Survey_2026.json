@@ -1,0 +1,26 @@
+{
+  "name": "GitLab AI Accountability Survey 2026",
+  "category": "self-report survey",
+  "publisher": "GitLab, Inc. (fieldwork conducted by The Harris Poll)",
+  "date_published": "Released June 23, 2026",
+  "sample_size_method": "1,528 developers and technology/IT buyers surveyed across 6 countries, conducted by The Harris Poll on behalf of GitLab",
+  "stat_value": "79% agree individual developer productivity has improved with AI; 85% agree AI has shifted the bottleneck from writing code to reviewing and validating it; 43% say they cannot reliably distinguish AI-generated code from human-written code in their own codebase; 92% report governance challenges with AI-generated code; 87% are confident they could identify AI code's role in a production incident within 24 hours, but only 34% of organizations that actually had such an incident in the past year could do so.",
+  "stat_definition": "Self-reported organizational/individual perception of (a) productivity improvement, (b) where the review bottleneck sits, and (c) ability to attribute code origin (AI vs human) within their own codebase. Not a direct measurement of rewrite, rejection, or revert rates; it is a belief/capability self-assessment, partly cross-checked against a behavioral claim (incident attribution) within the same survey.",
+  "measurement_locus": "Spans the lifecycle: productivity belief is pre-commit/authoring-stage; the review-bottleneck stat is pre-merge (review queue); the code-attribution and incident-detection stats are post-merge/maintenance (determining origin of code already in the codebase, including code implicated in production incidents).",
+  "method": "self-report survey",
+  "self_report_vs_behaviour_gap": "The survey contains an internal self-report-vs-reality gap: 87% self-report confidence they could identify AI code's role in a production incident within 24 hours, but among organizations that actually had an incident, only 34% could actually do so, a roughly 53-point gap between stated confidence and demonstrated capability.",
+  "measures": "belief, checking_action",
+  "correction_performer": "[uncertain] Not clearly specified; the survey addresses governance/traceability capability (whether anyone, human or tooling, can attribute code origin) rather than naming who performs code corrections once AI-origin issues are found.",
+  "has_breakdown": "no",
+  "breakdown_summary": "[uncertain] No seniority or experience-level breakdown was identified for this survey in the sources reviewed; breakdowns found were by organizational governance maturity and country, not developer tenure.",
+  "confidence": "secondary_unverified",
+  "notes": "Figures (79%, 85%, 43%, 87%/34%) were corroborated consistently across GitLab's own press release and multiple secondary outlets (InfoQ, SecurityBrief, Tech Edition, tech-insider.org). The primary GitLab report/press release was fetched directly for this entry, so confidence is higher than pure secondary aggregation, but the full methodology document (exact fielding dates, question wording) was not independently retrieved.",
+  "already_cited": "yes",
+  "new_angle": "The internal gap between the 87% who believe they could trace an AI-code incident within 24 hours and the 34% who actually could when tested by a real incident is a stronger, more specific illustration of overconfidence than the headline 43% traceability stat alone, and pairs well with the 'review is now the actual constraint' framing (85%) to show the bottleneck has moved but confidence hasn't caught up to capability.",
+  "uncertain": [
+    "correction_performer",
+    "has_breakdown",
+    "breakdown_summary",
+    "confidence"
+  ]
+}

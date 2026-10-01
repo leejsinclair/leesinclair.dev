@@ -1,0 +1,29 @@
+{
+  "name": "Sonar State of Code Developer Survey 2026",
+  "category": "self-report survey",
+
+  "publisher": "Sonar (SonarSource)",
+  "date_published": "Released 2026-01-08; survey fielded around October 2025.",
+  "sample_size_method": "Over 1,100 professional developers surveyed globally, drawn from Sonar's community and the wider software-engineering community. Self-report online survey.",
+
+  "stat_value": "96% of developers report they do not fully trust that AI-generated code is functionally correct; only 48% say they always check AI-assisted code before committing it. Also: AI accounts for 42% of all committed code today, expected to reach 65% by 2027; developers spend about 24% of their work week on toil (checking, fixing, validating); 38% say reviewing AI-generated code requires more effort than reviewing a human colleague's code; 72% of developers who have tried AI coding tools use them every day.",
+  "stat_definition": "Two distinct, non-equivalent figures: (1) 96% is a STATED BELIEF ('I do not fully trust this code is functionally correct'), not an action. (2) 48% is a CHECKING ACTION ('I always verify AI-assisted code before committing it'), self-reported. Neither figure measures how much code actually gets rewritten/corrected, or what fraction of problems are ever caught; the 24%-of-week toil figure is the closest proxy for correction volume/effort but is not itself a rewrite rate.",
+  "measurement_locus": "Pre-commit for the 48% verification figure (checking happens before the code is committed). The 96% trust figure and the 24% toil figure are not lifecycle-staged; they describe general attitude and overall time allocation respectively, not a single pipeline stage.",
+
+  "method": "self-report survey",
+  "self_report_vs_behaviour_gap": "This source IS the self-report side of a self-report-vs-behaviour comparison: it documents a gap between a stated belief (96% don't fully trust AI code) and a self-reported checking action (only 48% always verify), i.e. even developers' own account of their checking behaviour falls well short of their own stated distrust. No independent telemetry/behavioral source was checked in this pass to see whether actual checking behaviour (e.g., via commit/review logs) runs even lower than this self-reported 48%, which self-report data of this kind typically overstates relative to telemetry.",
+
+  "measures": "belief",
+  "correction_performer": "Unspecified. The report does not break down whether the checking/correction that does happen is performed by the human developer, an automated tool (e.g. static analysis, CI gate), or an AI agent; it reports only self-reported verification frequency, not who the verifier is.",
+
+  "has_breakdown": "yes",
+  "breakdown_summary": "Junior developers report the highest productivity gains from AI (40%) but are also more likely than senior colleagues to say reviewing AI code takes more effort, i.e. junior developers get more raw output benefit from AI but pay a larger relative review-cost penalty.",
+
+  "confidence": "primary_verified",
+  "notes": "The core 96%/48% figures and the 42% (rising to 65% by 2027) committed-code-share figure were confirmed directly from Sonar's own press release (sonarsource.com/company/press-releases/sonar-data-reveals-critical-verification-gap-in-ai-coding/) and corroborated on Sonar's own community forum post announcing the report, both of which quote the same numbers verbatim. No discrepancy found between the primary source and secondary press coverage (The Register, The New Stack) on these two headline figures.",
+
+  "already_cited": "yes",
+  "new_angle": "verification-gap-ai-code.md already uses the 96%-don't-trust / 48%-always-verify pairing as its central belief-vs-action gap. This pass adds material not yet in that essay: (1) the 42%-of-committed-code-is-AI figure, projected to 65% by 2027, which sizes the scale of the gap against rising AI code share; (2) the 24%-of-week toil figure, a concrete cost measure for the checking that supposedly only 48% of people do; (3) the 38%-say-AI-review-takes-more-effort figure, which complicates the narrative that AI saves review time; (4) the junior-vs-senior breakdown (juniors get the biggest productivity gain at 40% but also feel the biggest review-effort penalty), useful as a seniority angle this new essay could use alongside the JetBrains data, once the JetBrains 34% figure (unverifiable, see companion JSON) is dropped or replaced with JetBrains' verified 47/38/27 authorship-share figure.",
+
+  "uncertain": ["correction_performer"]
+}

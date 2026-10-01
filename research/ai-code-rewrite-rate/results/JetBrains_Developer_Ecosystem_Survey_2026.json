@@ -1,0 +1,34 @@
+{
+  "name": "JetBrains Developer Ecosystem Survey 2026",
+  "category": "self-report survey",
+
+  "publisher": "JetBrains",
+  "date_published": "Fielded May-July 2026; AI-generation-share findings published 2026-08 in \"How Much Code Do Developers Really Let Agents Write?\" (blog.jetbrains.com/research). 10th edition of JetBrains' annual Developer Ecosystem Survey.",
+  "sample_size_method": "Over 15,000 professional developers surveyed worldwide, self-selected via JetBrains channels; data reweighted by region, employment status, programming language, and JetBrains familiarity; unrealistic responses filtered with sum-of-bounds validation.",
+
+  "stat_value": "[uncertain] 34% average rewrite rate (distribution: 5% rewrite none, 35% rewrite up to a fifth, 24% rewrite between a fifth and two-fifths) COULD NOT BE VERIFIED against any JetBrains primary source after direct review of the relevant 2026 JetBrains research blog posts. The only confirmed figure in JetBrains' own 2026 content is a DIFFERENT metric: professional developers report ~47% of their code is fully agent-written, ~38% is AI-assisted, and ~27% is written fully manually (source: \"How Much Code Do Developers Really Let Agents Write?\", blog.jetbrains.com/research/2026/08/how-much-code-do-developers-really-let-agents-write/).",
+  "stat_definition": "[uncertain] The 34%/5%/35%/24% figures, as repeated verbatim across multiple secondary SEO/aggregator sites and WebSearch-generated summaries, are described as a 'rewrite rate': the share of AI-generated code a developer rewrites before accepting/committing it. This is a DIFFERENT measurement from the verified 47/38/27 split, which records who/what produced the code (agent vs. AI-assisted vs. manual authorship), not how much of that code was later rewritten or corrected.",
+  "measurement_locus": "[uncertain] Unverified. If the 34% figure is genuine, it most plausibly describes a pre-commit edit (developer revision of agent output before accepting it), but no primary JetBrains source stating this was located.",
+
+  "method": "self-report survey",
+  "self_report_vs_behaviour_gap": "Not a self-report-vs-telemetry comparison; this entry concerns source verification. Note the verified 47/38/27 authorship-share figure is itself self-reported, and the source post explicitly states bucketed self-report answers can sum above 100% and may not be fully accurate.",
+
+  "measures": "correction_volume",
+  "correction_performer": "[uncertain] human developer, per the unverified 34% rewrite claim if real. The verified 47/38/27 figure does not measure correction at all; it measures authorship share, not who corrects anything.",
+
+  "has_breakdown": "no",
+  "breakdown_summary": "No seniority breakdown exists for the unverified 34% figure since no primary source for it was found. The verified, different 47/38/27 authorship-share figure does break down by seniority: senior developers lead adoption, with roughly a quarter generating over 80% of their code via agents.",
+
+  "confidence": "conflicting_figures_found",
+  "notes": "Central finding of this pass: the 34% average AI-code rewrite-rate figure (with its 5%/35%/24% distribution) is widely repeated by secondary aggregator content and by automated web-search summaries, but repeated direct fetches of JetBrains' own 2026 research blog posts (the May 2026 survey-announcement post, the April 2026 'Understanding AI's Impact on Developer Workflows' post, the August 2026 'AI Coding Agents: Adoption Trends' post, and especially the August 2026 'How Much Code Do Developers Really Let Agents Write?' post, which secondary sources most often point to as its origin) found NO mention of a rewrite rate, a 34% average, or a 5%/35%/24% distribution anywhere in that primary content. The only statistic those primary posts actually contain on this general topic is the code-generation-share split: ~47% fully agent-written, ~38% AI-assisted, ~27% manual. Separately, 'Understanding AI's Impact on Developer Workflows' cites a different, unrelated rewrite-adjacent figure attributed to a third-party study (not JetBrains' own survey data): 'of the code that is at first accepted, almost a fifth is later deleted, and about 7% is heavily rewritten.' No JetBrains PDF or dedicated report page containing the 34%/5%/35%/24% figures was located despite targeted search. CONCLUSION: this essay should NOT cite the 34% rewrite-rate figure as sourced from the JetBrains Developer Ecosystem Survey 2026. It is either a misattribution/fabrication that has propagated across secondary content and search summarization, or it comes from a JetBrains document not surfaced here, in which case it remains unusable until that primary document is produced and checked directly. The figure safely attributable to JetBrains 2026 is the 47% agent-written / 38% AI-assisted / 27% manual code-generation-share split, which is an authorship-share metric, not a rewrite/correction metric.",
+
+  "already_cited": "no",
+  "new_angle": "Not applicable: insufficient verification to cite the 34% rewrite-rate figure at all. If the essay wants a JetBrains 2026 data point, use the verified 47/38/27 authorship-share split instead, clearly framed as measuring who wrote the code rather than how much of it got corrected, so it is not substituted for the unverifiable rewrite claim.",
+
+  "uncertain": [
+    "stat_value",
+    "stat_definition",
+    "measurement_locus",
+    "correction_performer"
+  ]
+}

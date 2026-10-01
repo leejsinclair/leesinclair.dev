@@ -1,0 +1,64 @@
+fields:
+  basic_info:
+    - name: publisher
+      description: "Organisation or author that produced the report/study."
+      detail_level: brief
+    - name: date_published
+      description: "Publication date (or fielding window if a survey)."
+      detail_level: brief
+    - name: sample_size_method
+      description: "Sample size and method: survey respondents, commits analysed, repos covered, RCT participants, etc."
+      detail_level: brief
+
+  core_stat:
+    - name: stat_value
+      description: "The headline number(s), stated precisely with units."
+      detail_level: detailed
+    - name: stat_definition
+      description: "What is actually being counted: rewritten before commit? rejected in review? reverted post-merge? never fixed at all?"
+      detail_level: detailed
+    - name: measurement_locus
+      description: "Where in the lifecycle the measurement is taken: pre-commit, pre-merge (review queue), or post-merge (maintenance/persistence)."
+      detail_level: detailed
+
+  measurement_type:
+    - name: method
+      description: "self-report survey / telemetry (behavioral or static-analysis) / RCT."
+      detail_level: moderate
+    - name: self_report_vs_behaviour_gap
+      description: "If this source can be compared against a self-report source on the same underlying question, note the direction and size of any gap."
+      detail_level: moderate
+
+  trust_check_relationship:
+    - name: measures
+      description: "belief | checking_action | correction_volume | problem_persistence | review_attention_latency"
+      detail_level: detailed
+    - name: correction_performer
+      description: "If known: who performs the correction when it happens — human developer, AI agent, or unspecified."
+      detail_level: detailed
+
+  seniority_breakdown:
+    - name: has_breakdown
+      description: "yes/no"
+      detail_level: brief
+    - name: breakdown_summary
+      description: "One-line summary of the pattern if present."
+      detail_level: brief
+
+  source_confidence:
+    - name: confidence
+      description: "primary_verified | secondary_unverified | conflicting_figures_found"
+      detail_level: brief
+    - name: notes
+      description: "Any discrepancy found between primary source and secondary restatements (e.g. the JetBrains 34% figure, the GitClear 861% churn figure)."
+      detail_level: brief
+
+  overlap_with_existing_essay:
+    - name: already_cited
+      description: "yes/no"
+      detail_level: brief
+    - name: new_angle
+      description: "If already cited, what NEW stat or framing this deep-research pass adds beyond what's already in that essay."
+      detail_level: brief
+
+uncertain: []
