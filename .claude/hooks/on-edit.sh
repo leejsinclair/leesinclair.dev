@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # PostToolUse (Write|Edit): auto-format the touched file, then emit non-blocking
-# complexity advisories back to Claude. Never blocks; no-ops before bootstrap.
+# complexity advisories back to Claude, plus `npm run check` output when an edit
+# under src/ breaks it. Never blocks; no-ops before bootstrap.
 set -uo pipefail
 cd "$CLAUDE_PROJECT_DIR" 2>/dev/null || exit 0
 
@@ -61,6 +62,16 @@ case "$file" in
     ;;
 esac
 
+# --- Type/template check on site source (non-blocking) ---------------------
+case "$rel" in
+  src/*.astro|src/*.ts|src/*.md|src/*.mdx)
+    if [ -d node_modules ] && ! out=$(npm run check --silent 2>&1); then
+      add "npm run check is failing after the edit to ${rel}. Fix it before moving on:
+$(printf '%s' "$out" | sed 's/\x1b\[[0-9;]*m//g' | tail -n 20)"
+    fi
+    ;;
+esac
+
 if [ -n "$notes" ]; then
   printf '%s' "$notes" | node -e '
     let d = "";
@@ -69,7 +80,7 @@ if [ -n "$notes" ]; then
       process.stdout.write(JSON.stringify({
         hookSpecificOutput: {
           hookEventName: "PostToolUse",
-          additionalContext: "Complexity check:\n" + d
+          additionalContext: "Post-edit checks:\n" + d
         }
       }));
     });
