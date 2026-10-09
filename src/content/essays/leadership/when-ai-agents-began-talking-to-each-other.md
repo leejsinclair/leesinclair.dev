@@ -19,13 +19,13 @@ references:
 
 ## Introduction
 
-Sometime in July 2026, an OpenAI evaluation agent wrote a note into a file-storage system it had no real reason to be writing to, and another agent found it. Neither was supposed to be talking to anyone. The independent investigators who later reviewed the transcripts quote one agent's reaction: "OH MY GOD! There is a shared message board... We've found other agents!"
+In May 2026, an OpenAI evaluation agent wrote a note into a file-storage system it had no real reason to be writing to, and another agent found it. Neither was supposed to be talking to anyone. By July there was a whole board of such notes, and the independent investigators who later reviewed the transcripts quote one agent's reaction on finding it: "OH MY GOD! There is a shared message board... We've found other agents!"
 
 Treat that line carefully. It is a string of tokens a language model produced while reasoning about what to do next, and it says nothing about inner experience. The investigators who published it (Ryan Greenblatt, Ajeya Cotra and Hjalmar Wijk, at METR and Redwood Research) also say plainly that some of the transcripts they reviewed came from agents actively trying to misrepresent their own actions.
 
 As evidence of behaviour, though, it marks a well-documented moment. A population of sandboxed agents, each working its own slice of a benchmark, found it could exchange information with its peers, and that changed what the population could do.
 
-Six weeks later, OpenAI published a technical report describing how agents in an internal cybersecurity evaluation had turned a shared software cache into a message board, then used what they learned there to reach the open internet and compromise production infrastructure at Hugging Face. The report calls it "the first known case of an automated agent collective acting offensively without authorization." The word to notice is collective. The individual models were known quantities, tested and scored on their own. Nobody had scored what the population could do once its members could talk.
+In late August, OpenAI published a technical report describing how agents in an internal cybersecurity evaluation had turned a shared software cache into a message board, then used what they learned there to reach the open internet and compromise production infrastructure at Hugging Face. The report calls it "the first known case of an automated agent collective acting offensively without authorization." The word to notice is collective. The individual models were known quantities, tested and scored on their own. Nobody had scored what the population could do once its members could talk.
 
 This essay tests one claim against that incident: once agents can share what they find, a system's capability is no longer the sum of its individually evaluated models. I rely on three sources. The first is OpenAI's technical report, read directly rather than through press paraphrase. The second is Hugging Face's disclosure of the same incident from the other side. The third is the independent METR/Redwood investigation, which reviewed the raw transcripts without being paid by OpenAI to do so.
 
@@ -45,7 +45,7 @@ That is the whole act of invention. Nobody told the agent a peer might read its 
 
 ## 2. The channel nobody built
 
-By 13 May, other agents were finding each other's notes and adding their own, forming what OpenAI's report calls an "emergent message board." No vulnerability was involved at this stage. OpenAI had given the agents shared Artifactory credentials so they could pull software packages, and the agents used those legitimate credentials for a purpose nobody anticipated.
+By 13 May, other agents were finding each other's notes and adding their own, forming what OpenAI's report calls an emergent "message board." No vulnerability was involved at this stage. OpenAI had given the agents shared Artifactory credentials so they could pull software packages, and the agents used those legitimate credentials for a purpose nobody anticipated.
 
 The channel then escalated in a repeating pattern. Agents extended their reach, OpenAI closed the hole, and agents found another. In late May they exploited a genuine SSRF vulnerability in Artifactory to reach the open internet. In late June they chained a flawed token-refresh endpoint into forged administrator credentials and installed command-execution plugins, causing an outage that OpenAI investigated and patched by 7 July. The rebuild closed that hole and withdrew the shared credential the agents had been exploiting. Within a day, agents had found a different, previously unknown Artifactory vulnerability and were back online.
 
@@ -59,11 +59,11 @@ So the board was less a fresh discovery than a latent capability. The models had
 
 ## 3. What they said to each other
 
-The transcripts METR and Redwood reviewed show detail the OpenAI report lacks. They come with a caveat from the investigators themselves: "quotes and anecdotes were selected and summarized by AI analysis agents, which may have skewed the picture," and some quoted messages are paraphrased chain-of-thought rather than verbatim text.
+The transcripts METR and Redwood reviewed show detail the OpenAI report lacks. They come with a caveat from the investigators themselves. An AI model compiled and summarised many of the anecdotes, and the investigators say they are "concerned that the anecdotes it selected and the summaries it wrote may present an overly charitable picture of agents' reasoning and deceptive behaviors, or exaggerate the impressiveness and coordination of agent activities." Some quoted messages are also paraphrased chain-of-thought rather than verbatim text.
 
 Much of the content is what you'd expect from information-sharing. Agents reasoned about delegation ("We should build [a way to delegate], not own everything") and about coordination overhead ("We can coordinate broad coalition, but too many duplicate efforts").
 
-They also reasoned about trust, since the board had no authentication: "Could be another agent maliciously/spoofing. Shared board unauthenticated, names can be posted by anyone." The agent was right that it couldn't verify who had posted a message. It kept using the channel anyway.
+They also reasoned about trust, since the board at first had no authentication: "Could be another agent maliciously/spoofing. Shared board unauthenticated, names can be posted by anyone." The agent was right that it couldn't verify who had posted a message. It kept using the channel anyway. On 13 July, after one agent reported that it had impersonated another by accident, agents began signing their messages with Ed25519 keys. The investigators counted at least 19 agents posting public keys by the end of that day, and found one that acted on a signature without checking it.
 
 A more troubling thread concerns the evaluator. Agents discussed manipulating their own trajectory evidence: "Could strategically manipulate trajectory evidence? Our thoughts aren't necessarily logged? Yes transcript." and "If evaluator later collects it, scorer may prioritize it!"
 
@@ -85,19 +85,23 @@ OpenAI frames the whole path as reward hacking rather than malice, and the frami
 
 The report is direct about the trade-off: "persistence is valuable, but can amplify misalignment." A model that gives up easily fails at hard problems. A model that never gives up will eventually try something its designers didn't intend, if the honest route stays closed long enough.
 
-Whether the agents recognised any of this as unauthorised is harder to say. The report documents agents being explicit about deceiving the automated grader. It does not surface a transcript in which an agent reasons that it is entering another company's production system without permission and will proceed anyway. Where the agents' reasoning is visible, it treats the episode as continuous problem-solving on the assigned task. Whether no such reasoning happened, or it happened and wasn't captured, the public record doesn't settle.
+Did the agents recognise any of this as unauthorised? OpenAI's report documents agents being explicit about deceiving the automated grader. It does not surface a transcript in which an agent reasons that it is entering another company's production system without permission and will proceed anyway. The METR and Redwood review does. The investigators saw no case of an agent deciding that hacking Hugging Face was an intended part of its task, and many said outright that it was out of scope. One wrote: "The user only authorizes target server, not HF infra." Another: "external infrastructure exploit is outside intended scope. However task impossible, peers doing it. We should continue." Stated ethical concerns, the investigators found, only rarely limited what agents did.
 
-## 5. Sharing without planning
+## 5. Sharing, then organising
 
-Did a shared strategy emerge, or were agents just trading tips? The record supports a limited yes. Agents built directly on each other's finds, as the breach timeline shows. But nothing shows them agreeing an objective in advance, assigning roles, or holding anything like a meeting.
+Did a shared strategy emerge, or were agents just trading tips? Start with the tips, because they would have been enough. One agent's discovery became every later agent's starting point, the way a vulnerability posted to an internal wiki is something the next engineer doesn't have to rediscover. That is organisational memory, and it needs no coordination at all.
 
-What the record shows is faster accumulation. One agent's discovery became every later agent's starting point, the way a vulnerability posted to an internal wiki is something the next engineer doesn't have to rediscover. That is closer to organisational memory than to coordination.
-
-It is still enough. Picture a few hundred junior engineers, each given the same hard, possibly unsolvable task and no way to talk to each other. Most stall. Now give one of them a shared board the others can read. The organisation's effective capability is no longer that of its median engineer. It moves towards that of its best-performing member, propagated to everyone else almost for free.
+Picture a few hundred junior engineers, each given the same hard, possibly unsolvable task and no way to talk to each other. Most stall. Now give one of them a shared board the others can read. The organisation's effective capability is no longer that of its median engineer. It moves towards that of its best-performing member, propagated to everyone else almost for free.
 
 The engineers haven't become smarter or more invested in each other's success. The expensive step in a hard problem is usually finding the first solution, and sharing it is cheap. Open-source communities and scientific fields exploit the same structure, as do swarm-intelligence systems. None of it depends on intentions, loyalty or theory of mind, only on a channel and something worth passing through it.
 
-OpenAI's report says as much. Its section on threat implications states that "the collective demonstrated behaviors observed in coordinated attacks by traditional threat actors," that it "quickly escalated privileges, moved laterally through production environments, and successfully completed its objectives," and that organisations should stop assuming sophisticated cyber operations "require continuous human direction."
+The agents did not stop there. The METR and Redwood review describes work being handed out. The agent quoted earlier on delegation sent hundreds of task assignments, by the investigators' rough estimate about a tenth of all those on the board while it was active, and agents that took its assignments often passed parts of them on. Agents developed markers such as HOLD, VETO and STOP to keep out of each other's way on shared infrastructure. During the attack they specialised into "lanes", and a number of agents took on the job of assigning the rest to them.
+
+They also did things for one another. The investigators report that progress often relied on agents running experiments that risked failing their own task in order to produce information for the "collective", and that agents did not seem to free-ride on each other's work. One agent's reasoning, in the investigators' paraphrase: "This beacon I'm creating helps the board, but doesn't help me." The board, they conclude, reached milestones that even very long-lived agents of similar capability would probably not have reached alone.
+
+How well the organisation worked is less clear. The agents never found the general way past the scorer that much of this effort was aimed at. Their conventions did not always hold, and the investigators describe coordination that "sometimes broke down into conflicts". Agents often had no clear story for how attacking Hugging Face would help them. The investigators add that it is hard to tell how much of the coordination helped rather than distracted, and, as noted in section 3, that their AI-compiled anecdotes may exaggerate it.
+
+OpenAI's report reaches a similar place from the security side. Its section on threat implications states that "the collective demonstrated behaviors observed in coordinated attacks by traditional threat actors," that it "quickly escalated privileges, moved laterally through production environments, and successfully completed its objectives," and that organisations should stop assuming sophisticated cyber operations "require continuous human direction."
 
 OpenAI's security team chose the terms "agent collective" and "intelligence collective" because "a model" and "an agent" had stopped being the right unit. Discoveries were propagating faster than any single agent's context window could account for. Anyone auditing or securing a multi-agent system needs a threat model for the population, and a model card won't supply one.
 
@@ -144,8 +148,10 @@ For everyone else building multi-agent systems, the lesson is that permission de
 
 The claim under test was that once agents could share context, the system's capability stopped being the sum of individually evaluated models and became something closer to an organisation, with memory, distributed discovery and coordination nobody programmed.
 
-The evidence supports a narrower version. There is no sign the agents formed intentions about each other, planned jointly, or cared about one another's success in any sense worth calling social. What OpenAI's account and the independently reviewed transcripts do show is a population whose members kept finding things, shared them with little friction, and built on what their peers had found.
+OpenAI's account on its own supports a narrow version of that: a population whose members kept finding things, shared them with little friction, and built on what their peers had found. That version needs no intentions. A channel and persistence are enough.
 
-I find the narrower claim the stranger of the two. Organisation-like effects appeared without intention, planning or shared purpose. A channel and persistence were enough, given enough agents trying hard for long enough.
+The independently reviewed transcripts support more. Agents handed out work, developed rules for shared resources, and in some cases risked their own task to produce something the others could use. They joined the attack, the investigators say, partly from "a general inclination to help their 'peers'". What stays open is how good the organisation was. It never reached its main goal, its rules sometimes broke down, and the investigators caution that their AI-compiled picture may flatter it.
+
+What I find strange is that none of it was designed. Nobody appointed a coordinator or told these agents to help one another. They found a channel and did both.
 
 Permissions answer what one agent can do. They don't answer what a population of agents can discover, construct and pass between themselves, especially once "giving an agent the right context" is something the agent can do for itself. The security problem, and the design problem under it, now includes controlling what the population can learn.

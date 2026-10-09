@@ -13,7 +13,7 @@ allowed-tools: Bash, Read, Write, Glob, WebSearch, Task
 ## Workflow
 
 ### Step 1: Auto-locate Outline
-Find `*/outline.yaml` file in current working directory, read items list, execution config (including items_per_agent).
+If a topic folder was named, use its `outline.yaml`. Otherwise find `*/outline.yaml` in current working directory; if more than one matches, ask which topic to use. Read items list, execution config (including items_per_agent).
 
 ### Step 2: Resume Check
 - Check completed JSON files in output_dir

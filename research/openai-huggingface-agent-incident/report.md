@@ -1597,7 +1597,7 @@ _The conventional infosec paper trail: specific CVEs, NVD entries, vendor patche
 
 > A separate, later, and more severe Artifactory vulnerability (CVE-2026-82329, CVSS 9.8, critical authentication bypass allowing unauthenticated admin token minting) was disclosed and then actively exploited in the wild starting roughly two months after this incident (per a JFrog security researcher's own account on X and corroborating advisories, including a California state cyber advisory). This CVE is NOT part of the OpenAI/Hugging Face incident's original eight and should not be conflated with it in the essay; it is a distinct, later Artifactory security event affecting the same vendor.
 
-  - **primary_sources_checked:** 
+  - **press_sources_checked:** 
     - https://thehackernews.com/2026/07/jfrog-confirms-openai-models-exploited.html
     - https://www.securityweek.com/jfrog-zero-days-exploited-in-openai-hugging-face-hack/
     - https://www.bleepingcomputer.com/news/security/openai-models-used-artifactory-zero-days-to-escape-to-the-internet/
@@ -1740,7 +1740,7 @@ _Per-fact tag: demonstrated / claimed / inferred / speculative, with the source 
 
 
 
-> See per-case tags above; the academic sources are independently demonstrated as existing and saying what's described; none of them are themselves claims about the Hugging Face incident and should not be cited as if they were.
+> See per-case tags above; the academic sources are claimed, not demonstrated: their summaries come from search-result synthesis and no paper was fetched in this pass (see direct_quotations). The one exception is arXiv:2402.07510 (Motwani et al., Secret Collusion among AI Agents), whose arXiv abstract was opened on 2026-10-10 and confirms the formalisation of secret collusion, the limited steganographic capability of current models, and the call for continuous monitoring; none of them are themselves claims about the Hugging Face incident and should not be cited as if they were.
 
 
 ### Direct Quotations

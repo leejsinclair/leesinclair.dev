@@ -8,17 +8,6 @@ from pathlib import Path
 
 import yaml
 
-CATEGORY_MAPPING = {
-    "basic_info": ["basic_info", "Basic Info"],
-    "technical_features": ["technical_features", "technical_characteristics", "Technical Features"],
-    "performance_metrics": ["performance_metrics", "performance", "Performance Metrics"],
-    "milestone_significance": ["milestone_significance", "milestones", "Milestone Significance"],
-    "business_info": ["business_info", "commercial_info", "Business Info"],
-    "competition_ecosystem": ["competition_ecosystem", "competition", "Competition Ecosystem"],
-    "history": ["history", "History"],
-    "market_positioning": ["market_positioning", "market", "Market Positioning"],
-}
-
 _SKIP_KEYS = {"_source_file", "uncertain"}
 
 
@@ -74,9 +63,9 @@ def load_fields_yaml(fields_path):
     return all_fields, required_fields, field_categories
 
 
-def extract_json_fields(data, category_mapping=None):
-    category_mapping = CATEGORY_MAPPING if category_mapping is None else category_mapping
-    nested_keys = {k for keys in category_mapping.values() for k in keys}
+def extract_json_fields(data, categories):
+    """Collect field names from a flat or nested result. `categories` are the
+    fields.yaml category names: a dict under one of them is descended into."""
     fields = set()
     stack = [(data, True)]
     while stack:
@@ -85,7 +74,7 @@ def extract_json_fields(data, category_mapping=None):
             for k, v in obj.items():
                 if k in _SKIP_KEYS:
                     continue
-                if is_category_level and k in nested_keys:
+                if is_category_level and k in categories:
                     if isinstance(v, dict):
                         stack.append((v, True))
                     continue
@@ -98,7 +87,9 @@ def extract_json_fields(data, category_mapping=None):
 def validate_json(json_path, all_fields, required_fields, field_categories):
     with json_path.open(encoding="utf-8") as f:
         data = json.load(f)
-    json_fields = extract_json_fields(data)
+    # A category that shares its name with a field is a field, not a wrapper.
+    categories = set(field_categories.values()) - all_fields
+    json_fields = extract_json_fields(data, categories)
     covered = all_fields & json_fields
     missing = all_fields - json_fields
     extra = json_fields - all_fields

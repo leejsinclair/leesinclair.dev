@@ -9,8 +9,9 @@ description: Add a supplied essay to the site and verify it
 3. Remove em dashes and AI writing tells (use the humanizer skill); do not overstate claims
    or change the meaning of quotes.
 4. Do not hand-write a homepage card: the homepage picks up each pillar's two newest essays
-   by `date`. Make sure the essay's dek and TL;DR match the body. Any internal links are
-   relative and include the pillar prefix (`myths/talos`, not `/talos`).
+   by `date`. Make sure the essay's dek and TL;DR match the body. Links to other
+   essays in the body are root-relative and include the pillar (`/myths/talos`, not
+   `myths/talos` or `/talos`). The relative form is for homepage links only.
 5. If the essay had a research folder in the repo root, move it into `research/`.
 6. Run `npm run check` and `npm run build`.
 7. Open the new essay page and the homepage in a real browser (Playwright or the Chrome

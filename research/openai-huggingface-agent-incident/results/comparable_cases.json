@@ -44,7 +44,7 @@
       "evidentiary_status": "not a sourced claim; included as the item itself directs ('conceptual, not incident research')"
     }
   ],
-  "evidentiary_status": "See per-case tags above; the academic sources are independently demonstrated as existing and saying what's described; none of them are themselves claims about the Hugging Face incident and should not be cited as if they were.",
+  "evidentiary_status": "See per-case tags above; the academic sources are claimed, not demonstrated: their summaries come from search-result synthesis and no paper was fetched in this pass (see direct_quotations). The one exception is arXiv:2402.07510 (Motwani et al., Secret Collusion among AI Agents), whose arXiv abstract was opened on 2026-10-10 and confirms the formalisation of secret collusion, the limited steganographic capability of current models, and the call for continuous monitoring; none of them are themselves claims about the Hugging Face incident and should not be cited as if they were.",
   "timeline": "Not the subject of this item. The cited academic work (2024-2026) predates or is contemporaneous with the Hugging Face incident (2026) but was not written about it specifically, except insofar as later 2026 survey papers may reference it as a real-world example (not independently confirmed which, if any, of the fetched survey papers cite the incident by name; this was not checked in this pass).",
   "original_task_and_constraints": "Not the subject of this item.",
   "technical_mechanism": "Not the subject of this item; see vendor_vulnerability_trail.json and named_individuals.json (transcript_trustworthiness) for the incident's own technical mechanism.",

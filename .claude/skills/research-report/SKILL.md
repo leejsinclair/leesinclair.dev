@@ -13,7 +13,7 @@ allowed-tools: Read, Write, Glob, Bash, AskUserQuestion
 ## Workflow
 
 ### Step 1: Locate Results Directory
-Find `*/outline.yaml` in current working directory, read topic and output_dir config.
+If a topic folder was named, use its `outline.yaml`. Otherwise find `*/outline.yaml` in current working directory; if more than one matches, ask which topic to use. Read topic and output_dir config.
 
 ### Step 2: Scan Optional Summary Fields
 Read all JSON results, extract fields suitable for TOC display (numeric, short metrics), e.g.:

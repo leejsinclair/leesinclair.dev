@@ -15,7 +15,8 @@ notes go in the pull request and the final report.
    skill first. If I named an idea, use it. Otherwise list the open ideas (not struck
    through) with their pillar and ask me which one to write.
 2. **Research.** Run the `research`, `research-deep` and `research-report` skills on the
-   idea, in a topic folder in the repo root. Take defaults for their questions (time
+   idea, in a topic folder in the repo root. Tell `research-deep` and `research-report`
+   which folder that is, since older topic folders may still be in the root. Take defaults for their questions (time
    range, batch size, item and field confirmation, approval between batches, table of
    contents fields). Live searches only. A claim is usable only if its primary source was
    actually opened and says what the claim says.
@@ -29,7 +30,7 @@ notes go in the pull request and the final report.
 
    UK English. Use only what the research verified, and nothing it marked `[uncertain]`.
    Where the piece builds on an essay already on the site, say so and link to it with a
-   relative link that includes the pillar prefix.
+   root-relative link that includes the pillar (`/myths/talos`).
 
 4. **Humanize.** Run the `humanizer` skill over the draft and apply the Content style
    rules in `CLAUDE.md` (no em dashes). Do not change facts, figures or quotes.

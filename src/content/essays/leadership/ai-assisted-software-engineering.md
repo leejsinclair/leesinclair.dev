@@ -7,7 +7,7 @@ tldr:
   points:
     - "A 2025 randomised trial found developers using AI tools took 19% longer on real tasks, despite believing afterwards they'd been 20% faster."
     - "A longitudinal study found time shifting from creation towards verification, plus negative developer experience nearly doubling (14% to 27%) even as perceived productivity stayed high."
-    - "Passive AI use measurably degrades skill formation and comprehension, while active, question-driven use scores close to working unaided. The difference is coachable."
+    - "In Anthropic's 2026 trial of 52 engineers, those who delegated passively to AI scored worst on comprehension, while those who asked questions and checked their own reasoning scored close to the unassisted group. The difference is coachable."
     - "Leaders should measure local time savings before reinvesting them, and track capability and wellbeing alongside delivery speed, not instead of it."
 references:
   - "Ahmad, M. O. (2026). Comprehension debt in GenAI-assisted software engineering projects. 30th International Conference on Evaluation and Assessment in Software Engineering (EASE 2026), Glasgow. arXiv:2604.13277."
@@ -219,6 +219,6 @@ Stability earns its own row. DORA's 2024 report estimated that every 25% rise in
 - **Focus on system constraints.** Treat any real velocity gains as capacity to reinvest in architecture, testing, slack, and capability. They are not a mandate for more output.
 - **Elevate the middle loop.** Explicitly teach and evaluate prompt intent, context boundary definition, and output verification as core engineering competencies.
 - **Protect engineering mastery.** Ensure senior engineers mentor juniors through complex problem-solving rather than delegating foundational understanding entirely to automated tools.
-- **Design for active, not passive, AI use.** The skill-formation evidence is consistent: comprehension holds up when engineers interrogate AI output and degrades when they accept it passively. That distinction is coachable, and worth making explicit in onboarding and review norms.
+- **Design for active, not passive, AI use.** In Anthropic's trial, comprehension held up when engineers interrogated AI output and dropped when they accepted it passively. That distinction is coachable, and worth making explicit in onboarding and review norms.
 
 > AI should make the organisation more capable, not merely more output-dense, and leadership shouldn't take the "more output" part on faith either.

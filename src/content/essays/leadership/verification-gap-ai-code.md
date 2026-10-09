@@ -26,7 +26,7 @@ references:
   - "Vekris, P., Cosman, B., & Jhala, R. (2015). Trust, but Verify: Two-Phase Typing for Dynamic Languages. ECOOP 2015. arXiv:1504.08039."
 ---
 
-Two surveys landed within weeks of each other in 2026, both measuring the same discomfort in different ways. Sonar's State of Code Developer Survey found that 96% of developers don't fully trust AI-generated code. Qodo's State of AI Code Quality Report found that 89% of organisations have already had an AI-related production incident, and only 3.7% of engineering leaders think their current review process is sufficient. Distrust is close to universal.
+Two 2026 surveys, published in January and September, measured the same discomfort in different ways. Sonar's State of Code Developer Survey found that 96% of developers don't fully trust AI-generated code. Qodo's State of AI Code Quality Report found that 89% of organisations have already had an AI-related production incident, and only 3.7% of engineering leaders think their current review process is sufficient. Distrust is close to universal.
 
 What should worry leaders more is a second number in the same Sonar survey: only 48% of developers say they always verify AI-generated code before committing it. That 48-point gap between what people believe and what they do is the subject of this piece.
 
