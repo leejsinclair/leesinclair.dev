@@ -1,0 +1,66 @@
+fields:
+  basic_info:
+    - name: publisher
+      description: "Organisation or individual author that produced the source."
+      detail_level: brief
+    - name: date_published
+      description: "Publication date, or the specific dated primary artifact (tweet, commit, paper submission) for origin/coinage claims."
+      detail_level: brief
+    - name: source_type
+      description: "academic paper / vendor blog / vendor-commissioned survey / independent practitioner essay / primary source (tweet, commit) / practitioner framework."
+      detail_level: brief
+
+  core_claim:
+    - name: claim_value
+      description: "The specific claim, stat, or technique this source contributes, stated precisely with units/numbers where applicable."
+      detail_level: detailed
+    - name: claim_definition
+      description: "What is actually being measured or asserted: a benchmark result, a practitioner's taxonomy, a survey opinion, a vendor's technique recommendation, or a historical/coinage fact."
+      detail_level: detailed
+
+  evidence_type:
+    - name: evidence_category
+      description: "benchmark/empirical result | practitioner anecdote | survey opinion | marketing assertion | primary historical artifact."
+      detail_level: moderate
+    - name: reproducibility
+      description: "For benchmark-type claims: is code/data/eval harness public, and has anyone replicated the finding independently of the original publisher."
+      detail_level: moderate
+
+  commercial_interest:
+    - name: publisher_sells_relevant_product
+      description: "Does the source's publisher sell a product that directly benefits from the narrative this source promotes (e.g. a vector DB, a context/data-catalog platform, a caching/memory layer)? yes/no plus which product."
+      detail_level: detailed
+    - name: conflict_notes
+      description: "Any specific discrepancy found between this source's actual content and how it is cited/paraphrased elsewhere (e.g. the DataHub 82% vs 83% discrepancy already flagged)."
+      detail_level: detailed
+
+  prompt_engineering_relationship:
+    - name: relationship
+      description: "Does this source support, complicate, or contradict the 'prompt engineering is dead, context engineering is what matters now' framing?"
+      detail_level: detailed
+    - name: derivative_of
+      description: "What prior work (a paper, a benchmark, a framework) this source explicitly extends, counters, or repackages, if any. Helps distinguish genuine incremental contribution from relabeling."
+      detail_level: moderate
+
+  audience_register:
+    - name: register
+      description: "practitioner/engineer | enterprise IT buyer | academic researcher. The same underlying claim lands differently depending on who it's pitched at."
+      detail_level: brief
+
+  source_confidence:
+    - name: confidence
+      description: "primary_verified | secondary_unverified | conflicting_figures_found"
+      detail_level: brief
+    - name: notes
+      description: "Any discrepancy found between primary source and secondary restatements, or between this item and others in the same research set."
+      detail_level: detailed
+
+  overlap_with_existing_content:
+    - name: already_cited
+      description: "yes/no - whether this is already cited in article_ideas.md's 'Context engineering didn't retire the prompt' entry (09-27) or the AGENTS.md thought/counterpoint."
+      detail_level: brief
+    - name: new_angle
+      description: "What new stat, framing, or correction this deep-research pass adds beyond what's already logged."
+      detail_level: detailed
+
+uncertain: []
