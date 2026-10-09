@@ -3,7 +3,7 @@ title: "The Contextual Anchor: Reimagining Leadership Purpose in the Era of AI C
 date: 2026-09-24
 dek: "As AI agents take on more of the mechanics of coding, purpose becomes the anchor that helps engineers judge whether an AI-assisted solution is actually good, but it only works alongside autonomy, mastery, and psychological safety, not in place of them."
 tldr:
-  summary: "AI coding agents are changing the mechanics of software production, but the leadership response isn't to replace lost technical identity with purpose alone: it's to make the link between technical work, business outcomes, and human development explicit, while still investing in verification, competence, and safety."
+  summary: "AI coding agents are changing the mechanics of software production. Purpose alone will not replace a lost technical identity, so leaders need to make the link between technical work, business outcomes, and human development explicit, while still investing in verification, competence, and safety."
   points:
     - "A 2025 randomised trial found developers using AI tools took 19% longer on real tasks, yet still believed afterwards they'd been faster. Sentiment alone isn't a reliable signal that AI is helping."
     - "Context about a codebase, its constraints, and its intent is itself an engineering capability: teams that can articulate it direct and evaluate AI output better than teams that can't."
@@ -28,21 +28,19 @@ So if the mechanics of software production change, how should engineering leader
 
 Abandoning technical mastery is the wrong answer. So is hoping that purpose alone will absorb the disruption. Leaders need to make the link between technical work, business outcomes, customer needs and people's development far more explicit than it used to be.
 
-That is where purpose becomes a contextual anchor. It tells engineers what they are trying to achieve, why it matters, and how to judge whether an AI-assisted solution is any good. It doesn't work on its own, though. Autonomy, mastery, psychological safety and room to grow still matter just as much.
+That is where purpose becomes a contextual anchor. It tells engineers what they are trying to achieve, why it matters, and how to judge whether an AI-assisted solution is any good. Autonomy, mastery, psychological safety and room to grow still matter just as much.
 
 The framing draws on Daniel Pink's account of intrinsic motivation as autonomy, mastery and purpose (Pink, 2009), extended with Deci and Ryan's Self-Determination Theory (2000) and Amy Edmondson's research on psychological safety (1999).
 
-AI changes the distribution of work. The leader's job is to make sure that change produces better engineering and meaningful human contribution, and not just more code, faster.
+AI changes the distribution of work. The leader's job is to make sure that change produces better engineering and meaningful human contribution, and more than a faster supply of code.
 
 ## 1. The Changing Nature of Developer Identity
 
-Software engineering has never been solely about writing code. It includes understanding problems, modelling domains, designing systems, making trade-offs, testing assumptions, collaborating with stakeholders, and maintaining software over time.
+Software engineering has never been only about writing code. Engineers also have to understand problems, model domains, design systems, make trade-offs, test assumptions, work with stakeholders and maintain software over time.
 
 Still, coding skill has always been the most visible sign of engineering capability. Developers build confidence by solving hard problems, learning new technologies and watching their work become a working product. For many, craftsmanship is a big part of who they are professionally.
 
-AI-assisted development can disrupt all of that.
-
-A developer who once spent hours implementing a complex feature may now achieve a working first draft in minutes. This can create opportunities for higher-value work, but it can also introduce uncertainty:
+AI-assisted development can disrupt all of that. A developer who once spent hours implementing a complex feature may now have a working first draft in minutes. That frees time for higher-value work, and it also raises questions:
 
 - What does expertise mean when implementation becomes easier?
 - How do developers demonstrate competence when an agent produces much of the code?
@@ -51,17 +49,17 @@ A developer who once spent hours implementing a complex feature may now achieve 
 
 These questions matter, but not every developer feels them. People value different things, and AI adoption doesn't automatically bring dissatisfaction or a fear of being made obsolete.
 
-Stack Overflow's 2025 Developer Survey found that 64% of respondents did not see AI as a threat to their jobs, even as adoption grew. The same survey found falling positive sentiment and widespread distrust of AI output. This is self-reported opinion from a large but self-selected sample of the platform's own users, and no independently sampled study of similar scale has asked the same question yet. Still, the pattern (seeing the benefits while doubting the reliability) fits the harder evidence discussed below. A controlled trial found a persistent gap between how much developers believed AI was helping them and how much it actually was (Becker, Rush, Barnes, & Rein, 2025).
+Stack Overflow's 2025 Developer Survey found that 64% of respondents did not see AI as a threat to their jobs, even as adoption grew. The same survey found falling positive sentiment and widespread distrust of AI output. This is self-reported opinion from a large but self-selected sample of the platform's own users, and no independently sampled study of similar scale has asked the same question yet. Still, the pattern (seeing the benefits while doubting the reliability) fits the harder evidence in section 3, where a controlled trial found a persistent gap between how much developers believed AI was helping them and how much it actually was (Becker, Rush, Barnes, & Rein, 2025).
 
 So the leadership challenge is bigger than replacing a lost identity. Developers need to see how their capabilities fit into an engineering system that is changing around them.
 
 ## 2. From Code Production to Engineering Judgement
 
-The distinction between creating code and evaluating code is useful, but incomplete.
+One common way to describe the shift is that developers move from creating code to evaluating it. The distinction is useful, but incomplete.
 
 An AI coding agent may generate an implementation, propose an architecture, write tests or investigate a defect. An engineer is still responsible for knowing whether the result solves the actual problem, fits the system, carries acceptable risk and can be maintained.
 
-And the human contribution starts well before the agent's output arrives for review. It starts before the agent is invoked.
+The human contribution also starts well before there is any output to review. It starts before the agent is invoked.
 
 **The contextual engineering loop**
 
@@ -89,17 +87,15 @@ Customer and business outcome
   Feedback informs the next cycle
 ```
 
-Purpose is valuable because it informs each stage of this loop. However, purpose is not a substitute for technical requirements, automated tests, security controls, or human accountability.
+Purpose is valuable because it informs each stage of this loop. It is not a substitute for technical requirements, automated tests, security controls or human accountability.
 
 **Context is an engineering capability**
 
-AI tools often know little about a codebase, its architecture or the organisation's unwritten rules. A peer-reviewed study of how developers use AI assistants found this to be a concrete, recurring barrier. Besides general worries about trust and company policy, developers said assistants lacked project-level context, so they didn't rely on them for work like bug triage and refactoring that depends on knowing a codebase well (Sergeyuk et al., 2025).
+AI tools often know little about a codebase, its architecture or the organisation's unwritten rules. A peer-reviewed study of how developers use AI assistants found this to be a concrete, recurring barrier. Alongside general worries about trust and company policy, developers said assistants lacked project-level context, so they didn't rely on them for work like bug triage and refactoring that depends on knowing a codebase well (Sergeyuk et al., 2025).
 
 Stack Overflow's 2024 Developer Survey (self-reported data rather than a controlled study) found a similar pattern at larger scale: 63% of respondents identified insufficient organisational context as a top concern with AI tools at work, nearly twice the share who blamed user error or lack of training for the challenges they encountered.
 
-A team that can clearly articulate customer problems, business rules, system boundaries, and acceptance criteria is better positioned to direct AI tools and evaluate their results.
-
-That makes context an engineering capability in its own right. A developer who knows why a change is needed, what constrains it and how success will be measured contributes more than one who simply produces more code.
+That makes context an engineering capability in its own right. A team that can clearly articulate customer problems, business rules, system boundaries and acceptance criteria is better placed to direct AI tools and evaluate their results. The same holds for individuals: a developer who knows why a change is needed, what constrains it and how success will be measured contributes more than one who simply produces more code.
 
 ## 3. Purpose as an Operational Requirement
 
@@ -115,11 +111,11 @@ When an agent can generate several plausible implementations, engineers need cri
 
 Purpose supplies the reason behind these decisions. It helps engineers tell a solution that merely works from one that is right.
 
-Be wary of the claim that the cost of producing software is heading towards zero. Generating code can get cheaper while clarifying requirements, integration, verification, operations and maintenance stay expensive. AI can also increase the amount of code that needs review and create new kinds of technical debt.
+Making those calls takes time, which is one reason to be wary of the claim that the cost of producing software is heading towards zero. Generating code can get cheaper while clarifying requirements, integration, verification, operations and maintenance stay expensive. AI can also increase the amount of code that needs review and create new kinds of technical debt.
 
-The strongest evidence here isn't a survey. METR, an independent AI evaluation organisation with no AI product to sell, ran a randomised controlled trial with sixteen experienced open-source developers working through 246 real tasks in codebases they knew well. Each task was randomly assigned to allow or disallow AI tools. Tasks where AI was allowed took 19% longer, the opposite of what the developers and outside experts had predicted. Before starting, developers forecast that AI would cut their time by 24%. Afterwards, they still believed it had made them about 20% faster (Becker, Rush, Barnes, & Rein, 2025). That gap is a leadership problem in itself: developer sentiment alone can't tell you whether AI is helping.
+The strongest evidence here is a controlled trial. METR, an independent AI evaluation organisation with no AI product to sell, ran a randomised controlled trial with sixteen experienced open-source developers working through 246 real tasks in codebases they knew well. Each task was randomly assigned to allow or disallow AI tools. Tasks where AI was allowed took 19% longer, the opposite of what the developers and outside experts had predicted. Before starting, developers forecast that AI would cut their time by 24%. Afterwards, they still believed it had made them about 20% faster (Becker, Rush, Barnes, & Rein, 2025). That gap is a leadership problem in itself, because developer sentiment alone can't tell you whether AI is helping.
 
-Self-reported industry data points the same way, though it is opinion rather than measurement. Stack Overflow's 2025 survey found that 66% of developers cited "AI solutions that are almost right, but not quite" as their top frustration, and 45% said debugging AI-generated code had become more time-consuming; the same survey found developer trust in AI accuracy had fallen to 29%, down from roughly 40% the year before.
+Self-reported industry data points the same way, though it is opinion rather than measurement. Stack Overflow's 2025 survey found that 66% of developers cited "AI solutions that are almost right, but not quite" as their top frustration, and 45% said debugging AI-generated code had become more time-consuming. Developer trust in AI accuracy had fallen to 29%, down from roughly 40% the year before.
 
 AI doesn't eliminate engineering work. Leaders have to make sure the organisation invests in the work that turns generated output into reliable software.
 
@@ -129,7 +125,7 @@ A common response to AI is to say developers should stop coding and become orche
 
 Engineering judgement rests on technical understanding. Developers need enough depth to spot a wrong abstraction, find a security hole, see a performance problem coming and challenge an agent's assumptions.
 
-So mastery should expand, not disappear.
+So mastery should expand.
 
 | Traditional sources of mastery  | Expanded engineering mastery                         |
 | ------------------------------- | ---------------------------------------------------- |
@@ -140,21 +136,19 @@ So mastery should expand, not disappear.
 | Implementing features           | Delivering measurable customer and business outcomes |
 | Individual technical expertise  | Shared domain knowledge and team capability          |
 
-The aim is to keep technical expertise pointed at the work humans are still accountable for, not to make developers less technical.
+None of this makes developers less technical. It keeps their expertise pointed at the work humans are still accountable for.
 
-This matters most for early-career engineers. If AI does too much of the implementation and they never get to understand the concepts underneath, they gain short-term productivity and end up with weaker independent judgement.
-
-Leaders should deliberately protect time for learning, experimenting, designing, debugging and hands-on investigation.
+This matters most for early-career engineers. If AI does too much of the implementation and they never get to understand the concepts underneath, they gain short-term productivity and end up with weaker independent judgement. Leaders should deliberately protect time for learning, experimenting, designing, debugging and hands-on investigation.
 
 ## 5. Beyond Purpose: Autonomy, Competence, and Psychological Safety
 
-Purpose alone can't create a healthy engineering culture. Pink's account draws on Self-Determination Theory, which names three basic psychological needs behind motivation and wellbeing: autonomy, competence and relatedness (Deci & Ryan, 2000). Purpose isn't one of them. The three needs are a good lens for seeing why AI adoption brings both opportunity and risk.
+Purpose can't carry a healthy engineering culture by itself. Pink's account draws on Self-Determination Theory, which names three basic psychological needs behind motivation and wellbeing: autonomy, competence and relatedness (Deci & Ryan, 2000). Purpose isn't one of them. The three needs are a good lens for seeing why AI adoption brings both opportunity and risk.
 
-**Autonomy.** Developers need meaningful influence over how they approach their work. If AI is introduced primarily as a mechanism for increasing output targets or monitoring individual productivity, it may reduce perceived autonomy. A stronger approach gives engineers ownership of problems, encourages experimentation, and allows them to help shape the team's AI-assisted workflows.
+**Autonomy.** Developers need meaningful influence over how they approach their work. If AI is introduced mainly to raise output targets or monitor individual productivity, it may reduce perceived autonomy. A stronger approach gives engineers ownership of problems, encourages experimentation and lets them help shape the team's AI-assisted workflows.
 
-**Competence.** Developers need opportunities to build and demonstrate capability. If agents handle every difficult implementation task, developers may have fewer opportunities to practise foundational skills. Leaders should establish learning pathways that include both AI-assisted work and independent technical development. Competence should be assessed through the ability to understand, design, verify, and maintain systems, not simply the volume of generated code.
+**Competence.** Developers need opportunities to build and demonstrate capability. If agents handle every difficult implementation task, there are fewer chances to practise foundational skills. Leaders should set up learning pathways that include both AI-assisted work and independent technical development, and assess competence by the ability to understand, design, verify and maintain systems rather than simply by the volume of generated code.
 
-**Relatedness and psychological safety.** Developers need to feel that they belong, that their contribution matters, and that they can raise concerns without fear of humiliation or retaliation. Psychological safety is particularly important when AI-generated code introduces uncertainty. Engineers must be able to say that an agent's output is incorrect, that a proposed architecture is risky, or that a workflow is creating unsustainable review burdens (Edmondson, 1999). Psychological safety does not mean removing accountability. It means creating conditions in which people can identify problems, learn from mistakes, and improve without fear of interpersonal punishment.
+**Relatedness and psychological safety.** Developers need to feel that they belong, that their contribution matters, and that they can raise concerns without fear of humiliation or retaliation. This matters most when AI-generated code introduces uncertainty. Engineers must be able to say that an agent's output is incorrect, that a proposed architecture is risky, or that a workflow is creating unsustainable review burdens (Edmondson, 1999). Accountability stays. Psychological safety means people can identify problems, learn from mistakes and improve without fear of interpersonal punishment.
 
 ## 6. The Leadership Responsibility: Redesigning the Engineering System
 
@@ -164,11 +158,11 @@ A team with clear requirements, good testing and strong engineering standards ca
 
 That gives leaders five connected responsibilities:
 
-- **Clarify purpose and outcomes.** Connect technical work to customer needs, business strategy, and measurable outcomes. Make the reason for a task explicit before implementation begins.
-- **Build verification into the workflow.** Establish appropriate standards for testing, security, architecture review, documentation, and code quality. AI-generated output must remain subject to engineering accountability.
-- **Develop people, not just processes.** Provide opportunities for developers to learn, practise, experiment, and gain confidence. Make career progression meaningful in an AI-assisted environment.
+- **Clarify purpose and outcomes.** Connect technical work to customer needs, business strategy and measurable outcomes. Make the reason for a task explicit before implementation begins.
+- **Build verification into the workflow.** Set standards for testing, security, architecture review, documentation and code quality. AI-generated output must remain subject to engineering accountability.
+- **Develop people as well as processes.** Give developers opportunities to learn, practise, experiment and gain confidence. Make career progression meaningful in an AI-assisted environment.
 - **Maintain open feedback and challenge.** Encourage engineers to question AI output, raise risks, and discuss whether the workflow is improving or degrading the quality of work.
-- **Measure outcomes rather than activity alone.** Evaluate customer value, reliability, maintainability, learning, and team health alongside delivery performance.
+- **Measure outcomes rather than activity alone.** Evaluate customer value, reliability, maintainability, learning and team health alongside delivery performance.
 
 Each of these props up the others. Drop one and the rest get harder.
 
@@ -178,6 +172,6 @@ AI coding agents are changing the mechanics of software development. They don't 
 
 The real shift is bigger than coder to evaluator. Engineering used to put the visible weight on implementation. Now more of it sits on problem definition, context, design, verification and ownership of outcomes.
 
-Purpose is a good anchor through that change. It tells developers why their work matters and gives them a way to judge whether an AI-assisted solution is right. But it has to come with real autonomy, psychological safety and room to keep developing technically.
+Purpose is a good anchor through that change. It tells developers why their work matters and gives them a way to judge whether an AI-assisted solution is right, provided it comes with real autonomy, psychological safety and room to keep developing technically.
 
 > The job is to build a team where AI expands what people can solve, while keeping the human skills that make software reliable.
