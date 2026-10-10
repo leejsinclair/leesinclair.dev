@@ -1,0 +1,216 @@
+{
+  "name": "Farajova on dating Gobustan petroglyphs and Ana Zaga cave",
+  "citation": [
+    "A. Farajova, M.N. (2021). 'O datirovke naskalnykh izobrazheniy Gobustana (Azerbaidzhan)' / 'About dating of petroglyphs of Gobustan (Azerbaijan)'. History, Archaeology and Ethnography of the Caucasus 17(3), 658-683. DOI 10.32653/CH173658-683. Published online 19 October 2021. Russian text with English abstract and bilingual figure captions. Landing page: https://caucasushistory.ru/2618-6772/en/article/view/1746 . PDF read: https://caucasushistory.ru/2618-6772/article/download/1746/1594",
+    "B. Farajova, M.N. (2023). 'Rock Art of the Ana Zaga Cave Shelter in the Archaeological Landscape of Gobustan, Azerbaijan'. Archaeology, Ethnology & Anthropology of Eurasia 51(4), 45-54. DOI 10.17746/1563-0110.2023.51.4.045-054. Received 21 July 2022, revised 4 May 2023; journal metadata gives online date 3 January 2024. English edition. PDF read: https://journal.archaeology.nsc.ru/jour/article/download/1778/954",
+    "C. Farajova, M. (2011). 'Gobustan Rock Art Cultural Landscape'. Adoranten 2011 (Scandinavian Society for Prehistoric Art), 41-66. PDF read: https://www.rockartscandinavia.com/images/articles/malahat_a11.pdf",
+    "D. Farajova, M. (2013). 'Art pleistocene d'Azerbaidjan'. In J. Clottes (ed.), L'art pleistocene dans le monde, Actes du Congres IFRAO, Tarascon-sur-Ariege, septembre 2010. Palethnologie 5, 'Livre des syntheses' summary pp. 181-182 (full article given as pp. 929-942 on the congress CD, not opened). PDF read: https://blogs.univ-tlse2.fr/palethnologie/wp-content/files/2013/fr-FR/Palethnologie-2013-FR-ASI6_Farajova.pdf"
+  ],
+  "source_tier": "A and B: peer-reviewed journal articles (A in a journal of the Daghestan Federal Research Centre of the Russian Academy of Sciences; B in the journal of the Institute of Archaeology and Ethnography, Siberian Branch RAS). C: society magazine article (Adoranten, Scandinavian Society for Prehistoric Art), descriptive, not a dating report. D: conference proceedings summary. All four are by the same author; none is an independent test of her dates.",
+  "access_status": "A: fully read. All 26 PDF pages downloaded 10 October 2026 and read as extracted Russian text; the radiocarbon lab-report figures (Figs 7, 10, 11, 16), the sea-level map (Fig. 1) and the Stone 29 period charts (Figs 14, 15) were also inspected as page images. B: fully read (10 pages, English text); figures read through captions only. C: fully read (26 pages, English text); figures read through captions only. D: only the two-page summary was read; the full article (pp. 929-942) was not found online. The 2021 paper's supplementary file (an English version, per a search result) returned HTTP 404. Farajova's other dating papers (2012 'Neolit Gobustana', 2015 Rossiyskaya Arkheologiya, 2015 IGCP 610 abstract, 2018 Quaternary International 491) were not opened.",
+  "author_credentials": "Malahat (Malakhat) Novruz Farajova, archaeologist and rock art specialist, PhD (History). Director of the Gobustan National Historical-Artistic Preserve at the time of the 2011 article (so stated in its author note). In 2021: Deputy Director for Development of the 'Icheri Sheher' Museum Centre, with affiliation to the Institute of Archaeology and Ethnography of the National Academy of Sciences of Azerbaijan. In 2023: Azerbaijan State University of Culture and Arts, Baku. Fieldwork at Gobustan: yes. She reports documenting Stone 29 herself (digital photography from 2007, Agisoft 3D models from 2015), taking about 40 to 50 radiocarbon samples from the shelters, and the 2013 summary says Ana Zaga 'was excavated in 2009' to a depth of 400 cm.",
+  "exact_quotes": [
+    {
+      "source": "A (2021)",
+      "location": "English abstract, p. 659",
+      "quote": "Despite the extensive literature on Gobustan, the issue of dating the rock paintings remains controversial."
+    },
+    {
+      "source": "A (2021)",
+      "location": "English abstract, p. 659",
+      "quote": "As a result, the oldest date - 13 610 CD (calibrated date) - was revealed in Gobustan in the rocky shelter of Gaya Arasi on the Kichikdash mountain. The next oldest date is approximately 10,600 CD, which was obtained from the cultural layer of the Ana-zaga cave of the Beyukdash mountain."
+    },
+    {
+      "source": "A (2021)",
+      "location": "English abstract, p. 659",
+      "quote": "Considering that the Late Khvalyn transgression took place nearly 14,000 years ago, and during this period the waters of the Khvalyn Sea washed the Beyukdash, Kichikdash and Dzhingirdag mountains, the interval between these dates may be due to the fluctuations of the sea level."
+    },
+    {
+      "source": "A (2021)",
+      "location": "English abstract, p. 659",
+      "quote": "The author emphasizes that the uniqueness of the Gobustan archaeological complex lies in the fact that separate stones with petroglyphs identical to the rock carvings on the walls of the caves were discovered from dated cultural layers."
+    },
+    {
+      "source": "A (2021)",
+      "location": "English abstract, p. 659",
+      "quote": "In the Neolithic and Eneolithic Ages, with the rise in the level of the Caspian Sea, the caves retained the status of the main place of residence. With the lowering of the sea level in the Bronze Age, the middle and lower terraces were inhabited. During this period, the settlers of Gobustan, who were engaged in cattle breeding, painted images of bezoar goats with large curved horns on the rocks. At the foot of the mountains, the round settlements and the tradition of kurgan burials emerged."
+    },
+    {
+      "source": "A (2021)",
+      "location": "Body text, p. 665 (my translation from the Russian)",
+      "quote": "In Ana Zaga the cultural level at a depth of 270 cm gave a calibrated date of Cal BP 10430 to 10240 (Fig. 7). Thus, if the petroglyphs recorded next to the wavy lines are linked to each other in theme, style and technique, they can be dated to one period."
+    },
+    {
+      "source": "A (2021)",
+      "location": "Body text, p. 665 (my translation from the Russian)",
+      "quote": "The zigzag and wavy images on a separate stone (inv. no. 2453, GNIHZ collection) echo, in style and technique, identical petroglyphs on the south side of stone no. 29 of Mount Beyukdash and on stone no. 19 of the Firuz site on Mount Kichikdash."
+    },
+    {
+      "source": "A (2021)",
+      "location": "Body text, pp. 662-663 (my translation from the Russian)",
+      "quote": "All these blocks with petroglyphs face the sea. They served as the walls of shelter sites, and on all three rocks with petroglyphs lines are recorded running from cup-shaped hollows at the tops of the rocks."
+    },
+    {
+      "source": "A (2021)",
+      "location": "Figs 7 and 11, pp. 673 and 676 (English lab report reproduced as an image; read from the page image)",
+      "quote": "Laboratory number: Beta-305140. Conventional radiocarbon age: 9170+/-40 BP. 2 Sigma calibrated results (95% probability): Cal BC 8530 to 8520 (Cal BP 10480 to 10460) and Cal BC 8480 to 8290 (Cal BP 10430 to 10240). [Material:] Bone collagen."
+    },
+    {
+      "source": "A (2021)",
+      "location": "Fig. 16, p. 679 (English lab report reproduced as an image; read from the page image)",
+      "quote": "Laboratory number: Beta-305145. Conventional radiocarbon age: 12200+/-50 BP (12080+/-50 adjusted for local reservoir correction). 2 Sigma calibrated result (95% probability): Cal BC 11710 to 11450 (Cal BP 13660 to 13400). [Material:] Shell."
+    },
+    {
+      "source": "A (2021)",
+      "location": "Figs 14 and 15 legend, pp. 677-678 (my translation from the Russian)",
+      "quote": "Period 1: end of Upper Palaeolithic to early Mesolithic, 13 700-10 500 BP. Period 2: Mesolithic, 10 500-9 700 BP, stage 1. Period 2: 9 700-9 000 BP, stage 2 of the Mesolithic. Period 3: 9 000-7 800 BP, Neolithic. Period 4: 7 800 to first half of 6000 BP, Eneolithic. Period 5: second half of 6 000 BP to beginning of 3 000 BP, Bronze Age. Period 6: first half of 3000 BP, Early Iron Age. Period 7: Middle Ages and Modern times."
+    },
+    {
+      "source": "B (2023)",
+      "location": "Abstract, p. 45",
+      "quote": "It is concluded that in the Neolithic and Chalcolithic, following the rise of the sea level, the rock shelter became the principal habitat. In the Bronze Age, after the sea level had fallen, the middle and lower terraces became suitable for living. As new landscapes were settled, the themes of petroglyphs changed."
+    },
+    {
+      "source": "B (2023)",
+      "location": "Materials and methods, p. 46",
+      "quote": "The Ana Zaga cave shelter, formed by almost vertically standing large blocks of limestone up to 15 m high, spaced up to 5 m from each other, is located on the upper terrace of the Boyukdash mountain, at an altitude of ca 130 m a.s.l. The lower layers of the cave, at depths of 5, 6, and 7 m, are composed of the sediments of Pleistocene marine basins."
+    },
+    {
+      "source": "B (2023)",
+      "location": "Research results, p. 50",
+      "quote": "It is quite likely that the most ancient means of transportation for the inhabitants of Gobustan were boats depicted 7800 years ago, which could accommodate more than 50 people."
+    },
+    {
+      "source": "B (2023)",
+      "location": "Research results, p. 50",
+      "quote": "Of particular interest is the plot with boats, and hunters armed with bows and arrows. The use of 3D-modeling technologies has made it possible to discover 38 new images on this stone."
+    },
+    {
+      "source": "B (2023)",
+      "location": "Research results, p. 51",
+      "quote": "Noteworthy are lines 14, 15, and 15a (Fig. 5), extending from cup-like depressions at the top of the rock. They split in two, pass through the figures of hunters 9 and 8, and, having come into contact with the genital organs of the anthropomorphic characters, go down to the ground."
+    },
+    {
+      "source": "B (2023)",
+      "location": "Conclusions, p. 52",
+      "quote": "If petroglyphs are associated with an archaeological layer, then their age can be determined quite accurately: rock carvings precede or are contemporaneous with this layer."
+    },
+    {
+      "source": "B (2023)",
+      "location": "Conclusions, p. 52",
+      "quote": "Judging by the radiocarbon dating results, the Ana Zaga images can be divided into the following chronological groups: 1560 +/- 55 BP; 4950 +/- 200 to 5940 +/- 40 BP (6880-6670 cal BP) to 6530 +/- 40 BP (7500-7420 cal BP); 8670 +/- 40 BP (9700-9540 cal BP) to 8996 +/- 33 BP; 9170 +/- 40 BP (10,480-10,460 cal BP)."
+    },
+    {
+      "source": "B (2023)",
+      "location": "Conclusions, p. 52",
+      "quote": "These findings allow the conclusion to be made that in Ana Zaga Cave, whose walls contain more than 500 rock carvings, people lived for a very long time - from the Early Mesolithic to the Middle Ages."
+    },
+    {
+      "source": "C (2011)",
+      "location": "Dating, p. 49",
+      "quote": "However, the received data have sometimes, an approximate character, leaving the question of their absolute dating open."
+    },
+    {
+      "source": "C (2011)",
+      "location": "Background, p. 42",
+      "quote": "the most ancient petroglyphs are concentrated on the upper terraces of Beyukdash and Kichikdash mountains. Monuments of Neolith and Eneolith are located on the lower terraces. Bronze, Iron and Middle Ages monuments are mainly concentrated at the foot of the mountain"
+    },
+    {
+      "source": "C (2011)",
+      "location": "Shelters, ancient settlements, burial sites, pp. 59-60",
+      "quote": "On the low terraces of Beyukdash, Kichikdash, Jindirdag Mountains of Gobustan such settlements as \"Daire-1\", \"Daire-2\", and a great number of burial mounds, dated by the Bronze Age were fixed and registered."
+    },
+    {
+      "source": "C (2011)",
+      "location": "p. 46",
+      "quote": "At that period the waters of the Mediterranean Sea reached the Caspian Sea through the Black Sea, i.e. via Manych Strait."
+    },
+    {
+      "source": "D (2013)",
+      "location": "Summary, p. 182 (my translation from the French)",
+      "quote": "The site was excavated in 2009 and up to 400 cm of sediment was exposed. To obtain absolute dates, samples were taken from the archaeological level at a depth of 185 cm and analysed; a preliminary calibrated date of 9,029 BC was obtained."
+    }
+  ],
+  "key_claims": [
+    "Dating at Gobustan is unsettled. The 2021 paper opens by calling the question still 'controversial' (Russian: 'diskussionnoy'), and the 2011 article says the data leave 'the question of their absolute dating open'.",
+    "Radiocarbon series. More than 40 calibrated AMS dates (2021) from about 50 samples (2023) were obtained for cultural levels of the Gobustan shelters. Samples from Ana Zaga, Okuzler, Ovchular, Maral and Daire (Boyukdash) and Gaya Arasi and Firuz 2 (Kichikdash) went to a Ukrainian laboratory (January 2010), the University of Waikato (April 2010, February 2011) and Beta Analytic (September 2011, July 2014). Neither paper tabulates the full series; only a handful of dates are given.",
+    "Oldest date: Gaya Arasi shelter, Kichikdash, level 350 cm, 'approximately 13,610 BP (calibrated)'. The lab report shown (Beta-305145) is 12200+/-50 BP on shell, reservoir-corrected, 2-sigma Cal BP 13660-13400. Farajova herself calls it 'the only' date from that level and says repeat analyses on all levels are needed before the age of the site can be stated.",
+    "Ana Zaga dates as published: level 270 cm, Beta-305140, 9170+/-40 BP on bone collagen, 2-sigma Cal BP 10480-10460 and 10430-10240 (described in the abstract as 'approximately 10,600'); level 255-270 cm, 'test' date Cal BP 7500-7420 (2023 gives the uncalibrated value 6530+/-40 BP); level 185 cm, preliminary 'calibrated date of 9,029 BC' (2013 summary). The 2023 conclusion lists five clusters for Ana Zaga running from 9170+/-40 BP to 1560+/-55 BP and reads them as occupation 'from the Early Mesolithic to the Middle Ages'.",
+    "Ana Zaga stratigraphy: the shelter is formed by near-vertical limestone blocks up to 15 m high and up to 5 m apart, on the upper terrace of Boyukdash at about 130 m a.s.l. Mesolithic, Neolithic and Chalcolithic cultural layers lie in the central and southern parts at the foot of stone 30. The lowest layers, at 5, 6 and 7 m depth, are 'sediments of Pleistocene marine basins'. Excavated in 1977 and again in 2009 to 400 cm. Faunal count (2011): of 10,000 bones, 40% wild horse and 40% gazelle.",
+    "Method claim: loose carved stones and spalled wall fragments lie in the dated layers. Because a buried carved stone must be as old as or older than its layer, and because wall figures in the same style and technique are taken to be the same age, the layer dates are transferred to the wall panels.",
+    "Applied to Stone 29: (a) a spalled fragment from Ana Zaga at 255-270 cm (inv. 2418) with a sunken-relief human figure is matched to hunters on the north-west side of stone 29 (figures 4, 5, 56, 57); (b) a loose stone with wavy lines (inv. 2453, found 1977 at 255-290 cm) is matched to the zigzag and wavy lines on the south side of stone 29, and the 270 cm date of Cal BP 10430-10240 is offered for them and for figures linked to them.",
+    "Farajova's own period chart for the south side of Stone 29 (2021, Fig. 15) splits that single face across five periods: Mesolithic stage 2, Neolithic, Eneolithic, Bronze Age and one Iron Age mark. The long boat with the rayed prow is drawn in the Neolithic colour (9000-7800 BP). Only a few small human figures at the left edge and bottom are in the Bronze Age colour.",
+    "Boats: 'the most ancient means of transportation for the inhabitants of Gobustan were boats depicted 7800 years ago, which could accommodate more than 50 people' (2023). Boat images are also reported on loose stones in the Gaya Arasi and Firuz 2 Mesolithic layers, and archaeologists are said to regard the Gaya Arasi boats as among the oldest boat images in the world.",
+    "Sea level: the Khvalynian transgression is put at about 15-12 ka BP, ending 9-7 ka BP. At 14 ka BP the Caspian stood 22 m above ocean level; at 14-12 ka between 0 and -12 m; a transgression at 10 ka; the New Caspian regression from 8 ka; a rise to +25 m at 6 ka and +23 m at 4 ka; regression from 4 to 2 ka. The gap between the Gaya Arasi date (about 13.6 ka) and the first Ana Zaga date (about 10.3-10.5 ka) is attributed to the sea washing the mountains.",
+    "Settlement sequence: late Upper Palaeolithic and Mesolithic occupation on the upper terraces; caves still the main habitation in the Neolithic and Eneolithic 'with the rise' of the sea; middle and lower terraces settled in the Bronze Age when the sea fell, with round settlements and kurgan burials at the foot of the mountains and a shift of rock art themes to bezoar goats with large curved horns, carved by cattle breeders.",
+    "Periodisation (2021 conclusions): I, oldest, 12th millennium BC; II, Epipalaeolithic-Mesolithic, 12th-8th millennia BC; III, Neolithic, 7th-6th millennia BC; IV, Eneolithic, 5th-4th millennia BC; V, Bronze Age, end of 4th to 2nd millennium BC; VI, Early Iron Age, end of 2nd to early 1st millennium BC; VII, Middle Ages and Modern period.",
+    "Stone 29 is described as the place where the succession of periods shows most clearly, on its north side at the entrance to Ana Zaga. Farajova says the north-side figures of aurochs, women and boats 'harmonize with each other and form unified plots'.",
+    "None of the four sources mentions Jason, the Argonauts, Colchis, the Phasis or any Greek myth. The 2021 paper asks who the 'seafarers of Gobustan' were and how far they could travel, and leaves the question unanswered."
+  ],
+  "evidence_offered": "Radiocarbon dates on bone, charcoal and shell from cultural layers in the shelters, with three lab calibration reports reproduced as figures (Beta-305140, Beta-305145, Wk-30004). Loose carved stones and wall spalls recovered from those layers in the 1970s excavations (inventory numbers 2418, 2453, 2454 from Ana Zaga; 1479, 1587 from Kyaniza; 791 from Firuz 2; stones 9A and 9B from Gaya Arasi), compared by eye with wall figures for style and technique. Superimposition order on panels. Extinct fauna in the layers and on the rocks. A Caspian sea-level chronology taken from Svitoch 2006, Arslanov et al. 2016, Mamedov 1997 and Yanko-Hombach et al. 2007. New 3D recording (Agisoft, 3D Studio Max) used to separate overlapping figures and colour them by period. No carving is dated directly. The papers give no excavation sections, no table of all dates, and no sample-by-sample context.",
+  "date_range_estimates": {
+    "motif_dates": [
+      "Large boat with rayed prow on the south side of Stone 29: assigned to Period 3, Neolithic, 9000-7800 BP, in Farajova's colour-coded chart (2021, Fig. 15). This is read from the figure colour, which matches the Period 3 legend swatch on pixel sampling; the text does not state it in words.",
+      "Boats generally: 'depicted 7800 years ago' (2023, p. 50).",
+      "Zigzag and wavy lines on the south side of Stone 29: tied by style to loose stone inv. 2453 and the Ana Zaga 270 cm level, Cal BP 10430-10240 (2021 text). The 2021 chart colours them Mesolithic stage 2, 9700-9000 BP, which is not the same range.",
+      "Sunken-relief hunters on the north-west side of Stone 29 (figures 4, 5, 56, 57): tied to the fragment from 255-270 cm, level dated Cal BP 7500-7420; a further hunter type on the north side is tied via Kyaniza stone inv. 1587 to Cal BP 10480-10240.",
+      "Claviform female figures and life-size aurochs on the north side of Stone 29: earliest period, late Upper Palaeolithic to early Mesolithic (13,700-10,500 BP in the chart legend).",
+      "Bronze Age motifs: bezoar goats with large curved horns, deer on Kichikdash, goats on Jingirdag, carts and riders. Bronze Age range given variously as 4th-3rd millennia BC (2011), end of 4th to 2nd millennium BC (2021 text), second half of the 6th millennium BP to the start of the 3rd millennium BP (2021 legend), 4th to late 2nd millennia BC (2023). No boat is named as Bronze Age in any of the four sources.",
+      "Jafarzade's older date for a boat with two hunters on Stone 35: 2nd millennium BC (reported by Farajova 2021, p. 667, who re-examines the stone and does not endorse the date)."
+    ],
+    "site_and_layer_dates": [
+      "Gaya Arasi, 350 cm: Beta-305145, 12200+/-50 BP on shell (12080+/-50 after reservoir correction), 2-sigma Cal BP 13660-13400, 1-sigma 13610-13440, intercept 13480.",
+      "Gaya Arasi, 218-276 cm (caption says 218-176 cm): 7698+/-33 BP (Wk-30004, calibrated in the figure to 8550-8415 cal BP at 95.4%) to 8224+/-37 BP.",
+      "Ana Zaga, 270 cm (Fig. 11 caption says 270-290 cm): Beta-305140, 9170+/-40 BP on bone collagen, 2-sigma Cal BP 10480-10460 and 10430-10240, intercept 10270.",
+      "Ana Zaga, 255-270 cm: Cal BP 7500-7420 (6530+/-40 BP).",
+      "Ana Zaga, 185 cm: preliminary 'calibrated date of 9,029 BC' (2013 summary). The 2023 list includes 8996+/-33 BP without a depth.",
+      "Ana Zaga, other values listed in 2023 without depths: 1560+/-55 BP; 4950+/-200 BP; 5940+/-40 BP (6880-6670 cal BP); 8670+/-40 BP (9700-9540 cal BP).",
+      "Firuz 2, 85 cm: 7850+/-30 BP.",
+      "First settlers of Gobustan: 14 ka (2021) or 15 ka (2023), both citing Rustamov 2000; Ana Zaga, Kyaniza and Gaya Arasi shelters occupied 10,500-9,000 years ago (2021, p. 664).",
+      "Bronze Age: settlements Daire-1 and Daire-2 and many kurgans on the low terraces (2011)."
+    ]
+  },
+  "dating_method": "Radiocarbon of cultural layers, then stratigraphic association, then style. Step one dates a layer (bone, charcoal or shell). Step two treats carved loose stones or wall spalls found in that layer as no younger than the layer. Step three extends the date to wall figures judged the same in style and technique, and then to other figures on the panel judged to belong to the same scene. Shoreline correlation is a supporting argument: the oldest art is said to sit on the ancient coast and coastal dates are said to give maximum ages. Superimposition gives relative order. Farajova states the limits herself: a tradition can persist for a millennium, figures in one style can differ by 1000 years (her tattooed-figure example), and single dates need repeating.",
+  "panel_details": "Stone 29 is a wall of the Ana Zaga cave shelter on the upper terrace of Boyukdash (Beyukdash), about 130 m a.s.l. The shelter's first chamber is on the left at the entrance, against the north side of stone 29. North side: Jafarzade recorded 77 images including 63 human figures (39 male, 24 female); Farajova adds 79 new figures by 3D recording. Contents: life-size aurochs, claviform and pregnant female figures in deep relief, hunters, and 'numerous images of boats' (her tracing numbers 109, 122-141). South side: Jafarzade recorded 20 images, Rustamov 26, and Farajova reports 38 new images in one passage and 12 in another (her figures are inconsistent). The south-side scene is 'the plot with boats, and hunters armed with bows and arrows', with zigzag and wavy lines beside the large figures. In 2007 she identified there a faint aurochs, an anthropomorph and a boat fragment that crosses the anthropomorph. East side: 40 new images, namely 9 anthropomorphs, 5 zoomorphs, 10 boats, 2 lines with cup-like depressions and unidentified figures. Lines 14, 15 and 15a run down from cup-shaped hollows at the top of the rock, split, pass through hunters 9 and 8 and reach the ground; a 'multi-tiered zigzag figure 8' has a mushroom-shaped headdress. Stones 29 (east side), 42 (east side) and 49 on Kichikdash all face the sea and all carry such lines from cup marks. A separate block, 29A, in the south-east sector carries life-size women and an aurochs. Superimpositions: figures of several periods overlap on every face; Farajova's Fig. 15 assigns the south side to five periods. [uncertain] From visual inspection of Fig. 14 only, the long boats high on the north side appear to be drawn in the Neolithic colour as well; this was not pixel-checked and the text does not say it.",
+  "geographic_claims": "Caspian only. The 2021 and 2023 papers describe the Khvalynian (palaeo-Caspian) sea washing Boyukdash, Kichikdash and Jingirdag, and place the earliest art on the ancient Caspian coast. Comparisons are drawn along the Caspian shore: Mesolithic sites of the North Caucasus (Chokh and others in Daghestan) and northern Iran (Ali Tappeh, Hotu, Kamarband). The 2011 article says that during the Khvalynian transgression 'the waters of the Mediterranean Sea reached the Caspian Sea through the Black Sea, i.e. via Manych Strait', a late Pleistocene geological statement citing Vereshchagin 1959 and Kovalevsky 1933 and used to date a dolphin carving. No river route, no Black Sea voyage and no Bronze Age sea contact is asserted. The question of how far Gobustan's 'seafarers' travelled is asked and left open.",
+  "counter_evidence": [
+    "Against a Bronze Age boat on Stone 29: Farajova's own chart puts the sun-prow boat in the Neolithic (9000-7800 BP) and her text says boats were 'depicted 7800 years ago'. That is four to five thousand years before any Bronze Age date, and far earlier than any Greek tradition.",
+    "Against one scene: her Fig. 15 divides the south face among five periods, so the boat, the large hunters, the wavy lines and the small Bronze Age figures are not contemporaries in her reading.",
+    "Against water at the rock in the Bronze Age: in her account the sea had fallen by then and people had moved down to the middle and lower terraces. Her highest Holocene level is +25 m, about 100 m below Ana Zaga at 130 m.",
+    "The link between dated layer and wall figure is by visual resemblance. No section drawings, sample contexts or full date list are published in these papers, so the association cannot be checked by a reader.",
+    "The Ana Zaga dates do not form a simple depth sequence as published: 185 cm gives roughly 9000 BP or '9,029 BC', 255-270 cm gives 6530+/-40 BP, and 270 cm gives 9170+/-40 BP. The papers do not explain this. Different trenches or excavation datums (1977 and 2009) may account for it, but that is not stated.",
+    "Reporting slips: the same lab report (Beta-305140) is captioned 270 cm in Fig. 7 and 270-290 cm in Fig. 11; the Ana Zaga date is called 'approximately 10,600' though the report's oldest 2-sigma bound is 10,480 cal BP; 7698+/-33 BP is called calibrated but is the conventional age; the abstract announces 9 trends and the conclusions list 7 periods; the wavy lines are tied to about 10,300 cal BP in the text but coloured 9700-9000 BP in the chart.",
+    "The oldest date is on shell with a marine reservoir correction, from one sample, and Farajova says it needs repeating. She also reports that N. Museibli (2017) rejects Rustamov and Muradova's Upper Palaeolithic attribution of the Gaya Arasi carved stones and calls for new excavations.",
+    "[uncertain] Sea-level figures: the +25 m and +23 m Holocene levels are far above what search snippets from Caspian geology papers give for late Holocene highstands (about 20-22 m below ocean level), and the statement that sites at 127 m were 'washed by the sea' sits well above the Early Khvalynian maximum of about +48 to +50 m. These geology sources were seen only as search snippets, not opened. Farajova may be mixing datums (metres relative to ocean level versus metres above the present Caspian at -27 m).",
+    "[uncertain] Per the sibling research file on Sigari et al. 2025 (not reopened here), that team says the published radiocarbon dates come from deposits whose context 'has not yet been cleared or published' and that the link with the wall engravings 'is missing'."
+  ],
+  "independent_corroboration": "None found for the transfer of layer dates to the carvings; every source opened here is by Farajova. Inside her own papers she reports one dissenting specialist (Museibli 2017, on the Gaya Arasi attribution). The radiocarbon measurements themselves are from commercial and university labs (Beta Analytic, Waikato), and three lab reports are reproduced. [uncertain] Sigari et al. 2025 cite her Ana Zaga date and periodisation but, per the sibling result file, decline to tie the dates to the engravings; that paper was not reopened for this item. The settlement sequence (old art high, Bronze Age remains low) agrees with the 2011 description of Bronze Age settlements and kurgans on the low terraces, which is also Farajova.",
+  "alternative_explanations": "Farajova's reading of the same imagery is local and prehistoric. Boats are the transport of Mesolithic and Neolithic coastal hunter-fishers on a Caspian shoreline. Aurochs and female figures belong to totemic and fertility belief; she links the aurochs cult to the epic of the Oghuz Turkic tribes. The lines running from cup marks down through the hunters on the east side of Stone 29 are described alongside a figure in 'ritual clothing or in a state of trance' with a mushroom-shaped headdress compared to Mongolian, Altai and Tuvan rock art, which is a ritual reading and makes no reference to water. Wavy and zigzag lines are treated as a datable style element. Bronze Age art is the bezoar goats, deer drives, carts and riders of pastoralists. Jafarzade read a boat with two hunters on Stone 35 as 2nd millennium BC and the nearby objects as animal traps; Farajova re-reads part of that stone as a settlement plan.",
+  "verification_status": [
+    "Checked against the opened 2021 PDF: citation, DOI, pages, abstract, all radiocarbon values in the text, the Stone 29 matches, the sea-level chronology, the seven periods, the terrace sequence.",
+    "Checked against page images of the 2021 PDF: lab numbers, conventional ages, materials and calibrated ranges on Figs 7, 10, 11 and 16; the period legend on Figs 14 and 15; the sea-level labels on Fig. 1 (+25 m, +23 m, -12 m).",
+    "Checked by pixel sampling of Fig. 15 at 220 dpi: the sun-prow boat and the mid-sized hunters match the Period 3 (Neolithic) swatch; the two largest figures and the wavy lines match the Mesolithic stage 2 swatch; small figures 1-2, 8 and 27 match the Bronze Age swatch. This is a reading of a figure, not a statement in the text.",
+    "Checked against the opened 2023 PDF: citation, the Ana Zaga description, image counts for Stone 29, the east-side lines from cup marks, the '7800 years ago' boat statement, the list of Ana Zaga radiocarbon clusters.",
+    "Checked against the opened 2011 PDF: terrace distribution, Bronze Age settlements and kurgans, the faunal percentages, the Manych Strait sentence, the caveat on absolute dating.",
+    "Checked against the opened 2013 summary: 2009 excavation to 400 cm, sample at 185 cm, '9,029 BC'.",
+    "Checked by text search of all four: no occurrence of Argonaut, Jason or Colchis (in English, French or Russian).",
+    "Not checked: the works Farajova cites for sea levels (Svitoch 2006, Arslanov et al. 2016, Mamedov 1997), Museibli 2017, Jafarzade and Rustamov. What they say is known here only through her summary.",
+    "Not checked: Caspian sea-level literature used under counter_evidence (search snippets only; ScienceDirect returned 403).",
+    "Not checked: Sigari et al. 2025, taken from the sibling result file in this folder.",
+    "Translations from Russian and French are mine."
+  ],
+  "relevance_to_essay": "This is the excavator-side account of the very rock the proposal uses, and it gives the dates the proposal would have to overturn. Farajova places the sun-prow boat on the south side of Stone 29 in the Neolithic, says boats were carved about 7800 years ago, splits that face across five periods, and has the sea falling away from the upper terrace by the Bronze Age. A Bronze Age Argonaut scene needs the boat, the armed figures and the water marks to be one composition of about the 2nd millennium BC; her chart says they are not one composition and not that age. It also shows how soft even the specialist dates are: no carving is dated directly, and the chain runs from a layer date to a loose stone to a look-alike on the wall.",
+  "open_questions": [
+    "The full list of 40 to 50 radiocarbon dates with depths, materials and contexts. Not published in the sources opened.",
+    "Why the Ana Zaga dates at 185 cm, 255-270 cm and 270 cm are out of depth order as published.",
+    "Whether Farajova states the Neolithic date of the Stone 29 sun-prow boat in words anywhere (her 2009 book or 2018 Quaternary International paper may; neither was opened).",
+    "Whether the lines from cup marks on Stone 29 are natural runoff channels, carved lines or both, and how old they are. She describes them but does not date them.",
+    "How her Holocene sea levels (+25 m at 6 ka) square with Caspian geology, and which datum she uses.",
+    "What the 2021-2024 excavations by the Sigari team at Ana Zaga found about the layers against Stone 29."
+  ],
+  "uncertain": [
+    "panel_details",
+    "counter_evidence",
+    "independent_corroboration"
+  ]
+}

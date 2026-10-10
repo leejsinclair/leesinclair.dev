@@ -25,19 +25,19 @@ Organisations celebrate these people. We thank them in all-hands meetings, and s
 
 Exceptional effort is not the problem. Systems fail, some deadlines really do matter, and occasionally one person has to step forward and fix something nobody else can. The trouble starts when exceptional effort becomes the operating model.
 
-So it helps to separate heroic action from hero culture. Heroic action is sometimes necessary. Hero culture is what you get when an organisation keeps relying on extraordinary individuals to cover for weaknesses in its systems, architecture, processes or leadership. The difference matters because a hero can save a system and, in the same act, hide the fact that it needed saving.
+So it helps to separate heroic action from hero culture. Hero culture is what you get when an organisation keeps relying on extraordinary individuals to cover for weaknesses in its systems, architecture, processes or leadership. The difference matters because a hero can save a system and, in the same act, hide the fact that it needed saving.
 
 ## The hero as a single point of failure
 
 The heroic developer's real problem is that their knowledge sits in one place.
 
-A developer becomes the person who understands the odd legacy database, the undocumented deployment sequence or the integration nobody else will touch. They become invaluable, and that makes the organisation fragile. If a team cannot comfortably get through that person's holiday, illness, resignation or move to another project, it hasn't built resilience. It has built a dependency.
+A developer becomes the person who understands the odd legacy database, the undocumented deployment sequence or the integration nobody else will touch. They become invaluable, and that makes the organisation fragile. If a team cannot comfortably get through that person's holiday, illness, resignation or move to another project, what it has built is a dependency.
 
 Software research has a name for this: the bus factor, the number of people who would have to disappear before a project stalls. A 2022 study at JetBrains surveyed 269 engineers and found they treat it as a real problem. It also found that code authorship tells only part of the story. Knowledge moves through code reviews, meetings, chat and issue trackers too, so an estimate built on authorship alone is incomplete (Jabrayilzade et al., 2022). That is useful news for leaders, because those are all channels a team can deliberately use.
 
 The old stories got here first. In the _Epic of Gilgamesh_, Gilgamesh starts out as a ruler of enormous power and very little restraint. His people cry out to the gods, and the gods create Enkidu as his counterweight. What the epic warns against is unchecked power and what it does to the people around it. By the end, Gilgamesh finds what lasts in Uruk's walls and institutions rather than in himself.
 
-The software lesson isn't "great developers are dangerous." It is closer to this:
+None of this makes great developers dangerous. The software lesson is closer to this:
 
 > Capability that isn't shared turns into dependency.
 
@@ -93,6 +93,12 @@ Individual excellence can't fix this on its own. You need systems that make good
 
 So telling engineers to stop working so hard is not the answer to heroic firefighting. Having fewer fires is.
 
+## Boring is good
+
+Google's SRE practice also has a name for the repetitive, manual, automatable operational work that leaves a service no better than it found it: toil. The aim is to engineer it away, not get faster at enduring it. Google's SRE teams set a goal of keeping toil below 50% of each engineer's time so that at least half their effort goes into improving the system itself (Beyer et al., 2016).
+
+That is the opposite of hero culture, which says, "We have an amazing engineer who can handle this." Resilient engineering asks, "Why does this still need an amazing engineer?" One uses people to absorb the system's failures. The other uses them to redesign the system so its failures ask less of anyone.
+
 ## The cognitive-load problem
 
 A hero usually carries a great deal of context in their head. They know why the system works the way it does, which parts are fragile, and which apparently unrelated service falls over when a particular query changes. They know which customer depends on behaviour nobody wrote down, and the history behind design decisions that no longer look rational.
@@ -101,15 +107,13 @@ That knowledge is valuable. Held by one person, it is also a liability for the o
 
 _Team Topologies_ (Skelton & Pais, 2019) puts cognitive load at the centre of team design. Teams shouldn't be asked to own more complexity than they can understand and run, and architecture, team boundaries, platform teams and enabling teams are all tools for keeping that load in check.
 
-That changes the leadership question from "who is our expert?" to "how do we turn this person's expertise into something the team can do?" The answer varies. Sometimes it's pairing or mentoring, sometimes documentation or more deliberate code review. Sometimes the right move is to simplify the architecture or redraw a team boundary so the knowledge doesn't need to be so rare.
-
-The expert stays just as valuable. The organisation stops depending on knowledge only they hold.
+The leadership question then becomes how to turn one person's expertise into something the team can do. The answer varies. Sometimes it's pairing or mentoring, sometimes documentation or more deliberate code review. Sometimes the right move is to simplify the architecture or redraw a team boundary so the knowledge doesn't need to be so rare.
 
 ## "But someone has to be the expert"
 
 Yes. Complex systems need deep expertise, and a mature engineering organisation should have specialists. Turning everyone into interchangeable generalists would be neither realistic nor desirable.
 
-Expertise is fine. The risk is expertise that leaves with the person. An expert who teaches makes the organisation more capable. An expert who is the only person able to operate a system safely makes it more fragile. A healthy organisation keeps its specialists and builds routes for what they know to reach everyone else.
+The risk is expertise that leaves with the person. An expert who teaches makes the organisation more capable. One who is the only person able to operate a system safely makes it more fragile. A healthy organisation keeps its specialists and builds routes for what they know to reach everyone else.
 
 That depends on psychological safety. Amy Edmondson's research on work teams found that psychological safety was strongly associated with learning behaviour: asking questions, admitting mistakes, seeking feedback (Edmondson, 1999). A team where nobody can comfortably say "I don't understand this part of the system" will produce heroes by accident.
 
@@ -120,14 +124,6 @@ The uncomfortable part is that the heroic developer is rarely the cause of the p
 If an organisation keeps setting impossible deadlines, shifting priorities and rewarding emergency effort, the person who keeps staying late is responding sensibly to the incentives in front of them. That is why leaders need to be careful about celebrating sacrifice. If the engineer who spends Saturday rescuing the release gets the public thanks and the one who spent Friday improving the test suite gets nothing, the organisation has told everyone what it values.
 
 Leaders are responsible for making the quiet work visible: paying down technical debt, improving test coverage and observability, simplifying the architecture, writing down operational knowledge, automating repetitive tasks, making deployments safer and mentoring other engineers. None of it makes a good story at the all-hands, but it may well be the reason there is no crisis to tell a story about.
-
-## Boring is good
-
-Google's SRE practice has a name for the repetitive, manual, automatable operational work that leaves a service no better than it found it: toil. The aim is to engineer it away, not get faster at enduring it. Google's SRE teams set a goal of keeping toil below 50% of each engineer's time so that at least half their effort goes into improving the system itself (Beyer et al., 2016).
-
-That is the opposite of hero culture. Hero culture says, "We have an amazing engineer who can handle this." Resilient engineering asks, "Why does this still need an amazing engineer?"
-
-The first uses people to absorb the system's failures. The second uses them to redesign the system so its failures ask less of anyone.
 
 ## The real measure of leadership
 
@@ -149,6 +145,6 @@ Heroes will keep appearing. What matters is what happens after one does.
 
 When someone pulls off an extraordinary rescue, thank them, then investigate. If one person has become the only one who understands a subsystem, learn from them and spread what they know. A deadline that took extraordinary effort deserves recognition, and a hard look at why the plan needed it. And after a midnight intervention in production, the job isn't finished until the next one is less likely and less dependent on one person.
 
-Good engineering still needs exceptional people. What it removes is exceptional sacrifice as a routine part of how the work gets done. Good leadership works the same way, making the organisation more capable without the leader.
+Good engineering still needs exceptional people. What it removes is exceptional sacrifice as a routine part of how the work gets done.
 
-The best measure of an engineering organisation may be an unglamorous one. Not how often it saves the day, but how rarely it needs to.
+The best measure of an engineering organisation is an unglamorous one: how rarely it needs to save the day.

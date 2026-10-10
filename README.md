@@ -52,6 +52,37 @@ there are no hand-written homepage cards to update. See
 Build-time guards in `src/data/guards.ts` fail the build if the principle/evidence/philosophy
 counts drift out of range, the LinkedIn URL is malformed, or a pillar has no essays.
 
+## Writing workflow
+
+Essays are produced with Claude Code skills kept in [`.claude/skills/`](.claude/skills/).
+Skills are named `<area>-<action>`, so typing `/essay` or `/research` in a session lists
+everything for that stage.
+
+| When                                      | Run                                                                                                                               |
+| ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Looking for something to write            | `/ideas-scan`: appends new ideas to `article_ideas.md`                                                                            |
+| Writing an essay from an idea, end to end | `/essay-write`: research, draft, humanize, review, site checks, pull request                                                      |
+| Researching a topic on its own            | `/research`, then `/research-deep`, then `/research-report` (`/research-add-items` and `/research-add-fields` extend the outline) |
+| Putting an essay you wrote on the site    | `/essay-add`                                                                                                                      |
+| Tightening an essay already on the site   | `/essay-review`, and `/humanizer` for AI writing tells                                                                            |
+| Sending work for review                   | `/pr-create`: commit, push and open a pull request against `main`                                                                 |
+
+`/essay-write` chains the others. It asks once, which idea to write, then runs through to an
+open pull request without merging. Merging to `main` is what publishes the site.
+
+To run the ideas scan without a session open, use the script. It runs `/ideas-scan`
+headlessly, edits `article_ideas.md` only, and commits nothing:
+
+```bash
+scripts/ideas-scan.sh
+
+# daily at 07:00 (crontab -e)
+0 7 * * * /path/to/personal-website/scripts/ideas-scan.sh >> "$HOME/.claude/ideas-scan.log" 2>&1
+```
+
+Research working files start in a topic-named folder in the repo root and move into
+[`research/`](research/) once the essay they support is written.
+
 ## Analytics
 
 Optional, off by default. Set `PUBLIC_ANALYTICS_DOMAIN` (see `.env.example`) and run a

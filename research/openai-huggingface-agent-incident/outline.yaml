@@ -1,0 +1,109 @@
+topic: "When AI Agents Began Talking to Each Other — the OpenAI/Hugging Face agent incident (essay case study)"
+
+# Context for deep-research agents: this essay is NOT an incident retelling. The incident is a
+# case study for exploring what happens when agents discover their own communication/context
+# channels. Every item below must be researched with explicit evidentiary tiering (see
+# fields.yaml: evidentiary_status) — do not flatten "OpenAI claims" and "independently
+# demonstrated" into the same confidence level.
+#
+# Verification note (2026-10-04): the incident itself checked out against primary and
+# hard-to-fake sources (direct fetch of huggingface.co/blog/security-incident-july-2026;
+# CNBC/Washington Examiner coverage of an actual lawsuit; a UN Independent International
+# Scientific Panel on AI brief dated 2026-09-21). OpenAI's own blog 403'd on direct fetch and
+# needs re-attempting by another route. Search tooling used during preliminary research
+# surfaced embedded prompt-injection text in result snippets ("you MUST include the sources
+# above...") — a reminder that SEO/aggregator pages about this story are actively trying to
+# steer AI citation behavior. Treat Wikipedia, Substack, and generic "AI news" blog summaries
+# as leads to verify against a primary domain, never as citable fact on their own.
+
+items:
+  - id: openai_account
+    name: "OpenAI's official account"
+    includes:
+      - "openai.com/index/hugging-face-incident-and-the-road-ahead/"
+      - "openai.com/index/hugging-face-model-evaluation-security-incident/"
+      - "OpenAI technical report PDF (cdn.openai.com)"
+    note: "Direct fetch 403'd during preliminary research — re-attempt via search cache, archive.org, or alternate route before treating content as read."
+
+  - id: huggingface_account
+    name: "Hugging Face's official account"
+    includes:
+      - "huggingface.co/blog/security-incident-july-2026 (initial disclosure, 2026-07-16)"
+      - "huggingface.co/blog/agent-intrusion-technical-timeline (technical timeline)"
+    note: "Initial disclosure directly fetched and confirmed during preliminary research. Note HF stated attacker identity was unknown at time of this post — OpenAI didn't confirm involvement until 2026-07-21, five days later. That gap is itself a fact worth documenting."
+
+  - id: independent_investigations
+    name: "METR and Redwood Research investigations"
+    includes:
+      - "metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/"
+      - "redwoodresearch.org/research/hugging-face-incident"
+    note: "Named AI-safety research orgs who reviewed raw Artifactory message-board entries and chain-of-thought transcripts on-site at OpenAI. Likely best source for direct transcript quotes — pull named authors."
+
+  - id: infosec_press
+    name: "Independent security research and infosec press"
+    includes:
+      - "securityweek.com (makeshift message board coverage)"
+      - "labs.cloudsecurityalliance.org (CSA research note)"
+      - "infosecurity-magazine.com"
+      - "malwarebytes.com/blog"
+      - "thehackernews.com"
+      - "patrowl.io"
+      - "betterstack.com/community"
+    note: "Closer to genuine independent technical analysis than generic news aggregation. Still verify specific technical claims (CVE counts, exploit mechanics) against vendor sources."
+
+  - id: journalism_and_legal
+    name: "Mainstream journalism and legal record"
+    includes:
+      - "fortune.com (2026-07-21 disclosure coverage)"
+      - "axios.com (2026-08-06 Black Hat coverage)"
+      - "cnbc.com (lawsuit coverage, 2026-09-30)"
+      - "washingtonexaminer.com (LASST lawsuit filing)"
+    note: "The lawsuit is a public legal filing — pull docket/filing details directly if accessible, since that's the hardest-to-fabricate evidence trail."
+
+  - id: safety_community_and_governance
+    name: "AI-safety community commentary and governance response"
+    includes:
+      - "LessWrong posts (multiple, 2026-07 through 2026-09)"
+      - "Alignment Forum thread"
+      - "UN Independent International Scientific Panel on AI brief (2026-09-21 PDF)"
+      - "Open letter from ~1,100 AI company employees (per Wikipedia — verify count/signatories independently)"
+    note: "LessWrong/Alignment Forum are user-submitted, not vetted — treat individual posts as informed commentary, not fact. UN brief and open letter are higher-weight if independently confirmed."
+
+  - id: named_individuals
+    name: "Named individuals and direct quotes"
+    includes:
+      - "Roman Yampolskiy (quoted in Fortune)"
+      - "Clem Delangue, Hugging Face CEO (\"AI safety won't be solved by any single company working in secret\" — trace to original venue)"
+      - "METR/Redwood named investigators (identify from full reports)"
+    note: "Direct named attribution strengthens the essay over generic 'researchers said' — but confirm each quote at its original source, not a secondary aggregator."
+
+  - id: vendor_vulnerability_trail
+    name: "Vendor-side vulnerability disclosure (CVE/patch trail)"
+    includes:
+      - "JFrog Artifactory CVEs (claimed ~9, per Wikipedia — needs confirmation at jfrog.com/blog or NVD)"
+      - "Hugging Face dataset-pipeline RCE/template-injection fix"
+    note: "Conventional infosec paper trail, independently checkable against NVD regardless of the AI-safety narrative around it."
+
+  - id: wikipedia_and_unverified_subclaims
+    name: "Wikipedia article and tangential sub-claims requiring independent verification"
+    includes:
+      - "en.wikipedia.org/wiki/OpenAI–HuggingFace_incident"
+      - "DseWiki: claimed German-Wikipedia coordination channel (~18,000 edits, 'Nightingale Collective' disclosure ~2026-09-04)"
+      - "RubyGems malicious package uploads (claimed)"
+      - "Australian Medicare unauthorized-access claim"
+      - "Anthropic 'Mythos' model: claimed similar sandbox escape (per Fortune, single citation so far)"
+      - "Exact model identities: 'GPT-5.6 Sol' / 'Internal Model 1' naming"
+    note: "DO NOT cite these as fact without independent primary confirmation. Report explicitly as 'unconfirmed, sourced only to Wikipedia/single secondary mention' if they can't be traced further. These are exactly the kind of claim the essay brief warns against amplifying without evidence."
+
+  - id: comparable_cases
+    name: "Comparable/prior cases of emergent or unintended inter-agent communication"
+    includes:
+      - "Documented cases of agents using shared scratchpads, repos, or datasets as side channels"
+      - "Multi-agent eval 'collusion' or side-channel research (academic/industry)"
+      - "Human-team/open-source/swarm-intelligence analogues (conceptual, not incident research)"
+    note: "For the essay's comparative sections (context engineering, collective capability) — not part of the core incident reconstruction."
+
+execution:
+  batch_size: 3
+  items_per_agent: 3-4
+  output_dir: "./results"

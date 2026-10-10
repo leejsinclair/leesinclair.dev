@@ -1,0 +1,232 @@
+{
+  "name": "Ancient literary sources for the Argo and Aia",
+  "citation": "Primary texts, all opened on 10 October 2026: Homer, Odyssey 12.69-72, 10.135-139 and 12.1-4, tr. A.T. Murray (Loeb 1919), Perseus https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0136:book=12:card=36 ; Hesiod, Theogony 992-1002, 956-962 and 337-340, tr. H.G. Evelyn-White (Loeb 1914), Perseus https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0130:card=963 ; Mimnermus frs. 11 and 11a West, quoted in Strabo, Geography 1.2.40, tr. H.L. Jones (Loeb 1917), LacusCurtius https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Strabo/1B2*.html , also tr. Hamilton and Falconer and the Greek on Perseus (1999.01.0239 and 1999.01.0197, book=1:chapter=2:section=40); Eumelus, Corinthiaca, as reported by Pausanias 2.3.10, tr. W.H.S. Jones and H.A. Ormerod (Loeb 1918), Perseus https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0160:book=2:chapter=3:section=10 ; Pindar, Pythian 4 (462 BC), tr. Diane Arnson Svarlien (1990), Perseus https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0162:book=P.:poem=4 ; Herodotus 1.2, 7.193, 7.197 and 1.104, tr. A.D. Godley (Loeb), Perseus https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126:book=1:chapter=2 ; Apollonius Rhodius, Argonautica, tr. R.C. Seaton (Loeb 1912), Theoi https://www.theoi.com/Text/ApolloniusRhodius2.html (Books 1-4 opened). Scholarship opened in full: M.L. West, 'The Argonaut Legend in Early Greek Poetry', Phasis 10 (I), 2007, pp. 199-203, https://phasis.tsu.ge/index.php/PJ/article/download/2168/2449/2931 ; A.I. Ivantchik, 'Argonautes, l'Ocean et la mer Noire', Phasis 10 (I), 2007, pp. 95-101, https://phasis.tsu.ge/index.php/PJ/article/download/2178/2438/2920 ; R. Gordeziani, 'The Land of Aietes and the Argo in the Homeric Tradition', Phasis 10 (I), 2007, pp. 86 ff., https://phasis.tsu.ge/index.php/PJ/article/download/2179/2451/2933 (first four pages read); R. Gordeziani, 'The Colchians in the Adriatic', Phasis 13-14, 2010-2011, pp. 42 ff., https://phasis.tsu.ge/index.php/PJ/article/download/2082/pdf (first four pages read).",
+  "source_tier": "Ancient texts in public-domain scholarly translations (Loeb editions hosted by Perseus, LacusCurtius and Theoi; Svarlien's Pindar on Perseus), plus peer-reviewed scholarship: four articles in Phasis: Greek and Roman Studies (Tbilisi State University), two of them papers from a 2007 Argonautica conference volume.",
+  "access_status": "Fully read for every passage quoted below: the pages were downloaded and the text extracted, and the Greek was opened alongside the English for Odyssey 12.69-72, Theogony 992-1002, Strabo 1.2.40, Pindar Pythian 4, Herodotus 1.2 and 7.193, and Pausanias 2.3.10. West 2007 and Ivantchik 2007 read in full; the two Gordeziani papers read in part. Not opened: the Loeb Mimnermus (Gerber), West's Greek Epic Fragments (so the verse fragment of Eumelus is known only through Pausanias's paraphrase and through scholars' reports), West's 2005 Classical Quarterly article 'Odyssey and Argonautica' (paywalled; known through West's own 2007 summary), Lesky's 'Aia' (1949) and Drager's work (known only through Ivantchik's and Gordeziani's citations).",
+  "author_credentials": "Ancient authors, none with any connection to Gobustan. Translators are standard: A.T. Murray, H.G. Evelyn-White, H.L. Jones, A.D. Godley, R.C. Seaton, W.H.S. Jones (all Loeb Classical Library), Diane Arnson Svarlien (Pindar). Scholars: Martin L. West (Oxford, classical philologist, editor of the Greek Epic Fragments and of Mimnermus); Askold I. Ivantchik (Moscow and Bordeaux, historian of the Black Sea region in antiquity); Rismag Gordeziani (Tbilisi State University, classicist). None did fieldwork at Gobustan and none mentions it.",
+  "exact_quotes": [
+    {
+      "location": "Homer, Odyssey 12.69-72, tr. A.T. Murray (1919), Perseus",
+      "quote": "One seafaring ship alone has passed thereby, that Argo famed of all, on her voyage from Aeetes, and even her the wave would speedily have dashed there against the great crags, had not Here sent her through, for that Jason was dear to her.",
+      "note": "Greek of line 70 as opened on Perseus: 'Argo pasi melousa, par' Aietao pleousa' (Ἀργὼ πᾶσι μέλουσα, παρ᾽ Αἰήταο πλέουσα). The place is given only as a person: 'from Aeetes'. No Aia, no Colchis, no Phasis."
+    },
+    {
+      "location": "Homer, Odyssey 10.135-139, tr. Murray, Perseus",
+      "quote": "and we came to the isle of Aeaea, where dwelt fair-tressed Circe, a dread goddess of human speech, own sister to Aeetes of baneful mind; and both are sprung from Helius, who gives light to mortals, and from Perse, their mother, whom Oceanus begot."
+    },
+    {
+      "location": "Homer, Odyssey 12.1-4, tr. Murray, Perseus",
+      "quote": "Now after our ship had left the stream of the river Oceanus and had come to the wave of the broad sea, and the Aeaean isle, where is the dwelling of early Dawn and her dancing-lawns, and the risings of the sun"
+    },
+    {
+      "location": "Hesiod, Theogony 992-1002, tr. H.G. Evelyn-White (1914), Perseus",
+      "quote": "And the son of Aeson by the will of the gods led away from Aeetes the daughter of Aeetes the heaven-nurtured king, when he had finished the many grievous labours which the great king, overbearing Pelias, that outrageous and presumptuous doer of violence, put upon him. But when the son of Aeson had finished them, he came to Iolcus after long toil bringing the coy-eyed girl with him on his swift ship, and made her his buxom wife. And she was subject to Iason, shepherd of the people, and bore a son Medeus whom Cheiron the son of Philyra brought up in the mountains. And the will of great Zeus was fulfilled.",
+      "note": "Greek line 994: 'ege par' Aieteo' (ἦγε παρ᾽ Αἰήτεω), again 'from Aeetes'. Iolcus is the only place named."
+    },
+    {
+      "location": "Hesiod, Theogony 956-962, tr. Evelyn-White, Perseus",
+      "quote": "And Perseis, the daughter of Ocean, bore to unwearying Helios Circe and Aeetes the king. And Aeetes, the son of Helios who shows light to men, took to wife fair-cheeked Idyia, daughter of Ocean the perfect stream, by the will of the gods: and she was subject to him in love through golden Aphrodite and bore him neat-ankled Medea."
+    },
+    {
+      "location": "Hesiod, Theogony 337-340, tr. Evelyn-White, Perseus",
+      "quote": "And Tethys bore to Ocean eddying rivers, Nilus, and Alpheus, and deep-swirling Eridanus, Strymon, and Meander, and the fair stream of Ister, and Phasis, and Rhesus, and the silver eddies of Achelous",
+      "note": "Phasis is line 340, in a bare list of rivers with no location and no link to Aeetes."
+    },
+    {
+      "location": "Mimnermus fr. 11 West, in Strabo 1.2.40, tr. H.L. Jones (Loeb 1917, pp. 171-173), LacusCurtius",
+      "quote": "Never would Jason himself have brought back the great fleece from Aea, accomplishing his mind-racking journey and fulfilling the difficult task for insolent Pelias, nor would they have come even to the fair stream of Oceanus"
+    },
+    {
+      "location": "Mimnermus fr. 11a West, in Strabo 1.2.40, tr. H.L. Jones, LacusCurtius",
+      "quote": "To the city of Aeëtes, where the rays of the swift Sun lie in a chamber of gold beside the lips of Oceanus, whither glorious Jason went."
+    },
+    {
+      "location": "Strabo 1.2.40 (his own gloss on Mimnermus, following Demetrius of Scepsis), tr. H.L. Jones",
+      "quote": "Mimnermus places the home of Aeëtes in Oceanus, outside the inhabited world in the east, and affirms that Jason was sent thither by Pelias and brought back the fleece"
+    },
+    {
+      "location": "Strabo 1.2.40, tr. H.L. Jones",
+      "quote": "He agrees with history when he uses the name of \"Aeëtes,\" when he tells of Jason and the Argo, when, with \"Aea\" in mind, he invents \"Aeaea,\""
+    },
+    {
+      "location": "Strabo 1.2.39, tr. H.L. Jones",
+      "quote": "For example, the city of Aea is still shown on the Phasis, and Aeëtes is believed to have ruled over Colchis, and the name Aeëtes is still locally current among the people of that region."
+    },
+    {
+      "location": "Strabo 1.2.38, tr. H.L. Jones",
+      "quote": "Demetrius says that Homer knew absolutely nothing about the voyage of Jason to Phasis."
+    },
+    {
+      "location": "Eumelus as reported by Pausanias 2.3.10, tr. W.H.S. Jones and H.A. Ormerod (1918), Perseus",
+      "quote": "Eumelus said that Helius (Sun) gave the Asopian land to Aloeus and Epliyraea to Aeetes. When Aeetes was departing for Colchis he entrusted his land to Bunus, the son of Hermes and Alcidamea",
+      "note": "'Epliyraea' is a typo in the Perseus text for Ephyraea, reproduced as found. The Greek opened on Perseus reads 'Aieten apionta es Kolchous' (Αἰήτην ἀπιόντα ἐς Κόλχους), literally 'departing to the Colchians'. This is Pausanias's prose report, second century AD, not Eumelus's own verse."
+    },
+    {
+      "location": "Pindar, Pythian 4.9-11, tr. D.A. Svarlien (1990), Perseus",
+      "quote": "the word spoken at Thera by Medea, which once the inspired daughter of Aeetes, the queen of the Colchians, breathed forth from her immortal mouth",
+      "note": "Greek: 'despoina Kolchon' (δέσποινα Κόλχων)."
+    },
+    {
+      "location": "Pindar, Pythian 4.211-213, tr. Svarlien, Perseus",
+      "quote": "And then the Argonauts came to Phasis, where they clashed with the dark-faced Colchians in the realm of Aeetes himself.",
+      "note": "Greek: 'es Phasin d' epeiten elython: entha kelainopessi Kolchoisin bian mixan Aieta par' autoi'."
+    },
+    {
+      "location": "Pindar, Pythian 4.251-252, tr. Svarlien, Perseus",
+      "quote": "And they reached the expanses of Ocean, and the Red Sea, and the race of the Lemnian women, who killed their husbands."
+    },
+    {
+      "location": "Pindar, Pythian 4.25-27, tr. Svarlien, Perseus (Medea speaking)",
+      "quote": "Before that we had been dragging our seafaring ship for twelve days from the Ocean over the deserted back of the land, having drawn it ashore by my counsels."
+    },
+    {
+      "location": "Herodotus 1.2.2, tr. A.D. Godley, Perseus",
+      "quote": "They sailed in a long ship to Aea, a city of the Colchians, and to the river Phasis: and when they had done the business for which they came, they carried off the king's daughter Medea.",
+      "note": "Greek: 'es Aian te ten Kolchida kai epi Phasin potamon' (ἐς Αἶαν τε τὴν Κολχίδα καὶ ἐπὶ Φᾶσιν ποταμόν), literally 'to Colchian Aia and to the river Phasis'. Godley's 'a city of the Colchians' is an expansion. Herodotus gives this as what the Persians say."
+    },
+    {
+      "location": "Herodotus 7.193.2, tr. Godley, Perseus",
+      "quote": "where, it is said, Heracles was sent for water and was left behind by Jason and his comrades of the Argo, when they were sailing to Aea in Colchis for the fleece",
+      "note": "Greek: 'es Aian ten Kolchida' (ἐς Αἶαν τὴν Κολχίδα)."
+    },
+    {
+      "location": "Herodotus 7.197.3, tr. Godley, Perseus",
+      "quote": "this Cytissorus came from Aea in Colchis and delivered him"
+    },
+    {
+      "location": "Herodotus 1.104.1, tr. Godley, Perseus",
+      "quote": "It is a thirty days' journey for an unencumbered man from the Maeetian lake to the river Phasis and the land of the Colchi; from the Colchi it is an easy matter to cross into Media: there is only one nation between, the Saspires"
+    },
+    {
+      "location": "Apollonius Rhodius, Argonautica 2.417-418 (the line before Theoi's marker [419]), tr. R.C. Seaton, Theoi",
+      "quote": "And Colchian Aea lies at the edge of Pontus and of the world."
+    },
+    {
+      "location": "Apollonius Rhodius, Argonautica 2.1260-1270 (around Theoi's marker [1262]), tr. Seaton, Theoi",
+      "quote": "And at night, by the skill of Argus, they reached broad-flowing Phasis, and the utmost bourne of the sea. [...] and quickly with oars they entered the mighty stream of the river; and round the prow the water surged as it gave them way. And on their left hand they had lofty Caucasus and the Cytaean city of Aea, and on the other side the plain of Ares and the sacred grove of that god, where the serpent was keeping watch and ward over the fleece as it hung on the leafy branches of an oak."
+    },
+    {
+      "location": "Apollonius Rhodius, Argonautica 3, Aeetes speaking, between Theoi's markers [299] and [317] (about 3.309-313), tr. Seaton, Theoi",
+      "quote": "For I marked it once, whirled along in the chariot of my father Helios, when he was bringing my sister Circe to the western land and we came to the shore of the Tyrrhenian mainland, where even now she abides, exceeding far from Colchis."
+    },
+    {
+      "location": "Apollonius Rhodius, Argonautica 4, after Theoi's marker [123] (about 4.131-135), tr. Seaton, Theoi",
+      "quote": "Those heard it who dwelt in the Colchian land very far from Titanian Aea, near the outfall of Lycus, the river which parts from loud-roaring Araxes and blends his sacred stream with Phasis, and they twain flow on together in one and pour their waters into the Caucasian Sea."
+    },
+    {
+      "location": "Apollonius Rhodius, Argonautica 1, paragraph at Theoi's marker [172], tr. Seaton, Theoi",
+      "quote": "greatly he desired to behold the Colchian land and Aeetes himself the ruler of the Colchians"
+    },
+    {
+      "location": "M.L. West, Phasis 10 (I), 2007, pp. 200-201",
+      "quote": "The mythical Aia was not yet located at Colchis; it will have lain at the eastern extremity of that northern zone, the Phasis being perhaps identified with the Tanais. The Colchian localization is first attested in the sixth-century pseudo-Eumelos (fr. 17. 8 W.), after the date of the Greek settlement in Colchis."
+    },
+    {
+      "location": "M.L. West, Phasis 10 (I), 2007, p. 199",
+      "quote": "Hesiod in his catalogue of the world's major rivers (Th. 338-45) includes the Phasis; this was a mythical stream known only in connection with the Argo story."
+    },
+    {
+      "location": "M.L. West, Phasis 10 (I), 2007, p. 200",
+      "quote": "The seventh-century elegist Mimnermus devoted several lines to Jason's recovery of the Fleece from the ends of the earth (frs. 11–11a W.)."
+    },
+    {
+      "location": "M.L. West, Phasis 10 (I), 2007, p. 200",
+      "quote": "this poem, however, cannot be dated earlier than the mid sixth century",
+      "note": "Said of the Korinthiaka attributed to Eumelos."
+    },
+    {
+      "location": "M.L. West, Phasis 10 (I), 2007, p. 202",
+      "quote": "It may be conjectured that in the original myth Phasis took the place of Oceanus itself as the river from which the sun rose."
+    },
+    {
+      "location": "A.I. Ivantchik, Phasis 10 (I), 2007, p. 96 (French original)",
+      "quote": "La légende des Argonautes remonte sûrement à une époque plus ancienne que celle du début des contacts directs entre l'Égéide et les littoraux de la mer Noire, et elle n'était pas initialement lié à la Colchide, comme ce fut le cas à l'époque tardive.",
+      "translation": "The legend of the Argonauts surely goes back to a time earlier than the start of direct contact between the Aegean and the Black Sea coasts, and it was not at first tied to Colchis, as it was in later times. (my translation)"
+    },
+    {
+      "location": "A.I. Ivantchik, Phasis 10 (I), 2007, p. 97 (French original)",
+      "quote": "Selon l'opinion la plus répandue, la première source qui témoigne de l'identification d'Aia avec la Colchide serait un fragment d'Eumèle de Corinthe (fr. 3 Bernabé)",
+      "translation": "On the most widely held view, the first source to attest the identification of Aia with Colchis is a fragment of Eumelus of Corinth (fr. 3 Bernabe). (my translation)"
+    },
+    {
+      "location": "A.I. Ivantchik, Phasis 10 (I), 2007, p. 101 (French original)",
+      "quote": "L'Aia des versions les plus anciennes des Argonautiques n'était pas localisée dans le Caucase.",
+      "translation": "The Aia of the oldest versions of the Argonautica was not located in the Caucasus. (my translation)"
+    },
+    {
+      "location": "R. Gordeziani, Phasis 10 (I), 2007, p. 87, quoting the Hittitologist V. Haas",
+      "quote": "In the earliest tradition, Aia had nothing in common with Colchis. In fact, Aia is the nether land, a mythic land, supposedly located far to the East, on the Black Sea coast."
+    },
+    {
+      "location": "R. Gordeziani, Phasis 13-14, 2010-2011, p. 42",
+      "quote": "Scholars continue to argue whether in the initial version of the myth the destination of the expedition was indeed Colchis or whether the version developed after Greek settlements started to appear in the Black Sea region"
+    }
+  ],
+  "key_claims": [
+    "Odyssey 12.69-72 is the oldest surviving mention of the Argo. It names the ship, Jason, Hera and Aeetes, and says the Argo passed the Planctae 'on her voyage from Aeetes'. It names no country, no river and no sea. The word Aia does not occur in Homer at all in the passages opened; what occurs is Aiaie (Aeaea), Circe's island, and Circe is 'own sister to Aeetes' (10.137). Odyssey 12.3-4 puts that island where Dawn has her house and the sun rises, reached straight after leaving the river Oceanus.",
+    "Hesiod, Theogony 992-1002, tells of Jason carrying Medea 'from Aeetes' to Iolcus after the labours set by Pelias. Iolcus is the only place named. Theogony 956-962 makes Aeetes the son of Helios and an Oceanid, with an Oceanid wife. Theogony 340 lists Phasis among the rivers born to Ocean and Tethys, with no location. Neither Homer nor the Theogony names Colchis.",
+    "Mimnermus (later seventh century BC) is the first author opened who names Aia as the place the fleece came from. He puts 'the city of Aeetes' where the Sun's rays lie in a golden chamber 'beside the lips of Oceanus'. Strabo, following Demetrius of Scepsis, reads this as placing Aeetes 'in Oceanus, outside the inhabited world in the east'. No Colchis, no Phasis, no Black Sea in the lines as quoted.",
+    "Eumelus: Pausanias 2.3.10 reports that Eumelus had Aeetes, given Ephyraea (Corinth) by Helios, leave 'for Colchis' (Greek: 'to the Colchians'). Scholars cite the verse itself as Eumelus fr. 3 Bernabe = fr. 17 West, and treat it as the first attestation of Colchis as Aeetes' country. Its date is disputed: Eumelus the man is put in the late eighth and early seventh century BC, but West dates the Korinthiaka no earlier than the mid sixth century, after Greeks had settled in Colchis, and Ivantchik agrees the fragment cannot date the identification.",
+    "Pindar, Pythian 4 (462 BC), is the oldest surviving connected narrative (West's description) and the earliest securely dated text opened that puts the voyage at the Phasis among Colchians: Medea is 'queen of the Colchians' (line 11) and the Argonauts 'came to Phasis, where they clashed with the dark-faced Colchians in the realm of Aeetes himself' (211-213). Pindar does not use the name Aia in this ode (checked in the Greek). His return route still runs through Ocean and the 'Red Sea' (251) with a twelve-day portage 'from the Ocean' (25-27), so the river Phasis still opens onto the outer sea in his geography.",
+    "Herodotus (later fifth century BC) is the first author opened to join the two names in one phrase: 'Aia the Colchian' (Aian ten Kolchida) at 1.2.2, 7.193.2 and 7.197.3, with the river Phasis. At 1.104 he treats the Phasis and the Colchians as an ordinary place thirty days' walk from the Sea of Azov, with Media beyond one intervening people.",
+    "Apollonius Rhodius (third century BC) gives the fully mapped version: 'Colchian Aea lies at the edge of Pontus and of the world' (2.417-418); the Argo reaches the Phasis at 'the utmost bourne of the sea' and rows upriver with the Caucasus and 'the Cytaean city of Aea' on the left (2.1260-1270). At 4.131-135 he ties the Phasis to the Araxes through a river Lycus and has the joined stream flow into 'the Caucasian Sea', which in context is the Black Sea at the Phasis mouth. The word Caspian appears once in Seaton's translation of the whole poem, for the 'Caspian shell' in which Medea gathers the Promethean drug in Book 3. No voyage on the Caspian appears anywhere in the poem.",
+    "So in the texts opened, the order is: Aeetes with no place (Odyssey, Theogony); Aia by the Ocean stream at the sunrise (Mimnermus); Colchians and Colchis (Eumelus if early, otherwise Pindar in 462 BC); 'Colchian Aia' on the Phasis (Herodotus); a charted Black Sea voyage (Apollonius). Strabo, writing around the turn of the era, already knew this was contested: he records Demetrius of Scepsis saying 'Homer knew absolutely nothing about the voyage of Jason to Phasis' and argues against him.",
+    "Scholarship opened: West holds that the seventh-century Argonautic epic placed Aia in the north of the Black Sea (Crimea to the Sea of Azov, Phasis perhaps the Tanais/Don) and that 'the mythical Aia was not yet located at Colchis'. Ivantchik holds that Aia was at first a mythical land on the Ocean, a form of the land of the dead (after Wilamowitz and Lesky), that Greeks before the mid seventh century took the Black Sea to be part of Ocean, and that Aia was identified first with Qulha, a kingdom of Urartian inscriptions on the south-east Black Sea coast, and only later moved to the Phasis/Rioni basin. Gordeziani defends the traditional view that Aeetes' land was Colchis from the start, on the Lemnos and Hellespont references in Homer, and reports Drager's view that Aia was first thought of in Ethiopia."
+  ],
+  "evidence_offered": "The texts themselves, read in the Greek where opened: what each names and what it leaves out. Strabo 1.2.38-40 preserves both the Mimnermus lines and an ancient argument (Demetrius of Scepsis against Neanthes, Strabo against Demetrius) over whether Homer knew a voyage to the Phasis. The scholars argue from the same passages plus linguistics (West: Phasis as a Greek word meaning 'shiner'; Ivantchik citing Wackernagel on Aietes and Aides), from archaeology (Ivantchik: no Greek imports in the Black Sea before the mid seventh century BC, and no secure Mycenaean ones), and from Urartian inscriptions of Sarduri II naming Qulha (Ivantchik, citing Melikishvili).",
+  "date_range_estimates": {
+    "motif_dates": [
+      "Not applicable. None of these sources mentions Gobustan, a carving or any image. They date texts, not the Rock 29 motif."
+    ],
+    "text_and_tradition_dates": [
+      "Currency of the Argonaut myth: 'by 700 BCE at the latest' (West 2007, p. 199).",
+      "West's proposed framing of the Jason and Pelias form of the legend, with the goal beyond the Bosporos: 'say between 1150 and 1000' BC (West 2007, p. 201). This is his conjecture, not an attested date.",
+      "West's proposed date for the Argonautic epic used by the Odyssey: mid seventh century BC (West 2007, p. 200).",
+      "Mimnermus: 'seventh-century elegist' (West); activity usually dated to the last third of the seventh century BC (Ivantchik, p. 97).",
+      "Eumelus: the man placed in the late eighth and first quarter of the seventh century BC (Ivantchik, p. 97, citing Bowra and Drews); the Korinthiaka 'cannot be dated earlier than the mid sixth century' (West, p. 200).",
+      "Pindar, Pythian 4: 462 BC (Perseus heading; West, p. 199).",
+      "Greek seaborne contact with the Black Sea coasts: not before the mid seventh century BC on Ivantchik's reading of the archaeology (p. 95).",
+      "Qulha as an independent state: second half of the eighth century BC; Sarduri II of Urartu reigned 762-735 BC (Ivantchik, p. 100).",
+      "Dates for Homer, Hesiod, Herodotus and Apollonius are the conventional ones (roughly late eighth to seventh century, fifth century and third century BC) and were not checked against a source opened in this session [uncertain]."
+    ]
+  },
+  "dating_method": "Not applicable to the carving. For the texts: Pindar's ode is dated by the victory it celebrates (heading on Perseus: chariot race, 462 B.C.). The other dates are literary-historical: West dates the lost Argonautic epic from the stage of Greek exploration its geography implies, and the Korinthiaka from internal features argued in his 2002 Journal of Hellenic Studies article (not opened). Ivantchik dates the Aia and Colchis equation from the lifetime of the Urartian-attested state Qulha and from the absence of early Greek imports around the Black Sea.",
+  "panel_details": "Not applicable. None of these sources mentions Gobustan, Rock 29 or any rock carving.",
+  "geographic_claims": "Odyssey: no sea or river named for the Argo; Aeetes' sister lives on Aiaie beside the river Oceanus at the sunrise. Theogony: Aeetes unlocated; Phasis listed as a river with no place. Mimnermus: Aia, city of Aeetes, on the rim of Oceanus in the far east. Eumelus (via Pausanias): Aeetes goes from Corinth to the Colchians. Pindar: the river Phasis and the Colchians, with a return through Ocean and the 'Red Sea' and a twelve-day overland haul of the ship. Herodotus: Colchian Aia on the river Phasis; Colchis thirty days from the Sea of Azov and one people short of Media. Apollonius: outward along the south coast of the Black Sea to the Phasis under the Caucasus; home by the Ister (Danube) to the Adriatic. Strabo: 'the city of Aea is still shown on the Phasis'. West: the early epic's geography was the northern Black Sea, Crimea to the Sea of Azov, the Phasis perhaps the Tanais. Ivantchik: Ocean first, then Qulha on the south-east Black Sea coast west of the Chorokhi, then the Rioni basin. None of the texts opened sends the Argo to the Caspian or names the Caspian as a sea in the story.",
+  "counter_evidence": [
+    "Against a Caspian origin: every ancient text opened that gives the Argo a real-world destination puts it on the Phasis and the Black Sea (Pindar, Herodotus, Apollonius, Strabo). None puts it on the Caspian. The one Caspian word found in Apollonius is an adjective for a shell.",
+    "Against using Colchis as the fixed point at all: the two oldest sources name no place, and Mimnermus puts Aia on the Ocean at the sunrise. West and Ivantchik both state that the earliest Aia was not Colchis. If Colchis is a later identification, a theory that starts from Colchis and works east to the Caspian is arguing from the late form of the myth.",
+    "Against any Bronze Age eyewitness source: Ivantchik argues that using the legend as direct testimony of precolonial contact is 'une utilisation plutôt naïve de la source', that there are no Greek imports around the Black Sea before the mid seventh century BC, and that Aia was a form of the land of the dead.",
+    "Cutting the other way: an unlocated or sunrise Aia does not exclude the Caspian either. The early texts do not point to the Black Sea any more firmly than to anywhere else in the far east. And West himself allows that the legend's framing may go back to 1150-1000 BC, and Gordeziani argues for Bronze Age Aegean and Pontic navigation and an original Colchian setting. These views leave room for an old eastern origin, though none of them involves the Caspian.",
+    "Apollonius 4.131-135 links the Phasis to the Araxes through the Lycus. The Araxes belongs to the Caspian drainage, so Hellenistic geography did imagine the Colchian rivers tied to waters further east. In Apollonius the joined stream still empties into 'the Caucasian Sea' at the Phasis mouth, and Herodotus 1.104 knows a land route from the Colchians to Media. This is the nearest thing in these texts to a Caspian connection and it is late."
+  ],
+  "independent_corroboration": "None found. No ancient text opened and no scholar read connects the Argonaut story with the Caspian shore, with Gobustan or with rock art. The scholars disagree only over whether the earliest Aia was mythical, north Pontic, south-east Pontic (Qulha), Ethiopian or Colchian.",
+  "alternative_explanations": "Three mainstream readings of the same texts. (1) Aia began as a mythical land of the sunrise on the Ocean stream, possibly a form of the otherworld, and was pinned to Colchis as Greek knowledge of the Black Sea grew (Wilamowitz and Lesky as reported by Ivantchik; Ivantchik; Haas as quoted by Gordeziani). (2) An early Argonautic epic already used Black Sea geography, but of the northern coast, and the Colchian setting came in the sixth century after Greek settlement there (West). (3) The traditional view that the destination was Colchis from the beginning (Gordeziani, citing Lordkipanidze), which Drager, as quoted by Gordeziani, dismisses as having 'nur lokalpatriotische, keine wissenschaftliche Begründungen'. Strabo's own reading is a fourth, ancient one: the voyage to the Phasis was historical, motivated by Colchian gold, and Homer built his myth on it.",
+  "verification_status": [
+    "Checked against the primary text opened, English and Greek: Odyssey 12.69-72 (Murray), including the Greek of line 70.",
+    "Checked, English only: Odyssey 10.135-139 and 12.1-4 (Murray).",
+    "Checked, English and Greek: Theogony 992-1002 (Evelyn-White). English only: Theogony 956-962 and 337-340.",
+    "Checked in two translations and the Greek: the Mimnermus lines in Strabo 1.2.40 (Jones, Loeb 1917, on LacusCurtius; Hamilton and Falconer on Perseus; Greek on Perseus, where the edition prints the verses in a note after the word pasimelon). The fragment numbers 11 and 11a West are taken from West 2007 and Ivantchik 2007, not from West's edition, and the Loeb Mimnermus (Gerber) was not opened.",
+    "Checked, English and Greek: Pausanias 2.3.10 on Eumelus. NOT checked: the verse fragment of Eumelus itself (fr. 3 Bernabe = fr. 17 West, reported as coming from the scholia to Pindar's Olympian 13). Its wording was not seen in any edition; only Pausanias's paraphrase and the scholars' citations were opened [uncertain].",
+    "Checked, English and Greek: Pindar, Pythian 4.9-11 and 211-213; English only for 25-27 and 251-252. Absence of the name Aia from the ode checked by searching the Greek text on Perseus.",
+    "Checked, English and Greek: Herodotus 1.2.2 and 7.193.2. English only: 7.197.3 and 1.104.1. The translator's year (1920) was not visible on the page and is omitted.",
+    "Checked against Seaton's translation on Theoi: all Apollonius quotes. Theoi marks line numbers only at paragraph starts, so 2.417-418, 2.1260-1270, 3.309-313 and 4.131-135 are positions inferred from those markers, not printed line numbers [uncertain]. The Greek of Apollonius was not opened.",
+    "Checked against the full PDFs: every statement attributed to West 2007 and Ivantchik 2007. Translations of Ivantchik's French are mine.",
+    "Second-hand only, not checked: what Lesky, Wilamowitz, Drager, Haas, Meuli and West's 2005 Classical Quarterly article say. These are reported as West, Ivantchik and Gordeziani report them.",
+    "Not established from a source opened: that no earlier author than those listed names Colchis. Other early mentions may exist (for example in tragedy or in fragments of Simonides or the Hesiodic Catalogue) and were not searched [uncertain]."
+  ],
+  "relevance_to_essay": "This is the textual test of the proposal. The carving theory needs the myth to have a place of origin that can be traced back to the Caspian. The two oldest witnesses give the destination no place at all, the third puts it on the Ocean at the sunrise, and Colchis appears only once Greeks were sailing the Black Sea. So the 'route across the Caucasus from Colchis to the Caspian' starts from a late layer of the story. That weakens the Caspian reading and the confident Colchian one alike: an essay can say fairly that the early myth points nowhere on a map, and that a wordless carving cannot supply the name, the ship or the fleece that the texts themselves took centuries to locate.",
+  "open_questions": [
+    "The exact Greek wording and source of the Eumelus verse (fr. 3 Bernabe = 17 West) and whether it says 'Colchian land'. Needs West's Greek Epic Fragments or Bernabe.",
+    "Whether any text between Mimnermus and Pindar names Colchis or the Colchians in the Argonaut story, apart from Eumelus.",
+    "West's full argument for a north Pontic Aia (Classical Quarterly 55, 2005, 39-64) was not read; only his own two-sentence summary was.",
+    "Lesky's 'Aia' (Wiener Studien 63, 1949) and Drager's Argo Pasimelousa (1993) were not opened, so the otherworld and Ethiopian readings are second-hand.",
+    "Whether the Ragazas article engages any of these texts could not be checked from this item; its body is paywalled.",
+    "How ancient authors understood the Lycus, Araxes and Phasis link at Apollonius 4.131-135, and whether any ancient source ever routed the Argonauts by the Caspian. None was found, but the search was not exhaustive."
+  ],
+  "uncertain": [
+    "date_range_estimates",
+    "verification_status",
+    "independent_corroboration"
+  ]
+}

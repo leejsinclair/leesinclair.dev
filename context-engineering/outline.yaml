@@ -1,0 +1,166 @@
+topic: "Context engineering — is it a coherent discipline displacing prompt engineering, or a rebrand, and what does the evidence actually support"
+
+items:
+  - name: "Context Rot (Chroma research)"
+    category: "empirical benchmark"
+    description: >
+      Chroma's study showing LLM recall degrades as input token count grows,
+      even well within the model's stated context window. The core technical
+      justification for context engineering as a discipline rather than just
+      better prompting. Check reproducibility: is code/data public, has
+      anyone replicated it independently of Chroma (a vector-DB vendor with
+      commercial interest in "context is a scarce resource" framing).
+
+  - name: "Lost in the Middle (Liu et al.)"
+    category: "academic paper"
+    description: >
+      Earlier foundational paper (Stanford/Berkeley) on positional bias in
+      long-context retrieval: models attend less to information in the
+      middle of a long context. Likely the academic root that Context Rot
+      and context engineering framing build on. Check publication date and
+      whether later work (NoLiMa etc.) confirms, extends, or complicates it.
+
+  - name: "NoLiMa benchmark (arXiv:2502.05167)"
+    category: "academic benchmark"
+    description: >
+      Long-context evaluation beyond literal keyword matching, designed to
+      respond to earlier Needle-in-a-Haystack-style tests. Check what it
+      found about model performance degradation and how it relates to
+      Context Rot's claims; note derivative-of relationship to NIAH.
+
+  - name: "State of Context Management Report 2026 (DataHub)"
+    category: "vendor-commissioned survey"
+    description: >
+      UNVERIFIED: a prior web-search pass fetched this report directly and
+      could NOT find the "82%" stat already logged in article_ideas.md
+      (09-27 entry: "82% of IT and data leaders agreeing prompts alone no
+      longer suffice"). The report's actual stats are different: 83% say
+      agentic AI cannot reach production value without a dedicated context
+      platform; 88% claim operational context platforms yet 61% delay AI
+      initiatives over data trust. DataHub sells a context/data-catalog
+      product. Must resolve: is the 82% figure from this report
+      (misattributed/rounded), a different uncited report, or unverifiable
+      like the JetBrains 34% figure from the prior research pass. Fielded by
+      TrendCandy, n=250 IT/data leaders.
+
+  - name: "The state of context engineering 2026 (Redis)"
+    category: "vendor-commissioned survey"
+    description: >
+      A second vendor-commissioned survey (Redis sells a caching/vector-
+      memory product). Check whether the 82% stat, or something close to
+      it, actually originates here instead of DataHub's report, and what
+      Redis's own commercially-interested framing claims.
+
+  - name: "Effective context engineering for AI agents (Anthropic, Sept 2025)"
+    category: "vendor blog"
+    description: >
+      Anthropic's own guidance on context engineering for Claude/agents.
+      Directly relevant since this is Lee's site and Claude Code is the
+      tool in question. Check what specific techniques it recommends and
+      whether it makes empirical claims or is purely practitioner guidance.
+
+  - name: "Context Engineering for Agents (LangChain blog + filesystem post)"
+    category: "vendor blog"
+    description: >
+      LangChain's framing of context engineering, including a follow-up
+      post on using filesystems for context engineering. LangChain built a
+      GitHub repo directly off Drew Breunig's independent work, so check
+      how much of LangChain's framing is original vs. repackaged from
+      Breunig's taxonomy.
+
+  - name: "How Contexts Fail / How to Fix Your Context (Drew Breunig)"
+    category: "independent practitioner essay"
+    description: >
+      Two 2025 essays by an independent practitioner (ex-Overture Maps/
+      Reddit data scientist, not a vendor) coining a specific failure
+      taxonomy (Context Poisoning, Distraction, Confusion, Clash) and six
+      fix tactics (RAG, Tool Loadout, Context Quarantine, Pruning,
+      Summarization, Offloading). Widely cited as the connective tissue
+      between context-rot benchmark data and the context-engineering
+      discipline framing; amplified by Simon Willison, built on by
+      LangChain. High source confidence candidate since no commercial
+      interest.
+
+  - name: "The Karpathy/Lütke origin tweets (June 2025)"
+    category: "primary source / origin event"
+    description: >
+      Shopify CEO Tobi Lütke first proposed "context engineering" over
+      "prompt engineering" on X (June 19, 2025); Andrej Karpathy endorsed
+      it publicly six days later (June 25, 2025). The actual coining event
+      the whole discipline narrative traces to. Record the precise dated
+      primary artifacts rather than secondary paraphrases, since several
+      outlets cite "mid-2025" vaguely.
+
+  - name: "A Survey of Context Engineering for Large Language Models (arXiv:2507.13334)"
+    category: "academic survey"
+    description: >
+      166-page academic survey (Mei et al., 14 authors) formalizing context
+      engineering as retrieval + generation + processing + management, with
+      roughly 1,400 citations. The closest thing to an academic
+      consolidation of the discipline; useful counterweight to vendor blogs
+      since it treats context engineering as real taxonomy work.
+
+  - name: "Context Engineering 2.0: The Context of Context Engineering (arXiv:2510.26493)"
+    category: "academic critique"
+    description: >
+      A follow-up/critical academic piece interrogating what's new about
+      the term versus prior information-retrieval/RAG work. Directly useful
+      for the "coherent discipline or rebrand" question, from inside
+      academia rather than a blog take.
+
+  - name: "Philipp Schmid (Google DeepMind) context engineering piece"
+    category: "vendor blog"
+    description: >
+      A second major AI-lab voice (alongside Anthropic and LangChain),
+      predating Anthropic's September 2025 post. Useful for triangulating
+      whether labs converged independently or are echoing each other.
+
+  - name: "CRAFT framework origin (Rishi Jain)"
+    category: "practitioner framework / content marketing"
+    description: >
+      Confirmed creator is a content/prompt-engineering writer. CRAFT is
+      structurally derivative of an earlier "RACE" framework with Tone
+      added and Context moved first. Useful ammunition for treating CRAFT
+      as a content-marketing mnemonic rather than a research contribution;
+      record the derivative-of relationship precisely.
+
+  - name: "Context Engineering: From Prompts to Corporate Multi-Agent Architecture (arXiv:2603.09619)"
+    category: "academic paper"
+    description: >
+      A 2026 paper applying context engineering framing to enterprise
+      multi-agent systems specifically. Check what new claims it makes
+      beyond the 2025 survey and whether it's independent work or an
+      extension of the same research lineage.
+
+  - name: "Diagnosing and Mitigating Context Rot in Long-horizon Search (arXiv:2606.29718)"
+    category: "academic paper"
+    description: >
+      A 2026 paper specifically on context rot in long-horizon agentic
+      search tasks. Check whether it confirms, extends, or complicates
+      Chroma's original Context Rot findings, and what mitigation evidence
+      it provides (an independent check on Chroma's vendor-interested
+      claim).
+
+  - name: "Positional Failures in Long-Context LLMs (arXiv:2605.23170)"
+    category: "academic paper"
+    description: >
+      A 2026 paper on positional failure modes in long-context models.
+      Check relationship to "Lost in the Middle" and NoLiMa: confirming,
+      extending, or offering a different mechanism for the same
+      degradation phenomenon.
+
+  - name: "Just-in-time context loading / agentic retrieval patterns"
+    category: "practitioner technique"
+    description: >
+      The practical technique (lightweight references pulled at runtime
+      instead of stuffing everything up front) presented across multiple
+      sources as context engineering's main actionable advance. Research
+      as a cross-cutting technique rather than a single source: identify
+      who's actually implementing it, what evidence exists it works better
+      than up-front loading, and whether this is substantively different
+      from established RAG practice under a new name.
+
+execution:
+  batch_size: 3
+  items_per_agent: 2
+  output_dir: "./results"

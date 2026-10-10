@@ -1,0 +1,144 @@
+{
+  "name": "Sigari et al. 2025, Rock Art Relationships Between Central Asia and Europe: The Role of Gobustan",
+  "citation": "Sigari D., García-Diez M., Shirinli S., Abdullayev R., Alonso S., Mas B., Gianolla D., Hasanova N., Herranz-Rodrigo D., Ochoa B., Bustos-Pérez G., Vaquero M., Verdiyeva G., Zerboni A. (2025). Rock art relationships between Central Asia and Europe: the role of Gobustan (Azerbaijan). Alpine and Mediterranean Quaternary 38(1), 45-62. DOI 10.26382/AMQ.2025.03. Received 16 June 2025, revised 10 July 2025, accepted 12 July 2025, available online 18 July 2025 (dates printed on p. 62; the journal landing page metadata gives 17 July 2025). Landing page: https://amq.aiqua.it/index.php/amq/article/view/1320 . PDF read: https://amq.aiqua.it/index.php/amq/article/download/1320/1185",
+  "source_tier": "Peer-reviewed journal article (Alpine and Mediterranean Quaternary, journal of AIQUA, the Italian Association for Quaternary Research; ISSN online 2279-7335; open access under a Creative Commons licence). It is a review and project-introduction paper, not a report of new dates: the abstract says it 'presents the Gobustan rock art context and the new international research project'.",
+  "access_status": "Fully read. All 18 pages of the publisher PDF were downloaded from the AMQ site on 10 October 2026 and read as extracted text, including figure captions and references. Figures were read through their captions only, not inspected as images. The University of Milan repository copy (air.unimi.it) could not be opened: it returned a Cloudflare challenge page, so it was not compared with the publisher version.",
+  "author_credentials": "Fourteen authors. Lead and corresponding author Dario Sigari: rock art archaeologist, Dipartimento di Beni Culturali e Ambientali, Università degli Studi di Milano, and Università di Ferrara; has published on Gobustan since 2009 and wrote the 2017 boat-engraving paper. Co-corresponding authors Marcos García-Diez (Universidad Complutense de Madrid) and Sevinc Shirinli (Gobustan National Historical Artistic Preserve). Three further authors are at the Gobustan Preserve (Hasanova, Verdiyeva) or formerly worked on its corpus (Rәhman Abdullayev, now Minnesota Historical Society). Others are at Universitat Rovira i Virgili, CEPAM Nice / Universitat de Barcelona, Universidad de Granada, Max Planck Institute for Evolutionary Anthropology, Società Romana di Scienze Naturali, and Earth Sciences at Milan (Andrea Zerboni). Fieldwork at Gobustan: yes. The paper reports a project begun in 2019 with 'five fieldwork sessions' between November 2021 and August 2024 at the Ana Zaga shelter, which is formed by Rocks 29, 30 and 31. Funded by Fundación Palarq-Fundación Atapuerca and the Italian Ministry of Foreign Affairs.",
+  "exact_quotes": [
+    {
+      "location": "Abstract, p. 45",
+      "quote": "Gobustan engravings possess a universal and exceptional value for their quality, quantity, and density (more than 7,000 petroglyphs on over 1,000 rocks) and preservation, in addition to their chronological (from the Upper Palaeolithic to historical times), thematic and stylistic variety."
+    },
+    {
+      "location": "Abstract, p. 45",
+      "quote": "Engravings are carved in limestone boulders, shaping the figures with a thick and deep main outline, often overlapping previous figures, thus forming rich palimpsests. The long use of the same sites, rocks and symbols prompt a reflection on the meaning of the places, which was probably passed down from generation to generation, increasing the number of decorating motifs, reusing, and/or modifying previous graphic units."
+    },
+    {
+      "location": "Section 3, p. 48",
+      "quote": "Unfortunately, their entire archaeological context has not yet been cleared or published, and therefore the real link with the parietal engravings is missing. Only the height of the engravings and the depth of the dated sample are known, which makes the dating series uncertain, at least as a way to propose an interpretation of the rock art chronology. Thus, any chronological proposal must currently be based on the typological analysis of the material culture."
+    },
+    {
+      "location": "Section 3, p. 48",
+      "quote": "The first dated sample came from Ana Zaga (the Mother Cave, in Azerbaijanian language) at a depth of 1.85 m and yielded an age of 8,996 ±33 BP (Farajova, 2012: 937)."
+    },
+    {
+      "location": "Fig. 5 caption, p. 48",
+      "quote": "The southern side of Rock No. 29, where it is possible to see hunters-warriors of different size and a boat figure with a solar symbol on its praw. Part of the panel (see the remarked human figure in yellow) is covered by a slab (its edge is marked in white) that fell from the top of the mountain in ancient time suggesting a catastrophic event that happened in the past and led to the displacement of several rocks"
+    },
+    {
+      "location": "Fig. 6 caption, p. 49",
+      "quote": "Part of the big northern panel of the Rock No. 29 of Böyükdaş with its rich palimpsest that can be the key to understand the different figurative periods"
+    },
+    {
+      "location": "Section 4, p. 50",
+      "quote": "However, Anati in his tracing of Rock No. 29 marks a boat, attributed to Phase I/E, under an aurochs of Phase II/B (Anati, 2001: 30), demonstrating how his chronological scheme is objectionable (Fig. 6)."
+    },
+    {
+      "location": "Section 5, p. 50",
+      "quote": "Moreover, a series of pierced rocks suggests they were used to dock the boats when the sea reached those terraces."
+    },
+    {
+      "location": "Section 5, pp. 50-51",
+      "quote": "The first boat images, which are very simple in their shape even though they may vary in their size, are found on the upper terraces of both Böyükdaş and Kiçikdaş and would date to a period of deglaciation, between 16,000 and 14,000 years ago, when the Caspian Sea level was higher than today (Badyukova, 2021; Sigari, 2017, 2020)."
+    },
+    {
+      "location": "Section 5, pp. 51-52",
+      "quote": "Then, between 14,000 and 12,000 years ago, the Later Khvalynian stages occurred, and the Caspian sea level increased from its current level, which is 28 metres usl, up to 0 and 12 metres usl (Dolukhanov et al., 2010). To this period, or to a later one, the boat figures engraved in the foothills of Böyükdaş and Kiçikdaş can be dated. From here the boat style with the sun-symbol on the prow and the \"X\"-shaped crew would spread up to the upper terraces (Sigari, 2017, 2020) (Fig. 10) and might last for centuries, until a significant cultural change."
+    },
+    {
+      "location": "Section 5, p. 52",
+      "quote": "At first sight, it seems that the long boats with a simple shape, for instance the one on the northern side of Rock No. 29 in Böyükdaş (Fig. 9), are alone and correspond to the earliest artistic phases. In contrast, in the most recent phase, when the prows are curved and the solar symbol becomes a recurrent feature decorating the ships, boats are represented in pairs or groups, e.g., Rock No. 8 in Böyükdaş (Fig. 10) or Rock No. 19 in Kiçikdaş (Sigari, 2017). Moreover, they are juxtaposed or underlie anthropomorphic figures, mainly female silhouettes, and zoomorphs, especially bovids (Sigari, 2017)."
+    },
+    {
+      "location": "Section 5, p. 52",
+      "quote": "The boat theme is peculiar to Gobustan and is possibly among the oldest evidence of sailing. However, some connections have already been proposed with figures in the Scandinavian peninsula and recently a new relationship has been suggested with a painted motif found in the late Upper Palaeolithic layers of Romanelli Cave in southern Italy (Sigari, 2020)."
+    },
+    {
+      "location": "Section 6, p. 52",
+      "quote": "This kind of figurative association can express contemporaneity and possibly a narrative involving the represented subjects. In contrast, superimpositions are harder to interpret since they may be the result of diachronicity in a figurative palimpsest and this may respond to different reasons: e.g., refreshing, narrative, erasing, reusing."
+    },
+    {
+      "location": "Section 12.1, p. 60",
+      "quote": "The selected shelter is located on the upper terrace of Böyükdaş and is made of some displaced limestone boulders: Rocks 29, 30, 31. These blocs were engraved with hundreds of figures (anthropomorphic, zoomorphic, boats above all), whose style points towards a long chronology of use of the site. Moreover, the dense palimpsest characterised by several overlapping figures support the long reuse of the rock surfaces to make rock art, as the two main rocks forming the shelter reveal, Rocks No. 29 and 30."
+    },
+    {
+      "location": "Section 11, p. 57",
+      "quote": "At the foot of the Böyükdaş Mountain, there is an epigraph engraved by a centurion of the Legio XII Fulminata of the Roman Army. The inscription testifies the passage of the Romans in Gobustan during Domitian's reign (AD 81-96)"
+    }
+  ],
+  "key_claims": [
+    "Counts: 'more than 7,000 petroglyphs on over 1,000 rocks' (abstract). The research history gives the build-up: Jafarzade catalogued 'over 3,500 petroglyphs including anthropic cupmarks and holes, on more than 750 rocks' (work 1939-1965, published 1973); Rustamov and Muradova added nearly 400 engraved stones, taking the total to 'more than 6,000 engravings on 1,000 rocks' (2008); later work by Farajova, Sigari, Abdullayev and Shirinli raised it to 'more than 7,000'.",
+    "Chronological span of the rock art: Upper Palaeolithic to historical times (the latest inscriptions are in Cyrillic).",
+    "Eleven thematic groups: aurochs, horse, boats, feminine silhouette, warrior-hunter, ibex, camel, tamgas, deer, rider, inscription.",
+    "Rocks were reused over a very long period, producing palimpsests. Motifs were added to, reused or modified. Rocks 29 and 30 are named as the two main examples of dense palimpsest.",
+    "No radiocarbon date is tied to an engraving. The published dates from Ana Zaga, Gaya Arasi 1, Firuz 2 and Maral come from deposits whose context 'has not yet been cleared or published', so 'the real link with the parietal engravings is missing' and chronology rests on typology of material culture and on style.",
+    "Earlier stylistic chronologies (Jafarzade 1973; Anati 2001; Rustamov 2006; Farajova 2009, 2018) disagree with each other. Anati's is called 'objectionable' on the evidence of Rock 29 itself, where his own tracing puts a boat he assigns to a later phase underneath an aurochs he assigns to an earlier one.",
+    "Boats (after Sigari 2017, 2020): the first boat images are simple in shape, sit on the upper terraces of Böyükdaş and Kiçikdaş and 'would date' to 16,000-14,000 years ago, when the Caspian stood higher. Boats in the foothills date to 14,000-12,000 years ago 'or to a later one'. The style with a sun symbol on the prow and an X-shaped crew then spreads up to the upper terraces and 'might last for centuries, until a significant cultural change'.",
+    "In the later boat phase prows are curved, the solar symbol is recurrent, and boats appear in pairs or groups (Rock 8 in Böyükdaş, Rock 19 in Kiçikdaş). Boats are juxtaposed with, or lie under, anthropomorphs (mainly female silhouettes) and zoomorphs (especially bovids).",
+    "Pierced rocks are suggested to have been used to moor boats when the sea reached the terraces.",
+    "The boat theme is 'peculiar to Gobustan and is possibly among the oldest evidence of sailing'. Connections have been proposed with Scandinavian figures and with a painted motif in the late Upper Palaeolithic layers of Romanelli Cave, southern Italy. The paper reports these proposals without endorsing them and asks for further study.",
+    "Palaeolithic art at Gobustan shows ties with the western European tradition (bovid and horse pairing); post-Palaeolithic art (ibex, deer) points instead to western and central Asia: Iran, Oman, the Altai, Mesopotamia.",
+    "Bronze Age: the repertoire changes. The most frequent themes become bezoar ibex, deer and anthropomorphs. Ibex were on 30 of 34 rocks covered by layers dated to the Bronze Age, giving a reference of the 4th to 2nd millennia BC. Boats are not listed among the frequent Bronze Age themes.",
+    "A natural catastrophic event early in the Neolithic displaced many rocks and led to temporary abandonment until the end of the Chalcolithic or start of the Early Bronze Age. A slab that fell in this way covers part of the south panel of Rock 29.",
+    "Bronze Age occupation was dense: shelters Ana Zaga, Çardag Zaga, Çapmali and Firuz-1 and fortified settlements Daire and Böyükdaş were 'densely inhabited by transhumant pastoral groups', with influence from Kura-Arax, Maykop and Khojaly-Gadabay cultures.",
+    "A Roman inscription by a centurion of Legio XII Fulminata at the foot of Böyükdaş dates to Domitian's reign (AD 81-96) and is described as the Roman inscription furthest from Rome."
+  ],
+  "evidence_offered": "A literature review plus the authors' own field observation. Counts come from Jafarzade (1973), Rustamov and Muradova (2008) and later corpus work. The boat sequence is taken from Sigari (2017, 2020) and rests on three things: boat style, the altitude of the rocks, and the position of the terraces relative to Caspian palaeo-shorelines dated by other authors (Arslanov et al. 2016; Dolukhanov et al. 2010; Badyukova 2021). Superimpositions on Rocks 29 and 30 are offered as evidence for long reuse. The Bronze Age ibex date rests on 30 of 34 ibex-bearing rocks being covered by Bronze Age layers (citing Abdullayev 2016; Muradova 2003). The paper presents no new radiocarbon dates, no new tracings and no quantified boat count. Results of the 2021-2024 excavations at Ana Zaga are not reported here.",
+  "date_range_estimates": {
+    "motif_dates": [
+      "Simple-shape boats on the upper terraces of Böyükdaş and Kiçikdaş (the long boat on the north side of Rock 29 is the named example): 'would date' to 16,000-14,000 years ago.",
+      "Boat figures in the foothills of Böyükdaş and Kiçikdaş: 14,000-12,000 years ago 'or to a later one'.",
+      "Boats with a sun symbol on the prow and X-shaped crew (the type shown on the south side of Rock 29 in Fig. 5): no absolute date given. The style starts in the foothills in or after the 14,000-12,000 window, spreads to the upper terraces and 'might last for centuries, until a significant cultural change'. The paper does not call this boat type Bronze Age.",
+      "Female silhouettes: present 'since the Upper Palaeolithic'; the row at the base of the north side of Rock 29 is partly buried and 'can be among the earliest figures of the panel'.",
+      "Ibex figures: Bronze Age, 4th to 2nd millennia BC, continuing to historical times.",
+      "Deer: oldest attributed by Jafarzade to the 3rd millennium BC; deer-hunting scenes at Jingirdağ-Yazılitepe to the 2nd-1st millennia BC (Rustamov 1994).",
+      "Anthropomorphs: female silhouettes, hunter-warriors and dancers/jumpers are 'usually associated with the most ancient phases'; figures with raised arms are 'recurrent during late Prehistory', with Rock 29 in Böyükdaş among the examples.",
+      "Roman inscription: AD 81-96. Arabic-script inscription on Jingirdağ Rock 91: 13th or 14th century AD."
+    ],
+    "site_and_layer_dates": [
+      "First occupation 20,000-15,000 years ago (Rustamov 2006); fisher-hunter-gatherers until about 9,000 years ago.",
+      "Ana Zaga: one radiocarbon sample at 1.85 m depth, 8,996 ±33 BP (Farajova 2012). It dates a layer, not an engraving.",
+      "Further samples from Gaya Arasi 1, Firuz 2, Ana Zaga and Maral (Farajova 2018) are mentioned but their values are not given in this paper.",
+      "Caspian levels: Early Khvalynian maximum up to +50 m asl; transgressions about 16,000 and 14,000 years ago to +35 and +22 m asl, when Böyükdaş and Kiçikdaş 'would have emerged as two islands'; between 14,000 and 12,000 years ago two rises from the present -28 m to 0 and -12 m.",
+      "Neolithic under-represented; abandonment after a natural event until the end of the Chalcolithic or start of the Early Bronze Age. Medieval pottery of the 10th-13th centuries AD at Jingirdağ."
+    ]
+  },
+  "dating_method": "Stylistic and typological, with shoreline correlation for the boats. The boat chronology is relative: style, altitude and terrace position are matched to Caspian sea-level stages dated elsewhere by radiocarbon and uranium-series methods on Khvalynian deposits. Superimposition gives relative order on individual panels. Burial by dated archaeological layers gives a minimum age for some figures (the Bronze Age ibex case). Radiocarbon exists only for cave and shelter deposits, and the authors say explicitly that it cannot yet be linked to the engravings. No engraving at Gobustan is directly dated in this paper.",
+  "panel_details": "Rock No. 29, Böyükdaş, upper terrace. It is one of three displaced limestone boulders (Rocks 29, 30, 31) that form the Ana Zaga ('Mother Cave') shelter, and one of the 'two main rocks' of that shelter. South side (Fig. 5): hunter-warriors of different sizes and a boat with a solar symbol on its prow; part of the panel, including a human figure, is covered by a slab that fell from the top of the mountain in antiquity. North side, the 'big northern panel' (Figs. 6, 9, 15): a 'rich palimpsest that can be the key to understand the different figurative periods'; a long boat of simple shape, apparently standing alone and assigned to the earliest artistic phases; a row of female silhouettes in the lowermost part, partly covered by the ground; female figures of varied size (some small, some about 1.5 m high), view (frontal and profile), form (squared and sinuous) and engraving technique. Anati's tracing of Rock 29 shows a boat beneath an aurochs. Rock 29 is also cited among examples of late-prehistoric figures with raised arms. The Ana Zaga blocks together carry 'hundreds of figures (anthropomorphic, zoomorphic, boats above all)'. The paper gives no figure count for Rock 29 alone and does not describe wavy lines or water marks on it.",
+  "geographic_claims": "The Caspian Sea only. Gobustan is placed on the western shore of the Caspian, about 60 km south of Baku, at the eastern end of the Greater Caucasus. The terraces of Böyükdaş and Kiçikdaş are read as ancient Caspian coastlines 'where the first human groups landed and settled', and at the high stands the two hills were islands. The paper names no river and no sea route. It does not mention the Black Sea, the Kura river as a waterway, the Phasis, Colchis, Greece, Jason or the Argonauts. Its long-distance links are stylistic and thematic, not routes: western Europe and the Mediterranean for the Palaeolithic; Iran, Oman, the Altai and Mesopotamia for the Bronze Age; Scandinavia and Romanelli Cave (Italy) as proposed parallels for boats.",
+  "counter_evidence": [
+    "Against a Bronze Age date for the Rock 29 boats: the specialists' own sequence puts simple boats on the upper terraces at 16,000-14,000 years ago and the sun-prow style from 14,000-12,000 years ago 'or later'. Nothing in the paper dates a Rock 29 boat to the Bronze Age.",
+    "Against any firm date at all: the authors say the radiocarbon series has no established link to the engravings and that chronology must rest on typology. Their own boat dates are hedged ('would date', 'at first sight, it seems', 'or to a later one').",
+    "Against reading boat, warriors and other marks as one scene: Rock 29 is described twice as a dense palimpsest built up over a long period. The paper says superimposed figures 'may be the result of diachronicity', and that only juxtaposition 'can express contemporaneity and possibly a narrative'. It never says the boat and the hunter-warriors on the south side were carved together.",
+    "Hunter-warriors are grouped with the 'most ancient phases', not with the Bronze Age, which cuts against reading the armed figures as Bronze Age heroes.",
+    "The Bronze Age repertoire at Gobustan is described as ibex, deer and anthropomorphs made by transhumant pastoral groups. Boats are not among the frequent Bronze Age themes.",
+    "The existing stylistic chronologies contradict each other, and Rock 29 is the panel used to show that Anati's scheme fails.",
+    "Internal inconsistency in the paper: section 2.1 gives the 14,000-12,000 year rises as reaching '0 and -12 metres', section 5 gives '0 and 12 metres usl'. Read together they mean 0 m and 12 m below sea level."
+  ],
+  "independent_corroboration": "For the Argonaut proposal: none found in this paper. It was published in July 2025, before the Ragazas article, and contains no mention of Greek myth. For the paper's own boat chronology: it is the lead author's earlier work (Sigari 2017, 2020) restated, supported by other authors only for the sea-level curve (Dolukhanov et al. 2010; Arslanov et al. 2016; Badyukova 2021). The paper cites no independent test of the early boat dates. The palimpsest and count statements are consistent with Jafarzade, Rustamov and Muradova, and Farajova as cited. [uncertain] No search for later citations of or responses to this 2025 paper was run.",
+  "alternative_explanations": "The paper's own reading of the boats is local and maritime: they record a long relationship between Gobustan's settlers and the Caspian (fishing, net-weaving tools, mooring stones), carved on what were then beaches, with style changing over time 'possibly according to new ideologies'. Some rock art is tied to burial and afterlife ritual (the Firuz shelter, whose rock is engraved with boats, anthropomorphs and zoomorphs and which held a multiple burial). The sun symbol on the prow is noted as a recurrent decorative feature and is not interpreted further. Farajova is cited for a solar and fertility reading of ibex horns, not of boats. Other chronologies give different orderings: Rustamov has boats evolving by shape alongside anthropomorphs ordered from smallest to largest; Farajova has six phases with the Bronze Age as phase four. The Scandinavian comparison is reported as a proposal only; Heyerdahl is not named.",
+  "verification_status": [
+    "Checked against the opened publisher PDF: bibliographic details, authors and affiliations, DOI, pages, submission and publication dates.",
+    "Checked against the opened PDF: all counts (3,500 on 750 rocks; 6,000 on 1,000; more than 7,000 on over 1,000).",
+    "Checked against the opened PDF: every quotation in exact_quotes, with hyphenation at line breaks removed. The misspellings 'praw' and 'blocs' are in the original.",
+    "Checked against the opened PDF: Rock 29 details (upper terrace, Ana Zaga shelter with Rocks 30 and 31, south and north panel contents, fallen slab, Anati superimposition).",
+    "Checked against the opened PDF: boat chronology and its hedged wording; statement that radiocarbon dates are not linked to engravings; the 8,996 ±33 BP Ana Zaga sample.",
+    "Checked by text search of the full paper: no occurrence of Argonaut, Jason, Colchis, Black Sea, Phasis, Heyerdahl or myth.",
+    "Not checked: the works this paper cites (Sigari 2017 and 2020, Farajova 2012 and 2018, Anati 2001, Dolukhanov et al. 2010 and others) were not opened for this item, so what they say is known here only through this paper's summary.",
+    "Not checked: the figures as images. Panel contents are from captions and text.",
+    "Not checked: the University of Milan repository copy, which was blocked."
+  ],
+  "relevance_to_essay": "This is the current specialist statement on the rocks the proposal uses, by the team excavating the Ana Zaga shelter that Rock 29 belongs to. It supports three of the essay's tests. First, no Gobustan boat is directly dated, and the authors say the cave radiocarbon dates cannot be tied to the carvings. Second, the specialists' own relative dating puts Rock 29's simple boat in the late Pleistocene and gives the sun-prow type no Bronze Age date, so a Bronze Age Argonaut reading has to argue against the published sequence. Third, Rock 29 is a palimpsest carved over a long period, so boat and armed figures cannot be assumed to be one scene. The paper is also evidence by omission: its geography is entirely Caspian and it draws no link to Greece or to any myth. It should be cited for what it says about the rocks, not as a response to the proposal, which it predates.",
+  "open_questions": [
+    "Whether the sun-prow boat on the south side of Rock 29 is the boat the Ragazas article means, and how the two sources describe it differently.",
+    "What absolute date range, if any, Sigari (2017) gives for the sun-prow boats, and whether that paper allows a Bronze Age end for the style. Needs the 2017 paper itself.",
+    "Results of the 2021-2024 Ana Zaga excavations, including any new dates for deposits covering engraved boulders. Not reported in this paper.",
+    "The values of the Farajova (2018) radiocarbon samples, which are mentioned but not given.",
+    "How many boat figures are on Rock 29 and across Gobustan. No boat count is given.",
+    "Whether the fallen slab on the south panel gives a minimum age for the figures under it. The paper links displaced rocks to an early Neolithic event but does not date this slab.",
+    "Whether the 'pierced rocks' used as moorings are dated or just inferred from position."
+  ],
+  "uncertain": [
+    "independent_corroboration"
+  ]
+}

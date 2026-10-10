@@ -1,0 +1,130 @@
+{
+  "name": "Golden Fleece historicity theories",
+  "citation": [
+    "Strabo, Geography 11.2.19 (with 11.2.17-18 and 1.2.39). English: H. L. Jones, Loeb Classical Library (Harvard University Press / Heinemann; Perseus dates its text 1924, LacusCurtius gives Loeb vol. V, 1928). Opened at https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Strabo/11B*.html and at Perseus (text 1999.01.0198, 11.2.19). Older translation: H. C. Hamilton and W. Falconer (Perseus dates it 1903), Perseus text 1999.01.0239.",
+    "Appian, Mithridatic Wars 103 (Roman History book 12, ch. 15). English: Horace White, The Foreign Wars, New York, Macmillan, 1899. Opened at https://www.livius.org/sources/content/appian/appian-the-mithridatic-wars/appian-the-mithridatic-wars-21/ (notes by Jona Lendering) and at Perseus (text 1999.01.0230, Mith. 15.103).",
+    "A. Okrostsvaridze, N. Gagnidze, K. Akimidze, 'A modern field investigation of the mythical \"gold sands\" of the ancient Colchis Kingdom and \"Golden Fleece\" phenomena', Quaternary International 409 (July 2016), 61-69, online 20 November 2014, DOI 10.1016/j.quaint.2014.07.064. NOW RETRACTED: Crossref lists the title as 'RETRACTED: ...' and a 'Retraction notice' in Quaternary International 685 (March 2024), p. 47, DOI 10.1016/j.quaint.2024.01.004. Note the real title is not 'A modern field investigation of the myth of the Golden Fleece'.",
+    "A. V. Okrostsvaridze, D. I. Bluashvili, N. E. Gagnidze, 'Field investigation of the mythical \"Gold Sands\" of the ancient Colchis Kingdom and modern discussion on the Argonauts' expedition', Episodes 37(2), June 2014, 122-128, DOI 10.18814/epiiugs/2014/v37i2/007. Open access (CC BY-NC), not retracted as far as found. https://www.episodes.org/journal/view.html?doi=10.18814/epiiugs/2014/v37i2/007",
+    "Bruce Bower, 'Golden Fleece myth was based on real events, geologists contend', Science News, 25 November 2014. https://www.sciencenews.org/article/golden-fleece-myth-was-based-real-events-geologists-contend",
+    "Jason Colavito, 'Media Fleeced by Claim Argonauts Mined Gold in the Republic of Georgia', blog, 2 December 2014. https://www.jasoncolavito.com/blog/media-fleeced-by-claim-argonauts-mined-gold-in-georgia",
+    "Otar Lordkipanidze, 'The Golden Fleece: Myth, Euhemeristic Explanation and Archaeology', Oxford Journal of Archaeology 20(1), 2001, 1-38, DOI 10.1111/1468-0092.00121 (abstract only, via Crossref).",
+    "Tim Severin, The Jason Voyage: The Quest for the Golden Fleece (Hutchinson / Simon and Schuster, 1985). Book NOT opened (Internet Archive copy is lending-restricted). Voyage details from: Melvin Maddocks, 'Row, row, row your boat across the Aegean Sea', Christian Science Monitor, 18 May 1984; Georgia About, 'The 1984 Voyage of the Replica Argo', 11 December 2014; Nugzar B. Ruhadze, 'Tim Severin's Argo on Georgian Shores', Georgia Today; Wikipedia, 'Tim Severin'."
+  ],
+  "source_tier": "Mixed. Strabo and Appian: ancient texts in standard public-domain translations. Okrostsvaridze et al. in Quaternary International: peer-reviewed when published, since retracted (2024). Okrostsvaridze et al. in Episodes (IUGS journal): peer-reviewed geology journal, open access. Lordkipanidze 2001: peer-reviewed archaeology. Science News: reputable science journalism. Colavito: a blog by an author of a book on the Argonaut myth, not peer-reviewed. Severin: popular expedition book and press coverage.",
+  "access_status": "Strabo 11.2.17-19 and 1.2.39 and Appian Mith. 103: fully read in the saved page text (LacusCurtius, Perseus, Livius). Episodes 2014 paper: full PDF downloaded and read. Quaternary International paper: NOT read. ScienceDirect returned HTTP 403, there is no open copy (Unpaywall: closed) and no abstract in Crossref, OpenAlex or Semantic Scholar; only bibliographic metadata and the retraction flag were confirmed. Retraction notice text: not opened, search snippet only. Science News and Colavito: fully read. Lordkipanidze 2001: abstract only. Severin's book: not opened; secondary reports only.",
+  "author_credentials": "Strabo: Greek geographer from Amaseia in Pontus, writing under Augustus and Tiberius [uncertain: dates from general knowledge, not from a page opened here]. Appian of Alexandria: Greek historian of Rome, 2nd century CE [uncertain, same reason]. Avtandil V. Okrostsvaridze and Nona E. Gagnidze: geologists, Institute of Earth Sciences, Ilia State University, Tbilisi (Episodes byline); Karlo Akimidze: Tbilisi State University (OpenAlex). David Bluashvili: Georgian Technical University. None is a classicist or archaeologist. The Episodes paper acknowledges funding from 'the mining corporation \"Golden Fleece\"'. Tim Severin (1940-2020): British explorer and writer, studied at Keble College, Oxford (Wikipedia); not an archaeologist. No source here did fieldwork at Gobustan.",
+  "exact_quotes": [
+    {
+      "quote": "It is said that in their country gold is carried down by the mountain-torrents, and that the barbarians obtain it by means of perforated troughs and fleecy skins, and that this is the origin of the myth of the golden fleece — unless they call them Iberians, by the same name as the western Iberians, from the gold mines in both countries.",
+      "location": "Strabo 11.2.19, trans. H. L. Jones (Loeb), as printed at LacusCurtius. 'Their country' is that of the Soanes, who 'hold possession of the heights of the Caucasus above Dioscurias'. The dash is in the translation. Perseus prints the same sentence with 'mountain torrents' unhyphenated."
+    },
+    {
+      "quote": "In their country the winter torrents are said to bring down even gold, which the Barbarians collect in troughs pierced with holes, and lined with fleeces; and hence the fable of the golden fleece.",
+      "location": "Strabo 11.2.19, trans. Hamilton and Falconer, Perseus text 1999.01.0239"
+    },
+    {
+      "quote": "The great fame this country had in early times is disclosed by the myths, which refer in an obscure way to the expedition of Jason as having proceeded as far even as Media, and also, before that time, to that of Phrixus.",
+      "location": "Strabo 11.2.18, trans. Jones, LacusCurtius"
+    },
+    {
+      "quote": "the temple of Leucothea, founded by Phrixus, and the oracle of Phrixus, where a ram is never sacrificed",
+      "location": "Strabo 11.2.17, trans. Jones, LacusCurtius"
+    },
+    {
+      "quote": "the wealth of the regions about Colchis, which is derived from the mines of gold, silver, iron, and copper, suggests a reasonable motive for the expedition, a motive which induced Phrixus also to undertake this voyage at an earlier date",
+      "location": "Strabo 1.2.39, trans. Jones, LacusCurtius (page 1B2). The same section opens: 'For, as all admit, the original voyage to Phasis ordered by Pelias ... contain an element of plausibility'."
+    },
+    {
+      "quote": "Many streams issue from Caucasus bearing gold-dust so fine as to be invisible. The inhabitants put sheepskins with shaggy fleece into the stream and thus collect the floating particles. Perhaps the golden fleece of Aetes was of this kind.",
+      "location": "Appian, Mithridatic Wars 103, trans. Horace White, as printed at Livius.org. Perseus prints the same text with the spelling 'Ætes'."
+    },
+    {
+      "quote": "He advanced to Colchis in order to gain knowledge of the country visited by the Argonauts, Castor and Pollux, and Heracles, and especially he desired to see the place where they say that Prometheus was fastened to Mount Caucasus.",
+      "location": "Appian, Mithridatic Wars 103, trans. White, Livius.org ('Hercules' at Perseus). The subject is Pompey."
+    },
+    {
+      "quote": "we share the viewpoint of the Roman historian Apian Alexandrine (90-170 AD) and propose that the myth about the expedition of the Argonauts in quest of the “Golden Fleece” to the Colchis Kingdom was a real event and that the main purpose of that mission was to obtain gold and gold mining technology.",
+      "location": "Okrostsvaridze, Bluashvili, Gagnidze, Episodes 37(2), 2014, abstract, p. 122"
+    },
+    {
+      "quote": "The phenomenon of the “Golden Fleece” is likely, according to our research, to be connected with the sheepskin (fleece) technique of gold mining from the rivers; the final result of which was a gold impregnated sheepskin.",
+      "location": "Episodes 2014, Conclusions"
+    },
+    {
+      "quote": "Our work has confirmed that Svaneti is a region, uniquely, where the locals still wash gold from alluvial placers through modern domestic, wooden vessels or pans with holes in the bottom and unto a sheepskin or fleece which collects the fine particulate gold.",
+      "location": "Episodes 2014, p. 122-123"
+    },
+    {
+      "quote": "Thus, the Argonauts’ trip, if it was a real story, should have taken place prior to XI century BC.",
+      "location": "Episodes 2014, section on the Colchis kingdom"
+    },
+    {
+      "quote": "Tim Severin proved with this voyage that, thanks to the ancient Greek mariners superb marine art and great vessels, they could have easily reached the kingdom of Colchis.",
+      "location": "Episodes 2014, introduction. This is the geologists' description of Severin, not Severin's own words."
+    },
+    {
+      "quote": "Our results show that the geological situation in the Svaneti region is the same now as it was 3,300 to 3,500 years ago, when the Argonauts traveled to the kingdom of Colchis",
+      "location": "Okrostsvaridze quoted in Science News, 25 November 2014, reporting the Quaternary International paper"
+    },
+    {
+      "quote": "Archaeologists have found no remnants of ancient Colchis, leading some to conclude that it was a mythical invention. Earthquakes and landslides destroyed physical evidence of the kingdom, the researchers suspect.",
+      "location": "Science News, 25 November 2014 (the reporter's summary)"
+    },
+    {
+      "quote": "Logically, the existence of gold does not imply a voyage from Mycenaean Greece to visit it.",
+      "location": "Colavito, blog post, 2 December 2014"
+    },
+    {
+      "quote": "So Strabo is no good witness, and Appian admits with his “perhaps” that he is simply speculating.",
+      "location": "Colavito, blog post, 2 December 2014"
+    },
+    {
+      "quote": "The richness of Colchis in metal, mainly gold, became a basis for the euhemerizing, i.e. rationalist explanation, of the Golden Fleece.",
+      "location": "Lordkipanidze 2001, abstract (Crossref)"
+    },
+    {
+      "quote": "Incidentally, the Argo crew members went to Svaneti, where they got acquainted with the ancient method of gold extraction with the help of sheep’s hide, and concluded that the myth of the Argonauts was indeed based on a real story.",
+      "location": "Nugzar B. Ruhadze, Georgia Today, 'Tim Severin's Argo on Georgian Shores' (a memorial piece, not Severin's own text)"
+    }
+  ],
+  "key_claims": [
+    "Strabo 11.2.19: reports as hearsay ('It is said') that the Soanes, in the Caucasus heights above Dioscurias, recover gold from mountain torrents with perforated troughs and fleecy skins, and that this is the origin of the golden fleece myth. He then offers an alternative in the same sentence (the name 'Iberians' and gold mines). He does not say he saw it, and says nothing about a voyage.",
+    "Strabo 1.2.39 and 11.2.18: the voyage to Phasis has 'an element of plausibility'; Colchian mineral wealth 'suggests a reasonable motive'; myths carry Jason 'as far even as Media', and sanctuaries of Jason are pointed out in Armenia and Media.",
+    "Appian, Mith. 103: Caucasus streams carry invisible gold dust; inhabitants catch it on shaggy sheepskins; 'Perhaps the golden fleece of Aetes was of this kind.' A one-sentence aside in an account of Pompey's campaign of 66 BCE. Appian gives no view on why the Argonauts sailed.",
+    "Okrostsvaridze et al. (Episodes 2014, open access): Svaneti is rich in bedrock and placer gold; locals still wash gold through holed wooden vessels onto sheepskins; therefore the 'gold sands' of the sources were 'a geological reality'; and the authors 'contend' the Argonaut voyage 'was a real event' whose purpose was gold and gold-mining technology.",
+    "Okrostsvaridze et al. (Quaternary International, online 20 November 2014): by Science News's report, the same case, with the voyage placed 3,300 to 3,500 years ago and Svaneti identified as a province of ancient Colchis. Paper itself not read, and retracted in 2024.",
+    "Tim Severin, 1984: a 54-foot oared replica galley can travel from Volos (Pagasae/Iolcus) through the Dardanelles and Bosphorus to Poti at the mouth of the Rioni (Phasis). Georgia Today adds that the crew visited Svaneti and saw sheepskin gold recovery. [uncertain: Severin's own conclusions were not read in his book]"
+  ],
+  "evidence_offered": "Strabo: report at second hand, no named informant. Appian: a narrative aside, hedged with 'perhaps'. Okrostsvaridze et al. (Episodes): 2007-2010 fieldwork in Svaneti using remote sensing; 'More than 1000 samples' assayed by ICP-MS at ACME Labs, Vancouver; a tentative estimate of 60-65 tons of gold in the Sakeni ore field (Science News reports 65 to 70 metric tons for the QI paper); collected wooden vessels and sheepskins in current use; then a reading of Strabo, Pliny and Appian. The geology supports 'there is gold in Svaneti streams and people there catch it on fleeces'. Nothing in it is evidence of a Bronze Age Greek voyage: no Mycenaean finds, no dated ancient workings. Severin: an experimental voyage, which tests seaworthiness and rowing endurance only.",
+  "date_range_estimates": "No source here dates any carving or motif; none mentions Gobustan. Dates for the supposed voyage: Science News reports the QI paper as placing it 'between 3,300 and 3,500 years ago' (about 1500-1300 BCE); the Episodes paper says only that it 'should have taken place prior to XI century BC'. Dates of the texts: Strabo around the turn of the era and Appian in the 2nd century CE [uncertain: general knowledge; the Episodes paper gives Strabo '44 BC 23 AD' and Appian '95 AD - 165 AD', Colavito gives Strabo 'between 20 BCE and 24 CE' and Appian 'around 150 CE']. The Pompey episode Appian describes is 66 BCE (Livius note and Perseus margin). So the fleece-and-gold explanation is first attested more than a thousand years after the date the geologists give the voyage.",
+  "dating_method": "None for the myth's origin. The voyage date in Okrostsvaridze et al. is not measured: it is the conventional Mycenaean and pre-Trojan War bracket (the Episodes paper reasons from the end of Mycenaean civilisation, which it puts in the 11th century BC). No radiocarbon, stratigraphy or dated ancient mining feature is reported in the Episodes paper. The claim that conditions are 'the same now' as 3,300-3,500 years ago is an assertion of geological continuity reported by Science News.",
+  "panel_details": "Not applicable. None of these sources concerns Gobustan, Rock 29 or any rock art. The only imagery mentioned is in Science News: bronze sculptures in Svaneti villages showing a ram's head on a bird's body, which Okrostsvaridze 'suspects' reflect the Golden Fleece legend.",
+  "geographic_claims": "All of these sources put the fleece on the Black Sea side. Strabo's Soanes hold 'the heights of the Caucasus above Dioscurias' (a Black Sea port); the Phasis flows through Colchis (11.2.17); Aea 'is still shown on the Phasis' (1.2.39). Okrostsvaridze et al. place the gold in Svaneti, Greater Caucasus, western Georgia, and call the Black Sea coast Colchis. Severin's route: Volos, Dardanelles, Sea of Marmara, Bosphorus, Black Sea south coast, Poti (Georgia About gives arrival at Poti on 20 July 1984; Georgia Today says 'the Batumi coast'). Caspian links are thin and secondary: Appian, in the same section, has Pompey ambushed 'at the river Cyrus, which empties into the Caspian Sea by twelve navigable mouths', and Strabo says myths take Jason on from Colchis 'as far even as Media'. Both treat the Caspian side as beyond Colchis, not as the destination.",
+  "counter_evidence": "1. The Quaternary International paper is retracted (Crossref: title prefixed 'RETRACTED', retraction notice QI 685, 2024, p. 47). The reason was not opened; a search snippet says it was 'at the request of the Editor-in-Chief' [uncertain]. It closely overlaps the authors' own Episodes paper of June 2014, published five months earlier; whether that overlap is the reason is not established [uncertain]. 2. The Episodes paper misreports its ancient sources: it cites the fleece passage as 'Strabo, book-XII' with a link to Book 12 chapter 3 (it is 11.2.19), gives a loose paraphrase in quotation marks, attributes to Appian the opinion that the Argonauts went to obtain 'the sheepskin technique of gold mining' (Appian says no such thing), and its reference list cites Appian's Civil Wars, not the Mithridatic Wars. 3. Strabo reports hearsay and gives an alternative; Appian says 'perhaps'. 4. Both write over a millennium after the supposed voyage. 5. Science News: 'Archaeologists have found no remnants of ancient Colchis' of that period; the authors explain the absence by earthquakes and landslides, which is an argument from missing evidence. 6. Colavito: gold in Georgia does not imply a Mycenaean voyage to it, and early Greek sources (Mimnermus in Strabo 1.2.40) put the fleece in Aea by Ocean, with Colchis a later identification [uncertain: Colavito's dating of Eumelus to the fifth century BCE looks wrong and his Mimnermus and M. L. West points were not checked here]. 7. Wikipedia's Golden Fleece article notes the placer-mining reading as 'refuted in' Braund 1994, p. 24 and Lordkipanidze 2001 [uncertain: neither opened in full]. 8. Severin: a replica completing a route shows it could be rowed, not that anyone did.",
+  "independent_corroboration": "Partial, and only for the weak half of the claim. That Svaneti has placer gold and that fleeces can trap it: Robert Blair, a consulting economic geologist, told Science News the findings 'make a strong case for abundant gold in an area connected to the legend of Jason' (Blair is also thanked in the Episodes paper for editorial input, so he is not independent). Robert Tykot and Adrienne Mayor gave Science News supportive general comments. For the strong half, that the voyage was 'a real event': none found. For Severin's feasibility result: no independent replication found.",
+  "alternative_explanations": "The fleece-as-gold-trap story is itself an ancient rationalisation (euhemerism), not an ancient memory: Lordkipanidze's abstract says Colchian metal wealth 'became a basis for the euhemerizing, i.e. rationalist explanation, of the Golden Fleece', and proposes instead that the fleece 'was a symbol of a protector of royal power'. Strabo offers a second explanation in the same sentence (the name Iberians and gold mines). Colavito cites Diodorus 4.47, where the fleece is the gilded skin of a man named Krios [uncertain: Diodorus not opened]. Colavito, following M. L. West, reads Aea as a mythical land of the dawn later mapped onto Colchis [uncertain: West not opened].",
+  "verification_status": [
+    "Strabo 11.2.19 wording, Jones translation: CHECKED in saved text of LacusCurtius and Perseus 1999.01.0198; the two agree apart from hyphenation and American spelling.",
+    "Translator H. L. Jones: CHECKED. Perseus credits 'Strabo. ed. H. L. Jones, The Geography of Strabo. Cambridge, Mass.: Harvard University Press; London: William Heinemann, Ltd. 1924'; the LacusCurtius chapter page says 'Vol. V of the Loeb Classical Library edition, 1928' and its Strabo home page names Jones as translator. The two sites give different years; both are recorded.",
+    "Strabo 11.2.19 wording, Hamilton and Falconer: CHECKED at Perseus 1999.01.0239.",
+    "Strabo 11.2.17, 11.2.18 and 1.2.39 quotes: CHECKED at LacusCurtius. Note that 11.2.17-18 list Colchian linen, timber, hemp, wax and pitch, not gold; the 'mines of gold, silver, iron, and copper' line is at 1.2.39.",
+    "Appian Mith. 103 wording and translator Horace White: CHECKED at Livius.org and Perseus (Macmillan, 1899 per Perseus).",
+    "Quaternary International paper: title, authors, volume 409, pages 61-69, July 2016 print, record created 20 November 2014: CHECKED in Crossref and OpenAlex. The task's title 'A modern field investigation of the myth of the Golden Fleece' is NOT the real title.",
+    "Retraction: CHECKED as a fact in Crossref (title prefix and linked notice 10.1016/j.quaint.2024.01.004, QI 685, p. 47, March 2024). Reason for retraction: NOT checked; ScienceDirect and ADS refused the fetch.",
+    "Content of the Quaternary International paper: NOT checked against the paper. Known only through Science News and Colavito.",
+    "Episodes 2014 paper: CHECKED, full PDF read; all Episodes quotes are from the PDF text.",
+    "Science News and Colavito quotes: CHECKED in saved page text.",
+    "Lordkipanidze 2001: abstract CHECKED via Crossref; body not read.",
+    "Severin: 54-foot boat, departure from Pagasae in May 1984, route worked out from Apollonius: CHECKED in Christian Science Monitor, 18 May 1984. Arrival at Poti on 20 July 1984, 1,500 miles, builder Vasilis Delimitros of Spetses: Georgia About and Wikipedia only. Svaneti visit and what Severin concluded: Georgia Today and Wikipedia only; NOT checked in The Jason Voyage.",
+    "Crew size conflicts: Monitor says 'a 15-man crew' with '10 oars'; Wikipedia says 'twenty volunteer oarsmen'. Unresolved."
+  ],
+  "relevance_to_essay": "This is the best-evidenced version of 'the myth has a real origin', and it still stops short. The texts give a hedged ancient guess about one prop in the story; the geology shows the guess is physically possible; the replica shows the route is rowable. None of the three shows a voyage happened, and the one peer-reviewed paper that said so has been retracted. A wordless carving on the Caspian side has less than this: no text, no practice, no route. It also has to compete with sources that all point to the Black Sea.",
+  "open_questions": "Why Quaternary International retracted the paper, and whether it was duplicate publication with the Episodes article. Whether the QI text differed from the Episodes text. What Severin himself wrote about Svaneti and the fleece in The Jason Voyage, and how strongly he claimed historicity. The arguments in Braund 1994 (p. 24) and Lordkipanidze 2001 against the placer-mining reading. Whether any ancient gold workings in Svaneti have been dated to the Bronze Age.",
+  "uncertain": [
+    "author_credentials",
+    "key_claims",
+    "date_range_estimates",
+    "counter_evidence",
+    "alternative_explanations"
+  ]
+}

@@ -1,0 +1,61 @@
+fields:
+  source:
+    - name: citation
+      description: "Author, title, venue, date, URL or passage reference."
+      detail_level: brief
+    - name: source_tier
+      description: "Peer-reviewed, academic repository, ancient text, institutional, popular or fringe media."
+      detail_level: brief
+    - name: access_status
+      description: "Fully read, abstract only, teaser or paywalled, search snippet only."
+      detail_level: brief
+    - name: author_credentials
+      description: "Discipline, affiliation, fieldwork at Gobustan or not."
+      detail_level: brief
+    - name: exact_quotes
+      description: "Verbatim quotes from the opened source, with location."
+      detail_level: detailed
+
+  claims:
+    - name: key_claims
+      description: "What the source asserts, in its own terms."
+      detail_level: detailed
+    - name: evidence_offered
+      description: "What the claim rests on."
+      detail_level: moderate
+    - name: date_range_estimates
+      description: "Each date given for the motif, kept apart from dates for the site or cave layers."
+      detail_level: moderate
+    - name: dating_method
+      description: "Stylistic, stratigraphic association, radiocarbon of layers, shoreline correlation."
+      detail_level: moderate
+    - name: panel_details
+      description: "Rock number, terrace, face, motifs, superimpositions."
+      detail_level: moderate
+    - name: geographic_claims
+      description: "Which sea, river and route the source asserts."
+      detail_level: moderate
+
+  caveats:
+    - name: counter_evidence
+      description: "What cuts against the claim."
+      detail_level: moderate
+    - name: independent_corroboration
+      description: "Whether anyone other than the proposer supports it. Say 'none found' if so."
+      detail_level: brief
+    - name: alternative_explanations
+      description: "Mainstream readings of the same imagery or text."
+      detail_level: moderate
+    - name: verification_status
+      description: "Per claim: checked against a primary source actually opened, or not."
+      detail_level: moderate
+
+  essay_use:
+    - name: relevance_to_essay
+      description: "How this bears on whether a carving can be a myth's origin."
+      detail_level: brief
+    - name: open_questions
+      description: "What could not be established."
+      detail_level: brief
+
+uncertain: []
