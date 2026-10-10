@@ -1,0 +1,228 @@
+{
+  "name": "UNESCO Gobustan Rock Art Cultural Landscape",
+  "retrieved": "2026-10-10",
+  "citation": [
+    "UNESCO World Heritage Centre, 'Gobustan Rock Art Cultural Landscape', World Heritage List entry no. 1076rev. https://whc.unesco.org/en/list/1076 (opened 2026-10-10).",
+    "World Heritage Committee, Decision 31 COM 8B.49 (31st session, Christchurch, 2007), inscription and Statement of Outstanding Universal Value. https://whc.unesco.org/en/decisions/1351",
+    "World Heritage Committee, Decision 28 COM 14B.37 (28th session, Suzhou, 2004), deferral. https://whc.unesco.org/en/decisions/120",
+    "ICOMOS, Advisory Body Evaluation 'Gobustan (Azerbaijan) No 1076 rev', approved 11 March 2007, pp. 235-241 of the 2007 evaluations volume. https://whc.unesco.org/document/151677",
+    "Republic of Azerbaijan (Azerbaijani National Commission for UNESCO; Ministry of Culture; Gobustan State Historical-Artistic Reserve; 'Azerberpa'), 'Gobustan Rock Art Cultural Landscape: World Heritage Site Nomination Document' (revised, submitted 30 January 2006), 292-page PDF. https://whc.unesco.org/uploads/nominations/1076rev.pdf",
+    "Periodic Reporting Cycle 2 Section II (2014), https://whc.unesco.org/document/164044, and Cycle 3 Section II (2024), https://whc.unesco.org/document/217693 (searched for boats, Roman inscription and counts only).",
+    "For the Roman inscription text only (secondary): World History Encyclopedia image page 'Inscription by Legio XII Fulminata', uploaded 2 June 2023. https://www.worldhistory.org/image/17476/inscription-by-legio-xii-fulminata/"
+  ],
+  "source_tier": "Institutional. Three distinct voices that must not be merged: (1) UNESCO list entry and Committee decision (intergovernmental, official); (2) ICOMOS evaluation (expert advisory body, the most critical of the three); (3) the nomination dossier, written by the State Party, for which UNESCO's own disclaimer says 'The sole responsibility for the content of each Nomination file lies with the State Party concerned.' The Roman inscription wording comes from a popular reference site, not an epigraphic corpus.",
+  "access_status": "Fully read: UNESCO list page, both Committee decisions, ICOMOS evaluation (English text, all 7 pages). Nomination dossier: PDF downloaded and text-searched, description and chronology pages (PDF pp. 14-24) read in full, plus hits for boat, Roman, Latin, legion and stone 29; about 77 of 293 pages are image-only (maps, plates) and were not read. Periodic reports: keyword-searched only. Roman inscription text: read on a secondary site; the Heidelberg epigraphic database blocked automated access and Pakhomov 1949 was not opened.",
+  "author_credentials": "UNESCO World Heritage Centre and Committee: no named author. ICOMOS: no named evaluator; it states it 'consulted its International Scientific Committee on Rock Art' and sent technical evaluation missions on 1-6 November 2003 and 6-10 November 2006, so the evaluators did visit the site. Nomination dossier: Azerbaijani state bodies; its chronology leans on I. M. Jafarzade (1973), J. Rustamov and M. Farajova, all of whom did fieldwork at Gobustan. [uncertain] which individuals drafted the dossier text; no author is named on the pages read.",
+  "exact_quotes": [
+    {
+      "source": "UNESCO list page, brief description",
+      "quote": "Gobustan Rock Art Cultural Landscape covers three areas of a plateau of rocky boulders rising out of the semi-desert of central Azerbaijan, with an outstanding collection of more than 6,000 rock engravings bearing testimony to 40,000 years of rock art. The site also features the remains of inhabited caves, settlements and burials, all reflecting an intensive human use by the inhabitants of the area during the wet period that followed the last Ice Age, from the Upper Paleolithic to the Middle Ages. The site, which covers an area of 537 ha, is part of the larger protected Gobustan Reservation."
+    },
+    {
+      "source": "UNESCO list page, data box",
+      "quote": "Date of Inscription: 2007 / Criteria: (iii) / Property: 537.22 ha / Buffer zone: 3,096.34 ha / Dossier: 1076rev / Serial: yes"
+    },
+    {
+      "source": "Decision 31 COM 8B.49, para 2",
+      "quote": "Inscribes Gobustan Rock Art Cultural Landscape, Azerbaijan, on the World Heritage List under criterion (iii);"
+    },
+    {
+      "source": "Decision 31 COM 8B.49, Statement of OUV (also on list page)",
+      "quote": "Gobustan has outstanding universal value for the quality and density of its rock art engravings, for the substantial evidence the collection of rock art images presents for hunting, fauna, flora and lifestyles in pre-historic times and for the cultural continuity between prehistoric and mediaeval times that the site reflects."
+    },
+    {
+      "source": "Decision 31 COM 8B.49, Criterion (iii)",
+      "quote": "The rock engravings are an exceptional testimony to a way of life that has disappeared in the way they represent so graphically activities connected with hunting and fishing at a time when the climate and vegetation of the area were warmer and wetter than today."
+    },
+    {
+      "source": "Decision 31 COM 8B.49, para 6",
+      "quote": "Recommends the State Party to consider a possible renomination of this property also under criterion (vi)."
+    },
+    {
+      "source": "Decision 28 COM 14B.37 (2004)",
+      "quote": "Defers the nomination of the Gobustan Rock Art Cultural Landscape, Azerbaijan, to allow the State Party to undertake a research and analysis programme for the site, using methodologies which are now emerging in other rock art sites in the region, in order to quantify the site's significance in the wider world context."
+    },
+    {
+      "source": "ICOMOS evaluation, Brief description, p. 235",
+      "quote": "Rising out of the semi-desert of central Azerbaijan, above shattered cliffs bordering the Caspian Sea, is a plateau of rocky boulders hosting an extensive collection of some 6,000 rock engravings, which are a testimony to a warm, wet period after the last ice-age when people lived in caves, harvested food from the savannah grasslands of the plains, and fished in the greater Caspian Sea, then linked to the Aral and Black Seas."
+    },
+    {
+      "source": "ICOMOS evaluation, section 2 Description, p. 236",
+      "quote": "Currently there are 1,000 known rocks with carvings and these contain over 6,000 separate images."
+    },
+    {
+      "source": "ICOMOS evaluation, p. 236",
+      "quote": "The known images cover a wide range of animal and human figures: bovines, equines, mother figures, hunters, fishes, reptiles and insects as well as numerous boats."
+    },
+    {
+      "source": "ICOMOS evaluation, p. 236",
+      "quote": "A well-analysed and dated sequence for images on the property is yet to be achieved – this is said to be a goal."
+    },
+    {
+      "source": "ICOMOS evaluation, p. 236",
+      "quote": "The nomination dossier groups the images into six groups related to possible ages for the work. These span from the Paleolithic to the modern period. It is suggested that the earliest images are those of boats, mother figures, wild animals, fishes and hunters."
+    },
+    {
+      "source": "ICOMOS evaluation, p. 236",
+      "quote": "The boats are like canoes with people paddling, some are small for 2-4 people while others are much larger, apparently accommodating around forty people and with the boat prow crowned with sun motifs."
+    },
+    {
+      "source": "ICOMOS evaluation, p. 236",
+      "quote": "These images also suggest that the Caspian Sea was at a higher level – probably making the three hills virtually islands – which would explain the prevalence of boat engravings and fishes."
+    },
+    {
+      "source": "ICOMOS evaluation, p. 236",
+      "quote": "It is suggested that these early sites can be dated by their relationship to excavated material and the known levels of the Caspian Sea which has risen and fallen by many metres over several millennia."
+    },
+    {
+      "source": "ICOMOS evaluation, p. 236",
+      "quote": "During the Bronze Age the images become sketchier and include more deer, goats with rolled horns and deer and cattle pens as well as carriages and riders."
+    },
+    {
+      "source": "ICOMOS evaluation, p. 236",
+      "quote": "In Gobustan, thick cultural layers are found in and in front of many of the rock art caves and shelters. To a certain degree, the layers overlap the rock art panels and this gives a unique situation for dating."
+    },
+    {
+      "source": "ICOMOS evaluation, History and development, p. 237",
+      "quote": "Excavations carried out by D. Rustamov of one cave uncovered a 2 m stratigraphy covering 10,000 years. This material included a fallen engraved fragment that gave a terminus ante quem for this anthropomorphic figure – although no further details are given."
+    },
+    {
+      "source": "ICOMOS evaluation, Comparative analysis, p. 237",
+      "quote": "However as a detailed analysis of the wider Gobustan images has yet to be carried out and a sequence has yet to be established, it is currently not possible to draw these conclusions and say with certainty that Palaeolithic images exist."
+    },
+    {
+      "source": "ICOMOS evaluation, Criterion iii, p. 238",
+      "quote": "Criterion iii: The State Party justifies this criterion on the basis that the property demonstrates rock art over 40,000 years."
+    },
+    {
+      "source": "ICOMOS evaluation, Criterion ii, p. 238",
+      "quote": "ICOMOS does not consider that sufficient information is known about the context for the rock engravings to assess whether they reflect an interchange."
+    },
+    {
+      "source": "ICOMOS evaluation, Recommendation, p. 241",
+      "quote": "ICOMOS recommends that the nomination of Gobustan Rock Art Cultural Landscape, to the World Heritage List be referred back to the State Party of Azerbaijan"
+    },
+    {
+      "source": "Nomination dossier, 2.a Description, PDF p. 16",
+      "quote": "At present, there are more than 1,000 known rock with carvings and the drawings number more than 6,000. as a result of archaeological investigations, a large number of engravings were discovered on 104 small-size stones within the archaeological levels."
+    },
+    {
+      "source": "Nomination dossier, PDF p. 16",
+      "quote": "an outstanding rock art, which covers thousands of stone slabs, engraved with superimposition of different drawings"
+    },
+    {
+      "source": "Nomination dossier, Rock art chronology, PDF p. 17",
+      "quote": "IV style (approximately XIII-VIII year B.C.): 1. Inversely bas-relief images of men-hunters and images of hunters with bows and arrows 2. The images on the some stones discovered from the cultural layer of such settlements as Okuzlar-2 and Kaniza on the upper terrace of Boyukdahs mountain, Gaya-arasi of Kichikdash and Shongar mountains. Here, basically, the images of hunters, women, ox and ships are represented."
+    },
+    {
+      "source": "Nomination dossier, PDF p. 17",
+      "quote": "Transgressions and regressions of the Caspian Sea also helped to establish the age of some rock images"
+    },
+    {
+      "source": "Nomination dossier, PDF p. 19",
+      "quote": "It is important to note that the most ancient rock images registered only from the sea side and on the upper terraces of mountains Boyukdash and Kichikdash."
+    },
+    {
+      "source": "Nomination dossier, 2.b History and Development, PDF p. 22",
+      "quote": "Considering that Caspian Sea at that time was connected with Black Sea, ancient people had more possibilities to make long voyages from different parts of Europe. The boat images on the rocks give an evidence of using of that advantage quite regularly. The most ancient of them are linear ones, counted for 2-4 people and dated by Mesolithic period. At the stern of others are represented the shining sun images. These were quite big boats and according to the images they could contain up to 40 people."
+    },
+    {
+      "source": "Nomination dossier, PDF p. 22",
+      "quote": "The boat images of Gobustan are dated by more ancient period. They are forerun of the boats, illustrated in other parts of the world."
+    },
+    {
+      "source": "Nomination dossier, PDF p. 23",
+      "quote": "The next not big sea transgressions happened in Holocene, not going outside from the modern frontiers. The last Caspian transgression dated approximately of 1000 B.C."
+    },
+    {
+      "source": "Nomination dossier, Management Plan 2.2, PDF p. 153",
+      "quote": "The end of the rock art tradition is marked by the presence of inscriptions: the most famous is for sure the Latin one, on the foothill of Boyukdash, but there are also writings in Persian and Arabic."
+    },
+    {
+      "source": "Nomination dossier, Management Plan 3.17, PDF p. 175",
+      "quote": "The main gate of the Prison faces some of the most interesting rocks of the Reserve: e.g. the rock with the famous Roman inscription and the one with beautiful boats."
+    },
+    {
+      "source": "Nomination dossier, bibliography, PDF p. 142",
+      "quote": "Pahomov Y., Roman inscription from the 1-st cent. A.D. and the12-th legion, Publisher of the AS of Azerb. SSR N.1, 1949."
+    },
+    {
+      "source": "Nomination dossier, State Party supplementary information (2006-2007 action plan report), PDF p. 268",
+      "quote": "Additional 10 ropes on wooden posts have been installed in front of stone number 29 in the upper pavement of Boyukdash Mountain, in front of “Ana-zagha”, “Okuzler” and “Ovchular” caves to prevent any damages by tourists."
+    },
+    {
+      "source": "World History Encyclopedia image caption (secondary, for the Latin text)",
+      "quote": "Imp(eratore) Domitiano / Caesare Aug(usto) / Germanic(o) / L(ucius) Iulius / Maximus (centurio) / leg(ionis) XII Ful(minatae)"
+    }
+  ],
+  "key_claims": [
+    "Inscription: inscribed in 2007 at the 31st session of the World Heritage Committee (Christchurch) by Decision 31 COM 8B.49, under criterion (iii) only. Dossier number 1076rev. Serial property of three areas: Jinghirdagh Mountain-Yazylytepe hill, Boyukdash Mountain, Kichikdash Mountain.",
+    "Size: property 537.22 ha, buffer zone 3,096.34 ha, inside a wider Gobustan Reservation of 'some 4,000 ha' (ICOMOS).",
+    "Counts: UNESCO says 'more than 6,000 rock engravings'. ICOMOS says '1,000 known rocks with carvings' holding 'over 6,000 separate images'. The dossier adds engravings on 104 small stones found in archaeological levels, and that Jafarzade recorded more than 3,500 images on about 750 rocks from 1947.",
+    "Time span: UNESCO's description says the engravings bear 'testimony to 40,000 years of rock art' and that use ran 'from the Upper Paleolithic to the Middle Ages'. The 40,000-year figure originates with the State Party; ICOMOS reports it as the State Party's justification and does not endorse a Palaeolithic date.",
+    "Nomination history: first nomination deferred in 2004 (28 COM 14B.37) for lack of research. In 2007 ICOMOS recommended referral back to the State Party, and rejected criteria (ii) and (vi) as unproven. The Committee inscribed anyway under (iii) and suggested a later renomination under (vi).",
+    "Boats, per ICOMOS (summarising the dossier): boats are among the images 'suggested' to be earliest; they 'are like canoes with people paddling', some for 2-4 people, others for 'around forty people' with a sun motif on the prow. Their prevalence is explained by a higher Caspian that made the three hills 'virtually islands'.",
+    "Boats, per the State Party dossier: boats are evidence of regular long voyages when the Caspian was connected to the Black Sea; the oldest are linear boats for 2-4 people 'dated by Mesolithic period'; larger sun-bearing boats held up to 40; Gobustan boats are older than Egyptian and Saharan parallels and are forerunners of boats shown elsewhere.",
+    "UNESCO's own Statement of OUV does not mention boats at all. It speaks of 'hunting and fishing' and a warmer, wetter climate. The Japanese-language description on the list page does list boats among the motifs.",
+    "No official UNESCO or ICOMOS text read mentions Jason, the Argonauts, Colchis, a golden fleece or any Greek myth.",
+    "Roman inscription: the ICOMOS evaluation and the UNESCO list page do not mention it. The dossier refers to 'the famous Roman inscription' or 'the Latin one, on the foothill of Boyukdash', near the prison gate, and cites Pakhomov 1949 on a first-century AD inscription of the 12th legion. It treats the inscription as marking the end of the rock art tradition."
+  ],
+  "evidence_offered": "UNESCO and ICOMOS did no dating of their own; their descriptions restate the State Party dossier, usually behind 'it is suggested'. The dossier rests on: stylistic periodisation after Leroi-Gourhan (1965) and Jafarzade (1973); engraved stones found inside excavated cultural layers at shelters such as Ana-zaga, Kaniza, Okuzlar-2, Gaya-arasi and Firuz; stylistic match between those stones and wall images; Caspian transgression and regression levels; pollen from Ana-zaga hearths; stylistic comparison with Siberian, Mongolian, European and Saharan rock art. No radiocarbon dates are quoted on the pages read.",
+  "date_range_estimates": {
+    "boat_motif": [
+      "ICOMOS (reporting the dossier): boats are among 'the earliest images'. No absolute date given.",
+      "Dossier PDF p. 22: the oldest linear boats for 2-4 people are 'dated by Mesolithic period'. No date given for the large sun boats, only that they are older than Egyptian and Saharan examples it dates to 'VII-V year B.C.' [uncertain] this presumably means 7th to 5th millennium BC; the dossier's English omits the word millennium throughout.",
+      "Dossier PDF p. 17: 'ships' appear on small stones from cultural layers assigned to 'IV style (approximately XIII-VIII year B.C.)' [uncertain] presumably 13th to 8th millennium BC.",
+      "Neither UNESCO, ICOMOS nor the dossier pages read assign any boat image to the Bronze Age. In the dossier's Bronze Age group the motifs are deer, goats, carriages and riders."
+    ],
+    "site_and_layers": [
+      "UNESCO: '40,000 years of rock art'; use 'from the Upper Paleolithic to the Middle Ages'.",
+      "Dossier: Style I ox heads 'approximately 34000 year B.C.'; Style II about 19000-15000 BC; Neolithic 'about VII-VI year B.C.'; Eneolithic 'VI-IV year B.C.'; Bronze Age 'IV-III year B.C.' with later Bronze Age material from 'the second part of II year B.C.'; Iron Age 'II-I year B.C.'; Middle Ages and later 'I-XVIII century'. [uncertain] the BC figures read as millennia but the text does not say so.",
+      "ICOMOS: one cave excavation gave 'a 2 m stratigraphy covering 10,000 years'.",
+      "Dossier: Upper Palaeolithic shelters sit at about 127 m above world ocean level; Bronze Age settlements (Daire-1, Daire-2) and burial mounds are on the lower terraces; last Caspian transgression about 1000 BC.",
+      "Latest material: Persian inscription of the 13th-14th century (stone N 91, Yazili hill); medieval camel caravans and Islamic motifs."
+    ],
+    "roman_inscription": "First century AD per the title of Pakhomov 1949 as cited in the dossier. [uncertain] Reign of Domitian, AD 81-96 (some sources say 83/84-96, after he took the title Germanicus): from secondary web sources only."
+  },
+  "dating_method": "Relative and indirect only. (1) Stylistic periodisation into six groups. (2) Stratigraphic association: engraved stones found within dated cultural layers, cultural layers partly overlapping engraved panels, and one fallen engraved fragment giving a terminus ante quem for one anthropomorph. (3) Shoreline correlation: Caspian (Khvalynian) transgressions and regressions, with some images found below sea-sand level. (4) Comparative style and palaeoenvironment (fauna depicted, pollen). ICOMOS's verdict on the result: 'A well-analysed and dated sequence for images on the property is yet to be achieved'. No direct dating of any engraving is reported, and no radiocarbon dates appear in the UNESCO or ICOMOS texts.",
+  "panel_details": "The UNESCO page and ICOMOS evaluation name no individual rock and never mention Rock 29. ICOMOS gives only site-level detail: three areas; techniques are 'pecking, incisions or sometimes rubbing'; images can be over life size (a fisherman 'almost 4.3 m long', oxen over 2 m); lichen covers rocks on the lower terrace of Boyukdash; Soviet-era inventory numbers are chiselled into the rocks. The one reference to stone 29 found in the dossier is administrative: ropes on posts were installed 'in front of stone number 29 in the upper pavement of Boyukdash Mountain' and in front of the Ana-zagha, Okuzler and Ovchular caves, which places stone 29 on the upper terrace of Boyukdash beside Ana Zaga. Its motifs are not described there. The dossier says the rocks are 'engraved with superimposition of different drawings'. Separately, a rock 'with beautiful boats' stands near the prison gate at the foot of Boyukdash, by the Roman inscription rock; that is the lower terrace, so it is not stone 29. [uncertain] The dossier's rock-by-rock plates (PDF pp. 83-138) are image-only and were not read, so a description of stone 29 may exist there.",
+  "geographic_claims": "Caspian Sea only, as a real body of water at the foot of the site. ICOMOS: the property is 'approximately 65 km south of Baku and 6 km inland from the coast'; people 'fished in the greater Caspian Sea, then linked to the Aral and Black Seas'; a higher Caspian probably made the three hills 'virtually islands'. The dossier goes further: because the Caspian 'was connected with Black Sea, ancient people had more possibilities to make long voyages from different parts of Europe', and the Khvalynian sea reached Mingachevir, 300 km west of Baku. This sea link is placed in the Upper Pleistocene and early Holocene, the Palaeolithic and Mesolithic, not the Bronze Age: the dossier says later Holocene transgressions did not go 'outside from the modern frontiers'. No river route, no Phasis, Kura or Colchis, and no Greek voyage is asserted.",
+  "counter_evidence": [
+    "The official record contains no Bronze Age boat dating. Where boats are dated at all, the State Party puts them among the earliest images (Mesolithic or older), thousands of years before any Bronze Age setting for the Argonaut story.",
+    "ICOMOS says the sequence is not established: 'A well-analysed and dated sequence for images on the property is yet to be achieved', and it is 'not possible ... to say with certainty that Palaeolithic images exist'. Any confident date for one boat panel, Bronze Age or otherwise, goes beyond what the evaluators accepted.",
+    "The Caspian to Black Sea water connection that the dossier invokes belongs to the Khvalynian high stand in the late Pleistocene. By the dossier's own account it was gone long before the Bronze Age, so it cannot supply a sailing route for a Bronze Age Argo.",
+    "The dossier states that rocks carry superimposed drawings from different periods, so motifs on one rock need not be one scene.",
+    "ICOMOS rejected criterion (ii), interchange of human values, because too little is known of the context. A claim of long-range contact with the Aegean has no support in the evaluation.",
+    "UNESCO's headline figures are the State Party's. '40,000 years' is given in the English, French, Spanish and Dutch descriptions, while the Chinese and Russian descriptions on the same page give 4,000 years, so even the official page is not internally consistent."
+  ],
+  "independent_corroboration": "For the Argonaut reading: none found in any UNESCO, ICOMOS or State Party document. For early boats and a higher Caspian: ICOMOS repeats these as the dossier's suggestions and corroborates neither. ICOMOS does independently accept that the engravings show hunting and fishing in a warmer, wetter period (criterion iii).",
+  "alternative_explanations": "The institutional reading is local and environmental. Boats and fish are common because the sea once stood higher and the hills were nearly islands, and people there fished. UNESCO's criterion (iii) text frames the art as a record of 'hunting and fishing' and of a vanished way of life. The dossier adds ritual readings for other motifs (sun signs, ox and goat images at sanctuaries, sacrifice) and compares sun boats with Mesopotamian, Egyptian and Saharan imagery, and boat shapes with Norway and Sweden. No text reads any panel as a narrative of a particular voyage.",
+  "verification_status": {
+    "inscription_year_2007_criterion_iii": "Checked: UNESCO list page and Decision 31 COM 8B.49, both opened.",
+    "area_537.22_ha_buffer_3096.34_ha": "Checked: UNESCO list page and ICOMOS evaluation.",
+    "more_than_6000_engravings_on_about_1000_rocks": "Checked: UNESCO page (6,000), ICOMOS and dossier (1,000 rocks, over 6,000 images).",
+    "40000_years": "Checked as UNESCO's wording and as the State Party's claim. Not checked as fact; ICOMOS withholds endorsement.",
+    "2004_deferral_and_2007_ICOMOS_referral_recommendation": "Checked: Decision 28 COM 14B.37 and ICOMOS evaluation p. 241.",
+    "ICOMOS_boat_description_and_higher_Caspian": "Checked: ICOMOS evaluation p. 236, quoted verbatim.",
+    "dossier_boat_dating_Mesolithic": "Checked: dossier PDF p. 22.",
+    "stone_29_on_upper_terrace_of_Boyukdash_near_Ana_Zaga": "Checked for location only: dossier PDF p. 268. Motifs on stone 29 not verified in this source.",
+    "roman_inscription_exists_at_foot_of_Boyukdash": "Checked in the dossier (PDF pp. 142, 153, 167, 175). Not mentioned by UNESCO page or ICOMOS.",
+    "roman_inscription_text_Domitian_Legio_XII_Fulminata": "[uncertain] Not checked against a primary epigraphic source. Text taken from a World History Encyclopedia caption; date range and the reference AE 1951, 263 are unconfirmed. The dossier confirms only '1st cent. A.D.' and 'the 12th legion' via a bibliography title.",
+    "roman_inscription_discovered_1948_by_Jafarzade": "[uncertain] Search-result summaries only (Wikipedia, romeartlover.it), pages not opened."
+  },
+  "relevance_to_essay": "This is the baseline for what the authorities responsible for the site say, and it cuts against the proposal on dating. The official record never ties a boat to the Bronze Age or to any myth, puts boats among the earliest images, and admits through ICOMOS that no dated sequence exists. It also shows where the Caspian to Black Sea idea comes from: a late Pleistocene sea link in the State Party dossier, which a careless reader could carry forward into the Bronze Age. The Roman inscription is the one securely historical text at the site, and it is first century AD, written by a soldier with no reference to the carvings.",
+  "open_questions": [
+    "What is carved on stone 29, and does the dossier's plate section or Jafarzade's 1973 catalogue describe it? Not established from text-searchable pages.",
+    "The exact Latin text, standard epigraphic reference and discovery date of the Roman inscription need an epigraphic database (EDH or EDCS) or Pakhomov 1949.",
+    "Whether the dossier's 'VII-V year B.C.' style dates mean millennia. Almost certainly yes, but the text never says so.",
+    "ICOMOS writes sun motifs on the 'prow'; the dossier it summarises says 'stern'. Which end is meant is unresolved here.",
+    "Whether Azerbaijan ever renominated under criterion (vi), and whether the documentation ICOMOS asked for has since produced a dated sequence. The 2014 and 2024 periodic reports were not read in full.",
+    "Why the Chinese and Russian descriptions on the UNESCO page say 4,000 years where the others say 40,000."
+  ],
+  "uncertain": [
+    "author_credentials",
+    "date_range_estimates",
+    "panel_details",
+    "verification_status"
+  ]
+}

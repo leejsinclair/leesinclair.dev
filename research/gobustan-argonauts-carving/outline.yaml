@@ -1,0 +1,40 @@
+topic: "Gobustan Rock 29 boat carving (Azerbaijan) proposed as a Bronze Age source for the myth of Jason and the Argonauts"
+
+angle: >
+  What it would take for a wordless carving to be the origin of a myth. The proposal is a
+  single popular article (Constantinos Ragazas, Ancient Origins, 30 September 2026), paywalled
+  after its opening, with no peer-reviewed paper and no independent response found. The essay
+  must report it as that, and test it against what specialists say about the same rocks and
+  what the ancient texts say about where the Argo went.
+
+caveats_to_test:
+  - "The proposal's dating and route details are behind a paywall. Use only what was read."
+  - "No boat image at Gobustan is directly dated; dates come from cave layers and style."
+  - "Rocks were reused over millennia, so boat, water marks and armed figures may not be one scene."
+  - "Colchis is on the Black Sea. A Caspian reading needs a route across the Caucasus."
+  - "Early sources may not place Aia in Colchis at all."
+
+items:
+  - name: "Ragazas, Ancient Origins article (30 September 2026)"
+    note: "Exactly what the readable portion claims about Rock 29, the cave, the shoreline and the route. Author credentials. Outlet standing. Any coverage or response."
+  - name: "Sigari 2017, boat engravings at Boyuk Das"
+    note: "Rock 29's position, the boat corpus, proposed relative chronology. Find an openable copy."
+  - name: "Sigari et al. 2025, Rock Art Relationships Between Central Asia and Europe: The Role of Gobustan"
+    note: "Alpine and Mediterranean Quaternary 38(1). Counts, chronology, palimpsests, what it says about boats."
+  - name: "Farajova on dating Gobustan petroglyphs and Ana Zaga cave"
+    note: "Radiocarbon dates from cultural layers, Khvalynian transgression, Bronze Age settlement of lower terraces."
+  - name: "UNESCO Gobustan Rock Art Cultural Landscape"
+    note: "Inscription year, criteria, counts, how UNESCO and ICOMOS describe boats and chronology. Roman inscription at the site."
+  - name: "Gobustan boat typology and Heyerdahl"
+    note: "Boat types incl. sun-prow boats; Heyerdahl's Azerbaijan-Scandinavia claim and Helskog's response."
+  - name: "Ancient literary sources for the Argo and Aia"
+    note: "Odyssey 12.69-72, Hesiod Theogony 992-1002, Mimnermus, Pindar Pythian 4, Apollonius. Where each places Aia, Aeetes, Colchis, Phasis. When Colchis is first named."
+  - name: "Caspian to Phasis corridor in ancient geography"
+    note: "Strabo 11.7.3 and Pliny NH 6.52 on the Cyrus-Phasis portage. Date of the tradition; Tarn's doubts."
+  - name: "Golden Fleece historicity theories"
+    note: "Strabo 11.2.19 and Appian Mithridatic 103 on fleeces in gold streams; Okrostsvaridze et al. 2014/2016 Quaternary International; Tim Severin's 1984 voyage."
+
+execution:
+  batch_size: 5
+  items_per_agent: 1
+  output_dir: ./results

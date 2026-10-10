@@ -1,0 +1,152 @@
+{
+  "name": "Caspian to Phasis corridor in ancient geography",
+  "citation": "Primary texts: (1) Strabo, Geography 11.7.3 (C509). English: H. L. Jones, Loeb, Perseus text 1999.01.0198 (https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0198%3Abook%3D11%3Achapter%3D7%3Asection%3D3); Hamilton and Falconer (Bell, 1903), Perseus 1999.01.0239; Greek: Meineke (Teubner, 1877), Perseus 1999.01.0197. (2) Strabo 2.1.15 (C73), Jones, Loeb vol. I (1917), LacusCurtius https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Strabo/2A1*.html . (3) Strabo 11.2.17 and 11.3.4 (Jones, Perseus) on the Phasis, Sarapana and the wagon road to the Cyrus. (4) Pliny, Natural History 6.51-52. Latin: LacusCurtius https://penelope.uchicago.edu/Thayer/L/Roman/Texts/Pliny_the_Elder/6*.html ; English: Bostock and Riley (Taylor and Francis, 1855), where it is Book 6 chapter 19 (17), Perseus 1999.02.0137. Secondary: W. W. Tarn, 'Patrocles and the Oxo-Caspian Trade Route', Journal of Hellenic Studies 21 (1901) 10-29, scan at https://archive.org/details/PatroclesAndTheOxo-caspianTradeRoute ; W. W. Tarn, The Greeks in Bactria and India (Cambridge, 1938), pp. 112-113 and Appendix 14 'The supposed Oxo-Caspian trade-route', pp. 488-490, scan at https://archive.org/details/the-greeks-in-bactria-and-india ; E. V. Rtveladze, 'The Great Indian Road: India - Central Asia - Transcaucasia', Anabasis 1 (2010), https://journals.ur.edu.pl/anabasis/article/download/10126/9179/19111 ; T. Dundua, 'On the \"Transcaucasian\" road' (Georgian, English abstract), TSU Institute of Georgian History Proceedings XV (2019) 9-20, https://dspace.tsu.ge/handle/123456789/1308 ; M. Puturidze, 'Essential Socio-Cultural Innovations of the III-II Millennia BC Trialeti Culture', Caucasus Journal of Social Sciences 18(1) (2025), DOI 10.62343/cjss.2025.260 ; L. Jibladze and Z. Kvitsiani, on Bronze Age culture elements in mountainous Colchis, Issues of History and Theory of Culture XXXVII (2023) 16-36, https://dspace.tsu.ge/handle/123456789/2317 .",
+  "source_tier": "Ancient texts (Strabo, Pliny, plus Herodotus and Tacitus for context), opened in standard public-domain translations. Tarn 1901 is a peer-reviewed journal article and Tarn 1938 an academic monograph, both old but still the reference point for the debate. Rtveladze 2010 and Puturidze 2025 are peer-reviewed journal articles; Dundua 2019 and Jibladze and Kvitsiani 2023 are university proceedings, read as English abstracts only.",
+  "access_status": "Fully read, on 10 October 2026: Strabo 11.7.3 in two English translations and in Greek; Strabo 2.1.15, 11.2.17, 11.3.4, 11.4.8, 11.5.8, 11.11.5, 11.13.10; Pliny NH 6.51-52 in Latin and in Bostock and Riley; Pliny 6.31 and 6.38 in Latin only; Herodotus 1.104 (Godley); Tacitus Annals 6.34 (Church and Brodribb). Tarn 1901 and Tarn 1938 were read as Internet Archive OCR text (the relevant pages in full, not the whole book). Rtveladze 2010 read as PDF text, relevant sections. Puturidze 2025: the distribution paragraph only. Dundua 2019 and Jibladze and Kvitsiani 2023: English abstract only, full text is Georgian and was not read. Not opened: Kiessling's 1914 'Hyrkania' article in Pauly-Wissowa, Rackham's Loeb Pliny, pseudo-Scymnus, and any post-2019 treatment.",
+  "author_credentials": "Strabo (Greek geographer from Amasia in Pontus, writing under Augustus and Tiberius) never saw the route and cites earlier writers. Pliny the Elder cites Varro, who is reporting what was found out on Pompey's eastern campaign. W. W. Tarn was a British historian of the Hellenistic world. Eduard V. Rtveladze: Fine Arts Scientific Research Institute, Academy of Sciences of Uzbekistan, Tashkent (affiliation as printed in the article). Tedo Dundua, Marina Puturidze: Ivane Javakhishvili Tbilisi State University. None of these authors worked at Gobustan, and none of the sources mentions Gobustan.",
+  "exact_quotes": [
+    {
+      "quote": "Aristobulus declares that the Oxus is the largest of the rivers he has seen in Asia, except those in India. And he further says that it is navigable (both he and Eratosthenes taking this statement from Patrocles) and that large quantities of Indian wares are brought down on it to the Hyrcanian sea, and thence on that sea are transported to Albania and brought down on the Cyrus River and through the region that comes next after it to the Euxine.",
+      "location": "Strabo 11.7.3, trans. H. L. Jones (Loeb; Perseus header gives Harvard/Heinemann 1924). Opened at Perseus, text 1999.01.0198."
+    },
+    {
+      "quote": "Aristobulus avers that the Oxus was the largest river, except those in India, which he had seen in Asia. He says also that it is navigable with ease, (this circumstance both Aristobulus and Eratosthenes borrow from Patrocles,) and that large quantities of Indian merchandise are conveyed by it to the Hyrcanian Sea, and are transferred from thence into Albania by the Cyrus, and through the adjoining countries to the Euxine.",
+      "location": "Strabo 11.7.3, trans. H. C. Hamilton and W. Falconer (London: George Bell & Sons, 1903). Opened at Perseus, text 1999.01.0239."
+    },
+    {
+      "quote": "φησὶ δὲ καὶ εὔπλουν εἶναι καὶ οὗτος καὶ Ἐρατοσθένης παρὰ Πατροκλέους λαβών, καὶ πολλὰ τῶν Ἰνδικῶν φορτίων κατάγειν εἰς τὴν Ὑρκανίαν θάλατταν, ἐντεῦθεν δ᾽ εἰς τὴν Ἀλβανίαν περαιοῦσθαι καὶ διὰ τοῦ Κύρου καὶ τῶν ἑξῆς τόπων εἰς τὸν Εὔξεινον καταφέρεσθαι.",
+      "location": "Strabo 11.7.3, Greek text ed. A. Meineke (Leipzig: Teubner, 1877). Opened at Perseus, text 1999.01.0197."
+    },
+    {
+      "quote": "And further, the River Oxus, which divides Bactriana from Sogdiana, is so easily navigable, they say, that the Indian merchandise packed over the mountains to it is easily brought down to the Hyrcanian Sea, and thence, on the rivers, to the successive regions beyond as far as the Pontus.",
+      "location": "Strabo 2.1.15, trans. H. L. Jones, Loeb vol. I (1917). Opened at LacusCurtius."
+    },
+    {
+      "quote": "It is navigated as far as Sarapana, a fortress capable of admitting the population even of a city. From here people go by land to the Cyrus in four days by a wagon road. On the Phasis is situated a city bearing the same name, an emporium of the Colchi",
+      "location": "Strabo 11.2.17, trans. Jones. Opened at Perseus. The subject of the first sentence is the Phasis."
+    },
+    {
+      "quote": "adicit idem Pompei ductu exploratum, in Bactros septem diebus ex India perveniri ad Bactrum flumen quod in Oxum influat, et ex eo per Caspium in Cyrum subvectos, et V non amplius dierum terreno itinere ad Phasim in Pontum Indicas posse devehi merces.",
+      "location": "Pliny NH 6.52, Latin as given at LacusCurtius. 'idem' is M. Varro, named in 6.51."
+    },
+    {
+      "quote": "He adds also, that under the direction of Pompey, it was ascertained that it is seven days' journey from India to the river Icarus, in the country of the Bactri, which discharges itself into the Oxus, and that the merchandize of India being conveyed from it through the Caspian Sea into the Cyrus, may be brought by land to Phasis in Pontus, in five days at most.",
+      "location": "Pliny NH 6.19 (17) in the numbering of Bostock and Riley (London: Taylor and Francis, 1855), equal to 6.52 in modern sections. Opened at Perseus, text 1999.02.0137. Footnote markers removed; their note on 'from it' reads 'From the Oxus.'"
+    },
+    {
+      "quote": "There is no good evidence for a southern Oxus, nor for an important trade route by the Oxus, though some trade undoubtedly came that way.",
+      "location": "Tarn, JHS 21 (1901), p. 27, summary of conclusions."
+    },
+    {
+      "quote": "One is Strabo's witness that the Caspian, which had never been properly exploited either during the brief Macedonian rule or by barbarians, was unnavigable and unnavigated.",
+      "location": "Tarn 1901, p. 26, citing Strabo 11, 509."
+    },
+    {
+      "quote": "there is no evidence that it ever existed and no reason whatever for supposing that it did. What happened was that Patrocles, sent to explore the Caspian, mistook the mouth of the Atrek, seen from the sea, for that of the Oxus, and, believing that the Oxus flowed into the Caspian, reported to Antiochus I that such a trade route could easily be made; in due course his report was turned into a statement that it existed.",
+      "location": "Tarn, The Greeks in Bactria and India (1938), p. 113. Footnote marker removed."
+    },
+    {
+      "quote": "Pompey was never near the Caspian, and the man he commissioned to find out for him merely quoted Patrocles, adding the well-known land porterage; probably it was the only thing he could do. But one point is clear; had there been a trade-route in active operation, Pompey would not have called for a report on its feasibility.",
+      "location": "Tarn 1938, Appendix 14, p. 490."
+    },
+    {
+      "quote": "There is no evidence at all that, in Greek times, any such trade-route from India ever existed.",
+      "location": "Tarn 1938, Appendix 14, p. 490, closing sentence."
+    },
+    {
+      "quote": "The only other point worth notice is the fact that you could not have a regular commercial route across, or rather coasting round, a large expanse of water without also having ports, both for shipping and money-changers; and no port, Greek or native, anywhere on the Caspian is ever mentioned by anybody.",
+      "location": "Tarn 1938, Appendix 14, p. 489."
+    },
+    {
+      "quote": "It is said that Jason, together with Armenus the Thessalian, on his voyage to the country of the Colchians, pressed on from there as far as the Caspian Sea, and visited, not only Iberia and Albania, but also many parts of Armenia and Media, as both the Jasonia and several other memorials testify.",
+      "location": "Strabo 11.4.8, trans. Jones. Opened at Perseus. Footnote marker removed."
+    },
+    {
+      "quote": "dein per oram Albani, ut ferunt, ab Iasone orti, unde quod mare ibi est Albanum nominatur.",
+      "location": "Pliny NH 6.38, Latin at LacusCurtius. Not checked in an English translation."
+    },
+    {
+      "quote": "from the Colchi it is an easy matter to cross into Media: there is only one nation between, the Saspires; to pass these is to be in Media.",
+      "location": "Herodotus 1.104, trans. A. D. Godley (Loeb, 1920). Opened at Perseus."
+    },
+    {
+      "quote": "A notable exception in terms of distribution is western Georgia, where no Trialetian sites have been recorded. The Likhi mountain range – a geographical barrier between western and eastern Georgia – served as a natural boundary that halted the westward spread of this culture. The Middle Bronze Age Colchian culture does not relate to the Trialetian one at all and shows no apparent affinity with it.",
+      "location": "Puturidze 2025, introduction, distribution paragraph (PDF opened)."
+    },
+    {
+      "quote": "Some contacts are observed with the Shida Kartli region, which is reflected by the discovery of the so-- called Central Transcaucasian axes in the mountainous Colchis (Svaneti and Racha-Lechkhumi).",
+      "location": "Jibladze and Kvitsiani 2023, English abstract on the TSU repository page."
+    },
+    {
+      "quote": "it crossed the Surami Pass to reach the valley of the Rioni river (ancient Phasis), where the ships, if we are to trust Strabo, were dragged along the ground.",
+      "location": "Rtveladze 2010, opening page. No Strabo passage is cited for the dragging of ships, and the Strabo passages opened here speak of a wagon road."
+    }
+  ],
+  "key_claims": [
+    "Strabo 11.7.3: the Oxus is navigable, a statement that Aristobulus and Eratosthenes took from Patrocles; many Indian goods come down it to the Hyrcanian (Caspian) Sea, cross to Albania (roughly modern Azerbaijan), and go by the Cyrus (Kura) and 'the region that comes next' to the Euxine. The passage does not name the Phasis or Colchis.",
+    "Strabo 2.1.15 gives the same report in a different form, with 'easily' and without 'many': Indian merchandise carried over the mountains to the Oxus is easily brought down to the Hyrcanian Sea and then by the rivers as far as the Pontus.",
+    "Strabo 11.2.17 supplies the western link in his own voice: the Phasis is navigated up to the fortress of Sarapana, and from there a wagon road reaches the Cyrus in four days. Strabo 11.3.4 describes the same pass from Colchis into Iberia as narrow defiles with 120 bridges over the Phasis.",
+    "Pliny 6.52: Varro reported that it was found out under Pompey's command that India to the Bactrian river feeding the Oxus is seven days, and that Indian goods taken across the Caspian and up the Cyrus can be brought to Phasis on the Pontus with a land journey of not more than five days. The Latin verb is 'posse devehi', 'can be carried down', a statement of possibility.",
+    "Tarn 1901: the Oxus did not flow into the Caspian in historical times, so the supposed route needs rethinking. He allows 'some trade' but no 'important trade route', and sets Strabo's own remark that the Caspian was unnavigated, and Ptolemy's land road via Hyrcania and Merv, against Pliny.",
+    "Tarn 1938 hardens this: there was only ever one independent statement, Patrocles' report to Antiochus I, which meant that a route could easily be made. Eratosthenes misread it as existing trade, and Varro's notice is Patrocles again with the known Cyrus to Phasis portage added. Tarn credits the explanation to Kiessling's 1914 Pauly-Wissowa article 'Hyrkania'.",
+    "Against Tarn: Rtveladze 2010 argues the route was real and names it the 'Great Indian Road', citing settlement along the Uzboi channel, Caucasian pottery at Chorasmian sites, a pseudo-Scymnus line placing Bactrians and Indians at Phasis, and a few Graeco-Bactrian coins from Kabala and Tbilisi. Dundua 2019 (abstract) argues it worked in the 3rd and early 2nd centuries BC, was broken by 65 BC, and that Varro speaks only of a possibility.",
+    "Greek and Roman writers did link Jason to the Caspian side, but as an overland extension from Colchis: Strabo 11.4.8 has him press on from Colchis to the Caspian; Strabo 11.13.10 reports Jasonian shrines in Media and a Mount Jasonium above the Caspian Gates; Pliny 6.38 says the Albani are said to descend from Jason; Tacitus Annals 6.34 has Iberians and Albanians claim Thessalian descent through Jason."
+  ],
+  "evidence_offered": "For the route: two notices in Strabo that go back to one source (Patrocles), one notice in Pliny from Varro, and Strabo's separate description of the Phasis to Cyrus wagon road. Tarn's case rests on the geography of the Oxus (it reaches the Aral, not the Caspian), on the wording ('easily', and Pliny's 'posse'), on Strabo's own statement that the Caspian was not navigated, on the absence of any named Caspian port, and on Ptolemy describing the land road instead. Rtveladze and Dundua rely on coin finds, Uzboi settlement, Caucasian pottery in Chorasmia and pseudo-Scymnus. No source opened offers evidence older than the Hellenistic period for through traffic.",
+  "date_range_estimates": [
+    "No date for any Gobustan motif appears in these sources. They do not mention Gobustan.",
+    "The tradition is Hellenistic. Tarn 1901 says Seleucus sent Patrocles to the Caspian; Tarn 1938 has the report made to Antiochus I. That puts the voyage in the 280s BC [uncertain: exact years not confirmed in a source opened here].",
+    "Aristobulus accompanied Alexander (Jones's note to Strabo 11.7.3), so his remark on the size of the Oxus dates from the campaigns of the 320s BC or his later memoir [uncertain]. Tarn 1938 thinks it 'unlikely that he wrote late enough to use Patrocles'.",
+    "Eratosthenes worked in the 3rd century BC [uncertain: dates from general knowledge, not opened].",
+    "Varro's notice concerns Pompey's command in the Mithridatic war ('Pompeio iuxta res gerenti Mithridatico bello', Pliny 6.51). Dundua's abstract dates it to 65 BC.",
+    "Strabo wrote in the early 1st century AD (Dundua's abstract says his work was 'published' in AD 19/20). Pliny's Natural History dates to the AD 70s (Dundua: 'the 70s of the 1st c. A.D.').",
+    "Earliest date claimed by a defender of the route: Rtveladze says a Black Sea to Caspian route was in use 'already in the 5th century B.C.' on the strength of Herodotus 1.104, and floats the 8th to 7th centuries BC only 'if one gives credit to the legends about Jason's journey'. Nothing in these sources puts the corridor in the Bronze Age."
+  ],
+  "dating_method": "Textual only. The tradition is dated by the lifetimes of the authors cited (Aristobulus, Patrocles, Eratosthenes, Varro, Strabo, Pliny) and by source criticism of who copied whom. The modern defenders add coin hoards and site occupation along the Uzboi. No radiocarbon, stratigraphic or shoreline dating bears on this item.",
+  "panel_details": "Not applicable. None of the sources for this item mentions Rock 29, Boyuk Das, or any Gobustan carving.",
+  "geographic_claims": "The route as the ancient texts give it: India over the mountains to Bactria; the river of Bactra (Bactrus in the LacusCurtius Latin, Icarus in Bostock and Riley, Iachrus in the Jahn text Tarn quotes) into the Oxus (Amu Darya); down the Oxus to the Hyrcanian or Caspian Sea; across the sea to Albania; up the Cyrus (Kura); overland four days (Strabo, Sarapana to the Cyrus) or not more than five days (Pliny) to the Phasis (Rioni); down the Phasis to the city of Phasis and the Euxine. Rtveladze identifies the land leg with the Surami Pass. The direction of travel in every text is east to west, from the Caspian to the Black Sea, for Indian goods. The sources describe a river and portage route with a mountain pass in the middle, not a through waterway: nobody sails from the Caspian to Colchis.",
+  "counter_evidence": [
+    "The corridor is attested about a thousand years or more after the Bronze Age. It cannot by itself show Bronze Age traffic between the Caspian shore and Colchis.",
+    "Tarn's reading is that the route was a proposal, not a practice: Patrocles' 'easily', Pliny's 'posse devehi', and the fact that Pompey had to ask.",
+    "Strabo himself calls the Caspian unnavigated and idle (11.7.2, C509, as quoted by Tarn: 'aplous te ousa kai argos'). [uncertain: read only in Tarn's citation, the section itself was not opened.]",
+    "No Caspian port is named by any ancient writer (Tarn 1938).",
+    "The eastern half depends on the Oxus reaching the Caspian, which Tarn denies for historical times; the Uzboi question was unsettled when he wrote and Rtveladze treats the Uzboi as navigable.",
+    "Strabo 11.5.8 describes a different arrangement for Indian goods: the Aorsi 'could import on camels the Indian and Babylonian merchandise, receiving it in their turn from the Armenians and the Medes', which is overland caravan trade.",
+    "The middle of the corridor is a real barrier. Strabo 11.3.4 describes ravines and 120 bridges; Puturidze 2025 says the Likhi range stopped the westward spread of the Middle Bronze Age Trialeti culture, and that the Colchian culture of that period 'shows no apparent affinity with it'.",
+    "The texts move goods westward from the Caspian. The Argonaut story moves a ship eastward to Colchis from the Aegean. The Caspian-side Jason traditions in Strabo, Pliny and Tacitus all start from Colchis and work outward."
+  ],
+  "independent_corroboration": "For the existence of the route: partial and contested. Strabo's 11.2.17 wagon road independently confirms the Phasis to Cyrus land link, and Tarn accepts that portage as 'a well-known thing'. Rtveladze and Dundua (and, as cited by Rtveladze, Balakhvantsev and Lordkipanidze, not opened) support a working Hellenistic transit route; Tarn, following Kiessling, rejects it. For a Bronze Age Caspian to Colchis link relevant to Gobustan: none found.",
+  "alternative_explanations": "The mainstream sceptical reading (Kiessling 1914 as reported by Tarn; Tarn 1938) is that all the notices descend from one feasibility report by Patrocles, written after he mistook the mouth of the Atrek for the Oxus. On that reading Strabo 11.7.3 is Eratosthenes' misunderstanding and Pliny 6.52 is a Roman staff report repeating it. A middle position, Tarn's own in 1901 and J. Kennedy's as Tarn quotes him, is that some goods passed this way but the trade was minor, fitful and through many hands. The Jason traditions on the Caspian side are best read as Greek aetiology: Strabo ties them to place names (Jasonia, Mount Jasonium, Media from Medus, Armenia from Armenus), which is how Greeks explained foreign names, not a memory of a voyage.",
+  "verification_status": [
+    "Strabo 11.7.3 wording, Jones: checked, opened at Perseus.",
+    "Strabo 11.7.3 wording, Hamilton and Falconer: checked, opened at Perseus.",
+    "Strabo 11.7.3 Greek (Meineke): checked, opened at Perseus.",
+    "Strabo 2.1.15 (Jones): checked, opened at LacusCurtius.",
+    "Strabo 11.2.17, 11.3.4, 11.4.8, 11.5.8, 11.11.5, 11.13.10 (Jones): checked, opened at Perseus.",
+    "Pliny 6.51-52 Latin: checked at LacusCurtius. Which printed edition that Latin follows was not confirmed [uncertain]. Perseus lists Mayhoff 1906 as its Latin, which was not opened.",
+    "Pliny 6.52 English (Bostock and Riley 1855, their chapter 19 (17)): checked, opened at Perseus.",
+    "The portage is 'from the Cyrus to the Phasis' in Pliny: checked. Pliny gives five days. Strabo 11.2.17 gives four days and names Sarapana. The brief's phrase 'portage from the Cyrus to the Phasis' fits Pliny, not Strabo 11.7.3, which names neither the Phasis nor a portage.",
+    "Tarn 1901 and Tarn 1938 quotations: checked against Internet Archive OCR text. OCR errors are possible in punctuation; the Greek in the OCR is garbled and was not used.",
+    "Kiessling 1914 (Pauly-Wissowa 'Hyrkania'): not opened, known only through Tarn [uncertain].",
+    "Pseudo-Scymnus on Bactrians and Indians at Phasis: not opened, known only through Rtveladze [uncertain].",
+    "Graeco-Bactrian coin hoards at Kabala (1952) and Tbilisi (1874): not checked beyond Rtveladze [uncertain].",
+    "Seleucus' planned canal (Pliny 6.31): Latin opened. It says Claudius Caesar reported that Seleucus Nicator had thought of cutting through between the Cimmerian Bosporus and the Caspian. Tarn's gloss that this meant joining the Cyrus and Phasis is his inference.",
+    "Rtveladze, Dundua, Puturidze, Jibladze and Kvitsiani: quotations checked against the opened PDF or abstract page.",
+    "Tacitus Annals 6.34 and Herodotus 1.104: checked, opened at Perseus."
+  ],
+  "relevance_to_essay": "This is the only textual bridge between the Caspian and Colchis, and it does not carry the weight a Gobustan origin needs. It is Hellenistic at the earliest, it runs the wrong way (Indian goods westward), it includes a four or five day mountain portage, and the leading sceptic argued it never operated at all. What the essay can fairly say: Greeks and Romans knew the two seas could be linked by the Kura and the Rioni, and by Strabo's day a tradition had Jason going on from Colchis to the Caspian. Both facts are late and both start from Colchis on the Black Sea.",
+  "open_questions": [
+    "Whether the readable or paywalled part of the Ragazas article cites Strabo 11.7.3 or Pliny 6.52 at all. Not established here.",
+    "Whether any archaeological study documents Bronze Age exchange between the Caspian coast of Azerbaijan and Colchis. Two live searches found none; the sources found point to a cultural boundary at the Likhi range in the Middle Bronze Age, with only limited axe-type links between mountainous Colchis and Shida Kartli.",
+    "Whether the Uzboi carried Oxus water to the Caspian in the Hellenistic period. Tarn called the scientific evidence 'a hopeless tangle' in 1938; current hydrological work was not consulted.",
+    "What current specialists think of Tarn's dismissal. No treatment later than Dundua 2019 was opened.",
+    "Whether Strabo anywhere says ships were dragged overland to the Phasis, as Rtveladze implies. Not found in the passages opened.",
+    "The exact dates of Patrocles' voyage and of Aristobulus' and Eratosthenes' works."
+  ],
+  "uncertain": [
+    "date_range_estimates",
+    "counter_evidence",
+    "verification_status",
+    "open_questions"
+  ]
+}
