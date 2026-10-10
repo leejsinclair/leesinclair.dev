@@ -1,0 +1,274 @@
+{
+  "name": "Comprehension debt and cognitive debt",
+  "citation": [
+    "Addy Osmani, 'Comprehension Debt - the hidden cost of AI generated code.', AddyOsmani.com, 14 March 2026. https://addyosmani.com/blog/comprehension-debt/ (reposted on O'Reilly Radar, 13 April 2026: https://www.oreilly.com/radar/comprehension-debt-the-hidden-cost-of-ai-generated-code/)",
+    "Margaret-Anne Storey, 'How Generative and Agentic AI Shift Concern from Technical Debt to Cognitive Debt', personal blog, 9 February 2026. https://margaretstorey.com/blog/2026/02/09/cognitive-debt/",
+    "Margaret-Anne Storey, 'What I'm Hearing About Cognitive Debt (So Far)', personal blog, 18 February 2026. https://margaretstorey.com/blog/2026/02/18/cognitive-debt-revisited/",
+    "Margaret-Anne Storey, 'From Technical Debt to Cognitive and Intent Debt: Rethinking Software Health in the Age of AI', arXiv:2603.22106 [cs.SE], v1 23 March 2026, v4 6 April 2026. https://arxiv.org/abs/2603.22106",
+    "Peter Naur, 'Programming as Theory Building', Microprocessing and Microprogramming 15(5): 253-261, 1985 [uncertain: volume and pages taken from Storey's reference list, not from the journal itself]. Read in the reprint in Alistair Cockburn, 'Agile Software Development' (appendix, pp. 227 onward): https://pages.cs.wisc.edu/~remzi/Naur.pdf",
+    "Earlier uses of the terms: Jason Gorman, 'Comprehension Debt: The Ticking Time Bomb of LLM-Generated Code', Codemanship's Blog, 30 September 2025 (page shows an update on 14 April 2026). https://codemanship.wordpress.com/2025/09/30/comprehension-debt-the-ticking-time-bomb-of-llm-generated-code/ ; Kosmyna et al., 'Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task', arXiv:2506.08872, 10 June 2025. https://arxiv.org/abs/2506.08872",
+    "Context: Simon Willison link post, 15 February 2026, https://simonwillison.net/2026/Feb/15/cognitive-debt/ ; Martin Fowler 'Fragments', 9 and 13 February 2026, https://martinfowler.com/fragments/2026-02-09.html and https://martinfowler.com/fragments/2026-02-13.html"
+  ],
+  "source_tier": "Mixed, and mostly not empirical. Osmani: practitioner blog. Storey blog posts: academic's personal blog. Storey arXiv paper: single-author preprint, a position or framework article, not a study (no peer-reviewed venue is named on arXiv). Naur 1985: journal essay, argument from personal experience, now a classic. Gorman: practitioner and trainer blog. Kosmyna et al.: preprint (EEG study of essay writing, not programming).",
+  "access_status": "Fully read: Osmani post (live page and the 19 March 2026 Wayback snapshot), both Storey blog posts, Storey's paper (full text of v4 PDF plus arXiv abstract page), Willison's post, the relevant passages of both Fowler fragments, Gorman's opening section. Naur: read in the Cockburn reprint (scanned PDF, pages 227 and 231 to 234 read as images) and in a third-party HTML transcription for the rest; the original 1985 journal pages were not opened. Kosmyna et al.: arXiv abstract only. Alakmeh et al. (ICPC 2026) and Shaw and Nave (SSRN 2026), both cited by Storey: not opened.",
+  "author_credentials": "Addy Osmani: software engineer and author. The Wayback snapshot of 19 March 2026 gives his bio as 'a Software Engineer at Google working on Google Cloud and Gemini'. The live page in October 2026 says he is 'a Member of Technical Staff at Anthropic, where he works on Claude Code' after 'over 14 years at Google'. Commercial interest: he worked for AI coding tool vendors both when he wrote it and now, and the page promotes his O'Reilly book 'Beyond Vibe Coding'. That interest runs against the warning he gives, if anything. Margaret-Anne Storey: 'Professor of Computer Science, University of Victoria', 'Canada Research Chair in Human and Social Aspects of Software Engineering'; no commercial interest stated. Peter Naur (1928-2016): Danish computer scientist, the N in Backus-Naur Form (per Cockburn's introduction), Turing Award 2005 [uncertain: award year from memory, not checked]. Jason Gorman: runs Codemanship, a software training business; his post advertises his own workshops.",
+  "exact_quotes": [
+    {
+      "source": "Osmani, 14 March 2026, standfirst",
+      "quote": "Comprehension debt is the hidden cost to human intelligence and memory resulting from excessive reliance on AI and automation. For engineers, it applies most to agentic engineering."
+    },
+    {
+      "source": "Osmani, paragraph 1",
+      "quote": "This cost accumulates steadily, and eventually it has to be paid - with interest. It's called comprehension debt or cognitive debt.",
+      "note": "The words 'cognitive debt' link to the MIT Media Lab page for 'Your Brain on ChatGPT'."
+    },
+    {
+      "source": "Osmani, paragraph 2",
+      "quote": "Comprehension debt is the growing gap between how much code exists in your system and how much of it any human being genuinely understands."
+    },
+    {
+      "source": "Osmani, paragraph 3",
+      "quote": "Unlike technical debt, which announces itself through mounting friction - slow builds, tangled dependencies, the creeping dread every time you touch that one module - comprehension debt breeds false confidence. The codebase looks clean. The tests are green."
+    },
+    {
+      "source": "Osmani, on the Anthropic trial",
+      "quote": "In a randomized controlled trial with 52 software engineers learning a newlibrary, participants who used AI assistance completed the task in roughly the same time as the control group but scored 17% lower on a follow-up comprehension quiz (50% vs. 67%). The largest declines occurred in debugging, with smaller but still significant drops in conceptual understanding and code reading.",
+      "note": "'newlibrary' is a typo in the original."
+    },
+    {
+      "source": "Osmani, section 'There is a speed asymmetry problem here'",
+      "quote": "When code was expensive to produce, senior engineers could review faster than junior engineers could write. AI flips this: a junior engineer can now generate code faster than a senior engineer can critically audit it."
+    },
+    {
+      "source": "Osmani, section 'I love tests, but they aren't a complete answer'",
+      "quote": "The data is starting to back this up. Research suggests that developers using AI for code generation delegation score below 40% on comprehension tests, while developers using AI for conceptual inquiry - asking questions, exploring tradeoffs - score above 65%. The tool doesn't destroy understanding. How you use it does.",
+      "note": "No source is linked for this sentence."
+    },
+    {
+      "source": "Osmani, section 'Learn from history'",
+      "quote": "As AI volume goes up, the engineer who truly understands the system becomes more valuable, not less."
+    },
+    {
+      "source": "Osmani, section 'There's a bit of a measurement gap here too'",
+      "quote": "The organizational assumption that reviewed code is understood code no longer holds."
+    },
+    {
+      "source": "Osmani, closing",
+      "quote": "Making code cheap to generate doesn't make understanding cheap to skip. The comprehension work is the job."
+    },
+    {
+      "source": "Storey blog, 9 February 2026, paragraph 2",
+      "quote": "Cognitive debt, a term gaining traction recently, instead communicates the notion that the debt compounded from going fast lives in the brains of the developers and affects their lived experiences and abilities to \"go fast\" or to make changes.",
+      "note": "'traction' links to the MIT Media Lab 'Your Brain on ChatGPT' page. She does not claim to have coined the term."
+    },
+    {
+      "source": "Storey blog, 9 February 2026, pull quote",
+      "quote": "Technical debt lives in the code; cognitive debt lives in developers' minds"
+    },
+    {
+      "source": "Storey blog, 9 February 2026, paragraph 3",
+      "quote": "Peter Naur reminded us some decades ago that a program is more than its source code. Rather a program is a theory that lives in the minds of the developer(s) capturing what the program does, how developer intentions are implemented, and how the program can be changed over time."
+    },
+    {
+      "source": "Storey blog, 9 February 2026, paragraph 4 (the student team)",
+      "quote": "But by weeks 7 or 8, one team hit a wall. They could no longer make even simple changes without breaking something unexpected. When I met with them, the team initially blamed technical debt: messy code, poor architecture, hurried implementations. But as we dug deeper, the real problem emerged: no one on the team could explain why certain design decisions had been made or how different parts of the system were supposed to work together. The code might have been messy, but the bigger issue was that the theory of the system, their shared understanding, had fragmented or disappeared entirely. They had accumulated cognitive debt faster than technical debt, and it paralyzed them."
+    },
+    {
+      "source": "Storey blog, 9 February 2026, mitigation paragraph",
+      "quote": "For example, they may wish to require that at least one human on the team fully understands each AI-generated change before it ships, document not just what changed but why, and create regular checkpoints where the team rebuilds shared understanding through code reviews, retrospectives, or knowledge-sharing sessions."
+    },
+    {
+      "source": "Storey blog, 9 February 2026, research paragraph",
+      "quote": "Finally, this phenomenon demands serious research attention. How do we measure cognitive debt? What practices are most effective at preventing or reducing it in AI-augmented development environments?"
+    },
+    {
+      "source": "Storey blog, 18 February 2026, paragraph 1",
+      "quote": "what I've been calling cognitive debt: the accumulated gap between a system's evolving structure and a team's shared understanding of how and why that system works and can be changed over time."
+    },
+    {
+      "source": "Storey paper, arXiv abstract (v4)",
+      "quote": "Cognitive debt is a team-level, project-level property reflecting the erosion of shared understanding across a software system over time, leading to increasingly inadequate shared mental models for reasoning about and safely changing the system. Intent debt refers to the absence or erosion of explicit rationale, goals, and constraints that guide how humans and agents evolve the system."
+    },
+    {
+      "source": "Storey paper v4, section 'Cognitive Debt: The Invisible Layer'",
+      "quote": "The term has also been used to describe measurable reductions in individual neural engagement during AI-assisted tasks [Kosmyna et al. 2024]. Related work describes 'comprehension debt' as the growing gap between code developers can produce with AI and what they genuinely understand [Alakmeh et al. 2026]. Our use of the term, however, focuses on the team-level and longitudinal dimension of software development"
+    },
+    {
+      "source": "Storey paper v4, same section",
+      "quote": "Cognitive debt is not new; developers have long worked with incomplete and distributed understanding of complex systems. What is new is the rate at which this gap can accumulate, and the difficulty of detecting it in AI-assisted development."
+    },
+    {
+      "source": "Storey paper v4, same section",
+      "quote": "When a developer writes code from scratch, even messy code, the friction and effort mean they build at least a partial mental model along the way."
+    },
+    {
+      "source": "Storey paper v4, section 'Three Layers of Software System Health'",
+      "quote": "Technical debt lives in code. [...] Cognitive debt lives in people. It accumulates when shared understanding of the system erodes faster than it is replenished. It limits how teams can reason about change. Intent debt lives in artifacts."
+    },
+    {
+      "source": "Storey paper v4, section 'Practices for Mitigating Cognitive Debt'",
+      "quote": "system walkthroughs where developers explain code they did not write for the purpose of knowledge sharing and theory building [Naur 1985] rather than documentation or code refactoring"
+    },
+    {
+      "source": "Storey paper v4, section 'Implications for Practice'",
+      "quote": "Treat understanding as a deliverable. Just as working code is a product of software development, shared understanding should be treated as a first-class deliverable, something teams invest in explicitly rather than something that happens as a side effect of writing code."
+    },
+    {
+      "source": "Storey paper v4, section 'Implications for Practice'",
+      "quote": "Resist the automation of understanding. There is a temptation to use AI to generate documentation as well as code, producing explanations of what the system does without the team ever building genuine understanding. This substitutes the appearance of understanding for the real thing and makes cognitive debt harder to detect."
+    },
+    {
+      "source": "Naur 1985, Introduction (Cockburn reprint p. 227)",
+      "quote": "It suggests that programming properly should be regarded as an activity by which the programmers form or achieve a certain kind of insight, a theory, of the matters at hand. This suggestion is in contrast to what appears to be a more common notion, that programming should be regarded as a production of a program and certain other texts."
+    },
+    {
+      "source": "Naur 1985, 'The Theory To Be Built by the Programmer' (reprint p. 231)",
+      "quote": "The programmer having the theory of the program can explain why each part of the program is what it is, in other words is able to support the actual program text with a justification of some sort."
+    },
+    {
+      "source": "Naur 1985, 'Problems and Costs of Program Modifications' (reprint pp. 233-234)",
+      "quote": "On the basis of the Theory Building View the decay of a program text as a result of modifications made by programmers without a proper grasp of the underlying theory becomes understandable."
+    },
+    {
+      "source": "Naur 1985, 'Program Life, Death, and Revival' (reprint p. 234)",
+      "quote": "The death of a program happens when the programmer team possessing its theory is dissolved. A dead program may continue to be used for execution in a computer and to produce useful results. The actual state of death becomes visible when demands for modifications of the program cannot be intelligently answered."
+    },
+    {
+      "source": "Naur 1985, 'Program Life, Death, and Revival' (reprint p. 234)",
+      "quote": "For a new programmer to come to possess an existing theory of a program it is insufficient that he or she has the opportunity to become familiar with the program text and other documentation. What is required is that the new programmer has the opportunity to work in close contact with the programmers who already possess the theory"
+    },
+    {
+      "source": "Naur 1985, 'Program Life, Death, and Revival' (reprint pp. 234-235; the last sentence checked in the HTML transcription only)",
+      "quote": "This problem of education of new programmers in an existing theory of a program is quite similar to that of the educational problem of other activities where the knowledge of how to do certain things dominates over the knowledge that certain things are the case, such as writing and playing a music instrument. The most important educational activity is the student's doing the relevant things under suitable supervision and guidance."
+    },
+    {
+      "source": "Naur 1985, same section (HTML transcription only)",
+      "quote": "program revival, that is reestablishing the theory of a program merely from the documentation, is strictly impossible."
+    },
+    {
+      "source": "Gorman, 30 September 2025",
+      "quote": "When teams produce code faster than they can understand it, it creates what I've been calling \"comprehension debt\". [...] The \"comprehension debt\" is the extra time it's going to take us to understand it first."
+    },
+    {
+      "source": "Willison, 15 February 2026",
+      "quote": "This piece by Margaret-Anne Storey is the best explanation of the term cognitive debt I've seen so far. [...] I no longer have a firm mental model of what they can do and how they work, which means each additional feature becomes harder to reason about"
+    },
+    {
+      "source": "Fowler, Fragments 13 February 2026",
+      "quote": "I think the equivalent of cruft is ignorance - both of the code and the domain the code is supporting. The debt metaphor then still applies, either it costs more to add new capabilities, or we have to make an explicit investment to gain knowledge."
+    }
+  ],
+  "key_claims": [
+    "Who coined what. Neither Osmani nor Storey claims to have coined their term, and neither should be credited with it. 'Comprehension debt' in the AI-code sense was in print from Jason Gorman on 30 September 2025 ('what I've been calling \"comprehension debt\"'), about five and a half months before Osmani's post. Osmani's post does not mention Gorman. 'Cognitive debt' comes from the MIT Media Lab preprint 'Your Brain on ChatGPT: Accumulation of Cognitive Debt...' (Kosmyna et al., June 2025), which is about essay writing and EEG measures in individuals; both Storey and Osmani link to it. Storey calls it 'a term gaining traction recently' and adapts it to software teams. What Storey did originate is the software-team definition, the 'Triple Debt Model' and the term 'intent debt' as she uses it. [uncertain: I found no earlier use than Gorman's for 'comprehension debt', but did not search exhaustively, so 'earliest found' is safer than 'coined'.]",
+    "Osmani's definition: comprehension debt is 'the growing gap between how much code exists in your system and how much of it any human being genuinely understands'. He treats 'comprehension debt' and 'cognitive debt' as two names for one thing.",
+    "Osmani's argument: AI writes code faster than people can review it, so review stops spreading understanding. Tests and specs help but cannot replace comprehension. Standard measures (velocity, DORA, PR counts, coverage) do not show the loss, which makes it worse than technical debt because nobody chose it. Engineers with deep system knowledge become more valuable.",
+    "Osmani on juniors: 'a junior engineer can now generate code faster than a senior engineer can critically audit it'. This is his only direct statement about junior engineers, and it is about review load, not about how juniors learn.",
+    "Storey's blog definition (9 February): cognitive debt is debt that 'lives in the brains of the developers', as against technical debt, which lives in the code. On 18 February she tightened it to 'the accumulated gap between a system's evolving structure and a team's shared understanding of how and why that system works and can be changed over time'.",
+    "Storey's paper definition: cognitive debt is 'a team-level, project-level property reflecting the erosion of shared understanding across a software system over time'. She separates this from the individual, neural sense used by Kosmyna et al. and from 'comprehension debt', which she attributes to Alakmeh et al. 2026 (a paper she co-authored), not to Osmani or Gorman.",
+    "Triple Debt Model: technical debt lives in code, cognitive debt in people, intent debt in artifacts (specs, decision records, tests). The three reinforce each other. AI may reduce technical debt while speeding up the other two.",
+    "Storey says cognitive debt 'is not new'. What is new is 'the rate at which this gap can accumulate, and the difficulty of detecting it'. She also allows that it can be taken on deliberately, as her students did.",
+    "Storey's warning signs: reluctance to change the system, changes that give unexpected results, slow onboarding, losing track of who knows what, low bus factor.",
+    "Storey's remedies: code review and pair programming for spreading understanding, system walkthroughs where developers explain code they did not write, retrospectives, deliberate communication during onboarding and offboarding, and reimplementation. She warns against using AI to produce documentation in place of the team doing the understanding.",
+    "Naur 1985: programming is building a theory held by the programmers, not producing program text. The theory lets a programmer explain how the program maps to the world, justify why each part is as it is, and respond to requests for change. It cannot be fully written down. A program dies when the team holding its theory is dissolved, even if the code keeps running. New programmers acquire the theory only by working closely with those who have it, doing 'the relevant things under suitable supervision and guidance'. Reviving a program from documentation alone is 'strictly impossible'. Naur wrote nothing about debt or AI; the link to both is made by Storey and others."
+  ],
+  "headline_figures": [
+    {
+      "figure": "52 engineers; '17% lower' quiz score; '50% vs. 67%'",
+      "wording": "Osmani: 'In a randomized controlled trial with 52 software engineers learning a newlibrary, participants who used AI assistance completed the task in roughly the same time as the control group but scored 17% lower on a follow-up comprehension quiz (50% vs. 67%).'",
+      "unit_and_comparison": "AI-assisted group against a hand-coding control group in the Anthropic trial (Shen and Tamkin, arXiv 2601.20245, January 2026). The gap is 17 percentage points (50% against 67%), not a 17% relative fall.",
+      "status": "Borrowed from Anthropic, not Osmani's own data."
+    },
+    {
+      "figure": "'below 40%' and 'above 65%'",
+      "wording": "Osmani: 'Research suggests that developers using AI for code generation delegation score below 40% on comprehension tests, while developers using AI for conceptual inquiry - asking questions, exploring tradeoffs - score above 65%.'",
+      "unit_and_comparison": "Quiz scores of interaction-pattern subgroups inside the AI arm of the same Anthropic trial. Osmani gives no source and writes as if this were separate research.",
+      "status": "Overstated. See figure_provenance."
+    },
+    {
+      "figure": "'week seven' / 'weeks 7 or 8' / 'week eight'",
+      "wording": "Osmani: 'a student team that hit this wall in week seven'. Storey's blog: 'by weeks 7 or 8, one team hit a wall'. Storey's paper: 'By week eight, one team hit a wall.'",
+      "unit_and_comparison": "One student team in one entrepreneurship course. An anecdote, with the week differing across the three tellings.",
+      "status": "Not a statistic."
+    },
+    {
+      "figure": "'maybe 70% of the time'",
+      "wording": "Gorman: 'The \"A.I.\" boosters will say \"We can just get the tool to do that\". And that might work maybe 70% of the time.'",
+      "unit_and_comparison": "An offhand guess with no source.",
+      "status": "Do not cite as a figure."
+    },
+    {
+      "figure": "Storey's posts and paper, and Naur",
+      "wording": "None.",
+      "unit_and_comparison": "Neither Storey's two blog posts, her paper, nor Naur's essay contains any quantitative result.",
+      "status": "No figures to cite."
+    },
+    {
+      "figure": "54 participants (18 in session 4)",
+      "wording": "Kosmyna et al. abstract: 'A total of 54 participants took part in Sessions 1-3, with 18 completing session 4.'",
+      "unit_and_comparison": "Essay writing with an LLM, a search engine or no tools, measured by EEG. Not programming. This is the study behind the phrase 'cognitive debt'.",
+      "status": "Abstract only."
+    }
+  ],
+  "sample_and_method": "None of the four named sources is an empirical study of comprehension or cognitive debt. Osmani: opinion essay that cites one external randomised trial (Anthropic, n = 52) and Storey's anecdote. Storey's blog posts: one classroom anecdote (one student team, one course, no data collected or reported, and the post does not say how much AI the team used) plus a breakout session at the Thoughtworks 'Future of Software Engineering Retreat' in February 2026. Storey's paper: a conceptual framework article of 10 pages with one figure, built on the same anecdote and its reference list; no participants, no measurement. Naur: a reflective essay drawing on cases from his own experience, including a compiler extended by a second group [uncertain: the case details come from memory of the essay, not from the pages re-read here]. The phrase 'cognitive debt' traces to Kosmyna et al., an EEG experiment on essay writing with 54 participants over four months.",
+  "evidence_offered": "Thin, and worth saying so in the essay. For Osmani: the Anthropic trial (a real randomised result, but about learning a new library in about an hour, not about a team's grasp of its codebase), Storey's anecdote, unnamed Hacker News threads, and reasoning. For Storey: one anecdote, practitioner testimony (Willison saying he got 'lost in my own projects'), reader comments, and citations to related research, including her own with Arty Starr on troubleshooting and Shaw and Nave on 'cognitive surrender'. For Naur: argument and a few cases from experience. Nobody here has measured comprehension debt in a working team, and Storey says as much: 'How do we measure cognitive debt?' is one of her open research questions.",
+  "data_vintage": "Osmani: published 14 March 2026; Wayback snapshot of 19 March 2026 matches the live text for the passages checked; O'Reilly Radar repost dated 13 April 2026. Storey blog: 9 February 2026, follow-up 18 February 2026. Storey paper: arXiv v1 23 March 2026, v2 24 March, v3 27 March, v4 6 April 2026. The v4 comment reads '10 pages,1 figure Minor revision to clarify definition and updated figure, references and abstract', so the definition changed between versions; quotes here are from v4. Naur: 1985. Gorman: 30 September 2025, edited 14 April 2026, so the current text may differ from the original. Kosmyna et al.: 10 June 2025. Anthropic trial: 29 January 2026.",
+  "figure_provenance": [
+    "'17% lower (50% vs. 67%)' and '52 software engineers': original source is the Anthropic trial (Shen and Tamkin). See the sibling results file for that item: the gap is 17 percentage points, n = 52 with 26 per arm. Osmani repeats Anthropic's own '17%' wording, which reads as relative but is not.",
+    "'completed the task in roughly the same time': fair. Anthropic reported the AI group about two minutes faster, not statistically significant.",
+    "'smaller but still significant drops in conceptual understanding and code reading': not supported as written. The sibling file records the question-type breakdown as exploratory and not pre-registered. Do not repeat 'significant' for the sub-scores on Osmani's authority.",
+    "'The researchers emphasize that passive delegation ... impairs skill development far more than active, question-driven use': stronger than the source. Anthropic's post says 'Our qualitative analysis does not draw a causal link between interaction patterns and learning outcomes'.",
+    "'below 40%' and 'above 65%': these match the Anthropic post's bands for the six interaction patterns ('less than 40%', '65% or higher'). In the paper the AI Delegation group averaged 39% with n = 4 and the Conceptual Inquiry group 65% with n = 7. Osmani's 'above 65%' is slightly off for that group (it scored 65%), he gives no citation, and 'The data is starting to back this up. Research suggests' presents a non-causal subgroup of four people as a general finding. [uncertain: the match to Anthropic is my inference from the numbers and wording; Osmani does not name his source for this sentence.]",
+    "The student-team week: 'weeks 7 or 8' in Storey's blog, 'week eight' in her paper, 'week seven' in Osmani. Quote Storey, not Osmani.",
+    "Storey's paper cites the cognitive debt paper as 'Kosmyna, N., Beh, J., Kellogg, R., Sra, M., and Maes, P. 2024 ... CHI '24 Workshop'. The arXiv record for 'Your Brain on ChatGPT' (2506.08872) lists Kosmyna, Hauptmann, Yuan, Situ, Liao, Beresnitzky, Braunstein and Maes, dated 10 June 2025. The two do not match. [uncertain: I could not confirm that the 2024 workshop paper Storey cites exists; cite the 2025 arXiv paper instead.]",
+    "Conflicting attributions in circulation: secondary blogs variously say Osmani 'coined' comprehension debt in 2026 or that Gorman coined it in 2025 and Osmani popularised it. Gorman's dated post supports the second version."
+  ],
+  "population_and_transfer": "No population was studied by these sources themselves. The anecdote is one team of university students on an entrepreneurship course, which is closer to novices building a prototype than to juniors in a maintained codebase. The borrowed Anthropic figures come from 52 mostly experienced crowd-recruited developers learning one library. Naur wrote about professional teams maintaining large programs in the 1960s to 1980s. As concepts they transfer well to junior engineers (a junior is by definition someone who does not yet hold the theory of the system), but nothing here measures juniors at work.",
+  "outcome_measured": "None directly. The concepts concern a team's shared understanding of a system and its ability to change it safely, which nobody in these sources has measured. The only measured outcome cited is the Anthropic trial's immediate quiz score. Storey proposes proxies that could be measured: 'onboarding time tracking, knowledge concentration metrics, requirements coverage analysis'.",
+  "limitations_stated": [
+    "Storey (blog) presents the idea as needing research, not as established: 'this phenomenon demands serious research attention. How do we measure cognitive debt? What practices are most effective at preventing or reducing it in AI-augmented development environments?'",
+    "Storey (paper) says the phenomenon is old: 'Cognitive debt is not new; developers have long worked with incomplete and distributed understanding of complex systems.'",
+    "Storey (paper) hedges throughout ('may', 'perhaps') and ends with 'Points for Debate', including: 'This paper frames cognitive debt as a risk to be managed ... Others argue this understanding is often not needed at all, similarly to how managers have always had to trust team members. With generative AI automating more development work, knowing how much debt is acceptable in a particular organization or project remains uncertain.'",
+    "Storey (paper) on documentation: 'The debate about whether and how intent should be documented is far from settled.'",
+    "Storey (paper) allows that taking on the debt can be rational: students 'were rightly focused on getting rapid feedback on their ideas'.",
+    "Osmani states no limitations. His site carries the general line 'The views and opinions expressed on this site are my own.'",
+    "Naur limits his own strongest claim: 'the need for revival of an entirely dead program probably will rarely arise' (HTML transcription only)."
+  ],
+  "counter_evidence": [
+    "Fowler (13 February 2026) reframes it: the cruft is 'ignorance', and the debt metaphor only says you either pay interest or make 'an explicit investment to gain knowledge'. Which is right 'depends on the relative costs'. On that reading some cognitive debt is worth carrying.",
+    "Storey reports the objection from Michael Wuersch and others that 'cognitive debt reflects a failure of good engineering discipline', which is to say nothing new. She agrees 'in principle'.",
+    "Storey's own 'Points for Debate' records the view that detailed understanding 'is often not needed at all', as with managers who trust their teams.",
+    "The same tools may reduce the debt. Storey: 'Used deliberately, AI may help make cognitive work more visible rather than obscuring it.' Fowler's 9 February fragment suggests asking the LLM to explain complex code it wrote. Storey's paper counters that this risks 'the appearance of understanding'.",
+    "Developers have always worked with code they did not fully understand (legacy systems, libraries, copied Stack Overflow answers), as Storey's paper notes, and software has still been built.",
+    "Naur's 'strictly impossible' claim about reviving a program from documentation is absolute and untested, and teams do take over inherited code. Whether AI assistants make that takeover easier is an open empirical question that postdates him.",
+    "The evidence borrowed from Anthropic is about one person learning a library in an hour. It does not show that teams lose their grasp of a codebase over months."
+  ],
+  "alternative_explanations": [
+    "The student team's wall may come from inexperience, a compressed semester, and no design discipline. Storey's blog never says how much of the code was AI-generated, and the team itself 'initially blamed technical debt'. The same story could be told about student projects before AI.",
+    "'Comprehension debt' may be ordinary legacy-code maintenance cost under a new name. Gorman says so himself: 'In that sense, this is nothing new. What is new is the scale'.",
+    "The two terms name different things that are often merged. Kosmyna's cognitive debt is an individual's reduced engagement while writing essays. Storey's is a team's eroded shared understanding. Osmani's is a ratio of code to understood code. Osmani's opening sentence ('hidden cost to human intelligence and memory') leans on the first, his definition on the third.",
+    "Motivated framing: Osmani and Gorman both sell books or training on disciplined AI-assisted development, and Storey's research area is human aspects of software engineering. None of that makes the idea wrong, but each has reason to see the problem."
+  ],
+  "verification_status": [
+    "Osmani's definition, date (14 March 2026) and all quotes: checked against the live page and a 19 March 2026 Wayback snapshot. Verified.",
+    "Osmani did not coin 'comprehension debt' and does not claim to: verified by reading his post (no coinage claim, no mention of Gorman) and Gorman's post dated 30 September 2025. That Gorman was first: not established, only the earliest found.",
+    "Osmani's employer at publication (Google) and now (Anthropic): verified from the March snapshot and the live page.",
+    "Storey's blog definitions, dates and the student-team passage: checked against both posts. Verified.",
+    "Storey does not claim to have coined 'cognitive debt' and links to the MIT paper: verified in the 9 February post. Her 18 February post says 'what I've been calling cognitive debt', which is a usage claim, not a coinage claim.",
+    "Triple Debt Model paper: title, sole author, version dates, abstract and all quoted passages checked against arXiv and the v4 PDF. Verified.",
+    "Storey's attribution of 'comprehension debt' to Alakmeh et al. 2026: her citation is verified; the Alakmeh paper was not opened, so what it says is unverified.",
+    "MIT 'Your Brain on ChatGPT' as the source of 'cognitive debt': title, authors, date and abstract verified on arXiv. The body of the paper was not read, and whether it is the first use of the phrase was not checked.",
+    "Naur quotes: the Introduction, the three-part account of what the theory allows, the decay sentence, and the death and new-programmer passages were read on scanned pages of the Cockburn reprint. The 'supervision and guidance' sentence ending and the 'strictly impossible' sentence were read only in a third-party HTML transcription. The original journal was not opened, and the volume and page numbers come from Storey's reference list.",
+    "Osmani's '40%' and '65%' traced to the Anthropic trial: inferred from matching figures in the sibling results file, not confirmed by Osmani.",
+    "Fowler and Willison quotes: checked against their pages. Verified."
+  ],
+  "relevance_to_essay": "This gives the essay its vocabulary for the 'weaker learning with AI' strand and the bridge from an individual's quiz score to a team's long-term health. Naur is the strongest support for Lee's training proposal: he says a new programmer gets the theory only by working with those who hold it and by doing the work under guidance, not from reading code and documents. Storey supplies the modern framing and names onboarding as a place where the debt shows. Neither term is evidence. They are names for a worry, backed by one anecdote and one borrowed trial, so the essay should use them as framing and credit them accurately (Gorman and the MIT group for the phrases, Storey for the team-level model, Osmani for popularising).",
+  "implications_for_training_design": "Indirect, and argued, not tested. (1) Format: Naur's test of holding the theory is being able to explain how the program maps to the world, justify why each part is as it is, and respond to a change request. Codebase treasure hunts and challenges could be built around those three (find where X is handled, explain why it was done this way, make a small change safely). (2) Storey's named practice closest to Lee's idea is 'system walkthroughs where developers explain code they did not write for the purpose of knowledge sharing and theory building'. She also lists retrospectives, pair programming, review, and reimplementing a feature to rebuild understanding. (3) Frequency: Storey's blog asks for 'regular checkpoints where the team rebuilds shared understanding'; no interval is given. (4) Contact with people: Naur says reading is 'insufficient' and that the learner needs 'close contact with the programmers who already possess the theory'. A purely self-serve, AI-generated quiz would not meet that on his account, so exercises should be reviewed or debriefed by someone who knows the system. (5) AI-generated material: Storey's 'Resist the automation of understanding' is a direct caution. AI can lower the cost of producing exercises, but AI-written explanations consumed passively give 'the appearance of understanding'. The exercise has to make the engineer do the work. (6) Measurement: Storey suggests tracking onboarding time and knowledge concentration (bus factor), which could serve as outcome measures for a training programme. None of these sources reports outcome data for any such practice.",
+  "open_questions": "Whether anyone has measured comprehension or cognitive debt in a working team (none found in these sources). Whether walkthroughs, checkpoints or codebase exercises reduce it. Who first used 'comprehension debt' (Gorman, September 2025, is the earliest found). Whether the phrase 'cognitive debt' predates the June 2025 MIT preprint, and whether the 2024 CHI workshop paper cited by Storey exists. What Alakmeh et al. (ICPC 2026) actually say about comprehension debt. Whether Storey's paper has been published in a peer-reviewed venue. How much AI the student team in Storey's anecdote used. The exact pagination of Naur's original article.",
+  "uncertain": [
+    "citation",
+    "author_credentials",
+    "key_claims",
+    "sample_and_method",
+    "figure_provenance"
+  ]
+}

@@ -1,0 +1,45 @@
+topic: "Junior engineers, AI and skill formation: fewer entry-level hires, weaker comprehension when learning with AI, and continuous in-house training as a leadership response"
+
+angle: >
+  Two findings sit side by side. Payroll data suggests fewer young people are being hired
+  into AI-exposed jobs, and a randomised trial suggests those learning with AI help
+  understand less of what they build. The leadership question is who will be senior in
+  five years. Lee's proposed answer is continuous training inside the organisation,
+  possibly AI-generated but delivered consistently: small coding challenges or treasure
+  hunts through the codebase. The essay must test that proposal against the evidence,
+  including the evidence that is missing.
+
+caveats_to_test:
+  - "The Stanford figures are descriptive, not causal, and change by paper vintage."
+  - "Other economists find small or null effects of AI on employment."
+  - "The Anthropic trial is small, tested comprehension straight after the task, and its usage-pattern groups are tiny and not causal."
+  - "Is the gap 17 percent or 17 percentage points? Is n 51 or 52?"
+  - "Is there any controlled evidence that katas, quizzes or codebase treasure hunts improve comprehension at work?"
+  - "Can AI-generated questions about code be trusted without a human checking the answers?"
+
+items:
+  - name: "Stanford Canaries in the Coal Mine and August 2026 update"
+    note: "Brynjolfsson, Chandar, Chen. Original 2025 paper and the 12 August 2026 update (digitaleconomy.stanford.edu/news/canariesaug26/). Exact headline figures by vintage (13%, 16%, 15%, 19%), data cut-off, what 'reduced hiring rather than separations' rests on, what the authors say about causality, software developer figures specifically."
+  - name: "Critiques and null findings on AI and entry-level employment"
+    note: "The authors' own note 'Canaries, Interest Rates, and Timing' (2026); Humlum and Vestergaard 'Large Language Models, Small Labor Market Effects' (NBER WP 33777); Yale Budget Lab; Economic Innovation Group. What each finds and how it qualifies the Canaries result."
+  - name: "Dallas Fed 2026 on young workers and returns to experience"
+    note: "Dallas Fed January 2026 analysis (dallasfed.org/research/economics/2026/0106) and J. Scott Davis's 2026 piece arguing returns to experience rise in AI-exposed occupations because AI substitutes codifiable but not tacit knowledge. Exact figures and wording."
+  - name: "Anthropic randomised trial on AI assistance and coding skill formation"
+    note: "Shen and Tamkin, arXiv 2601.20245, and anthropic.com/research/AI-assistance-coding-skills (29 January 2026). Exact n, 17% vs 17 points (50% vs 67%), significance of quiz and speed results, the six interaction patterns with group sizes and scores, the debugging-question gap, stated limitations, recommendations to managers."
+  - name: "Other studies of novices learning to program with AI"
+    note: "Prather et al. 'The Widening Gap' (ICER 2024, arXiv 2405.17739); TUM 'The Dissociation of Performance and Learning in AI-Supported Programming Education' (2026); Bastani et al. 'Generative AI can harm learning' (PNAS 2025); Kazemitabaar et al. CHI 2023. Samples, findings, and whether guard-railed or tutor-style AI avoided the harm."
+  - name: "Learning science on practice: retrieval, spacing, desirable difficulties"
+    note: "Roediger and Karpicke 2006 (test-enhanced learning); Cepeda et al. 2006 or 2008 (spacing); Bjork on desirable difficulties; Kalyuga et al. on expertise reversal. Open the primary papers or abstracts. What each shows, effect sizes, and what they imply for small, regular, low-stakes challenges."
+  - name: "Questions about learners' code and AI-generated comprehension questions"
+    note: "Lehtinen et al. 'Questions about Learners' Code' (Aalto) incl. 'Automated Questions About Learners' Own Code Help to Detect Fragile Knowledge' (arXiv 2306.16267); 'Let's Ask AI About Their Programs' (arXiv 2404.11734); Goodfellow et al. 2025 (Strathclyde). How often students who solved a task failed questions about it; how accurate LLM-generated questions and answers were."
+  - name: "Practitioner training designs for engineers in the AI era"
+    note: "Code katas (Dave Thomas), capture-the-flag, onboarding scavenger or treasure hunts through a codebase, LeadDev pieces on onboarding juniors with AI, Tian Pan 'Onboarding Engineers into AI-Generated Codebases' (17 April 2026), Claude Code Learning and Explanatory output styles, ChatGPT study mode. What is proposed, and whether any outcome data exists. State plainly if no controlled evidence was found."
+  - name: "Engineering leaders on hiring and training juniors"
+    note: "IBM tripling entry-level hiring (Fortune, 13 February 2026, Nickle LaMoreaux); AWS CEO Matt Garman's 'dumbest thing I've ever heard' remark (pin down the original interview and date); Matt Beane 'The Skill Code' (2024) on novices being cut out of expert work. Exact quotes from sources actually opened."
+  - name: "Comprehension debt and cognitive debt"
+    note: "Addy Osmani 'Comprehension Debt' (14 March 2026); Margaret-Anne Storey's cognitive debt blog (9 February 2026) and Triple Debt Model paper (arXiv 2603.22106); Peter Naur 'Programming as Theory Building' (1985). Definitions, who coined what, and any evidence offered."
+
+execution:
+  batch_size: 5
+  items_per_agent: 1
+  output_dir: ./results

@@ -1,0 +1,175 @@
+{
+  "name": "Other studies of novices learning to program with AI",
+  "citation": [
+    "Prather, J., Reeves, B., Leinonen, J., MacNeil, S., Randrianasolo, A. S., Becker, B., Kimmel, B., Wright, J., Briggs, B. 'The Widening Gap: The Benefits and Harms of Generative AI for Novice Programmers.' ICER '24, 13-15 August 2024, Melbourne. arXiv:2405.17739 (v1, 28 May 2024). https://arxiv.org/abs/2405.17739",
+    "Bassner, P., Lenk-Ostendorf, B., Beinstingel, R., Wasner, T., Krusche, S. 'Less stress, better scores, same learning: The dissociation of performance and learning in AI-supported programming education.' Computers and Education: Artificial Intelligence, vol. 10, article 100537 (issue dated June 2026; online 24 December 2025). https://doi.org/10.1016/j.caeai.2025.100537. TUM summary post dated 30 January 2026: https://www.edtech.tum.de/?p=3520",
+    "Bastani, H., Bastani, O., Sungu, A., Ge, H., Kabakci, O., Mariman, R. 'Generative AI without guardrails can harm learning: Evidence from high school mathematics.' PNAS 122(26), e2422633122, published 25 June 2025. https://doi.org/10.1073/pnas.2422633122 (open copy: https://pmc.ncbi.nlm.nih.gov/articles/PMC12232635/). Earlier working paper titled 'Generative AI Can Harm Learning' (SSRN 4895486).",
+    "Kazemitabaar, M., Chow, J., Ma, C. K. T., Ericson, B. J., Weintrop, D., Grossman, T. 'Studying the effect of AI Code Generators on Supporting Novice Learners in Introductory Programming.' CHI '23, 23-28 April 2023, Hamburg. DOI 10.1145/3544548.3580919. arXiv:2302.07427 (v2, 21 Feb 2023). https://arxiv.org/abs/2302.07427"
+  ],
+  "source_tier": "All four are peer-reviewed. Prather: ICER 2024 conference paper (read as the arXiv accepted version). Bassner et al.: journal article, Computers and Education: Artificial Intelligence (Elsevier, open access CC BY). Bastani et al.: PNAS journal article (PNAS Direct Submission). Kazemitabaar et al.: CHI 2023 conference paper (read as the arXiv version). The TUM EdTech post is an institutional blog summary of the Bassner paper.",
+  "access_status": "Prather: fully read (arXiv PDF text extracted). Kazemitabaar: fully read (arXiv v2 PDF text extracted). Bastani: fully read in the PNAS version via Europe PMC full text (PMC12232635), plus the earlier working-paper PDF; the SI Appendix was not opened. Bassner (TUM): ABSTRACT ONLY. ScienceDirect returned HTTP 403 and the Elsevier API returned metadata only, so the full text, statistics and limitations section were not read. The abstract was obtained from OpenAlex and bibliographic data from Crossref; the TUM blog post was read through a summarising fetch tool.",
+  "author_credentials": "Prather: computing-education researchers; Prather, Reeves, Randrianasolo, Kimmel, Wright, Briggs at Abilene Christian University (Texas), Becker at University College Dublin; Leinonen and MacNeil are co-authors whose affiliations I did not record [uncertain]. No commercial interest noted. Bassner et al.: computer science / software engineering education at the Technical University of Munich. Interest to note: Iris, the scaffolded tutor that is one arm of the trial, is the group's own tool (built into TUM's Artemis learning platform [uncertain]), so the authors are evaluating their own system. Bastani et al.: Hamsa Bastani and Alp Sungu, Operations, Information and Decisions, Wharton; Osbert Bastani, Computer and Information Science, Penn; Haosen Ge, Wharton AI & Analytics; Ozge Kabakci, Budapest British International School (mathematics); Rei Mariman, independent. They built both GPT tutors. Paper states: 'The authors declare no competing interest.' Kazemitabaar et al.: HCI and computing education; Kazemitabaar, Chow, Ma, Grossman at University of Toronto Computer Science; Ericson at University of Michigan School of Information; Weintrop at University of Maryland College of Education. They built the Coding Steps environment used in the study. No commercial interest noted.",
+  "exact_quotes": [
+    {
+      "source": "Prather et al. 2024",
+      "location": "Abstract",
+      "quote": "Although 20 of 21 students completed the assigned programming problem, our findings show an unfortunate divide in the use of GenAI tools between students who accelerated and students who struggled."
+    },
+    {
+      "source": "Prather et al. 2024",
+      "location": "Abstract",
+      "quote": "Furthermore, struggling students often expressed cognitive dissonance about their problem solving ability, thought they performed better than they did, and finished with an illusion of competence."
+    },
+    {
+      "source": "Prather et al. 2024",
+      "location": "Section 4.1, Participants Who Struggled",
+      "quote": "Although only one student failed to complete the task, half of the students were observed struggling for various reasons, including exhibiting one or more metacognitive difficulties."
+    },
+    {
+      "source": "Prather et al. 2024",
+      "location": "Section 6, Conclusions",
+      "quote": "More insidiously, the nuances of how students struggle with GenAI may not be immediately apparent from an overall view of grades in a course."
+    },
+    {
+      "source": "Prather et al. 2024",
+      "location": "Section 6, Conclusions",
+      "quote": "Ultimately, our findings confirm that the most commonly used GenAI tools are not informed by pedagogy."
+    },
+    {
+      "source": "Prather et al. 2024",
+      "location": "Section 3.5, Limitations",
+      "quote": "One limitation of our study is the relatively small sample size, with only 21 participants compared to 31 participants in the original study by Prather et al."
+    },
+    {
+      "source": "Bassner et al. 2026 (TUM)",
+      "location": "Abstract, Methods (text as indexed by OpenAlex)",
+      "quote": "A three-arm randomized controlled trial was conducted in an introductory programming (CS1) course at TUM (N=275). Participants completed a 90-minute exercise on concurrency, implementing a parallel sum with threading in one of three conditions"
+    },
+    {
+      "source": "Bassner et al. 2026 (TUM)",
+      "location": "Abstract, Results",
+      "quote": "Despite these performance gains, neither AI condition produced greater pre-post knowledge gains or code-comprehension advantages."
+    },
+    {
+      "source": "Bassner et al. 2026 (TUM)",
+      "location": "Abstract, Results",
+      "quote": "Only Iris increased intrinsic motivation. Students rated ChatGPT as easier to use and more helpful."
+    },
+    {
+      "source": "Bassner et al. 2026 (TUM)",
+      "location": "Abstract, Conclusion",
+      "quote": "In this setting, generative AI acted primarily as a performance aid rather than a learning enhancer."
+    },
+    {
+      "source": "Bastani et al. 2025 (PNAS)",
+      "location": "Abstract",
+      "quote": "However, we additionally find that when access is subsequently taken away, students actually perform worse than those who never had access (17% reduction in grades for GPT Base)"
+    },
+    {
+      "source": "Bastani et al. 2025 (PNAS)",
+      "location": "Introduction",
+      "quote": "on the exam, students in the GPT Base arm perform statistically significantly worse than students in the control arm by 17%; this negative effect is essentially eradicated in the GPT Tutor arm, though we still do not observe a positive effect."
+    },
+    {
+      "source": "Bastani et al. 2025 (PNAS)",
+      "location": "Results, text after Table 1",
+      "quote": "student performance in the GPT Base arm degraded by 0.054 (out of 1) relative to that of the control arm. In other words, GPT Base diminished the average control student's performance on the unassisted exam by 17%."
+    },
+    {
+      "source": "Bastani et al. 2025 (PNAS)",
+      "location": "Results, Student Perception",
+      "quote": "While students in the GPT Base arm performed worse on the exam (relative to the control arm), they did not perceive that they performed worse or learned less."
+    },
+    {
+      "source": "Bastani et al. 2025 (PNAS)",
+      "location": "Results, mechanism analysis",
+      "quote": "We find that GPT Base gives a correct answer only 51% of the time on average; it makes logical errors 42% of the time and arithmetic errors 8% of the time."
+    },
+    {
+      "source": "Bastani et al. 2025 (PNAS)",
+      "location": "Footnote to the design description",
+      "quote": "Our analysis focuses on short-term learning (estimated via exam performance) rather than long-term learning"
+    },
+    {
+      "source": "Bastani et al. 2025 (PNAS)",
+      "location": "Discussion",
+      "quote": "GPT Tutor remains passive, responding to students when they ask questions but failing to proactively engage students with the material."
+    },
+    {
+      "source": "Kazemitabaar et al. 2023",
+      "location": "Abstract",
+      "quote": "Our results show that using Codex significantly increased code-authoring performance (1.15x increased completion rate and 1.8x higher scores) while not decreasing performance on manual code-modification tasks."
+    },
+    {
+      "source": "Kazemitabaar et al. 2023",
+      "location": "Abstract",
+      "quote": "learners with access to Codex during the training phase performed slightly better on the evaluation post-tests conducted one week later, although this difference did not reach statistical significance."
+    },
+    {
+      "source": "Kazemitabaar et al. 2023",
+      "location": "Abstract",
+      "quote": "learners with higher Scratch pre-test scores performed significantly better on retention post-tests, if they had prior access to Codex."
+    },
+    {
+      "source": "Kazemitabaar et al. 2023",
+      "location": "Section 7, Limitations and Future Work",
+      "quote": "The lack of statistical findings for such metrics does not necessarily mean there is no effect present, it could potentially be due to the sample size of our study."
+    },
+    {
+      "source": "Kazemitabaar et al. 2023",
+      "location": "Section 7, Limitations and Future Work",
+      "quote": "our study included evaluation post-tests that did not leave the boundaries of what learners were trained on."
+    }
+  ],
+  "key_claims": [
+    "Prather et al. (2024): Generative AI does not remove the metacognitive difficulties novices already had. All five previously documented difficulties (Forming, Assumption, Dislodging, Location, Achievement) were still observed, and three new AI-specific ones appeared: Interruption (constant inline suggestions break the student's thinking), Mislead (the tool steers the student down a wrong path) and Progression (the student finishes without understanding the constructs used). Students with better grades and higher self-efficacy used the tools to accelerate; weaker students struggled yet believed they had done well. The authors say the tools 'could be widening the digital divide' and that task completion hides the problem.",
+    "Bassner et al. (TUM, 2026): In a three-arm RCT, both a scaffolded hint-only tutor (Iris) and unrestricted ChatGPT raised exercise scores well above a no-AI control, but neither produced greater pre-to-post knowledge gains or better code comprehension. Both AI arms reported lower frustration and lower extraneous and germane cognitive load. Only the scaffolded tutor raised intrinsic motivation. Students preferred ChatGPT, which the authors call a 'comfort trap'. Note the direction: this is a null on learning, not a measured harm. The AI arms did not learn less than control; they learned the same while scoring higher.",
+    "Bastani et al. (PNAS 2025): Unrestricted GPT-4 access during maths practice improved practice scores but lowered scores on a later unassisted exam relative to students who never had it. A guard-railed tutor (teacher-supplied solutions and common mistakes, hints instead of answers) improved practice scores more and left exam scores statistically indistinguishable from control. So guardrails removed the harm but produced no learning gain. Students did not notice: the GPT Base arm did not perceive learning less, and the GPT Tutor arm believed they did better than they did. The authors attribute the harm to students using the tool as a 'crutch' (asking for the answer and copying it), not to being misled by the model's errors.",
+    "Kazemitabaar et al. (CHI 2023): For 10 to 17 year olds learning Python from scratch, access to a Codex code generator during training raised authoring performance and did not reduce performance on manual code-modification tasks. On post-tests without the tool, the Codex group did no worse one day later and scored somewhat higher one week later, though not significantly. Learners with higher prior (Scratch) competency benefited significantly on retention; low-prior learners were neither helped nor harmed. This is the main counter-example to a simple 'AI harms novice learning' claim, and the study design itself was scaffolded (see alternative_explanations)."
+  ],
+  "headline_figures": [
+    "Prather: 21 participants; '20 of 21 students completed the assigned programming problem' within a 35-minute limit. Completion times 'varied from 5 to 35 minutes and averaged 17.1 minutes with a standard deviation of 8.1'.",
+    "Prather: 'half of the students were observed struggling'. From the results text: nine students were tagged with previously known metacognitive difficulties, eight with new AI-related ones, and only one had a new one without an old one, which gives 10 of 21 with at least one difficulty.",
+    "Prather: Copilot suggestion acceptance rates ranged 'from 10% to 53%'. Table 4: mean acceptance 34.1% (SD 12.5%) for students with metacognitive difficulties vs 24.5% (SD 6.6%) for those without.",
+    "Prather: course grade vs count of new (AI-related) metacognitive difficulties, r = -.503, p = 0.020. Count of metacognitive difficulties vs negative self-efficacy, r = 0.552, p = 0.009. Pearson correlations on n = 21.",
+    "Bassner (TUM): N = 275 CS1 students, three arms, one 90-minute exercise. No effect sizes, group sizes or p-values are in the abstract, and the full text was not accessible, so none are reported here.",
+    "Bastani: practice (assisted) performance up 48% for GPT Base and 127% for GPT Tutor relative to control. Table 1 coefficients on a 0 to 1 normalised score: GPT Base 0.137 (SE 0.031), GPT Tutor 0.361 (SE 0.032), both P < 0.01; control arm mean 0.284.",
+    "Bastani: unassisted exam performance down 17% for GPT Base relative to control. Table 1: GPT Base -0.054 (SE 0.022), P < 0.05; GPT Tutor -0.004 (SE 0.013), not significant; control arm mean 0.321, control SD 0.277; 2,848 observations; SEs clustered by classroom. The 17% is a RELATIVE reduction (0.054 / 0.321 = 16.8%), equal to 5.4 points on a 100-point scale, or roughly 0.19 of a control-arm standard deviation (my arithmetic: 0.054 / 0.277).",
+    "Bastani: 'nearly a thousand' students, 'about fifty' 9th, 10th and 11th-grade classes, four 90-minute sessions, covering 'about 15% of the curriculum' in each grade, Fall semester 2023-24.",
+    "Bastani: GPT Base 'gives a correct answer only 51% of the time on average; it makes logical errors 42% of the time and arithmetic errors 8% of the time' on the practice problems when asked for the answer.",
+    "Kazemitabaar: 69 learners (21 female, 48 male), ages 10 to 17 (M = 12.5, SD = 1.8); 33 Codex, 36 Baseline; 90 started and 21 dropped out. 45 two-part training tasks over seven training sessions.",
+    "Kazemitabaar, training phase: task completion Codex 90.9% (SD 16.7%) vs Baseline 79.0% (SD 18.6%), t(67) = 2.8, p = .006, d = 0.68 (the '1.15x'). Authoring correctness Codex 80.1% (SD 14.5%) vs Baseline 44.4% (SD 26.5%), t(67) = 6.92, p < .001, d = 1.67 (the '1.8x'). Authoring time Codex 210s vs Baseline 361s.",
+    "Kazemitabaar, immediate post-test (one day after training, no AI): authoring Codex 61.3% vs Baseline 62.9%, p = .838; modifying 59.7% vs 59.3%, p = .953; multiple choice 49.3% vs 42.0%, p = .228.",
+    "Kazemitabaar, retention post-test (one week later, no AI): authoring Codex 59.1% vs Baseline 49.8%, p = .262, d = 0.28; modifying 47.5% vs 34.8%, p = .092, d = 0.41; multiple choice 44.1% vs 34.6%, p = .129, d = 0.38. None significant. Codex group made more errors on authoring tasks (1.58 vs 0.99, p = .042, d = 0.51).",
+    "Kazemitabaar: Codex solved 41 of 45 task descriptions correctly with no changes."
+  ],
+  "sample_and_method": "Prather: qualitative lab observation, not an experiment and no control group. 21 of 27 students in one CS1 (C++) course at 'a small research university in the USA' opted in for extra credit. Each solved one problem ('More Positive or Negative') in up to 35 minutes with GitHub Copilot in VS Code and ChatGPT available, thinking aloud, with Tobii eye tracking, followed by an interview; self-efficacy (MSLQ subscale) collected a week later. Two researchers coded the sessions (Cohen's kappa 0.74). It replicates a pre-AI study (n = 31) by the same lead author. Bassner (TUM): three-arm randomised controlled trial, N = 275, in an introductory programming (CS1) course at TUM. One 90-minute exercise on concurrency (a parallel sum with threads). Arms: Iris (hints, no full solutions), unrestricted ChatGPT, no-AI control with ordinary web resources. Pre and post knowledge tests plus a code comprehension task measured learning; auto-graded test coverage measured performance; validated scales for cognitive load, frustration and intrinsic motivation. Per-arm sizes and exclusions not seen. Bastani: classroom-randomised field experiment (pre-registered per the paper [uncertain]) at one large high school in Turkey, Fall 2023-24. Nearly 1,000 students in about 50 classes across grades 9 to 11, four 90-minute sessions each: teacher review, assisted practice (control with textbook and notes, GPT Base, or GPT Tutor), then a closed-book unassisted exam on closely similar problems. Both parts counted toward grades. Intention-to-treat analysis; honors classes excluded from the main sample. Kazemitabaar: between-subjects controlled experiment, run remotely over three weeks (ten sessions), with 69 novices aged 10 to 17 recruited from coding camps in two North American cities, none with prior text-based programming. Groups balanced on a Scratch pre-test. Codex (code-davinci-002) was available only for the authoring half of each training task; each authoring task was followed by a manual modification task. Post-tests with no AI one day and one week after training.",
+  "evidence_offered": "Prather: coded observation notes, think-aloud transcripts, eye-tracking replays, interview answers, Copilot acceptance rates, and Pearson correlations with course quiz grades and self-efficacy. Per-participant narratives (P1, P7, P8, P11, P17 and others) carry most of the argument. The 'illusion of competence' rests on the gap between what researchers observed and what students said about their own performance; it was not measured with a calibrated self-assessment instrument. Bassner: randomised comparison of auto-graded scores, pre/post tests, a comprehension task and validated self-report scales. Bastani: regression on normalised scores with classroom-clustered standard errors, plus mechanism analyses (model error rates per problem, message clustering showing GPT Base students mostly asked for the answer, time-on-tool) and student surveys. Kazemitabaar: t-tests with effect sizes on logged task data and graded post-tests, subgroup split by pre-test score, and learner self-reports.",
+  "data_vintage": "Prather: arXiv v1, 28 May 2024, accepted version for ICER 2024 (August 2024); only one arXiv version exists. Data collected in a CS1 course, most likely in the 2023-24 academic year [uncertain]; tools were GitHub Copilot and ChatGPT of that period. Bassner: published online 24 December 2025 (Crossref created date), assigned to vol. 10, June 2026 issue; cite as 2026 with the 2025 DOI. Date of data collection not seen [uncertain]. Bastani: data from Fall semester 2023-24 using GPT-4. Working paper 'Generative AI Can Harm Learning' posted to SSRN July 2024 [uncertain on month]; PNAS version received 3 November 2024, accepted 5 May 2025, published 25 June 2025 under a longer title. A correction (PNAS 122(34), e2518204122, 20 August 2025) fixes only Osbert Bastani's affiliation. Kazemitabaar: arXiv v1 15 February 2023, v2 21 February 2023; CHI April 2023. The study predates ChatGPT-era tools and used code-davinci-002.",
+  "figure_provenance": "The task note cites Bastani as 'Generative AI can harm learning' (PNAS 2025). That is the working-paper title. The PNAS title is 'Generative AI without guardrails can harm learning: Evidence from high school mathematics'. Cite the PNAS title for the PNAS year. The 48%, 127% and 17% figures are identical in the working paper and the PNAS version; the PNAS abstract adds 'in grades'. The working paper marks the -0.054 coefficient with two stars and the PNAS table with one star under a different star legend (PNAS: * P < 0.05, ** P < 0.01), so describe it as significant at the 5% level. The working paper says 'GPT Base cohort'; PNAS says 'arm'. Bastani's 17% is a relative drop from a low base (0.321 to about 0.267), which secondary coverage often reports as if it were 17 points. The task note lists the TUM paper by its subtitle and dates it 2026; its full title begins 'Less stress, better scores, same learning'. One TUM staff page lists a variant subtitle ('The Paradox of AI Support in Programming Education') dated December 2025, seen only in a search result [uncertain]. Kazemitabaar's '1.15x' and '1.8x' are ratios of the training-phase means (90.9/79.0 and 80.1/44.4) and describe performance WITH the tool, not learning. Prather's '20 of 21' is task completion with AI available; 'half' struggling is the authors' wording and matches 10 of 21 derived from their counts.",
+  "population_and_transfer": "None of the four studied working engineers. Prather: 21 first-year university students in one CS1 course. Bassner: 275 university CS1 students. Bastani: about 1,000 high-school students aged roughly 14 to 17 doing mathematics, not programming. Kazemitabaar: 69 children and teenagers (mean age 12.5) with no text-based programming experience. Transfer to junior engineers is by analogy only: juniors have more prior knowledge, stronger incentives, real codebases and review processes. The closest fit is the TUM study (adults, programming, a hard concurrency task). The general pattern that could plausibly transfer is that performance with AI available stops predicting understanding, and that learners misjudge their own learning.",
+  "outcome_measured": "Prather: task completion and time with AI available, observed metacognitive difficulties, self-reported perceptions. No learning test. Bassner: exercise score with AI (performance), immediate pre/post knowledge gain and code comprehension (learning), cognitive load, frustration, motivation. No delayed retention as far as the abstract shows. Bastani: assisted practice score and unassisted exam score in the same 90-minute session (short-term learning). No delayed retention. Kazemitabaar: training performance, immediate post-test (next day) and delayed retention (one week) without AI. The only one of the four with a delayed measure. None measures employment or on-the-job performance.",
+  "limitations_stated": [
+    "Prather: 'One limitation of our study is the relatively small sample size, with only 21 participants'. Only two tools were studied (Copilot and ChatGPT), and 'we were limited by the single site of the experiment'. In the conclusions: 'our sample size was too small to tell if prior programming experience, socio-economic background, race, or gender are factors in GenAI harming novice programmer experience'.",
+    "Bassner (TUM): limitations section not read (full text inaccessible). The abstract itself hedges with 'In this setting'.",
+    "Bastani: 'our study focuses on two generative AI tutors for a single topic (mathematics) deployed in a single high school in Turkey.' 'Our deployment was also carried out in Fall 2023, when generative AI was still very new; modes of interaction may have changed now that users are more familiar with effective uses of these tools and their shortcomings.' 'both closed and open-weight models have significantly improved in performance since then.' 'we focus on short-term outcomes due to limitations imposed by our partner school; studying long-term outcomes is a key direction for future research.'",
+    "Kazemitabaar: correctness scores depend on the authors' own rubric; fixed topic order means effects of topic difficulty and of growing familiarity with the tool cannot be separated; non-significant differences may reflect sample size; post-tests 'did not leave the boundaries of what learners were trained on', so transfer was not tested; only novices outside formal classrooms were studied, and the authors call for studies at high school or university level; qualitative analysis of how learners actually used the generator was left for future work."
+  ],
+  "counter_evidence": "The four studies do not agree on a harm. Kazemitabaar found no learning penalty and a non-significant advantage at one week, with a significant benefit for higher-prior learners. Bassner found no difference in learning between either AI arm and control: unrestricted ChatGPT did not measurably reduce learning in that single session. Only Bastani shows a statistically significant learning loss from unrestricted AI, and that is in school mathematics with a 2023 model that was wrong about half the time. Prather reports no learning outcome at all, and roughly half of his participants used the tools well. On guardrails, the evidence is weaker than commonly stated: in Bastani the tutor removed the harm but showed no gain over no AI, and in Bassner the hint-only tutor matched but did not beat both ChatGPT and control on learning. Neither study shows that tutor-style AI improves learning; they show it avoids a loss (Bastani) or improves motivation (Bassner).",
+  "alternative_explanations": "Bastani: students had no reason to learn during the assisted phase if copying the answer earned the practice grade; the harm may reflect incentives and an answer-giving interface more than AI as such. GPT Base's 49% error rate could also have misled students, though the authors test and largely reject this. The exam followed immediately, so the result may be lost practice time, not durable harm. Bassner: one 90-minute session on one hard topic may be too short for any condition to produce differential learning, so a null is expected; the ChatGPT arm may have learned as much because they still had to read and integrate code. Kazemitabaar: the design was itself a guardrail. Each AI-assisted authoring task was followed by a manual modification task on the generated code, the tool was unavailable for modification, and tasks were small and sequenced. The absence of harm may be credit to that structure, not to Codex. The benefit for high-prior learners is consistent with expertise-dependent effects (stronger learners use generated code as a worked example). Prather: the gap between strong and weak students existed before AI (the original 2018-era study found the same five difficulties); without a no-AI comparison group the study cannot show AI widened it, only that it did not close it and added new failure modes. Participants also knew they were observed and were thinking aloud.",
+  "verification_status": [
+    "Prather: sample, method, completion rate, timing, acceptance rates, correlations, limitations and all quotes CHECKED against the arXiv PDF text, which I opened and read. The '10 of 21' figure is my derivation from the paper's stated counts, consistent with its word 'half'.",
+    "Kazemitabaar: sample, design, training figures, immediate and retention post-test figures, limitations and all quotes CHECKED against the arXiv v2 PDF text, which I opened. The specific per-measure p-values for the high-prior subgroup are in Figure 10 and were NOT extracted.",
+    "Bastani: abstract figures, Table 1 coefficients, 17% wording, error rates, perception finding, limitations, competing-interest statement and correction CHECKED against the PNAS full text via Europe PMC (PMC12232635 and PMC12403119) and against the working-paper PDF. NOT checked: the SI Appendix, exact student count per arm, and whether the trial was pre-registered.",
+    "Bassner (TUM): title, authors, journal, volume and DOI CHECKED against Crossref. N = 275, three arms, 90-minute concurrency task and all findings CHECKED against the abstract only (OpenAlex copy of the publisher abstract). NOT checked: any statistic, per-arm n, exclusions, limitations, funding or conflict statements. The TUM blog post was read through a summarising tool, so its wording should be re-opened before quoting it directly."
+  ],
+  "relevance_to_essay": "Supports the 'weaker learning with AI' strand, with qualifications. It gives independent support for the Anthropic trial's core pattern: AI raises output while understanding does not rise with it, and learners do not notice (Prather's 'illusion of competence', Bastani's over-optimistic self-reports, Bassner's 'comfort trap'). It also cautions against overstating it: only one of the four studies found an actual loss, one found no loss with a slight non-significant gain, and none studied working engineers. For the training proposal, the useful point is that structure around the AI matters more than the AI itself. Says nothing about hiring.",
+  "implications_for_training_design": "1) Completion is not evidence of understanding. All four studies show high task success with AI alongside flat or unknown learning, so a training programme needs an unassisted check (Bastani's closed-book exam, Kazemitabaar's no-AI post-tests) or it will measure the tool. 2) Do not rely on self-report. Learners rated themselves well when they had not learned (Prather, Bastani) and preferred the less educational tool (Bassner). 3) Follow generated code with a manual task on that same code. Kazemitabaar's generate-then-modify structure is the one design here with a retention result that was not negative, and the authors suggest gating use of generated code behind 'a Parsons problem that is automatically produced from the AI-generated code' or a multiple-choice question on its concepts. That is close to Lee's small-challenge idea and to codebase treasure hunts. 4) Hint-first AI is a reasonable default but should be sold modestly: it avoided the harm (Bastani) and helped motivation (Bassner) without producing more learning than no AI. Bastani's tutor also depended on human-written solutions and common mistakes, which bears on whether AI-generated exercises can go unchecked. 5) Expect weaker juniors to need more scaffolding. Prather's strugglers accepted more suggestions (34.1% vs 24.5%) and Kazemitabaar's gains went to those with stronger prior knowledge. 6) On frequency: Kazemitabaar's programme was many short tasks across ten sessions with a one-week retention check, which is the only evidence here that resembles 'small and regular'. Nothing in these four tests frequency or spacing directly.",
+  "open_questions": "The TUM paper's effect sizes, per-arm numbers, exclusions and stated limitations (full text not obtained). Whether any of these effects last beyond a week: three of four have no delayed test. Whether guard-railed AI can improve learning over no AI, as opposed to merely not harming it. Whether findings from children, school maths and first-year students hold for employed junior engineers working in real codebases. Whether Bastani's result would replicate with current models and students who are now used to the tools. Whether Prather's 'widening gap' is caused by AI, given no comparison group.",
+  "uncertain": [
+    "author_credentials",
+    "sample_and_method",
+    "data_vintage",
+    "figure_provenance"
+  ]
+}
