@@ -1,0 +1,185 @@
+{
+  "name": "Questions about learners' code and AI-generated comprehension questions",
+  "citation": [
+    "Lehtinen, T., Seppälä, O., Korhonen, A. 'Automated Questions About Learners' Own Code Help to Detect Fragile Knowledge.' ITiCSE 2023, 8-12 July 2023, Turku, Finland, 7 pages. DOI 10.1145/3587102.3588787. arXiv:2306.16267 (v1, 28 June 2023). https://arxiv.org/abs/2306.16267",
+    "Lehtinen, T., Lukkarinen, A., Haaranen, L. 'Students Struggle to Explain Their Own Program Code.' ITiCSE 2021 (virtual), pp. 206-212. DOI 10.1145/3430665.3456322. arXiv:2104.06710 (v1, 14 April 2021). https://arxiv.org/abs/2104.06710",
+    "Lehtinen, T., Koutcheme, C., Hellas, A. 'Let's Ask AI About Their Programs: Exploring ChatGPT's Answers To Program Comprehension Questions.' ICSE-SEET '24, 14-20 April 2024, Lisbon, 12 pages. DOI 10.1145/3639474.3640058. arXiv:2404.11734 (v1, 17 April 2024). https://arxiv.org/abs/2404.11734",
+    "Lehtinen, T. 'Questions About Learners' Code: Extending Automated Assessment Towards Program Comprehension.' Doctoral thesis, Aalto University publication series DOCTORAL THESES 78/2024, ISBN 978-952-64-1768-4 (electronic). https://aaltodoc.aalto.fi/items/f3d7183b-fd7f-4ff7-b624-89af3c5aa118",
+    "Goodfellow, M., Booth, R., Fagan, A., Lambert, A. 'AutoMCQ - Automatically Generate Code Comprehension Questions using GenAI.' ITiCSE 2025 V. 2, 27 June-2 July 2025, Nijmegen, pp. 737-738 (2 pages). DOI 10.1145/3724389.3731266. arXiv:2505.16430 (v1, 22 May 2025). https://arxiv.org/abs/2505.16430",
+    "Goodfellow, M., Booth, R., Fagan, A., Lambert, A. 'Testing Code Comprehension using GenAI.' UKICER 2025, 4-5 September 2025, Edinburgh, 1 page. DOI 10.1145/3754508.3754532. https://strathprints.strath.ac.uk/94099/",
+    "Goodfellow, M., Lambert, A., Booth, R., Fagan, A. 'From Code to Questions: Leveraging Generative AI to Support Code Comprehension in Introductory Programming.' Human-Centric Intelligent Systems (Springer), received 28 November 2025, accepted 13 April 2026, published online 20 May 2026 (Crossref). DOI 10.1007/s44230-026-00150-9. Open copy: https://strathprints.strath.ac.uk/96355/"
+  ],
+  "source_tier": "All peer-reviewed, but of very different weight. Lehtinen 2021 and 2023: full ITiCSE conference papers. Lehtinen, Koutcheme and Hellas 2024: full ICSE-SEET conference paper. Lehtinen 2024: doctoral thesis (Aalto). Goodfellow 2025 (ITiCSE): a 2-page tool/poster paper. Goodfellow 2025 (UKICER): a 1-page abstract. Goodfellow 2026: journal article in Human-Centric Intelligent Systems, a Springer open-access journal; this is the only Strathclyde paper that contains accuracy figures.",
+  "access_status": "Fully read: Lehtinen 2023 (arXiv PDF text), Lehtinen 2021 (arXiv PDF text; results tables read as extracted text, so figure-only values were not all recovered), Lehtinen et al. 2024 (arXiv PDF text, all sections through conclusions), Goodfellow AutoMCQ 2025 (arXiv PDF), Goodfellow UKICER 2025 (Strathclyde repository PDF), Goodfellow 2026 (Strathclyde repository PDF, read through the limitations section and the start of the conclusion; the final page of future work and references was not read). Abstract only: Lehtinen's 2024 doctoral thesis (abstract taken from the Aalto repository's metadata API; the thesis PDF was not opened). Not opened: the Jask (Java) and JavaScript QLC studies, which are reported here only as Lehtinen 2023 summarises them.",
+  "author_credentials": "Lehtinen, Seppälä, Korhonen, Lukkarinen, Haaranen, Koutcheme, Hellas: computing-education researchers at Aalto University, Espoo, Finland. Lehtinen is the originator of QLCs and author of the open-source generators (qlcpy and others), so the group is evaluating its own approach; no commercial interest. One author of the 2023 paper was the course instructor (the paper says 'one of the second authors'). Goodfellow, Lambert, Booth, Fagan: Computer and Information Sciences, University of Strathclyde, Glasgow; they built AutoMCQ and taught the class it was tested in. Booth appears to have been a student intern (university student email on the ITiCSE paper; the work 'was funded by Research Interns @ Strathclyde') [uncertain]. No commercial interest stated; the tool is open source and depends on the OpenAI API.",
+  "exact_quotes": [
+    {
+      "source": "Lehtinen, Seppälä, Korhonen 2023",
+      "location": "Abstract",
+      "quote": "Students are able to produce correctly functioning program code even though they have a fragile understanding of how it actually works."
+    },
+    {
+      "source": "Lehtinen, Seppälä, Korhonen 2023",
+      "location": "Abstract",
+      "quote": "The task was the classic rainfall problem which was solved by 90% of the students. The QLCs generated from each passing submission were kept intentionally simple, yet 27% of the students failed in at least one of them."
+    },
+    {
+      "source": "Lehtinen, Seppälä, Korhonen 2023",
+      "location": "Section 4, Results",
+      "quote": "Out of the 291 students in the study 79 students (27%) failed at least one of the QLCs generated for their program."
+    },
+    {
+      "source": "Lehtinen, Seppälä, Korhonen 2023",
+      "location": "Section 5.1.1",
+      "quote": "It is surprising that the proportional number of students answering simple questions incorrectly remains the same also after completing their first programming course."
+    },
+    {
+      "source": "Lehtinen, Seppälä, Korhonen 2023",
+      "location": "Section 5.2, Threats to Validity",
+      "quote": "However, there are reasons other than poor understanding, such as carelessness which can make the student select an incorrect option."
+    },
+    {
+      "source": "Lehtinen, Seppälä, Korhonen 2023",
+      "location": "Section 5.3, Conclusion",
+      "quote": "The reasons why students struggle to interpret their own code are not known."
+    },
+    {
+      "source": "Lehtinen, Lukkarinen, Haaranen 2021",
+      "location": "Abstract",
+      "quote": "One third of the students struggled to explain their own program code. This estimates possible occurrences of fragile learning at the moment when a student seemingly succeeds in a program writing exercise."
+    },
+    {
+      "source": "Lehtinen, Lukkarinen, Haaranen 2021",
+      "location": "Abstract",
+      "quote": "Our results indicate that answering properly aligned QLCs correctly has stronger correlation with student success and retention than merely submitting a correct program."
+    },
+    {
+      "source": "Lehtinen, Lukkarinen, Haaranen 2021",
+      "location": "Section 3.1, Context",
+      "quote": "The intended audience for the course are people in the workforce aiming to expand their skills and enrolling is restricted to those currently not studying for a degree in a Finnish university."
+    },
+    {
+      "source": "Lehtinen, Lukkarinen, Haaranen 2021",
+      "location": "Section 6, Conclusion",
+      "quote": "We still lack knowledge whether QLCs, as employed in this research, can be used as instruments for measuring program comprehension, knowledge of terminology, or only careful answering"
+    },
+    {
+      "source": "Lehtinen, Koutcheme, Hellas 2024",
+      "location": "Abstract",
+      "quote": "Our results show that although the state-of-the-art LLMs can create programs and trace program execution when prompted, they easily succumb to similar errors that have previously been recorded for novice programmers."
+    },
+    {
+      "source": "Lehtinen, Koutcheme, Hellas 2024",
+      "location": "Section 6, Conclusions (answer to RQ1)",
+      "quote": "On average, GPT-3.5 had a success rate of 69%, while GPT-4 had an average success rate of 88%."
+    },
+    {
+      "source": "Lehtinen, Koutcheme, Hellas 2024",
+      "location": "Section 5.1",
+      "quote": "Neither of the two LLMs managed to answer all QLCs perfectly, even though they targeted programs that were generated by an LLM."
+    },
+    {
+      "source": "Lehtinen, Koutcheme, Hellas 2024",
+      "location": "Section 5.3",
+      "quote": "In our study, GPT-4 starts with an answer that becomes fixed and then tries to justify it no matter what."
+    },
+    {
+      "source": "Lehtinen 2024 (doctoral thesis)",
+      "location": "Abstract (Aalto repository record)",
+      "quote": "From the students, who create a correct program, as many as 20% may answer incorrectly about concepts that are critical to systematically reason about their program code. More than half of the students fail to mentally trace the execution of their program."
+    },
+    {
+      "source": "Lehtinen 2024 (doctoral thesis)",
+      "location": "Abstract (Aalto repository record)",
+      "quote": "Current artificial intelligence systems respond to QLCs better than the average novice. However, they also lapse into humanlike errors producing failed reasoning about the code they generated"
+    },
+    {
+      "source": "Goodfellow et al. 2025 (AutoMCQ, ITiCSE)",
+      "location": "Section 2",
+      "quote": "Unfortunately, we can't rely on GenAI generating correct or sensible questions every time."
+    },
+    {
+      "source": "Goodfellow et al. 2025 (AutoMCQ, ITiCSE)",
+      "location": "Section 2",
+      "quote": "Until GenAI models improve our code comprehension questions will only be used for formative assessment."
+    },
+    {
+      "source": "Goodfellow et al. 2026 (Human-Centric Intelligent Systems)",
+      "location": "Section 4.1, Preliminary Study",
+      "quote": "Due to the small number of questions generated, all questions were checked and only 1 question out of the generated 72 questions was incorrect."
+    },
+    {
+      "source": "Goodfellow et al. 2026 (Human-Centric Intelligent Systems)",
+      "location": "Section 4.2, Full-Scale Study",
+      "quote": "In total 4704 GenAI multiple choice questions were generated by 134 students at a total cost of $0.5. Students used the \"This question doesn't seem right?\" option 57 times—which equates to 1.2% of the total questions generated. Out of these responses only 1 was completely incorrect."
+    },
+    {
+      "source": "Goodfellow et al. 2026 (Human-Centric Intelligent Systems)",
+      "location": "Section 4.2, Full-Scale Study",
+      "quote": "This process suggested that most generated questions were correct, although incorrect questions were not always identified by students, as we expected. The full details and results of this analysis will be the topic of a future paper."
+    },
+    {
+      "source": "Goodfellow et al. 2026 (Human-Centric Intelligent Systems)",
+      "location": "Section 5.2, Limitations",
+      "quote": "Unfortunately, due to the large number of questions generated, it was difficult to check all of them."
+    },
+    {
+      "source": "Goodfellow et al. 2026 (Human-Centric Intelligent Systems)",
+      "location": "Section 4.2, Full-Scale Study",
+      "quote": "There was a minor increase, from the previous year, in the average marks for both class tests, but the increase was negligible."
+    }
+  ],
+  "key_claims": [
+    "Lehtinen, Seppälä, Korhonen (2023): students can submit a working program and still fail simple, automatically generated multiple-choice questions about that same program. On a second programming course (students had already passed a Python CS1), 27% failed at least one of two or three such questions about their own rainfall solution. The failure rate was about the same as earlier studies found in the first weeks of a first course, which the authors call surprising. Students who got the execution question (Q2) or the purpose question (Q3) wrong had lower median course points; the variable-naming question (Q1) showed no such relation.",
+    "Lehtinen, Lukkarinen, Haaranen (2021): in an open online introductory JavaScript course aimed at working adults, about one third of students could not correctly explain, in free text, the structure and execution of a small program they had just submitted. For the first exercise, answering the questions correctly was associated with later course points and retention more strongly than passing the functional tests alone. The association was not significant for the second exercise.",
+    "Lehtinen, Koutcheme, Hellas (2024): this paper tests LLMs as ANSWERERS of comprehension questions, not as generators. GPT-3.5 wrote 60 programs; the deterministic, template-based QLCpy library generated 399 questions about them; GPT-3.5 and GPT-4 then answered. Neither model answered everything correctly even though the code was LLM-written. GPT-4 beat GPT-3.5 on every question type. Errors resembled novice errors (bad tracing, misreading the question, a misconception about a built-in) plus some LLM-specific ones (miscounting line numbers, hallucinating a justification for a wrong answer).",
+    "Lehtinen (2024 thesis abstract): pulling the studies together, 'as many as 20%' of students who write a correct program may answer incorrectly on concepts critical to reasoning about it, and more than half fail to mentally trace their program's execution. Students who answer more QLCs wrong tinker more and do less well on the course. Current AI answers QLCs better than the average novice but still makes human-like reasoning errors about its own code.",
+    "Goodfellow et al. (2025 ITiCSE and UKICER papers): AutoMCQ uses GPT-4o mini to generate personalised multiple-choice comprehension questions from each student's CodeRunner submission. The 2025 papers describe the tool and report positive student feedback but give no accuracy figures. They state that correctness cannot be relied on, add an escape option ('This question doesn't seem right'), and restrict use to formative assessment.",
+    "Goodfellow et al. (2026 journal article): in a pilot, the authors checked all 72 generated questions and found 1 incorrect. In a full deployment, 4,704 questions were generated for 134 students; students flagged 57 (1.2%), and the authors judged only 1 of the flagged questions 'completely incorrect'. The authors do not claim a measured error rate for the full set: they did not check every question, and say incorrect questions 'were not always identified by students'. Class test averages rose 3% and 4% on the previous year, which the authors call negligible."
+  ],
+  "headline_figures": [
+    "Lehtinen 2023: 'Out of the 291 students in the study 79 students (27%) failed at least one of the QLCs generated for their program.' Spring 2021, Aalto, second programming course for non-CS engineering students. Each student got 2 or 3 multiple-choice questions and one attempt.",
+    "Lehtinen 2023, per-question success rates (Table 1): Q1 'Which of the following are variable names in the program?' 249 of 291 correct (86%). Q2 'From which line can program execution jump to line X?' (an except block) 207 of 243 correct (85%). Q3 'Which of the following best describes the purpose of line X?' 281 of 291 correct (the text says 96%, Section 5.1.1 says 'Only 5% of students failed Q3'; 281/291 = 96.6%, i.e. 3.4% failed).",
+    "Lehtinen 2023: 324 students consented (94% of those who started the course); 33 were excluded for not writing the program or not answering the QLCs, leaving 291 (90%). Of the 291, 13 had a final program that still failed at least one functional test, so 278 fully passed.",
+    "Lehtinen 2023, course points (Table 2, Mann-Whitney U, Bonferroni threshold p < .017): Q2 correct median 5366 vs incorrect 4227.5, n = 207 vs 36, p = .011, common-language effect size .63. Q3 correct median 5348 vs incorrect 3941, n = 281 vs 10, p = .006, CLES .76. Q1 correct 5272 vs incorrect 5603.5, n = 249 vs 42, p = .556 (no difference; the incorrect group's median was slightly higher).",
+    "Lehtinen 2021: 'One third of the students struggled to explain their own program code.' 125 consenting students of 146 enrolled (86%) in an online introductory JavaScript course, fall 2020. Exercise E1 (functions): 'approximately one third of the students failed to answer at least one of the three questions correctly'. Exercise E2 (loops): 'Little less than one third'. Exercise E3 (event-driven programming): 'Approximately half'. Group sizes used in the tests: E1, 27 passed tests but answered incorrectly vs 45 passed and answered correctly (27 of 72 = 37.5%, my arithmetic); E2, 20 vs 46 (20 of 66 = 30%, my arithmetic).",
+    "Lehtinen 2021, later success after E1: median share of later points 0.50 for those who passed tests but answered incorrectly vs 0.98 for those who answered correctly (Mann-Whitney U = 299, n = 27 and 45, P < .001). Retention: 0.33 vs 0.75 of later exercises attempted (P = .008). For E2 the differences were not significant (P = .483 and P = .514).",
+    "Lehtinen thesis 2024 (abstract): 'as many as 20%' of students with a correct program may answer incorrectly on critical concepts; 'More than half of the students fail to mentally trace the execution of their program.'",
+    "Prior studies as summarised in Lehtinen 2023 (not opened): Jask (Java, CS1) found 'above 80% success rates' on static questions and 'below 50%' on dynamic (execution) questions; the JavaScript study reported success rates 'from 33% up to 97%'.",
+    "Lehtinen, Koutcheme, Hellas 2024: 60 GPT-3.5-generated Python programs (10 per task, 6 tasks), 399 QLCs, 798 answers. Overall success: GPT-3.5 69%, GPT-4 88%. 'We identified 122 answers from GPT-3.5 that were incorrect and 47 from GPT-4 that were incorrect (61% less than GPT-3.5).'",
+    "Lehtinen, Koutcheme, Hellas 2024, by question type (Table 3, GPT-3.5 / GPT-4): ParameterNames 95% / 100%; VariableNames 73% / 98%; LoopEnd 40% / 72%; VariableDeclaration 63% / 93%; VariableRole 83% / 91%; LinePurpose 88% / 100% (only 16 questions); LoopCount 68% / 86%; VariableTrace 55% / 70%.",
+    "Lehtinen, Koutcheme, Hellas 2024, error types (Table 5): hallucinating a justification for a wrong answer, GPT-4 14 vs GPT-3.5 3; illogical execution steps, 31 (GPT-3.5) vs 10 (GPT-4); line number counted incorrectly, 30 vs 13. Inter-rater agreement on error coding was only moderate (Cohen's kappa 0.501 on 54 answers).",
+    "Goodfellow 2026, pilot: 6 volunteers, 3 programming questions each, 4 generated questions per programming question = 72 questions; 'only 1 question out of the generated 72 questions was incorrect' (1.4%, my arithmetic). Model: GPT-4o mini, default settings.",
+    "Goodfellow 2026, full study: cohort of 239 in an introductory Java class; 4,704 questions generated by 134 students; flagged by students 57 times (1.2%); 'Out of these responses only 1 was completely incorrect.' Total cost $0.50; about $0.0002 per 4 questions.",
+    "Goodfellow 2026, survey (n = 16): 13/16 (81%) agreed the questions helped them understand their code; 15/16 (94%) thought the questions adequately tested understanding; 14/16 (88%) agreed questions were mostly coherent; all said questions were relevant. The paper also prints '11/16 or 63%' for identifying misunderstandings; 11/16 is 69%, so one of the two numbers is a typo.",
+    "Goodfellow 2026: class test averages rose 3% (first test) and 4% (second test) on the previous year, described as 'negligible'. Engagement with the AI-question quizzes was 51-63% of the class for the first three and 36-41% for the last three."
+  ],
+  "sample_and_method": "Lehtinen 2023: observational, single course, Spring 2021 at Aalto. 291 non-CS engineering students on a 12-week second programming course (Python CS1 as prerequisite), taught online during COVID. Week-1 recap exercise: a rainfall-problem variant, auto-graded with four unit tests and up to 10 submissions. After submitting, students answered 2 or 3 template-generated multiple-choice QLCs (static program analysis, qlcpy) once, worth 5 of 100 exercise points. Correct and incorrect answerers were compared on total course points with Mann-Whitney U tests and Bonferroni correction. Students were not interviewed. Lehtinen 2021: observational, one online open JavaScript course for working adults, fall 2020, 125 consenting students. Manually prepared open-text QLCs at three exercises; answers coded by inductive content analysis (86% inter-rater agreement on an 18% sample). Lehtinen et al. 2024: a computational experiment with no human participants. Six CodeCheck Python exercises; GPT-3.5 prompted until 10 accepted, distinct, test-passing solutions per exercise; QLCpy generated one question of each supported type; gpt-3.5-turbo and gpt-4 answered with default parameters and an 'answer and explain' prompt; two researchers marked correctness and coded the decisive error in each wrong answer. Goodfellow 2026: tool deployment with surveys, no control group. Pilot with 6 second and third-year volunteers (all 72 questions author-checked). Full deployment in an introductory Java class of 239; students had to opt in because code was sent to OpenAI; 134 generated questions over five weekly practicals; 16 completed the end survey. Accuracy in the full study rests on student flags, a manual look at frequently-missed questions, and an unreported cross-check 'via other LLMs'.",
+  "evidence_offered": "Lehtinen 2023: counts of correct and incorrect answers per question (Table 1), distractor-level breakdown, and non-parametric comparisons of course points (Table 2, Figure 2). Lehtinen 2021: coded free-text answers and Mann-Whitney comparisons of later points and retention across three groups (failed tests; passed tests but answered wrongly; passed and answered correctly). Lehtinen et al. 2024: per-type and per-task success rates for two models and a qualitative coding of 169 wrong answers into ten error types, with worked examples. Data and code are stated to be available. Goodfellow 2026: author inspection of 72 pilot questions, the count of student flags in deployment, Likert survey results, a small thematic analysis, and year-on-year class test averages. The thesis abstract summarises the underlying papers; its 20% and 'more than half' figures were not traced to a specific table.",
+  "data_vintage": "Lehtinen 2023: data collected Spring 2021 (before ChatGPT), published July 2023; one arXiv version (v1). Lehtinen 2021: data from fall 2020, published 2021; one arXiv version. Lehtinen et al. 2024: models were gpt-3.5-turbo and gpt-4 while GPT-4 was 'in limited beta', which places the runs in 2023 [uncertain]; published April 2024; one arXiv version. Thesis: 2024. Goodfellow: ITiCSE paper June 2025 (arXiv v1, 22 May 2025), UKICER abstract September 2025, journal article accepted 13 April 2026 and online 20 May 2026. The deployment semester is not stated; it predates the May 2025 preprint, which already mentions the class-test increase, so most likely the 2024-25 academic year [uncertain]. Model was GPT-4o mini.",
+  "figure_provenance": "The '27%' is from Lehtinen 2023 (abstract and Section 4): 79 of 291. The abstract's 'solved by 90% of the students' is loose. The 90% is 291 of 324 consenting students who wrote the program AND answered the questions; 13 of those 291 still failed a functional test. So '27% of students who solved it' is close but not exact: the paper does not report the rate among the 278 who passed every test. Section 5.1.1 says 'Only 5% of students failed Q3' while Table 1 gives 281 of 291 correct (3.4% failed). The 'one third of 125 students' figure that Goodfellow et al. repeat comes from Lehtinen 2021, where 125 is the number who consented, not the number answering each question, and 'one third' is the authors' rounding (E1 works out at 27 of 72 who passed the tests). That 2021 figure is for open-text explanations in a course for working adults, not multiple choice. The '69%' and '88%' in Lehtinen et al. 2024 are accuracy of LLM ANSWERS to template-generated questions; they are not the accuracy of LLM-generated questions, and the research note's framing ('how accurate LLM-generated questions and answers were') merges two different things. That paper has small internal inconsistencies: Section 4.1 says 47 GPT-4 errors, Section 4.2 says 49 while giving the same total of 169, and the error-code table sums to 121 and 46. The only question-accuracy figures are in Goodfellow 2026, not in either 2025 paper. '1 of 72' is a full author check on the pilot. '1 completely incorrect' in the full study is 1 of the 57 FLAGGED questions, not 1 of 4,704; quoting it as an error rate of 1 in 4,704 would overstate the source. Pilot size differs between versions: the UKICER abstract says 'eight former students', the journal article says 6 volunteers. The journal article also says both '22 students participated, with 16 completing the survey' and 'Despite 134 participants beginning the survey, only 16 completed it'. The thesis's 'as many as 20%' is lower than the 27% and one-third figures because it refers to 'concepts that are critical', a narrower measure; the abstract does not say which study it comes from.",
+  "population_and_transfer": "Mostly university novices. Lehtinen 2023: first-year (some second or third-year) non-CS engineering students who had passed one Python course. Goodfellow: first-year Java students with no required prior experience. The exception is Lehtinen 2021, whose course was for 'people in the workforce aiming to expand their skills', some with 'years of industry experience'; it is the closest to adult learners in work, though still an introductory course. Lehtinen et al. 2024 studied models, not people. Transfer to junior engineers is by analogy: the programs were tiny (a rainfall function, a countdown loop) and the questions elementary. The transferable idea is the mechanism, that passing tests does not show the author understands the code, which is likely to matter more when the code came from an AI tool. No study here tested that on professional code.",
+  "outcome_measured": "Immediate comprehension-question score on the learner's own just-submitted code (Lehtinen 2021, 2023), and its association with later course points and retention within the same course. LLM answer accuracy on comprehension questions (Lehtinen et al. 2024). Question correctness, student flags, student perceptions, cost and year-on-year class test averages (Goodfellow 2026). None measures delayed retention, whether answering the questions causes learning, or on-the-job performance.",
+  "limitations_stated": [
+    "Lehtinen 2023: 'As students volunteered for the study there is a risk of selection bias.' '33 students did not complete the studied task. This likely excluded lower achieving students'. 'there are reasons other than poor understanding, such as carelessness which can make the student select an incorrect option.' 'we did not interview the students to discover why they answered as they did.' 'the population who answered incorrectly to Q3 is small and recommend validation using a larger population.' Some students may have had outside help answering, and plagiarised or copied code is a possible cause of wrong answers.",
+    "Lehtinen 2021: E3 'had significant self-selection bias'. 'This early research aims to report potential and correlations of QLCs and not to validate instruments or causalities.' Results depend on question wording, alignment with teaching and exercise design. Open-text answers also test the ability to describe concepts, not only comprehension.",
+    "Lehtinen et al. 2024: two models, six problems, one language (Python); 'it is possible that the performance of other (and upcoming) LLMs would differ from our results.' One generic prompt, not optimised: 'the overall average model performance would likely have been somewhat better had we resorted to building programming problems and QLC-specific prompts.' Default sampling parameters. Only the first decisive error in each wrong answer was coded, and explanations attached to correct answers were not checked.",
+    "Goodfellow 2026: 'Due to the nature of GenAI, not all generated questions will be useful or internally coherent. Some questions are occasionally nonsensical or relate to unimportant aspects of the problem'. 'only 16 completed it. This means that our data is limited and that our results are possibly overly positive due to selection bias.' Reliance on the flag option 'relies on students being able to understand and identify incorrect questions. As shown in our results only 1 student out of 57 correctly identified an incorrect question.' 'It is also likely that students did not identify incorrect questions and believed some were correct, doubting their own understanding.' Not tested on larger code segments, where the authors expect more hallucinations.",
+    "Goodfellow 2025 (ITiCSE): 'In a survey, the majority of students claimed it helped them better comprehend their code. However, a larger study would be needed to formally prove this.'"
+  ],
+  "counter_evidence": "Within the Lehtinen studies the link between question failure and later performance is partial. In 2023 the variable-name question (the most-failed one, 14% wrong) had no relation to course points, and the significant Q3 result rests on 10 students. In 2021 the association held for one exercise and not the next. Most students did answer correctly: 73% got every question right in 2023, and success on the individual questions was 85-97%. So the finding is 'a sizeable minority', not 'most'. Wrong answers were often terminology slips (calling print or sum a variable) that need not mean the student cannot reason about execution; the 2023 authors themselves say execution and purpose errors mattered more than terminology. On the AI side, Lehtinen et al. 2024 cuts against using an LLM unchecked as the answer key: GPT-4 was wrong on 12% of simple questions about short LLM-written programs and tended to defend wrong answers. Against that, those are 2023-era models with a deliberately plain prompt, and Goodfellow's later GPT-4o mini deployment found very few wrong questions among those checked. Goodfellow's own evidence of benefit is weak: no control group, a 'negligible' rise in test averages, and a 16-person self-selected survey.",
+  "alternative_explanations": "For students failing questions on their own code: carelessness on a low-stakes question worth 5 points with one attempt; unfamiliar terminology; ambiguous wording (33 of 36 wrong Q2 answers picked the try line, 24 of them the line directly before the correct one, which may be a defensible mental model of where the jump starts); copied or shared code; or, in 2021, difficulty writing an explanation in prose. The correlation with course points may reflect general diligence or prior experience, not comprehension specifically: in the 2021 study, answering correctly correlated with prior programming courses (r = .43) and prior hours (r = .37). The 27% is also a function of how many questions were asked; with three questions each answered correctly about 85-97% of the time, a quarter failing at least one is partly arithmetic. For the AI results: GPT errors on line-number questions reflect how models handle numbered text, not comprehension. Goodfellow's low flag rate may show that students cannot tell when a question is wrong, not that questions are right; the authors say as much. Their test-score rise could be cohort variation.",
+  "verification_status": [
+    "Lehtinen 2023 (arXiv 2306.16267): sample, task, question wording, Table 1 and Table 2 values, the 27% and 90% figures, threats to validity and all quotes CHECKED against the PDF text, which I opened and read in full. The remark that 278 fully passed is my subtraction (291 minus 13).",
+    "Lehtinen 2021 (arXiv 2104.06710): abstract, course context, sample (146 enrolled, 125 consenting), 'one third' wording, group sizes and test statistics, validity section and conclusion CHECKED against the PDF text. Table 1 frequencies were not cleanly recoverable from the extracted text, so the 37.5% and 30% are my arithmetic from the n values in the significance tests, not figures the paper prints.",
+    "Lehtinen, Koutcheme, Hellas 2024 (arXiv 2404.11734): method, Table 3 success rates, Table 5 error counts, kappa, limitations and all quotes CHECKED against the PDF text. The 47 vs 49 discrepancy is in the source. That this paper measures LLM answers and not LLM-generated questions is CHECKED.",
+    "Lehtinen 2024 thesis: title, series number, ISBN and abstract wording CHECKED against the Aalto repository metadata record. The thesis body was NOT opened, so the source study for '20%' and 'more than half' is NOT verified.",
+    "Goodfellow 2025 AutoMCQ (arXiv 2505.16430) and UKICER 2025 abstract: both PDFs opened and read in full. CHECKED that neither contains an accuracy figure.",
+    "Goodfellow 2026 journal article: 72-question pilot check, 4,704 / 134 / 57 / 1.2% / 1 figures, survey numbers, cost, class-test changes and limitations CHECKED against the Strathclyde repository PDF (the accepted version; the Springer page itself was blocked, and title, authors and online date were confirmed through Crossref). The '11/16 or 63%' inconsistency is in the source.",
+    "NOT checked against a primary source: the Jask and JavaScript QLC success rates (taken from Lehtinen 2023's related-work section), and the deployment semester of AutoMCQ."
+  ],
+  "relevance_to_essay": "Bears on 'weaker learning with AI' and on the training response; says nothing about hiring. It supplies pre-AI baseline evidence that working code is a poor proxy for understanding: about a quarter to a third of learners failed simple questions about code they had just submitted, in data from 2020 and 2021, before ChatGPT. That supports the argument that AI-assisted output will hide even more, but the studies do not show it, since none compared AI-assisted with unassisted code. It also gives the nearest thing to a tested precedent for Lee's small-challenge idea: short questions generated from a person's own code, delivered right after they finish.",
+  "implications_for_training_design": "1) Format: two to four short questions about code the person has just written or merged is a workable unit. It was run at scale in both Aalto and Strathclyde courses, takes minutes, and surfaced gaps that passing tests did not. 2) Question type matters. Execution and purpose questions ('from which line can execution reach this handler?', 'what is this line for?') tracked later performance; naming and terminology questions did not. Tracing questions are the hardest and the most revealing. For a team, that points to questions about control flow, failure paths and intent, not vocabulary. 3) Using AI to generate the exercises looks feasible and cheap (GPT-4o mini, $0.50 for 4,704 questions), and the checked sample was almost all correct (71 of 72), but it has only been validated on small beginner Java programs. The authors expect more hallucination on larger code, which is the case that matters for a real codebase. 4) Do not let the model be the unchecked answer key, and do not rely on learners to spot bad questions: students flagged 57 questions and were right once, and Lehtinen et al. show a model will defend a wrong answer with a plausible explanation. A reviewer, a second-model check or a deterministic generator (QLCpy-style templates have known-correct answers by construction) is needed. 5) Keep it formative and low-stakes, as both groups do. Goodfellow notes students 'bristle' at code interviews and treat wrong answers as embarrassment; private, ungraded questions avoid that. A wrong or debatable question can be turned into a discussion. 6) Frequency: both deployments were weekly or per-exercise, embedded in the normal work, not a separate course. Engagement in the Strathclyde class fell over the term (from 51-63% to 36-41%), a warning that voluntary challenges decay. 7) None of this shows that answering the questions improves skill. The evidence is that the questions detect fragile understanding; whether they repair it is untested.",
+  "open_questions": "Whether answering questions about your own code produces learning, as opposed to detecting its absence (no controlled study found here). The true error rate of LLM-generated questions at scale: Goodfellow's full analysis is deferred to 'a future paper'. How LLM-generated questions perform on larger, real-world or AI-written code. Whether people fail more questions about AI-generated code they accepted than about code they wrote; these studies predate or do not isolate AI assistance. Which underlying study the thesis's 20% and 'more than half' figures come from. Whether any of this holds for employed junior engineers. How current models would score on the 2024 QLC answering test.",
+  "uncertain": ["author_credentials", "data_vintage"]
+}

@@ -1,0 +1,218 @@
+{
+  "name": "METR February 2026 experiment design update",
+  "citation": "Joel Becker, Nate Rush, Tom Cunningham, David Rein and Khalid Mahamud, \"We are Changing our Developer Productivity Experiment Design\", METR blog, 24 February 2026. https://metr.org/blog/2026-02-24-uplift-update/ . Companion data and code: https://github.com/METR/Measuring-Late-2025-AI-on-OSS-Devs (README, regression.py, data.csv; last commit 24 February 2026).",
+  "source_tier": "Company research (non-profit research organisation's own blog post, not peer reviewed), with a public dataset and regression script. It is an interim update on an abandoned design, not a paper.",
+  "access_status": "Fully read. The whole post was downloaded and read on 12 October 2026 (about 1,400 words of body text; it has no footnotes or appendix). The GitHub README and regression.py were also read in full, and data.csv was downloaded and tabulated.",
+  "author_credentials": "All five authors are METR staff (each links to a metr.org/team page). METR describes itself on the page as 'a research nonprofit that scientifically measures whether and when AI systems might threaten catastrophic harm to society'. Becker, Rush and Rein are three of the four authors of the 2025 trial (arXiv 2507.09089). Individual disciplines are not stated in the post. No commercial interest in AI coding tools is declared or apparent in the post; METR's stated interest is that developer productivity is 'an important input to AI R&D acceleration'. METR's funding sources were not checked for this item.",
+  "exact_quotes": [
+    {
+      "location": "Intro, para 1",
+      "quote": "METR previously published a paper which found the use of AI tools caused a 20% slowdown in completing tasks among experienced open-source developers, using data from February to June 2025."
+    },
+    {
+      "location": "Intro, para 2",
+      "quote": "To understand how AI is impacting developer productivity over time, we started a new experiment in August 2025 with a larger pool of developers using the latest AI tools."
+    },
+    {
+      "location": "Intro, para 3",
+      "quote": "Unfortunately, given participant feedback and surveys, we believe that the data from our new experiment gives us an unreliable signal of the current productivity effect of AI tools. The primary reason is that we have observed a significant increase in developers choosing not to participate in the study because they do not wish to work without AI, which likely biases downwards our estimate of AI-assisted speedup. We additionally believe there have been selection effects due to a lower pay rate (we reduced the pay from $150/hr to $50/hr), and that our measurements of time-spent on each task are unreliable for the fraction of developers who use multiple AI agents concurrently."
+    },
+    {
+      "location": "Intro, para 4",
+      "quote": "Based on conversations with study participants, we believe it is likely that developers are more sped up from AI tools now — in early 2026 — compared to our estimates from early 2025. However, because of the selection effects in our experiment, our data is only very weak evidence for the size of this increase."
+    },
+    {
+      "location": "Intro, para 5",
+      "quote": "Our raw results show some evidence for speedup. Our early 2025 study found the use of AI causes tasks to take 19% longer, with a confidence interval between +2% and +39%. For the subset of the original developers who participated in the later study, we now estimate a speedup of -18% with a confidence interval between -38% and +9%. Among newly-recruited developers the estimated speedup is -4%, with a confidence interval between -15% and +9%."
+    },
+    {
+      "location": "Intro, para 6",
+      "quote": "However the true speedup could be much higher among the developers and tasks which are selected out of the experiment. Some developers self-report very high speedups, though as we documented in our earlier study those estimates can be quite unreliable."
+    },
+    {
+      "location": "Intro, para 7",
+      "quote": "Due to the severity of these selection effects, we are working on changes to the design of our study."
+    },
+    {
+      "location": "Section 'Wider adoption of AI has made it more difficult to measure task-level productivity', para 1",
+      "quote": "Our second study, starting in August, consisted of 10 developers from the original study, plus a new set of 47 developers recruited from a more diverse set of open-source projects. The participants were paid $50/hour for their participation."
+    },
+    {
+      "location": "Same section, para 2",
+      "quote": "As in the initial study, developers were asked to pre-specify each task that they intended to work on, and then submit the task-description for randomization. Each task was assigned to an \"AI allowed\" or \"AI disallowed\" condition. The developers would record the amount of time it took to complete the task, and we could thus compare the average time required to complete a typical task with and without AI."
+    },
+    {
+      "location": "Same section, para 3",
+      "quote": "Throughout 2025 there was an increase in the use of agentic tools among open-source developers, such as Claude Code and Codex."
+    },
+    {
+      "location": "Same section, first bullet",
+      "quote": "Recruitment and retention of developers has become more difficult. An increased share of developers say they would not want to do 50% of their work without AI, even though our study pays them $50/hour to work on tasks of their own choosing. Our study is thus systematically missing developers who have the most optimistic expectations about AI's value."
+    },
+    {
+      "location": "Same section, second bullet",
+      "quote": "Developers have become more selective in which tasks they submit. When surveyed, 30% to 50% of developers told us that they were choosing not to submit some tasks because they did not want to do them without AI. This implies we are systematically missing tasks which have high expected uplift from AI."
+    },
+    {
+      "location": "Same section, para after bullets",
+      "quote": "Together, these effects make it likely that our estimate reported above is a lower-bound on the true productivity effects of AI on these developers. The selection effects seem to affect a minority share of developers and of tasks, which limits the degree of bias. However we are likely missing data on the most active adopters of AI, who may be of most interest. As AI capabilities continue to increase and developers' expectations grow as well, these effects will only get more dramatic, further limiting the validity of this study design."
+    },
+    {
+      "location": "Same section, pay paragraph",
+      "quote": "Based on our interviews and surveys we believe the increase in selection is primarily due to higher expectation of AI-driven uplift by our developers. However the second study also had a lower pay rate, $50/hour instead of $150/hour in the original study, and this also likely contributed to the higher selection."
+    },
+    {
+      "location": "Same section, 'other problems' lead-in",
+      "quote": "We also noticed some other problems, though we judged the magnitude of these to be less severe:"
+    },
+    {
+      "location": "Other problems, bullet 1",
+      "quote": "Some developers told us the types of tasks they attempted were different with agentic AI, leaning on the strengths of AI. This has two effects (a) the task-selection will be different between those in our study and those outside it; (b) the time-differences within the study may not represent value-differences, due to the substitution in task-type."
+    },
+    {
+      "location": "Other problems, bullet 2",
+      "quote": "Some developers told us the quality of the final work, for a given task, was different between AI-allowed and AI-disallowed conditions, e.g. differences in subjective code quality, or the amount of documentation or tests they chose to create."
+    },
+    {
+      "location": "Other problems, bullet 3",
+      "quote": "Some developers were less likely to complete tasks that they submitted if they were assigned to the AI-disallowed condition. One developer did not complete any of the tasks that were assigned to the AI-disallowed condition."
+    },
+    {
+      "location": "Other problems, bullet 4",
+      "quote": "Some developers reported it was challenging to report time-spent in completing tasks when they used agentic tools, because they would often work an unrelated task while waiting for the agent to complete its work."
+    },
+    {
+      "location": "Para after other problems",
+      "quote": "Altogether, these issues make it challenging to interpret our central estimate, and we believe it is likely a bad proxy for the real productivity impact of AI tools on these developers."
+    },
+    {
+      "location": "Section 'Selected developer quotes', quote 1",
+      "quote": "\"I'm torn. I'd like to help provide updated data on this question but also I really like using AI!\" — a developer from the original study early-2025 when asked to participate in the late-2025 study."
+    },
+    {
+      "location": "Selected developer quotes, quote 2",
+      "quote": "\"I found I am actually heavily biased sampling the issues … I avoid issues like AI can finish things in just 2 hours, but I have to spend 20 hours. I will feel so painful if the task is decided as AI-disallowed.\" — a developer from the new study noting selection effects when choosing what tasks to include in the study."
+    },
+    {
+      "location": "Selected developer quotes, quote 3",
+      "quote": "\"my head's going to explode if I try to do too much the old fashioned way because it's like trying to get across the city walking when all of a sudden I was more used to taking an Uber.\" — a developer from the new study noting selection effects when choosing what tasks to include in the study."
+    },
+    {
+      "location": "Section 'Other means of measuring productivity', bullet 1",
+      "quote": "More intensive experiments. The selection issues would be alleviated if we had higher compliance, which could be achieved if we run shorter intense experiments, and possibly pay higher rates."
+    },
+    {
+      "location": "Other means, bullet 2",
+      "quote": "Observational data. There are many rich data sources on AI use in software development – from aggregate statistics (e.g. approximately 4% of GitHub commits are authored by Claude Code) to fine-grained transcripts (e.g. Sarkar (2025)). We intend to continue observation of our pool of open-source developers to understand how AI is used."
+    },
+    {
+      "location": "Other means, bullet 3",
+      "quote": "Questionnaires. Despite the difficulty of interpreting self-reported productivity counterfactuals, and thus their potential biases, we are optimistic that careful choice of survey questions, along with time-use studies, could produce useful signals."
+    },
+    {
+      "location": "Other means, bullet 4",
+      "quote": "Fixed-task experiments. Our original study was novel in letting developers choose their own tasks, before randomization was applied. We could revert to a simpler design in which developers are given a fixed task to complete, either with or without AI assistance."
+    },
+    {
+      "location": "Other means, bullet 5",
+      "quote": "Evaluations. METR is continuing to build task evals, to measure the ability of agents to autonomously complete tasks, which has a clear relevance to productivity effects of agent adoption."
+    },
+    {
+      "location": "Other means, bullet 6",
+      "quote": "Developer-level experiments. An alternative design is to randomize at the developer level instead of the task level, i.e. each participant either uses AI for all their tasks or for none. This alleviates some of the task-level selection problems, however it makes the developer-level selection problems worse, and has lower power in detecting productivity effects."
+    },
+    {
+      "location": "Other means, closing line",
+      "quote": "As model capabilities continue to increase, we expect to continue to need to redesign some portions of our capability and measurement techniques."
+    },
+    {
+      "location": "Section 'Details of the productivity study'",
+      "quote": "We paid developers $50/hour to work on their existing open-source projects, randomizing issues into working with AI-allowed or AI-disallowed. Developers were experienced open-source contributors with median 10 years experience. We have data from 57 developers, across 143 repos, and 800+ tasks. 10 of these developers are from the original study, and the remaining developers are new and recruited from a more diverse set of repositories—including smaller, more greenfield, and less mature repositories."
+    },
+    {
+      "location": "GitHub README, METR/Measuring-Late-2025-AI-on-OSS-Devs",
+      "quote": "Due to changes in expectations of AI usefulness, we believe these new results are subject to increased selection that renders the results hard to interpret. Please interpret these results with a major grain of salt, due to this increased selection, and see the blog post for further detail."
+    },
+    {
+      "location": "GitHub regression.py, run_regression",
+      "quote": "regression_formula = \"log_total_implementation_time ~ ai_treatment + log_predicted_time_no_ai\" ... estimand = np.exp(beta) - 1 (where ai_treatment = 1 for 'AI-allowed'; HC3 standard errors; 95% interval)"
+    },
+    {
+      "location": "Later METR post, Joel Becker, 'Measuring the Self-Reported Impact of Early-2026 AI on Technical Worker Productivity', 11 May 2026, footnote 4",
+      "quote": "In fact, RCTs might become increasingly expensive, as the extra effort required to complete tasks without AI increases over time."
+    },
+    {
+      "location": "Later METR note, Thomas Kwa, 'Because 8 ≈ e², Anthropic's researcher uplift is plausibly >2x', 8 July 2026",
+      "quote": "METR found that self-reported uplift among survey participants, which averaged over a wide range of engineers and researchers, was around 2x, and uplift was large enough that developer preferences to use AI precluded conducting an RCT to measure it."
+    }
+  ],
+  "key_claims": [
+    "The follow-up experiment (started August 2025) gives 'an unreliable signal of the current productivity effect of AI tools'. METR is changing the design.",
+    "Primary stated reason: 'a significant increase in developers choosing not to participate in the study because they do not wish to work without AI', which METR says likely biases the estimated speedup downwards.",
+    "Two named selection channels. (1) Recruitment and retention: 'An increased share of developers say they would not want to do 50% of their work without AI' (50% being the share of tasks randomised to no-AI), so the study misses developers most optimistic about AI. (2) Task selection: 'When surveyed, 30% to 50% of developers told us that they were choosing not to submit some tasks because they did not want to do them without AI', so the study misses tasks with high expected uplift.",
+    "The 30% to 50% figure describes developers who were IN the study and held back SOME tasks. It is not a count of developers who refused to take part. METR gives no number, share or rate for developers who declined or dropped out; it says only 'a significant increase' and 'an increased share'.",
+    "METR judges the reported estimate is likely 'a lower-bound on the true productivity effects of AI on these developers', and also says the selection 'seem[s] to affect a minority share of developers and of tasks, which limits the degree of bias'.",
+    "METR believes, 'based on conversations with study participants', that developers are 'likely' more sped up in early 2026 than in early 2025, but says its data is 'only very weak evidence for the size of this increase'.",
+    "The pay cut from $150/hour to $50/hour 'also likely contributed to the higher selection'. METR's judgement, from interviews and surveys, is that higher expected uplift is the primary cause. The post offers no quantitative split between the two.",
+    "Four further problems, judged 'less severe': task types shifted toward AI's strengths; output quality differed between arms (code quality, documentation, tests); some developers were less likely to finish AI-disallowed tasks (one finished none of them); time reporting is hard with agents because developers work on other things while the agent runs.",
+    "Six lines of future work are listed: more intensive (shorter, possibly better paid) experiments; observational data; questionnaires with time-use studies; fixed-task experiments; evaluations (task evals of autonomous agents); developer-level randomisation. None is announced as the chosen new design.",
+    "METR expects the problem to worsen: 'As AI capabilities continue to increase and developers' expectations grow as well, these effects will only get more dramatic, further limiting the validity of this study design.'"
+  ],
+  "headline_figures": [
+    "Study size: 'data from 57 developers, across 143 repos, and 800+ tasks'. 10 developers from the original study plus 47 newly recruited. Median 10 years' experience.",
+    "Dates: 'started a new experiment in August 2025'. No end date is given in the post. The post is dated 24 February 2026. (From the public data.csv, my own tabulation: issue randomisation timestamps run from 12 August 2025 to 23 February 2026.)",
+    "Pay: $50/hour, down from $150/hour in the original study.",
+    "Task withholding: 'When surveyed, 30% to 50% of developers told us that they were choosing not to submit some tasks because they did not want to do them without AI.' A range, with no explanation of why it is a range, no survey n and no question wording.",
+    "Returning developers (n=10): 'we now estimate a speedup of -18% with a confidence interval between -38% and +9%'. Negative means tasks took LESS time with AI allowed. Interval crosses zero.",
+    "Newly recruited developers (n=47): 'the estimated speedup is -4%, with a confidence interval between -15% and +9%'. Interval crosses zero.",
+    "Early-2025 comparison as restated here: 'the use of AI causes tasks to take 19% longer, with a confidence interval between +2% and +39%'. The post's first sentence rounds the same result to 'a 20% slowdown'.",
+    "Sign convention, settled from METR's own material: the figure is the percentage change in completion time when AI is allowed. The post uses +19% for 'take 19% longer', so -18% is 18% less time, i.e. faster with AI. The published regression.py confirms it: it regresses log(total implementation time) on an AI-allowed dummy and reports exp(beta) - 1 as the 'speedup', with a 95% interval. METR's label 'a speedup of -18%' is what causes the confusion, since a negative speedup reads like a slowdown.",
+    "No pooled estimate for all 57 developers is given in the post.",
+    "Aggregate statistic cited in passing: 'approximately 4% of GitHub commits are authored by Claude Code' (linked to a SemiAnalysis newsletter, not METR's own measurement).",
+    "From the public dataset, my own tabulation and not stated by METR: 1,134 issue rows, 57 developer IDs, 10 panel developers; 611 AI-allowed and 523 AI-disallowed. Completed share: 460 of 611 AI-allowed (75%) versus 368 of 523 AI-disallowed (70%). Among the 10 returning developers: 71 of 87 AI-allowed complete (82%) versus 66 of 102 AI-disallowed (65%). Re-running the README's regression on complete issues gives point estimates of -18.1% (returning, 137 issues), -3.6% (new, 690 issues) and -5.8% (all 57 developers, 827 issues), which matches the post's -18% and -4%."
+  ],
+  "sample_and_method": "Randomised controlled trial at the task level, same method as the early-2025 study. 57 experienced open-source developers (10 returning from the 2025 study, 47 newly recruited from 'a more diverse set of repositories—including smaller, more greenfield, and less mature repositories'), median 10 years' experience, working on their own existing projects across 143 repos, 800+ tasks. Developers pre-specified each task and submitted it for randomisation to 'AI allowed' or 'AI disallowed', then self-recorded time to completion. Paid $50/hour. Started August 2025; no end date given (public data runs to 23 February 2026). Alongside the trial METR ran surveys and interviews with participants, which are the basis for the 30% to 50% figure and the quotes; the post gives no sample size, response rate, dates or question wording for those surveys.",
+  "evidence_offered": "Three kinds. (1) Regression estimates from the trial data, with 95% intervals, backed by a public dataset and script that reproduce the point estimates. (2) A participant survey, reported only as a '30% to 50%' range with no n or wording. (3) Interviews and 'conversations with study participants', represented by three selected quotes. The central claims about why the design failed (developers declining to take part, task withholding, expectation of uplift as the main driver over pay) rest on (2) and (3) and on METR's judgement, not on a measured quantity. The claim that developers are 'likely' more sped up than in early 2025 is explicitly based on conversations, not on the estimates.",
+  "data_vintage": "Published 24 February 2026. Data collection began August 2025; the public dataset's timestamps run 12 August 2025 to 23 February 2026. Tools in use were late-2025 and early-2026 agentic tools ('such as Claude Code and Codex'). Blog post only, no paper or arXiv version, no revision note on the page as read on 12 October 2026. The early-2025 comparison figures come from arXiv 2507.09089 (data February to June 2025).",
+  "figure_provenance": "All trial figures (57 developers, 10 + 47, 143 repos, 800+ tasks, $50 and $150, -18% [-38%, +9%], -4% [-15%, +9%], 30% to 50%) originate in this post and nowhere earlier. The -18% and -4% point estimates are reproducible from METR's public data.csv using the README's log-linear regression (I reproduced -18.1% and -3.6%; intervals not recomputed). The 30% to 50% figure has no underlying data published. Conflicting versions in circulation: (a) the sign. Secondary write-ups split between reading -18% as an 18% speed-up and reading it as no speed-up or a slowdown; METR's text and code make it 18% less time with AI, with an interval that includes zero. (b) '19%' versus '20%': the post itself uses both for the 2025 result. (c) 30% to 50% is often restated as developers 'refusing to work without AI' or refusing to take part; METR's wording is that they chose 'not to submit some tasks'. (d) The '4% of GitHub commits' figure is SemiAnalysis's, cited by METR, and was not checked here.",
+  "population_and_transfer": "Experienced open-source contributors (median 10 years) working on repositories they already know, self-selected into a paid study, and by late 2025 heavy users of agentic tools. Transfer to engineers in ordinary companies is limited: these are volunteers choosing their own tasks, paid hourly by a research body, with no employer able to assign work or require a condition. The specific failure (people opting out of the no-AI arm) depends on participation being voluntary and on task choice being theirs. An employer could mandate a no-AI arm, though the quality, completion and time-tracking problems would still apply.",
+  "outcome_measured": "Task speed: self-recorded time to complete a pre-specified task (initial implementation plus post-review time), compared across AI-allowed and AI-disallowed arms. Not quality, not value delivered, not employment. The post itself flags that time differences 'may not represent value-differences'.",
+  "limitations_stated": [
+    "Developer-level selection: 'a significant increase in developers choosing not to participate in the study because they do not wish to work without AI'; the study is 'systematically missing developers who have the most optimistic expectations about AI's value'.",
+    "Task-level selection: 30% to 50% of surveyed developers withheld some tasks; 'we are systematically missing tasks which have high expected uplift from AI'.",
+    "Pay confound: 'the second study also had a lower pay rate, $50/hour instead of $150/hour in the original study, and this also likely contributed to the higher selection'.",
+    "Task-type substitution: tasks attempted 'were different with agentic AI, leaning on the strengths of AI', so in-study tasks differ from out-of-study tasks and 'the time-differences within the study may not represent value-differences'.",
+    "Quality differences between arms: 'differences in subjective code quality, or the amount of documentation or tests they chose to create'.",
+    "Differential completion: 'Some developers were less likely to complete tasks that they submitted if they were assigned to the AI-disallowed condition. One developer did not complete any of the tasks that were assigned to the AI-disallowed condition.'",
+    "Time measurement: unreliable 'for the fraction of developers who use multiple AI agents concurrently'; developers 'would often work an unrelated task while waiting for the agent'.",
+    "Overall: 'these issues make it challenging to interpret our central estimate, and we believe it is likely a bad proxy for the real productivity impact of AI tools on these developers.'",
+    "What METR does not claim. It does not claim a measured speed-up: the data is 'only very weak evidence for the size of this increase' and both intervals include zero. It does not claim the bias is large: selection affects 'a minority share of developers and of tasks, which limits the degree of bias'. It does not endorse developers' own figures: 'Some developers self-report very high speedups, though as we documented in our earlier study those estimates can be quite unreliable.' It does not retract or revise the early-2025 result. It does not say which new design it has chosen.",
+    "The GitHub README adds: 'Please interpret these results with a major grain of salt'. It also notes that 'invalid issues from cheating developers are filtered out of this dataset' and that some time fields have uncorrected 'fat-finger errors'."
+  ],
+  "counter_evidence": [
+    "The post's own numbers cut against a strong reading in either direction. Both late-2025 intervals include zero, so the data alone does not show a speed-up; among the 47 new developers the estimate is -4% [-15%, +9%], close to nothing.",
+    "Against 'the control group is impossible': METR says the selection affects 'a minority share of developers and of tasks', and it still collected 800+ randomised tasks from 57 developers, roughly half of them without AI. The no-AI arm was run; what failed was its representativeness.",
+    "Against 'developers will not work without AI' as the sole cause: pay fell by two thirds between the studies, and METR concedes this 'likely contributed'. The original study at $150/hour did not report this problem. The two changes (better tools, lower pay) happened together and the post does not separate them with data.",
+    "Against treating reluctance as proof of real uplift: the developers' expectation of uplift is what drives the withholding, and METR's 2025 study found such expectations were wrong in sign. The post repeats that self-reports 'can be quite unreliable'. The quoted '2 hours' versus '20 hours' is a developer's belief, not a measurement.",
+    "The lower-bound claim is METR's inference, not a result. Differential non-completion and quality differences between arms could bias the estimate in either direction, and METR does not sign those effects. In the public data (my tabulation) AI-disallowed tasks were completed less often than AI-allowed ones (70% versus 75% overall; 65% versus 82% among returning developers), which means the completed no-AI tasks are themselves a selected set."
+  ],
+  "alternative_explanations": [
+    "Price, not dependence: at one third of the previous rate, the study no longer compensates for the inconvenience of working without a preferred tool. Reluctance then reflects the pay, and a higher rate might restore participation. METR lists 'possibly pay higher rates' as a remedy, which implies it takes this seriously.",
+    "Rational preference rather than inability: the quotes describe not wanting to ('I really like using AI!', 'I will feel so painful', walking versus an Uber), not being unable to. The post does not distinguish preference, expected time cost and skill loss, and offers no evidence of declining ability.",
+    "Mistaken beliefs: developers may be withholding tasks where they expect large AI gains that would not materialise, as in 2025. In that case the withheld tasks are not truly high-uplift and the downward bias is smaller than METR supposes.",
+    "Changed population: 47 of 57 developers are new and come from 'smaller, more greenfield, and less mature repositories', where AI help plausibly differs from large mature codebases. Differences from the 2025 result may partly reflect who and what was studied, not only better tools. The 10 returning developers are themselves a self-selected subset of the original study group (the post does not say how many were invited back).",
+    "Changed work: developers reshaped tasks around what agents do well and worked on other things while agents ran, so 'time per task' no longer measures the same thing. The estimate may be unreliable because the unit of measurement broke, independent of anyone refusing a control condition."
+  ],
+  "verification_status": [
+    "Verified against the METR post (opened and read in full, 12 October 2026): authors, title and date; study start August 2025; 57 developers (10 returning, 47 new); 143 repos; 800+ tasks; median 10 years' experience; $50/hour, down from $150/hour; the 30% to 50% sentence and its exact wording; all three developer quotes and their attributions; both estimates and intervals; the 19% [+2%, +39%] restatement and the '20% slowdown' wording; the lower-bound and 'minority share' sentences; all four 'other problems'; all six future options; the 'very weak evidence' and 'unreliable' self-report caveats.",
+    "Verified against METR's GitHub repository (README and regression.py opened): the regression specification, the definition of the estimate as exp(beta) - 1 on log time with an AI-allowed dummy, 95% intervals, and therefore the sign convention (negative = less time with AI).",
+    "Verified by my own re-computation on METR's public data.csv (not a statement by METR): 57 developer IDs, 10 panel developers, timestamps 12 August 2025 to 23 February 2026, point estimates of -18.1% and -3.6%, and the completion counts by arm. Intervals were not recomputed. These tabulations are mine and should be described as such if used.",
+    "Verified as absent from the post: any count or rate of developers who declined or dropped out; any survey sample size or question wording behind 30% to 50%; any end date; any pooled estimate; any chosen new design.",
+    "Later METR publications checked by opening metr.org/blog, /notes, /research and feed.xml on 12 October 2026, then reading the relevant posts. No post reports a redesigned or re-run developer productivity RCT. Related later work, each opened: 'Task Substitution and Uplift' (Tom Cunningham and Parker Whitfill, 8 May 2026), a conceptual note on old-task, new-task and value uplift; 'Measuring the Self-Reported Impact of Early-2026 AI on Technical Worker Productivity' (Joel Becker, 11 May 2026), a survey of 349 technical workers reporting a median 1.4 to 2x self-reported change in value of work and a median 3x self-reported speed change, which corresponds to the 'Questionnaires' option; and a METR note by Thomas Kwa (8 July 2026) that describes the outcome as developer preferences having 'precluded conducting an RCT'. That note carries METR's disclaimer that notes 'do not necessarily reflect the views of METR as a whole'.",
+    "Not verified: the SemiAnalysis '4% of GitHub commits' figure and the Sarkar (2025) SSRN paper, both only cited by METR and not opened. METR's funding and any conflicts of interest were not checked. Whether METR has said anything about a redesigned trial outside metr.org (talks, podcasts, social media) was not checked beyond one web search, which found nothing."
+  ],
+  "relevance_to_essay": "This is the primary source for the thought. It supports a narrow claim: in one voluntary, task-randomised study, enough developers avoided the no-AI condition (by not joining, by withholding tasks, by not finishing them) that METR stopped trusting the estimate. It does not support 'developers refuse to work without AI' as a general finding, and it does not show a measured speed-up. The pay cut is a confound METR admits. The honest framing is that the no-AI arm was still run, but who and what ended up in it stopped being representative.",
+  "implications_for_measurement": "Voluntary task-level randomisation against a no-AI arm degrades as tools improve, because people select out of the comparison where the gap is expected to be largest; the bias then runs against finding an effect. METR's own list is the practical guide: shorter, better-paid experiments to raise compliance; fixed tasks set by the experimenter; developer-level randomisation (less task selection, more developer selection, lower power); observational data and transcripts; carefully worded surveys with time-use studies. Its later posts add two points leaders can use: separate speed on a task from value produced, since people shift toward tasks AI makes cheap, and treat self-reported gains as an upper-leaning signal. Time per task is itself weakening as a unit when agents run in parallel, so outcome measures (work delivered, quality, review and rework) matter more than stopwatch comparisons.",
+  "open_questions": "How many developers declined or dropped out, and of how many approached. The survey n and wording behind 30% to 50%, and why it is a range. How much reluctance is pay and how much is expected uplift. Whether withheld tasks really had high uplift. When data collection ended. Which design METR has chosen, and whether a redesigned trial is running: as of 12 October 2026 nothing on metr.org reports one.",
+  "uncertain": []
+}

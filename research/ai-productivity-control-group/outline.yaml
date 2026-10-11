@@ -1,0 +1,33 @@
+topic: "Measuring AI's effect on developer productivity when developers will no longer work without AI: METR's February 2026 change of experiment design"
+
+angle: >
+  A short thought, not an essay. METR's follow-up to its 19%-slower trial broke down partly
+  because developers held back tasks they did not want to do without AI. The piece asks
+  what it means for leaders that the clean experiment is getting harder to run, without
+  overstating the finding: it is 30% to 50% of developers withholding some tasks, in one
+  study, with a pay cut as a confound.
+
+caveats_to_test:
+  - "Is -18% faster or slower? Settle the sign from METR's own text."
+  - "30% to 50% withheld SOME tasks. Does METR give any count of developers who declined to take part?"
+  - "How much of the reluctance could be the pay cut from $150 to $50 an hour?"
+  - "Is preferring AI evidence of dependence, or just a rational choice? Does any source separate them?"
+  - "Does any survey ask developers directly whether they would work without AI?"
+  - "Have other randomised trials of AI coding tools hit the same problem?"
+
+items:
+  - name: "METR February 2026 experiment design update"
+    note: "metr.org/blog/2026-02-24-uplift-update/ . Read the whole post. Study size, dates, pay, the 30% to 50% figure and exactly what was asked, developer quotes, estimates with intervals and sign convention, every stated problem, the options METR lists for a new design, and what METR says it does not claim. Check whether METR has published anything later in 2026 on the redesigned study."
+  - name: "METR 2025 randomised trial of experienced open-source developers"
+    note: "Becker, Rush, Barnes, Rein, 'Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity' (arXiv 2507.09089, July 2025) and METR's blog post. Exact n developers, n tasks, dates, 19% figure and interval, forecast and post-hoc self-estimates (24%, 20%), pay rate, tools used, limitations the authors state."
+  - name: "Other randomised trials of AI coding tools and their designs"
+    note: "Peng et al. 2023 (GitHub Copilot HTTP server task, 55.8%); Cui et al. field experiments at Microsoft, Accenture and a Fortune 100 firm (26% more tasks); Google internal RCT (Paradis et al. 2024, about 21%); any 2026 randomised trial. For each: unit of randomisation, whether a no-AI control was used, date of data, and whether authors report trouble keeping a control group."
+  - name: "Commentary on and misreadings of the METR update"
+    note: "Rob Bowley (blog.robbowley.net, 4 April 2026); Birchtree; any response from METR staff or from economists and software-engineering researchers. Who read -18% as a speed-up, who as a slowdown, and what each says the update shows. Separate what the commentators claim from what METR's text says."
+  - name: "Surveys on developers' reliance on AI tools in 2026"
+    note: "Stack Overflow Developer Survey 2026, JetBrains developer surveys 2026, Sonar State of Code 2026. Open the primary reports. Usage frequency, trust, and any question about working without AI or about skills declining. State plainly if no survey asks about willingness to work without AI."
+
+execution:
+  batch_size: 5
+  items_per_agent: 1
+  output_dir: ./results

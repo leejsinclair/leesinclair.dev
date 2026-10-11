@@ -1,0 +1,183 @@
+{
+  "name": "Learning science on practice: retrieval, spacing, desirable difficulties",
+  "citation": [
+    "Roediger, H. L., III, and Karpicke, J. D. (2006). 'Test-Enhanced Learning: Taking Memory Tests Improves Long-Term Retention.' Psychological Science, 17(3), 249-255. DOI 10.1111/j.1467-9280.2006.01693.x. Opened at https://learninglab.psych.purdue.edu/downloads/2006/2006_Roediger_Karpicke_PsychSci.pdf",
+    "Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T., and Rohrer, D. (2006). 'Distributed Practice in Verbal Recall Tasks: A Review and Quantitative Synthesis.' Psychological Bulletin, 132(3), 354-380. DOI 10.1037/0033-2909.132.3.354. Opened at http://www.yorku.ca/ncepeda/publications/CPVWR2006.pdf",
+    "Cepeda, N. J., Vul, E., Rohrer, D., Wixted, J. T., and Pashler, H. (2008). 'Spacing Effects in Learning: A Temporal Ridgeline of Optimal Retention.' Psychological Science, 19(11), 1095-1102. Opened at http://www.yorku.ca/ncepeda/publications/CVRWP2008.pdf",
+    "Bjork, E. L., and Bjork, R. A. 'Making Things Hard on Yourself, But in a Good Way: Creating Desirable Difficulties to Enhance Learning.' Chapter 5 in 'Psychology and the Real World', pp. 56-64 as paginated in the PDF. Opened at https://bjorklab.psych.ucla.edu/wp-content/uploads/sites/13/2016/04/EBjork_RBjork_2011.pdf. [uncertain] The usual citation gives 2011, Worth Publishers, editors Gernsbacher, Pew, Hough and Pomerantz. The opened PDF shows the book title, chapter title, authors and page numbers only, plus a proof stamp dated 11/20/09. Publisher, editors and the 2011 date were not confirmed from the PDF (the file name says 2011).",
+    "Kalyuga, S., Ayres, P., Chandler, P., and Sweller, J. (2003). 'The Expertise Reversal Effect.' Educational Psychologist, 38(1), 23-31. Opened as a third-party copy of the published journal PDF at https://rob.co.bb/the-expertise-reversal-effect-kalyuga-2003.pdf (carries the journal header and a publisher download stamp)."
+  ],
+  "source_tier": "Roediger and Karpicke 2006, Cepeda et al. 2006, Cepeda et al. 2008 and Kalyuga et al. 2003 are peer-reviewed journal articles. Cepeda 2006 is a meta-analysis and Kalyuga 2003 is a narrative review; the other two are primary experiments. Bjork and Bjork is an invited book chapter written for a general student audience, not a peer-reviewed empirical paper. It summarises a framework Robert Bjork set out in 1994.",
+  "access_status": "Roediger and Karpicke 2006: fully read (PDF text extracted). Cepeda et al. 2008: fully read. Bjork and Bjork: fully read. Cepeda et al. 2006: partly read. I read the abstract, introduction, the inclusion counts in the method, Table 1 and the spaced-versus-massed results, and the 'Educational Implications', 'Analysis Limitations' and 'Limitations of Currently Available Data' sections. The lag analyses and theory sections were skimmed, not read closely. Kalyuga et al. 2003: partly read. I read the abstract, introduction, the worked-example and guidance section, and the conclusions. The split-attention, modality and imagination sections were not read closely. Counter-evidence sources (van Gog and Sweller 2015, Yang et al. 2021, Rowland 2014, Adesope et al. 2017) were opened as abstracts only. Karpicke and Aue 2015 was seen only as a search snippet.",
+  "author_credentials": "All are academic cognitive or educational psychologists. Roediger and Karpicke: Washington University in St. Louis (Karpicke later moved to Purdue). Cepeda: UC San Diego and University of Colorado at Boulder in 2006, York University by 2008. Pashler, Vul, Wixted: UC San Diego (Vul also MIT in 2008). Rohrer: University of South Florida. Elizabeth and Robert Bjork: UCLA; Robert Bjork chaired the National Research Council Committee on Techniques for the Enhancement of Human Performance (1988-1994), by his own account in the chapter. Kalyuga, Ayres, Chandler, Sweller: University of New South Wales; Sweller is the originator of cognitive load theory, the framework the paper defends. Funding stated: Roediger and Karpicke by the Institute of Education Sciences and the James S. McDonnell Foundation; Cepeda 2006 and 2008 by the Institute of Education Sciences (2008 also the National Science Foundation); Kalyuga by Australian grants. No commercial interest is apparent in any of the five.",
+  "exact_quotes": [
+    {
+      "source": "Roediger and Karpicke 2006",
+      "location": "Abstract, p. 249",
+      "quote": "When the final test was given after 5 min, repeated studying improved recall relative to repeated testing. However, on the delayed tests, prior testing produced substantially greater retention than studying, even though repeated studying increased students' confidence in their ability to remember the material. Testing is a powerful means of improving learning, not just assessing it."
+    },
+    {
+      "source": "Roediger and Karpicke 2006",
+      "location": "General Discussion, p. 253",
+      "quote": "In Experiment 2, students in the repeated-testing condition recalled much more after a week than did students in the repeated-study condition (61% vs. 40%), even though students in the former condition read the passage only 3.4 times and those in the latter condition read it 14.2 times."
+    },
+    {
+      "source": "Roediger and Karpicke 2006",
+      "location": "General Discussion, p. 254",
+      "quote": "Although students in the repeated-study condition predicted they would perform very well a week later (relative to those in the other conditions), they actually performed the worst."
+    },
+    {
+      "source": "Roediger and Karpicke 2006",
+      "location": "General Discussion, p. 254",
+      "quote": "The boundary conditions for the testing effect are not yet known, but we suspect that tests will produce strong effects when they occur relatively soon after learning and permit relatively high levels of performance"
+    },
+    {
+      "source": "Roediger and Karpicke 2006",
+      "location": "General Discussion, p. 254",
+      "quote": "Judicious use of testing may improve performance in educational settings at all levels from elementary through university education, at least in fact-based courses"
+    },
+    {
+      "source": "Cepeda et al. 2006",
+      "location": "Abstract, p. 354",
+      "quote": "This review found 839 assessments of distributed practice in 317 experiments located in 184 articles."
+    },
+    {
+      "source": "Cepeda et al. 2006",
+      "location": "Abstract, p. 354",
+      "quote": "Analyses suggest that ISI and retention interval operate jointly to affect final-test retention; specifically, the ISI producing maximal retention increased as retention interval increased."
+    },
+    {
+      "source": "Cepeda et al. 2006",
+      "location": "Educational Implications of Findings, p. 370",
+      "quote": "separating learning episodes by a period of at least 1 day, rather than concentrating all learning into one session, is extremely useful for maximizing long-term retention."
+    },
+    {
+      "source": "Cepeda et al. 2006",
+      "location": "Educational Implications of Findings, p. 370",
+      "quote": "After more than a century of research on spacing, much of it motivated by the obvious practical implications of the phenomenon, it is unfortunate that we cannot say with certainty how long the ISI should be to optimize long-term retention."
+    },
+    {
+      "source": "Cepeda et al. 2008",
+      "location": "Abstract, p. 1095",
+      "quote": "when measured as a proportion of test delay, the optimal gap declined from about 20 to 40% of a 1-week test delay to about 5 to 10% of a 1-year test delay. The interaction of gap and test delay implies that many educational practices are highly inefficient."
+    },
+    {
+      "source": "Cepeda et al. 2008",
+      "location": "Results, p. 1099",
+      "quote": "For a fixed amount of study time, the optimal gap, as compared with a zero-day gap, provided a 64% increase in final recall, d = 1.1, and a 26% increase in final recognition, d = 1.5"
+    },
+    {
+      "source": "Cepeda et al. 2008",
+      "location": "Educational Implications, p. 1101",
+      "quote": "To put it simply, if you want to know the optimal distribution of your study time, you need to decide how long you wish to remember something."
+    },
+    {
+      "source": "Cepeda et al. 2008",
+      "location": "Educational Implications, p. 1101",
+      "quote": "although there are costs to using a gap that is longer than the optimal value, these costs are much smaller than the costs of using too short a gap"
+    },
+    {
+      "source": "Cepeda et al. 2008",
+      "location": "Educational Implications, p. 1101",
+      "quote": "this compression of learning into a too-short period is likely to produce misleadingly high levels of immediate mastery that will not survive the passage of substantial periods of time"
+    },
+    {
+      "source": "Bjork and Bjork",
+      "location": "p. 57",
+      "quote": "Conditions of learning that make performance improve rapidly often fail to support long-term retention and transfer, whereas conditions that create challenges and slow the rate of apparent learning often optimize long-term retention and transfer."
+    },
+    {
+      "source": "Bjork and Bjork",
+      "location": "p. 58",
+      "quote": "Such desirable difficulties (Bjork, 1994) include varying the conditions of learning, rather than keeping them constant and predictable; interleaving instruction on separate topics, rather than grouping instruction by topic (called blocking); spacing, rather than massing, study sessions on a given topic; and using tests, rather than presentations, as study events."
+    },
+    {
+      "source": "Bjork and Bjork",
+      "location": "p. 58",
+      "quote": "Many difficulties are undesirable during instruction and forever after. Desirable difficulties, versus the array of undesirable difficulties, are desirable because they trigger encoding and retrieval processes that support learning, comprehension, and remembering. If, however, the learner does not have the background knowledge or skills to respond to them successfully, they become undesirable difficulties."
+    },
+    {
+      "source": "Bjork and Bjork",
+      "location": "p. 61",
+      "quote": "any time that you, as a learner, look up an answer or have somebody tell or show you something that you could, drawing on current cues and your past knowledge, generate instead, you rob yourself of a powerful learning opportunity."
+    },
+    {
+      "source": "Bjork and Bjork",
+      "location": "p. 56, answer to 'What has been the real-world impact of this work?'",
+      "quote": "Overall, the impact has been slight."
+    },
+    {
+      "source": "Kalyuga et al. 2003",
+      "location": "Abstract, p. 23",
+      "quote": "Instructional techniques that are highly effective with inexperienced learners can lose their effectiveness and even have negative consequences when used with more experienced learners. We call this phenomenon the expertise reversal effect."
+    },
+    {
+      "source": "Kalyuga et al. 2003",
+      "location": "Worked-example section, p. 27",
+      "quote": "Eventually, with sufficient experience, additional learning was facilitated more by problem solving than through studying worked examples."
+    },
+    {
+      "source": "Kalyuga et al. 2003",
+      "location": "p. 27",
+      "quote": "detailed worked examples were most appropriate when presented to novices, but they should be gradually faded out with increased levels of learner knowledge and be replaced by problems"
+    },
+    {
+      "source": "Kalyuga et al. 2003",
+      "location": "Conclusions, p. 29",
+      "quote": "The most important instructional implication of this effect is that, to be efficient, instructional design should be tailored to the level of experience of intended learners. Without such tailoring, the effectiveness of instructional designs is likely to be random."
+    }
+  ],
+  "key_claims": [
+    "Roediger and Karpicke 2006: taking a recall test on a prose passage produces better retention after two days and one week than spending the same time re-reading it, even with no feedback on the test. Re-reading wins only on a test five minutes later. The benefit is therefore not just re-exposure. Students who re-read were more confident they would remember, and remembered least.",
+    "Cepeda et al. 2006 (meta-analysis): across the verbal recall literature, spacing two study episodes apart beats massing them at every retention interval examined, with study time held equal. The best gap between sessions grows as the time you need to remember grows. The authors say the literature cannot yet give a precise optimal gap.",
+    "Cepeda et al. 2008: in a large randomised experiment with delays up to a year, final recall first rises and then slowly falls as the gap between two study sessions widens. The best gap gets longer as the test delay gets longer, but shrinks as a share of it (roughly 20 to 40 percent of a one-week delay, 5 to 10 percent of a one-year delay). Too short a gap costs much more than too long a gap.",
+    "Bjork and Bjork: performance during training is an unreliable guide to learning. Conditions that make practice feel fluent (massing, blocking, re-reading, fixed conditions) often produce weaker long-term retention and transfer than conditions that feel harder (spacing, interleaving, variation, generating or retrieving answers). The difficulty is only 'desirable' if the learner has the background knowledge to respond to it successfully.",
+    "Kalyuga et al. 2003: guidance that helps novices (worked examples, integrated explanations) can stop helping and then hurt as learners gain expertise, because it becomes redundant and takes up working memory. Novices learn more from worked examples than from solving problems unaided; with experience the advantage disappears and then reverses. Guidance should be faded gradually, not removed in one step."
+  ],
+  "headline_figures": [
+    "Roediger and Karpicke 2006, Experiment 1 (n = 120, one re-study versus one test). Proportion of idea units recalled on the final test: after 5 minutes, re-study 81% versus test 75% (d = 0.52, favouring re-study); after 2 days, test 68% versus re-study 54% (d = 0.95); after 1 week, test 56% versus re-study 42% (d = 0.83). The one-week gap is 14 percentage points.",
+    "Roediger and Karpicke 2006, Experiment 2 (n = 180, 30 per cell). Conditions: SSSS (study four times), SSST (study three times, test once), STTT (study once, test three times). After 5 minutes: SSSS 83%, SSST 78%, STTT 71%. After 1 week: STTT 61%, SSST 56%, SSSS 40%. STTT versus SSSS at one week: d = 1.26, a gap of 21 percentage points. SSST versus SSSS at one week: d = 0.82. STTT versus SSST at one week was 'marginal', d = 0.31.",
+    "Roediger and Karpicke 2006, Experiment 2: proportional forgetting over one week was 52% for SSSS, 28% for SSST and 14% for STTT. The SSSS group read the passage 14.2 times in total, the STTT group 3.4 times.",
+    "Roediger and Karpicke 2006, Experiment 2: predicted memory in one week on a 7-point scale was 4.8 for SSSS, 4.2 for SSST and 4.0 for STTT. The group that predicted best performed worst.",
+    "Cepeda et al. 2006: 427 articles reviewed; 317 experiments in 184 articles met criteria, giving 958 accuracy values, 839 assessments of distributed practice and 169 effect sizes.",
+    "Cepeda et al. 2006, Table 1, spaced versus massed, percent correct on the final recall test across all retention intervals: massed 36.7% versus spaced 47.3% (271 performance differences, 254 studies, 14,811 participants, t(540) = 6.6, p < .001). That is 10.6 percentage points. By retention interval: 1 to 59 seconds 41.2% versus 50.1%; 1 day 32.9% versus 43.0% (15 comparisons, p = .249); 2 to 7 days 31.1% versus 45.4% (9 comparisons, p = .190); 8 to 30 days 32.8% versus 62.2% (6 comparisons, p < .05). The paper reports accuracy differences here, not a pooled effect size, 'because of insufficient effect size data'.",
+    "Cepeda et al. 2006: in the studies with retention intervals over one month, 'The average observed benefit from distributed practice (over massed practice) in these studies was 15%'.",
+    "Cepeda et al. 2006: 80% of the mean performance differences used a retention interval under one day; only 4% used one longer than a month.",
+    "Cepeda et al. 2008: 1,354 subjects who completed all three sessions, across 26 gap-by-delay conditions (23 to 79 subjects per cell). Optimal gap versus zero gap, study time fixed: 'a 64% increase in final recall, d = 1.1, and a 26% increase in final recognition, d = 1.5'. These are relative increases, not percentage points.",
+    "Cepeda et al. 2008: by test delay of 7, 35, 70 and 350 days, the recall improvement of the optimal gap over a zero gap was 10%, 59%, 111% and 77%. The best gaps actually tested were 1, 11, 21 and 21 days. Interpolated optimal gaps were about 3, 8, 12 and 27 days, which is 43%, 23%, 17% and 8% of the test delay.",
+    "Cepeda et al. 2008: the fitted surface puts the optimal gap for a 350-day delay at 23 days, 'just 7%' of the delay.",
+    "Bjork and Bjork, reporting Rohrer and Taylor 2007 (not opened by me): interleaved versus blocked practice of volume formulas gave '63 percent versus 20 percent of new problems worked correctly a week later'.",
+    "Kalyuga et al. 2003: no pooled effect size. It is a narrative review of experiments and reports the direction of effects, not a summary number."
+  ],
+  "sample_and_method": "Roediger and Karpicke 2006: two randomised laboratory experiments with Washington University undergraduates aged 18 to 24, taking part for course credit. Experiment 1, n = 120, learning condition within subjects and delay between subjects. Experiment 2, n = 180, fully between subjects, 30 per cell. Material was two TOEFL prose passages of 256 and 275 words, each scored as 30 idea units. Practice and final tests were free recall with no feedback. Delays were 5 minutes, 2 days or 1 week. Cepeda et al. 2006: meta-analysis of verbal recall studies of distributed practice, 317 experiments in 184 articles. Cepeda et al. 2008: randomised internet experiment, 1,354 completers from the lab's online panel, mean age 34 (SD 11, range 18 to 72), 72% female, various countries. They learned 32 obscure trivia facts to one correct recall each, reviewed them after a gap of 0 to 105 days (two test-with-feedback passes), and took a final recall and recognition test 7, 35, 70 or 350 days later. Bjork and Bjork: a short narrative overview of other people's experiments and their own, no new data. Kalyuga et al. 2003: narrative review of cognitive load experiments, many from the authors' own group, including work with mechanical trade apprentices and trainees.",
+  "evidence_offered": "Roediger and Karpicke: a crossover interaction between learning condition and delay, replicated across two experiments, with large standardised effects at one week and the re-study control deliberately favoured by giving it full re-exposure to the text. Cepeda 2006: accuracy differences pooled over hundreds of comparisons, plus a separate look at the few multi-day studies after sorting those with a relearning confound from those without. Cepeda 2008: random assignment to 26 cells, a prior 150-person lab study with the same pattern, and a fitted retention surface (R squared = .98). Bjork and Bjork: a theory (storage strength versus retrieval strength) and a set of cited experiments on variation, spacing, interleaving and testing. Kalyuga: a series of experiments in which the same instructional comparison gave opposite results for novices and for more experienced learners, explained by working memory limits.",
+  "data_vintage": "Roediger and Karpicke: published March 2006; received February 2005, accepted March 2005. Cepeda et al. 2006: Psychological Bulletin, May 2006 issue. Cepeda et al. 2008: published November 2008; received October 2007, accepted March 2008. Bjork and Bjork: usually cited as 2011; the opened proof is stamped November 2009. Kalyuga et al.: 2003. None has revised versions in circulation. All are old enough that later meta-analyses exist, see counter_evidence.",
+  "figure_provenance": "Every Roediger and Karpicke, Cepeda 2006 and Cepeda 2008 figure above was read from the paper itself. Points where versions in circulation go wrong: (1) Roediger and Karpicke is often summarised as 'testing beats studying', dropping the fact that re-study won at 5 minutes. The result is a crossover, not a uniform advantage. (2) The popular '61% versus 40%' figure is Experiment 2, three tests versus four study periods, at one week. The single-test comparison in Experiment 1 is 56% versus 42%. (3) Cepeda 2008's '64%' is a relative increase in recall averaged over delays, not 64 percentage points, and the gain at a one-week delay was only 10%. (4) Cepeda 2008 is often reduced to 'space at 10 to 20 percent of the retention interval'. The paper's own figures are about 20 to 40 percent for a one-week delay falling to 5 to 10 percent for a year, and it says the ratio is not fixed. (5) Cepeda 2006's '15%' applies only to the handful of studies with retention over a month. The all-interval figure is 36.7% versus 47.3%. (6) The 63% versus 20% interleaving figure is Rohrer and Taylor 2007 as reported by Bjork and Bjork; I did not open Rohrer and Taylor.",
+  "population_and_transfer": "None of the five studied software engineers or programming. Roediger and Karpicke: undergraduates recalling short prose passages. Cepeda 2006: mostly laboratory verbal recall (word lists, paired associates). Cepeda 2008: adult internet volunteers memorising trivia facts. Kalyuga: the closest to the workplace, with trade apprentices and trainees learning technical procedures, plus students. Transfer to junior engineers is by analogy. It is strongest for the factual and conceptual layer of the job (what a module does, why a decision was made, how a library behaves) and weakest for complex problem solving, where the testing effect is disputed (see counter_evidence). Kalyuga's result transfers in principle, since it is about the novice-to-experienced shift itself.",
+  "outcome_measured": "Roediger and Karpicke: delayed retention (free recall of idea units at 5 minutes, 2 days, 1 week), plus predicted retention. Cepeda 2006: final-test recall accuracy at retention intervals from seconds to years. Cepeda 2008: delayed recall and recognition at 7 to 350 days. Bjork and Bjork: long-term retention and transfer, as reported in the studies they cite. Kalyuga: post-instruction test performance and rated mental load. None measured on-the-job performance.",
+  "limitations_stated": [
+    "Roediger and Karpicke: 'The boundary conditions for the testing effect are not yet known'. They expect strong effects when tests 'occur relatively soon after learning and permit relatively high levels of performance', and limit their educational claim with 'at least in fact-based courses'. Initial recall in their experiments was about 70%, so the tests were mostly passed.",
+    "Cepeda 2006: 'it is unfortunate that we cannot say with certainty how long the ISI should be to optimize long-term retention.' Also: 'new studies are sorely needed to clarify the effects of interstudy and retention intervals that are educationally relevant, that is, on the order of weeks, months, or years.' They note the file drawer problem, that variance data were missing from most studies so accuracy differences were used in place of effect sizes, and that 'there is insufficient data to say whether' expanding intervals help.",
+    "Cepeda 2006 scope: verbal recall tasks only. The paper notes an earlier review (Donovan and Radosevich 1999) found that for skill tasks longer lags produced smaller effects.",
+    "Cepeda 2008: 'The optimally efficient gap between study sessions is not some absolute quantity that can be recommended, but rather depends dramatically on the RI'. On the fitted function: 'we do not contend that this function offers a uniquely accurate characterization of the surface'. Data were collected online, with more dropout at longer delays; the appendix argues this did not bias results.",
+    "Bjork and Bjork: difficulties become 'undesirable' when 'the learner does not have the background knowledge or skills to respond to them successfully'. They also say 'The effects of distributed practice on learning are complex.' Asked about real-world impact: 'Overall, the impact has been slight.'",
+    "Kalyuga: a review that argues for its own theory; the conclusion states the effect has 'a plausible theoretical explanation within a cognitive load framework'. I found no explicit limitations section in the parts I read."
+  ],
+  "counter_evidence": "1) Complexity. Van Gog and Sweller (2015, Educational Psychology Review 27, 247-264; abstract opened) argue that 'the testing effect decreases as the complexity of learning materials increases' and that studies in their special issue 'suggest that the effect may even disappear when the complexity of learning material is very high'. Programming is high in interacting elements, so this is the most relevant challenge. Karpicke and Aue (2015, same issue, 317-326) reply that the testing effect is 'alive and well with complex materials' and that element interactivity was never measured; I saw their argument only in a search snippet, not the paper. The dispute is unresolved in what I opened. 2) Size outside the lab. Yang, Luo, Vadillo, Yu and Shanks (2021, Psychological Bulletin 147, 399-435; abstract opened) pooled 222 classroom studies and 48,478 students and found testing 'raises student academic achievement to a medium extent (g = 0.499)', moderated by feedback, test format match, number of repetitions and other factors. That is real but about half the size of the d = 0.8 to 1.3 in Roediger and Karpicke. 3) Feedback. Roediger and Karpicke got their effect without feedback, but with about 70% initial success. Yang et al. list 'provision of corrective feedback' as a moderator. With harder questions and no feedback, there is less to strengthen. 4) Other meta-analyses. Rowland (2014, Psychological Bulletin 140, 1432-1463; abstract opened) finds 'initial recall tests yielding larger testing benefits than recognition tests', which favours produce-the-answer formats over multiple choice. [uncertain] From memory, not from the abstracts I opened: Rowland's overall estimate is about g = 0.50 and Adesope, Trevisan and Sundararajan (2017, Review of Educational Research 87, 659-701) report about g = 0.61. Their abstract, which I did open, gives no number. 5) Novices. Kalyuga's review and Bjork's own caveat both cut against throwing unaided problems at beginners: for novices on complex material, studying a worked example beat solving the problem.",
+  "alternative_explanations": "Re-exposure: the simplest reading of a testing effect is that a test is a second look at the material. Roediger and Karpicke designed against this (the re-study group saw 100% of the text again, the test group only what it could recall) and the effect survived. Time on task: both spacing papers equate study time, so extra time is not the explanation there. Motivation and incentives: in classrooms, regular quizzes may work partly because people study more when they expect to be tested. Roediger and Karpicke say this themselves ('they will study more and will space their studying'), and Yang et al. list motivation among three supported accounts. That matters for a workplace scheme, where the effect may come partly from attention and expectation, not retrieval alone. Transfer-appropriate processing: a final recall test resembles a practice recall test, so some of the benefit may be practice at the test format. This predicts weaker gains when the real task (debugging, design) looks unlike the quiz. Selection in Cepeda 2008: dropout rose with delay; the authors report completers and non-completers did not differ on initial knowledge or demographics.",
+  "verification_status": [
+    "Roediger and Karpicke 2006: sample sizes, design, all percentages, d values, the proportional forgetting figures, the reading counts, the confidence ratings and all quotes CHECKED against the full PDF text, which I opened.",
+    "Cepeda et al. 2006: article and comparison counts, Table 1 figures, the 15% figure, the 80% and 4% retention-interval shares and all quotes CHECKED against the PDF text. The lag analysis figures were not extracted and are not cited here.",
+    "Cepeda et al. 2008: sample, design, 64% and 26% with d values, per-delay improvements, tested and interpolated optimal gaps, and all quotes CHECKED against the full PDF text.",
+    "Bjork and Bjork: all quotes and the list of four desirable difficulties CHECKED against the PDF text. The publisher, editors and 2011 date are NOT checked (not shown in the PDF). The 63% versus 20% figure is checked as Bjork and Bjork's report of Rohrer and Taylor 2007, NOT against Rohrer and Taylor.",
+    "Kalyuga et al. 2003: abstract, worked-example findings, fading recommendation and conclusion quotes CHECKED against the PDF text of a third-party copy of the journal article. Bibliographic details match the header in that PDF.",
+    "Bjork 1994 ('Memory and metamemory considerations in the training of human beings'), the original source of the term 'desirable difficulties': NOT opened. The attribution rests on Bjork and Bjork citing it and Roediger and Karpicke citing it.",
+    "Van Gog and Sweller 2015, Yang et al. 2021, Rowland 2014, Adesope et al. 2017: quoted wording CHECKED against abstracts only (PubMed and OpenAlex records). Full texts not opened.",
+    "Karpicke and Aue 2015: NOT checked. Search snippet only.",
+    "Overall effect sizes for Rowland 2014 (about 0.50) and Adesope et al. 2017 (about 0.61): NOT checked. Do not print them without opening the papers."
+  ],
+  "relevance_to_essay": "This is the evidence base for the proposed response (continuous in-house training through small, regular challenges). It supports the mechanism: being made to retrieve or work something out beats re-reading it, spread-out practice beats a block, and the benefit shows up later, not on the day. It also explains the Anthropic trial's pattern in older terms. Bjork and Bjork's line about looking up an answer you could have generated is close to a description of asking an AI for the code. What it does not supply is direct evidence about engineers, codebases or workplace outcomes. The essay can say the proposal is consistent with well-replicated learning science. It cannot say that science has tested it.",
+  "implications_for_training_design": "Format: make the engineer produce an answer before seeing one (predict what this function returns, find where this value is set, explain why this test fails). Recall and generation formats beat recognition, so prefer open questions over multiple choice (Rowland abstract; Roediger and Karpicke used free recall). A treasure hunt through the codebase fits this if the hunter has to find and state the answer unaided. Frequency: little and often, not an onboarding week. Cepeda 2006 puts the floor at a day or more between sessions. Cepeda 2008 says the right gap depends on how long the knowledge must last: about three to four weeks between visits to the same material if the aim is to keep it for a year, and erring long costs less than erring short. So weekly challenges are sound, provided topics come back a few weeks later instead of being covered once. Difficulty: pitch it so most attempts succeed. Roediger and Karpicke's tests ran at about 70% success, and they expected strong effects when tests 'permit relatively high levels of performance'. Bjork and Bjork say a difficulty the learner lacks the background to meet is not desirable. Kalyuga adds that true novices learn more from a worked example than from an unaided problem, and that support should be faded gradually. For a new junior that means walkthroughs first, then partly completed tasks, then open challenges. Feedback: give the right answer afterwards. The classroom meta-analysis lists corrective feedback as a moderator, and Cepeda 2008's review sessions were test-then-answer. Stakes and measurement: keep it low-stakes, and judge the scheme by a delayed check, not by how the session felt. Both Roediger and Karpicke and Bjork and Bjork show learners rate the weaker method as the better one. Expect people to say the challenges feel less productive than reading the docs. Use of AI: none of these papers addresses it. My inference only: AI generating the questions is compatible with all of the above, while AI supplying the answer at the moment of difficulty removes the retrieval or generation step that the effect depends on.",
+  "open_questions": "Whether retrieval practice helps with complex, interacting material such as real code, given the unresolved van Gog and Sweller versus Karpicke and Aue dispute. Whether any of this has been tested on working engineers (nothing found in these sources). Whether spacing results from fact recall hold for skills; Cepeda 2006 covers verbal recall only and notes skill tasks behaved differently in an earlier review. The exact pooled effect sizes in Rowland 2014 and Adesope et al. 2017. The original wording of Bjork 1994. The correct publication details for the Bjork and Bjork chapter.",
+  "uncertain": ["citation", "counter_evidence"]
+}
