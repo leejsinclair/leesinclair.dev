@@ -1,0 +1,52 @@
+topic: "What it takes to trust AI coding agent output: what makes trust in agent-written code justified rather than assumed"
+
+angle: >
+  A leadership essay built on the 2026-10-15 idea in article_ideas.md (Temporal State of
+  Development 2026: high stated trust, daily failures). It must not restate "The Verification
+  Gap" (stated distrust versus checking) or "Checking Isn't Catching" (whether checking
+  catches anything). The new question is the positive one: what would have to be true, in
+  practice, for trust in agent output to be earned. Candidates: independent checks, tests that
+  can fail, scoped permissions, provenance, honest status reports from the agent, and
+  review capacity that matches generation speed.
+
+caveats_to_test:
+  - "Many figures reach us through vendor press releases. Open the primary report or paper before any figure is used."
+  - "Several items were seen as abstracts or search summaries only. Mark access_status honestly."
+  - "Do not mix units: engineers surveyed, pull requests mined, incidents reported."
+  - "Check dates against the 12-month window; use older incidents as background and say so."
+  - "Separate behaviour that was observed from beliefs that were self-reported."
+
+items:
+  - name: "Temporal State of Development 2026"
+    note: "temporal.io/reports/state-of-development-2026. Already opened once: 554 respondents, 29 April to 25 May 2026, 85.5% trust at least somewhat, 24.7% completely, 41.1% issues daily or more. Re-open for exact wording, the trust question text, blockers and any figure on verification, and note the vendor interest."
+  - name: "Sonar State of Code Developer Survey 2026"
+    note: "Primary report, not the press release. 96% do not fully trust, 48% always check, 38% say review takes more effort. Overlaps the Verification Gap essay, so use only for what that essay did not."
+  - name: "MSR 2026 study of agent-authored pull requests"
+    note: "Open the paper itself. 9,427 agent PRs, core versus peripheral developer review behaviour, the reported share accepted without modification, CI use. Behaviour, not self-report."
+  - name: "ICSE 2026 JAWS workshop paper, Silent Reliance or Diligent Review"
+    note: "Open the paper. 212,297 PRs from 12 agents, how verification varies by seniority."
+  - name: "Amplifying.ai coding agents autonomy analysis"
+    note: "Open the page. 230 merged agent PRs, 44.3% merged with no human reviewer. Small sample, public repos. Check method and who runs it."
+  - name: "CodeRabbit State of AI vs Human Code Generation (December 2025)"
+    note: "Open the report. 470 PRs, issues per PR for AI and human code. Vendor sells review. Resolve the per-PR versus per-100-PR wording conflict."
+  - name: "METR 2025 randomised trial and February 2026 redesign"
+    note: "Calibration of trust: developers' predicted and post-hoc speed-up estimates against measured result. Already researched in research/ai-productivity-control-group/; reuse verified facts, re-open to quote."
+  - name: "Google DORA 2025 State of AI-assisted Software Development"
+    note: "Open the report. What it says about trust levels and the practices that predict good outcomes."
+  - name: "Stack Overflow Developer Survey 2025 and 2026"
+    note: "Open the survey results. Trust and distrust of AI output, frequency of verification."
+  - name: "Automation bias and complacency research"
+    note: "Parasuraman and Manzey (2010, Human Factors) and one clinical decision-support review. What calibrates trust in an automated aid, and what makes it worse. Open the papers."
+  - name: "Tests as evidence for agent-written code"
+    note: "SWE-bench Verified weaknesses, patches that pass tests but are wrong, test adequacy. Find peer-reviewed or benchmark-owner sources and open them."
+  - name: "Replit agent database deletion (July 2025) and PocketOS (April 2026)"
+    note: "Primary sources only: Jason Lemkin's posts, Amjad Masad's statements, PocketOS write-up. What was missing: dev/prod separation, scoped credentials, honest status reporting. Reuse research/openai-huggingface-agent-incident/ only for what it already verified."
+  - name: "Agent-specific security threats"
+    note: "Prompt injection through repository content, MCP tool poisoning, slopsquatting. OWASP agentic guidance and one peer-reviewed study. Open sources; this was from background knowledge only."
+  - name: "Provenance and attestation for agent-authored code"
+    note: "What exists today to show which agent wrote what and under which permissions: commit trailers, signed commits, SLSA. Find real adoption evidence, not proposals only. Drop if nothing verifiable."
+
+execution:
+  batch_size: 5
+  items_per_agent: 1
+  output_dir: ./results
