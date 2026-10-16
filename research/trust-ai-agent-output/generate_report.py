@@ -46,6 +46,17 @@ FILES = {
     "Replit agent database deletion (July 2025) and PocketOS (April 2026)": "Replit_agent_database_deletion_and_PocketOS",
     "Agent-specific security threats": "Agent_specific_security_threats",
     "Provenance and attestation for agent-authored code": "Provenance_and_attestation_for_agent_authored_code",
+    "Guardrails and permission scoping for coding agents": "Guardrails_and_permission_scoping",
+    "Linting, static analysis and type checking on agent-written code": "Linting_static_analysis_type_checking",
+    "Security scanning of agent-written code (SAST, SCA, secret scanning)": "Security_scanning_of_agent_written_code",
+    "Mutation testing and property-based testing of agent output": "Mutation_and_property_based_testing",
+    "Observability and audit trails of agent actions": "Observability_and_audit_trails",
+    "Independent second-model review of agent output": "Independent_second_model_review",
+    "Small diffs, staged rollout and rollback as trust mechanisms": "Small_diffs_staged_rollout_rollback",
+    "Track record and calibrated trust": "Track_record_and_calibrated_trust",
+    "Broken by Default: formal verification of vulnerabilities in AI-generated code": "Broken_by_Default_formal_verification_of_vulnerabilities_in_AI_generated_code",
+    "The Illusion of Safety: multi-tier verification of AI vs human C++ code": "The_Illusion_of_Safety_multi_tier_verification_of_AI_vs_human_C_code",
+    "ASIC v Bekier [2026] FCA 196 and the AICD/HTI Director's Guide to AI Governance": "ASIC_v_Bekier_2026_FCA_196_and_the_AICD_HTI_Directors_Guide_to_AI_Governance",
 }
 
 

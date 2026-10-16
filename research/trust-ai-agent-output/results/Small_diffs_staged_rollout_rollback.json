@@ -1,0 +1,31 @@
+{
+  "citation": "Primary: Ehsani, Pathak, Rawal, Al Mujahid, Imran, Chatterjee, 'Where Do AI Coding Agents Fail? An Empirical Study of Failed Agentic Pull Requests in GitHub', arXiv:2601.15195, 21 Jan 2026, https://arxiv.org/abs/2601.15195. Supporting (non-AI): Rahman, Codabux, Roy, 'Does Order Matter? An Empirical Investigation into the Impact of File Ordering on Code Review Effectiveness', arXiv:2609.22610, 18 Sep 2026, https://arxiv.org/abs/2609.22610",
+  "source_tier": "Preprints (both arXiv, not peer-reviewed as of access)",
+  "access_status": "Abstract page only for both (arXiv abs pages via fetch tool). Full text not read. Figures from search snippets (15% odds per failed CI check, 82.59%/43.04% merge rates) NOT verified in the paper.",
+  "sponsor_and_incentive": "Academic authors; no sponsor or vendor interest identified [uncertain: funding not checked]",
+  "exact_quotes": "2601.15195 abstract: '33k agent-authored PRs made by five coding agents across GitHub.' / 'Not-merged PRs tend to involve larger code changes, touch more files' / 'performance and bug-fix tasks perform the worst.' (abstract page). 2609.22610 abstract: 'Pull request size has a non-linear relationship with latent bug likelihood.' / 'pull requests of about ten files have the lowest risk, while very small and very large ones have elevated rates.' / 'attention is diluted as pull request size grows' (abstract page). Quotes were relayed by a fetch summarizer, so exact punctuation is [uncertain].",
+  "date_and_recency": "2601.15195 submitted 21 Jan 2026; 2609.22610 submitted 18 Sep 2026. Both inside the 12-month window. Data collection windows not checked [uncertain].",
+  "key_claims": "Agentic PRs that were not merged tend to be larger and touch more files than merged ones, and often fail CI. Tasks like docs, CI and build updates merge most; performance and bug-fix tasks least. Separately, in human-and-mixed GitHub PRs, review attention thins as PR size grows (about 8.7% lower odds of any review comment per extra modified file) and latent bug rates are non-linear in size: lowest around ten files, higher for very small and very large PRs.",
+  "headline_figures": "33k agent-authored PRs, five agents (2601.15195). 330,343 multi-file PRs, 756,814 file instances, 182 projects, five languages (2609.22610). About 8.7% lower odds of a review comment per additional modified file (2609.22610 abstract, via summarizer). Latent bug rate 56.7% at file position 1 rising to 61.5% at position 30. Nothing numeric on size for the agentic paper was seen on the abstract page.",
+  "sample_unit_and_population": "Pull requests on open-source GitHub. 2601.15195: 33k agent PRs (AIDev dataset, five agents). 2609.22610: 330,343 PRs, 182 OSS projects; not AI-specific.",
+  "observed_vs_stated": "Observed behaviour from mined repository data in both. No self-report.",
+  "what_makes_trust_justified": "Neither paper tests staged rollout, feature flags, canaries or rollback. Evidence supports only the narrower point that smaller agent PRs are more likely to be merged and that reviewers attend less per file as PRs grow, so keeping diffs bounded and CI-passing is associated with acceptance. Feature flag, canary and rollback evidence for AI changes: none found.",
+  "what_it_costs": "Not measured. Splitting changes adds PR count and coordination; the non-linear result suggests very small PRs are not free of risk either.",
+  "failure_mode_class": "Wrong or unwanted code; reviewer disengagement; CI failure; duplicate PRs. Not destructive-action or security in this source.",
+  "control_that_would_have_prevented": "Not applicable (no incidents). Associated controls: bounded PR size and passing CI before review.",
+  "limitations_stated": "Not read in full; limitations not extracted [uncertain]. 2609.22610 abstract says associations are 'statistically significant but modest'.",
+  "counter_evidence": "2609.22610 finds very small PRs also have elevated latent bug rates, so 'smaller is always safer' is not supported. Association between size and non-merge may be confounded by task type (bug-fix and performance tasks merge worst). Search found no revert or rollback rate data for AI PRs. Classic SmartBear/Cisco 200-400 line figures were only seen via blogs, not the original.",
+  "verification_status": "Abstract-level claims checked against arXiv abstract pages I opened. 15% per failed CI check and merge-rate percentages by agent: [uncertain], search snippet only. Feature flag/canary/rollback for AI changes: no empirical source found, drop per brief. Google/Microsoft/SmartBear PR-size figures: [uncertain], not opened.",
+  "usable_claim": "In a study of 33k agent-authored GitHub PRs, those that were not merged tended to involve larger changes and touch more files than merged ones. Association only, not proof that shrinking diffs causes acceptance. Separately, a mining study of 330k human PRs found reviewer attention falls as PRs touch more files.",
+  "do_not_use": "Any rollback, canary or feature-flag claim tied to AI output (no source). The 15% CI figure and per-agent merge rates until verified in full text. SmartBear 200-400 line and 60-90 minute figures. Any claim that smaller is always safer.",
+  "overlap_with_existing_essays": "Not checked against the Verification Gap or Checking Isn't Catching essays [uncertain].",
+  "uncertain": [
+    "access_status",
+    "sponsor_and_incentive",
+    "exact_quotes",
+    "date_and_recency",
+    "limitations_stated",
+    "verification_status",
+    "overlap_with_existing_essays"
+  ]
+}

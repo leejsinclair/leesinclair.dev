@@ -16,6 +16,22 @@
 12. [Replit agent database deletion (July 2025) and PocketOS (April 2026)](#replit-agent-database-deletion-july-2025-and-pocketos-april-2026) - Source tier: Practitioner/founder posts on X (first-party but self-reported), read only through press a
 13. [Agent-specific security threats](#agent-specific-security-threats) - Source tier: Spracklen et al.: preprint, accepted at USENIX Security 2025 (peer-reviewed venue; the acc | Access status: Spracklen: full text read via arXiv HTML v3; the last ~14k characters (end of paper) were 
 14. [Provenance and attestation for agent-authored code](#provenance-and-attestation-for-agent-authored-code) - Source tier: Mixed: two vendor-neutral primary documentation pages (GitHub, SLSA); the AIBOM material i | Access status: GitHub Docs page and SLSA page fetched (via summarising fetch, not read verbatim in full)
+15. [Guardrails and permission scoping for coding agents](#guardrails-and-permission-scoping-for-coding-agents) - Access status: Vendor docs: fully fetched and grepped (large page, read via extraction, not every line)
+16. [Linting, static analysis and type checking on agent-written code](#linting-static-analysis-and-type-checking-on-agent-written-code) - Access status: Abstract page only for all three (arXiv abs pages opened via WebFetch, which summarised ra
+17. [Security scanning of agent-written code (SAST, SCA, secret scanning)](#security-scanning-of-agent-written-code-sast-sca-secret-scanning) - Source tier: (1) company research (vendor press release) | Access status: (1) Press release page fetched and read via summarising fetch; the full PDF report was not
+18. [Mutation testing and property-based testing of agent output](#mutation-testing-and-property-based-testing-of-agent-output) - Source tier: Preprint (arXiv, not peer-reviewed) for both
+19. [Observability and audit trails of agent actions](#observability-and-audit-trails-of-agent-actions) - Source tier: Vendor product documentation (GitLab); vendor blog citing a secondary survey (TierZero); p
+20. [Independent second-model review of agent output](#independent-second-model-review-of-agent-output) - Source tier: [Song 2026 (arXiv:2610.01471)] Preprint (single author, not peer-reviewed) | [Kim et al | Access status: [Song 2026 (arXiv:2610.01471)] Abstract page only (arXiv abstract page opened; full text n
+21. [Small diffs, staged rollout and rollback as trust mechanisms](#small-diffs-staged-rollout-and-rollback-as-trust-mechanisms) - Source tier: Preprints (both arXiv, not peer-reviewed as of access) | Access status: Abstract page only for both (arXiv abs pages via fetch tool)
+22. [Track record and calibrated trust](#track-record-and-calibrated-trust) - Source tier: Behzad et al.: preprint (final version slated for Springer LNCS) | Access status: Behzad et al.: HTML page fetched and read via summarising fetch tool (substantially read, 
+23. [Evolution of Programmers' Trust in Generative AI Programming Assistants](#evolution-of-programmers-trust-in-generative-ai-programming-assistants) - Source tier: Peer-reviewed conference paper (Koli Calling 2025) as posted to arXiv as a preprint | Access status: Fully read (full text extracted from the PDF, all sections and references)
+24. [Identifying the Factors that Influence Trust in AI Code Completion (Google Research)](#identifying-the-factors-that-influence-trust-in-ai-code-completion-google-research) - Source tier: Peer-reviewed conference paper, company research (Google Engineering Productivity Research | Access status: Fully read (full PDF text extracted and read)
+25. [The End of Code Review: Coding Agents Supersede Human Inspection](#the-end-of-code-review-coding-agents-supersede-human-inspection) - Source tier: Preprint (arXiv, not peer reviewed) | Access status: Fully read (PDF opened and text extracted, all sections and references)
+26. [Security Degradation in Iterative AI Code Generation](#security-degradation-in-iterative-ai-code-generation) - Source tier: Preprint, stated as peer-reviewed and accepted at IEEE ISTAS 2025 (conference)
+27. [Broken by Default: formal verification of vulnerabilities in AI-generated code](#broken-by-default-formal-verification-of-vulnerabilities-in-ai-generated-code) - Source tier: Preprint (arXiv, not peer reviewed; 8 pages, 6 tables)
+28. [The Illusion of Safety: multi-tier verification of AI vs human C++ code](#the-illusion-of-safety-multi-tier-verification-of-ai-vs-human-c-code) - Source tier: Preprint (arXiv, cs.SE); not shown as peer-reviewed | Access status: Fully read (PDF v3 text extracted and read through the Threats to Validity, Related Work a
+29. [Assay: claims that decay with the code (evidence graphs)](#assay-claims-that-decay-with-the-code-evidence-graphs) - Source tier: Preprint (arXiv, not peer-reviewed as far as seen)
+30. [ASIC v Bekier [2026] FCA 196 and the AICD/HTI Director's Guide to AI Governance](#asic-v-bekier-2026-fca-196-and-the-aicdhti-directors-guide-to-ai-governance) - Source tier: Guide: professional-body and university practitioner guidance (not peer-reviewed) | Access status: Guide: fully read via PDF text extraction (relevant passages)
 
 ## Temporal State of Development 2026
 
@@ -811,4 +827,898 @@ _Verification note (2026-10-15): the tests figures were re-checked against the a
 - date_and_recency
 - headline_figures
 - overlap_with_existing_essays
+- verification_status
+
+## Guardrails and permission scoping for coding agents
+
+### Source
+
+- **Citation:** 
+> Two sources opened. (1) Anthropic, 'Configure the sandboxed Bash tool', Claude Code docs, https://code.claude.com/docs/en/sandboxing (fetched 2026-10-16, undated page). (2) Ankur Singh, Jinqiu Yang, Tse-Hsun Chen, 'IssueTrojanBench: Benchmarking AI Coding Agents Against Malicious Issue Requests', arXiv:2607.20759 v1, submitted 22 July 2026, https://arxiv.org/abs/2607.20759. Context only, not opened as primary: OWASP Top 10 for Agentic Applications 2026 (genai.owasp.org, listed 9 Dec 2025).
+- **Access status:** 
+> Vendor docs: fully fetched and grepped (large page, read via extraction, not every line). arXiv: abstract page only via summariser; full PDF not opened, so sample size and limitations not verified. OWASP: landing page only; the Top 10 text itself was not opened (landing page lacked least agency text). Codex and Copilot agent docs not opened. Secondary blogs (codex.danielvaughan.com, WorkOS) seen in search snippets only, not used as evidence.
+- **Exact quotes:** 
+> Claude Code docs, intro: "The sandbox covers shell commands only. Claude's file tools, MCP servers, and hooks run outside it." Limitations section: "Sandboxing reduces risk but is not a complete isolation boundary. Review the limitations below before relying on it as a hard security control." Same section: "Effective sandboxing requires both filesystem and network isolation. Without network isolation, a compromised agent could exfiltrate sensitive files like SSH keys." Escape hatch section: "Claude analyzes the failure and may retry the command with the `dangerouslyDisableSandbox` parameter." And: "if an allow rule such as `Bash(curl *)` matches the command, it also approves the retry, so the command runs outside the sandbox with no prompt". Network: "By default the built-in proxy does not terminate or inspect TLS on outbound traffic, so the contents of encrypted connections are not examined." IssueTrojanBench abstract (as quoted by fetch tool): 66.5% of the malicious issues "penetrate all the guardrails (agent- and LLM-level) of coding agents." Abstract paraphrase only for the rest; verbatim wording not captured.
+- **Date and recency:** 
+> Claude Code docs: live page as of 2026-10-16, no publication date (continuously updated). IssueTrojanBench: 22 July 2026, within the 12-month window; data collection window not seen. OWASP Agentic Top 10: 9 Dec 2025, within window.
+
+### Claims
+
+- **Key claims:** 
+> Docs: an OS-enforced boundary around shell commands restricts filesystem and network reach, so Claude can run commands without per-command approval; permission rules govern what Claude attempts while the sandbox governs what can succeed (the second half is from third-party guides, not confirmed in the page). Docs admit that file tools, MCP servers and hooks run outside the sandbox, that the model can request an unsandboxed retry, that excludedCommands run with full access, and that TLS content is not inspected by default. IssueTrojanBench: across Cursor, Claude Code and Codex Desktop with GPT-5.3 Codex, GPT-5.4 and Sonnet 4.6, malicious instructions embedded in issues mostly passed; refusals came mostly from the LLM rather than the agent framework; GPT models broadly vulnerable, Sonnet 4.6 blocked high-impact actions more selectively; authors conclude agent-level defences add limited protection.
+- **Observed vs stated:** 
+> Docs: stated design, no measured effect. IssueTrojanBench: observed behaviour of agents under a constructed benchmark. No source opened measures what a sandbox specifically prevents.
+
+### Trust mechanism
+
+- **What makes trust justified:** 
+> Docs: layered controls, namely OS-level filesystem and network sandbox, network domain allowlist, strict mode (allowUnsandboxedCommands false, failIfUnavailable), managed settings, ask rules on dangerouslyDisableSandbox, and for stronger isolation running the whole process in a dev container or sandbox runtime. OWASP (secondary summaries only): least agency, task-scoped credentials, human approval for destructive actions. IssueTrojanBench implies model-level refusal currently carries most of the load and framework guardrails add little.
+- **What it costs:** 
+> Docs: setup and compatibility work (docker, gh, gcloud, terraform fail under the sandbox and need excludedCommands, which widen access); tuning allowlists; approval prompts when running outside the sandbox. No measured human-time figure in opened sources.
+- **Failure mode class:** 
+> Security (prompt injection via issue content, exfiltration, sandbox bypass through escape hatches and permissive allow rules); destructive action.
+- **Control that would have prevented:** 
+> Not an incident study. Docs name the gaps: network allowlist limited to trusted hosts, strict sandbox mode, no broad allow rules like Bash(curl *), narrow excludedCommands, whole-process isolation. IssueTrojanBench does not say which single control would have stopped the 66.5%.
+
+### Essay use
+
+- **Usable claim:** 
+> Anthropic's own documentation says its Bash sandbox is not a complete isolation boundary and does not cover file tools, MCP servers or hooks. A July 2026 benchmark preprint (IssueTrojanBench) found 66.5% of malicious issue requests got past all agent- and model-level guardrails in the three coding agents it tested, and its authors conclude agent-level defences add limited protection. Both describe design and benchmark conditions, not field-measured sandbox effect.
+- **Do not use:** 
+> Per-model percentages and the 96.6% and 4,176 figures until the PDF is read; the 84% prompt-reduction claim; any claim that sandboxing prevents X% of attacks; OWASP wording beyond the page's About text.
+
+### Fields with unverified values (those values omitted above)
+
+- counter_evidence
+- headline_figures
+- limitations_stated
+- overlap_with_existing_essays
+- sample_unit_and_population
+- source_tier
+- sponsor_and_incentive
+- verification_status
+
+## Linting, static analysis and type checking on agent-written code
+
+### Source
+
+- **Citation:** 
+> (1) Agarwal, He, Vasilescu. 'AI IDEs or Autonomous Agents? Measuring the Impact of Coding Agents on Software Development'. arXiv:2601.13597, v1 20 Jan 2026, v2 27 Jan 2026. https://arxiv.org/abs/2601.13597. (2) Kashif, Li, Liang, Tahir, Feng, Li, Shahin. 'Beyond Functional Correctness: Design Issues in AI IDE-Generated Large-Scale Projects'. arXiv:2604.06373, 7 Apr 2026. https://arxiv.org/abs/2604.06373. (3) da Mota, Gama. 'Comparing the Quality of Code Generated by Vibe Coding Tools'. arXiv:2608.16302, 17 Aug 2026. https://arxiv.org/abs/2608.16302. Background only, older than 12 months: Sabra, Schmitt, Tyler, arXiv:2508.14727 (Aug 2025), seen only via search summary.
+- **Access status:** 
+> Abstract page only for all three (arXiv abs pages opened via WebFetch, which summarised rather than quoted). Full text NOT read. Sabra et al. 2508.14727: search snippet only. No study found that measures agents suppressing or silencing linters or type checkers.
+
+### Claims
+
+- **Key claims:** 
+> (1) Agarwal et al.: using AIDev data and a staggered difference-in-differences design with matched controls, agent adoption (first agent-generated PR) gives large but short-lived speed gains where the agent is the first AI tool, while quality risks persist; authors call it sustained, agent-induced technical debt. (2) Kashif et al.: Cursor-generated projects were largely functional but carried maintainability and evolvability risks that static analysis surfaced (duplication, high complexity, large methods, exception handling, framework best-practice violations). (3) da Mota and Gama: SonarQube found differing issue profiles across Lovable, v0 and Replit output. Static analysis here is used as a measurement tool, not as a gate the agents were run against. Nothing found on agents gaming or silencing lint or type checks; that half of the brief is unsupported by an opened source.
+- **Sample unit and population:** 
+> Agarwal et al.: open-source GitHub repositories from AIDev dataset; repository counts not seen. Kashif et al.: 10 Cursor-generated projects across 3 domains, human-in-the-loop generation. da Mota and Gama: 9 generated web apps from 3 vibe-coding tools. Very small samples for 2 and 3.
+- **Observed vs stated:** Observed: code and repository measurements by static-analysis tools. No self-reported belief.
+
+### Trust mechanism
+
+- **What it costs:** Not quantified in any source seen.
+- **Failure mode class:** 
+> Wrong or low-quality code: maintainability, complexity, duplication (technical debt). Not destructive action or false report.
+- **Control that would have prevented:** 
+> Not an incident study. Static-analysis gates in CI would flag the issue classes found, but no source shows a gate preventing them.
+
+### Caveats
+
+- **Counter evidence:** 
+> Sabra et al. (background, Aug 2025, snippet only): no direct correlation between functional pass rates and SonarQube issue counts, so passing tests does not imply clean static analysis. Suppression-comment research (Suppressed Static Analysis Warnings, FSE 2025, UBC) concerns human developers and was seen only as a search result; not evidence about agents. Practitioner tools (lazy-ignores linters, a DEV Community post on 'AI makes CI green by cheating') assert agents add noqa/type: ignore comments, but are anecdotal and not opened. Treat agent gaming of linters as unverified.
+
+### Essay use
+
+- **Usable claim:** 
+> A preprint tracking open-source repositories found static-analysis warnings rose by roughly 18% and cognitive complexity by roughly 39% after agents were adopted. Separate small studies of Cursor and vibe-coding output found static analysis surfaces maintainability issues in code that otherwise works.
+- **Do not use:** 
+> Any claim that agents routinely suppress, disable or game linters and type checkers (no opened evidence). Any claim that static analysis catches real bugs or vulnerabilities in agent code (these studies count warnings, not confirmed defects). Figures as peer-reviewed.
+
+### Fields with unverified values (those values omitted above)
+
+- date_and_recency
+- exact_quotes
+- headline_figures
+- limitations_stated
+- overlap_with_existing_essays
+- source_tier
+- sponsor_and_incentive
+- verification_status
+- what_makes_trust_justified
+
+## Security scanning of agent-written code (SAST, SCA, secret scanning)
+
+### Source
+
+- **Citation:** 
+> (1) Veracode, '2025 GenAI Code Security Report' press release 'AI-Generated Code Poses Major Security Risks in Nearly Half of All Development Tasks', 30 Jul 2025, https://www.veracode.com/press-release/ai-generated-code-poses-major-security-risks-in-nearly-half-of-all-development-tasks-veracode-research-reveals/ (background, older than 12 months). (2) Cankurt S., AppSec Santa 'AI Code Security Study 2026', updated 12 May 2026, https://appsecsanta.com/research/ai-code-security-study-2026. (3) Rabbi, Turzo, Champa, Zibran, 'Insights into Security-Related AI-Generated Pull Requests', arXiv:2604.19965, 21 Apr 2026, EASE 2026. (4) Siddiq et al., 'Security in the Age of AI Teammates: An Empirical Study of Agentic Pull Requests on GitHub', arXiv:2601.00477, Jan 2026. (5) GitGuardian, 'The State of Secrets Sprawl 2026', blog post 17 Mar 2026, https://blog.gitguardian.com/the-state-of-secrets-sprawl-2026/
+- **Source tier:** 
+> (1) company research (vendor press release). (2) practitioner blog, independent single author, not peer-reviewed. (3) peer-reviewed (EASE 2026; arXiv version read). (4) preprint. (5) company research (vendor blog).
+- **Access status:** 
+> (1) Press release page fetched and read via summarising fetch; the full PDF report was not opened. (2) Fully read via summarising fetch. (3) Full PDF text extracted and read locally. (4) Read via summarising fetch of HTML; last ~30k characters of the page not read. (5) Blog post read via summarising fetch; the full PDF report was not opened.
+- **Exact quotes:** 
+- Veracode: "analyzed 80 curated coding tasks across more than 100 large language models (LLMs)"; "In 45 percent of all test cases, LLMs introduced vulnerabilities"; "larger models do not perform significantly better than smaller models" (press release, as relayed by fetch tool).
+- AppSec Santa: "I test isolated code snippets, not full applications." Results: 25.7% of samples contained at least one confirmed vulnerability (updated from 25.1%).
+- Rabbi et al. abstract: "we analyze more than 33,000 AI-generated pull requests (PRs) and identify 675 security-related submissions made by agentic AIs"; "Many flawed contributions are still merged, while rejections often arise from social or process factors such as inactivity or missing test coverage." Section 4.2: "104 PRs (15.4%) introduce at least one issue, while the remaining 571 PRs (84.6%) show no Semgrep alerts."
+- Siddiq et al.: "security PRs are merged at only 61.50%, compared to 77.33% for non-security PRs" (Section 4.4, as relayed by fetch tool); "our findings should be interpreted as descriptive associations rather than causal effects" (Section 5.6.3).
+- GitGuardian: "Claude Code-assisted commits showed a 3.2% secret-leak rate, versus a 1.5% baseline across all public GitHub commits."; "That gap is meaningful, but it should not be read as a simple tool failure."
+- **Date and recency:** 
+> Veracode: published 30 Jul 2025 (about 14 months old, outside the 12-month window; background only). AppSec Santa: data collected Feb 2026, updated May 2026. Rabbi et al.: arXiv 21 Apr 2026, PR data snapshot 15 Sep 2025. Siddiq et al.: Jan 2026, AIDev dataset. GitGuardian: 17 Mar 2026, data tied to calendar 2025, exact window of the Claude Code comparison not stated.
+
+### Claims
+
+- **Key claims:** 
+- Veracode: LLMs pick an insecure option in a large share of security-relevant tasks and bigger models do not fix it.
+- AppSec Santa: about a quarter of single-shot snippets from six frontier models contain a confirmed vulnerability; default-config SAST tools produce mostly false positives.
+- Rabbi et al.: in agent PRs already judged security-related, a minority add Semgrep-detectable issues, mostly regex DoS, command injection and path traversal, and some flawed PRs are merged.
+- Siddiq et al.: security-related agent PRs are merged less often and reviewed more slowly than other agent PRs.
+- GitGuardian: commits co-authored with Claude Code leak secrets at about twice the baseline commit rate, though the vendor cautions against reading it as a tool failure.
+- **Headline figures:** 
+- Veracode: 45% of test cases introduced OWASP Top 10 vulnerabilities; Java over 70% failure; Python, C#, JavaScript 38 to 45%; CWE-80 XSS fails 86%, CWE-117 log injection 88%. Unit: model-by-task test case. 80 tasks, 100+ models. Jul 2025.
+- AppSec Santa: 25.7% of 522 samples (87 prompts x 6 models) had at least one confirmed vulnerability; GPT-5.2 lowest at 19.5%. SAST: 926 deduplicated findings of which about 153 to 154 true positives and 772 false positives (the page's own numbers do not fully reconcile). Unit: snippet.
+- Rabbi et al.: 33,596 agent PRs -> 1,047 keyword hits -> 675 after LLM validation; 354 merged (52.4%), 219 closed (32.4%), 102 open (15.1%). 104 of 675 PRs (15.4%) introduced at least one new Semgrep alert, 853 findings total, median 3 per affected PR, max 109. CWE-1333 36.2%, CWE-78 13.0%, CWE-22 10.3%, CWE-134 8.2%, CWE-79 7.1%, CWE-798 5.7% of findings. Unit: PR, scanned before vs after PR commit.
+- Siddiq et al.: 33,596 PRs, 1,293 confirmed security-related (3.85%); merge 61.50% vs 77.33%; median review latency 3.92 h vs 0.11 h. Unit: PR.
+- GitGuardian: 3.2% secret-leak rate for Claude Code-assisted commits vs 1.5% baseline of all public GitHub commits; 28.65 million new hardcoded secrets on public GitHub in 2025 (blog wording). Unit: commit; per-commit definition not stated on the page.
+- **Sample unit and population:** 
+> Three different units: Veracode is per task-model test case (80 tasks, 100+ models, single prompts, not repos); AppSec Santa is per isolated snippet (522, six models, temperature 0, one run each); the two arXiv papers are per PR from open-source GitHub repos with more than 100 stars (AIDev dataset, 33,596 agent PRs, five agents: Copilot, Codex, Devin, Cursor, Claude Code). GitGuardian is per public GitHub commit. Rates are not comparable across units: a per-snippet 25 to 45% rate does not translate to a per-PR rate, and the PR study measured only security-related PRs (2%, 675 of 33,596), not all agent PRs.
+- **Observed vs stated:** 
+> All observed behaviour (code scanned, PRs and commits counted). None is self-reported belief. But 'vulnerability' is a scanner or labelled outcome, not confirmed exploitability, except AppSec Santa which manually validated findings.
+
+### Trust mechanism
+
+- **What it costs:** 
+> AppSec Santa: default-config SAST yielded roughly 5 false positives per true positive (772 vs ~153), so triage time is the cost. Siddiq et al.: security PRs wait a median 3.92 hours vs 0.11 hours for others, a measured review delay. Veracode and GitGuardian report no cost figures.
+- **Failure mode class:** 
+> Security (injection, XSS, path traversal, regex DoS, hardcoded credentials, secret leakage). Secondary: over-reliance, since flawed PRs are merged.
+
+### Caveats
+
+- **Limitations stated:** 
+- AppSec Santa: "Snippets don't capture framework-level mitigations"; each prompt run once; English only; default SAST settings; SAST misses logic flaws so counts likely undercount; borderline cases counted as false positives; snapshot of model versions.
+- Rabbi et al.: Semgrep default rules and single tool may miss vulnerabilities; alerts are proxies and not all are exploitable; manual validation only on the 675 labelled security-related, not the 1,047 candidates, so false negatives uncaptured; repos with more than 100 stars only. The paper reports Cohen's kappa as 0.79 in Section 3.3 and 0.62 in Section 9 (internal inconsistency).
+- Siddiq et al.: descriptive associations, not causal; may not generalise to proprietary environments.
+- GitGuardian: no sample size, confidence intervals or causal analysis on the page; authors say the gap should not be read as simple tool failure.
+- Veracode: no limitations section in the press release; tasks chosen for known CWE potential, so 45% is not a base rate for ordinary code.
+- **Counter evidence:** 
+> Rabbi et al.: 84.6% of security-related agent PRs had no new Semgrep alerts, and Codex PRs showed the lowest alert share, so most agent PRs scanned clean on that tool. AppSec Santa: Claude Opus 4.6 and GPT-5.2 era models score 19.5% to 25.7%, lower than Veracode's 45%, suggesting task design drives the rate and newer models may differ (not tested head to head). Secondary report, not opened: a CodeRabbit analysis claimed 2.74x security issues in AI co-authored PRs; the original was not reached. GitGuardian's own caveat that human choices drive leaks.
+
+### Essay use
+
+- **Usable claim:** 
+> In Veracode's 2025 test of over 100 models on 80 security-relevant coding tasks, 45% of test cases produced code with an OWASP Top 10 vulnerability, as scanned by the vendor's own tool. In an independent 2026 test, about a quarter of isolated snippets from six frontier models had a confirmed flaw. In a study of 675 security-related agent PRs, about 15% introduced at least one new Semgrep alert and over half were merged. GitGuardian reports a 3.2% secret-leak rate for Claude Code-assisted commits against a 1.5% baseline, and itself cautions against reading it as a tool failure.
+- **Do not use:** 
+> Do not state '45% of AI code is vulnerable' as a per-PR or per-repo rate. Do not apply 'AI commits leak at double the rate' to AI tools generally. Do not cite CodeRabbit 2.74x. Do not claim scanners 'catch' these flaws: the data show scanners are noisy and the 15.4% PR figure is a scanner output, not confirmed exploitable bugs. Do not treat Veracode's 2025 figures as current model performance.
+
+### Fields with unverified values (those values omitted above)
+
+- control_that_would_have_prevented
+- overlap_with_existing_essays
+- sponsor_and_incentive
+- verification_status
+- what_makes_trust_justified
+
+## Mutation testing and property-based testing of agent output
+
+### Source
+
+- **Citation:** 
+> Douglas J. Leith, 'The Quality of Claude AI-authored Python Tests Is Not Weaker Than Human-authored Tests', arXiv:2608.15188 (cs.SE), submitted 15 August 2026. https://arxiv.org/abs/2608.15188. Secondary source also opened at abstract level: Jeff Otterson, 'Adversarial Test-Hardening for AI-Written Code: An Instrument Autopsy and a Pre-Registered Causal Estimate of the Critic Loop', arXiv:2607.23002, 25 July 2026. https://arxiv.org/abs/2607.23002
+- **Source tier:** Preprint (arXiv, not peer-reviewed) for both. Single-author each.
+- **Exact quotes:** 
+> Leith abstract (arXiv abs page): "We evaluate the quality of Claude AI-written Python tests against human-written Python tests" / "from two established open-source projects Django and Pandas." / "Hundreds of tests per corpus are scored under one identical protocol." / "(Sonnet/Opus 4.6 and later) are no weaker than the two human-written corpora." / "every test is individually scored under three independent fault-injection protocols plus a seven-axis qualitative design rubric". Otterson: only a paraphrase of the abstract was obtained from the fetch tool, no verbatim quote available.
+
+### Claims
+
+- **Key claims:** 
+> Leith: tests written by recent Claude models (Sonnet/Opus 4.6 and later) in real tool use are no weaker than human-written tests from Django and Pandas, using one-sided non-inferiority bounds and three fault-injection protocols (mutation-style) plus a design rubric. Scored per test, not per suite. Otterson (via abstract summary): a loop where a Tester model writes tests, mutation testing finds surviving mutants, and a Critic model writes tests to kill them; all verdicts mechanical. The loop killed mutants one-shot generation missed.
+- **Observed vs stated:** 
+> Observed: tests were executed under fault injection / mutation, mechanical outcomes. Not self-reported belief.
+
+### Trust mechanism
+
+- **What makes trust justified:** 
+> Mutation or fault-injection scoring of each test, rather than line coverage, as an independent mechanical check on whether tests detect defects. Otterson adds a mutation-driven critic loop that adds tests to kill survivors, with no model judging another model.
+- **Failure mode class:** 
+> Wrong or weak code verification (tests that pass but do not detect faults); over-reliance on coverage as a proxy.
+- **Control that would have prevented:** 
+> Not an incident study. Applicable control: run mutation testing on agent-written tests and require surviving mutants to be killed before accepting the tests.
+
+### Caveats
+
+- **Counter evidence:** 
+> Leith's result cuts against the premise that agent-written tests are weaker than human ones: Claude tests were found no weaker than the human corpora. The paper does not, from the abstract, show mutation score revealing weakness that coverage hides. Otterson shows one-shot AI tests leave killable mutants, which supports the premise, but only in a small Python sample. Background (older than 12 months, search-snippet only, not opened): arXiv 2506.02954 reports LLM suites with 100% coverage killing about 4% of mutants; arXiv 2501.12862 (Meta ACH).
+
+### Essay use
+
+- **Usable claim:** 
+> A 2026 preprint (Leith, arXiv:2608.15188) scored hundreds of Claude-written tests against human-written tests from Django and Pandas under fault injection and found the Claude tests no weaker. Another 2026 preprint (Otterson, arXiv:2607.23002) reports that a mutation-driven critic loop killed mutants that one-shot AI-written tests had missed. Both are preprints; the essay should not claim mutation testing is proven to expose weak agent tests at scale.
+- **Do not use:** 
+> The 78% kill rate, the 105 mutants and the p-value as essay figures (only seen second-hand, small sample, preprint). Any claim that coverage hides weak agent tests based on Leith (his result is the opposite). The 4% mutants-killed and 15-25% figures from search snippets and blogs. Any property-based testing claim.
+
+### Fields with unverified values (those values omitted above)
+
+- access_status
+- date_and_recency
+- headline_figures
+- limitations_stated
+- overlap_with_existing_essays
+- sample_unit_and_population
+- sponsor_and_incentive
+- verification_status
+- what_it_costs
+
+## Observability and audit trails of agent actions
+
+### Source
+
+- **Citation:** 
+> (1) GitLab Docs, 'AI audit events', https://docs.gitlab.com/user/ai-governance/ai-audit-events/ and 'AI governance', https://docs.gitlab.com/user/ai-governance/ (accessed 2026-10-16). (2) TierZero, 'AI agent audit trail' blog, https://www.tierzero.ai/blog/ai-agent-audit-trail/ (article dated 2026-04-13), citing an unnamed '2026 survey of over 900 security leaders' labelled 'CSA/RSAC 2026'. (3) OWASP GenAI, 'OWASP Top 10 for Agentic Applications for 2026', https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/ (listing dated 2025-12-09).
+- **Source tier:** 
+> Vendor product documentation (GitLab); vendor blog citing a secondary survey (TierZero); practitioner standards body listing page (OWASP). No peer-reviewed source.
+- **Sponsor and incentive:** 
+> GitLab sells the governance features it documents. TierZero is an agent-ops vendor selling audit tooling. Survey sponsor not stated on the page. OWASP is a nonprofit community project.
+- **Exact quotes:** 
+> GitLab AI governance page: "Browse and filter a unified record of agent activity for compliance and governance purposes." GitLab AI audit events page (as returned by summarising fetch, partly paraphrased): "Each agent session produces a comprehensive audit artifact that you can inspect."; "AI audit event storage is disabled by default"; for flows such as business logic scanning, "no prompts, responses, or tool content"; feature is in beta and "subject to change without notice." TierZero: "68% of organizations cannot distinguish AI agent actions from human actions after the fact." (page body; secondary). OWASP: no logging quote obtained.
+- **Date and recency:** 
+> GitLab docs live as of 2026-10-16 (no publication date). TierZero article 2026-04-13; underlying survey dated only '2026'. OWASP list published 2025-12-09 (within 12 months).
+
+### Claims
+
+- **Key claims:** 
+> 1) GitLab offers an AI audit events feature giving a chronological audit artifact per agent session, attributing composite-identity sessions to a service account with human_author_* fields recording the human who started it. 2) Storage is off by default, it is beta, and some flows record only status, timing, model and tool names with no prompts, responses or tool content. 3) Vendor-cited survey: most organisations cannot tell after the fact whether a human or an agent took an action. 4) Secondary sources say OWASP agentic guidance treats traceability as a control; specific item IDs conflicted across sources and were not verified.
+- **Observed vs stated:** 
+> Stated: survey self-reports and vendor documentation of capabilities. No observed behaviour of what is actually logged in practice was found. The GitLab 'traceability finding' mentioned in the brief was NOT located.
+
+### Trust mechanism
+
+- **What it costs:** 
+> GitLab: storage must be explicitly enabled, Owner role needed to view, Premium/Ultimate tier, self-managed needs gateway config. Reviewer time to read logs is not quantified in any source found.
+- **Failure mode class:** Security and accountability gap: inability to attribute or reconstruct actions after the fact.
+
+### Caveats
+
+- **Limitations stated:** 
+> GitLab: beta, 'subject to change without notice', `glab govern audit` described as experimental and not ready for production (search summary of man page). Metadata-only flows omit content.
+- **Counter evidence:** 
+> Logging exists but is off by default and content-free in some flows, so a feature being available is not evidence it is used. Vendor survey figures are inconsistent in origin and could not be traced to a primary publication.
+
+### Essay use
+
+- **Usable claim:** 
+> GitLab documents an agent audit-events feature that is in beta and disabled by default, and in some flows records tool names and timing but not tool content. A vendor blog cites a 2026 survey saying 68% of organisations cannot tell after the fact whether an agent or a human acted.
+- **Do not use:** 
+> The 21%, 33% and 17% figures; any OWASP item number or quoted logging requirement; any claim of a GitLab traceability finding; any claim of what teams log in practice.
+
+### Fields with unverified values (those values omitted above)
+
+- access_status
+- control_that_would_have_prevented
+- headline_figures
+- overlap_with_existing_essays
+- sample_unit_and_population
+- verification_status
+- what_makes_trust_justified
+
+## Independent second-model review of agent output
+
+### Source
+
+- **Citation:** 
+> [Song 2026 (arXiv:2610.01471)] Tae-Eun Song, 'When Does a Second Model Help? Cross-Model Review in LLM Verification', arXiv:2610.01471 (v1 1 Oct 2026, v2 6 Oct 2026). https://arxiv.org/abs/2610.01471 | [Kim et al. ICML 2025] Kim, Garg, Peng, Garg, 'Correlated Errors in Large Language Models', ICML 2025, PMLR 267:30038-30066; arXiv:2506.07962. https://arxiv.org/html/2506.07962v1 | [Greptile 2026 blog] Rodrigo Caridad / Greptile research team, 'Model inversion' (blog), 21 July 2026. https://greptile.com/blog/model-inversion | [Panickssery et al. 2024 (background)] Panickssery, Bowman, Feng, 'LLM Evaluators Recognize and Favor Their Own Generations', arXiv:2404.13076, 15 April 2024. https://arxiv.org/abs/2404.13076
+- **Source tier:** 
+> [Song 2026 (arXiv:2610.01471)] Preprint (single author, not peer-reviewed) | [Kim et al. ICML 2025] Peer-reviewed (ICML 2025) | [Greptile 2026 blog] Practitioner or vendor blog (company research) | [Panickssery et al. 2024 (background)] Preprint (peer-review status not shown on page); background only, older than 12 months
+- **Access status:** 
+> [Song 2026 (arXiv:2610.01471)] Abstract page only (arXiv abstract page opened; full text not read) | [Kim et al. ICML 2025] Fully read for first ~100,000 of ~117,000 characters (arXiv HTML); remainder not read | [Greptile 2026 blog] Fully read via fetch (page summarised by fetch tool) | [Panickssery et al. 2024 (background)] Abstract only
+- **Exact quotes:** 
+> [Song 2026 (arXiv:2610.01471)] Abstract: "a top-tier cross-model reviewer is not significantly different in F1 from same-model review" | [Kim et al. ICML 2025] Section 4: "each judge systematically inflates the accuracy of models that are less accurate than itself, due to correlated errors". Section 6: "it is important to calibrate error metrics for each model-judge pair using ground-truth data". Impact Statement: "our analysis is limited to a subset of tasks on which homogeneity may be a concern" | [Greptile 2026 blog] Title: "Models are worse at reviewing their own code". "GPT searches for bugs depth-first. Opus goes breadth-first." | [Panickssery et al. 2024 (background)] Abstract: "self-preference, where an LLM evaluator scores its own outputs higher than others'"; "a linear correlation between self-recognition capability and the strength of self-preference bias"
+- **Date and recency:** 
+> [Song 2026 (arXiv:2610.01471)] October 2026, inside the 12-month window | [Kim et al. ICML 2025] arXiv June 2025; ICML July 2025. Roughly 16 months old, slightly outside the 12-month window; background use. | [Greptile 2026 blog] 21 July 2026, inside the window | [Panickssery et al. 2024 (background)] April 2024; background
+
+### Claims
+
+- **Key claims:** 
+> [Song 2026 (arXiv:2610.01471)] A top-tier cross-model reviewer is not significantly better in F1 than a same-model reviewer in a fresh session. The two find partly different errors, so combining them helps. | [Kim et al. ICML 2025] LLM errors are substantially correlated across models. Shared architecture and provider raise correlation. More accurate models have more correlated errors. LLM judges inflate accuracy of weaker models, most strongly for same-provider models. | [Greptile 2026 blog] On real PRs, each of two models found more high-severity bugs in code written by the other model than in code written by itself. | [Panickssery et al. 2024 (background)] LLM evaluators score their own outputs higher than others' even when humans rate them equal. Self-recognition correlates linearly with self-preference after fine-tuning.
+- **Observed vs stated:** 
+> [Song 2026 (arXiv:2610.01471)] Observed (controlled experiment with planted errors) | [Kim et al. ICML 2025] Observed (model outputs on benchmarks) | [Greptile 2026 blog] Observed, but ground truth is a proxy | [Panickssery et al. 2024 (background)] Observed (model scoring behaviour)
+
+### Trust mechanism
+
+- **What makes trust justified:** 
+> [Song 2026 (arXiv:2610.01471)] Running two independent review passes, ideally one from a different model, because the reviewers' misses only partly overlap. | [Kim et al. ICML 2025] Calibrate any model-as-judge against ground-truth data per model-judge pair; do not assume a different provider is independent. | [Greptile 2026 blog] Route PRs to the reviewer model that did not write them. | [Panickssery et al. 2024 (background)] Do not let the author model grade its own output; use a different evaluator.
+- **What it costs:** 
+> [Song 2026 (arXiv:2610.01471)] One extra review call per artifact; token cost and some reviewer-triage time. Not quantified in the source I read. | [Kim et al. ICML 2025] Requires labelled ground truth, which is human time. | [Greptile 2026 blog] Not quantified. Comment volume differs: Codex 1-2 comments per review, Opus 7-8, which affects triage burden. | [Panickssery et al. 2024 (background)] Not discussed.
+- **Failure mode class:** 
+> [Song 2026 (arXiv:2610.01471)] Wrong code / missed defects | [Kim et al. ICML 2025] Over-reliance; correlated wrong answers | [Greptile 2026 blog] Wrong code / missed bugs | [Panickssery et al. 2024 (background)] Over-reliance; biased self-evaluation
+- **Control that would have prevented:** 
+> [Song 2026 (arXiv:2610.01471)] Not an incident study; n/a | [Kim et al. ICML 2025] Not an incident study; n/a | [Greptile 2026 blog] Not an incident study; n/a | [Panickssery et al. 2024 (background)] n/a
+
+### Caveats
+
+- **Limitations stated:** 
+> [Song 2026 (arXiv:2610.01471)] Non-significance 'does not establish equivalence'; model difference and reviewer capability are confounded; requirements-withholding effects are untested point estimates; one baseline run of uncertain provenance and 14 failed calls excluded; records available only on request. | [Kim et al. ICML 2025] Metric treats all incorrect answers identically; open-ended generation and complex reasoning left to future work; resume evaluations subjective; limited to tasks where homogeneity may matter. | [Greptile 2026 blog] No formal limitations section. Evident: authorship from commit-trail heuristics; ground truth from sentiment, votes and git history; recall scored by an LLM judge; two models only; gap may shrink as models improve. | [Panickssery et al. 2024 (background)] Not read (abstract only).
+- **Counter evidence:** 
+> [Song 2026 (arXiv:2610.01471)] Does not show cross-model review beats fresh same-model review. Greptile (separate entry) reports the opposite direction on real PRs. | [Kim et al. ICML 2025] Does not test code review. Song 2026 finds cross-model reviewers still catch partly different errors. | [Greptile 2026 blog] Differences are small (a few points). No significance testing reported. Song 2026 finds no significant F1 advantage for cross-model review. | [Panickssery et al. 2024 (background)] Does not show self-preference reduces bug detection in code review.
+
+### Essay use
+
+- **Usable claim:** 
+> [Song 2026 (arXiv:2610.01471)] In one preprint experiment with planted errors, a different-model reviewer was not significantly better than a fresh same-model reviewer, but the two caught partly different errors (41.2% overlap), and pairing them found more than two same-model reviews. | [Kim et al. ICML 2025] Across hundreds of models on benchmark tasks, errors are correlated, and a judge from the same provider inflates a weaker model's accuracy more. Different vendors are not automatically independent checks. | [Greptile 2026 blog] A vendor's internal study of 1,000 PRs found each model caught a modestly higher share of high-severity bugs in the other model's code than in its own. It is vendor research with proxy ground truth. | [Panickssery et al. 2024 (background)] Earlier work found that LLM evaluators favour their own generations over others' when humans rate them equal.
+- **Do not use:** 
+> [Song 2026 (arXiv:2610.01471)] Do not claim cross-model review is proven better or proven equivalent. Do not quote the 56.7% or 42.7% figures without opening the PDF. | [Kim et al. ICML 2025] Do not apply to code review directly; the tasks were multiple-choice and resume screening. Do not state the 60% figure without checking. | [Greptile 2026 blog] Do not present as independent or peer-reviewed. Do not generalise the percentages to other models or repos. | [Panickssery et al. 2024 (background)] Do not claim it was shown for code review or agent output.
+- **Overlap with existing essays:** 
+> [Song 2026 (arXiv:2610.01471)] Unknown; not checked against the Verification Gap or Checking Isn't Catching essays. | [Kim et al. ICML 2025] Unknown; not checked. | [Greptile 2026 blog] Unknown; not checked. | [Panickssery et al. 2024 (background)] Unknown; not checked.
+
+### Other info
+
+- **Synthesis:** 
+> Evidence for a second model is real but modest and mixed. Different reviewers catch partly different defects (Song 2026: 41.2% overlap; Greptile 2026), and errors are correlated across models, more so within a provider (Kim et al., ICML 2025). But the one controlled test on review found no significant F1 gain over a fresh same-model session. No peer-reviewed study of cross-model code review of agent output was found.
+
+### Fields with unverified values (those values omitted above)
+
+- Greptile bar-to-model mapping
+- Kim et al. 60% figure
+- Song 2026 headline figures (abstract page only)
+- overlap_with_existing_essays for all entries
+- sponsor fields for Song and Panickssery
+
+## Small diffs, staged rollout and rollback as trust mechanisms
+
+### Source
+
+- **Citation:** 
+> Primary: Ehsani, Pathak, Rawal, Al Mujahid, Imran, Chatterjee, 'Where Do AI Coding Agents Fail? An Empirical Study of Failed Agentic Pull Requests in GitHub', arXiv:2601.15195, 21 Jan 2026, https://arxiv.org/abs/2601.15195. Supporting (non-AI): Rahman, Codabux, Roy, 'Does Order Matter? An Empirical Investigation into the Impact of File Ordering on Code Review Effectiveness', arXiv:2609.22610, 18 Sep 2026, https://arxiv.org/abs/2609.22610
+- **Source tier:** Preprints (both arXiv, not peer-reviewed as of access)
+
+### Claims
+
+- **Key claims:** 
+> Agentic PRs that were not merged tend to be larger and touch more files than merged ones, and often fail CI. Tasks like docs, CI and build updates merge most; performance and bug-fix tasks least. Separately, in human-and-mixed GitHub PRs, review attention thins as PR size grows (about 8.7% lower odds of any review comment per extra modified file) and latent bug rates are non-linear in size: lowest around ten files, higher for very small and very large PRs.
+- **Headline figures:** 
+> 33k agent-authored PRs, five agents (2601.15195). 330,343 multi-file PRs, 756,814 file instances, 182 projects, five languages (2609.22610). About 8.7% lower odds of a review comment per additional modified file (2609.22610 abstract, via summarizer). Latent bug rate 56.7% at file position 1 rising to 61.5% at position 30. Nothing numeric on size for the agentic paper was seen on the abstract page.
+- **Sample unit and population:** 
+> Pull requests on open-source GitHub. 2601.15195: 33k agent PRs (AIDev dataset, five agents). 2609.22610: 330,343 PRs, 182 OSS projects; not AI-specific.
+- **Observed vs stated:** Observed behaviour from mined repository data in both. No self-report.
+
+### Trust mechanism
+
+- **What makes trust justified:** 
+> Neither paper tests staged rollout, feature flags, canaries or rollback. Evidence supports only the narrower point that smaller agent PRs are more likely to be merged and that reviewers attend less per file as PRs grow, so keeping diffs bounded and CI-passing is associated with acceptance. Feature flag, canary and rollback evidence for AI changes: none found.
+- **What it costs:** 
+> Not measured. Splitting changes adds PR count and coordination; the non-linear result suggests very small PRs are not free of risk either.
+- **Failure mode class:** 
+> Wrong or unwanted code; reviewer disengagement; CI failure; duplicate PRs. Not destructive-action or security in this source.
+- **Control that would have prevented:** Not applicable (no incidents). Associated controls: bounded PR size and passing CI before review.
+
+### Caveats
+
+- **Counter evidence:** 
+> 2609.22610 finds very small PRs also have elevated latent bug rates, so 'smaller is always safer' is not supported. Association between size and non-merge may be confounded by task type (bug-fix and performance tasks merge worst). Search found no revert or rollback rate data for AI PRs. Classic SmartBear/Cisco 200-400 line figures were only seen via blogs, not the original.
+
+### Essay use
+
+- **Usable claim:** 
+> In a study of 33k agent-authored GitHub PRs, those that were not merged tended to involve larger changes and touch more files than merged ones. Association only, not proof that shrinking diffs causes acceptance. Separately, a mining study of 330k human PRs found reviewer attention falls as PRs touch more files.
+- **Do not use:** 
+> Any rollback, canary or feature-flag claim tied to AI output (no source). The 15% CI figure and per-agent merge rates until verified in full text. SmartBear 200-400 line and 60-90 minute figures. Any claim that smaller is always safer.
+
+### Fields with unverified values (those values omitted above)
+
+- access_status
+- date_and_recency
+- exact_quotes
+- limitations_stated
+- overlap_with_existing_essays
+- sponsor_and_incentive
+- verification_status
+
+## Track record and calibrated trust
+
+### Source
+
+- **Citation:** 
+> Primary (opened): Behzad, Gurney, Wang, Pynadath. 'Beyond Predictions: A Study of AI Strength and Weakness Transparency Communication on Human-AI Collaboration'. arXiv 2508.09033v1, 12 Aug 2025. https://arxiv.org/html/2508.09033v1. Background (not opened in full): Lee & See 2004, 'Trust in Automation: Designing for Appropriate Reliance', Human Factors 46(1):50-80, https://journals.sagepub.com/doi/10.1518/hfes.46.1.50_30392. Background: Mehrotra et al., 'A Systematic Review on Fostering Appropriate Trust in Human-AI Interaction', arXiv 2311.06305, Nov 2023.
+- **Source tier:** 
+> Behzad et al.: preprint (final version slated for Springer LNCS). Lee & See: peer-reviewed, 2004 background. Mehrotra et al.: preprint systematic review, 2023 background.
+- **Access status:** 
+> Behzad et al.: HTML page fetched and read via summarising fetch tool (substantially read, not verified line by line). Lee & See: abstract and secondary summaries only; full-text PDF mirrors failed (certificate error, course page). Mehrotra et al.: abstract page only; PDF not machine-readable.
+
+### Claims
+
+- **Key claims:** 
+> Behzad et al.: telling users how accurate the AI is for cases similar to the current one (a 'self-assessing' explanation) or its confidence improved task performance and trust calibration versus no information; compliance with correct AI advice went up and compliance with wrong-but-overconfident advice was lower with the self-assessing display than with confidence. Lee & See (background, per secondary descriptions): appropriate trust involves calibration, resolution and specificity; this is a conceptual model, not an experiment. Mehrotra (background): review of how appropriate trust is fostered and measured.
+- **Headline figures:** 
+> Behzad et al. (n=272, ~50 per condition, 40 bonus-eligible tasks, income above/below $80K): mean task score No Helper 0.780, Decision-Only 0.790, 80% Explanation 0.796, Confidence 0.825, Self-Assessing 0.815. Versus control: Confidence +0.045 (p<0.01), Self-Assessing +0.035 (p<0.05); Decision-Only and 80% not significant. Compliance when AI correct (log-odds vs Decision-Only): Self-Assessing 0.803, Confidence 0.721 (p<0.001). Compliance when AI wrong and overconfident: Confidence 1.026 (p<0.01), Self-Assessing 0.632 (p<0.05). Underlying model 80% test accuracy; self-assessing tree 66% accuracy.
+- **Sample unit and population:** 
+> Behzad et al.: 272 US adults on Prolific, mean age 37, 177 female, 185 white; participants as unit; lab-style online task, not engineers, not agents, not software work. Test items were selected to keep the AI at 80% accuracy and to include misleading-confidence cases.
+- **Observed vs stated:** 
+> Behzad et al.: compliance and task score are observed behaviour. Self-reported understanding of the AI showed no significant group differences. Lee & See: conceptual.
+
+### Trust mechanism
+
+- **Failure mode class:** Over-reliance (blind trust in an overconfident wrong AI) and under-reliance.
+- **Control that would have prevented:** 
+> Not an incident study. In the experiment, the self-assessing display lowered compliance with wrong, overconfident advice (0.632 vs 1.026 for confidence only) in the log-odds comparison.
+
+### Caveats
+
+- **Limitations stated:** 
+> Behzad et al.: one task (income prediction), one AI accuracy level (80%), authors call for replication; no self-report differences; awareness-vs-confidence difference slight and not statistically significant; modest 66% self-assessment accuracy; sample skewed female and white, US only. Items were curated, which limits realism.
+
+### Essay use
+
+- **Usable claim:** 
+> In one 2025 preprint experiment (272 online participants, income prediction), showing people how accurate an AI is for cases like the current one, or its confidence, improved their decisions and reduced following wrong advice more than a single overall accuracy figure. The classic Lee & See framework treats appropriate trust as matched to what automation can actually do, which is consistent with, but does not directly test, setting trust per task type from observed success rates.
+- **Do not use:** 
+> Do not say research proves per-task-type track records calibrate trust in coding agents. Do not use the 0.045 or 0.035 score gains as evidence about software work. Do not quote Lee & See definitions of calibration, resolution or specificity until the full text is opened. Do not cite the unopened IJACSA or Frontiers results (84.14%, 40% trust gain).
+
+### Fields with unverified values (those values omitted above)
+
+- counter_evidence
+- date_and_recency
+- exact_quotes
+- overlap_with_existing_essays
+- sponsor_and_incentive
+- verification_status
+- what_it_costs
+- what_makes_trust_justified
+
+## Evolution of Programmers' Trust in Generative AI Programming Assistants
+
+### Source
+
+- **Citation:** 
+> Anshul Shah, Thomas Rexin, Elena Tomson, Leo Porter, William G. Griswold, Adalbert Gerald Soosai Raj. 'Evolution of Programmers' Trust in Generative AI Programming Assistants'. 25th Koli Calling International Conference on Computing Education Research (2025). arXiv:2509.13253v1 [cs.HC], 16 Sep 2025. https://arxiv.org/abs/2509.13253 (PDF opened: https://arxiv.org/pdf/2509.13253). Note: the arXiv copy carries placeholder DOI/ISBN (XXXX), so it is the author version, not the final proceedings text.
+- **Access status:** Fully read (full text extracted from the PDF, all sections and references).
+- **Sponsor and incentive:** 
+> Acknowledgments: 'This work was supported by NSF #2417531.' Public research funding. No vendor sponsor stated. Study uses GitHub Copilot via the free GitHub Student Developer Pack; no Microsoft/GitHub funding disclosed.
+- **Exact quotes:** 
+> (1) Abstract: "Student trust, on average, increased throughout the study. After completing a project with Copilot, however, students felt that Copilot requires a competent programmer to complete some tasks manually." (2) Sec 3.3: "We do not use acceptance rate to measure trust since acceptance rate is a behavior, which is different from treating trust as an attitude [4]." (3) Sec 7.3 Limitations: "we only investigate students' trust as an attitude (via surveys and open-ended questions) rather than as a behavior (via acceptance rate)." (4) Sec 7.3: "we cannot extrapolate our findings to a longer time frame." (5) Sec 6.1.3: "there is an significant association (p = 0.03) between the time frame and the trust changes, with more students reporting trust increasing after immediate use and trust decreasing after extended use." (6) Sec 6.1.2: "Students' answers on the Pre-Survey were, on average, lower than 3.0 (the neutral rating)". (7) Sec 7.1.3: "A remarkable proportion (36.6%) of students mentioned that they felt Copilot requires a competent programmer to use it." (8) Sec 7.3: "The tacit 'endorsement' by the instructor and the software engineering industry may have skewed student responses on the trust survey." (9) Sec 7.2.1: "students encountered more instances of Copilot's shortcomings in the project component."
+- **Date and recency:** 
+> Posted to arXiv 16 Sep 2025. Data collected in a course that began April 2025 (VS Code 1.99): lecture surveys (pre/post, same 80-minute session) and a final survey at submission of a roughly 10-day project.
+
+### Claims
+
+- **Key claims:** 
+> Trust is dynamic. Self-reported trust went up after a short lecture with Copilot demos and a small task, then more students reported trust falling after a 10-day brownfield feature project. After extended use the dominant theme was that Copilot 'requires a competent programmer' to find, comprehend, debug or complete parts of the task. Reasons for rising trust: seeing correct output, context awareness, understanding how the tool works (NLP basics), learning its features. Main reason for falling trust: incorrect output. Authors recommend educators let students use assistants on tasks of varied difficulty, keep teaching comprehension, debugging and testing without AI so students can verify output, explain NLP basics, and demo features.
+- **Headline figures:** 
+> Immediate (after ~1h lecture, n=71) self-reported trust change: 49.3% increased, 33.8% no change, 16.9% decreased. Extended (after 10-day project): 39.4% increased, 23.9% no change, 36.6% decreased. Chi-square test of trend p = 0.03. Among those whose trust rose immediately, 48.6% rose again and 40.0% fell after the project. Prior experience, immediate use: 60.0% of no-experience students increased vs 38.9% of experienced (not significant). Extended: 38.9% vs 40.0% increased. 6-item survey (1-5 scale, Amoozadeh et al.): pre-survey means below 3.0; significant rises (paired t-test, Holm-Bonferroni) for S3 'I know what will happen the next time I use GitHub Copilot because I understand how it behaves' and S5 'personal preference' after the lecture, and S2 'output as good as a highly competent person could produce' after the project. Notably no significant change on S1 'I trust GitHub Copilot's output' or S6 'Overall, I trust' reported in text. Themes after extended use: 'requires a competent programmer' 36.6% of all responses; 'depends on quality of prompts' 15.5%; among decreased-trust students (n=26) 54% cited incorrect output and 54% needed a competent programmer; among increased-trust students (n=28) 57% cited correct output. 87% had no prior Copilot experience on large code bases; 49.3% had never used Copilot.
+- **Sample unit and population:** 
+> 71 upper-division CS students (one advanced brownfield software engineering elective at UC San Diego, large US public university) who completed all three surveys. Demographics from only 60 of them (80% Asian/Asian-American, 67% he/him, 57% no internship). Code base: idlelib from CPython, about 23,500 lines in 128 files. Task: add a 'Go to Definition' feature, roughly 30 lines, using Copilot. Student, not professional, population; single course, single term. Qualitative coding n=36 (prior experience question), n=35/12 (immediate up/down), n=28/17/26 (extended up/same/down).
+- **Observed vs stated:** 
+> Entirely stated/self-reported. Data are Likert survey items plus open-ended free text and a self-assessed 'did your trust increase/no/decrease' question. The authors explicitly did not measure behaviour (no acceptance rate, no logs of accepted/rejected suggestions, no verification behaviour). The competent-programmer theme is students describing their own manual work, not an observed measurement.
+
+### Trust mechanism
+
+- **What makes trust justified:** 
+> Authors treat calibrated trust as the goal, not high trust. Trust judgments should rest on the student's ability to verify output: 'students can still comprehend, modify, debug, and test code in large code bases without AI assistants' (Rec. 2). Also exposure to tasks of varied difficulty (Rec. 1), understanding how the tool generates output (Rec. 3), and knowing its features (Rec. 4). Frames via MATCH model (trustworthiness attributes, affordances, judgments). Not a claim that any specific control makes agent output safe.
+- **What it costs:** 
+> Not quantified. Implied costs: the programmer must find, comprehend and debug code manually when Copilot fails; students re-prompted and modified prompts ('depends on quality of prompts'); maintaining non-AI verification skills. No time or review-burden measurements.
+- **Failure mode class:** 
+> Wrong code (incorrect output, failure to locate the right file, inability to debug its own code, handle edge cases) and over-/under-reliance as the framing risk. The paper cites Perry et al. for insecure code with false confidence but does not itself test security.
+- **Control that would have prevented:** 
+> Not an incident study; none applicable. The closest is the recommended human verification skill (comprehend, debug, test without AI).
+
+### Caveats
+
+- **Limitations stated:** 
+> Attitude not behaviour: 'we only investigate students' trust as an attitude ... rather than as a behavior'. Findings limited to students with similar backgrounds, a Python code base of roughly 23,000 lines. 10 days only: 'we cannot extrapolate our findings to a longer time frame'. Threats: instructor endorsement heuristic may have skewed responses; surveys may prime students to reflect on trust. Author-listed additional caveat: 11 of 71 had no demographics.
+- **Counter evidence:** 
+> The trust story is mixed rather than a monotone rise: net immediate rise was followed by 36.6% reporting decline after extended use. Trust did not rise on the headline 'I trust Copilot's output' item per the text (only S2, S3, S5 flagged), so 'trust increased' rests partly on self-assessed change question. Prior experienced students showed smaller, non-significant immediate rises. Authors' own reading of the immediate rise is confounded by lecture priming and instructor endorsement. Related work they cite: Amoozadeh et al. found upper-division students less trusting than CS2 students; Brown et al. found early-career developers accept more AI suggestions.
+
+### Essay use
+
+- **Usable claim:** 
+> In a 2025 survey study of 71 upper-division CS students at one US university, more students reported trust in GitHub Copilot rising than falling after a one-hour introduction (49.3% vs 16.9%), but after a 10-day project on a 23,500-line legacy code base 36.6% reported falling trust, and the most common reason given was that Copilot needed a competent programmer to finish or fix the work. All of this is self-reported attitude, not observed behaviour.
+- **Do not use:** 
+> Do not present as evidence about professional developers, agents, or long-run trust. Do not say trust 'increased' without noting the survey items and self-assessed question differ and the 10-day result tilted downward. Do not present the 'competent programmer' theme as a measured verification burden or cost. Do not imply acceptance rates, verification behaviour or defect rates were observed. Do not say the paper shows verification practices work.
+
+### Fields with unverified values (those values omitted above)
+
+- overlap_with_existing_essays
+- source_tier
+- verification_status
+
+## Identifying the Factors that Influence Trust in AI Code Completion (Google Research)
+
+### Source
+
+- **Citation:** 
+> Adam Brown, Sarah D'Angelo, Ambar Murillo, Ciera Jaspan, Collin Green (all Google). 'Identifying the Factors that Influence Trust in AI Code Completion'. Proceedings of the 1st ACM International Conference on AI-Powered Software (AIware '24), Porto de Galinhas, Brazil, July 15-16, 2024, 9 pages. https://doi.org/10.1145/3664646.3664757 ; PDF https://storage.googleapis.com/gweb-research2023-media/pubtools/7831.pdf
+- **Source tier:** Peer-reviewed conference paper, company research (Google Engineering Productivity Research)
+- **Access status:** Fully read (full PDF text extracted and read)
+- **Sponsor and incentive:** 
+> Written by Google employees about Google's internal code completion tool; no external funder stated. Mild incentive to show that tool design choices raise acceptance and trust.
+- **Exact quotes:** 
+- "we used accepted suggestions as this proxy. We propose that this is a valid proxy because accepting a suggestion demonstrates that the developer is being vulnerable to taking on code written by AI that they believe will benefit them" (Section 4)
+- "the model quality score associated with the suggestion (the model produced log-probability of the suggestion being accepted)" (Section 4.1.1)
+- "a one standard deviation increase in model score was associated with a 23.1% increase in the odds of accepting a suggestion, OR = 1.231, 95% CI [1.225, 1.236]" (Section 5.1)
+- "Too much trust when it is not warranted is risky" (Section 1)
+- "we leveraged the acceptance of AI-generated code as a definition of trust... but may not tell a comprehensive story about this behavior. For example, a developer may accept a suggestion and then immediately delete it" (Section 7)
+- "these results are strictly correlational in nature" (Section 7)
+- "I think it's the more errors that I see the more likely I will trust it less." (interview participant, Section 3.2.1)
+- "even when the model predicts with extremely high confidence that a developer will accept a suggestion, that the acceptance rate is only 50%" (Section 6)
+- "The strongest positive predictor of accepting a multi-line code suggestion was whether or not the developer had been awarded readability in the language of the suggestion." (Section 6)
+- **Date and recency:** 
+> Received 2024-04-05, accepted 2024-05-04, presented July 2024. Log data window not stated; developer features use 90-day (language usage) and 30-day (codebase familiarity) lookbacks before each suggestion. Pre-dates agentic coding tools; covers multi-line completions only.
+
+### Claims
+
+- **Key claims:** 
+> Three groups of factors influence acceptance of AI completions: (1) suggestion characteristics (model quality score, length, position in line and file), (2) developer characteristics (language expertise, familiarity with the tool, tenure), (3) development context (test file, change size, bug type). Model quality score was one of the strongest predictors of acceptance. Language readability (expertise) was the strongest positive predictor. Test files and short/long suggestions lowered acceptance. Familiarity with the tool had small effects, smaller than interviewees described. Codebase familiarity and issue priority did not predict acceptance. Authors recommend personalisation and developer controls, and showing model confidence in the IDE. Authors say appropriate trust, not maximal trust, is the goal.
+- **Headline figures:** 
+> Model score (z-scored): OR 1.231 per SD [1.225, 1.236]. Readability in suggestion language: OR 1.305 [1.262, 1.349]. Test file: OR 0.792 [0.784, 0.800]. Suggestion length bottom and top third vs middle: OR 0.784 and 0.785. Line position bottom third: OR 0.859; top third: OR 0.938. Character position in line: OR 0.991 per character. Primary language usage (>25% LOC, 90 days) vs working usage: OR 1.041; no usage: OR 0.909; some usage: OR 0.959. Change size XS: OR 0.870; L: OR 1.146; XL: OR 1.148 (ref Size S). Bug fix: OR 0.959; internal cleanup: OR 0.845. Tenure <6 months: OR 1.073; 3-5 years: OR 0.956 (ref 1-3 years). Overall suggestions seen: OR 1.0002 per suggestion (about 2% per SD of 101). Suggestions seen per day: OR 0.994. Not significant: bug priority (mostly), job level (mostly), codebase and file familiarity. Pseudo R2 0.182, N = 1,000,098. 85% of suggestions linked to an issue. Model reached about 50% acceptance even at the highest predicted-acceptance confidence.
+- **Sample unit and population:** 
+> Interviews: 12 Google software developers, 60-minute semi-structured, thematic analysis. Logs: 1M multi-line code completion suggestions seen by 59k Google developers, each tied to an eventual code change. Enterprise (Google internal tool and codebase), not open source. Mixed-effects logistic regression with developer random intercept and temporal spline.
+- **Observed vs stated:** 
+> Both. Interviews are self-reported beliefs. Log analysis is observed behaviour (accept or not). The behavioural measure is acceptance as a proxy for trust, not trust itself and not correctness.
+
+### Trust mechanism
+
+- **What makes trust justified:** 
+> The paper does not test what makes trust justified. It measures what predicts acceptance. Interviewees said they trust high-quality, accurate suggestions and are limited by their own ability to evaluate output. The authors argue for 'appropriate' trust and propose surfacing model confidence or predicted accuracy, personalisation and user controls over when suggestions appear.
+- **What it costs:** 
+> Interviewees said longer suggestions carry more risk because they take a long time to review. The paper does not measure review time or cost of verification.
+- **Failure mode class:** 
+> Over-reliance and miscalibrated trust (the paper cites prior work on less secure code with AI assistants). It does not measure wrong code or incidents.
+- **Control that would have prevented:** Not an incident study. Not applicable.
+
+### Caveats
+
+- **Limitations stated:** 
+> Google-only setting, may not generalise (e.g. students). Feature set limited by the preliminary study and logs coverage. Acceptance as trust may be incomplete: accepted code may be edited or deleted, and persistence was not examined. 'Strictly correlational in nature.' Only multi-line completions studied. Priority may not capture criticality.
+- **Counter evidence:** 
+> Interview claims that familiarity and task criticality drive trust were only weakly replicated or not at all in the logs. Seeing more suggestions in a day was associated with lower acceptance. Newer employees accepted more and 3-5 year employees fewer, which cuts against a simple expertise-increases-acceptance story. Even at very high model confidence only about 50% were accepted, so acceptance is not just model score.
+
+### Essay use
+
+- **Usable claim:** 
+> In a log study of 1M multi-line completions from 59k Google developers, acceptance (used as a proxy for trust) rose with the model's own quality score, with developer language expertise and with change size, and fell for suggestions in test files and for very short or long suggestions. The study did not measure whether accepted code was correct, and its authors call the results correlational. Interviewees said they trust accurate suggestions, but the logs only show acceptance tracks the model's confidence score.
+- **Do not use:** 
+> Do not say acceptance tracks correctness, or that trust here was shown to be warranted. Do not call model score 'quality' or 'accuracy' without saying it is predicted acceptance probability. Do not generalise to agents or non-Google settings. Do not claim expertise causes better judgement: expertise raised acceptance.
+
+### Fields with unverified values (those values omitted above)
+
+- overlap_with_existing_essays
+- verification_status
+
+## The End of Code Review: Coding Agents Supersede Human Inspection
+
+### Source
+
+- **Citation:** 
+> Martin Monperrus (KTH Royal Institute of Technology), 'The End of Code Review: Coding Agents Supersede Human Inspection', arXiv:2606.13175v1 [cs.SE], 11 Jun 2026. https://arxiv.org/abs/2606.13175 (PDF: https://arxiv.org/pdf/2606.13175)
+- **Source tier:** Preprint (arXiv, not peer reviewed). Position paper, about six pages.
+- **Access status:** Fully read (PDF opened and text extracted, all sections and references).
+- **Exact quotes:** 
+- "We do not present a new empirical study; instead, we synthesise existing capability evidence, and enumerate the implications for software engineering practice, tooling, and research." (Section I, Introduction)
+- "coding agents have reached a capability threshold at which human code review is redundant and should be replaced by agent-driven verification." (Section I)
+- "Our argument rests on two claims: every stated goal of code review can be served by agents at lower cost and higher throughput; the naive integration in which agents write code and humans remain the mandatory reviewers is a dead end because it neither provides meaningful assurance nor scales with AI-assisted throughput." (Abstract)
+- "In practice, reviews of agent-generated code become rubber-stamps: the human approves because the code looks correct, because the tests pass, and because the cognitive cost of genuine scrutiny is prohibitive [14]." (Section IV.B)
+- "The crossover point, at which the marginal benefit of human review no longer justifies its marginal cost, has already been reached." (Section IV.C)
+- "Human approval is not eliminated; it is reserved for the decisions that genuinely require it: high-risk changes, novel architecture choices, and regulated code paths where a named human must bear legal accountability." (Section V.A)
+- "A human reviewer who is unsure about a change will typically say so; an LLM may silently produce an approval." (Section VI.A)
+- "When the same model family that generates code is also responsible for reviewing it, there is a risk that generative and review blind spots are correlated" (Section VI.B)
+- "This is an active area of security research with no fully solved defences [32], and it represents a qualitatively new attack surface that does not exist for human reviewers." (Section VI.C, prompt injection of reviewer agents)
+- "Code review will not disappear overnight. Its role will refocus to a layer of high-stakes human oversight: architecture decisions with long-lived consequences, security-critical paths in regulated systems, and changes whose correctness depends on requirements that no agent has been given access to." (Section VII)
+- **Date and recency:** 
+> Posted 11 Jun 2026 (v1). No original data collection. Capability evidence cited runs to late 2025 (SWE-bench leaderboard 2025; arXiv 2512.09882).
+
+### Claims
+
+- **Key claims:** 
+> Three claims in the body (the abstract says two): (1) every stated goal of review (defect detection, style, knowledge transfer, team awareness) can be met by agents at lower cost and higher throughput; (2) agent-writes/human-reviews is a dead end: human review gives no genuine assurance of agent code (becomes rubber-stamping) and does not scale with AI-assisted throughput; (3) the cost-benefit of mandatory human review has already flipped. Proposed: an independent agent reviews agent code, with humans only when agents flag uncertainty or a risk threshold is crossed. Humans retained for high-risk, architectural, regulated paths. Paper itself is more hedged in conclusion than title: 'will not disappear overnight', role refocuses to high-stakes oversight.
+- **Headline figures:** 
+> Developers at large organisations spend 'between ten and fifteen percent of their working hours' reading and commenting on others' code (cites Sadowski et al. 2018, Google). Review latency 'routinely stretches over twenty-four hours' (cites Hilton et al. 2016). Fagan inspections 'up to three percent of total project effort'. SWE-bench: GPT-4 with retrieval ~1.7%, SWE-agent ~12.5%, SWE-bench Verified >50% by late 2024, 'more than 70%' on public leaderboard late 2025 (Section III.A). NOTE internal inconsistency: Introduction says state-of-the-art agents 'resolve more than eighty percent of tasks'. AlphaCode 'top 54%' of Codeforces participants. No new numbers produced by the paper.
+- **Sample unit and population:** 
+> None. No sample. Synthesis of prior work: Bacchelli and Bird (Microsoft), Sadowski et al. (Google), Czerwonka et al. (Microsoft), CodeReviewer, Pornprasit and Tantithamthavorn, SWE-bench, Pearce et al. (Copilot CWE).
+- **Observed vs stated:** 
+> Neither. Argumentative synthesis. Cited sources are a mix of observed behaviour (SWE-bench, review studies) and survey. The central premise that human review of agent code becomes rubber-stamping is asserted, with a citation to Czerwonka et al. that predates agent-written code, so it is not observed in agent-authored context.
+
+### Trust mechanism
+
+- **What makes trust justified:** 
+> Independent agent review in CI as a structured merge gate: test coverage thresholds, security scan results, style compliance, reasoning traces. Ensemble review by multiple independent agents, ideally different models, requiring consensus. Calibrated uncertainty and abstention. Cyber-specialised frontier reviewers for security sign-off. Auditable, re-runnable structured reports (JSON, SARIF). Human escalation for flagged-uncertain or high-risk changes.
+- **What it costs:** 
+> Paper claims agent review is cheaper and instantaneous. It does not quantify agent review cost, false-positive rate or the human time to handle escalations. Acknowledges loss of informal knowledge transfer and tacit culture (needs pair programming, mentorship) and a new attack surface (prompt injection).
+- **Failure mode class:** 
+> Wrong code (subtle semantic errors in plausible agent code), false report/silent approval by LLM reviewer, correlated blind spots between generator and reviewer, security, prompt injection of reviewer agents, over-reliance (human rubber-stamping), accountability gap.
+- **Control that would have prevented:** 
+> Not an incident paper. Controls proposed: independent multi-model ensemble review, abstention/calibration, specialised security reviewers, treating reviewer prompt injection as first-class threat model, human sign-off on regulated and high-risk paths.
+
+### Caveats
+
+- **Limitations stated:** 
+> States it is not an empirical study. Section VI lists its own counter-arguments: hallucination and false negatives, correlated generator/reviewer blind spots, prompt injection ('no fully solved defences'), architectural coherence, ethical accountability, loss of tacit knowledge transfer. Mitigations given are proposals, not tested. Claims to be 'the first to argue for the complete displacement of mandatory human code review'.
+
+### Essay use
+
+- **Usable claim:** 
+> A June 2026 arXiv position paper by Martin Monperrus argues that coding agents have made mandatory human code review redundant for routine changes and that human review of agent-written code tends to become a rubber stamp. It presents no new empirical data, and itself lists correlated generator/reviewer blind spots and reviewer prompt injection as unresolved risks, and keeps humans for high-risk and regulated changes.
+- **Do not use:** 
+> Do not present it as an empirical study or as evidence that agent review works. Do not use its SWE-bench numbers (80% vs 70% inconsistent) or the 10-15% review time figure without checking Sadowski et al. Do not say it claims review ends entirely; the conclusion says it will refocus, not vanish overnight. Do not cite 'rubber-stamp' as an observed finding.
+
+### Fields with unverified values (those values omitted above)
+
+- counter_evidence
+- overlap_with_existing_essays
+- sponsor_and_incentive
+- verification_status
+
+## Security Degradation in Iterative AI Code Generation
+
+### Source
+
+- **Citation:** 
+> Shivani Shukla, Himanshu Joshi, Romilla Syed. 'Security Degradation in Iterative AI Code Generation: A Systematic Analysis of the Paradox'. arXiv:2506.11022 (v2, 26 Sep 2025); accepted at IEEE ISTAS 2025. https://arxiv.org/abs/2506.11022
+- **Source tier:** Preprint, stated as peer-reviewed and accepted at IEEE ISTAS 2025 (conference)
+- **Sponsor and incentive:** 
+> No funding statement found. Academic authors (University of San Francisco; Vector Institute; UMass Boston). No product sold.
+- **Exact quotes:** 
+- Abstract: "Our findings show a 37.6% increase in critical vulnerabilities after just five iterations"
+- Section IV-C: "Human review between iterations is essential to detect these subtle security degradations"
+- Section VI: "We focused on OpenAI's GPT-4o."
+- Section VI: "Developers rarely use LLMs in fully autonomous iteration chains."
+- Section II-B (quoting Chong et al.): "upon prompting, LLM can introduce issues in files that were issues-free before prompting"
+
+### Claims
+
+- **Key claims:** 
+> Repeated LLM 'improvement' of code, with no human in the loop, increases vulnerabilities rather than reducing them (feedback loop security degradation). Even security-focused prompts did not eliminate new vulnerabilities. Vulnerability count correlates with code complexity growth. Authors recommend human review between iterations.
+- **Headline figures:** 
+- 37.6% increase in critical vulnerabilities after five iterations (abstract; per-iteration breakdown behind this number not located in body)
+- Table II total/critical vulnerabilities by strategy: efficiency-focused 124/37; feature-focused 158/29; security-focused 38/7; ambiguous 67/14 (total 387, critical 87)
+- Average vulnerabilities per sample: iterations 1-2: 2.1 (SD 0.9); 3-7: 4.7 (SD 1.2); 8-10: 6.2 (SD 1.8)
+- Complexity correlation r = 0.64; 10% complexity increase associated with 14.3% increase in vulnerability count
+- **Observed vs stated:** 
+> Observed: controlled experiment with tool-detected and manually reviewed vulnerabilities, not self-report.
+
+### Trust mechanism
+
+- **What makes trust justified:** 
+> Human review between LLM iterations; cap consecutive LLM-only iterations at three and reset after each human review; security review after every iteration; conventional static analysis between iterations; extra scrutiny when complexity rises (Section V-B).
+- **What it costs:** 
+> Human review checkpoints every few iterations and per-iteration security scanning; paper gives no quantified cost.
+- **Failure mode class:** Security (vulnerabilities introduced or accumulated through repeated autonomous modification)
+- **Control that would have prevented:** 
+> Not an incident study. Missing control in the experiment's loop: human review and static analysis gating between iterations.
+
+### Caveats
+
+- **Limitations stated:** 
+> Only GPT-4o tested. Only C and Java. Pure LLM loops simulated without humans, which real development rarely does ("Developers rarely use LLMs in fully autonomous iteration chains.").
+
+### Essay use
+
+- **Usable claim:** 
+> In one controlled experiment with GPT-4o on 10 C and Java programs, repeatedly asking the model to improve its own code, with no human review, increased vulnerabilities as iterations rose, and the authors recommend human review between iterations.
+- **Do not use:** 
+> Do not generalise to all models, languages or real-world agent use. Do not present 37.6% as a general rate or lean on the per-iteration averages. Do not say security prompts make code worse.
+
+### Fields with unverified values (those values omitted above)
+
+- access_status
+- counter_evidence
+- date_and_recency
+- overlap_with_existing_essays
+- sample_unit_and_population
+- verification_status
+
+## Broken by Default: formal verification of vulnerabilities in AI-generated code
+
+### Source
+
+- **Citation:** 
+> Dominik Blain, Maxime Noiseux (Cobalt AI). 'Broken by Default: A Formal Verification Study of Security Vulnerabilities in AI-Generated Code'. arXiv:2604.05292 (cs.CR; cross-list cs.AI, cs.SE), v1 7 Apr 2026, v2 8 Apr 2026. https://arxiv.org/abs/2604.05292
+- **Source tier:** Preprint (arXiv, not peer reviewed; 8 pages, 6 tables). Authors' own tool evaluated.
+- **Sponsor and incentive:** 
+> Authors are the founder and co-founder of Cobalt AI, which makes COBALT, the Z3-based tool the paper evaluates and promotes. No funding or conflict-of-interest statement found in the paper. This is a self-evaluation by a vendor.
+- **Date and recency:** 
+> Submitted 7 April 2026, revised 8 April 2026. Models queried via production APIs at temperature 0, results 'as of April 2026'.
+
+### Claims
+
+- **Key claims:** 
+> Across 3,500 LLM-generated artifacts for security-critical prompts, 55.8% contain at least one COBALT finding; 1,055 are formally proven with Z3 satisfiable witnesses (concrete exploit inputs). Explicit security instructions cut the rate only about 4 points. Six existing tools together miss 97.8% of Z3-proven findings. Models flag their own vulnerable code 78.7% of the time when asked to review it, yet generate it 55.8% of the time by default.
+- **Sample unit and population:** 
+> 500 prompt templates, 100 each across five CWE areas (MEM CWE-131/190, INT CWE-190/195, AUTH CWE-916, CRYPTO CWE-327/330, INP CWE-89/22/78), 7 LLMs, 3,500 artifacts. Mostly C/C++ for memory/integer, Python for the others. Single-shot prompts, not real repositories. Ablation, tool and self-review experiments use only the 50-prompt v1 subset (250 artifacts).
+- **Observed vs stated:** 
+> Observed: generated code analysed by a tool, with some runtime confirmation. Not developer behaviour or self-report. Self-review experiment is model output, not human belief.
+
+### Trust mechanism
+
+- **What makes trust justified:** 
+> The paper argues pattern-based scanners and security-prompting are insufficient, and that formal verification (SMT solving, exploit witnesses) of generated code is needed. Authors promote their own tool.
+- **Failure mode class:** Security: memory safety, integer, weak hashing/crypto, injection vulnerabilities in generated code.
+- **Control that would have prevented:** 
+> Not an incident study. The paper's implied control is solver-backed verification before merge; reviewing by the same model caught 78.7% of its own flawed code.
+
+### Caveats
+
+- **Limitations stated:** 
+> Five CWE categories only; temperature 0 only; no multi-turn or RAG; ablations only on the 50-prompt subset; not to be extrapolated to all LLM usage; Go, Rust, JavaScript left to future work.
+
+### Essay use
+
+- **Usable claim:** 
+> A vendor preprint (April 2026) that formally analysed 3,500 single-prompt code artifacts from seven LLMs found at least one flagged vulnerability in 55.8%, with about 1,055 backed by solver-generated exploit witnesses; adding a security instruction lowered the rate by roughly 4 points.
+- **Do not use:** 
+> The 97.8% 'tools miss' figure as a general claim (it is 88 of 90 on a small subset). 55.8% as 'formally proven' or as a real-world production rate. Any ranking of models as safety verdicts. The 78.7% vs 55.8% comparison as like for like.
+
+### Fields with unverified values (those values omitted above)
+
+- access_status
+- counter_evidence
+- exact_quotes
+- headline_figures
+- overlap_with_existing_essays
+- verification_status
+- what_it_costs
+
+## The Illusion of Safety: multi-tier verification of AI vs human C++ code
+
+### Source
+
+- **Citation:** 
+> Saif Mahmud, Fadul Sikder, Yuede Ji, Haotian Zhang, Yu Lei. 'The Illusion of Safety: Multi-Tier Verification of AI vs. Human C++ Code'. arXiv:2607.00107v3 [cs.SE], 2 Aug 2026 (v1 submitted 30 Jun 2026). University of Texas at Arlington and NJIT. https://arxiv.org/abs/2607.00107
+- **Source tier:** Preprint (arXiv, cs.SE); not shown as peer-reviewed.
+- **Access status:** 
+> Fully read (PDF v3 text extracted and read through the Threats to Validity, Related Work and Conclusion; reference list and tail only skimmed).
+- **Exact quotes:** 
+> Abstract: "AI-generated code is roughly twice as likely as human code to trigger a confirmed runtime violation, even after controlling for code length and test pass-rate." | Abstract: "Under static analysis the two look equally safe, but this is misleading: the apparent similarity reflects code length rather than real safety" | Intro: "of the 661 violations formally proven by ESBMC, 598 occur on untested paths that sanitizers never detect, while sanitizers discover 576 runtime bugs the model checker does not flag." | Sec V-A4: "Programs that pass all functional tests still contain vulnerabilities." | Sec VII: "Programs are drawn from competitive programming tasks and reflect short, algorithmic code. Vulnerability patterns may not generalize to production codebases." | Sec VII: "We use a single zero-shot prompt at temperature = 1.0."
+- **Date and recency:** 
+> Posted June to August 2026 (v3 dated 2 Aug 2026). Human solutions are pre-2021 CodeContests submissions; LLM generation done in 2026 with Gemma 3 27B IT, LLaMA 3.3 70B Instruct, Qwen 2.5 Coder 32B Instruct (open-weight models, not frontier agents). Tools: cppcheck 2.19.0, clang-tidy v21, ESBMC v8.0.0, g++ 13.3.0.
+
+### Claims
+
+- **Key claims:** 
+> AI-generated C++ triggers confirmed runtime memory-safety violations (ASan/UBSan) more often than human C++ on the same tasks. Static analysis (cppcheck, clang-tidy) does not separate the two groups and, once length is controlled, reverses direction. Dynamic analysis and bounded model checking flag largely different programs (Jaccard about 0.05), so no single tier is sufficient. Passing the test suite does not imply absence of violations. The gap is stable across three independent generations per model. Authors recommend combining functional tests, static analysis, sanitizers in CI, and selective bounded model checking for safety-critical code.
+- **Headline figures:** 
+> Sanitizer trigger rate: AI 9.3% vs human 2.6% of compiled programs (3.6x raw; z=9.28, p<0.001). Per model: Gemma 8.6% (173/2018), LLaMA 9.6% (217/2272), Qwen 9.8% (224/2290), human 2.6% (43/1665). Restricted to programs with at least one executed test: 15.5% AI vs 4.3% human. Mixed-effects logistic regression with problem random intercept: adjusted OR 2.15 (95% CI 1.52-3.03, p<0.001, n=4,961). Static (cppcheck, adjusted for LOC): OR 0.68 (0.57-0.81). ESBMC unadjusted OR 1.83 (0.94-3.56, p=0.076), not significant; conclusive human n=96, 13 FAILED. Cppcheck CWE flags: Gemma 45.6%, LLaMA 33.7%, Qwen 36.5%, human 45.1%. Clang-tidy: 27.7%, 33.6%, 29.7% vs human 59.2%. ESBMC FAILED among analyzable: Gemma 25.9%, LLaMA 36.7%, Qwen 29.5%, human 18.8%. ESBMC verdicts over 8,918 programs: 56.5% parse error, 18.2% timeout, 17.4% success, 7.4% (661) failed. 598 of 661 ESBMC violations not triggered by sanitizers; 576 of 639 sanitizer-triggered programs not flagged by ESBMC; 83 sanitizer violations in programs where ESBMC returned SUCCESS; 63 programs flagged by both. Among programs passing all tests: 1.8% of AI vs 3.6% of human trigger sanitizers. Within-model sanitizer variance across generations <=1.8 pp. Pass rate protective OR about 0.23; LOC OR about 6.7 for static flags. Compilation: AI 90-92%, human 98.2%.
+- **Sample unit and population:** 
+> 8,918 C++ programs (7,223 AI: three generations from each of 3 LLMs per task; 1,695 human, up to two accepted solutions per task) across 851 CodeContests competitive-programming tasks. 560 tasks have public tests, 291 have none, so dynamic/cross-tool analysis covers 4,295 programs from test-available tasks. About 12% of Gemma outputs excluded as malformed. Program is the unit, not PR or incident. Zero-shot, no security prompt, OpenRouter default decoding (temp 1.0).
+- **Observed vs stated:** 
+> Observed: tool outputs on generated and historical human code. No self-reported belief or human study.
+
+### Trust mechanism
+
+- **What makes trust justified:** 
+> Layered verification that executes or exhaustively explores code: ASan/UBSan in CI, plus bounded model checking on safety-critical code, in addition to tests and static analysis. Authors say passing tests is 'necessary but insufficient' and that static-only gates give a false sense of security.
+- **What it costs:** 
+> Sanitizers need test inputs and instrumented builds. ESBMC took up to 60 s per file, timed out on 18.2% and could not parse 56.5% of programs; doubling unwind and timeout (20, 120 s) found 832 failures at 16.8% coverage. Static tools add triage overhead of high-volume style warnings. No human review time measured.
+- **Failure mode class:** 
+> Wrong code / security: memory-safety and undefined behaviour (signed integer overflow CWE-190 dominant, heap and stack buffer overflow CWE-122/121, null dereference CWE-476, out-of-bounds CWE-119). Also false assurance from static-only gates.
+- **Control that would have prevented:** 
+> Not an incident study. Sanitizer-backed CI would have caught the runtime violations on executed paths; bounded model checking caught edge cases on untested paths (e.g. n=INT_MIN overflow that no test and no static tool flagged). Signed overflow was caught by UBSan but not by ESBMC's overflow-check.
+
+### Caveats
+
+- **Limitations stated:** 
+> Competitive-programming tasks, short algorithmic code: 'may not generalize to production codebases.' Single zero-shot prompt at temperature 1.0. ESBMC parse error rate 56.5%, unwind 10, 60 s timeout, so FAILED counts are a lower bound; human conclusive ESBMC sample only 96, so formal tier reported descriptively. Sanitizer results depend on test strength and were not stratified by test count. Tool-version bias; clang-tidy run without compile_commands.json. Three open-weight models only. No longitudinal survival in real repos.
+- **Counter evidence:** 
+> Human code gets more clang-tidy diagnostics (59.2% vs 27.7-33.6%) and among test-passing programs humans trigger sanitizers more often (3.6% vs 1.8% AI), which cuts against a simple 'AI is worse' reading. Formal-tier gap is not statistically significant (p=0.076). Related work cited: Asare et al. found Copilot's vulnerability rates broadly comparable to human programmers'. Human baseline is pre-2021 contest code with likely different selection (accepted solutions only, up to two per task; AI 9 per task). Human solutions compile more often (98.2% vs 90-92%), and Gemma outputs were filtered.
+
+### Essay use
+
+- **Usable claim:** 
+> In a 2026 preprint benchmarking 8,918 C++ programs from three open-weight LLMs and pre-GPT human solutions on 851 contest tasks, AI code triggered sanitizer violations at 9.3% vs 2.6% for human code (adjusted odds ratio about 2.15), while cppcheck and clang-tidy warning rates did not show a gap, and tools like sanitizers and a bounded model checker flagged largely different programs. The authors conclude that no single verification tier is sufficient and passing tests is not enough.
+- **Do not use:** 
+> Do not generalise to production code, frontier coding agents, or other languages. Do not say AI code is '3.6x less secure' without the contest-code, open-weight, zero-shot context. Do not cite the ESBMC gap (25.9-36.7% vs 18.8%) as significant; the adjusted test was not. Do not say AI code that passes tests is more vulnerable (the opposite held: 1.8% vs 3.6%). Do not state the abstract's earlier 'several times' wording as the adjusted effect; use OR 2.15.
+
+### Fields with unverified values (those values omitted above)
+
+- overlap_with_existing_essays
+- sponsor_and_incentive
+- verification_status
+
+## Assay: claims that decay with the code (evidence graphs)
+
+### Source
+
+- **Citation:** 
+> Tiwari, O. S., Vass, T., Singh, G. D. 'Assay: Claims That Decay With the Code. Content-Addressed Evidence Graphs for Accountable AI-Assisted Software Delivery'. arXiv:2609.36170v1 (cs.SE), 28 Sep 2026. https://arxiv.org/abs/2609.36170 (HTML: https://arxiv.org/html/2609.36170v1)
+- **Source tier:** Preprint (arXiv, not peer-reviewed as far as seen)
+- **Date and recency:** 
+> Submitted 28 Sep 2026 (v1). Experiments are scripted runs on five public repositories (Express, Flask, Gin, Axum, FastAPI) plus Assay itself; no data collection window stated.
+
+### Claims
+
+- **Key claims:** 
+> Proposes and then measures a system: each claim an AI agent makes (e.g. 'tests pass') is bound to a Merkle hash of the dependency cone of the code it concerns, so the claim is stale exactly when that code or anything it depends on changes. Staleness becomes a hash comparison, not a judgment. Adds risk-proportional evidence requirements, a bounded review protocol, and a deterministic merge gate with no model in the loop. Argues hashing only the named module is unsound; hashing the whole repo over-invalidates.
+- **Headline figures:** 
+> E1: orientation brief of 592-635 tokens is 14x to 114x cheaper than an exploration proxy (Express 28x, Flask 78x, Gin 14x, Axum 73x, FastAPI 114x). E3 (k=4 edited modules, 100 trials per point): cone-hash binding re-verifies 16.6% (Express), 66.7% (Flask), 81.9% (Gin), 66.3% (Axum), 7.9% (FastAPI), 87.4% (Assay itself); self-hash binding misses stale claims 27.8%, 45.7%, 29.3%, 67.6%, 22.7%, 7.4% respectively; repo-hash re-verifies 100% everywhere. E4: 12 scripted scenarios on a 12-file Python project, 3 honest paths pass, 9 adversarial behaviours all fail at the gate. E5: median single-module blast radius 0.5% (FastAPI), 1.1% (Axum); Axum 90th percentile 91.1%. The paper has internal inconsistencies between abstract ranges and Table III.
+- **Sample unit and population:** 
+> Five public open-source repositories (Express, Flask, Gin, Axum, FastAPI) plus Assay's own code, and one 12-file synthetic Python project for the gate test. Unit is module / edit simulation; no human participants, no LLM agents run.
+- **Observed vs stated:** 
+> Observed in scripted simulation (simulated edits and scripted adversary), not behaviour of real agents or developers. The effect on LLM agent performance is not measured.
+
+### Trust mechanism
+
+- **What makes trust justified:** 
+> Evidence bound to content hashes of the code cone, so a passing test result is only honoured while the code it covered is unchanged; stale claims must be re-attested. Risk-proportional evidence obligations (L0-L3), separation of doer and reviewer, signed attestations, and a model-free merge gate.
+- **What it costs:** 
+> Index build time (FastAPI cold 508 ms, one-edit 106 ms, no-change 93 ms), re-verification of claims inside the blast radius (up to 87% of claims for k=4 edits in some repos), and review effort under the protocol. Human cost not measured.
+- **Failure mode class:** 
+> False report / stale evidence: an agent's 'tests pass' or similar claim that no longer holds after later code changes; also an adversarial or sloppy doer gaming the gate.
+- **Control that would have prevented:** 
+> Not an incident study. The control proposed is cone-hash binding plus gate that rejects stale, unsigned or implausible claims.
+
+### Caveats
+
+- **Limitations stated:** 
+> Sec. VIII: regex-based import extraction is the largest source of unsoundness; directory-level modules are coarse and inflate radii; the gate checks plausibility, not evidence sufficiency; signing key placement outside agent reach is described, not enforced; extensions beyond tests (docs, lockfiles, infrastructure) are proposed, not evaluated; model-in-the-loop evaluation designed but not run. Sec. VI-G: import graphs under-approximate dependencies (dynamic imports, reflection, generated code); E4 attacks designed by the same authors; one tokenizer; exploration proxy stands in for agent behaviour.
+
+### Essay use
+
+- **Usable claim:** 
+> A 2026 preprint proposes binding each agent claim (such as 'tests pass') to a hash of the code it depends on, so the claim is treated as stale as soon as that code changes, and reports simulated experiments on five open-source repositories. It is a design plus scripted simulation, not evidence that this improves outcomes with real agents.
+- **Do not use:** 
+> Do not cite the 14x to 114x token saving, re-verification percentages or 'sound and minimal' as proof the approach works in practice; they are simulations by the tool's authors with no LLM agents or humans. Do not say it was tested on real agent output. Do not use the abstract's ranges (inconsistent with Table III).
+
+### Fields with unverified values (those values omitted above)
+
+- access_status
+- counter_evidence
+- exact_quotes
+- overlap_with_existing_essays
+- sponsor_and_incentive
+- verification_status
+
+## ASIC v Bekier [2026] FCA 196 and the AICD/HTI Director's Guide to AI Governance
+
+### Source
+
+- **Citation:** 
+> (1) Australian Institute of Company Directors and Human Technology Institute (UTS), A Director's Guide to AI Governance, Version 2, June 2026, https://www.aicd.com.au/content/dam/aicd/pdf/news-media/research/2026/director-guide-to-ai-governance.pdf (opened and text-extracted). (2) ASIC v Bekier (Liability Judgment) [2026] FCA 196, Federal Court of Australia, Lee J, 5 March 2026 (judgment text NOT opened; quoted only as reproduced in the guide and in law-firm commentary).
+- **Source tier:** 
+> Guide: professional-body and university practitioner guidance (not peer-reviewed). Judgment: primary legal source, but only secondary access achieved. Commentary: law-firm client alerts (Clayton Utz, Ashurst, Maddocks, CSO NSW).
+- **Access status:** 
+> Guide: fully read via PDF text extraction (relevant passages). Judgment: not opened; only the Lee J extract printed in the guide plus search snippets and web-fetched commentary. NotebookLM summary not seen and not treated as a source.
+- **Sponsor and incentive:** 
+> AICD is the professional body for directors and sells membership and training; HTI is a UTS research centre. Guide is advocacy and guidance for boards, not neutral research. Law-firm commentary is marketing to clients.
+- **Exact quotes:** 
+- Judgment, Lee J, as quoted in the Guide (Part 1, AI use by boards box, near the Telstra example; not independently checked against the judgment): "There is nothing inherently objectionable in obtaining such assistance [from AI], but what ought not occur is that this development becomes an excuse for a failure to instil discipline in the provision of information to directors or leads to a quiet normalisation of private reliance by them upon computer-generated distillations, unregulated by any agreed policy."
+- Guide, Part 1 (boards' use of AI): "Directors should not rely on AI-generated summaries or analysis as a substitute for their own review and interrogation of board papers."
+- Guide, same section: "AI tools do not replace the essential human oversight role played by the board and individual directors, nor do they mitigate blind spots or substitute for critical thinking."
+- Guide, same list: "Directors should take care to ensure the board or individual director use of AI does not undermine confidence in management or blur lines of accountability."
+- Guide, Ministerial Foreword: "Boards are ultimately accountable for the adoption, implementation and outcomes of AI technologies in their organisations."
+- Guide, vendor risk section: "While these risks may originate with vendors, accountability remains with the organisation."
+- Guide's framing sentence: "in ASIC v Bekier (Liability Judgment) [2026] FCA 196, Justice Michael Lee commented on the use of AI in analysing board papers, noting the need for caution."
+- Via Clayton Utz (secondary, no paragraph number given): AI could address information overload "at least in part" through "the principled and transparent use of emergent technology"; "any use of AI should be controlled and transparent".
+- **Date and recency:** 
+> Judgment 5 March 2026. Guide Version 2 June 2026 (AICD page dated 29 June 2026); first edition June 2024. Guide cites a Telstra AFR article dated 23 April 2026.
+
+### Claims
+
+- **Key claims:** 
+> Judgment: former CEO Matthias Bekier and former General Counsel Paula Martin breached s 180(1) Corporations Act care and diligence duties (information not escalated to the board); claims against chairman John O'Neill and the non-executive directors were dismissed (per CSO NSW, DLA Piper, Banco Chambers; secondary). Lee J rejected the argument that reviewing hundreds of pages of board papers was unreasonable (secondary). He commented that AI assistance is not inherently objectionable but must not excuse poor information discipline or lead to unregulated private reliance on AI distillations. Guide: AI tools do not replace directors' own review and critical thinking; boards remain accountable for AI outcomes; use of AI should be governed by policy and not blur accountability.
+- **Headline figures:** None quantitative. Only dates and the citation [2026] FCA 196.
+- **Sample unit and population:** 
+> A single Federal Court liability judgment concerning The Star Entertainment Group executives and non-executive directors; a governance guide aimed mainly at ASX300 directors.
+
+### Trust mechanism
+
+- **What makes trust justified:** 
+> Directors personally reviewing and interrogating primary board papers; an agreed policy governing any AI use; transparency and controlled use; AI literacy so directors understand tool strengths and deficiencies; AI registers updated for board use; clear lines of accountability.
+- **What it costs:** 
+> Director time reading full papers (the argument that this was unreasonable was rejected, per commentary); effort to impose discipline on how management supplies information; policy and literacy overhead.
+- **Failure mode class:** 
+> Over-reliance on summaries and delegation of judgment; information not escalated (the Star failure was management withholding information, not AI).
+- **Control that would have prevented:** 
+> Not an AI incident. The Star failures related to escalation to the board and misleading correspondence. Relevant controls for AI: a board AI-use policy, disciplined information provision, and the director's own review of source papers.
+
+### Essay use
+
+- **Usable claim:** 
+> In its June 2026 guide, the AICD and Human Technology Institute say directors should not rely on AI-generated summaries or analysis as a substitute for their own review and interrogation of board papers, and that boards remain ultimately accountable for AI outcomes. The guide quotes Justice Lee in ASIC v Bekier [2026] FCA 196 saying there is nothing inherently objectionable in AI assistance but that it should not become an excuse for poor information discipline or a quiet normalisation of private reliance on computer-generated distillations unregulated by any agreed policy.
+- **Do not use:** 
+> Do not say the court held that AI cannot substitute for a director's review, or that the case was decided on AI. The court's liability findings concerned the CEO and General Counsel and escalation to the board. The 'substitute for their own review' wording is the guide's, not the judge's. Do not use the NotebookLM summary. Do not cite paragraph numbers until the judgment is opened.
+- **Overlap with existing essays:** 
+> Not checked against the Verification Gap or Checking Isn't Catching essays in this run; the accountability-cannot-be-delegated theme is likely adjacent.
+
+### Fields with unverified values (those values omitted above)
+
+- counter_evidence
+- limitations_stated
+- observed_vs_stated
 - verification_status
