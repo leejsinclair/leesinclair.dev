@@ -1,0 +1,72 @@
+fields:
+  source:
+    - name: citation
+      description: "Authors, title, venue, date, URL."
+      detail_level: brief
+    - name: source_tier
+      description: "Peer-reviewed, preprint, company research, practitioner or vendor blog, press."
+      detail_level: brief
+    - name: access_status
+      description: "Fully read, abstract only, paywalled, search snippet only."
+      detail_level: brief
+    - name: sponsor_and_incentive
+      description: "Who funded the work or sells something related to the finding."
+      detail_level: brief
+    - name: exact_quotes
+      description: "Verbatim quotes from the opened source, with location."
+      detail_level: detailed
+    - name: date_and_recency
+      description: "Publication date and data collection window."
+      detail_level: brief
+
+  claims:
+    - name: key_claims
+      description: "What the source asserts, in its own terms."
+      detail_level: detailed
+    - name: headline_figures
+      description: "Each number with exact wording, unit, comparison group and date."
+      detail_level: detailed
+    - name: sample_unit_and_population
+      description: "Engineers, PRs or incidents; open-source or enterprise; how many."
+      detail_level: moderate
+    - name: observed_vs_stated
+      description: "Behaviour observed, or belief self-reported."
+      detail_level: brief
+
+  trust_mechanism:
+    - name: what_makes_trust_justified
+      description: "The practice, control or evidence the source says earns trust."
+      detail_level: moderate
+    - name: what_it_costs
+      description: "Human time, review burden or delay the practice adds."
+      detail_level: moderate
+    - name: failure_mode_class
+      description: "Wrong code, destructive action, false report, security, over-reliance."
+      detail_level: brief
+    - name: control_that_would_have_prevented
+      description: "For incidents, the specific guardrail that was missing."
+      detail_level: moderate
+
+  caveats:
+    - name: limitations_stated
+      description: "Limits the authors state, quoted where possible."
+      detail_level: moderate
+    - name: counter_evidence
+      description: "Findings or critiques that cut against the claim."
+      detail_level: moderate
+    - name: verification_status
+      description: "Per claim: checked against a primary source actually opened, or not. [uncertain] if not."
+      detail_level: moderate
+
+  essay_use:
+    - name: usable_claim
+      description: "The claim, worded no stronger than the source, that the essay may make."
+      detail_level: moderate
+    - name: do_not_use
+      description: "Figures or readings that must stay out."
+      detail_level: brief
+    - name: overlap_with_existing_essays
+      description: "Whether the Verification Gap or Checking Isn't Catching essays already use this."
+      detail_level: brief
+
+uncertain: []
