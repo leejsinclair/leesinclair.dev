@@ -1,0 +1,49 @@
+topic: "Burnout in software teams: what the BurnRiSc paper shows about screening for it from GitHub activity, and what the wider research says leaders can do about it"
+
+angle: >
+  A leadership essay. Start from BurnRiSc (Sanko, Tian and Guizani, arXiv 2609.19422, JAWs 2026),
+  a preliminary framework that scores burnout risk from public GitHub activity, and be exact
+  about how little ten disclosed cases can show. Then ask what burnout is, how it is measured,
+  what the intervention evidence says (organisation-directed against individual-directed), what
+  the software-specific evidence says, and what a leader can responsibly do, including the
+  risk that monitoring for burnout becomes performance surveillance. It follows "Overseeing
+  Agents Is the Tiring Part" (/leadership/overseeing-agents-is-the-tiring-part), which is about
+  the load of supervising agents and must not be restated.
+
+caveats_to_test:
+  - "BurnRiSc is a workshop paper: 68 contributors, ten disclosed cases, weights and threshold fitted on the same cases it is scored on, never compared with the inventory given to the same people, core contributors with three or more years only."
+  - "Most intervention evidence is from physicians and nurses. Say so, and do not claim it transfers to software teams without saying it is an assumption."
+  - "Meta-analyses disagree on organisation-directed against individual-directed interventions; the 2024 resident-physician meta-analysis rates its evidence very low quality."
+  - "Burnout is an occupational phenomenon in ICD-11, not a medical condition. Check the WHO wording."
+  - "Open every primary source; mark access_status honestly."
+
+items:
+  - name: "BurnRiSc: Toward Non-Invasive Burnout Screening in Open Source from Public Repository Signals"
+    note: "Sanko, Tian, Guizani, arXiv 2609.19422v1, 16 September 2026, JAWs 2026. Already read in full from the PDF (text in the conversation). Re-open the arXiv page and the replication repository (github.com/RISElabQueens/BurnRiSc) and record exact figures: 14 signals, 68 contributors, ten repositories, 6 of 10 and 8 of 10, 11 of 46 comparison crossings, threshold 0.412, r = 0.26, leave-one-out 7 of 10, limits and ethics paragraph."
+  - name: "WHO ICD-11: burnout as an occupational phenomenon"
+    note: "Open the WHO page or the ICD-11 entry QD85 and the WHO 2019 statement. Exact definition and the three dimensions; what it says burnout is not."
+  - name: "Maslach and Leiter 2016, Understanding the burnout experience (World Psychiatry)"
+    note: "PMC4911781. Six areas of worklife, person-job mismatch, what it says about individual against organisational interventions and about the thin evidence. Already partly read; reopen and quote."
+  - name: "Oldenburg Burnout Inventory (Demerouti and colleagues)"
+    note: "The two-dimension measure (exhaustion, disengagement) BurnRiSc approximates. Open a primary paper on its development or validity; what it measures and what a repository proxy cannot."
+  - name: "Panagioti et al. 2017, Controlled interventions to reduce burnout in physicians (JAMA Internal Medicine)"
+    note: "Already read from the PDF: 19 studies, 1,550 physicians, SMD -0.29, organisation-directed -0.45, physician-directed -0.18, most organisation-directed were workload or schedule changes. Confirm and quote; limitations section."
+  - name: "Kiratipaisarl et al. 2024, burnout interventions in resident physicians (BMC Medical Education)"
+    note: "PMC11523819. 33 studies, individual against organisational, GRADE very low, abstract/results discrepancies. Read the last 30,000 characters not yet read (discussion, limitations)."
+  - name: "West, Dyrbye and Shanafelt, Interventions to prevent and reduce physician burnout (Lancet 2016) and Springer 2019 organisational strategies review"
+    note: "Find and open the Lancet meta-analysis abstract and the 2019 Aging Clinical and Experimental Research review (the Springer page redirected to a login; try PubMed Central or the abstract). Effect sizes, what the organisational interventions were."
+  - name: "Trinkenreich et al. 2023, A Model for Understanding and Reducing Developer Burnout (ICSE SEIP)"
+    note: "arXiv 2301.09103. 3,281 developers at Globant, structural equation modelling. Open the paper: measures, what 'associated' means here, limits. Cross-sectional or not?"
+  - name: "Trinkenreich et al. 2026, Guidelines for Cultivating a Sense of Belonging to Reduce Developer Burnout (IEEE Software)"
+    note: "arXiv 2605.06827. A synthesis, not new data. Open and list the guidelines and what evidence each rests on."
+  - name: "Open source maintainer burnout evidence"
+    note: "Raman et al. 2020 on stress and burnout in open source (ICSE NIER) and any maintainer survey (Tidelift, Linux Foundation, or GitHub) with a burnout figure. Open the sources; drop figures that cannot be verified."
+  - name: "Electronic performance monitoring and employee stress"
+    note: "Find a meta-analysis or large study on workplace monitoring and stress, trust or performance (for example Ravid et al. 2020). Open it. The point to test: does monitoring signals of wellbeing backfire?"
+  - name: "LeadDev Engineering Leadership Report 2026: emotional drain and workload"
+    note: "Already opened the PDF in this conversation (600 leaders; 54% of CTOs emotionally drained weekly against 24% in 2025; 46% more worried about job security; 45% working more hours). Re-open the PDF, record exact wording, base sizes by role, and limits. A vendor-sponsored survey."
+
+execution:
+  batch_size: 5
+  items_per_agent: 1
+  output_dir: ./results
