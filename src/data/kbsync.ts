@@ -67,7 +67,7 @@ export const kbSyncPrivacy = {
     {
       heading: "Sharing",
       body: [
-        "Google user data is not sold, not shared with third parties and not used for advertising. When the owner asks his own knowledge base a question, he may send short passages to an AI service (Anthropic's Claude API).",
+        "Google user data is not sold or used for advertising. It is not shared with third parties except when the owner asks his knowledge base a question: short passages may be sent to Anthropic's Claude API.",
       ],
     },
     {
