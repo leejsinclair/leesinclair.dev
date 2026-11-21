@@ -27,7 +27,7 @@ falls back to typographic emphasis only (see Complexity Tracking and spec Depend
 
 ## Technical Context
 
-**Language/Version**: TypeScript 6.x (strict, `astro/tsconfigs/strict`), Node.js ≥ 22.12 (dev on 24.x)
+**Language/Version**: TypeScript 6.x (strict, `astro/tsconfigs/strict`), Node.js ≥ 22.23 (dev on 24.x)
 
 **Primary Dependencies**: Astro 7.2.x (static output, no integrations). Dev-only: `@astrojs/check`,
 `prettier`, `prettier-plugin-astro`. No runtime dependencies. **No change** — this feature adds none.

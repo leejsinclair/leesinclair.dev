@@ -8,7 +8,7 @@ Spec and design live in [`specs/001-leadership-hiring-site/`](specs/001-leadersh
 
 ## Requirements
 
-- Node.js 22.12.0 or newer, npm (matching the `package.json` engine floor and CI runtime).
+- Node.js 22.23.4 or newer, npm (matching the `package.json` engine floor and CI runtime).
 
 ## Commands
 
@@ -125,5 +125,5 @@ Point the integration at:
 GitHub Actions runs the same `npm ci`, `npm run check`, and `npm run build` flow on pull
 requests, pushes to `main`, and manual dispatches. Each successful run uploads the generated
 `dist/` directory as a `static-site` artifact, which GitHub makes available to download as a
-zip file from the workflow run. The workflow uses Node.js 22.12.0 to match the runtime floor
+zip file from the workflow run. The workflow uses Node.js 22.23.4 to match the runtime floor
 declared in `package.json`.
