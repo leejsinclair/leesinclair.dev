@@ -1,0 +1,27 @@
+{
+  "citation": "Rahul Garg (Principal Engineer, Thoughtworks), 'Encoding Team Standards', martinfowler.com, part of 'Patterns for Reducing Friction in AI-Assisted Development', 31 March 2026. https://martinfowler.com/articles/reduce-friction-ai/encoding-team-standards.html",
+  "source_tier": "Practitioner post (hosted on Martin Fowler's site; author is a Thoughtworks employee)",
+  "access_status": "Fully read via WebFetch, but the fetch tool returns a summarised extraction with short quotes, not raw page text; quotes below are as returned by it, locations by section name only [uncertain]",
+  "sponsor_and_incentive": "No funding stated. Author works for Thoughtworks, which sells consulting; the article has a sidebar 'This Pattern in Lattice' (a Thoughtworks-related tool) [uncertain: sidebar contents not read]. Thoughtworks Radar also lists related 'curated shared instructions' technique.",
+  "exact_quotes": [
+    "'AI coding assistants respond to whoever is prompting.' (thesis, The Consistency Problem)",
+    "'This is a systems problem, not a skills problem. And it requires a systems solution.'",
+    "'The governance is the workflow.' (Executable Governance)",
+    "'quietly different thresholds for what counted as a \"critical\" security concern' (two senior engineers on one project; Surfacing the Tacit Knowledge) [uncertain: fragment-level wording]",
+    "'The act of writing a shared instruction forced the distinction to be made explicit.'",
+    "'first review flagged a missing authorization check on a newly added endpoint' (junior developer) [uncertain: fragment]",
+    "'They made their inexperience less costly.'",
+    "'They evolve through pull requests.' (Standards as Shared Infrastructure)",
+    "'versioned artifacts'",
+    "'Teams of five may not need this. Teams of fifteen almost certainly do.' (Calibration)",
+    "'Overly prescriptive instructions become brittle'",
+    "'from judgment that lives in people's heads to judgment that executes as shared infrastructure' (Conclusion)"
+  ],
+  "key_claims": "Team standards encoded as shared AI instructions (generation, refactoring, security, review) apply regardless of who prompts. Two moves: tacit to explicit (interviewing senior engineers), documentation to execution. Instructions have a role, context requirements, categorised standards (blockers vs advisories) and output format; they live as versioned artifacts in the repo, are owned collectively and change through pull requests. Security instructions encode the team's threat model with severity grading. Applied at generation, development, review and optionally CI. Risks named: documentation graveyard, extraction effort, maintenance burden, over-engineering, brittleness and false positives.",
+  "headline_figures": "None. The article has no numbers, metrics or studies. Lead check: 'encoding senior judgment into versioned repository instructions' MATCHES (interviews with seniors, versioned artifacts in repo, PR changes). Lead 'resolved silent disagreements between senior engineers on security thresholds' is an EMBELLISHMENT: the article says two seniors had 'quietly different thresholds' and writing the shared instruction 'forced the distinction to be made explicit' (surfaced it). It does not say how or whether it was settled. It is also one disagreement on one project, not disagreements plural.",
+  "sample_and_method": "Anecdotal. Single project example and the author's own observations; no measurement, no sample, no comparison group.",
+  "limitations": "Stated: most useful for larger teams; extraction and maintenance cost; over-engineering and brittleness risk. Visible: no evidence of outcomes, author-reported anecdotes, author's employer has commercial interest, 'first review flagged' is one instance, no data on false positive rates or whether instructions reduce human review load. Also, the junior example shows AI catching what only seniors caught before, which is a detection claim, not evidence review time or bottlenecks fell.",
+  "what_a_leader_can_do": "Interview senior reviewers, write their thresholds into a small single-purpose review instruction kept in the repo and changed by PR, start with one instruction (generation or review). Evidence strength: weak (one anecdote, no data). Useful framing: writing the standard down exposes hidden disagreement between seniors, which is a leadership task.",
+  "overlap_with_site_essays": "Overlaps with Checking Isn't Catching and What It Takes to Trust Agent Output (making review criteria explicit and shared); less with The Verification Gap and Overseeing Agents Is the Tiring Part. [uncertain: judged from titles only, essays not opened]",
+  "uncertain": ["access_status", "sponsor_and_incentive", "exact_quotes", "overlap_with_site_essays"]
+}

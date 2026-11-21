@@ -1,0 +1,29 @@
+{
+  "citation": "Sabry E. Farrag (School of Architecture, Computing and Engineering, University of East London), 'The Productivity-Reliability Paradox: Specification-Driven Governance for AI-Augmented Software Development', arXiv:2605.01160v1 [cs.SE], 1 May 2026, CC BY 4.0. https://arxiv.org/abs/2605.01160 (HTML: https://arxiv.org/html/2605.01160v1)",
+  "source_tier": "Preprint (arXiv, single author). Page does not state peer-review status. It is a multivocal literature review, so its figures are second-hand.",
+  "access_status": "Fully read via live fetch of the arXiv HTML version (two passes covering the whole text), summarised by a small model, so quotes are as returned by it [uncertain]. The paper EXISTS. The 445 million work events figure and the pickup latency figures (2.47x, 5.3x) were NOT found in it.",
+  "sponsor_and_incentive": "No funding statement found in the visible text [uncertain]. Author is academic. The paper itself flags that the GitHub Copilot studies (Peng 2023, Dohmke 2024) were funded by the vendor and that several sources have commercial interests (Sec 9.3). It promotes GitHub Spec Kit (Sec 7) and reports a 14-engineer pilot of it, a mild incentive toward specification tooling.",
+  "exact_quotes": [
+    "'Specification discipline, not model capability, is the binding constraint on AI-assisted software dependability.' (Abstract)",
+    "'a 98% increase in merged pull requests coincides with a 91% increase in review time' (Abstract)",
+    "'teams with high AI adoption completed 21% more tasks and merged 98% more pull requests, but PR review time increased by 91%' (Sec 4.2.6, citing Faros AI 2025)",
+    "'the verification tax on senior developers (4.3 minutes per suggestion, DZone 2024)' (Sec 8.1)",
+    "'We derive the Specification Governance Model from Transaction Cost Economics' (Sec 6.1)",
+    "'This review was conducted by a single research team without independent inter-rater reliability assessment' (Sec 3.4)",
+    "'It involved only fourteen engineers across three projects within a single organisation' (Sec 7.4.5)"
+  ],
+  "key_claims": "Conflicting evidence on AI coding tools (20-56% gains on well-scoped tasks; a 19% slowdown for experienced developers in the most rigorous RCT; telemetry showing more PRs but longer reviews and flat delivery) is a systematic 'Productivity-Reliability Paradox', driven by non-deterministic generators plus weak specification discipline. Contributions: the paradox with moderating variables and amplifying mechanisms, a six-methodology taxonomy, the Specification Governance Model (SGM) grounded in Transaction Cost Economics (Williamson 1985), and a governance decision guide. Governance level should scale with task risk (Sec 6.4). Specification discipline is the binding constraint. 'Verification tax' appears as a term, citing DZone 2024, not a coined measurement.",
+  "headline_figures": [
+    "98% more merged PRs and 91% longer PR review time, high-AI-adoption teams vs low-adoption, Faros AI 2025 telemetry (10,000+ developers, 1,255 teams); 21% more tasks completed. Secondary, cited not original. Matches the site's existing Faros lead, not the user's pickup lead.",
+    "Verification tax: 4.3 minutes per suggestion for senior developers vs 1.2 minutes for juniors (DZone 2024, estimate). Secondary.",
+    "20-56% productivity gains on well-scoped tasks vs 19% slowdown for experienced developers (METR-style RCT) per abstract. Secondary.",
+    "67 sources: 312 candidates, 128 full-text, 29 peer-reviewed, 18 preprints, 12 industry reports, 8 grey literature; searched Feb to Apr 2026.",
+    "445 million work events: NOT FOUND in this paper. Does not match; the lead's source is something else or misattributed.",
+    "Pickup latency of AI PRs 2.47x to 5.3x longer than human PRs: NOT FOUND. Only coincidences: '+2.47%' maintainability in Dohmke 2024 (Sec 2.3, unrelated) and '5.3' as a section number. Likely a conflation or a different paper."
+  ],
+  "sample_and_method": "Multivocal systematic literature review, single research team, Feb to Apr 2026, seven databases and sources, 67 included sources. No original telemetry. Also a 14-engineer, three-project, single-organisation pilot of GitHub Spec Kit, no control group.",
+  "limitations": "Stated: single reviewer team with no inter-rater reliability; pilot of 14 engineers with no control group and temporal confounds; Spec Kit v0.8.x not independently evaluated; sponsorship bias in industry sources; threats section covers selection, publication, construct, temporal validity, generalizability. Visible: preprint, not peer reviewed; headline review-time figure is borrowed from a vendor telemetry report; TCE assumes opportunism which the paper concedes fits AI generators poorly; a later arXiv paper (2606.22484) criticises SGM as uniform and not risk-tiered. Summaries were by a small model, truncated in places [uncertain].",
+  "what_a_leader_can_do": "Source supports: tie governance level to task risk (post-hoc review for low-risk greenfield, executable contracts or constitutions for cross-cutting or security work); invest in review capacity not only generation speed; keep human approval gates for production; train specification writing and keep unaided skill-building. Evidence strength is weak to moderate: literature synthesis plus a small uncontrolled pilot.",
+  "overlap_with_site_essays": "Substantial overlap with The Verification Gap and Checking Isn't Catching (review cost, verification tax). Some overlap with What It Takes to Trust Agent Output (specification and gates) and Overseeing Agents Is the Tiring Part (senior verification burden). Its numbers are a re-citation of Faros, already in the research set, so it adds the specification-governance framing, not new data.",
+  "uncertain": ["access_status", "sponsor_and_incentive", "exact_quotes", "limitations"]
+}
