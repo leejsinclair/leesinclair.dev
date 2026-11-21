@@ -1,0 +1,31 @@
+{
+  "citation": "Faros Research, 'AI coding assistants increase developer output, but not company productivity' (The AI Productivity Paradox Report 2025), Faros AI blog, listed 23 July 2025, data as of June 2025. https://www.faros.ai/blog/ai-productivity-paradox-report-2025",
+  "source_tier": "Vendor research (telemetry analysis, not peer reviewed)",
+  "access_status": "Fully read (landing blog page opened live via fetch). The full downloadable report/PDF was not opened; the page says the full report describes the enabler strategies in detail. Fetch was summarised by a small model, so quotes are as returned by it [uncertain]",
+  "sponsor_and_incentive": "Faros sells an engineering intelligence platform. The page carries CTAs ('Book a demo', 'Try Faros Platform') and emphasises measurement, governance and lifecycle tooling, which aligns with its product. Self-funded research on its own customer telemetry; the customer mix is undisclosed.",
+  "exact_quotes": [
+    "\"we observed no significant correlation between AI adoption and improvements at the company level.\" (core findings)",
+    "\"the gains observed in team behavior do not scale when aggregated.\" (core findings)",
+    "\"PR review time increases 91%\" (team-level figures, high-adoption teams)",
+    "\"a system moves only as fast as its slowest link\" (Amdahl's Law explanation)"
+  ],
+  "key_claims": "Developers on high-AI-adoption teams produce more (tasks, PRs), but there is no significant correlation between AI adoption and company-level delivery improvement. Faros attributes this to downstream bottlenecks (review, testing, release; Amdahl's Law), uneven adoption across teams, adoption skewed to newer-tenure engineers, and shallow use (mostly autocomplete). Warns of bigger, buggier PRs shifting pressure onto review and more context switching from orchestration and oversight.",
+  "headline_figures": [
+    "PRs merged +98%: MATCHES lead. High-AI-adoption teams, compared with the same teams in their two lowest-adoption quarters; as of June 2025.",
+    "PR review time +91%: MATCHES lead. Same comparison. The page says 'PR review time'; the metric (median vs mean) is not stated on the page [uncertain]. (A secondary summary calls it median; not verified in primary.)",
+    "Average PR size +154%: MATCHES lead. Same comparison.",
+    "Sample 10,000+ developers: MATCHES lead ('over 10,000 developers across 1,255 teams', multiple companies, count of companies not stated).",
+    "Also: tasks completed +21%, tasks touched per day +9%, PRs per day +47%, bugs per developer +9%.",
+    "Not given on the page: absolute PR counts, absolute review hours, number of companies.",
+    "Do not mix with the 2026 follow-up (Acceleration Whiplash; 22,000 developers, 4,000 teams per Faros page; secondary sources report +441% median review time, ~+51% PR size) [uncertain, 2026 figures not opened]."
+  ],
+  "sample_and_method": "Telemetry (not surveys) from task management, IDEs, static analysis, CI/CD, version control, incident management and HR metadata. 10,000+ developers, 1,255 teams, multiple companies, up to two years of history aggregated by quarter, data as of June 2025. Per team, percent change between the two lowest-adoption and two highest-adoption quarters. Spearman rank correlation; only metrics with data from at least 6 companies and p<0.05 reported; metrics standardised per company; outliers removed. Adoption means use of developer AI assistants (Copilot, Cursor, Claude Code, Windsurf); how usage was measured is not explained.",
+  "limitations": "Stated: correlational, no causation; quality findings rest on limited time series; company-level result may reflect inconsistent adoption. Visible: vendor with product interest; company mix and count undisclosed; time-trend comparison confounds AI adoption with other changes over the period (team growth, seasonality); no absolute numbers; review-time metric definition unclear; the 154% larger PRs and 98% more PRs may partly reflect how PRs are split, and PRs are not equal units of value; adoption skew toward newer engineers.",
+  "what_a_leader_can_do": "Page recommends lifecycle-wide modernisation (review, testing, release pipelines), planning for more context switching, watching PR size and bugs, fixing uneven adoption, and names five enablers (workflow design, governance, infrastructure, training, cross-functional alignment) without detail on the page. Evidence for the actions is weak: correlational, and the enablers are asserted rather than shown on the page [uncertain, full report not opened]. Strongest support is for the diagnosis (review is where output queues), not the remedy.",
+  "overlap_with_site_essays": "Strong overlap with The Verification Gap and Checking Isn't Catching (review load rising as output and PR size grow, bugs per developer up 9%). Overlaps with Overseeing Agents Is the Tiring Part (context switching from orchestration and oversight). Limited direct overlap with What It Takes to Trust Agent Output.",
+  "uncertain": [
+    "access_status",
+    "headline_figures",
+    "what_a_leader_can_do"
+  ]
+}

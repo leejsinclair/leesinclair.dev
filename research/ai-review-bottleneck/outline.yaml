@@ -1,0 +1,54 @@
+topic: "The review bottleneck is a leadership problem: how AI code generation moved the constraint to code review, and what leaders can do about it"
+
+angle: >
+  A leadership essay. Open with the telemetry on review queues after AI adoption (Faros AI,
+  CircleCI, Chen and Stratton, Farrag, LinearB), then ask who owns review capacity and which
+  interventions are evidenced: capping PR size before generation, stacked PRs, executable team
+  standards (AGENTS.md, Spec Kit), deterministic gates, AI review agents (with their false-positive
+  limits) and Theory of Constraints / WIP limits. It must not restate the earlier essays on this
+  site: "The Verification Gap", "Checking Isn't Catching", "What It Takes to Trust Agent Output",
+  "Overseeing Agents Is the Tiring Part". It builds on the idea logged 2026-09-26.
+
+caveats_to_test:
+  - "The user's scope summary figures are unverified leads: 91% longer review time, 98% more PRs merged, 154% larger PRs (Faros); 56.1% / 59.9% / 58.5% across 445 million work events; 2.47x to 5.3x pickup latency; CircleCI 28 million runs, +59% feature branch, main-branch throughput down about 7%, success 70.8%; LinearB 157 lines vs 400+; 91.6% of AI IaC failing checks (DPIaC-Eval); Martian Bench 40 to 70% false positives; Spec Kit pilot 8-12 days to 6-9 days; Microsoft 600,000 PRs a month. Check each against its named primary source and drop any that cannot be found or do not say that."
+  - "Several named sources may not exist as described (Chen and Stratton, Farrag, 'SGM', DPIaC-Eval, Martian Bench, Reddit threads). Record not_found honestly."
+  - "Vendor benchmarks (CodeRabbit, Qodo, Greptile, Graphite, Wiz, Sonar) are marketing unless independently replicated."
+  - "Stacked-PR benefit: look for evidence beyond vendor claims; record that evidence may be thin."
+  - "Open every primary source; mark access_status honestly."
+
+items:
+  - name: "Faros AI: The AI Productivity Paradox Report"
+    note: "Open the report or its research page. Exact figures on PRs merged, PR size, review time, sample (developers, teams), date, and Faros' own incentive."
+  - name: "CircleCI 2026 State of Software Delivery"
+    note: "Open the report. Exact figures on feature-branch vs main-branch throughput and success rate, number of workflows/runs, period."
+  - name: "Chen and Stratton, Artificial Intelligence in the Firm: Bottlenecks in Software Production"
+    note: "Find on SSRN, arXiv or NBER. Confirm it exists, authors, what it shows about review as the constraint."
+  - name: "Farrag, The Productivity-Reliability Paradox"
+    note: "Find the paper. Confirm it exists, venue, claims, and the 445 million work events figures if they come from it."
+  - name: "LinearB 2026 Software Engineering Benchmarks: AI PR size and pickup time"
+    note: "Open the report. PR size for AI-assisted vs unassisted, pickup time and acceptance rate comparisons, sample."
+  - name: "GitHub Blog on stacked pull requests and splitting large PRs"
+    note: "Open the GitHub Blog post (Julia Muiruri) and GitHub's gh-stack or stacked PR documentation. Confirm the 1,721-line example and what is claimed about review."
+  - name: "Evidence on PR size and review quality"
+    note: "Find independent research (for example Cisco/SmartBear study, Google or Microsoft code review studies) on review effectiveness against change size. Confirm the 400-line figure's real source."
+  - name: "Martin Fowler / Rahul Garg: Encoding Team Standards"
+    note: "Open the martinfowler.com article. What it says about encoding standards into AI instructions, any claimed outcomes."
+  - name: "GitHub Spec Kit and any measured outcomes"
+    note: "Open the Spec Kit repo and GitHub's posts. Check the claimed pilot (8-12 to 6-9 days, churn figures); drop if not from a primary source."
+  - name: "Yuval Yeret on constraints, WIP and AI coding"
+    note: "Open Yeret's posts on Theory of Constraints and AI-assisted development. What he proposes, evidence, whether it is opinion."
+  - name: "Goldratt's Five Focusing Steps"
+    note: "Open a primary or authoritative source (Theory of Constraints Institute or The Goal summary) for the exact steps."
+  - name: "Independent evaluations of AI code review tools"
+    note: "Open Martian's code review benchmark if it exists, plus any academic evaluation of LLM review comments (usefulness, false positives). Vendor-neutral figures only."
+  - name: "Microsoft Engineering: AI-assisted code review at scale"
+    note: "Open the Engineering@Microsoft post. Exact figures (600,000 PRs a month, 90% of PRs) and reported outcomes."
+  - name: "Policy-as-code and deterministic gates for AI-generated code"
+    note: "Open DPIaC-Eval or equivalent for the 91.6% claim and one primary source on OPA/Rego gates. Confirm exact wording; drop if unfound."
+  - name: "Review ownership and reviewer capacity in practice"
+    note: "Find primary sources (surveys, engineering blogs from named companies) on who owns review capacity, review rotas, and risk-based routing of PRs. Include the Pragmatic Engineer or LeadDev coverage if opened."
+
+execution:
+  batch_size: 5
+  items_per_agent: 1
+  output_dir: ./results

@@ -1,0 +1,38 @@
+fields:
+  source:
+    - name: citation
+      description: "Authors, title, venue, date, URL."
+      detail_level: brief
+    - name: source_tier
+      description: "Peer-reviewed, preprint, vendor research, practitioner post, press."
+      detail_level: brief
+    - name: access_status
+      description: "Fully read, abstract only, paywalled, search snippet only, not found."
+      detail_level: brief
+    - name: sponsor_and_incentive
+      description: "Who funded the work or sells something related to the finding."
+      detail_level: brief
+    - name: exact_quotes
+      description: "Verbatim quotes from the opened source, with location."
+      detail_level: detailed
+  claims:
+    - name: key_claims
+      description: "What the source asserts, in its own terms."
+      detail_level: detailed
+    - name: headline_figures
+      description: "Each number with exact wording, unit, comparison group, date and whether it matches the user's lead."
+      detail_level: detailed
+    - name: sample_and_method
+      description: "Who or what was measured, how many, over what period, observed or self-reported."
+      detail_level: moderate
+    - name: limitations
+      description: "Limits stated by the source and any visible to a careful reader."
+      detail_level: moderate
+  leadership_relevance:
+    - name: what_a_leader_can_do
+      description: "Action the source supports, and how strong the evidence is for it."
+      detail_level: moderate
+    - name: overlap_with_site_essays
+      description: "Overlap with The Verification Gap, Checking Isn't Catching, What It Takes to Trust Agent Output, Overseeing Agents Is the Tiring Part."
+      detail_level: brief
+  uncertain: []
