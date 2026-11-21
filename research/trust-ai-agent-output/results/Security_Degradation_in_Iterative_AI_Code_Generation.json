@@ -1,0 +1,34 @@
+{
+  "citation": "Shivani Shukla, Himanshu Joshi, Romilla Syed. 'Security Degradation in Iterative AI Code Generation: A Systematic Analysis of the Paradox'. arXiv:2506.11022 (v2, 26 Sep 2025); accepted at IEEE ISTAS 2025. https://arxiv.org/abs/2506.11022",
+  "source_tier": "Preprint, stated as peer-reviewed and accepted at IEEE ISTAS 2025 (conference)",
+  "access_status": "HTML full text (v2) read via a fetch tool that summarises the page; the abstract was not reproduced verbatim and tables were read through that summary. Quotes below should be re-checked against the PDF [uncertain]",
+  "sponsor_and_incentive": "No funding statement found. Academic authors (University of San Francisco; Vector Institute; UMass Boston). No product sold.",
+  "exact_quotes": [
+    "Abstract: \"Our findings show a 37.6% increase in critical vulnerabilities after just five iterations\"",
+    "Section IV-C: \"Human review between iterations is essential to detect these subtle security degradations\"",
+    "Section VI: \"We focused on OpenAI's GPT-4o.\"",
+    "Section VI: \"Developers rarely use LLMs in fully autonomous iteration chains.\"",
+    "Section II-B (quoting Chong et al.): \"upon prompting, LLM can introduce issues in files that were issues-free before prompting\""
+  ],
+  "date_and_recency": "arXiv first submitted May/June 2025 (ID 2506.11022); v2 dated 26 Sep 2025. Data collection window not stated [uncertain]",
+  "key_claims": "Repeated LLM 'improvement' of code, with no human in the loop, increases vulnerabilities rather than reducing them (feedback loop security degradation). Even security-focused prompts did not eliminate new vulnerabilities. Vulnerability count correlates with code complexity growth. Authors recommend human review between iterations.",
+  "headline_figures": [
+    "37.6% increase in critical vulnerabilities after five iterations (abstract; per-iteration breakdown behind this number not located in body)",
+    "Table II total/critical vulnerabilities by strategy: efficiency-focused 124/37; feature-focused 158/29; security-focused 38/7; ambiguous 67/14 (total 387, critical 87)",
+    "Average vulnerabilities per sample: iterations 1-2: 2.1 (SD 0.9); 3-7: 4.7 (SD 1.2); 8-10: 6.2 (SD 1.8)",
+    "Complexity correlation r = 0.64; 10% complexity increase associated with 14.3% increase in vulnerability count"
+  ],
+  "sample_unit_and_population": "400 code samples: 10 baseline programs x 4 prompting strategies x 10 iterations (40 rounds). Languages C and Java. Model: OpenAI GPT-4o, temperature 0.7, top_p 1.0 (Section III-C); exact model snapshot/version string not captured [uncertain]. Detection: Clang Static Analyzer, CodeQL, SpotBugs plus manual security review, severity via CVSS. Small, synthetic, controlled; not real-world repos.",
+  "observed_vs_stated": "Observed: controlled experiment with tool-detected and manually reviewed vulnerabilities, not self-report.",
+  "what_makes_trust_justified": "Human review between LLM iterations; cap consecutive LLM-only iterations at three and reset after each human review; security review after every iteration; conventional static analysis between iterations; extra scrutiny when complexity rises (Section V-B).",
+  "what_it_costs": "Human review checkpoints every few iterations and per-iteration security scanning; paper gives no quantified cost.",
+  "failure_mode_class": "Security (vulnerabilities introduced or accumulated through repeated autonomous modification)",
+  "control_that_would_have_prevented": "Not an incident study. Missing control in the experiment's loop: human review and static analysis gating between iterations.",
+  "limitations_stated": "Only GPT-4o tested. Only C and Java. Pure LLM loops simulated without humans, which real development rarely does (\"Developers rarely use LLMs in fully autonomous iteration chains.\").",
+  "counter_evidence": "Security-focused prompts produced far fewer vulnerabilities (38 total, 7 critical) than other strategies, so degradation depends on prompt. Internal oddities noted on reading: 37.6% appears only in abstract; per-iteration averages do not obviously reconcile with 387 total over 400 samples; text calls efficiency prompts most severe though feature-focused has the highest total. Small sample (10 baselines). A later paper (arXiv:2603.08520) reports similar degradation across three LLMs but was not opened [uncertain].",
+  "verification_status": "Claims checked against the arXiv v2 HTML via a summarising fetch tool, not the raw PDF. Figures and quotes: partially verified; re-open the PDF before quoting. Table II figures [uncertain]. 37.6% figure verified only as an abstract claim.",
+  "usable_claim": "In one controlled experiment with GPT-4o on 10 C and Java programs, repeatedly asking the model to improve its own code, with no human review, increased vulnerabilities as iterations rose, and the authors recommend human review between iterations.",
+  "do_not_use": "Do not generalise to all models, languages or real-world agent use. Do not present 37.6% as a general rate or lean on the per-iteration averages. Do not say security prompts make code worse.",
+  "overlap_with_existing_essays": "Not checked against the Verification Gap or Checking Isn't Catching essays [uncertain]",
+  "uncertain": ["access_status", "date_and_recency", "sample_unit_and_population", "counter_evidence", "verification_status", "overlap_with_existing_essays"]
+}
