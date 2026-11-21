@@ -1,0 +1,57 @@
+topic: "The coding interview after AI coding agents: what hiring loops for software engineers should measure now that agents do convergent coding well"
+
+angle: >
+  A leadership essay. Start from Felix Rieseberg's "Hunger beats tenure" (27 October 2026), in
+  which an Anthropic engineering manager stopped asking coding interview questions and admits he
+  has not found a replacement. Lee's answer: stop measuring convergent thinking (the one right
+  answer to a well-posed problem), which agents now do well. Assess instead (1) a design
+  conversation with diagramming and trade-offs, (2) how the candidate works with a coding agent:
+  the context they give it and how they judge whether the outcome is right, (3) how well they
+  communicate with the group, team members not heroes (link /leadership/myth-of-the-heroic-developer),
+  and (4) basic developer fluency in a hands-on challenge (git merges, IDE), since Lee sees
+  developers hand Claude a two-file, few-line merge. Builds on "The First Rung"
+  (/leadership/the-first-rung) and must not restate it.
+
+caveats_to_test:
+  - "Rieseberg speaks for his own hiring, not Anthropic policy. Do not use the Pragmatic Engineer's 'zero signal' wording as his."
+  - "Most AI-era interview formats have no criterion-validity evidence. Say so."
+  - "Work samples are less valid than Schmidt and Hunter 1998 reported; check Roth et al. 2005 and Sackett et al. 2022."
+  - "'Team fit' is criticised as cover for similarity bias (Rivera 2012). The essay must define what is observed."
+  - "Vendor surveys (Karat, CoderPad, CodeSignal) are marketing-adjacent: flag."
+  - "Company policies are often relayed through press. Open the company's own page or mark [uncertain]."
+  - "Open every primary source; mark access_status honestly."
+
+items:
+  - name: "Rieseberg Hunger beats tenure"
+    note: "felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/ (27 October 2026). Exact interview passage, his role, scope (his teams), 'weak but useful predictor', what he looks for instead ('taste, empathy, and principled thinking'), his admission he has not found a replacement, and the main advice. Note the Pragmatic Engineer summary (30 October 2026) and how its wording differs."
+  - name: "Anthropic AI-resistant technical evaluations"
+    note: "Tristan Hume, anthropic.com/engineering/AI-resistant-technical-evaluations (January 2026), plus TechCrunch 22 January 2026. How many candidates took the take-home, which models beat it and under what conditions, the quote about no longer distinguishing top candidates from the model, what Anthropic changed. Same company as Rieseberg."
+  - name: "Anthropic candidate AI guidance"
+    note: "anthropic.com/candidate-ai-guidance (or current URL). Exact policy on AI use in applications and interviews, exceptions, date if shown. The tension with Hume and Rieseberg."
+  - name: "Canva AI-assisted coding interviews"
+    note: "Simon Newton, 'Yes, You Can Use AI in Our Interviews. In fact, we insist' (canva.dev, 11 June 2025) and the companion 'AI interview success' post. What round it replaces, rationale, how candidates are assessed (what interviewers look for when a candidate uses AI), pilot status, any results."
+  - name: "Meta AI-enabled coding interview"
+    note: "404 Media (July 2025) report of an internal Meta post; any Wired corroboration; any later primary Meta statement. Exact quoted rationale ('more representative of the developer environment', LLM cheating 'less effective'). Mark details only in blogs as [uncertain]."
+  - name: "Google in-person rounds and AI-assisted interview"
+    note: "Sundar Pichai on reintroducing at least one in-person round (Lex Fridman podcast June 2025, or reporting of Feb 2025 town hall: CNBC, Axios). Then any primary Google source on an AI-assisted coding interview pilot (2026); if only careers blogs exist, mark [uncertain]."
+  - name: "Karat AI Workforce Transformation report"
+    note: "connect.karat.com 2025-2026 AI Workforce Transformation Report PDF and karat.com engineering interview trends 2026. Sample, fieldwork, Harris Poll role, exact figures: share saying AI makes skills harder to assess, share banning AI in interviews, confidence in hiring decisions. Vendor research."
+  - name: "Sackett et al 2022 revisiting validity of selection procedures"
+    note: "Sackett, Zhang, Berry & Lievens (2022), Journal of Applied Psychology 107(11), 'Revisiting meta-analytic estimates of validity in personnel selection'. Corrected validities for structured interviews, work samples, job knowledge, GMA, unstructured interviews; their argument about range restriction corrections. Open the paper or an authoritative copy."
+  - name: "Schmidt Hunter 1998 and Roth et al 2005 work samples"
+    note: "Schmidt & Hunter (1998) Psychological Bulletin 124(2): work sample .54, structured interview .51. Roth, Bobko & McFarland (2005) Personnel Psychology 58(4): work sample corrected validity about .33. Exact figures and caveats."
+  - name: "Guilford convergent and divergent thinking"
+    note: "J. P. Guilford, 'Creativity' (American Psychologist, 1950) and The Nature of Human Intelligence (1967) / structure of intellect: definitions of convergent production and divergent production. Find an opened primary or an authoritative encyclopaedic source quoting him (e.g. APA Dictionary of Psychology). Exact wording."
+  - name: "Rivera 2012 hiring as cultural matching"
+    note: "Lauren A. Rivera (2012), 'Hiring as Cultural Matching: The Case of Elite Professional Service Firms', American Sociological Review 77(6), 999-1022. Method (interviews, observation), how evaluators used 'fit', what similarity meant (leisure pursuits, experiences), consequences. Exact quotes."
+  - name: "Behroozi et al 2020 stress in technical interviews"
+    note: "Behroozi, Shirolkar, Barik & Parnin (2020), 'Does Stress Impact Technical Interview Performance?' ESEC/FSE 2020. Design (48 participants? public whiteboard vs private), result (performance roughly halved under observation?), exact figures, limits. Relevance: an observed design conversation also has an audience."
+  - name: "Merge conflict benchmarks for AI"
+    note: "GitGoodBench (JetBrains, arXiv 2505.22583) and ConGra (arXiv 2409.14121), any 2026 merge benchmark. How well models resolve real merge conflicts, exact success rates, settings. Relevance: whether handing a small merge to an agent is reliable, and whether basic git fluency still matters."
+  - name: "Stack Overflow 2025 and DORA 2025 on verifying AI output"
+    note: "Stack Overflow Developer Survey 2025 results (stackoverflow.blog, 29 July 2025, and survey.stackoverflow.co/2025/ai): 'almost right, but not quite' frustration %, trust/distrust %. DORA 2025 State of AI-assisted Software Development: AI as 'amplifier', foundations named (version control, code review). Exact wording; relevance to assessing judgement of agent output."
+
+execution:
+  batch_size: 5
+  items_per_agent: 1
+  output_dir: ./results
