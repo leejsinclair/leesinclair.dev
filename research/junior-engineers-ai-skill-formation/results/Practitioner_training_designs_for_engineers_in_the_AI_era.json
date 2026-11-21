@@ -1,0 +1,235 @@
+{
+  "name": "Practitioner training designs for engineers in the AI era",
+  "citation": [
+    "Dave Thomas. 'CodeKata' (intro post, dated 14 April 2014 on the current site; site copyright 2016) and 'CodeKata: How It Started' (dated 30 December 2013 on the current site). http://codekata.com/ and http://codekata.com/kata/codekata-how-it-started/. The posts were first written on his earlier blog around 2003; the site dates are republication dates. [uncertain: original year]",
+    "Tian Pan. 'Onboarding Engineers into AI-Generated Codebases Without Breaking How They Learn'. Personal blog, 17 April 2026. https://tianpan.co/blog/2026-04-17-onboarding-engineers-ai-generated-codebases",
+    "Garima Agarwal. 'Your junior engineers are getting faster but are they getting better?'. LeadDev, 8 October 2026. https://leaddev.com/leadership/your-junior-engineers-are-getting-faster-but-are-they-getting-better",
+    "Giordano Scalzo. 'Tackling the junior developer crisis in the age of AI'. LeadDev (talk page, video gated), page dated 29 September 2026. https://leaddev.com/management/tackling-the-junior-developer-crisis-in-the-age-of-ai",
+    "Laurie Barth. 'Using AI to improve developer onboarding'. LeadDev, 27 January 2026. https://leaddev.com/hiring/does-ai-improve-developer-onboarding",
+    "Anthropic. 'Output styles', Claude Code documentation (undated, current as of October 2026). https://code.claude.com/docs/en/output-styles",
+    "Igor Bonifacic. 'Anthropic brings Claude's learning mode to regular users and devs'. Engadget, 14 August 2025. https://www.engadget.com/ai/anthropic-brings-claudes-learning-mode-to-regular-users-and-devs-170018471.html",
+    "OpenAI. 'Introducing study mode', 29 July 2025, https://openai.com/index/chatgpt-study-mode/ and 'Understanding AI and learning outcomes', March 2026, https://openai.com/index/understanding-ai-and-learning-outcomes/. NOT opened (HTTP 403); known only through search snippets and secondary reports.",
+    "Durham University Generative AI advice site (author not named). 'OpenAI says AI is good for learning', 5 March 2026. https://ai.webspace.durham.ac.uk/openai-says-ai-is-good-for-learning/",
+    "S. V. Cole (first name not shown in the publication record). 'Impact of Capture The Flag (CTF)-style vs. Traditional Exercises in an Introductory Computer Security Class'. ITiCSE 2022, pp. 470-476. https://doi.org/10.1145/3502718.3524806",
+    "John Rooksby, Johanna Hunt, Xiaofeng Wang. 'The Theory and Practice of Randori Coding Dojos'. XP 2014, LNBIP vol. 179, pp. 251-259. https://doi.org/10.1007/978-3-319-06862-6_18"
+  ],
+  "source_tier": "Mostly practitioner or vendor material. Dave Thomas, Tian Pan: practitioner blogs. LeadDev (Agarwal, Scalzo, Barth): practitioner trade press. Claude Code output styles: vendor documentation. Engadget: press. OpenAI study mode and learning-outcomes posts: vendor announcement and company research, not peer-reviewed. Durham post: institutional blog commentary. Cole 2022 and Rooksby et al. 2014: peer-reviewed conference papers, included as the nearest academic evidence on CTF and coding dojos.",
+  "access_status": "Fully read (page text retrieved directly): Dave Thomas both posts; Tian Pan (body text; reference list read via a fetch summary); Agarwal on LeadDev; Engadget; Claude Code output styles docs. Fully read via a fetch summary only: Barth on LeadDev; Durham post. Partly read: Scalzo on LeadDev (intro and key takeaways only; the talk itself sits behind registration). Abstract only, and through a publication-record page rather than the paper: Cole 2022 (the ACM page returned 403); Rooksby et al. 2014. Search snippet only: both OpenAI pages (403 on every attempt, including the help-centre FAQ); the Brazilian coding-dojo case study and the 60-student CTF study mentioned under counter_evidence.",
+  "author_credentials": "Dave Thomas: programmer and author, co-author of 'The Pragmatic Programmer' and co-founder of the Pragmatic Bookshelf, which sells programming books; no direct commercial interest in the kata idea itself. Tian Pan: software engineer writing on a personal blog; affiliation not stated on the page [uncertain]. Garima Agarwal: described by LeadDev as 'a seasoned back-end engineer and tech leader'; employer not named, so the team behind her figures cannot be identified. Giordano Scalzo: Engineering Lead at NewDay Ltd. Laurie Barth: Senior Software Engineer at Netflix. Anthropic and OpenAI: vendors describing their own products, with an obvious commercial interest; Drew Bent, quoted by Engadget, is Anthropic's education lead. Cole: computer science faculty at Washington University in St. Louis. Rooksby, Hunt, Wang: software engineering researchers (the record is hosted by Northumbria University). None of the practitioner authors is a learning scientist.",
+  "exact_quotes": [
+    {
+      "source": "Dave Thomas, 'CodeKata'",
+      "location": "Opening section",
+      "quote": "In software we do our practicing on the job, and that's why we make mistakes on the job. We need to find ways of splitting the practice from the profession. We need practice sessions."
+    },
+    {
+      "source": "Dave Thomas, 'CodeKata'",
+      "location": "Section 'The Kata'",
+      "quote": "You need time without interruptions, and a simple thing you want to try. You need to try it as many times as it takes, and be comfortable making mistakes. You need to look for feedback each time so you can work to improve. There needs to be no pressure: this is why it is hard to practice in a project environment."
+    },
+    {
+      "source": "Dave Thomas, 'CodeKata'",
+      "location": "Section 'The Kata'",
+      "quote": "Each is a short exercise (perhaps 30 minutes to an hour long)."
+    },
+    {
+      "source": "Dave Thomas, 'CodeKata'",
+      "location": "Section 'The Kata'",
+      "quote": "Remember that the point of the kata is not arriving at a correct answer. The point is the stuff you learn along the way. The goal is the practice, not the solution."
+    },
+    {
+      "source": "Dave Thomas, 'CodeKata: How It Started'",
+      "location": "Closing paragraphs",
+      "quote": "So how can we do this in the real world? How can we help developers do the practicing that's clearly necessary in any creative process? I don't know, but my gut tells me we need to do two main things. The first is to take the pressure off every now and then."
+    },
+    {
+      "source": "Tian Pan",
+      "location": "Section 'The Reading Gap AI Creates'",
+      "quote": "A 2026 study found that developers using AI code generation scored 17% lower on code comprehension tests than those coding manually"
+    },
+    {
+      "source": "Tian Pan",
+      "location": "Section 'The Reading Gap AI Creates'",
+      "quote": "The tool didn't cause the gap. The delegation did."
+    },
+    {
+      "source": "Tian Pan",
+      "location": "'Structured code archaeology before first commit'",
+      "quote": "\"Follow an API request for feature X from the network boundary to the database and back. Write down every decision that surprised you.\" The question forces active reading rather than passive scanning."
+    },
+    {
+      "source": "Tian Pan",
+      "location": "'Deliberate code reading rituals'",
+      "quote": "A weekly 30-minute session where the team reads a section of the codebase together"
+    },
+    {
+      "source": "Tian Pan",
+      "location": "'Paired archaeology sessions'",
+      "quote": "Only after the exploration session does the junior use AI to implement."
+    },
+    {
+      "source": "Tian Pan",
+      "location": "'Architecture decision records as onboarding material'",
+      "quote": "consistently report faster onboarding with deeper understanding"
+    },
+    {
+      "source": "Agarwal, LeadDev",
+      "location": "Key takeaways",
+      "quote": "Velocity can hide a comprehension gap: 14 features shipped, zero mental models built."
+    },
+    {
+      "source": "Agarwal, LeadDev",
+      "location": "Section on output and learning tasks",
+      "quote": "attempt the problem without AI assistance first, then use the tool, and write a short paragraph explaining what was different about the AI's approach and why. A senior engineer reviews those paragraphs weekly. The ratio starts at 50/50 and shifts toward 80% output by month three."
+    },
+    {
+      "source": "Agarwal, LeadDev",
+      "location": "'Adding decision walks alongside code review'",
+      "quote": "Once a week, every junior engineer picks one merged pull request and walks a senior engineer through it verbally."
+    },
+    {
+      "source": "Agarwal, LeadDev",
+      "location": "'Starting onboarding with a codebase read'",
+      "quote": "New engineers now spend their first two weeks answering a set of questions through code exploration, documentation, and their own testing, without AI tools. Where does a request enter the system, and what happens before it reaches the database?"
+    },
+    {
+      "source": "Agarwal, LeadDev",
+      "location": "Section on debugging sessions",
+      "quote": "We run a monthly session using real, anonymized production incidents, facilitated by a senior engineer in a question-driven format."
+    },
+    {
+      "source": "Agarwal, LeadDev",
+      "location": "'The results and the costs'",
+      "quote": "Six months after making these changes, our time to meaningful contribution fell from seven months to four. I define that as the first incident a junior engineer can work through independently, not just the first feature shipped."
+    },
+    {
+      "source": "Agarwal, LeadDev",
+      "location": "'The results and the costs'",
+      "quote": "The costs were real. The codebase read adds two weeks to onboarding. The decision walks add 30 minutes of senior engineer time each week. The debugging sessions require preparation."
+    },
+    {
+      "source": "Scalzo, LeadDev",
+      "location": "Talk introduction (as returned by a fetch summary)",
+      "quote": "I will share three exercises I am using with junior engineers: AI-off sessions, Explain the Machine, and Break It challenges."
+    },
+    {
+      "source": "Barth, LeadDev",
+      "location": "Pitfalls section (as returned by a fetch summary)",
+      "quote": "I wasn't closing the knowledge gap between me and AI as quickly as I would have without using it"
+    },
+    {
+      "source": "Claude Code docs, 'Output styles'",
+      "location": "Built-in styles table",
+      "quote": "Claude explains its choices and leaves small pieces of code for you to write yourself"
+    },
+    {
+      "source": "Claude Code docs, 'Output styles'",
+      "location": "Section 'Learning'",
+      "quote": "When it reaches a piece with a real design decision, such as error handling, a data structure, or business logic with more than one valid approach, it leaves a few lines for you."
+    },
+    {
+      "source": "Claude Code docs, 'Output styles'",
+      "location": "Section 'Learning'",
+      "quote": "Claude then stops and waits. Write your code at the `TODO(human)` comment and tell Claude when you're done."
+    },
+    {
+      "source": "Claude Code docs, 'Output styles'",
+      "location": "Section 'Explanatory'",
+      "quote": "An `Insight` block carries two or three points about your codebase or the code Claude wrote"
+    },
+    {
+      "source": "Claude Code docs, 'Output styles'",
+      "location": "Note near the top",
+      "quote": "An output style gives Claude instructions to follow. It doesn't guarantee that something always happens or never happens."
+    },
+    {
+      "source": "Engadget, 14 August 2025",
+      "location": "Drew Bent quotes",
+      "quote": "Learning mode is designed to help all of those audiences not just complete tasks, but also help them grow and learn in the process and better understand their code base"
+    },
+    {
+      "source": "Engadget, 14 August 2025",
+      "location": "Closing paragraphs, reporting Drew Bent",
+      "quote": "Looking forward, Bent says Anthropic doesn't \"have all the answers, but needless to say, we're trying to think through other features we can build\""
+    },
+    {
+      "source": "Durham University Generative AI site, 5 March 2026",
+      "location": "Body (as returned by a fetch summary)",
+      "quote": "the results were mixed, with only students in Microeconomics showing gains over traditional methods"
+    },
+    {
+      "source": "Cole 2022",
+      "location": "Abstract (short excerpt, via the Washington University publication record)",
+      "quote": "Educators implementing CTF exercises have reported, often informally, that the exercises increase student motivation"
+    },
+    {
+      "source": "Rooksby, Hunt, Wang 2014",
+      "location": "Abstract (short excerpt, via the Northumbria publication record)",
+      "quote": "the theoretical bases behind it have never been investigated"
+    }
+  ],
+  "key_claims": [
+    "Dave Thomas (code kata): developers practise on the job, which is why they make mistakes on the job. Practice should be separated from delivery. A kata is a short exercise of 30 to 60 minutes, repeated with small improvements, done without deadline pressure and with feedback each time. The solution is not the point. He offers the idea as an analogy with musicians, athletes and karate, plus his own experience, and says 'I don't know' how to make it happen in workplaces beyond taking the pressure off and teaching people to play with code.",
+    "Tian Pan: AI lets a new engineer ship before reading the codebase, producing code that is 'locally coherent' but 'globally inconsistent'. He proposes five practices: a traced 'code archaeology' exercise before the first commit, with a written list of surprises reviewed by a senior; architecture decision records used as onboarding reading; a weekly 30-minute team code reading; pairing a junior with a senior for exploration (not implementation) before AI is used to implement; and team standards encoded as custom instructions for the AI tool. He does not propose AI-free periods.",
+    "Garima Agarwal (LeadDev): after six months of mandatory AI coding tools, juniors could not explain a service they had shipped features against. Her team split onboarding work into 'output tasks' and 'learning tasks' (attempt without AI first, then compare with the AI's approach in a written paragraph), added a weekly 15-minute 'decision walk' through a merged pull request, a two-week AI-free 'codebase read' answering set questions, and a monthly debugging session on real anonymised incidents. This is the closest thing found to a treasure hunt through a codebase, and the only practitioner source that reports an outcome number.",
+    "Giordano Scalzo (LeadDev): names three exercises for juniors (AI-off sessions, Explain the Machine, Break It challenges) aimed at what he calls the 'Confidence Gap'. How they work is behind a registration wall and was not read.",
+    "Laurie Barth (LeadDev): a first-person account of a senior engineer changing teams. AI made early contribution faster but she reports understanding the system less deeply and closing the knowledge gap more slowly than she would have without it.",
+    "Claude Code output styles: 'Explanatory' adds short Insight blocks explaining choices. 'Learning' adds the same blocks and leaves a few lines at a real design decision for the user to write, marked TODO(human), then waits. The documentation makes no claim about learning outcomes and notes that a style is an instruction, not a guarantee.",
+    "ChatGPT study mode (not opened; from secondary reports): launched 29 July 2025, a Socratic mode built from custom system instructions written with educators, which OpenAI said can behave inconsistently and which users can switch off. A March 2026 OpenAI post is reported to describe a randomised study of study mode with mixed results and a new 'Learning Outcomes Measurement Suite'.",
+    "Scavenger or treasure hunts through a codebase: no named, published practitioner design was found under those terms. The idea exists in practice as question-led code reading (Agarwal's codebase read, Tian Pan's traced request) and as vendor 'codebase tour' tooling.",
+    "Controlled evidence: none was found that katas, coding dojos, codebase treasure hunts, decision walks, AI-off sessions or the Claude Code Learning and Explanatory styles improve comprehension or performance among working engineers. The only controlled studies located concern students: CTF exercises in a university security course (Cole 2022) and, reportedly, ChatGPT study mode in college courses."
+  ],
+  "headline_figures": [
+    "Dave Thomas: a kata is 'a short exercise (perhaps 30 minutes to an hour long)'. His own first session was 'a spare 45 minutes'. A design parameter, not a result. The site lists 21 kata.",
+    "Tian Pan: 'A weekly 30-minute session where the team reads a section of the codebase together'. A proposal, not a measured result.",
+    "Tian Pan, citing others: 'scored 17% lower on code comprehension tests than those coding manually' (attributed to 'A 2026 study'; the reference list links arXiv 2601.20245, the Anthropic trial covered by another item in this research). Also 'AI-generated code produces 1.7x more issues than human-written code on average', 'Code clones have risen from 8.3% to 12.3% of codebases', and refactoring 'dropped from 25% to 10% of all code changes'. None of the last three is attributed inline.",
+    "Agarwal: 'our time to meaningful contribution fell from seven months to four', measured 'Six months after making these changes', defined as 'the first incident a junior engineer can work through independently'. One team, before and after, no comparison group, number of juniors not stated.",
+    "Agarwal: '14 features shipped, zero mental models built', after 'six months of mandatory AI-coding tools'. A rhetorical summary of one conversation, not a measurement.",
+    "Agarwal, design parameters and costs: learning-to-output ratio 'starts at 50/50 and shifts toward 80% output by month three'; 'Each decision walk takes 15 minutes'; 'The decision walks add 30 minutes of senior engineer time each week'; 'The codebase read adds two weeks to onboarding'; debugging session monthly.",
+    "Claude Code Learning style: the docs say it 'leaves a few lines for you'. Engadget's launch report (14 August 2025) said 'five to 10 lines'. No outcome figure exists for either style.",
+    "ChatGPT study mode [uncertain, secondary sources only]: OpenAI's March 2026 post reportedly describes a randomised study with 'over 300' college students in neuroscience and microeconomics; a dig.watch summary reports 'around 15% higher exam scores' for microeconomics students using study mode against traditional online resources; the Durham post says only microeconomics showed a gain. Not checked against OpenAI's page.",
+    "Cole 2022 (CTF versus traditional exercises): significantly higher student motivation with CTF-style exercises; no significant difference in exam scores on the related questions. Sample size not obtained."
+  ],
+  "sample_and_method": "Almost none of this is research. Dave Thomas: personal reflection and analogy. Tian Pan: argument, an illustrative new-hire scenario, and figures borrowed from other sources. Agarwal: a single-team case report by the manager who made the changes; before-and-after comparison of one metric over about six months; no control group, no sample size, employer not named. Scalzo: one anecdote about one junior engineer. Barth: one engineer's own experience. Claude Code docs: product documentation. OpenAI study mode [uncertain]: reported as a randomised study of more than 300 college students in two subjects; design details not verified. Cole 2022: a comparison of CTF-style and traditional exercises within an undergraduate introductory security course, using post-assignment surveys and exam questions; whether assignment was randomised was not established from the abstract. Rooksby et al. 2014: qualitative examination of two randori dojo sessions, no outcome measure.",
+  "evidence_offered": "Thomas: analogy with musicians, athletes and karate, and one 45-minute session of his own. Tian Pan: the Anthropic trial, a CodeRabbit report and a GitClear report appear in his reference list (the last two not tied to specific figures inline), and an unsourced statement that teams with narrative architecture docs 'consistently report faster onboarding with deeper understanding'. Agarwal: her own team's time to first independently handled incident, plus what senior engineers told her ('they ask better questions now'). Scalzo and Barth: personal observation. Anthropic: none offered for learning; Drew Bent told Engadget the original learning mode 'came out of conversations Anthropic had with university students'. OpenAI [uncertain]: its own randomised study, reported second-hand. Cole: survey and exam data from one course.",
+  "data_vintage": "Dave Thomas: posts dated 30 December 2013 and 14 April 2014 on the current site, copyright 2016; the original writing is from about 2003 [uncertain]. Tian Pan: 17 April 2026. Barth: 27 January 2026. Scalzo: page dated 29 September 2026. Agarwal: 8 October 2026, three days before this research was done. Claude Code Learning and Explanatory styles: launched 14 August 2025 (Engadget); docs read on 11 October 2026, by which point the docs also list Proactive and Concise styles. ChatGPT study mode: launched 29 July 2025; learning-outcomes post March 2026 (the Durham commentary is dated 5 March 2026). Cole: July 2022. Rooksby et al.: May 2014.",
+  "figure_provenance": "The 17% in Tian Pan is the Anthropic trial figure (Shen and Tamkin, arXiv 2601.20245). His wording, 'The tool didn't cause the gap. The delegation did', is a causal reading of that trial's interaction-pattern breakdown; this research's outline flags those groups as tiny and not causal, so the sentence should not be quoted as a finding. The 1.7x, 8.3% to 12.3% and 25% to 10% figures are not attributed in his text; his reference list contains CodeRabbit's 'State of AI vs Human Code Generation' report and GitClear's 2025 AI code quality research, which are the probable origins, but neither was opened here [uncertain]. Agarwal's seven-months-to-four figure originates with her and has no other source. For the Learning style, the vendor docs ('a few lines') and Engadget ('five to 10 lines', and '#TODO' where the docs say TODO(human)) differ; a community reading of the prompt text reportedly says 2 to 10 lines. Use the docs' wording. The study mode '15%' and 'over 300' figures come from dig.watch and a search snippet of OpenAI's page, not from a page opened here.",
+  "population_and_transfer": "Thomas: working programmers in general, no data. Tian Pan: new and junior engineers, argument only. Agarwal: junior engineers on one unnamed team using mandatory AI tools, which is exactly the target population, but one team and one self-reported number. Barth: a senior engineer, so it shows the effect is not confined to juniors but says little about them. Claude Code styles: aimed at developers at any level; untested. ChatGPT study mode and Cole's CTF study: university students in coursework, which transfers weakly to engineers learning a proprietary codebase. No source measured working junior engineers under controlled conditions.",
+  "outcome_measured": "Agarwal: on-the-job performance of a kind, as time to the first incident a junior handles independently, self-reported. Cole: self-reported motivation and exam scores on related questions. OpenAI study mode [uncertain]: exam scores. Everything else: no outcome measured. Nobody measured delayed retention or comprehension of a real codebase.",
+  "limitations_stated": [
+    "Dave Thomas admits he does not know how to bring practice into real workplaces: 'I don't know, but my gut tells me we need to do two main things.' He also notes practice needs 'no pressure', which he says 'is why it is hard to practice in a project environment'.",
+    "Tian Pan concedes that encoding standards in the AI tool 'isn't a fix for the learning problem'. He states no limits on his other four practices and gives no data for them.",
+    "Agarwal states the costs plainly ('The costs were real. The codebase read adds two weeks to onboarding. The decision walks add 30 minutes of senior engineer time each week. The debugging sessions require preparation.') but does not state the limits of her evidence: no team size, no comparison group, no account of what else changed over the six months.",
+    "Anthropic's docs: 'An output style gives Claude instructions to follow. It doesn't guarantee that something always happens or never happens.' The styles also 'produce longer responses than Default by design, which increases output tokens'. Drew Bent, to Engadget: Anthropic doesn't 'have all the answers'.",
+    "OpenAI [uncertain, from press coverage of the launch, not the primary page]: study mode runs on system instructions and so shows 'some inconsistent behavior and mistakes across conversations'; users can switch back to ordinary ChatGPT at any time.",
+    "Barth: AI's 'accuracy can be subjective' and is hard to check without knowing the codebase.",
+    "Rooksby et al. say of the coding dojo that 'the theoretical bases behind it have never been investigated', and their own paper looks at only two sessions."
+  ],
+  "counter_evidence": "1) The nearest controlled test of a gamified format found no learning gain: Cole (2022) reports higher motivation with CTF-style exercises but no significant difference in exam scores. That supports CTF and treasure-hunt formats as engaging, not as better for learning. A 2025 study of 60 undergraduates reportedly found CTF improved self-efficacy and outcomes, but it was seen only as a search snippet and its design is unclear. 2) Coding-dojo research is thin. Rooksby et al. is qualitative and covers two sessions. A Brazilian undergraduate case study (snippet only) reportedly found students' self-assessed competence rose more than their measured performance, which hints that dojos can inflate confidence. 3) The one study of a vendor learning mode is reported as mixed: a gain in microeconomics and none in neuroscience, run by the vendor with a measure it designed. 4) Barth's account cuts against any assumption that an explaining AI is enough: she used AI to learn a codebase and still reports shallower understanding. 5) Learning and Explanatory styles are opt-in, cost more tokens and are not enforced, so a junior under delivery pressure can simply leave them off. Nothing shows how often they are used. 6) Thomas's own condition for practice is the absence of pressure, which a scheduled, manager-run programme may not provide.",
+  "alternative_explanations": "Agarwal's drop from seven months to four could come from things other than the redesign: a different cohort of juniors, better AI tools over the same six months, more senior attention of any kind (a Hawthorne-style effect), ordinary variation in a small group, or a metric defined after the fact by the person who made the changes. Publication is also selective, since leaders write up redesigns that seemed to work. Cole's null result on exams may reflect an insensitive test or equal time on task rather than equal learning. The reported study mode gain in one subject and not the other may reflect differences in the subjects, the students or the exams. The popularity of katas for two decades shows that practitioners like them, not that they work.",
+  "verification_status": [
+    "Dave Thomas quotes and the 30 to 60 minute figure: CHECKED against the text of codekata.com and the 'How It Started' post, retrieved directly. Original 2003 publication date: NOT checked.",
+    "Tian Pan's five practices, his quotes and the four figures as he states them: CHECKED against the article body, retrieved directly. That his reference list links arXiv 2601.20245, CodeRabbit and GitClear: seen only through a fetch summary. Whether the 1.7x, 8.3% to 12.3% and 25% to 10% figures match those reports: NOT checked. The 17% figure against the Anthropic paper: not checked here; see the Anthropic trial item.",
+    "Agarwal's practices, costs and the seven-months-to-four result: CHECKED against the LeadDev article text, retrieved directly. The underlying team data cannot be verified by anyone outside her team.",
+    "Scalzo: only the page introduction and takeaways were read, through a fetch summary. The content of the three exercises: NOT verified.",
+    "Barth: read through a fetch summary only; quotes are as that summary returned them and should be re-checked on the page before use.",
+    "Claude Code Explanatory and Learning styles: CHECKED against the full documentation page, retrieved directly. Launch date and Drew Bent quotes: CHECKED against the Engadget article text. No Anthropic announcement page for the Claude Code styles was found; the Claude for Education page of 9 July 2025 that was opened does not mention them.",
+    "ChatGPT study mode launch details and the study mode trial: NOT checked against a primary source. OpenAI's pages returned 403. Everything here comes from search snippets, press coverage and the Durham blog.",
+    "Cole 2022: citation and findings checked against the Washington University publication record, which carries the abstract; the paper itself was not opened and the sample size is unknown.",
+    "Rooksby et al. 2014: citation and abstract checked against the Northumbria publication record; paper not opened.",
+    "Absence of controlled evidence: this rests on targeted web searches for katas, coding dojos, CTF, codebase scavenger hunts, study mode and the Claude Code styles. It is a search result, not a systematic review."
+  ],
+  "relevance_to_essay": "This is the evidence base for the essay's proposed answer, and it is weak. Practitioners are converging on the same shape Lee proposes: short, regular, low-stakes exercises that make a junior read and explain the system. Agarwal's AI-free codebase read and Tian Pan's traced request are treasure hunts in all but name, and Thomas's kata is the small coding challenge. But the support is one team's before-and-after number, some anecdotes and a twenty-year-old analogy. The essay can say the proposal matches what experienced leaders are trying. It cannot say it has been shown to work.",
+  "implications_for_training_design": "Frequency: the sources cluster on weekly and short. Tian Pan suggests 30 minutes a week of shared code reading, Agarwal a 15-minute weekly decision walk and a monthly incident session, Thomas 30 to 60 minutes per kata. Format: every AI-era design asks the junior to explain or trace real code rather than write new code, usually as a set question ('Where does a request enter the system, and what happens before it reaches the database?'), with the answer written down or spoken to a senior. Difficulty and AI use: Agarwal's sequence is attempt without AI, then use AI, then explain the difference, which keeps the tool but puts the effort first; Tian Pan puts exploration before AI implementation. Feedback: all rely on a senior engineer reviewing the answer, which is the real cost (30 minutes of senior time a week in Agarwal's account, two extra weeks of onboarding) and the part an AI-generated programme would have to replace or support. Use of AI to generate exercises: none of these sources proposes or tests it. The Claude Code Learning style is the nearest thing, an AI choosing which few lines the human writes, and it has no outcome data. Thomas's warning applies to delivery: practice needs to be free of deadline pressure. A sensible reading is that an in-house programme should be treated as an experiment and measured, for example by Agarwal's metric of time to first independently handled incident or by her no-laptop 'explain the service' question, since no one else has measured it.",
+  "open_questions": "Whether any of these designs improves comprehension or performance among working engineers under controlled conditions. No such study was found. How many juniors sit behind Agarwal's figure and what her employer is. What Scalzo's three exercises involve. What OpenAI's study mode trial found in full, since its page could not be opened. Whether the Claude Code Learning or Explanatory styles change what users retain, and how many people use them. Whether a published, named codebase scavenger-hunt design exists; none turned up in search. Whether AI-generated exercises work without a senior engineer checking the answers.",
+  "uncertain": [
+    "citation",
+    "author_credentials",
+    "headline_figures",
+    "sample_and_method",
+    "data_vintage",
+    "figure_provenance",
+    "outcome_measured",
+    "limitations_stated"
+  ]
+}

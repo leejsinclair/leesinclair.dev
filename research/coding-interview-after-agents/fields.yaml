@@ -1,0 +1,59 @@
+fields:
+  source:
+    - name: citation
+      description: "Authors, title, venue or site, date, URL."
+      detail_level: brief
+    - name: evidence_tier
+      description: "Peer-reviewed, preprint, primary company statement, vendor survey, practitioner post, secondary press."
+      detail_level: brief
+    - name: access_status
+      description: "Fully read, abstract only, paywalled, search snippet only."
+      detail_level: brief
+    - name: sponsor_and_incentive
+      description: "Who funded the work or sells something related to the finding."
+      detail_level: brief
+    - name: exact_quotes
+      description: "Verbatim quotes from the opened source, with location."
+      detail_level: detailed
+    - name: date_and_recency
+      description: "Publication date, data collection window, and the model versions or period a capability claim refers to."
+      detail_level: brief
+
+  claims:
+    - name: key_claims
+      description: "What the source asserts, in its own terms."
+      detail_level: detailed
+    - name: headline_figures
+      description: "Each number with exact wording, unit, comparison group and date."
+      detail_level: detailed
+    - name: sample_and_method
+      description: "Who or what was studied, how many, how; software engineers or not."
+      detail_level: moderate
+
+  interviewing:
+    - name: what_is_measured
+      description: "The construct the format or study claims to measure (convergent coding, design judgement, debugging, code comprehension, directing an agent, communication, team fit, tool fluency)."
+      detail_level: moderate
+    - name: ai_policy_in_interview
+      description: "Banned, permitted, required, or AI-resistant redesign, where relevant; otherwise 'not applicable'."
+      detail_level: brief
+    - name: scope_and_status
+      description: "Pilot or rolled out, which roles, one team or company-wide; otherwise 'not applicable'."
+      detail_level: brief
+    - name: validity_evidence
+      description: "Any criterion-validity data (r, corrected or not) for the format; say plainly if none."
+      detail_level: moderate
+    - name: relevance_to_angle
+      description: "Which part of Lee's angle it supports or complicates: stop testing convergent coding, design conversation, working with an agent, communication and team fit, basic fluency."
+      detail_level: moderate
+
+  caveats:
+    - name: limitations_stated
+      description: "Limits the authors state, quoted where possible."
+      detail_level: moderate
+    - name: counter_evidence
+      description: "Findings or critiques that cut against the claim or against Lee's angle."
+      detail_level: moderate
+    - name: verification_status
+      description: "Per claim: checked against a primary source actually opened, or not. [uncertain] if not."
+      detail_level: moderate

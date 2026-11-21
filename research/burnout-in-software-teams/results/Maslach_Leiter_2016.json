@@ -1,0 +1,43 @@
+{
+  "citation": "Maslach C, Leiter MP. Understanding the burnout experience: recent research and its implications for psychiatry. World Psychiatry. 2016 Jun;15(2):103-111. doi:10.1002/wps.20311. PMCID PMC4911781, PMID 27265691. https://pmc.ncbi.nlm.nih.gov/articles/PMC4911781/",
+  "source_tier": "Peer-reviewed (narrative review article)",
+  "access_status": "Full text opened on PMC this session via a fetch tool that returns summarised extracts. Quotes below came through that tool, so [uncertain] on exact wording until checked against the page by eye.",
+  "sponsor_and_incentive": "Funding and conflict-of-interest statements were not in the text retrieved [uncertain]. Maslach is a co-author of the Maslach Burnout Inventory, which is commercially published; royalty disclosure not confirmed [uncertain].",
+  "exact_quotes": [
+    "\"Burnout is a psychological syndrome emerging as a prolonged response to chronic interpersonal stressors on the job.\" (Defining Burnout)",
+    "\"The three key dimensions of this response are an overwhelming exhaustion, feelings of cynicism and detachment from the job\" and \"a sense of ineffectiveness and lack of accomplishment\" (Defining Burnout)",
+    "\"frames job stressors in terms of person-job imbalances, or mismatches\"; \"six key areas in which these imbalances take place\" (Conceptual models)",
+    "\"The greater is the mismatch between the person and the job, the greater the likelihood of burnout\" (Conceptual models)",
+    "\"The area of values picks up the cognitive-emotional power of job goals and expectations.\" (Causes and outcomes)",
+    "\"Work overload contributes to burnout by depleting the capacity of people to meet the demands of the job.\" (Causes and outcomes)",
+    "\"the primary emphasis has been on individual strategies, rather than social or organizational ones\" (Treatment and prevention)",
+    "\"Unfortunately, there is very little research that has evaluated the efficacy of any of these approaches\" (Treatment and prevention)",
+    "\"It is not yet clear whether burnout is generally susceptible to a range of strategies\" (Treatment and prevention)",
+    "\"Most research on burnout has involved cross-sectional designs or studies using statistical causal models.\" (Causes and outcomes)",
+    "\"One other critical constraint is that many of the variables have been assessed by self-report measures\" (Causes and outcomes)"
+  ],
+  "date_and_recency": "Published June 2016 (epub 5 June 2016). Review of research up to roughly 2015; no single data collection window.",
+  "key_claims": "Burnout is a syndrome of exhaustion, cynicism/detachment and reduced efficacy arising from chronic job stressors. It is framed as a mismatch between person and job across six areas of worklife (workload, control, reward, community, fairness, values). Most intervention effort has gone to individual strategies, while the organisational and social causes get less; very little research has evaluated whether any approach works.",
+  "headline_figures": "None used. The article reports no effect sizes for the interventions discussed (civility intervention: cynicism declined, sustained at one-year follow-up; Swedish trial: no difference between two approaches). Do not cite numbers from this source.",
+  "sample_unit_and_population": "Narrative review, not a single study. Draws on research across human-services, healthcare and other occupations, with a psychiatry focus. Not specific to software engineers [uncertain on exact breakdown].",
+  "observed_vs_stated": "Mostly self-report (MBI questionnaire); the authors note cross-sectional designs and self-report dominate.",
+  "what_it_measures_or_defines": "Three dimensions: overwhelming exhaustion; feelings of cynicism and detachment from the job; a sense of ineffectiveness and lack of accomplishment. Measured with the Maslach Burnout Inventory, described as the standard research tool, designed for the three dimensions.",
+  "mechanism_or_cause": "Person-job mismatch in six areas: workload, control, reward, community, fairness, values. Greater mismatch, greater likelihood of burnout. Overload is said to deplete capacity to meet job demands. The six area names are from the model as I know it; the fetched extract confirmed 'six key areas', 'workload' and 'values' wording only [uncertain for the other four names as quoted text].",
+  "interventions_and_effects": "Review notes individual strategies dominate practice. Organisational example: a workplace civility intervention, after which cynicism declined and the change held at one-year follow-up (no effect size given in extract). A Swedish trial found no difference in effectiveness between two approaches (details not captured) [uncertain]. Overall the authors say there is very little research evaluating efficacy and it is unclear whether burnout is susceptible to a range of strategies.",
+  "transfer_to_software_teams": "Evidence is from other professions, mainly human services and health, and psychiatry. Transfer to software teams is plausible for the framework (workload, control, fairness) but not demonstrated by this source.",
+  "limitations_stated": "\"Most research on burnout has involved cross-sectional designs or studies using statistical causal models.\" \"One other critical constraint is that many of the variables have been assessed by self-report measures.\" Also: \"very little research that has evaluated the efficacy of any of these approaches\"; interventions for psychiatrists lack \"thorough research on whether these ideas are viable solutions\".",
+  "counter_evidence": "Not assessed in this pass. The MBI-based construct and its overlap with depression are debated in the wider literature; not drawn from this source.",
+  "verification_status": "Definition, mismatch model, individual-over-organisational emphasis, thin evidence, self-report and cross-sectional limits: read on the PMC page via summarising fetch, quotes not yet eyeballed verbatim [uncertain]. Funding/COI: not verified. Full list of six area names: not verified verbatim [uncertain].",
+  "usable_claim": "Maslach and Leiter (2016) describe burnout as exhaustion, cynicism and reduced efficacy arising from a mismatch between person and job, and note that practice has leaned on individual strategies even though the causes sit largely in the workplace, while very little research has tested whether any approach works.",
+  "do_not_use": "Any effect size or percentage attributed to this paper. Any claim that organisational interventions are proven to beat individual ones (the authors say evidence is thin; the Swedish trial found no difference). Any claim about software engineers specifically.",
+  "overlap_with_existing_essays": "Not checked against 'Overseeing Agents Is the Tiring Part', the trust essay or 'Checking Isn't Catching' [uncertain].",
+  "uncertain": [
+    "access_status",
+    "sponsor_and_incentive",
+    "sample_unit_and_population",
+    "mechanism_or_cause",
+    "interventions_and_effects",
+    "verification_status",
+    "overlap_with_existing_essays"
+  ]
+}

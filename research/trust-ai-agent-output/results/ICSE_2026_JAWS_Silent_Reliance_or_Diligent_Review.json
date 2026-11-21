@@ -1,0 +1,23 @@
+{
+  "citation": "Ziyou Li, Razvan Mihai Popescu, Mali Izadi (TU Delft). 'Silent Reliance or Diligent Review? Human-Agent Engagement and Interaction Patterns in GitHub'. JAWs 2026 workshop, co-located with ICSE 2026, Rio de Janeiro, talk Mon 13 Apr 2026. https://conf.researchr.org/details/icse-2026/jaws-2026-papers/17/Silent-Reliance-or-Diligent-Review-Human-Agent-Engagement-and-Interaction-Patterns-i",
+  "source_tier": "Peer-reviewed workshop paper (short; workshop abstract page found, no preprint located) [uncertain: workshop review rigor]",
+  "access_status": "Abstract/program page only. No arXiv or full text found (arXiv API search returned 0 results). Abstract was read via a summarising fetch tool, so wording is paraphrased, not verbatim.",
+  "sponsor_and_incentive": "[uncertain] Not stated on the page. Academic authors at TU Delft; no evident commercial incentive.",
+  "exact_quotes": "No verbatim quotes obtained. The fetch returned a paraphrase. Search snippet phrases (attributed to the listing, location: ICSE 2026 JAWs program page): 'silent reliance'; human triage 'median 0.2 hours'; 'expert' developers have 'a more neutral sentiment towards agent PRs'. [uncertain] exact wording unverified.",
+  "date_and_recency": "Presented 13 Apr 2026. Data collection window [uncertain] not stated in available text.",
+  "key_claims": "Mines 212,297 PRs from 12 AI coding agents on GitHub and analyses 30,729 longitudinal interaction timelines. Human triage is very fast. About 73.9% of agent PRs are merged without modification, which the authors call 'silent reliance'. Sentiment analysis across seniority levels: expert developers express more neutral sentiment toward agent PRs, others more positive.",
+  "headline_figures": "212,297 PRs; 12 agents; 30,729 interaction timelines; median triage 0.2 hours; 73.9% of agent PRs merged without modification. Comparison group, time window and the denominator for 73.9% (all PRs or merged PRs) [uncertain] not available.",
+  "sample_unit_and_population": "Pull requests authored by AI coding agents on GitHub (public/open-source presumably) [uncertain]; 212,297 PRs, 12 agents, 30,729 timelines.",
+  "observed_vs_stated": "Observed behaviour from mined GitHub data (PR timelines, merges, comment sentiment). Not self-report. Sentiment is inferred from text.",
+  "what_makes_trust_justified": "[uncertain] Abstract page does not state a practice. The framing implies that justified trust would need visible, substantive review rather than merge without modification.",
+  "what_it_costs": "[uncertain] Not stated. Fast triage (0.2 h median) suggests low human review time per PR.",
+  "failure_mode_class": "Over-reliance (silent reliance: merging agent PRs unmodified after quick triage).",
+  "control_that_would_have_prevented": "Not applicable (no incident). [uncertain]",
+  "limitations_stated": "[uncertain] Not available without full text. The abstract notes future research directions.",
+  "counter_evidence": "Unmodified merge does not prove no review happened: reviewers may have read and approved without edits, and a small, easy PR may deserve quick merge. Merge-without-modification is a proxy for reliance, not a measure of review depth. [uncertain] this is my inference, not from the paper.",
+  "verification_status": "Figures checked against the ICSE JAWs program page abstract only, via a summarising tool; not against the full paper. Seniority-verification finding is only a sentiment result in the abstract, nothing on verification behaviour by seniority. [uncertain]",
+  "usable_claim": "A 2026 workshop paper reports that, across 212,297 agent-authored GitHub PRs from 12 agents, 73.9% were merged without modification and median human triage took 0.2 hours, which the authors describe as silent reliance. Expert developers' comments were more neutral in sentiment than others'.",
+  "do_not_use": "Any claim that senior developers verify more or less carefully (not supported by the abstract; only sentiment is reported). Do not call the 73.9% a 'no review' rate. Do not cite the 'it was peer reviewed in full' status or any figure beyond the abstract until the full text is read.",
+  "overlap_with_existing_essays": "[uncertain] Not checked against the Verification Gap or Checking Isn't Catching essays in this task.",
+  "uncertain": ["source_tier", "sponsor_and_incentive", "exact_quotes", "date_and_recency", "headline_figures", "sample_unit_and_population", "what_makes_trust_justified", "what_it_costs", "control_that_would_have_prevented", "limitations_stated", "counter_evidence", "verification_status", "overlap_with_existing_essays"]
+}

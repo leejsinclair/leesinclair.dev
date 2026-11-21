@@ -1,0 +1,166 @@
+{
+  "citation": "Joel Becker, Nate Rush, Elizabeth (Beth) Barnes, David Rein (METR). 'Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity'. arXiv:2507.09089 [cs.AI], v1 12 July 2025, v2 25 July 2025. https://arxiv.org/abs/2507.09089 . Companion METR blog post of the same title, dated July 10, 2025: https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/ . Follow-up used here: Becker, Rush, Cunningham, Rein, Mahamud, 'We are Changing our Developer Productivity Experiment Design', METR, February 24, 2026: https://metr.org/blog/2026-02-24-uplift-update/",
+  "source_tier": "Preprint (arXiv, not peer-reviewed as far as the arXiv record shows) plus the research organisation's own blog post. METR is a research nonprofit, so this is institutional research rather than vendor research.",
+  "access_status": "Fully read as text: arXiv abstract page, arXiv HTML full text of v2 (main body and the appendix sections cited below), the METR blog post of July 10, 2025, and the METR update of February 24, 2026. Figures were not readable as text, so numbers that appear only inside figures (notably the confidence interval drawn in Figure 1) were not read from the paper itself.",
+  "author_credentials": "All four authors are at Model Evaluation & Threat Research (METR), listed as their affiliation on the paper. Becker and Rush are marked as equal contributors and corresponding authors. METR describes itself in the blog FAQ as 'a non-profit (funded by donations) interested in understanding how close AI systems are to accelerating the AI R&D process'. No commercial interest in the finding is declared; the authors say 'We initially were broadly expecting to see positive speedup'. Individual disciplines and degrees were not checked.",
+  "exact_quotes": [
+    {
+      "quote": "16 developers with moderate AI experience complete 246 tasks in mature projects on which they have an average of 5 years of prior experience.",
+      "location": "Paper, Abstract"
+    },
+    {
+      "quote": "Before starting tasks, developers forecast that allowing AI will reduce completion time by 24%. After completing the study, developers estimate that allowing AI reduced completion time by 20%. Surprisingly, we find that allowing AI actually increases completion time by 19%—AI tooling slowed developers down.",
+      "location": "Paper, Abstract"
+    },
+    {
+      "quote": "This slowdown also contradicts predictions from experts in economics (39% shorter) and ML (38% shorter).",
+      "location": "Paper, Abstract"
+    },
+    {
+      "quote": "Although the influence of experimental artifacts cannot be entirely ruled out, the robustness of the slowdown effect across our analyses suggests it is unlikely to primarily be a function of our experimental design.",
+      "location": "Paper, Abstract"
+    },
+    {
+      "quote": "use AI tools considered state-of-the-art during February–June 2025 (primarily Cursor Pro with Claude 3.5/3.7 Sonnet)",
+      "location": "Paper, Section 1 Introduction"
+    },
+    {
+      "quote": "As an incentive to participate, we pay developers $150/hour.",
+      "location": "Paper, Section 2.1 Developers and Repositories"
+    },
+    {
+      "quote": "Developers complete 136 issues with AI-allowed and 110 issues with AI-disallowed.",
+      "location": "Paper, Section 3 Results"
+    },
+    {
+      "quote": "If AI is allowed, developers can use any AI tools or models they choose, including no AI tooling if they expect it to not be helpful. If AI is not allowed, no generative AI tooling can be used.",
+      "location": "Paper, Section 2.2 Experimental Design"
+    },
+    {
+      "quote": "We caution readers against overgeneralizing on the basis of our results. The slowdown we observe does not imply that current AI tools do not often improve developer's productivity",
+      "location": "Paper, Section 4.1 Key Caveats"
+    },
+    {
+      "quote": "we strongly caution against over-indexing on the basis of any individual pieces of evidence, as we are not powered for statistically significant multiple comparisons when subsetting our data.",
+      "location": "Paper, Section 3.3 Factor Analysis"
+    },
+    {
+      "quote": "it may be the case that developers who rely heavily on AI tools for their work may be less likely to participate, because they would be concerned/unhappy with losing access to AI on 50% of their tasks.",
+      "location": "Paper, Appendix C.2.5 Sampling bias in developer recruitment"
+    },
+    {
+      "quote": "After the study's conclusion, one developer noted that they were unlikely to participate in future iterations of the study, because they didn't want to be assigned to not use AI tooling on 50% of their work.",
+      "location": "Paper, Appendix C.2.5, footnote 14"
+    },
+    {
+      "quote": "the 246 total completed issues give us (just enough) sufficient statistical power to reject the null hypothesis of zero speedup/slowdown.",
+      "location": "METR blog post (July 10, 2025), FAQ"
+    },
+    {
+      "quote": "Our early 2025 study found the use of AI causes tasks to take 19% longer, with a confidence interval between +2% and +39%.",
+      "location": "METR update post, February 24, 2026"
+    },
+    {
+      "quote": "we have observed a significant increase in developers choosing not to participate in the study because they do not wish to work without AI, which likely biases downwards our estimate of AI-assisted speedup.",
+      "location": "METR update post, February 24, 2026"
+    },
+    {
+      "quote": "These results are out of date. We have released results that are current as of early 2026, in a continuation of this study. We believe these historical results no longer reflect the current impact of AI models on open-source developer productivity.",
+      "location": "Banner now shown on the July 10, 2025 METR blog post"
+    }
+  ],
+  "key_claims": [
+    "In a randomised controlled trial, allowing early-2025 AI tools made experienced open-source developers take 19% longer on real issues in repositories they knew well.",
+    "The same developers believed the opposite: they forecast a 24% reduction in completion time before the tasks and estimated a 20% reduction afterwards.",
+    "Economics experts (n=34) and machine learning experts (n=54) forecast reductions of 39% and 38% respectively, so they were further off than the developers.",
+    "Developer forecasts were still informative about relative task length (Pearson correlation 0.64 for AI-allowed and 0.59 for AI-disallowed forecasts against actual time), so the miscalibration is specific to the effect of AI.",
+    "Of 21 candidate factors (the arXiv abstract and blog say 20; the v2 paper body says 21), the authors find evidence that 5 contribute to the slowdown, mixed or unclear evidence for 10, and evidence against 6. Those named under 'likely to contribute' include over-optimism about AI usefulness, high developer familiarity with repositories, large and complex repositories, low AI reliability and implicit repository context.",
+    "The authors do not claim that AI fails to speed up most developers, and say the result is a snapshot of one setting.",
+    "The paper's discussion concludes that the result 'underscores the importance of conducting field experiments with robust outcome measures, compared to relying solely on expert forecasts or developer surveys'."
+  ],
+  "headline_figures": [
+    "16 developers (Abstract).",
+    "246 tasks, called issues; 136 completed with AI allowed and 110 with AI disallowed (Section 3). Tasks averaged 2.0 hours (Section 1).",
+    "19%: 'allowing AI actually increases completion time by 19%' (Abstract). This is the percentage change in completion time for AI-allowed issues against AI-disallowed issues, estimated by a log-linear regression that controls for the developer's pre-randomisation forecast of difficulty. Tasks done February to June 2025.",
+    "Confidence interval for the 19%: +2% to +39%. This wording comes from METR's February 24, 2026 update. In the paper the interval appears only graphically in Figure 1; the paper says it reports 95% intervals with HC3 standard errors by default (Appendix D.2).",
+    "24%: developers' forecast, before tasks were randomised, of the reduction in completion time from allowing AI (Abstract).",
+    "20%: developers' post-hoc estimate, after the study, of how much allowing AI reduced completion time (Abstract).",
+    "39% and 38%: forecast reductions from 34 economics experts and 54 machine learning experts (Section 3.1).",
+    "34%: raw percentage difference in implementation times between conditions, larger than the regression estimate because AI-allowed issues were forecast to be slightly harder (Section 3.1, footnote 12).",
+    "$150 per hour paid to developers (Section 2.1; Appendix G).",
+    "Developers: on average 5 years on their repository and 1,500 commits to it; 'typically over a decade of experience' (Section 2.1).",
+    "Repositories: on average 23,000 stars, 1,100,000 lines of code, 4,900 forks, 20,000 commits, 710 committers (Section 2.1). The blog rounds to '22k+ stars and 1M+ lines of code'.",
+    "Prior tool experience: 93% had used LLM tools such as ChatGPT, 44% had used Cursor (Section 1 footnote 2; Section 2.2.1).",
+    "Models seen in 44 valid labelled AI-allowed recordings: Claude 3.7 Sonnet (thinking mode) 25%, Claude 3.7 Sonnet 34%, Claude 3.5 Sonnet 23%, GPT-4o 11%, Gemini 2.5 Pro 3%, o1 2%; no AI model prompted in 16.4% (Appendix C.3.6).",
+    "143 hours of screen recordings manually labelled, 29% of total developer hours; 74 recordings (84 hours) kept after filtering (Sections 1 and 2.4).",
+    "Developers accept fewer than 44% of AI generations; about 9% of time spent reviewing and cleaning AI output and about 4% waiting on generations (Appendix C.1.4, C.2.9).",
+    "69% of developers kept using Cursor after the study ended (Appendix C.2.6)."
+  ],
+  "sample_and_method": "Randomised controlled trial with randomisation at the task level, within developer. 16 experienced open-source developers, recruited from the authors' professional networks and outreach to active contributors of large GitHub repositories (51 filled in an interest survey, about 20 were selected, several dropped out, 16 remained). Each supplied a list of real issues from their own repository and forecast the time for each with and without AI. Issues were then assigned by a simulated fair coin flip to AI-allowed or AI-disallowed (25 early issues used a block randomisation scheme that was abandoned). In the AI-allowed arm developers could use any tool or none; METR provided Cursor Pro subscriptions to 13 developers and a 30-minute onboarding call. In the AI-disallowed arm no generative AI was permitted, although search engines and non-LLM autocomplete were. Outcome was self-reported total implementation time, including time after pull request review, cross-checked against screen recordings. Tasks were worked on between February and June 2025, most in February and March. 246 issues were completed. Supplementary data: exit surveys and interviews, Cursor analytics, expert forecasts, and labelled screen recordings.",
+  "evidence_offered": "A pre-specified regression estimate on 246 randomised tasks, with tasks defined before assignment. Robustness checks reported in Appendix C.3: alternative estimators including a simple ratio of means, alternative outcome measures, exclusion of the 25 differently randomised issues (slowdown of 20%), dropout subsets (slowdowns of 21% to 42%), extreme imputation of missing post-review times (14% and 23%), and screen-recording time in place of self-reported time (25% against 24% on the same subset). Compliance checked from recordings: 3 cheating instances in 54 labelled AI-disallowed recordings. Mechanism evidence from 143 hours of labelled screen recordings and developer interviews, which the authors call speculative and suggestive.",
+  "data_vintage": "Blog post dated July 10, 2025. arXiv v1 submitted 12 July 2025; v2 submitted 25 July 2025. The text read and quoted here is v2. Data collected February to June 2025. v2 differs from the arXiv abstract in one count: the abstract page says 20 candidate factors, the v2 body says 21. v2 also adds footnote 16 about a second developer with more than 100 hours of Cursor experience. METR's February 24, 2026 update supersedes the result as a description of current tools, and METR has since placed an 'out of date' banner on the 2025 blog post.",
+  "figure_provenance": "19%, 24%, 20%, 39%, 38%, 16 developers, 246 tasks, $150/hour and February to June 2025 all trace to the paper itself and are repeated consistently in the METR blog post. Conflicting versions in circulation: (1) METR's own February 2026 update opens by saying the earlier paper 'found the use of AI tools caused a 20% slowdown' and two paragraphs later says '19% longer'; 19% is the paper's figure, and 20% is also the estimate when 25 early issues are excluded. (2) The confidence interval of +2% to +39% is stated in words only in the February 2026 update; the 2025 paper shows it in Figure 1 without printing the numbers in the text. The 2025 blog FAQ says intervals with developer-clustered standard errors were 'not reported in the released paper, but forthcoming'; v2 Appendix D.2 then reports that clustered errors 'give similar results' and a hierarchical bootstrap gives 'somewhat wider confidence intervals'. (3) 20 factors (abstract, blog) versus 21 factors (v2 body). (4) Stars: 23,000 in the paper, '22k+' in the blog. (5) The 24% and 20% are reductions in completion time in the paper; the blog paraphrases them as developers expecting AI 'to speed them up by 24%', which is looser wording for the same numbers. (6) The raw unadjusted difference is 34%, which is sometimes quoted in place of 19%.",
+  "population_and_transfer": "Sixteen very experienced maintainers working on large, mature, high-standard open-source repositories they had contributed to for about five years. The authors say the two things that distinguish this group, deep familiarity with the codebase and repository size and maturity, both contribute to the slowdown and 'do not apply in many software development settings'. Transfer to engineers in ordinary companies is limited and the authors say so: they do not claim their developers or repositories represent a majority of software work, and say the results are consistent with substantial speedup on small greenfield projects or unfamiliar codebases. The part that plausibly transfers is the perception gap, since it does not depend on the setting in an obvious way, though the paper does not test that. [uncertain]",
+  "outcome_measured": "Task speed: self-reported total implementation time per issue, including time spent after pull request review, on tasks defined before randomisation. Also measured: developers' forecast and post-hoc estimate of the effect, and expert forecasts. Not measured: employment, learning, retention or long-run on-the-job performance.",
+  "limitations_stated": [
+    "Scope: 'We caution readers against overgeneralizing on the basis of our results.' (Section 4.1)",
+    "Setting-specific: 'many of the factors we find evidence for contributing to slowdown are specific to the setting we study—these results do not imply that current AI systems are not useful in many realistic, economically relevant settings.' (Section 1)",
+    "Not a forecast: 'these results do not imply that future models will not speed up developers in this exact setting' (Section 1)",
+    "Elicitation: better prompting, scaffolding or fine-tuning 'could yield positive speedup in this setting' (Section 1). The blog adds that Cursor 'does not sample many tokens from LLMs'.",
+    "Artefacts: 'While we can't completely rule out the impact of experimental artifacts, the slowdown effect appears broadly robust across a wide range of experimental design decisions.' (Section 1)",
+    "Sample size and power: the blog FAQ says 246 issues give '(just enough) sufficient statistical power'. The paper says it is 'not powered for statistically significant multiple comparisons when subsetting our data' and calls the factor analysis 'speculative, suggestive evidence'.",
+    "Selection into the study: 'it's possible that there is systematic bias in which developers agree to participate', specifically that heavy AI users may decline because they would lose AI on half their tasks (Appendix C.2.5). The blog FAQ: 'No developer reports thinking in this way, but we can't rule this (or other sampling biases) out.'",
+    "Learning effects: no clear effect across the first 30 to 50 hours of Cursor use, but 'we can't rule out learning effects beyond 50 hours of Cursor usage' (blog FAQ). Only 44% had used Cursor before.",
+    "Self-report: the outcome is self-reported time, and qualitative evidence was partly gathered with targeted questions, 'so we cannot rule out bias from this type of qualitative evidence' (Section 2.4).",
+    "Non-random sample: 'our sampling of developers is non-random and treatment is assigned at the issue level' (Appendix D.2).",
+    "Dropout: 13 assigned issues were not completed (7 AI-disallowed, 6 AI-allowed) and 24 were intentionally dropped; 3 developers were removed from the study and their issues excluded (Appendix C.3.3 and G).",
+    "Screen-recording labels cover a non-random subset, which 'may bias estimates of time allocation' (Appendix G.8).",
+    "The blog's Table 2 lists four things the study does not show: that AI does not speed up many or most developers, that AI does not help outside software, that near-future AI will not help in this setting, and that existing AI cannot be used more effectively in this setting."
+  ],
+  "counter_evidence": [
+    "METR's own follow-up (February 24, 2026): in a continuation begun in August 2025 with 57 developers, 143 repositories and 800+ tasks at $50/hour, the estimate for the 10 returning developers was -18% (interval -38% to +9%) and for new recruits -4% (interval -15% to +9%), negative meaning less time with AI. Both intervals include zero. METR says 'we believe it is likely that developers are more sped up from AI tools now — in early 2026 — compared to our estimates from early 2025', but calls the data 'only very weak evidence for the size of this increase'.",
+    "METR now labels the 2025 results 'out of date' on the original blog post.",
+    "Within the paper: the one developer with more than 50 hours of Cursor experience showed positive speedup, though footnote 16 notes a second such developer was slowed, which moves that bucket to roughly 0%.",
+    "Earlier studies cited in the paper found speedups on synthetic tasks: Peng et al. 56%, Paradis et al. 21%, and Weber et al. a 65% increase in requirements satisfied. These were read only as the paper describes them, not opened.",
+    "The interval of +2% to +39% only just excludes zero, and the paper says a hierarchical bootstrap that resamples developers gives 'somewhat wider confidence intervals'."
+  ],
+  "alternative_explanations": [
+    "Selection: developers who gain most from AI may have declined to join, which would bias towards slowdown. The authors list this as unclear in 2025; by 2026 they treat it as the main reason the design no longer works.",
+    "Tool learning curve: most developers were new to Cursor, and benefits may appear only after far more hours than the study covered. The blog raises 'strong learning effects ... that only appear after several hundred hours of usage'.",
+    "Experimentally driven overuse: developers may have used AI more than they otherwise would because the task was in the AI-allowed arm. Listed as unclear; developers reporting overuse saw similar slowdown.",
+    "Scope creep: AI-allowed issues had 47% more lines of code per forecasted hour, so developers may have done more rather than worked slower. The authors rate this unclear, since developers who reported scope creep were slowed less.",
+    "Trading speed for ease: developers may accept being slower because AI-assisted work feels less effortful. Reports were mixed.",
+    "Task mix: issues were capped at about two hours and exclude non-programming work, so they may not match normal work.",
+    "The blog's three reconciliations with benchmarks and anecdotes: the RCT underestimates capability, benchmarks and anecdotes overestimate it, or each measures a different part of the real task distribution."
+  ],
+  "verification_status": {
+    "16 developers, 246 tasks": "Verified. Paper abstract and Section 1; blog post.",
+    "136 AI-allowed, 110 AI-disallowed": "Verified. Paper Section 3.",
+    "February to June 2025; most issues in February and March 2025": "Verified. Paper abstract, Section 1, Appendix C.3.6.",
+    "19% longer with AI": "Verified. Paper abstract and Section 3; blog post.",
+    "Confidence interval +2% to +39%": "Verified against METR's February 24, 2026 update, which states it in words. Not verified from the 2025 paper's text, where it appears only in Figure 1, which was not read. The confidence level (95%) is inferred from the paper's Appendix D.2 default and is not stated alongside the interval in the update.",
+    "Forecast 24%, post-hoc estimate 20%": "Verified. Paper abstract and Section 3.1; blog post.",
+    "Expert forecasts 39% (34 economists) and 38% (54 ML experts)": "Verified. Paper abstract and Section 3.1.",
+    "$150/hour": "Verified. Paper Section 2.1 and Appendix G; blog post.",
+    "Cursor Pro with Claude 3.5/3.7 Sonnet; any tool allowed": "Verified. Paper abstract, Sections 2.2 and 2.2.1, Appendix C.3.6.",
+    "5 of 21 factors likely contribute": "Verified in v2 body (Sections 1 and 3.3). The arXiv abstract page and blog say 20.",
+    "Authors' stated limitations": "Verified. Quoted from paper Sections 1, 3.3, 4.1, Appendices C.2.5, C.2.8, D.2, G.8 and the blog FAQ.",
+    "February 2026 follow-up figures and selection problem": "Verified. METR update post opened and quoted.",
+    "Peer-review status": "Not verified. The arXiv record shows no journal reference; whether it was later published in a venue was not checked.",
+    "Peng, Paradis and Weber speedup figures": "Not verified against those papers. Taken from this paper's description."
+  },
+  "relevance_to_essay": "Central. This is the best-known randomised no-AI control for experienced engineers, and its own authors report that the control arm stopped being runnable within a year. The 2025 paper flagged the risk in an appendix (one developer said they would not take part again because they did not want to lose AI on half their work). By February 2026 METR reported 'a significant increase in developers choosing not to participate in the study because they do not wish to work without AI' and that 30% to 50% of developers were withholding tasks they did not want to do without AI. It also supplies the reason leaders cannot fall back on asking people: developers who were 19% slower believed they were 20% faster.",
+  "implications_for_measurement": "Self-reported speedup is not a usable measure on its own: the developers' estimates had the wrong sign, and the paper says this 'underscores the importance of conducting field experiments with robust outcome measures, compared to relying solely on expert forecasts or developer surveys'. Define the unit of work before assigning the condition, so that AI cannot change what is being counted (the paper's argument against lines of code and task counts). Developers remained well calibrated on relative task size, so pre-work estimates are a workable difficulty control. Task-level randomisation within a person needs people willing to work without AI on half their tasks, and METR's 2026 update shows that willingness eroding, with selection of both developers and tasks biasing the estimate. METR's stated alternatives in that update, as summarised from the post, include shorter and more intensive experiments, fixed-task experiments, developer-level randomisation, time-use studies and observational data such as commit statistics. [uncertain] for that last list, which was read through a summary and not checked line by line.",
+  "open_questions": [
+    "Whether the 19% slowdown held outside this population in early 2025; the study does not test ordinary company engineers.",
+    "How large the effect is with current tools; METR says its newer data is too selected to say.",
+    "Whether the perception gap persists with newer tools and more experienced users.",
+    "The exact confidence level and standard-error method behind the +2% to +39% interval as quoted in the 2026 update.",
+    "Whether the paper has since been peer-reviewed or published in a venue.",
+    "Why the abstract says 20 factors and the v2 body 21."
+  ],
+  "uncertain": [
+    "population_and_transfer",
+    "implications_for_measurement"
+  ]
+}

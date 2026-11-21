@@ -1,0 +1,234 @@
+{
+  "name": "Anthropic randomised trial on AI assistance and coding skill formation",
+  "citation": "Judy Hanwen Shen and Alex Tamkin, 'How AI Impacts Skill Formation', arXiv:2601.20245 (cs.CY; cross-listed cs.AI, cs.HC). v1 submitted 28 January 2026, v2 1 February 2026. https://arxiv.org/abs/2601.20245 . Companion post: Anthropic, 'How AI assistance impacts the formation of coding skills', 29 January 2026, https://www.anthropic.com/research/AI-assistance-coding-skills . Pre-registration: https://osf.io/w49e7 . Annotated transcripts: https://github.com/safety-research/how-ai-impacts-skill-formation",
+  "source_tier": "Preprint (arXiv, not peer-reviewed as of the version read) plus a company research blog post summarising it. Pre-registered randomised experiment.",
+  "access_status": "Fully read. Opened on 11 October 2026: the Anthropic post (full text), the arXiv abstract page (version history), the arXiv HTML of v2 (full text) and the v2 PDF (used to read the numbers printed inside Figures 6 and 11, which the HTML does not render as text).",
+  "author_credentials": "Judy Hanwen Shen: paper footnote says 'Work done as a part of the Anthropic Fellows Program' (Anthropic email address). Alex Tamkin: Anthropic. The post credits the Anthropic Safety Fellows Program. Commercial interest: Anthropic sells Claude and Claude Code, so a finding that AI assistance harms learning cuts against its commercial interest, although both the post and the paper point readers to vendor 'learning modes' (Claude Code Learning / Explanatory mode, ChatGPT Study Mode) as a mitigation. The assistant used in the experiment was GPT-4o, not Claude. Ethics: 'The protocol was reviewed and approved by internal reviewers at Anthropic', i.e. no external IRB is described.",
+  "exact_quotes": [
+    {
+      "quote": "We recruited 52 (mostly junior) software engineers, each of whom had been using Python at least once a week for over a year.",
+      "location": "Anthropic post, 'Study design'"
+    },
+    {
+      "quote": "On a quiz that covered concepts they'd used just a few minutes before, participants in the AI group scored 17% lower than those who coded by hand, or the equivalent of nearly two letter grades. Using AI sped up the task slightly, but this didn't reach the threshold of statistical significance.",
+      "location": "Anthropic post, introduction"
+    },
+    {
+      "quote": "On average, participants in the AI group finished about two minutes faster, although the difference was not statistically significant. There was, however, a significant difference in test scores: the AI group averaged 50% on the quiz, compared to 67% in the hand-coding group, or the equivalent of nearly two letter grades (Cohen's d=0.738, p=0.01).",
+      "location": "Anthropic post, 'Results' (the original uses an em dash before 'or the equivalent')"
+    },
+    {
+      "quote": "The largest gap in scores between the two groups was on debugging questions, suggesting that the ability to understand when code is incorrect and why it fails may be a particular area of concern if AI impedes coding development.",
+      "location": "Anthropic post, 'Results'"
+    },
+    {
+      "quote": "In our main study, 52 participants completed the task, 26 for each of the control and treatment groups.",
+      "location": "Paper, Section 4.3"
+    },
+    {
+      "quote": "There is a 4.15 point difference between the means of the treatment and control groups. For a 27-point quiz, this translates into a 17% score difference or 2 grade points. Controlling for warm-up task time as a covariate, the treatment effect remains significant (Cohen's d=0.725, p=0.016).",
+      "location": "Paper, Section 5.2 (main study results, text beside Figure 6)"
+    },
+    {
+      "quote": "Our results do not conclusively find a speed up or slow down using AI in this task.",
+      "location": "Paper, Section 5.2"
+    },
+    {
+      "quote": "Among the different types of questions, the largest score gap occurs in the debugging questions and the smallest score gap in the code reading questions.",
+      "location": "Paper, Section 5.2, 'Concept Group Analysis' (described as exploratory, not pre-registered)"
+    },
+    {
+      "quote": "Although each behavior pattern cluster is small, the difference between low-scoring clusters and high-scoring clusters is stark.",
+      "location": "Paper, Section 6"
+    },
+    {
+      "quote": "Our qualitative analysis does not draw a causal link between interaction patterns and learning outcomes, but it does point to behaviors associated with different learning outcomes.",
+      "location": "Anthropic post, end of 'Qualitative analysis: AI interaction modes'"
+    },
+    {
+      "quote": "Managers should think intentionally about how to deploy AI tools at scale, and consider systems or intentional design choices that ensure engineers continue to learn as they work",
+      "location": "Anthropic post, 'Conclusion' (sentence continues after an em dash: 'and are thus able to exercise meaningful oversight over the systems they build.')"
+    },
+    {
+      "quote": "Productivity benefits may come at the cost of skills necessary to validate AI-written code if junior engineers' skill development has been stunted by using AI in the first place.",
+      "location": "Anthropic post, 'Conclusion'"
+    },
+    {
+      "quote": "Our sample was relatively small, and our assessment measured comprehension shortly after the coding task. Whether immediate quiz performance predicts longer-term skill development is an important question this study does not resolve.",
+      "location": "Anthropic post, 'Conclusion'"
+    },
+    {
+      "quote": "Task Length: Ideally, skill formation takes place over months to years. We measured skill formation for a specific Python library over a one-hour period.",
+      "location": "Paper, Section 7.1 Future Work"
+    },
+    {
+      "quote": "Participant Realism: While participants in our study were professional or freelance programmers, there was not the same incentive to learn the library as if it were required for their actual job.",
+      "location": "Paper, Section 7.1 Future Work"
+    },
+    {
+      "quote": "Importantly, this setup is different from agentic coding products like Claude Code; we expect that the impacts of such programs on skill development are likely to be more pronounced than the results here.",
+      "location": "Anthropic post, footnote 1"
+    },
+    {
+      "quote": "Our findings suggest that AI-enhanced productivity is not a shortcut to competence and AI assistance should be carefully adopted into workflows to preserve skill formation",
+      "location": "Paper, abstract (continues: 'particularly in safety-critical domains')"
+    }
+  ],
+  "key_claims": [
+    "Using AI assistance to complete a task that requires learning a new library reduced measured skill formation: the AI group scored lower on an immediate quiz (statistically significant).",
+    "AI assistance did not deliver a statistically significant speed-up on this learning task. The paper: 'Our results do not conclusively find a speed up or slow down'.",
+    "The largest score gap was on debugging questions and the smallest on code reading (exploratory, not pre-registered; magnitudes are shown only in a chart, Figure 8, not stated numerically).",
+    "How the AI was used mattered. Six interaction patterns were identified among AI-group participants; three (heavy delegation or AI-led debugging) averaged under 40% on the quiz and three (which kept the participant cognitively engaged) averaged 65% or higher.",
+    "The authors' proposed mechanism: the control group hit more errors, especially Trio-specific ones, and resolving them independently built debugging skill. This is offered as a hypothesis ('Our hypothesis is that...').",
+    "The control group reported higher self-reported learning; the AI group found the task easier, and both found the quiz similarly hard.",
+    "Authors expect the effect to be larger with agentic or autocomplete tools, calling the chat setup 'a lower bound for cognitive offloading'. This is an expectation, not something the study tested.",
+    "Recommendation to managers (post only): deploy AI tools intentionally and design systems so engineers keep learning as they work, so they can still oversee what they build. The paper itself addresses workers and workflows generally and does not use the word 'managers'."
+  ],
+  "headline_figures": [
+    {
+      "figure": "n = 52",
+      "wording": "'52 participants completed the task, 26 for each of the control and treatment groups'",
+      "detail": "58 crowd workers invited to fill a target of 50; 53 completed; 1 disqualified under pre-registered criteria. Paper Section 4.3 and 5.2."
+    },
+    {
+      "figure": "50% vs 67% quiz average (17 percentage points)",
+      "wording": "'the AI group averaged 50% on the quiz, compared to 67% in the hand-coding group'",
+      "detail": "Post only. The paper text does not state the two group means; it gives the difference."
+    },
+    {
+      "figure": "17%",
+      "wording": "Post: 'scored 17% lower'. Paper: '4.15 point difference... For a 27-point quiz, this translates into a 17% score difference or 2 grade points'.",
+      "detail": "This is a gap of 17 percentage points, not a 17% relative fall. Relative to the control mean of 67%, a 17-point drop is about a 25% relative decline (my arithmetic). Safest wording for the essay: '17 percentage points lower (50% against 67%)'."
+    },
+    {
+      "figure": "Cohen's d = 0.738, p = 0.010",
+      "wording": "'Cohen's d = 0.738, p = 0.010'",
+      "detail": "Quiz score treatment effect, main study. With warm-up time as covariate: d = 0.725, p = 0.016."
+    },
+    {
+      "figure": "Task time: about two minutes faster with AI, p = 0.391",
+      "wording": "Post: 'finished about two minutes faster, although the difference was not statistically significant'",
+      "detail": "The p = 0.391 is printed inside Figure 6 of the paper PDF (Task Time panel); the body text gives no p-value for time. Figure 6 axis runs roughly 21 to 28 minutes; exact group means are not stated in text."
+    },
+    {
+      "figure": "Completion within the limit",
+      "wording": "'4 of the 26 participants in the control (No AI) group did not complete the second task within the 35-minute limit, while every participant in the AI condition completed the second task.'",
+      "detail": "Paper Section 5.2."
+    },
+    {
+      "figure": "Six interaction patterns (AI group), from paper Figure 11 and Section 6",
+      "detail": [
+        {
+          "pattern": "AI Delegation",
+          "n": 4,
+          "avg_quiz_score": "39%",
+          "avg_completion_time": "19.5 min",
+          "band": "low-scoring"
+        },
+        {
+          "pattern": "Progressive AI Reliance",
+          "n": 4,
+          "avg_quiz_score": "35%",
+          "avg_completion_time": "22 min",
+          "band": "low-scoring"
+        },
+        {
+          "pattern": "Iterative AI Debugging",
+          "n": 4,
+          "avg_quiz_score": "24%",
+          "avg_completion_time": "31 min",
+          "band": "low-scoring"
+        },
+        {
+          "pattern": "Generation-Then-Comprehension",
+          "n": 2,
+          "avg_quiz_score": "86%",
+          "avg_completion_time": "24 min",
+          "band": "high-scoring"
+        },
+        {
+          "pattern": "Hybrid Code-Explanation",
+          "n": 3,
+          "avg_quiz_score": "68%",
+          "avg_completion_time": "24 min",
+          "band": "high-scoring"
+        },
+        {
+          "pattern": "Conceptual Inquiry",
+          "n": 7,
+          "avg_quiz_score": "65%",
+          "avg_completion_time": "22 min",
+          "band": "high-scoring"
+        }
+      ],
+      "note": "Group sizes sum to 24. The qualitative analysis covered 25 of the 26 AI-group participants (one screen recording was unavailable), so one analysed participant is not accounted for in the six groups and the paper does not say why. The post gives the n values and the bands ('less than 40%', '65% or higher') but not the per-pattern scores; those come from Figure 11 and the Discussion ('65%-86%' vs '24%-39%')."
+    },
+    {
+      "figure": "AI delegation vs control speed",
+      "wording": "'This group finished much faster than the control group (19.5 minutes vs 23 minutes), but this group only accounted for around 20% of the participants in the treatment group.'",
+      "detail": "Paper Section 7. (4 of 25 analysed is 16%.)"
+    },
+    {
+      "figure": "Time spent on the assistant",
+      "wording": "Post: 'Several took up to 11 minutes (30% of the total time allotted) composing up to 15 queries.'",
+      "detail": "35-minute task limit."
+    },
+    {
+      "figure": "Experience mix (Table 1, n = 52)",
+      "detail": "Years of coding experience: 1-3 years, 4 participants (2 per arm, 7.7%); 4-6 years, 19 (10 treatment, 9 control); 7+ years, 29 (14 treatment, 15 control). So 56% had 7 or more years and only 8% had 1 to 3 years."
+    },
+    {
+      "figure": "Pilot Study D (n = 20)",
+      "wording": "'The treatment (AI) group completed the Trio tasks faster (Cohen's d=1.11, p=0.03)... the AI group performed significantly worse on the knowledge quiz (Cohen's d=1.7, p=0.003)'",
+      "detail": "Pilot, before syntax hints were added for the main study. Not the headline result."
+    }
+  ],
+  "sample_and_method": "Pre-registered, between-subjects randomised experiment. 52 participants (26 AI, 26 no AI) recruited through a third-party crowd-worker platform and paid a flat 150 USD. Eligibility was self-reported: more than one year of Python, Python at least weekly, some prior use of AI coding assistants, never used Trio. Most held a bachelor's degree, were aged 25 to 35 and worked as freelance or professional developers. Flow: a warm-up task without AI, then up to 35 minutes on two tasks using the Python Trio async library (treatment had a chat assistant built on GPT-4o that could see their code and produce the full solution; both arms had web search and instructions), then a 14-question, 27-point quiz (debugging, code reading, conceptual; no code-writing questions) taken without AI. Participants were told a quiz would follow and to work as fast as possible. Whole session capped at 75 minutes, average 58.5. Qualitative analysis: manual annotation of screen recordings for 51 of 52 participants. Four pilot studies preceded the main study; the first two (different platform) had 35% non-compliance.",
+  "evidence_offered": "Difference in mean quiz score between randomised arms with effect size and p-value, robust to controlling for warm-up time; task-time comparison; an exploratory breakdown by question type and task (Figure 8); a balance table; error counts by condition (Figure 15); and a qualitative typology built from annotated screen recordings and chat transcripts. Pre-registration and annotated transcripts are public. The pattern-level results rest on clusters of 2 to 7 people and are descriptive only.",
+  "data_vintage": "arXiv v1 28 January 2026; v2 1 February 2026 ('Fixed typos in Table 1 (Balance Table), corrected osf link'). Anthropic post dated 29 January 2026. Version read: v2. The paper does not state the dates of data collection [uncertain]. Assistant model was GPT-4o.",
+  "figure_provenance": "n = 52 (26/26): paper Section 4.3 and post; consistent. 50% vs 67%: post only; the paper states the difference, not the two means. '17%': both, but the paper derives it from '4.15 point difference' on 'a 27-point quiz', and 4.15/27 is 15.4%, not 17%. The 17-point gap matches the post's 50% vs 67%, so the percentage scores may be computed differently from raw points (for example averaging per-question fractions); the paper does not explain this. d = 0.738, p = 0.010: paper and post agree (post rounds to p = 0.01). 'Two grade points' (paper) becomes 'nearly two letter grades' (post). Task time p = 0.391: Figure 6 in the PDF only. 'About two minutes faster': post only. Per-pattern scores and times: paper Figure 11 (also Figure 1). Pattern n values: paper Section 6 and post agree. Conflicting versions in circulation: secondary coverage often says the AI group 'scored 17% lower' as if relative, or describes all participants as junior; the post says 'mostly junior' while Table 1 shows 56% with 7+ years of coding experience and 8% with 1 to 3 years. The post's BibTeX gives primaryClass cs.LG, while arXiv lists cs.CY as primary.",
+  "population_and_transfer": "Crowd-recruited freelance and professional developers, mostly aged 25 to 35, with at least a year of Python. By the paper's own Table 1 this is not a junior sample: 29 of 52 had 7+ years of coding experience and only 4 had 1 to 3 years. They were novices in the library, not in programming. Transfer to working junior engineers is indirect: it shows the effect on learning something new, which is the junior's daily condition, but in a one-hour paid task with no job incentive to learn. The authors note the control group scored higher 'across all levels of coding experience' (Figure 7), with tiny cells.",
+  "outcome_measured": "Immediate quiz score (taken minutes after the task) and task completion time. No delayed retention, no on-the-job performance, no employment outcome. Self-reported learning, enjoyment and difficulty were also collected.",
+  "limitations_stated": [
+    "Small sample and immediate measure (post): 'Our sample was relatively small, and our assessment measured comprehension shortly after the coding task. Whether immediate quiz performance predicts longer-term skill development is an important question this study does not resolve.'",
+    "Task selection (paper 7.1): 'This study focuses on a single task using a chat-based interface. This should be a lower bound for cognitive offloading since agentic AI coding tools would require even less human participation.'",
+    "Task length (paper 7.1): 'Ideally, skill formation takes place over months to years. We measured skill formation for a specific Python library over a one-hour period.'",
+    "Participant realism (paper 7.1): 'there was not the same incentive to learn the library as if it were required for their actual job.'",
+    "Prompting skills (paper 7.1): 'We collect self-reported familiarity with AI coding tools, but we do not actually measure differences in prompting techniques.'",
+    "Evaluation design (paper 7.1): skill formation measured by a single quiz; other studies could use a follow-on task.",
+    "Human assistance (paper 7.1): 'We do not include the counterfactual of how skill formation would be impacted by receiving assistance from humans.'",
+    "Interaction patterns are not causal (post): 'Our qualitative analysis does not draw a causal link between interaction patterns and learning outcomes'. Paper: 'each behavior pattern cluster is small'.",
+    "The question-type breakdown, including the debugging gap, is 'exploratory data analysis (not pre-registered)'.",
+    "Post describes the results as 'preliminary' and the study as 'only a first step'."
+  ],
+  "counter_evidence": "Within the paper: three of the six AI usage patterns scored 65% to 86%, at or above the no-AI group's 67% average in two cases, so AI use did not by itself guarantee a lower score. The speed result is null rather than negative. The post notes Anthropic's own earlier observational work found AI can cut time on some tasks by 80%, and reconciles the two by saying that work covered tasks where people already had the skills. The paper cites prior studies reporting productivity gains (Peng et al. 2023, 55.5% faster; Cui et al. 2024, 26.8% more output) and a slowdown for experts (Becker et al. 2025); I did not open those sources for this item, so those figures are as the paper reports them. No independent replication or published critique was reviewed here [uncertain].",
+  "alternative_explanations": [
+    "Time on task and exposure, not AI as such: the control group typed more code and met more Trio-specific errors, so the quiz may partly reward having hit those exact errors. The authors say Trio errors 'mapped directly to topics tested on the evaluation'.",
+    "Selection into patterns: participants chose how to use the AI. More motivated or more able people may both ask conceptual questions and score well, so the pattern differences may reflect the person, not the method.",
+    "Instruction effect: everyone was told to work as fast as possible for a flat fee, which pushes AI users toward delegation. Under a 'learn this' instruction the gap could be smaller.",
+    "Short-horizon measure: an immediate quiz may capture familiarity from recent struggle rather than durable skill; the gap could shrink or grow with delay.",
+    "Low power on speed: with n = 52 and a control group in which 4 people did not finish in time (time censored at 35 minutes), a real speed advantage could be missed or understated.",
+    "Unexplained arithmetic: the 4.15-point raw gap on 27 points is 15.4%, not 17%, so the headline percentage depends on how scores were converted."
+  ],
+  "verification_status": {
+    "n = 52, 26 per arm": "Checked against paper v2 (Section 4.3, Table 1) and the post.",
+    "50% vs 67%": "Checked against the post. Not stated in the paper text.",
+    "17% / 4.15 points of 27 / two grade points": "Checked against paper v2 Section 5.2 and Introduction. Internal inconsistency (15.4% vs 17%) noted, not resolved.",
+    "d = 0.738, p = 0.010; covariate d = 0.725, p = 0.016": "Checked against paper v2.",
+    "Speed not significant; about two minutes; p = 0.391": "Non-significance checked in paper and post. 'About two minutes' checked in post. p = 0.391 read from Figure 6 in the v2 PDF text layer.",
+    "Six patterns, group sizes": "Checked against paper Section 6 and the post (4, 4, 4, 2, 3, 7).",
+    "Per-pattern scores and times": "Read from Figure 11 text layer in the v2 PDF (also Figure 1), consistent with the Discussion's '65%-86%' and '24%-39%' ranges and '19.5 minutes vs 23 minutes'.",
+    "Debugging gap is largest": "Checked in paper (Section 5.2, Section 7, Figure 8 caption) and post. No numeric size is given in text.",
+    "Limitations": "Checked verbatim against paper Section 7.1 and the post's Conclusion.",
+    "Managers recommendation": "Checked verbatim against the post. Not in the paper.",
+    "'Mostly junior'": "The phrase is in the post. Paper Table 1 does not support it on years of experience (56% with 7+ years).",
+    "Third-party figures (Peng, Cui, Becker, the 80% study)": "Not checked against their primary sources in this item."
+  },
+  "relevance_to_essay": "The strongest randomised evidence for 'weaker learning with AI': a 17-point lower immediate quiz score with no significant speed gain, and the worst gap on debugging, the skill needed to supervise AI output. It also supports in-house training as a response, because the result turned on how people used the tool. It says nothing about hiring volumes. Do not call the participants junior engineers without qualification.",
+  "implications_for_training_design": "Suggests exercises where the learner writes and debugs code without the AI producing the answer, since independent error resolution is the proposed mechanism. If AI is allowed, steer it toward conceptual questions and explanations and away from generating or fixing the code (the three high-scoring patterns). Conceptual Inquiry cost little time (22 min against 19.5 for full delegation). Debugging practice deserves particular weight. Speed pressure appears to push people toward delegation, so practice needs protected, low-stakes time. On frequency, spacing and delayed retention the study has nothing: it is one session with one immediate quiz. On using AI to generate exercises: none.",
+  "open_questions": "Does the gap persist after days or weeks? Does it hold for genuinely junior engineers (only 4 participants had 1 to 3 years)? Is it larger with agentic tools, as the authors expect but did not test? How does AI help compare with help from a human? Why does 4.15/27 come out as 17%? Where is the 25th analysed AI participant in the six patterns? What are the numeric per-question-type gaps? When was the data collected?",
+  "uncertain": [
+    "data_vintage",
+    "counter_evidence"
+  ]
+}

@@ -1,0 +1,84 @@
+topic: "What it takes to trust AI coding agent output: what makes trust in agent-written code justified rather than assumed"
+
+angle: >
+  A leadership essay built on the 2026-10-15 idea in article_ideas.md (Temporal State of
+  Development 2026: high stated trust, daily failures). It must not restate "The Verification
+  Gap" (stated distrust versus checking) or "Checking Isn't Catching" (whether checking
+  catches anything). The new question is the positive one: what would have to be true, in
+  practice, for trust in agent output to be earned. Candidates: independent checks, tests that
+  can fail, scoped permissions, provenance, honest status reports from the agent, and
+  review capacity that matches generation speed.
+
+caveats_to_test:
+  - "Many figures reach us through vendor press releases. Open the primary report or paper before any figure is used."
+  - "Several items were seen as abstracts or search summaries only. Mark access_status honestly."
+  - "Do not mix units: engineers surveyed, pull requests mined, incidents reported."
+  - "Check dates against the 12-month window; use older incidents as background and say so."
+  - "Separate behaviour that was observed from beliefs that were self-reported."
+
+items:
+  - name: "Temporal State of Development 2026"
+    note: "temporal.io/reports/state-of-development-2026. Already opened once: 554 respondents, 29 April to 25 May 2026, 85.5% trust at least somewhat, 24.7% completely, 41.1% issues daily or more. Re-open for exact wording, the trust question text, blockers and any figure on verification, and note the vendor interest."
+  - name: "Sonar State of Code Developer Survey 2026"
+    note: "Primary report, not the press release. 96% do not fully trust, 48% always check, 38% say review takes more effort. Overlaps the Verification Gap essay, so use only for what that essay did not."
+  - name: "MSR 2026 study of agent-authored pull requests"
+    note: "Open the paper itself. 9,427 agent PRs, core versus peripheral developer review behaviour, the reported share accepted without modification, CI use. Behaviour, not self-report."
+  - name: "ICSE 2026 JAWS workshop paper, Silent Reliance or Diligent Review"
+    note: "Open the paper. 212,297 PRs from 12 agents, how verification varies by seniority."
+  - name: "Amplifying.ai coding agents autonomy analysis"
+    note: "Open the page. 230 merged agent PRs, 44.3% merged with no human reviewer. Small sample, public repos. Check method and who runs it."
+  - name: "CodeRabbit State of AI vs Human Code Generation (December 2025)"
+    note: "Open the report. 470 PRs, issues per PR for AI and human code. Vendor sells review. Resolve the per-PR versus per-100-PR wording conflict."
+  - name: "METR 2025 randomised trial and February 2026 redesign"
+    note: "Calibration of trust: developers' predicted and post-hoc speed-up estimates against measured result. Already researched in research/ai-productivity-control-group/; reuse verified facts, re-open to quote."
+  - name: "Google DORA 2025 State of AI-assisted Software Development"
+    note: "Open the report. What it says about trust levels and the practices that predict good outcomes."
+  - name: "Stack Overflow Developer Survey 2025 and 2026"
+    note: "Open the survey results. Trust and distrust of AI output, frequency of verification."
+  - name: "Automation bias and complacency research"
+    note: "Parasuraman and Manzey (2010, Human Factors) and one clinical decision-support review. What calibrates trust in an automated aid, and what makes it worse. Open the papers."
+  - name: "Tests as evidence for agent-written code"
+    note: "SWE-bench Verified weaknesses, patches that pass tests but are wrong, test adequacy. Find peer-reviewed or benchmark-owner sources and open them."
+  - name: "Replit agent database deletion (July 2025) and PocketOS (April 2026)"
+    note: "Primary sources only: Jason Lemkin's posts, Amjad Masad's statements, PocketOS write-up. What was missing: dev/prod separation, scoped credentials, honest status reporting. Reuse research/openai-huggingface-agent-incident/ only for what it already verified."
+  - name: "Agent-specific security threats"
+    note: "Prompt injection through repository content, MCP tool poisoning, slopsquatting. OWASP agentic guidance and one peer-reviewed study. Open sources; this was from background knowledge only."
+  - name: "Provenance and attestation for agent-authored code"
+    note: "What exists today to show which agent wrote what and under which permissions: commit trailers, signed commits, SLSA. Find real adoption evidence, not proposals only. Drop if nothing verifiable."
+  - name: "Guardrails and permission scoping for coding agents"
+    note: "Sandboxing, scoped and short-lived credentials, least privilege, human approval gates. Find vendor docs (Claude Code, Codex, Copilot agent), OWASP agentic guidance or a peer-reviewed study showing what scoping prevents or fails to prevent. Open sources; distinguish documented design from measured effect."
+  - name: "Linting, static analysis and type checking on agent-written code"
+    note: "Evidence that static analysis catches issues in AI-generated code, and that agents can game or silence it. Peer-reviewed or empirical studies, last 12 months. Open papers; mark abstract-only honestly."
+  - name: "Security scanning of agent-written code (SAST, SCA, secret scanning)"
+    note: "Empirical vulnerability rates in agent or LLM-generated code, whether scanners catch them, and secrets leakage. Primary reports or papers (e.g. Veracode GenAI code security report, academic studies). Open them; resolve per-snippet versus per-PR units."
+  - name: "Mutation testing and property-based testing of agent output"
+    note: "Whether mutation score or property tests reveal weak agent-written tests that coverage hides. Find a study or industry paper (last 12 months) and open it. Drop if nothing verifiable."
+  - name: "Observability and audit trails of agent actions"
+    note: "Logging tool calls, replay, traceability. Real evidence of what is logged in practice (e.g. GitLab traceability finding, OWASP agentic guidance). Open sources. Reuse research/openai-huggingface-agent-incident/ only for what it verified."
+  - name: "Independent second-model review of agent output"
+    note: "Evidence that a different model reviewing code finds defects the author model missed, or shares its blind spots (correlated errors, self-preference). Open peer-reviewed or benchmark sources."
+  - name: "Small diffs, staged rollout and rollback as trust mechanisms"
+    note: "Evidence on PR size and review quality, feature flags, canaries, rollback as ways to limit blast radius of unverified output. Find an empirical source linked to AI-generated changes if one exists; otherwise drop."
+  - name: "Track record and calibrated trust"
+    note: "Whether trust set from observed per-task-type success rates (rather than overall impression) is supported by research on calibration in human-automation or human-AI teaming. Open sources."
+  - name: "Evolution of Programmers' Trust in Generative AI Programming Assistants"
+    note: "arXiv paper. How developers' trust changes with use and what moves it. Open the paper; separate self-report from observed behaviour."
+  - name: "Identifying the Factors that Influence Trust in AI Code Completion (Google Research)"
+    note: "Open the paper. Which factors drive trust, and whether they track correctness."
+  - name: "The End of Code Review: Coding Agents Supersede Human Inspection"
+    note: "arXiv paper. Open it. What it claims about review being replaced, its evidence, and whether it is a position paper or an empirical study."
+  - name: "Security Degradation in Iterative AI Code Generation"
+    note: "arXiv paper. Open it. Whether repeated agent iterations make code less secure, sample, method and model versions."
+  - name: "Broken by Default: formal verification of vulnerabilities in AI-generated code"
+    note: "arXiv paper. Open it. Vulnerability rate found by formal verification, models tested, unit of measurement."
+  - name: "The Illusion of Safety: multi-tier verification of AI vs human C++ code"
+    note: "arXiv paper. Open it. What verification tiers caught in AI code compared with human code."
+  - name: "Assay: claims that decay with the code (evidence graphs)"
+    note: "arXiv paper. Open it. Whether it proposes or measures; what it says about evidence for a claim going stale as code changes. Drop if proposal only and not useful."
+  - name: "ASIC v Bekier [2026] FCA 196 and the AICD/HTI Director's Guide to AI Governance"
+    note: "Open the judgment (or an official summary) and the guide. Exact wording on AI not substituting for a director's own review. Leadership accountability angle; verify the NotebookLM summary, which is not a source."
+
+execution:
+  batch_size: 5
+  items_per_agent: 1
+  output_dir: ./results

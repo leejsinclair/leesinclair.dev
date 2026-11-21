@@ -1,0 +1,71 @@
+fields:
+  source:
+    - name: citation
+      description: "Authors, title, venue, date, URL."
+      detail_level: brief
+    - name: source_tier
+      description: "Peer-reviewed, working paper or preprint, company research, institutional data, practitioner or vendor blog, press."
+      detail_level: brief
+    - name: access_status
+      description: "Fully read, abstract only, paywalled, search snippet only."
+      detail_level: brief
+    - name: author_credentials
+      description: "Discipline and affiliation. Note any commercial interest in the finding."
+      detail_level: brief
+    - name: exact_quotes
+      description: "Verbatim quotes from the opened source, with location."
+      detail_level: detailed
+
+  claims:
+    - name: key_claims
+      description: "What the source asserts, in its own terms."
+      detail_level: detailed
+    - name: headline_figures
+      description: "Each number with its exact wording, unit, comparison group and date."
+      detail_level: detailed
+    - name: sample_and_method
+      description: "Who was studied, how many, how, over what period. Randomised, observational or survey."
+      detail_level: moderate
+    - name: evidence_offered
+      description: "What the claim rests on."
+      detail_level: moderate
+
+    - name: data_vintage
+      description: "Publication date, data cut-off, and which version of a revised paper is cited."
+      detail_level: brief
+    - name: figure_provenance
+      description: "For each headline number, the original source and any conflicting versions in circulation."
+      detail_level: moderate
+    - name: population_and_transfer
+      description: "Who was studied and how far it transfers to engineers in ordinary companies."
+      detail_level: brief
+    - name: outcome_measured
+      description: "Employment, postings, task speed, immediate quiz score, delayed retention, or on-the-job performance."
+      detail_level: brief
+
+  caveats:
+    - name: limitations_stated
+      description: "Limits the authors themselves state, quoted where possible."
+      detail_level: moderate
+    - name: counter_evidence
+      description: "Findings or critiques that cut against the claim."
+      detail_level: moderate
+    - name: alternative_explanations
+      description: "Other readings of the same data."
+      detail_level: moderate
+    - name: verification_status
+      description: "Per claim: checked against a primary source actually opened, or not."
+      detail_level: moderate
+
+  essay_use:
+    - name: relevance_to_essay
+      description: "How this bears on the claim that the no-AI control condition is becoming hard to run, and what leaders can still measure."
+      detail_level: brief
+    - name: implications_for_measurement
+      description: "What it suggests about how to measure AI's effect on engineering work now. Say 'none' if it has none."
+      detail_level: moderate
+    - name: open_questions
+      description: "What could not be established."
+      detail_level: brief
+
+uncertain: []

@@ -1,0 +1,29 @@
+{
+  "citation": "Composite, no single source. (1) GitHub Docs, 'Creating a commit with multiple authors', https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/creating-a-commit-with-multiple-authors. (2) SLSA v1.0 'About', https://slsa.dev/spec/v1.0/about. (3) Web search summaries on CycloneDX 1.7 / ECMA-424 and SPDX 3.0 AI profile (vendor blogs, e.g. Mend, SentinelOne, wavect.io), not opened in full. Date accessed 2026-10-15.",
+  "source_tier": "Mixed: two vendor-neutral primary documentation pages (GitHub, SLSA); the AIBOM material is vendor blog/search snippet only.",
+  "access_status": "GitHub Docs page and SLSA page fetched (via summarising fetch, not read verbatim in full). AIBOM and trailer-adoption claims: search snippet only. Claude Code settings page fetched but attribution text not located.",
+  "sponsor_and_incentive": "GitHub and SLSA (OpenSSF) pages are neutral. AIBOM sources are largely security vendors selling AIBOM tooling (Mend, SentinelOne, Orca).",
+  "exact_quotes": "GitHub Docs: \"Add one or more Co-authored-by trailers to a commit message to attribute a commit to multiple authors.\" (page intro). The page describes no verification for Co-authored-by; only on-behalf-of is tied to \"a signed commit\" and domain verification. SLSA about page: framework provides \"tamper-resistant evidence for securing each step of the software production process\"; page does not mention AI or agents.",
+  "date_and_recency": "Pages fetched 2026-10-15. CycloneDX 1.7 standardised in ECMA-424 2nd edition, Dec 2025 (per search summary). G7/EU AI SBOM guidance May 2026 (per SentinelOne summary, unverified).",
+  "key_claims": "1) A Co-Authored-By trailer is a free-text commit-message line that GitHub renders as a co-author; it is not a signature and not verified. 2) Claude Code appends 'Co-Authored-By: Claude <noreply@anthropic.com>' by default and can be configured to drop it (secondary sources only). 3) SLSA attests to build-process provenance (which platform built an artifact from which source), not who or what wrote the source. 4) CycloneDX ML-BOM and SPDX 3.0 AI profile can describe models, datasets and (per SPDX) agents, but they inventory components, not authorship of individual commits or runtime permissions. 5) No standard found that binds a specific commit to an agent identity plus the permissions it ran under.",
+  "headline_figures": "None verified. One anecdote from a GitHub issue (secondary, via search snippet): 19 of 20 recent non-merge commits in one user's repos carried the trailer. Not an adoption measure. No ecosystem-wide trailer count was found.",
+  "sample_unit_and_population": "No sample. Documentation and standards review only.",
+  "observed_vs_stated": "Stated (documentation and specifications). No observed adoption data found for agent-identity or AIBOM-for-agent-code attestation.",
+  "what_makes_trust_justified": "Sources imply: signed commits tie a commit to a key holder; SLSA provenance ties an artifact to a build; AIBOM signing in a release pipeline ties a model inventory to a publisher. None of these establishes that an agent wrote a given change or what permissions it held.",
+  "what_it_costs": "Trailers cost nothing and are trivially omitted or forged. Signing and SLSA need key management and build-platform setup. No source quantified review time.",
+  "failure_mode_class": "Over-reliance and false report: a trailer can read as evidence of provenance when it is only a self-asserted label.",
+  "control_that_would_have_prevented": "Not an incident source. The missing control is a verifiable, signed binding between agent identity, session and permissions, and the commit. [uncertain] whether any vendor ships this.",
+  "limitations_stated": "Search summaries state themselves that the AIBOM formats are still settling and that no AIBOM format has been named the standard. The same summaries found no source on agent-specific attestation (in-toto or SLSA for agents).",
+  "counter_evidence": "Anthropic's own reported default trailer shows some practical labelling exists. Trailers can be disabled by the user, so absence proves nothing and presence proves nothing.",
+  "verification_status": "Trailer is unverified by GitHub: checked against GitHub docs page (opened). SLSA does not address AI: checked on the About page only, not the full spec [uncertain]. Claude Code default trailer and opt-out: secondary sources only [uncertain]. CycloneDX 1.7/ECMA-424, SPDX 3.0 AI profile, CISA Aug 2025, G7 May 2026: search snippets only, not opened [uncertain]. Adoption anecdote: not opened [uncertain].",
+  "usable_claim": "A Co-Authored-By trailer is a label in the commit message that anyone can add or leave off; GitHub's documentation describes it as attribution and says nothing about verifying it. I found no adopted standard that records which agent wrote a change and under which permissions. Verdict: drop as a standalone evidence item; at most one sentence of context.",
+  "do_not_use": "Any adoption percentage for trailers, AIBOM or agent attestation; claims that SLSA or SPDX 3.0 covers agent authorship; the G7/CISA claims until the primary documents are opened.",
+  "overlap_with_existing_essays": "Not checked against the Verification Gap or Checking Isn't Catching essays [uncertain]. Item marked drop.",
+  "uncertain": [
+    "verification_status",
+    "control_that_would_have_prevented",
+    "overlap_with_existing_essays",
+    "date_and_recency",
+    "headline_figures"
+  ]
+}

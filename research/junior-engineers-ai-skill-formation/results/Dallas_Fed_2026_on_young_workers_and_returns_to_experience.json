@@ -1,0 +1,138 @@
+{
+  "name": "Dallas Fed 2026 on young workers and returns to experience",
+  "citation": "(A) Tyler Atkinson and Shane Yamco, \"Young workers' employment drops in occupations with high AI exposure\", Dallas Fed Economics, Federal Reserve Bank of Dallas, 6 January 2026, https://www.dallasfed.org/research/economics/2026/0106. (B) Scott Davis (publishes academically as J. Scott Davis; the page byline reads 'Scott Davis'), \"AI is simultaneously aiding and replacing workers, wage data suggest\", Dallas Fed Economics, Federal Reserve Bank of Dallas, 24 February 2026, https://www.dallasfed.org/research/economics/2026/0224.",
+  "source_tier": "Institutional research commentary (central bank staff blog, 'Dallas Fed Economics'). Not peer-reviewed and not a working paper. Both pieces are short articles with charts and a downloadable chart-data spreadsheet; neither publishes regression tables or code.",
+  "access_status": "Both fully read. Page HTML for both was downloaded and the body text read end to end on 11 October 2026. The chart images and the chart-data spreadsheets (0106data.xlsx, 0224data.xlsx) were not opened.",
+  "author_credentials": "Atkinson: senior business economist, Research Department, Federal Reserve Bank of Dallas. Yamco: research analyst, Research Department, Federal Reserve Bank of Dallas. Davis: assistant vice president, Research Department, Federal Reserve Bank of Dallas. No commercial interest in the finding. Both pages carry the disclaimer that the views are the authors' and not those of the Dallas Fed or the Federal Reserve System.",
+  "exact_quotes": [
+    {
+      "source": "A (Atkinson and Yamco, 6 Jan 2026)",
+      "location": "Opening summary paragraph",
+      "quote": "Consistent with other analyses, we find some correlation across occupations between employment declines and AI exposure, but only for younger workers."
+    },
+    {
+      "source": "A",
+      "location": "Opening summary paragraph",
+      "quote": "Lower employment for young workers in AI-exposed occupations is primarily driven by a decline in people transitioning directly from out of the workforce into employment rather than by layoffs or low job-finding rates among the unemployed."
+    },
+    {
+      "source": "A",
+      "location": "Body, discussion of Chart 1",
+      "quote": "Share of employment for these occupations slips from 16.4 percent in November 2022, when ChatGPT was released, to 15.5 percent in September 2025."
+    },
+    {
+      "source": "A",
+      "location": "Section 'Layoffs, job finding among unemployed don't explain pattern'",
+      "quote": "Thus, layoffs don't appear to be a cause for rising young worker unemployment rates."
+    },
+    {
+      "source": "A",
+      "location": "Section 'Job finding rate of labor market entrants illustrative'",
+      "quote": "Since its recent peak in November 2023, the job finding rate of the young, most AI-exposed group has declined by more than 3 percentage points."
+    },
+    {
+      "source": "A",
+      "location": "Section 'AI impact small and uncertain, but could grow'",
+      "quote": "If all the decline in employment for the young, most AI-exposed workers translated into unemployment, it would be responsible for only a 0.1 percentage point rise in aggregate unemployment since November 2022."
+    },
+    {
+      "source": "A",
+      "location": "Final paragraph",
+      "quote": "An important caveat is that this pattern may not be causal and could be driven by some other factor correlated with AI exposure, such as education."
+    },
+    {
+      "source": "B (Davis, 24 Feb 2026)",
+      "location": "Second paragraph",
+      "quote": "If AI can replicate codified knowledge but not tacit knowledge, AI will automate jobs requiring codifiable (textbook) knowledge but complement jobs demanding experiential tacit knowledge."
+    },
+    {
+      "source": "B",
+      "location": "Section 'How to explain these employment and wage trends?'",
+      "quote": "For entry-level employees, tasks requiring codified knowledge represent the expert part of their jobs. However, for experienced employees these same tasks constitute the inexpert aspect of their work."
+    },
+    {
+      "source": "B",
+      "location": "Section 'Deriving the returns to experience and AI exposure'",
+      "quote": "The experience premium positively correlates with AI exposure, indicating that occupations most exposed to AI typically have higher experience premiums, though considerable variation exists."
+    },
+    {
+      "source": "B",
+      "location": "Concluding section",
+      "quote": "Returns on job experience are increasing in AI-exposed occupations. Young workers with primarily codifiable knowledge and limited experience will likely face challenging job markets."
+    },
+    {
+      "source": "B",
+      "location": "Concluding section",
+      "quote": "Firms are going to find that AI is making this method of employee development cost-ineffective, at least in the short run."
+    },
+    {
+      "source": "B",
+      "location": "Final paragraph",
+      "quote": "Of course, leaving new employees off the job ladder is not sustainable in the long run. In the long run, AI adoption will require rethinking how entry-level employees gain experience on the job."
+    }
+  ],
+  "key_claims": [
+    "A: In Current Population Survey data, employment falls with AI exposure across occupations only for young workers (ages 20 to 24). Other age and exposure groups have risen or held roughly steady.",
+    "A: The fall comes from reduced inflow, mainly fewer people moving straight from outside the labour force into a job in highly exposed occupations. It does not come from layoffs: there is no rise in young workers in highly exposed occupations moving from employment to unemployment.",
+    "A: Among the already unemployed, the young, most-exposed group's job-finding rate tracks the other five groups. All six declined, and all are near or slightly below their 2016 to 2019 averages.",
+    "A: Among young labour-market entrants, the job-finding rate held steady only for low-exposure jobs and fell for the higher-exposure groups. The authors say past business cycles show this is not a typical cyclical pattern.",
+    "A: The aggregate effect so far is 'small and subtle', at most about 0.1 percentage point of aggregate unemployment, but 'its future impact could be much greater'.",
+    "B: AI appears to be both automating and augmenting. Employment in AI-exposed sectors has fallen while wages there have risen faster than the national average, which is not what pure automation would produce.",
+    "B: The proposed mechanism is that AI replicates codified (textbook) knowledge but not tacit knowledge gained through experience, so it substitutes for entry-level workers and complements experienced ones. Davis attributes this suggestion to Brynjolfsson, Chandar and Chen and describes it as them 'speculating'.",
+    "B: Occupations more exposed to AI tend to have higher experience premiums, and the effect of AI exposure on post-2022 wage growth depends on that premium: negative where the premium is near zero, roughly nil at the median, positive at the 90th percentile.",
+    "B: Conclusion in Davis's wording: 'Returns on job experience are increasing in AI-exposed occupations.' Note this is 'returns on job experience', not 'returns to experience', and it is inferred from a cross-occupation wage-growth regression, not measured directly within workers or firms.",
+    "B: The entry-level-job-as-apprenticeship model is becoming 'cost-ineffective, at least in the short run', yet keeping new employees off the ladder 'is not sustainable in the long run'. Davis says firms will need to rethink how entry-level employees gain experience. He gives no specific prescription."
+  ],
+  "headline_figures": [
+    "A: 16.4 percent to 15.5 percent. The employment share of the young (ages 20 to 24), most AI-exposed occupation group, November 2022 to September 2025, CPS, 12-month moving average. The article calls this a '0.9 percentage-point decline'. The denominator of the 'share' is not spelled out in the text [uncertain: most likely share of the age 20 to 24 population or employment, but the article does not say which].",
+    "A: 'only a 0.1 percentage point rise in aggregate unemployment since November 2022' if all of that decline had become unemployment. This is an upper bound, not an estimate of AI's effect.",
+    "A: Workers age 20 to 24 are 'only about 9 percent of the labor force'.",
+    "A: Job-finding rate of young, most-exposed labour-market entrants down 'more than 3 percentage points' since its 'recent peak in November 2023'.",
+    "A: Cited from Stanford (Brynjolfsson, Chandar, Chen): workers age 22 to 25 in the most AI-exposed occupations 'have experienced a 13 percent decline in employment since 2022'; ADP payroll data on '25 million workers'. This is the Stanford figure, not a Dallas Fed estimate.",
+    "A: CPS rotating panel of 'around 100,000 individuals'.",
+    "B: Total US employment up 'approximately 2.5 percent' since ChatGPT's release in fall 2022.",
+    "B: Employment in the computer systems design and related services sector 'has declined 5 percent' over the same period.",
+    "B: Employment 'has declined 1 percent since late 2022 in the 10 percent of sectors most exposed to AI' (Felten, Raj and Seamans index).",
+    "B: Nominal average weekly wages since fall 2022: nationwide up 7.5 percent; computer systems design up 16.7 percent; top 10 percent of AI-exposed industries up 8.5 percent.",
+    "B: 205 occupations in the wage analysis. 'The median experience premium is 40 percent', from 'less than 10 percent' (fast-food cooks, ticket agents, dry cleaners) to 'more than 100 percent' (lawyers, insurance underwriters, credit analysts, marketing specialists).",
+    "B: Across the 205 occupations, wage growth was 'about 2.2 percentage points higher post-2022 than the prepandemic trend'.",
+    "B: Effect of a one-standard-deviation increase in AI exposure on post-2022 wage growth: minus 0.28 percentage point at a 0 percent experience premium (confidence interval 'clearly negative'); minus 0.05 percentage point at the median premium of 40 percent (90 percent confidence interval 'clearly includes zero'); plus 0.2 percentage point at the 90th percentile of the premium. For the 90th-percentile figure the text states no confidence interval and says only 'likely even a positive effect'."
+  ],
+  "sample_and_method": "A: Observational. US Census Bureau Current Population Survey public microdata, rotating panel of about 100,000 individuals, used for employment levels and month-to-month labour-market transitions. Occupations are scored with the Eloundou, Manning, Mishkin and Rock AI-exposure measure (0 to 1) and sorted into least, moderate and most exposed by tertiles of the 2024 employment-weighted score distribution. Workers are split into young (20 to 24) and prime-age (25 to 55), giving six groups. Series are 12-month moving averages. Main window is November 2022 to September 2025, with 2016 to 2019 averages and earlier business cycles used as comparisons. No regression, no controls. B: Observational, cross-sectional. Sector employment and wages since fall 2022 for the top 10 percent of sectors by the Felten, Raj and Seamans (2021) AI-exposure index. Then 205 occupations: Bureau of Labor Statistics modeled wage estimates give entry-level and experienced wages, from which Davis computes an 'experience premium' (percentage difference between the two) as a proxy for how much tacit knowledge an occupation needs. He regresses post-2022 wage growth (relative to prepandemic trend) on AI exposure and on AI exposure interacted with the experience premium. No coefficients table, sample dates for the BLS wage data or control variables are published.",
+  "evidence_offered": "A rests on descriptive CPS time series in four charts: employment by group, employment-to-unemployment flows, job finding among the unemployed, and job finding among labour-market entrants. B rests on two sector-level charts (employment, wages), two occupation scatterplots (wage growth against exposure, experience premium against exposure) and one chart of regression-implied effects with 90 percent confidence intervals. The codified versus tacit mechanism itself is an interpretation, not something either piece measures.",
+  "data_vintage": "A published 6 January 2026; CPS data to September 2025. It cites the Stanford 'Canaries' paper using the 13 percent figure, which is the August 2025 vintage of that paper. B published 24 February 2026; it gives no explicit data end date ('since fall 2022') and cites the November 2025 version of the Stanford paper [uncertain: the version date comes from a fetch summary of the page's reference, not from text I read directly]. Neither article has been revised as far as the pages show.",
+  "figure_provenance": "16.4 to 15.5 percent, 0.9 point, 0.1 point, 9 percent and 'more than 3 percentage points' are all original to Atkinson and Yamco from CPS microdata. The 13 percent figure belongs to Brynjolfsson, Chandar and Chen (ADP data, ages 22 to 25) and should be cited to Stanford, not to the Dallas Fed; it also changes by paper vintage. The two studies are not directly comparable: Dallas uses ages 20 to 24 and tertiles of exposure, Stanford uses ages 22 to 25 and quintiles. All of B's figures (2.5, 5, 1, 7.5, 16.7, 8.5 percent, 40 percent median premium, minus 0.28 / minus 0.05 / plus 0.2) are Davis's own calculations; the underlying sector employment and wage source is not named in the text [uncertain: probably BLS establishment data]. Secondary coverage (Fortune, 4 March 2026; eWeek) repeats B's figures; those articles were seen only as search results and not opened. Davis describes the Stanford result as concerning 'those under age 25' and credits the January article to Atkinson alone, although it has two authors.",
+  "population_and_transfer": "US workers across all occupations, by age band and occupation or sector. Not software engineers specifically. The three most common 'most exposed' occupations in A are first-line retail supervisors, secretaries and administrative assistants, and customer service representatives. B does single out the computer systems design and related services sector (employment down 5 percent, wages up 16.7 percent), which is the nearest thing to a software-specific data point, but it is a sector covering all ages and roles, not junior engineers. Transfer to working junior engineers is by inference.",
+  "outcome_measured": "A: employment share, employment-to-unemployment transitions, and job-finding rates for the unemployed and for labour-market entrants. B: sector employment, nominal average weekly wages, occupation-level wage growth and the entry-to-experienced wage gap. Neither measures skill, learning, comprehension or on-the-job performance.",
+  "limitations_stated": [
+    "A: 'this pattern may not be causal and could be driven by some other factor correlated with AI exposure, such as education.'",
+    "A: Small samples. Partitioning by age and exposure 'can result in relatively few observations in a given age-by-AI-exposure group, leading to noisy estimates', hence the 12-month moving averages.",
+    "A: CPS records an unemployed person's most recent occupation, not the one they are seeking, so AI-driven unemployment among would-be entrants 'may not be visible in unemployment rates by occupation'. The article's example is a computer science graduate who never finds a programming job.",
+    "A: The section heading itself reads 'AI impact small and uncertain, but could grow'.",
+    "B: The codified versus tacit explanation is introduced as Brynjolfsson and coauthors 'speculating'.",
+    "B: 'considerable variation exists' in the relationship between experience premium and AI exposure.",
+    "B: The median-premium estimate's 90 percent confidence interval 'clearly includes zero'; the high-premium effect is 'likely even a positive effect', not a firm finding.",
+    "B: Chart 3 shows 'no relationship between an occupation's AI exposure and post-2022 wage growth' before the interaction term is added.",
+    "B states no explicit limitations section and does not discuss causality directly."
+  ],
+  "counter_evidence": "Within these two sources: A finds the aggregate effect is at most 0.1 percentage point of unemployment and that job-finding rates for all groups are near their 2016 to 2019 averages, which tempers any 'juniors are being wiped out' reading. A's 0.9 point fall in a share is much milder than the Stanford 13 percent relative decline, and comes from a noisier survey. B's own Chart 3 shows no overall link between AI exposure and wage growth. B says wages in AI-exposed sectors are 'unchanged' in one sentence while reporting faster-than-average growth in another, so the wage story is not cleanly told. Outside these sources, null or small-effect findings (Humlum and Vestergaard, Yale Budget Lab, Economic Innovation Group) and the interest-rate and timing critique are covered under a separate research item and were not opened here [uncertain].",
+  "alternative_explanations": [
+    "Education or another trait correlated with AI exposure (named by Atkinson and Yamco).",
+    "Cyclical weakness and the unwinding of the 2022 post-pandemic hiring surge. A says the entrant pattern is not typical of past cycles but shows this only descriptively.",
+    "Interest rates and the end of cheap capital hitting technology and professional services hiring from 2022, which lines up in time with ChatGPT's release.",
+    "Composition effects in B: if a sector sheds lower-paid junior staff, its average weekly wage rises mechanically even if no individual is paid more. That would produce 'employment down, wages up' without AI complementing anyone's tacit knowledge. Davis does not address this.",
+    "The experience premium may proxy for things other than tacit knowledge: licensing, credentials, seniority pay scales, or general occupational skill level. High-premium occupations (lawyers, underwriters, analysts) are also high-wage, high-education occupations that saw strong demand for other reasons.",
+    "Occupations with steep wage ladders may simply be the cognitive, text-heavy occupations that any language-model exposure index scores highly, so the premium and exposure correlation may be built in.",
+    "Different exposure indices: A uses Eloundou et al., B uses Felten, Raj and Seamans. The two pieces are not measuring exposure the same way."
+  ],
+  "verification_status": "Checked against the primary source, opened and read: every quote in exact_quotes; all of A's figures (16.4, 15.5, 0.9, 0.1, 9 percent, more than 3 points, 100,000, 25 million, 13 percent as cited); all of B's figures (2.5, 5, 1, 7.5, 16.7, 8.5 percent, 205 occupations, 40 percent median, under 10 and over 100 percent, 2.2 points, minus 0.28, minus 0.05, plus 0.2); authorship, titles, dates and job titles; exposure measures and age bands. Not checked: the chart images and data spreadsheets; the Stanford paper itself (the 13 percent figure is verified only as what the Dallas Fed says Stanford found); Felten et al., Eloundou et al., Autor et al. and Autor and Thompson; Fortune and eWeek coverage. Correction to the research note: the 'returns to experience' argument is in the 24 February piece (URL ending 0224), not the 6 January piece (0106), and Davis's wording is 'Returns on job experience are increasing in AI-exposed occupations'. Davis does not claim to have shown that AI cannot replicate tacit knowledge; he frames it conditionally ('If AI can replicate codified knowledge but not tacit knowledge').",
+  "relevance_to_essay": "Strong support for the 'fewer junior hires' leg, with a useful refinement: the mechanism is fewer people being hired in, not juniors being laid off, and the aggregate effect so far is small. Davis supplies the 'who will be senior in five years' framing from an institutional source: experience is worth more, the entry-level route to getting it is becoming uneconomic for firms in the short run, and that is unsustainable in the long run. Neither piece says anything about learning with AI or about training.",
+  "implications_for_training_design": "None directly. Neither source studies training, and Davis stops at saying firms must rethink 'how entry-level employees gain experience on the job'. By inference only: if what is scarce is tacit knowledge that used to accumulate as a by-product of doing codifiable entry-level tasks, then training has to create that accumulation on purpose, and exercises should target judgement in the firm's own systems (why this code is the way it is) more than textbook knowledge AI already supplies. That inference is the essay's, not the Dallas Fed's, and should be worded as such.",
+  "open_questions": "Whether the pattern is causal. What the 16.4 and 15.5 percent shares are shares of. Whether the wage rise in computer systems design is a composition effect. Whether the experience premium measures tacit knowledge at all. Whether any of this holds for software engineering occupations specifically, since neither piece breaks them out. Whether data after September 2025 continue the trend. Whether tacit knowledge stays out of AI's reach, which Davis assumes and does not test.",
+  "uncertain": [
+    "headline_figures",
+    "data_vintage",
+    "figure_provenance",
+    "counter_evidence"
+  ]
+}

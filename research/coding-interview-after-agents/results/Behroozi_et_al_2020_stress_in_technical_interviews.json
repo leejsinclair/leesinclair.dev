@@ -1,0 +1,70 @@
+{
+  "name": "Behroozi et al 2020 stress in technical interviews",
+  "citation": "Mahnaz Behroozi, Shivani Shirolkar, Titus Barik, Chris Parnin. 'Does Stress Impact Technical Interview Performance?' Proceedings of ESEC/FSE 2020 (ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering), November 8-13, 2020, Sacramento, CA (held virtually). DOI 10.1145/3368089.3409712. Author PDF: https://chrisparnin.me/pdf/stress_FSE_20.pdf ; conference listing: https://2020.esec-fse.org/details/fse-2020-papers/140/Does-Stress-Impact-Technical-Interview-Performance-",
+  "evidence_tier": "Peer-reviewed (ESEC/FSE 2020 research track, a top-tier software engineering venue). Single randomized controlled trial, small sample.",
+  "access_status": "Fully read (author-hosted PDF at chrisparnin.me, 12 pages; the camera-ready preprint carries a placeholder DOI 'nnnnnnn').",
+  "sponsor_and_incentive": "No acknowledgments or funding statement found in the author PDF. Three authors at NC State University, one (Titus Barik) at Microsoft. No product sold. Participants were students paid in extra course credit. The authors advocate interview reform (private sessions, retrospective think-aloud), which is the direction their findings point.",
+  "exact_quotes": [
+    "Abstract: \"we conducted a randomized controlled trial with 48 Computer Science students, comparing them in private and public whiteboard settings. We found that performance is reduced by more than half, by simply being watched by an interviewer.\"",
+    "Abstract: \"interviewers may be filtering out qualified candidates by confounding assessment of problem-solving ability with unnecessary stress.\"",
+    "Section 1: \"The impact on performance was drastic: nearly twice as many participants failed to solve the problem correctly, and the median correctness score was cut more than half, when simply being watched.\"",
+    "Section 1: \"Rather than measuring explanation skills, companies are most likely measuring the ability of candidates to handle or mitigate stress (e.g. through practice).\"",
+    "Section 4.2: \"In the public setting 61.5% of the participants failed the task compared with 36.3% in the private setting. The correctness of the solutions in the public setting (excluding timeouts) was 1.58±1.29 with median of 1 passed test case. In the private setting their score was 2.29±1.12 with median of 3 passed test cases. A Mann–Whitney U test showed the difference to be significant (Z=180.5, p=0.038, d=0.57).\"",
+    "Section 4.2: \"a post-hoc analysis revealed that in the public setting, no women (n = 5) successfully solved their task; however, in the private setting, all women (n = 4) successfully solved their task\"",
+    "Section 4.4: \"frustration and stress was significantly higher in public (11) vs. in private (7) based on a Mann–Whitney U test (U=184.0, p=0.004, d=0.64).\"",
+    "Section 4.1, participant P39 (public): stressed by having to \"think and talk and do code at the same time\".",
+    "Section 5: \"Our interview settings may be producing less stress than real interviews with real stakes, while adding discomfort from the eye-tracker. Furthermore, our interviewer did not participate in problem-solving... it is unclear whether an interactive interviewer has an additional positive or negative effect on performance.\"",
+    "Section 7.1: \"For interviewers who want to assess how the candidate would communicate with other members of the team, the technical problem itself is primarily a shared vehicle through which the interviewer and candidate engage in a conversational dialogue.\"",
+    "Section 7: \"consider the recommendations as hypotheses that need further evaluation rather than outright policy.\""
+  ],
+  "date_and_recency": "Published at ESEC/FSE, November 2020 (press coverage July 2020). Data collection date not stated; pilots preceded the main study. No AI tools involved; pre-dates LLM coding assistants entirely.",
+  "key_claims": [
+    "Being watched while solving a whiteboard coding problem and thinking aloud significantly lowered correctness compared with solving it alone in a private room.",
+    "Self-reported stress (NASA-TLX frustration and stress item) and physiological proxies of cognitive load (fixation duration, pupil dilation) and stress (slower saccade velocity) were significantly higher in the public condition.",
+    "A standard technical interview resembles the Trier Social Stress Test (a cognitively demanding task plus social-evaluative threat), so it may measure stress handling rather than problem-solving ability.",
+    "Concurrent think-aloud adds extraneous load; participants in private more often mentally executed their code against test cases.",
+    "Post-hoc, no women passed in public (n=5) while all women passed in private (n=4).",
+    "Recommended (as hypotheses): retrospective think-aloud (solve privately, then explain), treating the problem as a vehicle for conversation, separating time-pressure stress from performance anxiety, warmups, free resets, partial program sketches, laptop or paper instead of whiteboard."
+  ],
+  "headline_figures": [
+    "Failure rate (not passing all 3 test cases): 61.5% public vs 36.3% private (paper's own figures; 36.3% appears to be 8/22 rounded down). Authors describe this as 'nearly twice as many' failing; the ratio is about 1.7x.",
+    "Correctness score on a 0-3 scale, excluding timeouts: public mean 1.58 (SD 1.29), median 1; private mean 2.29 (SD 1.12), median 3. Mann-Whitney Z=180.5, p=0.038, d=0.57. The 'reduced by more than half' claim rests on the medians (3 to 1, a two-thirds drop); the means drop by about 31%.",
+    "NASA-TLX frustration and stress (1-21 scale), median 11 public vs 7 private; U=184.0, p=0.004, d=0.64. No significant differences for effort, mental demand, physical demand or performance.",
+    "Mean fixation duration (first 10 minutes): 251.48±13.37 ms public vs 238.99±17.36 ms private; p=0.0028, d=0.78.",
+    "Mean pupil dilation: 0.13±0.009 mm public vs 0.12±0.003 mm private; p=0.0022, d=1.43.",
+    "Mean saccade velocity: 94.41±45.59 deg/s public vs 120.77±39.43 deg/s private (medians 84 vs 119.25); Z=277, p=0.003, d=0.59.",
+    "Time: public participants finished on average 1 min 36 s sooner, not significant; more than 50% of public participants finished within 10 minutes.",
+    "Women, post-hoc: 0 of 5 passed in public, 4 of 4 passed in private.",
+    "Sample: 50 recruited (12 female), 2 withdrew, 48 analysed: 22 private, 26 public. Power analysis called for about 18 per group."
+  ],
+  "sample_and_method": "Block-randomized controlled trial, between-subjects. 50 undergraduate and graduate CS students at NC State recruited for extra course credit (12 female); 48 analysed (22 private, 26 public). Students, not working software engineers, though many were job-hunting. Single task: 'Longest Substring Without Repeating Characters' (a common LeetCode/industry interview question), any language, on a whiteboard, 30-minute limit. Public condition: experimenter present, participant thinks aloud, experimenter silent apart from brief replies. Private condition: participant alone in a closed room, no think-aloud. All wore SMI mobile eye-tracking glasses. Scored 0-3 against three given test cases; pass means all three. Post-task NASA-TLX and survey. Interviewers were women in all but one session.",
+  "what_is_measured": "Convergent coding: correctness of a single algorithmic whiteboard solution (0-3 test cases), plus time, self-reported workload and eye-tracking proxies for cognitive load and stress. The study does not measure design judgement, debugging of existing code, collaboration, or job performance. Its argument is that the public format confounds problem-solving ability with tolerance of social-evaluative stress (performance anxiety).",
+  "ai_policy_in_interview": "Not applicable (2020 study, no AI tools; participants coded on a whiteboard without any tooling).",
+  "scope_and_status": "Not applicable (lab experiment, not an interview format rolled out by a company).",
+  "validity_evidence": "None. The study has no criterion-validity data: it does not link either format to later job performance. It shows the observed format lowers scores and raises stress relative to a private format, which bears on construct validity (what the score reflects), not predictive validity.",
+  "relevance_to_angle": "Supports 'stop testing convergent coding' in its classic form: a watched, think-aloud whiteboard puzzle partly measures stress tolerance, and the authors explicitly propose letting candidates solve privately and then explain. Supports the 'design conversation' and 'communication' parts by recommending the problem be a 'shared vehicle' for dialogue and retrospective explanation. Complicates the design-conversation idea too: an observed design conversation is still performed in front of an evaluator, so the social-evaluative threat does not go away just because the task changes. The study cannot say how much of the penalty comes from being watched versus having to talk while coding, and the authors note an interactive interviewer may help or hurt. Mitigations the paper offers (warmups, advance detail, free resets, familiar tools) transfer to a design conversation or an agent-pairing exercise.",
+  "limitations_stated": [
+    "Interviewers were almost all women; real interviews are mostly run by men, so stereotype threat could make effects larger.",
+    "\"Our interview settings may be producing less stress than real interviews with real stakes, while adding discomfort from the eye-tracker.\"",
+    "The interviewer was silent and non-interactive; \"it is unclear whether an interactive interviewer has an additional positive or negative effect on performance.\"",
+    "Students \"may not fully represent industry developers\".",
+    "One question only; \"other coding questions may be easier or more difficult\" and \"small amounts of stress can enhance performance... we are not claiming that all interview questions will result in the same barriers.\"",
+    "Participants may have seen the problem before (none said so).",
+    "Eye-tracker accuracy affected by lighting and movement; four participants lacked pupil data and one recording failed.",
+    "Guidance is offered as \"hypotheses that need further evaluation rather than outright policy.\""
+  ],
+  "counter_evidence": [
+    "Confounded manipulation (not stated as a limitation by the authors): the public condition added both an observer and concurrent think-aloud, while the private condition had neither, so the effect cannot be attributed to being watched alone, despite the abstract's 'simply being watched' wording.",
+    "Small sample (22 vs 26) and a single task; the primary correctness result is p=0.038, not far below 0.05. The gender finding is post-hoc on 9 people.",
+    "Scores exclude timeouts, and the 'more than half' headline uses medians on a 4-point scale; mean scores fell by about 31%.",
+    "The paper reports Wilcoxon signed-rank tests for between-subjects eye-tracking comparisons, which is normally a paired test; this may be a naming slip for a rank-sum test, but is unclear. [uncertain]",
+    "Private-condition participants had no one to ask; one participant misunderstood and withdrew, so the private format has its own costs.",
+    "The authors cite Google research (Shaper) that four interviews suffice for a consistent hire decision, though they note this addresses consistency, not validity.",
+    "No direct replication was found in this pass. [uncertain]"
+  ],
+  "verification_status": "All figures, design details, quotes and stated limitations checked against the author-hosted full-text PDF (chrisparnin.me/pdf/stress_FSE_20.pdf), actually opened and read. Final ACM DOI 10.1145/3368089.3409712 taken from memory and the conference listing context, not resolved in this pass [uncertain]. Absence of a funding statement is based on the author PDF only. Replication status not checked [uncertain].",
+  "uncertain": [
+    "counter_evidence",
+    "verification_status"
+  ]
+}
