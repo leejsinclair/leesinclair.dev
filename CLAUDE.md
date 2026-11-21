@@ -120,19 +120,10 @@ The full `specify → [review gate] → plan → [review gate] → tasks → imp
 
 ## Deployment
 
-`.github/workflows/publish-dist-branch.yml` builds the site on every push to `main` and
-force-pushes `dist/` to the orphan `forge-dist` branch. A separate service outside this repo
-("getforge") pulls `forge-dist` and uploads it to the live host (`leesinclair.me`, served via
-Render behind Cloudflare). There is no config for that service in this repo, and no GitHub
-Pages site is configured, so `forge-dist` is a hand-off point, not the final host.
-
-**Known quirk:** that getforge pull/upload step has served the homepage (`index.html`) stale
-relative to freshly-added essay pages, and separately does not preserve absolute (leading-`/`)
-links reliably — an absolute link like `/myths/talos` on the homepage 404'd live even though
-`forge-dist`'s own `index.html` had the correct href and the target page itself was reachable.
-Fix: homepage links to individual essays and thoughts (`src/pages/index.astro`) are written as
-relative paths (`myths/talos`, not `/myths/talos`) to route around this. If a homepage link
-404s live but resolves fine locally/in `forge-dist`, suspect this pipeline before the app code.
+`.github/workflows/deploy-pages.yml` builds the site on every push to `main` and deploys
+`dist/` to GitHub Pages (Settings, Pages, Source: GitHub Actions). The previous getforge
+hand-off (`forge-dist` branch) has been retired. Homepage essay links in `src/pages/index.astro`
+are still relative paths (a leftover from that host); they work fine on Pages.
 
 ## Git
 

@@ -91,13 +91,13 @@ script for that domain. Nothing is loaded in dev, and the page is identical with
 blocked or absent.
 
 ```bash
-PUBLIC_ANALYTICS_DOMAIN=leesinclair.dev npm run build
+PUBLIC_ANALYTICS_DOMAIN=leesinclair.me npm run build
 ```
 
 ## Deploy
 
-`npm run build` emits portable static files to `dist/` with no host adapter — deploy target
-is deliberately undecided. Before deploying:
+`npm run build` emits portable static files to `dist/` with no host adapter. It is hosted on
+GitHub Pages. Before deploying:
 
 - **Set `profile.linkedInUrl`** — it is the only contact route; the build warns and the CTA
   renders as a placeholder until it is set, and the site must not ship in that state.
@@ -106,19 +106,12 @@ is deliberately undecided. Before deploying:
 - Sign off the draft hero wording in `profile.ts` (flip `status` to `"signed-off"`).
 - Swap `public/og-image.png` for the final 1200×630 share image (no markup change needed).
 
-### Deploy branch for hosts that need repo folder input
+### GitHub Pages
 
-If your host expects a specific branch/folder in Git (for example GetForge), this repo now
-publishes the built site to a dedicated `forge-dist` branch:
-
-- Workflow: `.github/workflows/publish-dist-branch.yml`
-- Trigger: pushes to `main` (and manual dispatch)
-- Output branch content: the built `dist/` files at branch root (each run replaces the branch)
-
-Point the integration at:
-
-- Branch: `forge-dist`
-- Folder/path: `/` (repository root of that branch)
+`.github/workflows/deploy-pages.yml` builds the site on every push to `main` (and manual
+dispatch) and deploys `dist/` with GitHub's official Pages actions. One-time setup: repo
+Settings, Pages, Source: **GitHub Actions**. Add the custom domain in the same screen and
+point DNS at GitHub Pages.
 
 ## CI artifact
 
