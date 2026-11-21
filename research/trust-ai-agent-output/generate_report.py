@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Merge results/*.json into report.md, skipping uncertain values.
 
-A string value carrying [uncertain] is dropped whole. In a list or dict, only the elements
-carrying [uncertain] are dropped, so a field named in an item's `uncertain` array still shows
+A string value carrying [uncertain] or [uncertain: ...] is dropped whole. In a list or dict,
+only the elements carrying an uncertain marker are dropped, so a field named in an item's
+`uncertain` array still shows
 its verified elements. A string field named in that array is dropped.
 """
 
@@ -65,7 +66,8 @@ def file_slug(name):
 
 
 def tagged(v):
-    return "[uncertain]" in json.dumps(v, ensure_ascii=False)
+    text = json.dumps(v, ensure_ascii=False)
+    return re.search(r"\[uncertain(?::[^\]]*)?\]", text) is not None
 
 
 def prune(v):

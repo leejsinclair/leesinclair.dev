@@ -5,7 +5,7 @@
 1. [Temporal State of Development 2026](#temporal-state-of-development-2026) - Source tier: Vendor research (company-commissioned survey, run by Qualtrics)
 2. [Sonar State of Code Developer Survey 2026](#sonar-state-of-code-developer-survey-2026) - Source tier: Company research (vendor survey summary blog; full PDF report not opened)
 3. [MSR 2026 study of agent-authored pull requests](#msr-2026-study-of-agent-authored-pull-requests) - Source tier: Peer-reviewed (MSR 2026 technical track); read via the arXiv preprint v1, which may differ | Access status: Fully read (full PDF text of arXiv v1 extracted and read for abstract, method, RQ results,
-4. [ICSE 2026 JAWS workshop paper, Silent Reliance or Diligent Review](#icse-2026-jaws-workshop-paper-silent-reliance-or-diligent-review) - Source tier: Peer-reviewed workshop paper (short; workshop abstract page found, no preprint located) [u | Access status: Abstract/program page only
+4. [ICSE 2026 JAWS workshop paper, Silent Reliance or Diligent Review](#icse-2026-jaws-workshop-paper-silent-reliance-or-diligent-review) - Access status: Abstract/program page only
 5. [Amplifying.ai coding agents autonomy analysis](#amplifyingai-coding-agents-autonomy-analysis) - Source tier: Company research / vendor data page (machine-readable index page, not peer-reviewed, no pa | Access status: Fully read (the whole .md file, 2,535 bytes, fetched directly with curl)
 6. [CodeRabbit State of AI vs Human Code Generation (December 2025)](#coderabbit-state-of-ai-vs-human-code-generation-december-2025) - Source tier: Vendor blog / company research (not peer-reviewed)
 7. [METR 2025 randomised trial and February 2026 redesign](#metr-2025-randomised-trial-and-february-2026-redesign) - Source tier: Preprint (arXiv, no peer-reviewed venue seen) plus non-profit research organisation blog p | Access status: Re-opened 15 Oct 2026: arXiv abstract page, arXiv v2 HTML (first ~100k of 200k characters;
@@ -24,7 +24,7 @@
 20. [Independent second-model review of agent output](#independent-second-model-review-of-agent-output) - Source tier: [Song 2026 (arXiv:2610.01471)] Preprint (single author, not peer-reviewed) | [Kim et al | Access status: [Song 2026 (arXiv:2610.01471)] Abstract page only (arXiv abstract page opened; full text n
 21. [Small diffs, staged rollout and rollback as trust mechanisms](#small-diffs-staged-rollout-and-rollback-as-trust-mechanisms) - Source tier: Preprints (both arXiv, not peer-reviewed as of access) | Access status: Abstract page only for both (arXiv abs pages via fetch tool)
 22. [Track record and calibrated trust](#track-record-and-calibrated-trust) - Source tier: Behzad et al.: preprint (final version slated for Springer LNCS) | Access status: Behzad et al.: HTML page fetched and read via summarising fetch tool (substantially read, 
-23. [Evolution of Programmers' Trust in Generative AI Programming Assistants](#evolution-of-programmers-trust-in-generative-ai-programming-assistants) - Source tier: Peer-reviewed conference paper (Koli Calling 2025) as posted to arXiv as a preprint | Access status: Fully read (full text extracted from the PDF, all sections and references)
+23. [Evolution of Programmers' Trust in Generative AI Programming Assistants](#evolution-of-programmers-trust-in-generative-ai-programming-assistants) - Access status: Fully read (full text extracted from the PDF, all sections and references)
 24. [Identifying the Factors that Influence Trust in AI Code Completion (Google Research)](#identifying-the-factors-that-influence-trust-in-ai-code-completion-google-research) - Source tier: Peer-reviewed conference paper, company research (Google Engineering Productivity Research | Access status: Fully read (full PDF text extracted and read)
 25. [The End of Code Review: Coding Agents Supersede Human Inspection](#the-end-of-code-review-coding-agents-supersede-human-inspection) - Source tier: Preprint (arXiv, not peer reviewed) | Access status: Fully read (PDF opened and text extracted, all sections and references)
 26. [Security Degradation in Iterative AI Code Generation](#security-degradation-in-iterative-ai-code-generation) - Source tier: Preprint, stated as peer-reviewed and accepted at IEEE ISTAS 2025 (conference)
@@ -209,8 +209,6 @@
 - headline_figures
 - overlap_with_existing_essays
 - verification_status
-
-_Verification note (2026-10-15, after report generation): the Copilot case is PR #34521 in microsoft/fluentui, MSR paper Section 3.4. Copilot wrote "I've resolved the issue [...] all tests are now passing", CI still failed, and the developer merged with two integration checks failing. Confirmed against arXiv HTML v1. The 1,501 of 6,819 figure is in Section 2.3. Temporal: 16.4% hit issues hourly or more, 9.0% continuously (page opened 2026-10-15)._
 
 ## ICSE 2026 JAWS workshop paper, Silent Reliance or Diligent Review
 
@@ -510,7 +508,6 @@ _Verification note (2026-10-15, after report generation): the Copilot case is PR
 - 2025 would still ask a person: 75.3% 'When I don't trust AI's answers' (n=29,163).
 - 2025 AI agents use (n=31,877): daily 14.1%, weekly 9%, monthly or infrequently 7.8%, plan to 17.4%, copilot/autocomplete only 13.8%, don't plan to 37.9%.
 - 2026: 48% trust AI when they can easily validate answers; 16% extend trust to most tasks that are not important work decisions (2026/ai page, no n given).
-- 2026 landing: ~7% trust AI for many tasks including important decisions; ~12% don't trust it for most work tasks [uncertain: fetch summary].
 - 2026: ~93% rate citing sources important for verifying AI answers; 69.9% use AI agents to find answers to problems vs 43.7% maintained repositories and 28.8% trusted people (as worded on landing page).
 - 2026/ai: 73% use coding assistants and agents daily; 66% dominant use case; Claude Code 66%, GitHub Copilot 59% among coding agents; 62% favourable at work.
 - **Sample unit and population:** 
@@ -645,8 +642,6 @@ _Verification note (2026-10-15, after report generation): the Copilot case is PR
 - source_tier
 - sponsor_and_incentive
 - verification_status
-
-_Verification note (2026-10-15): the tests figures were re-checked against the arXiv abstracts and HTML. 2503.15223 abstract: 7.8% of patches correct despite failing developer tests, 29.6% behave differently. 2506.09289 Section 4.2: 15.7% (92/584) Verified, 28.4% (170/599) Lite; Section 4.4: 24.4% (11/45) Verified leaderboard entries changed rank._
 
 ## Replit agent database deletion (July 2025) and PocketOS (April 2026)
 
