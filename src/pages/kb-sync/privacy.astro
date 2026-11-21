@@ -1,0 +1,95 @@
+---
+/**
+ * Privacy policy for the kb-sync Google OAuth app (required by Google before the app can
+ * be set to "In production"). Not linked from the main navigation. Copy: src/data/kbsync.ts.
+ */
+import Base from "../../layouts/Base.astro";
+import SEO from "../../components/SEO.astro";
+import { kbSyncPrivacy } from "../../data/kbsync";
+
+const effectiveDate = new Intl.DateTimeFormat("en-GB", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+  timeZone: "UTC",
+}).format(kbSyncPrivacy.effectiveDate);
+---
+
+<Base>
+  <SEO
+    slot="head"
+    title={`${kbSyncPrivacy.title} | Lee Sinclair`}
+    description={kbSyncPrivacy.description}
+    canonicalPath="/kb-sync/privacy"
+  />
+
+  <article class="kb-sync-privacy">
+    <div class="shell">
+      <a class="kb-sync-back" href="/kb-sync">← kb-sync</a>
+
+      <header>
+        <h1>{kbSyncPrivacy.title}</h1>
+        <p class="kb-sync-date">
+          Effective date:
+          <time
+            datetime={kbSyncPrivacy.effectiveDate.toISOString().slice(0, 10)}
+            >{effectiveDate}</time
+          >
+        </p>
+      </header>
+
+      <div class="measure">
+        {
+          kbSyncPrivacy.sections.map((section) => (
+            <section>
+              <h2>{section.heading}</h2>
+              <p>
+                {section.body.map((segment) =>
+                  typeof segment === "string" ? (
+                    segment
+                  ) : (
+                    <a href={segment.href}>{segment.label}</a>
+                  ),
+                )}
+              </p>
+            </section>
+          ))
+        }
+      </div>
+    </div>
+  </article>
+</Base>
+
+<style>
+  .kb-sync-privacy {
+    padding-block: var(--space-xl);
+  }
+
+  .kb-sync-back {
+    display: inline-block;
+    margin-bottom: var(--space-l);
+    color: var(--text-muted);
+    font-size: var(--step--1);
+    text-decoration: none;
+  }
+
+  .kb-sync-back:hover,
+  .kb-sync-back:focus-visible {
+    color: var(--accent-strong);
+  }
+
+  .kb-sync-date {
+    margin-top: var(--space-xs);
+    color: var(--text-muted);
+    font-size: var(--step--1);
+  }
+
+  section {
+    margin-top: var(--space-l);
+  }
+
+  section p {
+    margin-top: var(--space-2xs);
+    overflow-wrap: anywhere;
+  }
+</style>

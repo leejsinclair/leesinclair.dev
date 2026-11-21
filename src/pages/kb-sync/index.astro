@@ -1,0 +1,53 @@
+---
+/**
+ * Public home page for the kb-sync Google OAuth app (required by Google before the app can
+ * be set to "In production"). Not linked from the main navigation. Copy: src/data/kbsync.ts.
+ */
+import Base from "../../layouts/Base.astro";
+import SEO from "../../components/SEO.astro";
+import { kbSyncHome } from "../../data/kbsync";
+---
+
+<Base>
+  <SEO
+    slot="head"
+    title={`${kbSyncHome.title} | Lee Sinclair`}
+    description={kbSyncHome.description}
+    canonicalPath="/kb-sync"
+  />
+
+  <article class="kb-sync">
+    <div class="shell">
+      <h1>{kbSyncHome.title}</h1>
+      <div class="measure">
+        {
+          kbSyncHome.paragraphs.map((paragraph) => (
+            <p>
+              {paragraph.map((segment) =>
+                typeof segment === "string" ? (
+                  segment
+                ) : (
+                  <a href={segment.href}>{segment.label}</a>
+                ),
+              )}
+            </p>
+          ))
+        }
+      </div>
+    </div>
+  </article>
+</Base>
+
+<style>
+  .kb-sync {
+    padding-block: var(--space-xl);
+  }
+
+  .kb-sync p {
+    margin-top: var(--space-s);
+  }
+
+  .kb-sync h1 + div > p:first-child {
+    margin-top: var(--space-m);
+  }
+</style>
