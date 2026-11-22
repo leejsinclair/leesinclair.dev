@@ -20,3 +20,6 @@ dist/
 
 # Playwright MCP session artefacts
 .playwright-mcp/
+
+# Python bytecode caches
+__pycache__/
