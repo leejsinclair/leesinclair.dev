@@ -1,14 +1,14 @@
 ---
 title: "What It Takes to Trust Agent Output"
 date: 2026-10-15
-dek: "In one vendor survey, most respondents said they trust what their coding agents produce, and four in ten hit problems with those agents daily or more. Both numbers came from the same people. What would justify that trust is several independent checks, each assumed to leak, and a named person accountable for what gets through."
+dek: "Trust agent output only after checks that can catch different kinds of failure. Give those checks enough capacity and make someone accountable for what gets through."
 tldr:
-  summary: "Reported trust tells you little: it differs sharply between surveys, it swung from mostly rising to nearly evenly split for students after ten days of real use, and a Google log study found that acceptance of AI suggestions tracked the model's own predicted-acceptance score, with correctness never tested. In my view, trust in agent output should be treated as something a team builds from checks that do not pass through the agent and do not share each other's blind spots, with review staffed to the volume and a named person accountable. No study I found shows that any single check makes agent output safe to merge unseen."
+  summary: "Confidence in an agent is not evidence that its code is correct. Use tests, mechanical checks and review that do not depend on the agent's own account, and make sure reviewers have time to do the work. Name the person responsible for deciding what can be merged. No single check studied here has been shown to make agent output safe to merge unseen."
   points:
-    - "In Temporal's 2026 survey of 554 respondents, 85.5% trusted agent output at least somewhat and 41.1% hit problems with agents daily or more. Stack Overflow's 2025 survey of 33,244 developers found 33% trusting AI tools' accuracy and 46% distrusting it. In a 2025 study of 71 students, 39.4% said their trust had risen and 36.6% that it had fallen after a ten-day project."
-    - "Tests are weaker evidence than a green run suggests. On SWE-bench Verified, 7.8% of patches that passed the benchmark's tests failed the projects' full developer test suites, and extra generated tests flagged 15.7% of passing patches in a second study."
-    - "Of 9,427 closed agent-authored pull requests across 1,391 popular GitHub repositories, 6,819 were merged. About three-quarters of those went in unmodified, and only 1,501 had any review comments. In one case an agent reported all tests passing while CI failed, and the pull request was merged with two integration checks failing."
-    - "Each check misses different things. In a 2026 preprint of 8,918 C++ programs, a bounded model checker flagged 661 short contest programs and sanitizers flagged 639, and only 63 were flagged by both."
+    - "Surveys of trust differ, and accepting an AI suggestion does not show that the code is correct."
+    - "A green test run is useful but incomplete: one SWE-bench study found 7.8% of patches that passed benchmark tests failed the projects' full test suites."
+    - "Use checks that can catch different failures, verify the agent's claims independently and give reviewers enough time to read the changes."
+    - "Name the person accountable for the decision to merge, including any decision to let low-risk changes through without human review."
 references:
   - "Temporal Technologies. (2026). The State of Development 2026. temporal.io/reports/state-of-development-2026."
   - "Stack Overflow. (2025). 2025 Developer Survey: AI. survey.stackoverflow.co/2025/ai."
@@ -37,11 +37,13 @@ references:
   - "Australian Institute of Company Directors & Human Technology Institute. (2026, June). A Director's Guide to AI Governance, Version 2. The judgment it quotes (ASIC v Bekier [2026] FCA 196) was not opened."
 ---
 
-Two earlier pieces on this site looked at checking. [The verification gap](/leadership/verification-gap-ai-code) asked whether developers check AI-generated code before they commit it. [Checking Isn't Catching](/leadership/checking-isnt-catching) asked whether the checking finds anything. This one asks what is underneath both: when is it reasonable to trust what an agent hands back, and what would have to be true for that trust to be earned rather than assumed?
+Do not treat an agent's confidence, a green test run or a silent review as proof that its code is correct. Each can miss a problem. Use checks that catch different kinds of failure, verify the agent's claims independently and give reviewers enough time to do their job.
 
-My answer is that trust belongs to the checks around the tool, not to the people using it, and most teams have fewer of those checks than they think.
+Someone must also own the decision to merge, including the decision to let a low-risk change through without human review. The aim is a defensible decision about each change, not a promise that any combination of checks makes it safe.
 
-**What people say they trust tells you very little.**
+Two earlier pieces looked at whether developers [check AI-generated code](/leadership/verification-gap-ai-code) and whether [that checking finds anything](/leadership/checking-isnt-catching). This one asks what would justify trust in the result.
+
+## What people say they trust tells you little
 
 Temporal's State of Development 2026 surveyed 554 respondents in the US and UK/EMEA between 29 April and 25 May. Asked how much they trusted the accuracy of AI agent output, 85.5% said at least somewhat and 24.7% said completely. The same report found 41.1% hit issues with agents daily or more. Temporal sells an orchestrator for AI agents, so the report has a point of view, and each team decided for itself what counted as an issue. Still, the two figures sit side by side, and the first does not appear to constrain the second.
 
@@ -49,21 +51,27 @@ Stack Overflow's 2025 survey asked a broader group a similar question. Of 33,244
 
 Two further studies show why the number moves. Shah and colleagues followed 71 upper-division computer science students using GitHub Copilot. After an hour, 49.3% said their trust had risen and 16.9% said it had fallen. After a ten-day project on a 23,500-line code base, 39.4% said it had risen and 36.6% said it had fallen, and the most common reason was that the tool needed a competent programmer to finish or fix the work. This was one course, one term, and self-reported attitude, not behaviour. The authors say they cannot extrapolate beyond ten days. It still suggests that trust formed on a demo is not trust formed on the job.
 
-Brown and colleagues at Google looked at behaviour instead. They analysed a million multi-line completions shown to 59,000 developers and used acceptance as a stand-in for trust. Acceptance rose with the model's own score for how likely a suggestion was to be accepted and with the developer's expertise in the language, and fell in test files. Even at the highest score only about half of suggestions were accepted. The study never measured whether accepted code was correct, its authors call the results correlational, and the tool was a completion engine, not an agent. What it shows is that acceptance follows signals other than correctness, and that nobody checked correctness.
+Brown and colleagues at Google looked at behaviour instead. They analysed a million multi-line completions shown to 59,000 developers and used acceptance as a stand-in for trust. Acceptance rose with the model's own score for how likely a suggestion was to be accepted and with the developer's expertise in the language, and fell in test files. Even at the highest score only about half of suggestions were accepted.
+
+The study never measured whether accepted code was correct. Its authors call the results correlational, and the tool was a completion engine, not an agent. Acceptance followed signals other than correctness; the study did not check whether that confidence was justified.
 
 METR's 2025 trial shows what felt confidence can be worth. Sixteen experienced open-source developers completed 246 tasks, some with AI allowed and some without. Before starting, they forecast that AI would cut their completion time by 24%. Afterwards they estimated it had cut it by 20%. The measured result was that tasks took 19% longer. It was a small study of early-2025 tools, and METR's 2026 follow-up points the other way, though METR calls that newer data only very weak evidence. What holds up is METR's own remark that developers' self-reports of speedup can be quite unreliable.
 
-**A green test run is weaker evidence than it looks.**
+## A green test run is not the whole answer
 
 Tests are the obvious first check. Two studies of SWE-bench Verified, a benchmark of real issues from open-source Python projects, put a number on how far that holds.
 
-Wang, Pradel and Liu (ICSE 2026) took 877 patches from three agent systems that had passed the benchmark's own tests and ran them against each project's full developer test suite. 7.8% failed. Differential testing, which compares each patch's behaviour with the human fix, flagged 260 of the 877 as behaving differently, and when the authors read a sample of 77 of those, 22 were certainly incorrect. A separate team, in UTBoost (ACL 2025), generated extra tests and found that the extra tests flagged 92 of 584 passing Verified patches, 15.7%, as erroneous. Eleven of the 45 Verified leaderboard entries changed rank.
+Wang, Pradel and Liu (ICSE 2026) took 877 patches from three agent systems that had passed the benchmark's own tests and ran them against each project's full developer test suite. 7.8% failed. Differential testing, which compares each patch's behaviour with the human fix, flagged 260 of the 877 as behaving differently. When the authors read a sample of 77 of those, 22 were certainly incorrect.
+
+A separate team, in UTBoost (ACL 2025), generated extra tests and found that they flagged 92 of 584 passing Verified patches, 15.7%, as erroneous. Eleven of the 45 Verified leaderboard entries changed rank.
 
 Both studies have limits. These are benchmark tasks, not production systems, and most passing patches held up under the stricter tests. The extra tests were written by a model and reviewed by two authors, so they can be wrong too. The lesson is a narrow one. A suite written before the agent arrived covers the failures its authors thought of, and a green run has a false-pass rate whether or not anyone has measured it.
 
-**Review is the other check, and the record of it is sparse.**
+## Review matters, but the record is sparse
 
-The MSR 2026 paper by Cynthia, Das and Roy studied 9,427 closed pull requests written by coding agents (Claude Code, Cursor, Copilot and Codex) across 1,391 GitHub repositories with at least 100 stars, with data up to August 2025. Of the 6,819 that were merged, the authors report that on average 74.1% went in without any modification. Only 1,501 of the 6,819 had any review comments at all. Developers outside a project's core group merged without running any checks 19.1% of the time, against 11.2% for core developers. A TU Delft workshop paper that mined 212,297 agent pull requests from 12 agents reports that 73.9% were merged without modification, with a median human triage time of 0.2 hours. Only its abstract is available, and it does not say what that percentage is a share of.
+The MSR 2026 paper by Cynthia, Das and Roy studied 9,427 closed pull requests written by coding agents (Claude Code, Cursor, Copilot and Codex) across 1,391 GitHub repositories with at least 100 stars, with data up to August 2025. Of the 6,819 that were merged, the authors report that on average 74.1% went in without any modification. Only 1,501 of the 6,819 had any review comments at all. Developers outside a project's core group merged without running any checks 19.1% of the time, against 11.2% for core developers.
+
+A TU Delft workshop paper that mined 212,297 agent pull requests from 12 agents reports that 73.9% were merged without modification, with a median human triage time of 0.2 hours. Only its abstract is available, and it does not say what that percentage is a share of.
 
 None of that proves anyone was careless. An unmodified merge can follow a proper read, maintainers may be merging work they prompted themselves, and neither paper measured defects after the merge. What the figures do show is the shape of the process: a lot of agent code goes in quickly, with little discussion around it.
 
@@ -71,7 +79,7 @@ Automation research would not be surprised. Parasuraman and Manzey's 2010 review
 
 There is now a paper arguing the logical end of this. Martin Monperrus's June 2026 preprint says human review of agent-written code tends to become a rubber stamp and should give way to independent agent review for routine changes. It is a position paper with no new data, and the rubber-stamp premise rests on a citation that predates agent-written code. Its own section on counter-arguments raises silent approvals by the reviewing model, correlated blind spots between generator and reviewer, and prompt injection of the reviewer, for which it says there are no fully solved defences. It keeps humans for high-risk and regulated changes. I read it as a plausible description of the failure, asserted more than shown, and an untested proposal for the fix.
 
-**What the agent says about its own work is not evidence.**
+## Check the agent's claims independently
 
 The MSR paper includes one case worth holding on to. On a Microsoft Fluent UI pull request, Copilot wrote that it had resolved the issue and that "all tests are now passing". CI was still failing. The developer merged the pull request with two integration checks failing. It is a single example, and the paper does not count how often it happens. It does show that a status report from the thing being judged is output of the same process, and carries no more weight than the code does.
 
@@ -81,11 +89,13 @@ One 2026 preprint, Assay, proposes a mechanical version of this discipline: bind
 
 Some claims can be checked with no judgement at all. Spracklen and colleagues generated 576,000 code samples from 16 models and found that the average rate of recommended packages that did not exist was at least 5.2% for commercial models and 21.7% for open-source ones. Of the invented names, 43% came back in all ten repeated runs of the same prompt. The models were 2023-era, and the authors did not register any invented names, so the paper shows nothing about exploitation in the wild. A registry lookup says the package exists, not that it is the right one. But it is mechanical and outside the model, and it costs almost nothing, which is the shape of a check worth having.
 
-**Every other check leaks, and they leak in different places.**
+## Checks miss different things
 
 Most of what an agent produces has no yes or no answer a lookup can give. The usual next steps are scanners, linters, sandboxes and a second model. The evidence for each is thin, but one study shows why it matters that they are independent.
 
-Mahmud and colleagues (2026 preprint) ran 8,918 C++ programs, from three open-weight models and from pre-2021 human contest solutions, through static analysis, sanitizers and a bounded model checker. The model checker flagged 661 programs, and 598 of those were never triggered by the sanitizers. The sanitizers flagged 639, and 576 of those were missed by the model checker. Only 63 programs were flagged by both. Static analysis did not separate the two groups, and once length was controlled it flagged the human code more often. Sanitizers did separate them: 9.3% of AI programs against 2.6% of human ones. Among programs that passed every test, though, humans triggered sanitizers more often (3.6% against 1.8%). 
+Mahmud and colleagues (2026 preprint) ran 8,918 C++ programs, from three open-weight models and from pre-2021 human contest solutions, through static analysis, sanitizers and a bounded model checker. The model checker flagged 661 programs, and 598 of those were never triggered by the sanitizers. The sanitizers flagged 639, and 576 of those were missed by the model checker. Only 63 programs were flagged by both.
+
+Static analysis did not separate the two groups, and once length was controlled it flagged the human code more often. Sanitizers did separate them: 9.3% of AI programs against 2.6% of human ones. Among programs that passed every test, though, humans triggered sanitizers more often (3.6% against 1.8%).
 
 These are short contest programs from open-weight models with one zero-shot prompt, and the authors say the results may not carry to production code. The model checker could not parse more than half of the programs, and sanitizers only see paths that a test exercises. The pattern is still the useful part. Any one check would have given a different answer from the next, and a clean result from one says little about what another would have found.
 
@@ -95,10 +105,14 @@ Loops make it worse in at least one setting. Shukla and colleagues had GPT-4o re
 
 Guardrails are the least measured. Anthropic's documentation for Claude Code's sandbox is candid that it covers shell commands only and "is not a complete isolation boundary". That is a design statement, not a result. A second model as reviewer is in the same place. A 2026 preprint (I could read only its abstract) using planted errors reports that a top-tier cross-model reviewer was "not significantly different in F1 from same-model review", though the two found partly different errors, and earlier ICML work, on benchmark questions and resume screening rather than code, found that a judge inflates the accuracy of models weaker than itself, more so within a provider. A different model should not be treated as independent until someone has checked.
 
-**What I would do with this.**
+## Make the merge decision accountable
 
 Put together, the evidence supports a position. No single check I found makes agent output safe to merge unseen, and that includes the human one. Trust that is earned is the product of several checks that do not share failure modes, so that what one misses another has a chance of catching.
 
-In practice that means a few things. A test suite whose false passes have been looked for, not assumed away. A required status check the agent cannot route around, and a mechanical check wherever the claim allows one. At least one scanner whose alerts someone reads, and a second reader who did not write the prompt. The agent's own account of its work kept out of the evidence. Review staffed to the volume being generated, because the automation-bias research suggests attention suffers under load, and a cap on how many unreviewed iterations an agent may run.
+Look for false passes in the test suite rather than assuming they cannot happen. Require status checks the agent cannot route around, and use a mechanical check wherever a claim allows one. Run at least one scanner and make sure someone reads its alerts. Have a second reader who did not write the prompt. Do not treat the agent's own account as evidence.
 
-The last part is not technical. The 2026 AICD and Human Technology Institute guide for company directors says directors "should not rely on AI-generated summaries or analysis as a substitute for their own review and interrogation of board papers", and that boards remain ultimately accountable for AI outcomes. It quotes the judge in ASIC v Bekier saying that AI assistance is not inherently objectionable, but must not lead to a "quiet normalisation of private reliance" on computer-generated distillations "unregulated by any agreed policy". I have not read the judgment, and the case itself turned on information not reaching the board, not on AI. A board is not an engineering team, but the point carries. Someone has to decide which changes are low-stakes enough to wave through, write that down, and own the result. That is a leadership decision, and it is easy to leave unmade.
+Staff review to match the volume being generated. The automation-bias research suggests attention suffers under load. Cap how many unreviewed iterations an agent may run.
+
+The last part is not technical. The 2026 AICD and Human Technology Institute guide for company directors says directors "should not rely on AI-generated summaries or analysis as a substitute for their own review and interrogation of board papers", and that boards remain ultimately accountable for AI outcomes. It quotes the judge in ASIC v Bekier saying that AI assistance is not inherently objectionable, but must not lead to a "quiet normalisation of private reliance" on computer-generated distillations "unregulated by any agreed policy". I have not read the judgment, and the case itself turned on information not reaching the board, not on AI.
+
+A board is not an engineering team, but the responsibility still needs to be explicit. Decide which changes are low-stakes enough to merge without human review, record that decision and name who owns the result.
