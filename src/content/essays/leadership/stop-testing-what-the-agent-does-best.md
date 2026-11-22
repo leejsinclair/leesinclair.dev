@@ -1,14 +1,14 @@
 ---
 title: "Stop Testing What the Agent Does Best"
 date: 2026-11-21
-dek: "An Anthropic hiring manager has dropped the coding interview from his own hiring and says he has not yet found what replaces it. The timed coding test measures convergent thinking, and agents now do that well. I would put four things in its place: a design conversation, a session working with an agent, a structured look at how someone works with others, and a short check of everyday developer skills. None of them has been validated yet."
+dek: "Replace the timed coding puzzle with an interview that tests how candidates design, use an agent, work with others and handle everyday engineering tasks. Score each part consistently and check whether it predicts performance."
 tldr:
-  summary: "A short coding test with one right answer used to tell you something about a candidate. One Anthropic take-home shows a model matching its best applicants under the time limit, and Canva found AI solved its old interview questions in seconds. What is left to assess is judgement: how someone designs a system, directs and checks an agent, works with a team, and handles the basics the agent still gets wrong. The research on interviews favours structured, job-relevant questions, and I have found no published evidence that any of the new formats predict performance."
+  summary: "Coding agents can solve some timed interview problems as well as strong candidates. Assess the work that remains: design decisions, directing and checking an agent, collaboration and everyday technical skills. Use the same questions and scoring criteria for each candidate, then check whether the scores predict performance. The proposed format has not been validated."
   points:
-    - "Anthropic's performance team says that under the take-home's time limit it could no longer tell the output of its top candidates from that of its most capable model. Humans still won with unlimited time."
-    - "A 2022 re-analysis of selection research puts structured interviews at the top (.42) and work samples well below the figure most people quote (.33, not .54). Unstructured interviews come in at .19."
-    - "'Team fit' assessed in an open conversation can turn into hiring people like yourself. In one study of elite firms, more than half of evaluators rated fit above analytical thinking and communication."
-    - "Models still get basic tooling wrong. On a benchmark of small, real merge conflicts, the best mid-2025 models resolved fewer than 60%, and the authors call that an over-estimate."
+    - "Anthropic's performance team could no longer distinguish its strongest candidates' take-home output from its best model's under the same time limit."
+    - "Selection research favours structured interviews, but has not validated these proposed AI-era exercises."
+    - "Assess collaboration through defined behaviours, not whether an interviewer likes a candidate."
+    - "Keep a short practical task. Models still make mistakes on everyday work such as resolving merge conflicts."
 references:
   - "Rieseberg, F. (2026, October 27). Hunger beats tenure: Advice for junior engineers. felixrieseberg.com."
   - "Orosz, G. (2026, October 30). The Pulse: Anthropic kills the coding interview. The Pragmatic Engineer. Free portion only."
@@ -30,13 +30,17 @@ references:
   - "DORA. (2025). State of AI-assisted Software Development 2025. Google Cloud."
 ---
 
+Stop treating a timed coding puzzle as the centre of an engineering interview. An agent can now solve some of those problems as well as the strongest candidates, so the finished answer tells you less about the person.
+
+Assess the work you need them to do instead: design a solution, direct and check an agent, collaborate with others and handle everyday technical tasks. Score the same behaviours for every candidate. Then compare those scores with performance on the job, because this format is a proposal, not a validated test.
+
 At the end of October, Felix Rieseberg, an engineering manager at Anthropic, opened a blog post with this: "This month, I laid the traditional coding interview to rest. As a hiring manager at Anthropic, I stopped asking candidates to do them."
 
 He was fair to the old test. Defining a problem quickly and finding an elegant solution "was a weak but useful predictor for how successful you'd be on my teams", he wrote, and small challenges in real code "did tell us something meaningful". Then: "That's no longer true. There's no more point in giving you a little React challenge than there is in quizzing people about assembly; Claude is now better at both."
 
 The newsletter headline that followed said Anthropic had killed the coding interview. Rieseberg's post says something narrower. It is about his own hiring, and its last paragraph admits he has not worked out the replacement. For now he is scanning résumés and portfolios "for little prototypes that exhibit taste, empathy, and principled thinking", and he asks anyone with a better idea to tell him.
 
-I have a better idea, or at least a more complete one. First, though, what exactly stopped working?
+His decision raises two questions: what did the old test measure, and what should take its place?
 
 ## What the old test measured
 
@@ -44,7 +48,9 @@ J. P. Guilford, the psychologist who coined the terms convergent and divergent t
 
 The timed coding exercise is a convergent test. The problem is fully specified, there is a right answer or a small family of them, and the candidate is scored on getting there within the hour. That is exactly the kind of work a coding agent is now good at.
 
-Anthropic has the clearest evidence, because it watched its own test fail. Tristan Hume describes a performance-engineering take-home that more than 1,000 candidates had completed since early 2024. Given the same time limit, Claude Opus 4 "outperformed most human applicants", and Opus 4.5 then matched even the strongest. "Humans can still outperform models when given unlimited time," Hume writes, "but under the constraints of the take-home test, we no longer had a way to distinguish between the output of our top candidates and our most capable model."
+Anthropic has the clearest evidence, because it watched its own test fail. Tristan Hume describes a performance-engineering take-home that more than 1,000 candidates had completed since early 2024. Given the same time limit, Claude Opus 4 "outperformed most human applicants", and Opus 4.5 then matched even the strongest.
+
+"Humans can still outperform models when given unlimited time," Hume writes, "but under the constraints of the take-home test, we no longer had a way to distinguish between the output of our top candidates and our most capable model."
 
 Canva reached the same point by a cheaper route. When it ran its Computer Science Fundamentals questions through AI tools, they "produced correct, well-documented solutions in seconds, often without requiring any follow-up prompts or clarification".
 
@@ -58,7 +64,9 @@ The developer surveys say the same thing from the other side. In Stack Overflow'
 
 ## What other companies are doing
 
-Companies have started to move, in different directions. Canva piloted an "AI-Assisted Coding" interview in place of its fundamentals screen for backend and frontend roles, set open problems ("Build a control system for managing aircraft takeoffs and landings at a busy airport") and insists candidates use AI. Meta's careers page now says many of its interviews include an assistant and "Candidates are expected to use this AI assistant as part of the interview." Google has moved partly the other way. Sundar Pichai said last year the company would "introduce at least one round of in-person interviews for people just to make sure the fundamentals are there".
+Companies have started to move in different directions. Canva piloted an "AI-Assisted Coding" interview in place of its fundamentals screen for backend and frontend roles. It sets open problems ("Build a control system for managing aircraft takeoffs and landings at a busy airport") and insists candidates use AI.
+
+Meta's careers page now says many of its interviews include an assistant and "Candidates are expected to use this AI assistant as part of the interview." Google has moved partly the other way. Sundar Pichai said last year the company would "introduce at least one round of in-person interviews for people just to make sure the fundamentals are there".
 
 Anthropic's written guidance for candidates, last updated in July 2025, says take-homes and live interviews are done without AI unless Anthropic says otherwise. Hume's take-home uses that exception, and Rieseberg has dropped the coding round altogether. The guidance mentions neither.
 
@@ -66,15 +74,19 @@ Many companies have not changed. In Karat's 2025-2026 survey of 400 engineering 
 
 ## What the evidence says about interviews
 
-The figures most people quote come from Schmidt and Hunter's 1998 review, which put work samples at .54 and structured interviews at .51 as predictors of job performance. In 2022 Paul Sackett and colleagues re-analysed the same literature and argued that many earlier estimates had been inflated by over-correcting for range restriction. Their headline is that "structured interviews emerged as the top-ranked selection procedure", at .42. Work samples dropped to .33. That figure comes from a 2005 meta-analysis by Roth and colleagues; the old .54 came from a study that pre-dated meta-analysis itself. Unstructured interviews came in at .19.
+The figures most people quote come from Schmidt and Hunter's 1998 review, which put work samples at .54 and structured interviews at .51 as predictors of job performance. In 2022 Paul Sackett and colleagues re-analysed the same literature and argued that many earlier estimates had been inflated by over-correcting for range restriction.
 
-Two things follow. First, hands-on work samples were never as strong a predictor as their reputation, and none of the studies looked at coding tests specifically. Second, the best-supported thing you can do is ask every candidate the same job-relevant questions and score the answers against the same rubric. Sackett's team also warn that structured interviews vary a lot from one study to the next, so a badly built one carries "a higher risk of obtaining a lower value". None of these studies looked at software engineers working with AI. They tell you how to build an assessment, not which tasks to put in it.
+Their headline is that "structured interviews emerged as the top-ranked selection procedure", at .42. Work samples dropped to .33. That figure comes from a 2005 meta-analysis by Roth and colleagues; the old .54 came from a study that pre-dated meta-analysis itself. Unstructured interviews came in at .19.
+
+Two things follow. Hands-on work samples were not as strong a predictor as their reputation suggested, and none of the studies looked at coding tests specifically. The better-supported step is to ask every candidate the same job-relevant questions and score the answers against the same rubric.
+
+Sackett's team also warn that structured interviews vary a lot from one study to the next, so a badly built one carries "a higher risk of obtaining a lower value". None of these studies looked at software engineers working with AI. They tell you how to build an assessment, not which tasks to put in it.
 
 That matters, because the new formats come with very little evidence. Canva says its AI-assisted interviews are "providing strong predictive signals about candidate performance" but publishes no data. Hume says early scores on his newest take-home correlate well with the calibre of candidates' past work, but gives no coefficients. I have not found a published validity figure for any AI-era interview format.
 
-## What I would put in its place
+## Build an interview around judgement
 
-The aim is to stop scoring convergent output and start scoring the judgement around it. There are four parts, and they can sit side by side in one loop.
+Score the judgement around the work rather than the finished answer alone. These four parts can sit side by side in one interview loop.
 
 ### A design conversation
 
@@ -84,7 +96,9 @@ There is a catch here. In a randomised study of 48 computer science students, Be
 
 ### A session with a coding agent
 
-Coding still matters, but what I want to see has changed. What context does the candidate give the agent before asking it for anything? Do they break the problem into pieces it can handle? When the code comes back, how do they decide whether it is right? Canva found its strongest candidates "asked thoughtful clarifying questions", used AI "for well-defined subtasks while maintaining control of the overall solution" and critically reviewed what came back. Candidates with little AI experience often struggled, "not because they couldn't code, but because they lacked the judgment to guide AI effectively". One rule from Canva's interviewer guide is worth copying: when the interviewer asks a question, the candidate gives their own view before asking the AI.
+Coding still matters, but what I want to see has changed. What context does the candidate give the agent before asking it for anything? Do they break the problem into pieces it can handle? When the code comes back, how do they decide whether it is right?
+
+Canva found its strongest candidates "asked thoughtful clarifying questions", used AI "for well-defined subtasks while maintaining control of the overall solution" and critically reviewed what came back. Candidates with little AI experience often struggled, "not because they couldn't code, but because they lacked the judgment to guide AI effectively". One rule from Canva's interviewer guide is worth copying: when the interviewer asks a question, the candidate gives their own view before asking the AI.
 
 Hume names the risk in this format. A candidate steering an agent may end up "understanding what Claude did only after the fact. The dominant strategy might become sitting back and watching." So the task has to need steering. Hand them something where the agent's first answer is plausible and wrong, and watch whether they notice. I wrote about why that checking is the hard part in [What It Takes to Trust Agent Output](/leadership/what-it-takes-to-trust-agent-output).
 
@@ -106,6 +120,6 @@ Models are not reliable at this either. On Merge-Bench, which gave mid-2025 mode
 
 None of this is proven. The four parts are my own answer to Rieseberg's open question. The research I have relied on supports structure and job relevance in general. It does not show that a design conversation, an agent session or a merge exercise predicts how well a software engineer will do. I have found nothing published that shows it, and I have not measured it either.
 
-So if I run this, I want to measure it. That means keeping a separate score for each part and checking those scores a year later against how people actually performed. None of the redesigns I looked at has published that check.
+Keep a separate score for each part and check those scores a year later against how people actually performed. That is how to find out whether the interview is selecting for the work, rather than merely producing plausible scores. None of the redesigns I looked at has published that check.
 
-There is a link here to [The First Rung](/leadership/the-first-rung), where I worried about who will be senior in five years. Rieseberg's post is advice for engineers without status, which usually means people early in their careers, and its title, "Hunger beats tenure", is a hopeful one. An interview that scores judgement instead of puzzle-solving gives a newer engineer with good instincts a fairer chance against someone who has simply done more puzzles. It only does that if we keep the structure and leave the beer test out.
+There is a link here to [The First Rung](/leadership/the-first-rung), where I worried about who will be senior in five years. Rieseberg's post is advice for engineers without status, which usually means people early in their careers, and its title, "Hunger beats tenure", is a hopeful one. A structured interview that scores judgement rather than puzzle practice could give a newer engineer with good instincts a fairer chance. That depends on using the same criteria for everyone and leaving the beer test out.
