@@ -40,7 +40,7 @@ This is the part I keep coming back to. Microsoft's explanation is short: "Our n
 
 The defect affected newer server hardware, which has more cores and so handles more concurrent requests, which means more lock contention. The older generation did not trigger it. The load tests used the older generation.
 
-I can only guess why the labs used older hardware. Older hardware is still in service. What the report shows is that the test environment differed from production in the one dimension that mattered. Microsoft's failover testing also did not find the defect "in isolation", and among its next steps are expanding load testing to "our newest, highest-core hardware and with production-representative traffic, including running regular tests at peak-load limits", and scoping failover tests to cover peak conditions and other changes in flight.
+I can only guess why the labs used older hardware. Older hardware is still in service. What the report shows is that the test environment differed from production in both hardware generation and traffic conditions. Microsoft's failover testing also did not find the defect "in isolation", and among its next steps are expanding load testing to "our newest, highest-core hardware and with production-representative traffic, including running regular tests at peak-load limits", and scoping failover tests to cover peak conditions and other changes in flight.
 
 I would not say any of that was avoidable in advance. The question for a leader is whether anyone has written down how test and production differ, and whether that list is reviewed when the production fleet changes.
 
@@ -86,7 +86,7 @@ Some of this is Microsoft's own list. The rest is my reading, and I have not tes
 
 **Treat a restart as a load event, and rehearse recovery as its own skill.** Servers returned to service were hit again by the traffic waiting for them. Jules Duvivier, also quoted by LeadDev, calls restarting a fleet with waiting traffic "a different problem, and one that is rarely tested". If people retry against your service, work out what happens when it comes back up cold.
 
-**Ask what you can still undo.** A feature flag is a good rollback tool for a change made last week. It is slow to help with a change the whole fleet has carried since July. For anything low in the stack, have an answer ready for how to get it out when the usual switches no longer apply.
+**Ask what you can still undo.** A feature flag is a useful rollback tool when the affected change can still be switched off safely. Microsoft's usual safeguards for recent changes could not quickly revert this particular defect. For anything low in the stack, have an answer ready for how to get it out when the usual switches no longer apply.
 
 **Practise the bad day away from your own system.** LeadDev quotes Corey Nachreiner, whom it describes as being at WatchGuard, suggesting teams rehearse a 24-hour Microsoft 365 outage, including finding other ways to talk to each other: "Most teams discover during the exercise that their runbook lives in SharePoint." I have not checked his affiliation or the basis for the remark, but I recognise the problem. A runbook you cannot open during the failure it describes is a small, common version of this one.
 
@@ -94,6 +94,6 @@ Some of this is Microsoft's own list. The rest is my reading, and I have not tes
 
 This is one incident, described by the company that suffered it. The report is a good one, with a full timeline, named factors and next steps with target quarters, some still marked TBD. It is still Microsoft's account of its own incident. I read a copy of it hosted elsewhere, and a few of the figures in the LeadDev article differ from the final report in small ways.
 
-I also cannot say how much applies to a team with a few dozen servers and one region. The cascade needed a fleet of thousands of capacity units, and the lab difference needed two generations of hardware. A smaller team may have little to spread across.
+I also cannot say how much applies to a team with a few dozen servers and one region. This incident involved thousands of capacity units and a mismatch between lab and production hardware. That scale limits direct comparisons, but it does not show that a smaller fleet cannot suffer a similar cascade.
 
 What I think carries over is the order of events. Nothing broke when the change shipped, or when the routine conditions appeared one at a time. The process was followed, and one of the things that failed was the assumption that the test environment stood in for the real one. Microsoft's own next steps include testing on the newest hardware, at peak, with real traffic, alongside several on limiting the blast radius and speeding recovery. I would start with the same question on my own systems: where is the machine we test on different from the one we run on?
