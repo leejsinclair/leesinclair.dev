@@ -1,0 +1,7 @@
+{
+  "item": "LeadDev, Microsoft's outage started with a fix",
+  "source": "https://leaddev.com/technical-direction/microsofts-outage-started-with-a-fix",
+  "source_access": "Opened and read in full 2026-11-24. Author Chris Stokel-Walker, published 17 November 2026. Links no Microsoft postmortem; the Lamanna statement links to X.",
+  "differences_from_primary": ["'about four months' (Microsoft: more than three months, started July)", "'Twenty hours' (Microsoft's own times give nearly 24 hours of active impact)", "'about 15 hours before' the disruption for the Teams move (Microsoft's final report: ~16 hours)", "calls the 14% capacity loss 'an unrelated issue' (final report: routine maintenance during deployment)"],
+  "expert_advice": "From commentators and vendors, not Microsoft: Panayot Kalinov (test config changes on a few servers first; check health checks cannot remove working servers under high demand), Jules Duvivier of Upsun (restarting a fleet with waiting traffic 'is a different problem, and one that is rarely tested'), Corey Nachreiner of WatchGuard ('Most teams discover during the exercise that their runbook lives in SharePoint'), Dennis Martin of Axians UK (continuity plans for extended disruption). Affiliations not checked."
+}

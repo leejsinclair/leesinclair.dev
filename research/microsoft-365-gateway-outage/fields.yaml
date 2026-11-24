@@ -1,0 +1,12 @@
+categories:
+  - name: cause
+    fields: [defect, origin_change, exposure_period, why_testing_missed_it]
+  - name: trigger
+    fields: [four_factors, timeline_utc, scope_of_80_percent]
+  - name: spread_and_recovery
+    fields: [cascade_mechanism, why_recovery_took_longer, five_step_fix, no_rollback]
+  - name: aftermath
+    fields: [corrective_actions, customer_notification_delay, duration_variants]
+  - name: provenance
+    fields: [source_access, report_version]
+uncertain: [preliminary_report_wording, lamanna_post]
