@@ -399,7 +399,6 @@ Paper abstract (Crossref, verbatim): "Excavations at the mortuary temple of Thut
 - The officiant must be 'a man who is pure and clean' (cols. 24, 26); the text speaks of a 'warrior priest' cutting off the heads with his knife (col. 22).
 - The text claims efficacy for the practitioner, in this life and after death: 'I have seen it come to pass in mine own case' (col. 23); 'a true matter, tested a million times' (col. 26).
 - It calls itself 'a secret book of the House of Life (?), which none see' (col. 29).
-- The British Museum identifies the papyrus as belonging to Nesmin, dated 305 BC by its colophon, from Thebes, with the Apep book at cols. 22-32 [uncertain: from search summary of the museum page].
 - **Headline figures:** 
 - Columns: Book of Overthrowing Apep occupies cols. 22-32 of BM EA 10188 (British Museum, via search summary; Attalus text runs [22] to [32]).
 - Date: 'c. 305 B.C.' (Attalus header); '305 BC (acc. to colophon)' (British Museum, via search summary).
@@ -409,8 +408,6 @@ Paper abstract (Crossref, verbatim): "Excavations at the mortuary temple of Thut
 - Three daily solar stations: 'in the morning, at noon-tide, and also in the evening when Rê sets in the West' (col. 23).
 - 'tested a million times' (col. 26), a formula claim, not a count.
 - Faulkner citation: JEA 23 (1937) 166-185 (Part III); JEA 24 (1938) 41-53 (Part IV; TLA gives 41-52).
-- **Dating and context:** 
-> Hieratic manuscript, BM EA 10188, from Thebes, dated by its colophon to 305 BC (British Museum, seen via search summary). The same roll also holds the Songs of Isis and Nephthys (cols. 1-17) and the Ritual of Bringing in Sokar (cols. 18-21), and the Names of Apep follow at cols. 32-33. Owner named by the museum as Nesmin (Budge's older Archaeologia publication renders the name 'Nesi-Amsu, a scribe in the temple of Amen-Ra at Thebes, about B.C. 305', seen only as a search result title). Purchased by the museum in 1865 (from David Bremner; previous owner Alexander Henry Rhind) [uncertain: that detail was shown for sister item EA 10208,3, not confirmed for EA 10188].
 
 ### Myth and ritual
 
@@ -425,8 +422,6 @@ Paper abstract (Crossref, verbatim): "Excavations at the mortuary temple of Thut
 
 - **Limitations stated:** 
 > Faulkner marks doubtful renderings with '(?)' throughout, including at load-bearing points: 'Thou shalt depict (?) the name of ʿApep', 'bonds (?) of black thread', 'within a box (?)', 'written in pigment (?) on the ground', 'House of Life (?)', and the lacuna 'the urine of a ... woman'. Col. 28 contains a garbled phrase, 'thou shalt do the like of? the first time at the middle of the day'. Attalus notes it reproduces red ink 'in some places', i.e. the rubrics, but the plain-text extraction used here does not show which words were red. Faulkner's footnotes and commentary in JEA were not opened.
-- **Source discrepancies:** 
-> Ink colour: Faulkner consistently has the figure and names drawn 'in green ink'; popular retellings often say ʿApep's name was written in red ink. The red in the papyrus is the scribe's rubric ink (Attalus: 'use of red ink in some places'), which is a separate matter from the ink the rubrics prescribe for the figure [uncertain whether any translator renders the prescribed ink differently; not checked]. Faulkner citation: the search summary of the BM page cited Faulkner JEA 22 (1936) 121-40, which is Part I (Songs of Isis and Nephthys), not the Apep book; the Apep translation is Part III, JEA 23 (1937) 166-185, and Part IV, JEA 24 (1938) 41-53 or 41-52 depending on bibliography. Column ranges: BM lists Apep book as cols. 22-32 and Names of Apep as cols. 32-33; Attalus text ends at col. 32 with 'It is at an end', so the Names of Apep list is not in the Attalus page. Owner name: 'Nesmin' (BM) vs 'Nesi-Amsu' (Budge, older reading of the same name) [uncertain: equivalence inferred from matching date and temple title].
 
 ### Fields with unverified values (those values omitted above)
 
@@ -474,14 +469,6 @@ Paper abstract (Crossref, verbatim): "Excavations at the mortuary temple of Thut
 - Typologically it matches 'Type I' of the burnt New Kingdom fragments from the temple of Thutmose III, but unlike them it is uncut and unburnt: it shows the sheet before cutting, i.e. grid production of curse squares.
 - The tomb card lists it with two Book of the Dead papyri from Tomb 801, which may mean it came from the tomb itself rather than from the embalmers' cache found nearby (where the cache's flower squares MMA 28.3.107-110 are explicitly recorded as found in jar no. 9).
 - Caption grammar needs emendation: verso has 'nty m hmhm.t', recto omits m; the n of nHA-Hr sits on the line above; determinatives after nHA-Hr are uncertain.
-- **Headline figures:** 
-- Size: 'L. 7.5 x W. 6 cm' (Met); 'c. 7.5 x 6 cm' (Hagen et al.).
-- Sections: 'five of which are substantially preserved on the front, each measuring c. 4 x 2 cm' (Hagen et al.). Visual check of the Met photographs: two rows of ruled rectangles, partly lost at the edges, consistent with about five surviving squares per side [uncertain as an independent count].
-- Knives: 'a single knife' per serpent on the MMA sheet, versus three knives on the Thutmose III Type I fragments.
-- Date: 'ca. 721-525 BCE', 'Dynasty 25-26' (Met); 'about XXVIth Dynasty' (tomb card, Gardiner).
-- Excavation: 'MMA excavations, 1921-22'; accession year 1928; Rogers Fund.
-- Comparanda: Thutmose III temple fragments c. 3-4 x 2-3 cm per section, around 40 pieces; the authors say this implies at least 'twenty separate occasions' if each occasion used one of each type.
-- Tomb card: card no. 2308, 'Funerary Papyri'; other papyri MMA 28.3.296 (text says 28.3.196) and 28.3.297.
 - **Dating and context:** 
 > Findspot per Met: Thebes, Deir el-Bahri, west of the Priests' Cemetery, Tomb MMA 801, 'Embalmers' cache', Met excavations 1921-22. Tomb MMA 801 was an 11th Dynasty tomb re-used in the late 22nd Dynasty by the family of the wab-priest of Amun Saiah (four wooden stelae MMA 22.3.31-34). Winlock's published reports (1942) give no precise findspot. The tomb card groups it with two Book of the Dead papyri, so Hagen et al. suggest it may come from the tomb, not the cache, but leave the question open. Dating rests on Gardiner's palaeographic guess (26th Dynasty), which the authors accept with caution; the Met catalogues it more broadly as Dynasty 25-26, ca. 721-525 BCE. Context is funerary/necropolis, not a temple dump, and the sheet was never cut or burnt.
 
@@ -506,10 +493,6 @@ Paper abstract (Crossref, verbatim): "Excavations at the mortuary temple of Thut
 - Inscribed sides: the article's summary of the Thutmose III fragments stresses one-sided inscription; the MMA sheet is inscribed on both sides.
 - Typos within Hagen et al.: once cited as 'P. MMA 28.3.11'; tomb-card papyrus given as 'MMA 28.3.196' in text but '28.3.296' in footnote 44; P. Bremner-Rhind dated '3rd Century BC' in the summary but 'late 4th Century BC' in section 2.
 - Knives: one knife per serpent on the MMA sheet versus three on the Thutmose III Type I fragments.
-- **Verification status:** 
-- Title, date, dynasty, medium, dimensions, findspot, excavation, credit line, gallery: checked against the Met object page and API (opened).
-- Red ink, ruled grid, repeated serpent with downturned head, two-sided layout: checked visually against both Met photographs (opened); fine details (single knife, mirror writing) taken from Hagen et al. and consistent with the images but not independently read.
-- Five preserved squares of c. 4 x 2 cm, caption reading and translation, mirror hieratic, tomb card text, Gardiner dating: checked against Hagen et al. 2026 (opened, peer-reviewed); tomb card itself not seen (quoted second-hand via Niv Allon).
 
 ### Other info
 
@@ -557,8 +540,6 @@ Paper abstract (Crossref, verbatim): "Excavations at the mortuary temple of Thut
 - Darnell and Darnell, p. 200, label to the punishing goddesses: 'It is these goddesses who punish Apep in the Netherworld, who repel the actions of the enemies of Re. They exist in this fashion bearing their knives, so that they might punish Apep in the Netherworld daily.'
 - Darnell and Darnell, p. 200: 'One who knows it on earth is one whose water Terrible of Face will not drink.'
 - Darnell and Darnell, p. 329, Book of Gates Hour 12 Scene 89 description: 'Nine gods ... "The Ennead that Punishes Apep" brandish scepters and knives. The object of their aggression is a serpent, "Apep," who is tied to stakes labeled the "Children of Horus."'
-- **Date and recency:** 
-> Morenz 2004 (July 2004 issue). Kockelmann entry created January 2009, revised versions dated 2017 and 2018. Darnell and Darnell 2018. Material discussed: first named attestation of Apophis in the tomb of Ankhtifi at Moalla, First Intermediate Period (Kockelmann: end of the third millennium BC; Morenz per secondary report: 9th Dynasty) [uncertain for the Morenz dynasty attribution]; Coffin Texts (Middle Kingdom); royal netherworld books (Amduat, Book of Gates) of the New Kingdom; Book of Apophis on a papyrus of the late 4th century BC; Ptolemaic temple texts (Esna; the 120-cubit length).
 
 ### Claims
 

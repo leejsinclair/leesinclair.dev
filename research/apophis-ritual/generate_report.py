@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Merge results/*.json into report.md, skipping uncertain values.
 
-A string value carrying [uncertain] is dropped whole. In a list or dict, only the elements
-carrying [uncertain] are dropped, so a field named in an item's `uncertain` array still shows
-its verified elements. A string field named in that array is dropped.
+A value carrying an [uncertain] marker, including a qualified marker, is dropped.
+In a list or dict, only marked elements are dropped. Fields named in an item's
+`uncertain` array are dropped regardless of their value type.
 """
 
 import json
@@ -39,11 +39,11 @@ def file_slug(name):
 
 
 def tagged(v):
-    return "[uncertain]" in json.dumps(v, ensure_ascii=False)
+    return bool(re.search(r"\[uncertain(?:\]|[:\s][^\]]*\])", json.dumps(v, ensure_ascii=False), re.IGNORECASE))
 
 
 def prune(v):
-    """Drop list elements and dict entries that carry [uncertain]; None if nothing is left."""
+    """Drop marked list elements and dict entries; None if nothing is left."""
     if isinstance(v, list):
         kept = [p for p in (prune(x) for x in v) if p is not None]
         return kept or None
@@ -114,11 +114,13 @@ for n, item in enumerate(items, 1):
         body.append("_No result file._\n")
         continue
     data = json.loads(path.read_text(encoding="utf-8"))
+    uncertain = set(data.get("uncertain") or [])
     summary = " | ".join(
-        f"{label(k)}: {first_sentence(data[k])}" for k in ("evidence_tier", "access_status") if prune(data.get(k))
+        f"{label(k)}: {first_sentence(v)}"
+        for k in ("evidence_tier", "access_status")
+        if k not in uncertain and (v := prune(data.get(k)))
     )
     toc.append(f"{n}. [{name}](#{anchor(name)})" + (f" - {summary}" if summary else ""))
-    uncertain = set(data.get("uncertain") or [])
     defined = set()
     for cat, flist in FIELDS.items():
         lines = []
@@ -126,7 +128,7 @@ for n, item in enumerate(items, 1):
             fname = f["name"]
             defined.add(fname)
             v = find(data, fname, cat)
-            if fname in uncertain and isinstance(v, str):
+            if fname in uncertain:
                 continue
             v = prune(v)
             if skip(v):
@@ -137,7 +139,7 @@ for n, item in enumerate(items, 1):
     extras = [
         f"- **{label(k)}:** {block(fmt(v))}"
         for k, v in ((k, prune(v)) for k, v in data.items())
-        if k not in INTERNAL and k not in NESTED_KEYS and k not in defined and not skip(v)
+        if k not in INTERNAL and k not in NESTED_KEYS and k not in defined and k not in uncertain and not skip(v)
     ]
     if extras:
         body.append("### Other info\n\n" + "\n".join(extras) + "\n")
