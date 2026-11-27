@@ -1,0 +1,53 @@
+fields:
+  source:
+    - name: citation
+      description: "Authors, title, venue or site, date, URL."
+      detail_level: brief
+    - name: evidence_tier
+      description: "Peer-reviewed, scholarly reference work, museum record, press release, secondary press, essay."
+      detail_level: brief
+    - name: access_status
+      description: "Fully read, abstract only, paywalled, search snippet only."
+      detail_level: brief
+    - name: exact_quotes
+      description: "Verbatim quotes from the opened source, with location."
+      detail_level: detailed
+    - name: date_and_recency
+      description: "Publication date, and the date or period of the material discussed."
+      detail_level: brief
+
+  claims:
+    - name: key_claims
+      description: "What the source asserts, in its own terms."
+      detail_level: detailed
+    - name: headline_figures
+      description: "Each number with exact wording, unit and basis (counts, dates, sizes)."
+      detail_level: detailed
+    - name: dating_and_context
+      description: "How the material is dated and where it was found, or 'not applicable'."
+      detail_level: moderate
+
+  myth_and_ritual:
+    - name: what_it_says_about_apophis
+      description: "What the source says about Apophis, the sun's night journey and whether chaos is ever finally defeated."
+      detail_level: moderate
+    - name: ritual_practice
+      description: "What was done (drawing, wax figures, piercing, burning, spells), by whom and where."
+      detail_level: moderate
+    - name: prescribed_vs_attested_frequency
+      description: "How often the ritual was prescribed, against what the evidence shows was done."
+      detail_level: moderate
+    - name: relevance_to_angle
+      description: "How it supports or complicates the reading of chaos held off by routine maintenance rather than a single heroic victory."
+      detail_level: moderate
+
+  caveats:
+    - name: limitations_stated
+      description: "Limits the authors state, quoted where possible."
+      detail_level: moderate
+    - name: source_discrepancies
+      description: "Conflicts with other sources (counts, dates, ink colour, press wording vs paper)."
+      detail_level: moderate
+    - name: verification_status
+      description: "Per claim: checked against a primary source actually opened, or not. [uncertain] if not."
+      detail_level: moderate

@@ -1,0 +1,103 @@
+{
+  "item": "Met papyrus MMA 28.3.113",
+  "citation": "Primary: The Metropolitan Museum of Art, 'Fragment of Magical Papyrus', object no. 28.3.113, Egyptian Art, Rogers Fund 1928, https://www.metmuseum.org/art/collection/search/553477 (also Open Access API record objectID 553477, metadataDate 2026-07-31). Main scholarly description: Fredrik Hagen, Carina Kuehne-Wespi and Myriam Seco Alvarez, 'Cursing Apophis: Text and Material Culture of an Egyptian Execration Ritual', Zeitschrift fuer Aegyptische Sprache und Altertumskunde 153(2) (2026): 214-239, https://doi.org/10.1515/zaes-2026-0004 (open access, CC BY 4.0), section 4 'P. MMA 28.3.113' and Fig. 5. A separate article by Kuehne-Wespi on the mirror hieratic is announced in the same volume (not opened).",
+  "evidence_tier": "Museum record (Met online catalogue and API) plus a peer-reviewed journal article (ZAeS 2026) that publishes and interprets the object.",
+  "access_status": "Met object page fully read in browser (it has only tombstone data: no curatorial description or essay); Met API JSON fully read; both public-domain Met photographs (recto and verso) viewed. ZAeS 2026 article read in full for sections 1-5 including the MMA section, Fig. 5 caption and the frequency passages; later sections (social context, conclusion, bibliography) only partly read. The companion Kuehne-Wespi mirror-hieratic article was not opened.",
+  "exact_quotes": [
+    {
+      "location": "Met object page, Artwork Details",
+      "quote": "Geography: From Egypt, Upper Egypt, Thebes, Deir el-Bahri, west of Priests' Cemetery, Tomb MMA 801, Embalmers' cache, MMA excavations, 1921-22"
+    },
+    {
+      "location": "Met object page, Artwork Details",
+      "quote": "Medium: Papyrus, ink. Dimensions: L. 7.5 x W. 6 cm (2 15/16 x 2 3/8 in.)"
+    },
+    {
+      "location": "Met object page, Artwork Details",
+      "quote": "Period: Third Intermediate Period-Saite Period. Dynasty: Dynasty 25-26. Date: ca. 721-525 BCE"
+    },
+    {
+      "location": "Hagen et al. 2026, p. 222, section 4",
+      "quote": "This is a single sheet of papyrus, c. 7.5 x 6 cm, light yellow-brown in colour, with text and drawings in red ink on both sides. It is divided into rectangular sections, five of which are substantially preserved on the front, each measuring c. 4 x 2 cm."
+    },
+    {
+      "location": "Hagen et al. 2026, p. 222, section 4",
+      "quote": "These contain a drawing of a serpent with its head turned downwards, with a single knife cutting across the main body close to the head, and a caption in hieratic (Fig. 5)."
+    },
+    {
+      "location": "Hagen et al. 2026, p. 222, caption transliteration and translation",
+      "quote": "aApp nty m hmh<m>, n<ty m> nHA-Hr. 'Apophis who is the Roarer, who is the Terrifying-of-face'"
+    },
+    {
+      "location": "Hagen et al. 2026, p. 222, MMA tomb card no. 2308 quoted (via Niv Allon)",
+      "quote": "C. Small fragment of a papyrus with charms against Apophis; written in red. a. Hand (according to Gardiner) seems to be about XXVIth Dynasty."
+    },
+    {
+      "location": "Hagen et al. 2026, p. 223",
+      "quote": "this papyrus represents the original state of the mass-production on a single sheet, which would then have been cut up into individual squares for use in the ritual."
+    },
+    {
+      "location": "Hagen et al. 2026, p. 225, Fig. 5 caption",
+      "quote": "The squares would have been cut along the dividing lines before use. The recto (left) shows a curious mirror-writing, while the verso (right) is written in regular hieratic. The positioning of the squares is the same on both sides, so once cut each square would have image and text on both sides."
+    },
+    {
+      "location": "Hagen et al. 2026, p. 218, section 3",
+      "quote": "they were mass produced on an original sheet of papyrus that contained many such squares drawn up next to each other in a table format, and they were later cut up into individual sections; P. MMA 28.3.113 (Fig. 5) is an example of what such a sheet would have looked like."
+    },
+    {
+      "location": "Hagen et al. 2026, p. 223",
+      "quote": "Hieratic mirror inscriptions are extremely rare, and pMMA 28.3.113 documents the most extensive and the only systematic use of inversed hieratic presently known."
+    },
+    {
+      "location": "Hagen et al. 2026, p. 223",
+      "quote": "relying on palaeography when so little continuous text is involved is perhaps ambitious, but we can see no firm reason for rejecting Gardiner's original suggestion of 26th Dynasty on the tomb card"
+    }
+  ],
+  "date_and_recency": "Met record metadata dated 2026-07-31 (accessed 2026-11-28). ZAeS article published 5 November 2026. Object: Met gives Third Intermediate Period-Saite Period, Dynasty 25-26, ca. 721-525 BCE; tomb card (Gardiner) and Hagen et al. favour 26th Dynasty (664-525 BCE). Excavated 1921-22, accessioned 1928.",
+  "key_claims": [
+    "Met: a 'Fragment of Magical Papyrus' (object name 'Papyrus, magical'), papyrus and ink, 7.5 x 6 cm, from Tomb MMA 801 at Deir el-Bahri, labelled 'Embalmers' cache', found in the Met's 1921-22 excavations; on view in Gallery 130; public domain. The Met page gives no description of the iconography or text.",
+    "Hagen et al.: it is a single sheet, red ink on both sides, ruled into rectangular sections; five sections substantially preserved on the front, each c. 4 x 2 cm.",
+    "Each section holds the same motif: a serpent, head turned downwards, cut by a single knife near the head, with a two-part hieratic caption 'Apophis who is the Roarer, who is the Terrifying-of-face'.",
+    "The squares sit in the same positions on recto and verso, so each cut square would carry image and text on both faces. The recto is drawn and written in mirror image, including horizontally mirrored hieratic signs reading left to right; the verso is regular.",
+    "The scribe made few errors in the mirror writing, which the authors take to suggest practice and perhaps earlier production of similar sheets.",
+    "Typologically it matches 'Type I' of the burnt New Kingdom fragments from the temple of Thutmose III, but unlike them it is uncut and unburnt: it shows the sheet before cutting, i.e. grid production of curse squares.",
+    "The tomb card lists it with two Book of the Dead papyri from Tomb 801, which may mean it came from the tomb itself rather than from the embalmers' cache found nearby (where the cache's flower squares MMA 28.3.107-110 are explicitly recorded as found in jar no. 9).",
+    "Caption grammar needs emendation: verso has 'nty m hmhm.t', recto omits m; the n of nHA-Hr sits on the line above; determinatives after nHA-Hr are uncertain."
+  ],
+  "headline_figures": [
+    "Size: 'L. 7.5 x W. 6 cm' (Met); 'c. 7.5 x 6 cm' (Hagen et al.).",
+    "Sections: 'five of which are substantially preserved on the front, each measuring c. 4 x 2 cm' (Hagen et al.). Visual check of the Met photographs: two rows of ruled rectangles, partly lost at the edges, consistent with about five surviving squares per side [uncertain as an independent count].",
+    "Knives: 'a single knife' per serpent on the MMA sheet, versus three knives on the Thutmose III Type I fragments.",
+    "Date: 'ca. 721-525 BCE', 'Dynasty 25-26' (Met); 'about XXVIth Dynasty' (tomb card, Gardiner).",
+    "Excavation: 'MMA excavations, 1921-22'; accession year 1928; Rogers Fund.",
+    "Comparanda: Thutmose III temple fragments c. 3-4 x 2-3 cm per section, around 40 pieces; the authors say this implies at least 'twenty separate occasions' if each occasion used one of each type.",
+    "Tomb card: card no. 2308, 'Funerary Papyri'; other papyri MMA 28.3.296 (text says 28.3.196) and 28.3.297."
+  ],
+  "dating_and_context": "Findspot per Met: Thebes, Deir el-Bahri, west of the Priests' Cemetery, Tomb MMA 801, 'Embalmers' cache', Met excavations 1921-22. Tomb MMA 801 was an 11th Dynasty tomb re-used in the late 22nd Dynasty by the family of the wab-priest of Amun Saiah (four wooden stelae MMA 22.3.31-34). Winlock's published reports (1942) give no precise findspot. The tomb card groups it with two Book of the Dead papyri, so Hagen et al. suggest it may come from the tomb, not the cache, but leave the question open. Dating rests on Gardiner's palaeographic guess (26th Dynasty), which the authors accept with caution; the Met catalogues it more broadly as Dynasty 25-26, ca. 721-525 BCE. Context is funerary/necropolis, not a temple dump, and the sheet was never cut or burnt.",
+  "what_it_says_about_apophis": "The sheet names Apophis with two epithets, 'the Roarer' (hmhm.ty) and 'the Terrifying-of-face' (nHA-Hr), the same pair that P. Bremner-Rhind 23.12 tells the officiant to drive off while burning Apophis, and that sit side by side in its list of names (32.16-17). The image is Apophis as a serpent with head turned down (a posture of defeat prescribed in Bremner-Rhind) and cut by a knife. The object itself says nothing about the night journey or final victory; the surrounding article places it in the myth of Re's nightly journey and the recurring battle with Apophis.",
+  "ritual_practice": "Production stage of the 'Overthrowing Apophis' curse ritual: a scribe ruled a new papyrus sheet into a grid and repeated the same red-ink serpent-and-caption unit in each cell, on both faces, with mirror writing on the recto so each cut square was two-sided. Per Hagen et al., the squares were then to be cut apart and used individually in the ritual, which in P. Bremner-Rhind involves drawings 'on a new sheet of papyrus' in red ink, alongside red wax figures, being spat on, trampled, stabbed, bound and burnt on a fire. Who made it and where it was used is not recorded; the mirror-writing skill points to a practised scribe [uncertain]. Why an unused sheet ended up in a Deir el-Bahri tomb context is unexplained [uncertain].",
+  "prescribed_vs_attested_frequency": "The MMA sheet gives no direct count of performances, but its format (many identical squares on one sheet) implies batch production for repeated use. Prescribed: P. Bremner-Rhind's heading places the ritual at Karnak 'in the course of each day', and 28.16 says the drawing is to be put on the fire 'every day'; other passages give specific hours (sunrise, midday, sunset, etc.). Attested: the c. 40 burnt Thutmose III fragments imply at least twenty occasions, which the authors say is 'not necessarily enough to confirm it as a daily occurrence' but 'still suggests a certain regularity'. The scribe's practised mirror writing is read as a hint he had made similar sheets before.",
+  "relevance_to_angle": "Strong support for the maintenance reading. The object is a production sheet: the same curse, ruled into a grid and copied over and over, ready to be cut into single-use squares and burnt. That is the material form of a repeated, routine task rather than one decisive act, and it fits texts that prescribe the ritual daily. Complication: it is not a 'complete sheet'. It is a 7.5 x 6 cm piece with about five squares preserved per side and broken edges; the Met calls it a fragment. It is also unused, so it shows preparation, not performance, and its date (c. 7th-6th century BCE) is centuries later than the Thutmose III fragments.",
+  "limitations_stated": "Hagen et al.: 'There is no information about the precise find-spot in the published archaeological reports'; Gardiner's dating means 'any attempt at palaeographical dating must be rather uncertain' and relying on palaeography 'is perhaps ambitious'; the find context relationship to the embalmers' cache is 'difficult to be more specific' about 'in the absence of a detailed study of the tomb'; the determinatives after nHA-Hr are chosen 'with no great confidence'; the caption reading requires emendation. The Met page carries a generic notice that information may be outdated.",
+  "source_discrepancies": [
+    "Completeness: the brief describes it as 'a complete sheet', and Hagen et al. call it 'a single sheet' showing 'the original state of the mass-production', but the Met titles it 'Fragment of Magical Papyrus', the tomb card calls it a 'Small fragment', and photographs show broken edges with only about five squares preserved per side. It is an uncut portion of a production sheet, not a demonstrably complete one.",
+    "Find context: Met says 'Embalmers' cache'; Hagen et al. spell it 'Embalmer's cache' and argue the tomb card suggests it may have come from Tomb 801 itself rather than the cache.",
+    "Date: Met 'Dynasty 25-26, ca. 721-525 BCE' (API objectBeginDate/objectEndDate both -712, inconsistent with the display date); tomb card and Hagen et al. favour 26th Dynasty.",
+    "Ink: Met says only 'Papyrus, ink'; tomb card and article say red; photographs show red-orange ink.",
+    "Inscribed sides: the article's summary of the Thutmose III fragments stresses one-sided inscription; the MMA sheet is inscribed on both sides.",
+    "Typos within Hagen et al.: once cited as 'P. MMA 28.3.11'; tomb-card papyrus given as 'MMA 28.3.196' in text but '28.3.296' in footnote 44; P. Bremner-Rhind dated '3rd Century BC' in the summary but 'late 4th Century BC' in section 2.",
+    "Knives: one knife per serpent on the MMA sheet versus three on the Thutmose III Type I fragments."
+  ],
+  "verification_status": [
+    "Title, date, dynasty, medium, dimensions, findspot, excavation, credit line, gallery: checked against the Met object page and API (opened).",
+    "Red ink, ruled grid, repeated serpent with downturned head, two-sided layout: checked visually against both Met photographs (opened); fine details (single knife, mirror writing) taken from Hagen et al. and consistent with the images but not independently read.",
+    "Five preserved squares of c. 4 x 2 cm, caption reading and translation, mirror hieratic, tomb card text, Gardiner dating: checked against Hagen et al. 2026 (opened, peer-reviewed); tomb card itself not seen (quoted second-hand via Niv Allon).",
+    "P. Bremner-Rhind prescriptions ('in the course of each day', 'every day'): checked only as quoted in Hagen et al., not against Faulkner's edition [uncertain].",
+    "Companion Kuehne-Wespi article on mirror hieratic: not opened [uncertain]."
+  ],
+  "uncertain": [
+    "headline_figures",
+    "ritual_practice",
+    "verification_status"
+  ]
+}

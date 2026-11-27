@@ -1,0 +1,110 @@
+{
+  "item": "Hagen 2024 hieratic material and the Thutmose III temple mission",
+  "citation": "Primary target: Fredrik Norland Hagen, 'The hieratic material from the Temple of Millions of Years of Thutmose III: A preliminary report', chapter 5 in Myriam Seco Álvarez and Javier Martínez Babón (coordinators), A Place of Worship and Burial: The Site of the Temple of Millions of Years of Thutmose III in Thebes (Collection Shadum; Sevilla: Editorial Universidad de Sevilla), pp. 171-203. ISBN 978-84-472-2537-8. Imprint and copyright page say 2023 (Depósito Legal SE 2302-2023); the KU Copenhagen research portal lists it as 2024. KU record: https://researchprofiles.ku.dk/da/publications/the-hieratic-material-from-the-temple-of-a-million-years-of-thutm/ . Supporting sources actually opened: (a) publisher's preview PDF of the same volume, https://editorial.us.es/es/muestra/720573?f=pdf (front matter, table of contents and chapter 1 by Seco Álvarez and Martínez Babón, 'The Temple: Archaeological Studies'; Hagen's chapter is NOT in the preview); (b) Seco Álvarez and Martínez Babón, 'The Temple of Millions of Years of the Pharaoh Thutmose III (Luxor): An Update on the Research', Études et Travaux 33 (2020), 179-220, DOI 10.12775/EtudTrav.33.011, https://apcz.umk.pl/ET/article/download/EtudTrav.33.011/28533/77466 ; (c) Esther Pons Mellado, review of the volume, Espacio, Tiempo y Forma Serie I 18 (2025), 1-4, https://revistas.uned.es/index.php/ETFI/article/download/45151/32841/140570 ; (d) Carlsberg Foundation grant page CF21-0189 'Anatomy of an Egyptian Temple' (Hagen, 2021), https://carlsbergfondet.dk/en/what-we-have-funded/cf21-0189 ; (e) the mission's own site, Thutmosis III Temple Project, https://thutmosisiiitempleproject.org/es_ES/ (home, El Templo, El Proyecto, and the 4 Oct 2026 news item on the 19th campaign).",
+  "evidence_tier": "Hagen 2024: peer-reviewed book chapter (KU portal flags it 'peer review') by the mission's text specialist; preliminary report. Seco Álvarez and Martínez Babón 2020 and the 2023 volume chapter 1: excavation directors' scholarly reports (ET 2020 is a peer-reviewed journal). Pons Mellado 2025: scholarly book review. Carlsberg page: funder project description written by the applicant. Mission website: project outreach pages, not scholarly.",
+  "access_status": "Hagen 2024 chapter itself: abstract only (full abstract read on the KU portal; the chapter text is not in the publisher preview and no open copy was found). Chapter 1 of the same volume: fully read via the publisher preview PDF (some passages are font-garbled in extraction and were decoded; wording matches the ET 2020 article). ET 2020 article: fully read (open access PDF). Pons Mellado review: fully read (PDF, Spanish). Carlsberg page: fully read. Mission website: home, temple, project and 19th-campaign pages read via fetch summaries; quotes from these pages are as returned by the fetch tool, not checked character by character.",
+  "exact_quotes": [
+    {
+      "location": "Hagen 2024, abstract (KU research portal record)",
+      "quote": "The chapter provides an overview of the ostraca and papyrus fragments from the Temple of a Million Years of Thutmose III. Most of these come from the rubbish dumps outside the enclosure wall, but a small number where also found inside the temple itself. The material includes both administrative and literary texts. The administrative texts relate to the building and running of the temple, including offering accounts and the celebration of various festivals. These papyrus fragments maincome from the day-book of the temple, and so constitute the only surviving temple archive of the New Kingdom. The literary texts on ostraca include many of the classics that are known to have been copied during scribal training (Kemit, The Instruction of Amenemhat I, The Instruction of Khety, etc.), while several of the papyrus fragments are from of cultic or ritual rolls, occasionally in several different versions (e.g. The Opening of the Mouth in both a regular hieratic and an illustrated version).",
+      "note": "Typos ('where', 'maincome', 'from of') are in the original record."
+    },
+    {
+      "location": "A Place of Worship and Burial, table of contents, p. 9",
+      "quote": "Chapter 5 THE HIERATIC MATERIAL FROM THE TEMPLE OF MILLIONS OF YEARS OF THUTMOSE III: A PRELIMINARY REPORT ... 171 Fredrik Hagen 5.1. Introduction 172 5.2. Archaeological Context 173 5.3. Administrative Texts 175 5.4. Literary Texts 189 5.5. Research Perspectives 196 References 199"
+    },
+    {
+      "location": "Seco Álvarez and Martínez Babón, ET 33 (2020), p. 179",
+      "quote": "The Henket-ankh temple (ḥwt Ḥnkt-ʿnḫ-Mn-ḫpr-Rʿ, ‘the temple which endows (Menkheperre)| with life’) is located in a wealthy enclave of ancient western Thebes, between the hills of the Asasif and Khokha, where the cultivation area met the desert. It was built over a necropolis dated to the Middle Kingdom."
+    },
+    {
+      "location": "ET 33 (2020), p. 194 (same wording in the 2023 volume, ch. 1, p. 50)",
+      "quote": "Discarded pottery, stoppers, broken stelae and small papyri fragments from the temple were thrown outside the northern enclosure wall, when the temple was in use, so that a dump grew there to a size of approximately 750m², reaching almost 3m deep in some parts. However, the topmost layers of the dump contain some material discarded during earlier excavations at the site."
+    },
+    {
+      "location": "ET 33 (2020), p. 209 (near-identical wording in the 2023 volume, ch. 1, p. 65)",
+      "quote": "Almost all the papyri currently inventoried originate from the same area of the site, namely the rubbish dumps to the north of the northern enclosure wall, which were formed mostly in the times when the temple was in use, but also during earlier archaeological works at the site."
+    },
+    {
+      "location": "ET 33 (2020), p. 209",
+      "quote": "Administrative documents are most numerous. They constitute part of the archive of the temple from the times of Eighteenth Dynasty. This collection includes dated entries with lists of commodities (different types of bread and cakes, honey, fruit, dates, milk, beer, wine, textiles), often in relatively small quantities. The documents probably represent daily offerings made in the temple: there are numerous fragments of headings in red ink."
+    },
+    {
+      "location": "ET 33 (2020), p. 209",
+      "quote": "There are also fragments mentioning different festivals, including a coronation festival, the well-known Nehebkau-festival (of the last day of the last month of the akhet-season), and an otherwise unattested ‘festival of Amun during Khoiak’."
+    },
+    {
+      "location": "ET 33 (2020), p. 211 (same content in the 2023 volume, ch. 1, pp. 65 and 68)",
+      "quote": "Mixed in with these administrative fragments, which essentially formed part of the daybook or journal of the temple, are some small fragments of other categories of manuscripts. ... There are some fragments of an illustrated roll, different from the two described above, with drawings of snakes cut with knives in red ink, often with Hieratic captions (also in red). One mentions msw bdšt, ‘children of the Weary One (or The Rebel?)’, enemies of the sun-god, and another mentions Apophis."
+    },
+    {
+      "location": "ET 33 (2020), p. 209, n. 69",
+      "quote": "F. Hagen is responsible for studying this material. A publication is in preparation."
+    },
+    {
+      "location": "A Place of Worship and Burial, ch. 1, p. 25",
+      "quote": "After Ricke, research at the site was suspended for several decades. Sand once again covered the temple ruins, and the complex was split into two by a road (Fig. 2). What had been one of the most sacred temples of ancient Thebes, serviced by a special priesthood, quickly fell into neglect"
+    },
+    {
+      "location": "A Place of Worship and Burial, ch. 1, p. 76 (conclusions)",
+      "quote": "There are still sections of the temple to be excavated, which will likely contribute to a better understanding of a temple that was built in the time of Hatshepsut and Thutmose III and remained active until the reign of Ramesses II."
+    },
+    {
+      "location": "ET 33 (2020), p. 216 (acknowledgements)",
+      "quote": "The project was initiated in 2008, as an active collaboration between the Ministry of Antiquities, the Academy of Fine Arts Santa Isabel de Hungría of Sevilla and the University of Seville."
+    },
+    {
+      "location": "Pons Mellado review, ETF Serie I 18 (2025), p. 2 (Spanish)",
+      "quote": "El estudio de Fredrik Hagen de la Universidad de Copenhagen, concentra un interesante material hierático tanto en ostraca como en fragmentos de papiros que se han recuperado en una especie de vertedero tanto dentro como fuera del templo ... Llama la atención que muchos de estos textos han sufrido la acción del fuego. Resulta muy interesante la alusión final de este autor a dos publicaciones posteriores a que este libro entrara en imprenta.",
+      "english_gloss": "Fredrik Hagen's study (University of Copenhagen) gathers interesting hieratic material on ostraca and papyrus fragments recovered from a kind of dump both inside and outside the temple ... It is striking that many of these texts have been affected by fire. The author's closing reference to two publications that appeared after the book went to press is very interesting."
+    },
+    {
+      "location": "Carlsberg Foundation CF21-0189 project description",
+      "quote": "These texts constitute the only surviving temple archive from the period known as the New Kingdom (c. 1500-1000 BC), and are of immense importance as historical sources."
+    },
+    {
+      "location": "Carlsberg Foundation CF21-0189 project description",
+      "quote": "It allows us, for the first time, to compare the idealised world, portrayed on the walls of contemporary temples, with actual documents of practice."
+    },
+    {
+      "location": "Mission website, news item 4 Oct 2026, 'Arranca en Lúxor la 19ª campaña en el templo de Tutmosis III' (Spanish, via fetch summary)",
+      "quote": "el área del gran basurero del recinto",
+      "english_gloss": "the area of the enclosure's great rubbish dump (named as one of three sectors to be worked in the 19th campaign; Fredrik Hagen is listed among specialists joining in the coming weeks)."
+    }
+  ],
+  "date_and_recency": "Volume printed 2023 (imprint, ISBN 978-84-472-2537-8); KU portal dates Hagen's chapter 2024; reviewed 2025. Material discussed: Eighteenth Dynasty, reign of Thutmose III (the review gives 1490-1436 BC) with temple activity continuing to Ramesses II; the dumps formed while the temple was in use, with top layers disturbed by earlier excavations (Daressy, Weigall 1905-06, Ricke 1934-37). Mission active since 2008; 12 campaigns covered by the volume; 19th campaign under way from October 2026.",
+  "key_claims": [
+    "The Temple of Millions of Years of Thutmose III (Egyptian Henket-ankh, 'the temple which endows Menkheperre with life') stands on the Theban west bank between the Asasif and el-Khokha hills, on three levels from an eastern pylon to western chapels, built over a Middle Kingdom necropolis (Seco Álvarez and Martínez Babón 2020; 2023 ch. 1).",
+    "It was built in the time of Hatshepsut and Thutmose III and remained active until the reign of Ramesses II (2023 ch. 1 conclusions); after Ricke's 1930s work it was abandoned to sand and split by a modern road.",
+    "A Spanish-Egyptian mission led by Myriam Seco Álvarez (University of Seville) has worked there since 2008; the 2023 volume summarises twelve campaigns. The mission's site now names Dr Abd el-Hady Mahmoud as new co-director and reports a 19th campaign in 2026.",
+    "Material from the working temple was thrown outside the northern enclosure wall, forming a dump of about 750 m², nearly 3 m deep in places; its top layers include spoil from earlier excavations.",
+    "Almost all inventoried papyri come from these rubbish dumps north of the northern enclosure wall; a few administrative fragments came from the workshop area in the north-western corner (inv. no. 21021). Hagen's abstract: most ostraca and papyri come from dumps outside the enclosure wall, a small number from inside the temple.",
+    "The administrative papyri are mostly from the temple's day-book (journal) and, per Hagen, 'constitute the only surviving temple archive of the New Kingdom'. They record dated entries of commodities (breads, cakes, honey, fruit, dates, milk, beer, wine, textiles, fowl, cattle, incense), probably daily offerings, plus festivals (a coronation festival, the Nehebkau festival, an otherwise unattested 'festival of Amun during Khoiak').",
+    "Mixed in with the day-book fragments are ritual or cultic rolls, sometimes in more than one version (e.g. Opening of the Mouth in plain hieratic and illustrated forms), and an illustrated roll with drawings of snakes cut with knives in red ink with red hieratic captions, one naming the 'children of the Weary One (or The Rebel?)', enemies of the sun-god, and another naming Apophis.",
+    "Ostraca (mostly ceramic, some limestone) include administrative texts (rations, stonemasons, wab-priests, letters) and school texts such as Kemit, the Instruction of Amenemhat I and the Instruction of Khety; a limestone ostracon (inv. 15670) lists wab-priests by phyle.",
+    "Per the Pons Mellado review, many of Hagen's texts show fire damage, and his chapter ends by citing two publications that appeared after the book went to press.",
+    "Hagen's Carlsberg-funded monograph project (2021) frames the archive as a chance to compare the idealised temple of the wall reliefs with 'actual documents of practice'."
+  ],
+  "headline_figures": [
+    "Dump: 'approximately 750m²' (ET 2020) / '750 square meters' (2023 ch. 1), 'reaching almost 3m deep in some parts'.",
+    "Hagen chapter: pp. 171-203, '32' pages (KU portal); volume 479 pp. (review).",
+    "Fieldwork: project 'initiated in 2008'; 'twelve excavation campaigns' covered by the volume; '19ª campaña' in 2026 lasting 'dos meses y medio' (two and a half months) per the mission site.",
+    "Papyrus processing: carried out 'during fieldwork seasons in Egypt since 2016' (Carlsberg page).",
+    "Carlsberg Monograph Fellowship 2021: DKK 859,301.",
+    "Relief finds (ET 2020 conclusions): '9257 sandstone and 2705 limestone fragments'; '298 stelae and their fragments'.",
+    "Temple elevation difference pylon to sanctuary: 'about 7.3m'.",
+    "Reign of Thutmose III as given in the review: 1490-1436 BC.",
+    "No count of papyrus fragments, of Apophis fragments, or of performances is given in any source opened here."
+  ],
+  "dating_and_context": "Context: the large rubbish dump outside (north of) the northern enclosure wall, formed mostly while the temple was in use (Eighteenth Dynasty), with upper layers disturbed by earlier excavators. The administrative papyri are described as part of the Eighteenth Dynasty temple archive; the directors' dating of the dump draws on pottery analysis (Bader and Seco Álvarez 2016, cited for the dump). Neither the 2020 article nor the 2023 chapter 1 gives a separate date for the snake-drawing roll beyond its being mixed in with the day-book fragments; how Hagen dates the Apophis fragments in his own chapter could not be checked.",
+  "what_it_says_about_apophis": "The directors' reports (2020, 2023) record fragments of an illustrated roll with snakes drawn in red ink and cut with knives, with red hieratic captions; one caption mentions 'msw bdšt', 'children of the Weary One (or The Rebel?)', enemies of the sun-god, and another mentions Apophis. None of the opened sources discuss the myth itself (the night journey, or whether Apophis is ever finally destroyed). Hagen's 2024 abstract does not mention Apophis by name; it speaks only of 'cultic or ritual rolls'.",
+  "ritual_practice": "Attested in these sources: drawings of snakes in red ink with knives cutting them, on an illustrated papyrus roll, found among discarded temple administrative papyri in the dump; many texts in Hagen's material show fire damage (review). Whether the charring is ritual burning or later damage is not stated in the sources opened. Other cultic rolls include the Opening of the Mouth in two versions. The administrative day-book records daily offerings and festivals, i.e. routine temple service run by wab-priests organised in phyles.",
+  "prescribed_vs_attested_frequency": "None of these sources states how often the Apophis ritual was prescribed or performed. What they do attest is the routine of the temple: a day-book of dated entries recording probably daily offerings, and priests rotating in phyles. Any frequency claim for the Apophis rite must come from the 2026 ZÄS paper or from the Ptolemaic Bremner-Rhind manual, not from these sources.",
+  "relevance_to_angle": "Strongly supportive as context. The Apophis drawings were thrown out with the temple's daily paperwork: offering lists, festival entries, ration ostraca and school exercises. That places the ritual inside the ordinary administration of a working temple rather than as a one-off event. Hagen's Carlsberg framing (comparing the idealised world of temple walls with 'documents of practice') fits the essay's prescribed-versus-attested theme. Caution: the sources here describe 'some fragments' and give no counts or performance estimates, so the 'repeated' claim depends on the ZÄS 2026 paper.",
+  "limitations_stated": "Hagen's chapter is titled 'A preliminary report'. The directors note that 'the topmost layers of the dump contain some material discarded during earlier excavations at the site'; that the north-western workshop area 'is currently under excavation and the results of this investigation will be published in the future'; that 'Most of the hundreds of statue fragments still await study'; and that 'There are still sections of the temple to be excavated'. ET 2020 n. 69: 'A publication is in preparation.' The captions gloss 'bdšt' as 'the Weary One (or The Rebel?)', flagging the reading as uncertain.",
+  "source_discrepancies": "Publication year: the volume's imprint says 2023 (and the review gives 2023), but the KU portal and the research outline say 2024. Chapter title: KU portal has 'Temple of a Million Years', the book's contents page has 'Temple of Millions of Years'. Find-spot: Hagen's abstract and the directors say most material came from dumps outside the enclosure wall with a few pieces inside the temple; the review loosely says 'a kind of dump both inside and outside the temple'. The review also mis-titles the book 'A Place of Workshop and Burial'. Director's name appears as 'Myriam Alvarez-Seco' in Hagen 2018 (per the sibling result) versus Myriam Seco Álvarez here. Mission website does not state the 2008 start year on the pages read; the 2008 date comes from the directors' publications. None of these sources gives fragment counts, so the 40 vs 42 question cannot be tested here.",
+  "verification_status": "Checked against opened sources: Hagen 2024 bibliographic details and abstract (KU portal, read directly); temple name, location, phases, dump size and depth, papyri find-spot, day-book description, snake drawings and Apophis caption, project start 2008, twelve campaigns (ET 2020 full text and 2023 volume ch. 1 via publisher preview); fire damage and closing reference to later publications in Hagen's chapter (Pons Mellado review, read; second-hand for the chapter's content) [uncertain as to Hagen's own wording]; Carlsberg quotes (read). Not checked: the body of Hagen's 2024 chapter (counts, dating, discussion of the Apophis roll, the 'two later publications') [uncertain]; mission website quotes come from fetch-tool summaries [uncertain as to exact wording]; co-director and 19th-campaign details from the mission site [uncertain].",
+  "uncertain": [
+    "verification_status"
+  ]
+}
