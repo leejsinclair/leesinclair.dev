@@ -1,0 +1,48 @@
+topic: "The Apophis ritual: charred papyrus fragments from Thebes as evidence that Egyptian priests repeatedly cursed the chaos serpent, and what a myth of chaos held off by routine says about resilience"
+
+angle: >
+  A myths essay. Start from the November 2026 report of about 40 charred papyrus fragments from
+  the rubbish dumps of the Temple of Millions of Years of Thutmose III at Thebes (Hagen,
+  Kühne-Wespi and Seco Álvarez, ZÄS 2026), the earliest physical evidence that the ritual against
+  Apophis was performed. Explain the myth (Ra's night journey, Apophis attacked but never finally
+  destroyed), the known manual (Papyrus Bremner-Rhind) and what it prescribes about frequency,
+  execration ritual generally, and maat against isfet. Angle: chaos held off by routine work
+  repeated, with no single hero; resilience as maintenance, linking to
+  /leadership/myth-of-the-heroic-developer. Be exact about what is prescribed against what is
+  attested.
+
+caveats_to_test:
+  - "The paper's full text may be inaccessible. Open it, its abstract, or an author-hosted copy; mark figures from secondary coverage [uncertain]."
+  - "Fragment totals (40 vs 12+14+16=42) and the 'at least about 20 performances' inference must come from the paper itself."
+  - "Prescribed frequency (daily, set hours, storms) is from the Ptolemaic manual; do not project it onto the New Kingdom evidence without saying so."
+  - "Ink colour (Faulkner: green; fragments: red) and the Bremner-Rhind date (305/310 BC, late 4th or 3rd century BC) conflict across sources."
+  - "Press wording ('must have been widespread', 'widely used outside temples') may go beyond the paper."
+  - "Apophis was not called a god (Morenz 2004): check."
+  - "Open every primary source; mark access_status honestly."
+
+items:
+  - name: "Copenhagen release and press coverage"
+    note: "phys.org 23 Nov 2026 ('Discovery of curse ritual in trash dump surprises Egyptologist'), the University of Copenhagen original if findable (ku.dk news), and archaeologymag.com 24 Nov 2026. Exact quotes from Fredrik Hagen, what is claimed, and which wording goes beyond the paper."
+  - name: "Hagen Kuhne-Wespi Seco Alvarez 2026 Cursing Apophis"
+    note: "ZÄS 153(2) 214-239, doi 10.1515/zaes-2026-0004. Try doi.org, degruyterbrill.com abstract, the KU research portal record (researchprofiles.ku.dk), any open-access PDF. Fragment counts by motif, grid lines, piercing and charring, dating method (pottery in the dump layer?), minimum number of performances and the authors' hedge, the decree for Amenhotep son of Hapu, the Bremner-Rhind date they give, and their view of use outside temples."
+  - name: "Hagen 2018 Et nyt tempelarkiv fra Det Nye Rige"
+    note: "Papyrus 38(1), Dansk Ægyptologisk Selskab, daes.dk/wp-content/uploads/2018/08/Papyrus18_1.pdf. Find context (rubbish heap outside the north wall), mission history (Seco Álvarez since 2008), first report of the Apophis fragments, the 'few archaeological traces' caveat, and the earliest copy of the Daily Temple Ritual. Quote Danish with English gloss."
+  - name: "Hagen 2024 hieratic material and the Thutmose III temple mission"
+    note: "Hagen 2024 preliminary report in Seco Álvarez and Martínez Babón (eds.), A Place of Worship and Burial (Universidad de Sevilla), and the mission's own pages (Proyecto Templo de Millones de Años de Tutmosis III). What the temple was, the dumps, the day-book archive."
+  - name: "Papyrus Bremner-Rhind and Faulkner's translation"
+    note: "British Museum EA 10188 collection page (date, contents, owner Nesmin) and Faulkner, JEA 23 (1937) and 24 (1938), via attalus.org/egypt/apep.html. Rubrics on daily performance in the temple of Amun-Ra at Karnak, set hours, storms, how the figure is drawn and in what ink, what is done to it (spitting, trampling, spearing, burning). Exact wording."
+  - name: "Met papyrus MMA 28.3.113"
+    note: "metmuseum.org/art/collection/search/553477. Description, date, findspot, the repeated serpent squares and captions. Relevance: a complete sheet showing grid production."
+  - name: "Apophis in Egyptian myth"
+    note: "Morenz 2004, 'Apophis: On the Origin, Name, and Nature of an Ancient Egyptian Anti-God', JNES 63(3) 201-205 (abstract at least); plus an open scholarly source on Apophis in the Amduat or Book of Gates (e.g. UCLA Encyclopedia of Egyptology, Theban Mapping Project, a museum page). What Apophis is, first attestation, the nightly attack on the sun barque, who defends it (Seth, Isis), and whether Apophis is ever finally destroyed."
+  - name: "Execration ritual UEE"
+    note: "Muhlestein, 'Execration Ritual', UCLA Encyclopedia of Egyptology (2008), escholarship.org/uc/item/3f6268zf, and his 'Violence' entry (2015). Definition, figurines and texts, Mirgissa, breaking and burning, purpose, relation to the Apophis rites. Exact quotes."
+  - name: "Maat isfet and daily temple ritual"
+    note: "An open scholarly source on maat and isfet (UEE or equivalent) and on the daily temple ritual (UEE 'Daily Temple Ritual' or similar). How order was thought to be kept by repeated ritual performed for the king; whether chaos could ever be finally defeated."
+  - name: "Russell and Vinsel Hail the Maintainers"
+    note: "Aeon, 7 April 2016, aeon.co/essays/innovation-is-overvalued-maintenance-often-matters-more. Their argument about innovation and maintenance, key quotes, and where the analogy to Egyptian ritual would break."
+
+execution:
+  batch_size: 5
+  items_per_agent: 1
+  output_dir: ./results
