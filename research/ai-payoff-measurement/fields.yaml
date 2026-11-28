@@ -1,0 +1,46 @@
+fields:
+  basic_info:
+  - name: source
+    description: title, publisher, author, date, URL actually opened
+    detail_level: brief
+  - name: data_type
+    description: telemetry / survey / RCT / ethnography / model
+    detail_level: brief
+  - name: sample_and_method
+    description: sample size, who, fieldwork dates, how recruited
+    detail_level: moderate
+  - name: vendor_interest
+    description: does the publisher sell AI or measurement tooling
+    detail_level: brief
+  findings:
+  - name: headline_figures
+    description: exact figures with the sentence they appear in, as printed in the
+      primary source
+    detail_level: detailed
+  - name: metric_layer
+    description: 'which layer is measured: input/usage, activity/output, delivery,
+      quality, financial outcome'
+    detail_level: moderate
+  - name: respondent_role_split
+    description: figures split by IC / manager / director / executive, if given
+    detail_level: moderate
+  - name: workload_signal
+    description: hours, time correcting AI, pressure to use AI, burnout
+    detail_level: moderate
+  - name: definition_of_value_offered
+    description: does the source say what paying off should mean, and how
+    detail_level: detailed
+  - name: removal_counterfactual
+    description: any evidence on what happens without the tools
+    detail_level: moderate
+  - name: key_quotes
+    description: up to two short exact quotes usable in an essay
+    detail_level: moderate
+  caveats:
+  - name: caveats
+    description: self-report, sample, causation, figures that conflict across write-ups
+    detail_level: moderate
+  - name: access
+    description: primary opened in full / partly / not opened; what was not verified
+    detail_level: brief
+uncertain: []

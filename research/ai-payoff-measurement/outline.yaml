@@ -1,0 +1,38 @@
+topic: Would anyone notice if we stopped using AI tools? How engineering leaders measure whether AI tools pay off (activity vs business outcomes, the seniority gap in doubt, workload vs productivity)
+items:
+  - name: LeadDev Berlin 2026 survey (Nathen Harvey, "Engineering leaders can't prove AI is paying off", 26 Nov 2026)
+    note: the source behind the idea; 165 attendees, 9-10 Nov 2026
+  - name: DORA "ROI of AI-assisted Software Development" (2026)
+    note: DORA's value chain from capabilities to financial outcomes; J-curve, verification and instability tax
+  - name: DORA "Finding balance in the era of tokenmaxxing" (Evan Conaway, 2 Jun 2026)
+    note: token leaderboards as a vanity input metric; Meta/Amazon/Shopify cases if the post names them
+  - name: METR early-2025 RCT (arXiv 2507.09089) and uplift update (24 Feb 2026)
+    note: perception vs measured speed; developers withholding tasks they would not do without AI (removal counterfactual)
+  - name: Atlassian State of Developer Experience 2026
+    note: AI use treated as a productivity signal; leaders with metrics separating gains from activity
+  - name: Harness State of Engineering Excellence 2026 (13 May 2026)
+    note: managers vs developers on measurement concerns; costs missing from metrics
+  - name: LeadDev / Multitudes, "The struggle to prove AI productivity gains" (25 Mar 2026)
+    note: OKRs for AI impact; board pressure
+  - name: Ranganathan and Ye, "AI Doesn't Reduce Work, It Intensifies It" (HBR, Feb 2026)
+    note: workload anchor; ethnography
+  - name: Faros AI Engineering Report 2026 and CircleCI 2026 State of Software Delivery
+    note: activity up, organisational delivery flat (telemetry, vendor)
+  - name: DORA 2025 State of AI-assisted Software Development
+    note: from Lee's Gemini notebook; AI as amplifier
+  - name: GitClear AI code quality research 2025
+    note: from Lee's Gemini notebook; duplication and churn as hidden costs
+  - name: Temporal State of Development 2026
+    note: counterpoint, senior people more confident than engineers
+execution:
+  batch_size: 4
+  items_per_agent: 3
+  output_dir: ./results
+defaults_taken:
+  - time range: 2025 to 2026
+  - no existing field file
+  - item and field confirmation skipped (non-interactive /essay-write run)
+  - Lee's Gemini notebook (38 sources) used only to pick primary sources to open; nothing cited from the notebook itself
+verification_notes:
+  - DORA ROI sample calculator ($11,000,000 headcount reinvestment capacity of $11,646,000 total first-year value) checked by the main session against the downloaded PDF text (appendix, p. 58), so those two figures are used in the essay although the agent's headline_figures field is marked uncertain for other reasons (market figures).
+  - Lee's Gemini notebook "AI Coding Productivity Metrics and Quality Impact" (38 sources) was used only to choose primary sources; nothing is cited from it.
