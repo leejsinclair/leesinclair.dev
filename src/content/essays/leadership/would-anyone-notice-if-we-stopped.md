@@ -1,14 +1,14 @@
 ---
 title: "Would Anyone Notice If We Stopped?"
 date: 2026-11-28
-dek: "A survey of 165 people at LeadDev Berlin, mostly engineering managers and directors, found that most teams measure AI by speed and adoption, few measure it against business outcomes, and questions about whether it is paying off rise with seniority. The developers would notice if the tools went. Whether the business would is a question most measures cannot answer, and a team cannot choose better ones until its leaders say what paying off would look like."
+dek: "A survey of 165 people at LeadDev Berlin, mostly engineering managers and directors, found that most teams measure AI by speed and adoption, few measure it against business outcomes, and questions about whether it is paying off rise with seniority. Many developers would notice if the tools went. Whether the business would is a question most measures cannot answer, and a team cannot choose better ones until its leaders say what paying off would look like."
 tldr:
-  summary: "In a November 2026 survey of LeadDev Berlin attendees, 64% said their team relies heavily on AI, but only 20% measure it against business outcomes, and questions about whether it is paying off rose from 10% of individual contributors to 32% of directors. Atlassian's 2026 survey found 60% of developers say their organisation treats AI use as a productivity signal, and 68% say greater use does not accurately reflect the value they deliver. Developers would notice if the tools went away. The business might not, unless someone has said in advance what the tools are for. I would name the outcomes first, pair every activity measure with one of them, count workload, and keep a baseline."
+  summary: "In a November 2026 survey of LeadDev Berlin attendees, 64% said their team relies heavily on AI, but only 20% measure it against business outcomes, and questions about whether it is paying off rose from 10% of individual contributors to 32% of directors. Atlassian's 2026 survey found 60% of developers say their organisation treats AI use as a productivity signal, and 68% say greater use does not accurately reflect the value they deliver. Many developers would notice if the tools went away. The business might not, unless someone has said in advance what the tools are for. I would name the outcomes first, pair every activity measure with one of them, count workload, and keep a baseline."
   points:
     - "LeadDev's Berlin survey is a voluntary sample of 165 conference attendees, mostly managers and directors. Teams mostly measure delivery speed (52%) and adoption (45%). Business outcomes came last at 20%."
     - "Atlassian's 2026 survey found 60% of developers say AI use is treated as a productivity signal, and 41% sometimes use it more than necessary because they feel expected to. Only 42% of leaders say they have metrics that separate real gains from activity."
-    - "Developers would notice. In METR's February 2026 update, 30% to 50% said they held back some tasks because they did not want to do them without AI. That shows how much they want the tools, not what the business gets from them."
-    - "Directors were the most doubtful group in Berlin, while Temporal's survey found senior people more confident than engineers. The questions differ. I read the Berlin result as directors being asked to show a return they are not sure they can show."
+    - "Many developers would notice. In METR's February 2026 update, 30% to 50% said they held back some tasks because they did not want to do them without AI, though METR says this affected a minority of developers and tasks. It shows how much they want the tools. It says nothing about what the business gets from them."
+    - "Directors in Berlin were the most likely to question whether AI is paying off, while Temporal's survey found senior people more confident than engineers. The questions differ. I read the Berlin result as directors being asked to show a return they are not sure they can show."
 references:
   - "Harvey, N. (2026, November 26). Engineering leaders can't prove AI is paying off. LeadDev. https://leaddev.com/leadership/engineering-leaders-cant-prove-ai-is-paying-off. Read in full. A voluntary, anonymous survey of 165 LeadDev Berlin attendees on 9 and 10 November 2026. The chart values are images and only figures stated in the text are used. The author works at AWS."
   - "Atlassian. (2026). The State of Developer Experience in 2026. https://www.atlassian.com/teams/software-development/state-of-developer-experience-2026. Full PDF read (1,155 individual contributors and 405 leaders, self-reported, no fieldwork dates). Atlassian sells developer tooling and owns DX, a measurement product."
@@ -58,13 +58,13 @@ DORA's position on token counts is blunt. Evan Conaway wrote in June: "At DORA, 
 
 The obvious fallback is to ask people whether AI helps, and that is not much better. In METR's 2025 trial, 16 experienced open-source developers working on mature projects they had contributed to for years expected AI to cut their task time by 24%, and afterwards estimated it had cut it by 20%. Measured, the tasks where AI was allowed took 19% longer.
 
-That was early-2025 tooling and a small group. METR's later results lean towards a speedup, though METR calls them only very weak evidence and the confidence intervals include no effect. The lesson is the gap between what people felt and what was measured. DORA's 2025 survey, which records only the feeling, found more than 80% of 4,867 respondents believed AI had raised their productivity, with over 40% saying only slightly.
+That was early-2025 tooling and a small group. METR's later results lean towards a speedup, though METR calls them only very weak evidence and the confidence intervals include no effect. The lesson is the gap between what people felt and what was measured. DORA's 2025 survey, which records only the feeling, found more than 80% of respondents (out of 4,867 in total) believed AI had raised their productivity, with over 40% saying only slightly.
 
-Telemetry has its own trap: activity is easy to mistake for delivery. Across 28.7 million CircleCI pipeline runs in September 2025, the median team's runs on feature branches were up about 15% year on year, and runs on the main branch were down about 7%. CircleCI does not measure AI use, so this shows more work in progress without more of it landing, not what caused it.
+Telemetry has its own trap: activity is easy to mistake for delivery. Across 28.7 million CircleCI pipeline runs in September 2025, the median team's runs on feature branches were up about 15% year on year, and runs on the main branch were down about 7%. CircleCI does not measure AI use, so this shows more work in progress without more of it landing. It does not show the cause.
 
 Faros, which sells measurement tools and reports correlations, not causes, compared each team's quarters of lowest and highest AI adoption across 22,000 developers. Epics completed per developer rose 66%, which Faros calls its finding most tied to business outcomes, but incidents per pull request rose 243%. Deployments per week fell 11.7% and lead time rose sharply, though only about a tenth of the dataset measures those, and Faros says the lead-time figure should be read as directional. Its own line is the one I would keep: "Throughput measures what was shipped, not what survived."
 
-The easiest things to count can all rise while the thing a business cares about stays unclear. That is not evidence AI is failing, only that these measures cannot tell.
+The easiest things to count can all rise while the thing a business cares about stays unclear. These measures cannot tell whether AI is working.
 
 ## Where the saved time went
 
@@ -76,7 +76,7 @@ The rest often goes into checking. Harness surveyed 700 practitioners and manage
 
 If the saved time turns into longer days and longer reviews, a usage dashboard will look excellent and the team will be more tired. That is why I think workload belongs on the scorecard, which is also Harvey's advice.
 
-## Why directors are the doubtful ones
+## Why directors ask about the payoff
 
 The seniority finding surprised me at first. Temporal's State of Development 2026, a survey of 554 people already using agents, found the opposite: CEOs, managers, VPs and directors were more likely than engineers to call their organisation "very successful" with agents, 43.7% against 32.4%. Harness found managers more relaxed than practitioners about how AI productivity data might be used: 15% of managers had no concerns, against 4% of practitioners.
 
@@ -88,9 +88,9 @@ I read that doubt as healthy. It sits with the people who hold the budget, and i
 
 ## The removal test
 
-Back to the director's question. The one piece of evidence about stopping comes from METR's attempt to repeat its trial, which began in August 2025 and by February 2026 had data from 57 developers and more than 800 tasks. It ran into a problem: developers did not want to work without AI. "When surveyed, 30% to 50% of developers told us that they were choosing not to submit some tasks because they did not want to do them without AI." One developer completed none of the tasks assigned to the no-AI condition. METR says this probably makes its new estimate a lower bound, and its data only very weak evidence of how large the effect is.
+Back to the director's question. Both METR trials had a no-AI condition. In the 2025 trial, as above, the tasks done without AI finished faster. The attempt to repeat it began in August 2025 and by February 2026 had data from 57 developers and more than 800 tasks. It ran into a problem: some developers did not want to work without AI. "When surveyed, 30% to 50% of developers told us that they were choosing not to submit some tasks because they did not want to do them without AI." One developer completed none of the tasks assigned to the no-AI condition. METR says this affected a minority of developers and tasks, that the lower pay rate in the second study ($50 an hour against $150) probably added to it, and that it makes its new estimate a lower bound, with its data only very weak evidence of how large the effect is.
 
-So yes, the developers would notice. That matters: a tool people do not want to give up is doing something for them, and morale and retention are real costs.
+So yes, many developers would notice. That matters: a tool people do not want to give up is doing something for them, and morale and retention are real costs.
 
 It still does not answer the business question. People can strongly prefer a tool that makes work feel easier without the customer seeing any difference. Whether the customer or the budget would notice depends on whether anyone said, in advance, what the tools were supposed to change, and measured it before they arrived.
 

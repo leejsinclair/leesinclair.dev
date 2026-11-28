@@ -21,8 +21,12 @@ INTERNAL = {"_source_file", "uncertain", *[k for v in CATEGORY_MAPPING.values() 
 TOC_FIELDS = ["data_type"]  # default taken (non-interactive run)
 
 
+UNCERTAIN_RE = re.compile(r"\[uncertain(?:\]|[:\s][^\]]*\])", re.IGNORECASE)
+
+
 def is_uncertain(v):
-    return isinstance(v, str) and "[uncertain]" in v
+    """True for any [uncertain] marker, including qualified ones like [uncertain: note]."""
+    return isinstance(v, str) and bool(UNCERTAIN_RE.search(v))
 
 
 def lookup(d, cat, name):
@@ -65,7 +69,8 @@ def main():
     docs = [(os.path.splitext(os.path.basename(f))[0].replace("_", " "), json.load(open(f))) for f in files]
     out = [f"# {OUTLINE['topic']}", "", "Generated from results/*.json. Values marked [uncertain] and fields in each file's uncertain list are left out.", "", "## Contents", ""]
     for i, (name, d) in enumerate(docs, 1):
-        extra = " | ".join(f"{f}: {fmt(lookup(d, '', f))}" for f in TOC_FIELDS if fmt(lookup(d, '', f)))
+        skip = set(d.get("uncertain", []))
+        extra = " | ".join(f"{f}: {fmt(lookup(d, '', f))}" for f in TOC_FIELDS if f not in skip and fmt(lookup(d, '', f)))
         out.append(f"{i}. [{name}](#{anchor(name)})" + (f" - {extra}" if extra else ""))
     out.append("")
     defined = {f["name"] for fs in FIELDS.values() for f in fs}
@@ -82,7 +87,7 @@ def main():
                     block += [f"**{f['name']}**", "", val, ""]
             if block:
                 out += [f"### {cat}", ""] + block
-        other = {k: v for k, v in d.items() if k not in defined and k not in INTERNAL}
+        other = {k: v for k, v in d.items() if k not in defined and k not in INTERNAL and k not in skip}
         if other:
             out += ["### Other Info", ""]
             for k, v in other.items():
